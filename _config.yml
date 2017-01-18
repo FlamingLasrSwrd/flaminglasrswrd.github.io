@@ -20,3 +20,5 @@ exclude: _private/
 
 # Build settings
 markdown: kramdown
+
+theme: jekyll-theme-minimal
