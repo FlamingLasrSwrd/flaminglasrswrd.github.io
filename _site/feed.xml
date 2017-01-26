@@ -1,17 +1,136 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-01-26T11:04:58-06:00</updated><id>http://localhost:4000//</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2017/01/26/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2017-01-26T10:48:03-06:00</published><updated>2017-01-26T10:48:03-06:00</updated><id>http://localhost:4000/jekyll/update/2017/01/26/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2017/01/26/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-01-26T11:57:43-06:00</updated><id>http://localhost:4000//</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</subtitle><entry><title type="html">Github Pages Local Build</title><link href="http://localhost:4000/programming/2017/01/26/jekyllongithub.html" rel="alternate" type="text/html" title="Github Pages Local Build" /><published>2017-01-26T00:00:00-06:00</published><updated>2017-01-26T00:00:00-06:00</updated><id>http://localhost:4000/programming/2017/01/26/jekyllongithub</id><content type="html" xml:base="http://localhost:4000/programming/2017/01/26/jekyllongithub.html">&lt;h1 id=&quot;github-pages-local-build&quot;&gt;Github Pages local build&lt;/h1&gt;
 
-&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+&lt;p&gt;I’m still not clear on local ownership and permissions when dealing with code development. I’ve been fiddling with jekyll and github pages for a couple weeks now to no avail. I think the issue is that I tried to install the basic ruby using &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt-get install&lt;/code&gt; which leads to permission trouble later. So I decided to remove everything and install it the right way…&lt;/p&gt;
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+&lt;p&gt;Reinstall ruby.&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get remove ruby
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry><entry><title type="html">Alcohol</title><link href="http://localhost:4000/2017/01/06/alcohol.mer" rel="alternate" type="text/html" title="Alcohol" /><published>2017-01-06T00:00:00-06:00</published><updated>2017-01-06T00:00:00-06:00</updated><id>http://localhost:4000/2017/01/06/alcohol</id><content type="html" xml:base="http://localhost:4000/2017/01/06/alcohol.mer">graph LR;
+&lt;p&gt;I got an error message saying the &lt;code class=&quot;highlighter-rouge&quot;&gt;/var/lib/gems&lt;/code&gt; folder was not deleted because it wasn’t empty, so I deleted it manually.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo rm -r /var/lib/gems
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Make sure everything is gone.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get autoremove
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Copy of the procedure from &lt;a href=&quot;https://stackoverflow.com/questions/37720892/you-dont-have-write-permissions-for-the-var-lib-gems-2-3-0-directory#37956249&quot;&gt;Write permissions for var/lib/gems/&lt;/a&gt; on reinstalling ruby [the right way] using rbenv.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties libffi-dev
+git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+echo 'export PATH=&quot;$HOME/.rbenv/bin:$PATH&quot;' &amp;gt;&amp;gt; ~/.bashrc
+echo 'eval &quot;$(rbenv init -)&quot;' &amp;gt;&amp;gt; ~/.bashrc
+exec $SHELL
+git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+echo 'export PATH=&quot;$HOME/.rbenv/plugins/ruby-build/bin:$PATH&quot;' &amp;gt;&amp;gt; ~/.bashrc
+exec $SHELL
+rbenv install 2.3.1
+rbenv global 2.3.1
+ruby -v
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Starting with the &lt;a href=&quot;https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/&quot;&gt;Github Pages Local Setup&lt;/a&gt; article.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ruby --version
+gem install bundler
+rbenv rehash
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;At this point I got another error saying that I didn’t have write permission to a folder so I changed ownership.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/home/[username]/.bundle/cache/compact_index/rubygems.org.443.29b0360b937aa4d161703e6160654e47/versions`
+sudo chown -R $(whoami):$(whoami) ~/.bundler
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Now I can run &lt;code class=&quot;highlighter-rouge&quot;&gt;gem install bundler&lt;/code&gt; without issue.
+Since I was starting from scratch, I initialized a new git repo.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git init web
+cd web
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Created a Gemfile for bundler to use.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;nano Gemfile
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;source 'https://rubygems.org'
+gem 'github-pages', group: :jekyll_plugins
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Then installed the dependencies with bundle.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;bundle install
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Now you are set to create a blank jekyll template which can be used for local builds on github pages.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jekyll new website
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Alternatively&lt;/strong&gt;, if you wish to use an existing, empty github repo (as I did):&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone [your_repo_URL]
+jekyll new [your_repo_name]
+cd [your_repo_name]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Preview the build on a local server at the default &lt;a href=&quot;http://127.0.0.1:4000&quot;&gt;127.0.0.1:4000&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;bundle exec jekyll serve
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;If any errors crop up, add the requisite gem to your Gemfile as I had to do due to a lack of a Java runtime environment.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;nano Gemfile
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Add the lines at the end of the file.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gem 'execjs'
+gem 'therubyracer'
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Then install the gems.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;bundle install
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Rebuild and serve.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;bundle exec jekyll serve
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;As long as everything looks good, commit and push everything to your repo.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git add -A
+git commit -a
+git push origin
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Check your email to make sure everything built as it should -github sends you build error messages. Then check your site at [your_username].github.io.&lt;/p&gt;</content><summary type="html">Github Pages local build</summary></entry><entry><title type="html">Alcohol</title><link href="http://localhost:4000/2017/01/06/alcohol.mer" rel="alternate" type="text/html" title="Alcohol" /><published>2017-01-06T00:00:00-06:00</published><updated>2017-01-06T00:00:00-06:00</updated><id>http://localhost:4000/2017/01/06/alcohol</id><content type="html" xml:base="http://localhost:4000/2017/01/06/alcohol.mer">graph LR;
   alcohol==&gt;hangover;
   alcohol--nAc--&gt;dopamine;
   alcohol-.nAc intracellular.-&gt;taurine;
@@ -82,7 +201,67 @@
 &lt;p&gt;This is a change.&lt;/p&gt;
 
 &lt;h1 id=&quot;references&quot;&gt;References&lt;/h1&gt;</content><summary type="html">Goal
-To abolish the toxic, unwanted effects of alcohol commonly known as a hangover by administration of commonly available dietary supplements without affecting greater damage.</summary></entry><entry><title type="html">Theory of Learning</title><link href="http://localhost:4000/brain/2016/09/19/Theory-of-Learning.html" rel="alternate" type="text/html" title="Theory of Learning" /><published>2016-09-19T00:00:00-05:00</published><updated>2016-09-19T00:00:00-05:00</updated><id>http://localhost:4000/brain/2016/09/19/Theory-of-Learning</id><content type="html" xml:base="http://localhost:4000/brain/2016/09/19/Theory-of-Learning.html">&lt;h1 id=&quot;stm&quot;&gt;STM&lt;/h1&gt;
+To abolish the toxic, unwanted effects of alcohol commonly known as a hangover by administration of commonly available dietary supplements without affecting greater damage.</summary></entry><entry><title type="html">AI</title><link href="http://localhost:4000/programming,brain/2016/09/19/githublocal.html" rel="alternate" type="text/html" title="AI" /><published>2016-09-19T00:00:00-05:00</published><updated>2016-09-19T00:00:00-05:00</updated><id>http://localhost:4000/programming,brain/2016/09/19/githublocal</id><content type="html" xml:base="http://localhost:4000/programming,brain/2016/09/19/githublocal.html">&lt;h1 id=&quot;ai-algorithms&quot;&gt;AI Algorithms&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Monte Carlo Tree Search&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;key-terms&quot;&gt;Key Terms&lt;/h1&gt;
+
+&lt;h2 id=&quot;art&quot;&gt;ART&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;bottom-up activation&lt;/li&gt;
+  &lt;li&gt;top-down expectations&lt;/li&gt;
+  &lt;li&gt;category&lt;/li&gt;
+  &lt;li&gt;competitive learning&lt;/li&gt;
+  &lt;li&gt;hebbian learning&lt;/li&gt;
+  &lt;li&gt;anti-hebbian learning&lt;/li&gt;
+  &lt;li&gt;lateral inhibition&lt;/li&gt;
+  &lt;li&gt;attention&lt;/li&gt;
+  &lt;li&gt;intention/attention&lt;/li&gt;
+  &lt;li&gt;catastrophic forgetting&lt;/li&gt;
+  &lt;li&gt;modulatory on-center&lt;/li&gt;
+  &lt;li&gt;modulatory off-surround&lt;/li&gt;
+  &lt;li&gt;resonance&lt;/li&gt;
+  &lt;li&gt;attentional system
+    &lt;ul&gt;
+      &lt;li&gt;expected events&lt;/li&gt;
+      &lt;li&gt;familiar events&lt;/li&gt;
+      &lt;li&gt;resonance&lt;/li&gt;
+      &lt;li&gt;attention&lt;/li&gt;
+      &lt;li&gt;learning&lt;/li&gt;
+      &lt;li&gt;recognition&lt;/li&gt;
+      &lt;li&gt;Temporal cortex - Prefrontal cortex&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;orienting system
+    &lt;ul&gt;
+      &lt;li&gt;unexpected events&lt;/li&gt;
+      &lt;li&gt;unfamiliar events&lt;/li&gt;
+      &lt;li&gt;reset&lt;/li&gt;
+      &lt;li&gt;memory search&lt;/li&gt;
+      &lt;li&gt;hypothesis testing&lt;/li&gt;
+      &lt;li&gt;hippocampal system&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;event-related potentials&lt;/li&gt;
+  &lt;li&gt;laminar computing&lt;/li&gt;
+  &lt;li&gt;working memory&lt;/li&gt;
+  &lt;li&gt;sequence learning&lt;/li&gt;
+  &lt;li&gt;bipole property&lt;/li&gt;
+  &lt;li&gt;working memory&lt;/li&gt;
+  &lt;li&gt;primacy gradient
+*&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;numenta&quot;&gt;Numenta&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;SDR
+*&lt;/li&gt;
+&lt;/ul&gt;</content><summary type="html">AI Algorithms</summary></entry><entry><title type="html">Theory of Learning</title><link href="http://localhost:4000/brain/2016/09/19/Theory-of-Learning.html" rel="alternate" type="text/html" title="Theory of Learning" /><published>2016-09-19T00:00:00-05:00</published><updated>2016-09-19T00:00:00-05:00</updated><id>http://localhost:4000/brain/2016/09/19/Theory-of-Learning</id><content type="html" xml:base="http://localhost:4000/brain/2016/09/19/Theory-of-Learning.html">&lt;h1 id=&quot;stm&quot;&gt;STM&lt;/h1&gt;
 
 &lt;p&gt;Goal: To be able to reproduce all previous knowledge on a particular topic from memory - exact and conceptual replication.&lt;/p&gt;
 
@@ -1101,34 +1280,4 @@ Each method of purification can be applied in any order or combination. As with 
 &lt;/ul&gt;
 
 &lt;!-- Abbreviations --&gt;</content><summary type="html">Abstract
-Herein contains the synopsis of my research on MB as a rarely used, highly experimental modifier of mitochondrial metabolism. MB can act as an alternative electron acceptor/donor enhancing the efficiency of energy production. MB tends to accumulate in areas of high metabolic need (e.g. brain tissue). [Phase 3 clinical trials] are under way using Rember© for treatment of Alzheimer’s Disease showing great promise. MB’s action is dose-dependent with many interactions that vary by concentration.</summary></entry><entry><title type="html">Spot Welder</title><link href="http://localhost:4000/electronics/2011/12/10/spotwelder.html" rel="alternate" type="text/html" title="Spot Welder" /><published>2011-12-10T00:00:00-06:00</published><updated>2011-12-10T00:00:00-06:00</updated><id>http://localhost:4000/electronics/2011/12/10/spotwelder</id><content type="html" xml:base="http://localhost:4000/electronics/2011/12/10/spotwelder.html">&lt;div id=&quot;conhead&quot;&gt;
-	&lt;a href=&quot;/projects/spotwelder/full.JPG&quot;&gt;&lt;img src=&quot;/projects/spotwelder/full_s.JPG&quot; width=&quot;250&quot; alt=&quot;Spotwelder Image Overview&quot;&gt;&lt;/a&gt;
-	&lt;br&gt;Click on the image for the large version.
-&lt;/div&gt;
-
-&lt;h2&gt;Background&lt;/h2&gt;
-&lt;p&gt;I first got interested in this project because I needed to spot weld titanium cathodes and anodes for the &lt;a href=&quot;/projects/chloratecell.html&quot;&gt;Chlorate cell project&lt;/a&gt;. I also use it to make frames for other projects such as the &lt;a href=&quot;/projects/hotplate.html&quot;&gt;$1.49 hot plate&lt;/a&gt;. A quick Google search brought a tutorial from Hack A Day's page: &lt;a target=&quot;new_window&quot; href=&quot;http://hackaday.com/2009/06/23/how-to-build-your-own-spot-welder/&quot;&gt;Spot Welder&lt;/a&gt;. I started out with a close copy of their spot welder but found it to be unsatisfactory. Probably because I used pre-1982 pennies for the contacts instead of MIG welder tips like they suggested. The wires I used were way too small for the current produced. So I built a second one using steel bolts as the contacts and beefier wiring. It is somewhat better but not the best.&lt;/p&gt;
-&lt;p&gt;Spot welders join two thin pieces of metal together by resistive heating. The metal is sandwiched between two contacts and a large current (&gt;400 amps) is applied. The contact point between the two metal pieces has a high resistance and heats up to the melting point. The metal flows together and becomes one piece. The current is removed and the is metal allowed to cool. Now you have a spot of welded metal. Spot welders are used industrially to make just about every metal frame on the market from cars to toasters. They give short and precise welding without heating up the whole piece. They are limited to thin metal about nine gauge or smaller and usually aluminum or steel only. Spot welders are usually capacitor bank units instead of the constant source welders made by amateurs. Check out the &lt;a target=&quot;new_window&quot; href=&quot;http://en.wikipedia.org/wiki/Spot_welding&quot;&gt;wikipedia page&lt;/a&gt; on spot welding for more info.&lt;/p&gt;
-
-&lt;h2&gt;The Making of...&lt;/h2&gt;
-&lt;p&gt;The image at the top of the page is the finished welder. I have made lots of good welds with this machine. Overall it took about an hour to make. Most of that time I was fighting with the MOT secondary. It was more of an epic two day battle really.&lt;/p&gt;
-&lt;h3&gt;Step 1: Transformer&lt;/h3&gt;
-&lt;a href=&quot;/projects/spotwelder/transformer.JPG&quot;&gt;&lt;img src=&quot;/projects/spotwelder/transformer_s.JPG&quot; width=&quot;200&quot; alt=&quot;Rewound Transformer&quot;&gt;&lt;/a&gt;
-&lt;p&gt;The first thing to do is locate a suitable transformer. Microwave Oven Transformers (MOT) are the best. They are designed for high power applications (&gt;1 KW) and the MOTs are easy to rewind. Not to mention that people throw them out all the time. Often they just have a blown fuse and rarely, if ever, the transformers are blown. If you don't have a microwave to rip apart post an add in your local freecycle or free craigslist. You will undoubtedly get a few hits. Try to find the heaviest transformer you can. Heavier means more power when it comes to transformers. Here is a good &lt;a target=&quot;new_window&quot; href=&quot;http://www.instructables.com/id/How-To-Take-Apart-A-Microwave/&quot;&gt;Instructable&lt;/a&gt; about taking apart a microwave. &lt;/p&gt;
-&lt;p&gt;Now that you have a transformer you will have to strip the secondary coil (the fine wire set) in order to rewind it. This takes a combination of strength and skill with a lot of will power. I used a chisel and hammer to shave off the wires on the four points of contact with the laminated core. Alternatively you can just use a cutoff wheel with a dremel. Make sure you wear gloves, a facemask, and goggles when you cut into the secondary. I'm not sure if the epoxy used is toxic but it certainly can't be good for your lungs or eyes.&lt;/p&gt;
-&lt;p&gt;To rewind the transformer you will need some beefy wires. I used an old set of jumper cables. The smaller the wire you use the faster it will heat up. Certainly don't use anything less than 3 or 4 AWG. Here is a good table for &lt;a target=&quot;new_window&quot; href=&quot;http://www.powerstream.com/Wire_Size.htm&quot;&gt;AWG current handling&lt;/a&gt;. If you don't have anything that large you can gang smaller wires together. That's what I did for my first spot welder. The wires would get extremely hot after only a few seconds of use and then I would have to wait for them to cool. Not exactly a fast process. Sorry I don't have pictures of that one. The jumper cables barely heat up even after several welds. Aim to have about three or four turns in your secondary rewinding. This really depends on your wire choice and how big your transformer is. Three to five volts is typically what a spot welder runs at. The cool thing about such a low voltage is that there is very low risk of electrocution. Pretty much the only way to get electrocuted by the arms is if it started raining salt water and then you grabbed both arms. Now that you have a secondary it is time to create the arms and supports.&lt;/p&gt;
-
-&lt;h3&gt;Step 2: Supports and Arms&lt;/h3&gt;
-&lt;a href=&quot;/projects/spotwelder/supports.JPG&quot;&gt;&lt;img src=&quot;/projects/spotwelder/supports_s.JPG&quot; width=&quot;200&quot; alt=&quot;Supports&quot;&gt;&lt;/a&gt;
-&lt;p&gt;Somehow you have to get the power to the metal being welded. You have to be able to maneuver your metal into place and clamp down on it. You also have to carry large currents without heating significantly. Then the arms have to have supports that allow pivot. How do you accomplish all this you ask? I used 3/8&quot; soft copper tubing and sheet metal. It helps to have long, skinny arms like the ones shown. They allow you to make welds in tight places and small spaces. You could use the same wire as the secondary windings for the arms. It would have to be supported somehow. The bottom arm is screwed into the wooden base and electrically insulated from the sheet metal support. The wires from the transformer are just squeezed into the tubing and crimped into place. I used some electrical tape to reduce movement between the two. The support uses a single bolt and two washers as the pivot point.
-&lt;/p&gt;
-&lt;h3&gt;Step 3: Electrical Control&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;/projects/spotwelder/switches.JPG&quot;&gt;&lt;img src=&quot;/projects/spotwelder/switches_s.JPG&quot; width=&quot;200&quot; alt=&quot;Power Control Switches&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;A good spot weld is largely a function of time. Too little time and the metals don't heat enough, too much time and the electrodes degrade and the metal oxidizes producing a poor weld. A regular light switch can be used for timing. Put it in series with the primary winding. They are only designed for about ten amps so you can't put it on the secondary side. I chose to include a second switch as a safety precaution. To operate you must have both switches on.
-&lt;br&gt;*Do not forget to core ground your MOT. If you don't the core will kill you if you touch it. All you have to do is connect a grounding wire (usually green) to one of the transformer mounting screws. Doing something so easy to avoid death: probably a good idea.&lt;/p&gt;
-&lt;h3&gt;Step 4: Contacts&lt;/h3&gt;
-&lt;a href=&quot;/projects/spotwelder/contacts.JPG&quot;&gt;&lt;img src=&quot;/projects/spotwelder/contacts_s.JPG&quot; width=&quot;200&quot; alt=&quot;Welding Contacts&quot;&gt;&lt;/a&gt;
-&lt;p&gt;If you have some tungsten laying around that would be great. Unfortunately I did not. I used two 1 1/2 inches bolts with a diameter of about 0.25 inch. Definitely not the best choice but it worked. The copper was flattened at the end and a hole drilled through. Two nuts can secure the bolts to the arms. Make sure to sand all the contact points to ensure a good connection. Pretty simple huh?&lt;/p&gt;
-&lt;h2&gt;Results&lt;/h2&gt;
-&lt;p&gt;And now you have a spot welder. Grab some metal and start welding. &lt;a target=&quot;new_window&quot; href=&quot;http://www.robot-welding.com/Welding_parameters.htm&quot;&gt;This&lt;/a&gt; page will give you an idea of the spot welding time, cycles, electrode diameter, etc. I typically use three or four cycles at 5 seconds for welding 1.5 mm titanium cathodes. You can do a test weld and then break it. A good weld will rip off a &quot;nugget&quot; of the metal.&lt;/p&gt;
-&lt;p&gt;&lt;object width=&quot;420&quot; height=&quot;315&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://www.youtube.com/v/hr-SQwcQj7E?version=3&amp;amp;hl=en_US&quot;&gt;&lt;/param&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot;&gt;&lt;/param&gt;&lt;param name=&quot;allowscriptaccess&quot; value=&quot;always&quot;&gt;&lt;/param&gt;&lt;embed src=&quot;http://www.youtube.com/v/hr-SQwcQj7E?version=3&amp;amp;hl=en_US&quot; type=&quot;application/x-shockwave-flash&quot; width=&quot;420&quot; height=&quot;315&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot;&gt;&lt;/embed&gt;&lt;/object&gt;&lt;/p&gt;</content><summary type="html">Click on the image for the large version.</summary></entry></feed>
+Herein contains the synopsis of my research on MB as a rarely used, highly experimental modifier of mitochondrial metabolism. MB can act as an alternative electron acceptor/donor enhancing the efficiency of energy production. MB tends to accumulate in areas of high metabolic need (e.g. brain tissue). [Phase 3 clinical trials] are under way using Rember© for treatment of Alzheimer’s Disease showing great promise. MB’s action is dose-dependent with many interactions that vary by concentration.</summary></entry></feed>
