@@ -5,7 +5,7 @@ date:   2015-06-08
 modified: 2016-09-19
 updated: 2015-06-08
 status: inactive
-categories: chemistry,nootropics
+categories: chemistry nootropics
 
 ---
 # Abstract
