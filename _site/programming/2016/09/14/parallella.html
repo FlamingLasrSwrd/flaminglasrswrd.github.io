@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTM on Parallella</title>
+  <meta name="description" content="Specifications Parallella board - kickstarter version with Zynq 7020 16-core Epiphany processor">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="http://localhost:4000/programming/2016/09/14/parallella.html">
+  <link rel="alternate" type="application/rss+xml" title="Your awesome title" href="/feed.xml">
+  
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Your awesome title</a>
+
+    <nav class="site-nav">
+      <span class="menu-icon">
+        <svg viewBox="0 0 18 15" width="18px" height="15px">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </span>
+
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="/about/">About</a>
+          
+        
+          
+          <a class="page-link" href="/about/">About</a>
+          
+        
+          
+        
+          
+          <a class="page-link" href="/stm/">Short Term Memory</a>
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">HTM on Parallella</h1>
+    <p class="post-meta"><time datetime="2016-09-14T00:00:00-05:00" itemprop="datePublished">Sep 14, 2016</time></p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <h1 id="specifications">Specifications</h1>
+<p>Parallella board - kickstarter version with Zynq 7020
+16-core Epiphany processor</p>
+
+<h1 id="initial-setup">Initial Setup</h1>
+
+<p><code class="highlighter-rouge">sudo apt update</code>
+<code class="highlighter-rouge">sudo apt upgrade</code></p>
+
+<h2 id="static-ip-configuration">Static IP Configuration</h2>
+
+<p><code class="highlighter-rouge">sudo vi /etc/network/interfaces.d/eth0</code>
+Changed “dhcp” to static and added the relevant information.
+<code class="highlighter-rouge">
+auto eth0
+iface eth0 inet static
+        address 192.168.1.3
+        netmask 255.255.255.0
+        gateway 192.168.1.1
+</code>
+Modified the DNS server configuration.
+<code class="highlighter-rouge">sudo vi /etc/resolv.conf</code>
+Modified to include one original DNS server from my ISP (75.76.84.70), one google server, and my gateway.
+<code class="highlighter-rouge">
+domain knology.net
+search knology.net
+nameserver 75.76.84.70
+nameserver 8.8.8.8
+nameserver 192.168.1.1
+</code></p>
+
+<h1 id="nodejs">Node.js</h1>
+<p>[Node.js Source Code] https://nodejs.org/dist/v4.5.0/node-v4.5.0.tar.gz
+<code class="highlighter-rouge">wget https://nodejs.org/dist/v4.5.0/node-v4.5.0.tar.gz</code>
+<code class="highlighter-rouge">tar -xvf node-v4.5.0.tar.gz</code>
+`cd node-v4.5.0’
+‘sudo ./configure’
+‘sudo make -j16’</p>
+
+<h1 id="apendix-a-installed-apps">Apendix A: Installed Apps</h1>
+
+<ul>
+  <li>acl</li>
+  <li>adduser</li>
+  <li>apt</li>
+  <li>apt-utils</li>
+  <li>at</li>
+  <li>at-spi2-core</li>
+  <li>avahi-daemon</li>
+  <li>base-files</li>
+  <li>base-passwd</li>
+  <li>bash</li>
+  <li>bc</li>
+  <li>bind9-host</li>
+  <li>binutils</li>
+  <li>bison</li>
+  <li>bsdmainutils</li>
+  <li>bsdutils</li>
+  <li>build-essential</li>
+  <li>busybox-initramfs</li>
+  <li>bwm-ng</li>
+  <li>bzip2</li>
+  <li>ca-certificates</li>
+  <li>clinfo</li>
+  <li>colord</li>
+  <li>colord-data</li>
+  <li>console-setup</li>
+  <li>console-setup-linux</li>
+  <li>coreutils</li>
+  <li>cpio</li>
+  <li>cpp</li>
+  <li>cpp-4.9</li>
+  <li>cron</li>
+  <li>curl</li>
+  <li>dash</li>
+  <li>dbus</li>
+  <li>dconf-gsettings-backend:armhf</li>
+  <li>dconf-service</li>
+  <li>dctrl-tools</li>
+  <li>debconf</li>
+  <li>debianutils</li>
+  <li>device-tree-compiler</li>
+  <li>devscripts</li>
+  <li>dh-python</li>
+  <li>diffstat</li>
+  <li>diffutils</li>
+  <li>distro-info-data</li>
+  <li>dmsetup</li>
+  <li>docbook-xml</li>
+  <li>dpkg</li>
+  <li>dpkg-dev</li>
+  <li>dput</li>
+  <li>e2fslibs:armhf</li>
+  <li>e2fsprogs</li>
+  <li>emacs-nox</li>
+  <li>emacs24-bin-common</li>
+  <li>emacs24-common</li>
+  <li>emacs24-common-non-dfsg</li>
+  <li>emacs24-nox</li>
+  <li>emacsen-common</li>
+  <li>ethtool</li>
+  <li>fake-hwclock</li>
+  <li>fakeroot</li>
+  <li>file</li>
+  <li>findutils</li>
+  <li>flex</li>
+  <li>fontconfig</li>
+  <li>fontconfig-config</li>
+  <li>fonts-dejavu-core</li>
+  <li>ftp</li>
+  <li>g++</li>
+  <li>g++-4.9</li>
+  <li>gawk</li>
+  <li>gcc</li>
+  <li>gcc-4.9</li>
+  <li>gcc-4.9-base:armhf</li>
+  <li>gcc-5-base:armhf</li>
+  <li>gdb</li>
+  <li>gdbserver</li>
+  <li>geoip-database</li>
+  <li>gettext</li>
+  <li>gettext-base</li>
+  <li>git</li>
+  <li>git-man</li>
+  <li>glib-networking:armhf</li>
+  <li>glib-networking-common</li>
+  <li>glib-networking-services</li>
+  <li>gnupg</li>
+  <li>gpgv</li>
+  <li>grep</li>
+  <li>groff-base</li>
+  <li>gsettings-desktop-schemas</li>
+  <li>gzip</li>
+  <li>hardening-includes</li>
+  <li>hicolor-icon-theme</li>
+  <li>hostname</li>
+  <li>htop</li>
+  <li>i2c-tools</li>
+  <li>ifplugd</li>
+  <li>ifupdown</li>
+  <li>info</li>
+  <li>init</li>
+  <li>init-system-helpers</li>
+  <li>initramfs-tools</li>
+  <li>initramfs-tools-bin</li>
+  <li>initscripts</li>
+  <li>insserv</li>
+  <li>install-info</li>
+  <li>intltool-debian</li>
+  <li>iperf</li>
+  <li>iproute</li>
+  <li>iproute2</li>
+  <li>iputils-ping</li>
+  <li>isc-dhcp-client</li>
+  <li>isc-dhcp-common</li>
+  <li>iso-codes</li>
+  <li>kbd</li>
+  <li>keyboard-configuration</li>
+  <li>klibc-utils</li>
+  <li>kmod</li>
+  <li>krb5-locales</li>
+  <li>language-pack-en</li>
+  <li>language-pack-en-base</li>
+  <li>less</li>
+  <li>libacl1:armhf
+libalgorithm-c3-perl
+libalgorithm-diff-perl
+libalgorithm-diff-xs-perl
+libalgorithm-merge-perl
+liballegro4.4:armhf
+libapparmor1:armhf
+libapt-inst1.5:armhf
+libapt-pkg-perl
+libapt-pkg4.12:armhf
+libarchive-extract-perl
+libarchive-zip-perl
+libasan1:armhf
+libasn1-8-heimdal:armhf
+libasound2:armhf
+libasound2-data
+libasprintf-dev:armhf
+libasprintf0c2:armhf
+libasyncns0:armhf
+libatk-bridge2.0-0:armhf
+libatk1.0-0:armhf
+libatk1.0-data
+libatm1:armhf
+libatomic1:armhf
+libatspi2.0-0:armhf
+libattr1:armhf
+libaudit-common
+libaudit1:armhf
+libauthen-sasl-perl
+libavahi-client3:armhf
+libavahi-common-data:armhf
+libavahi-common3:armhf
+libavahi-core7:armhf
+libbabeltrace-ctf1:armhf
+libbabeltrace1:armhf
+libbind9-90
+libbison-dev:armhf
+libblkid1:armhf
+libboost-filesystem1.55.0:armhf
+libboost-system1.55.0:armhf
+libbsd0:armhf
+libbz2-1.0:armhf
+libc-bin
+libc-dev-bin
+libc6:armhf
+libc6-dbg:armhf
+libc6-dev:armhf
+libcaca0:armhf
+libcairo-gobject2:armhf
+libcairo-perl
+libcairo2:armhf
+libcap-ng0:armhf
+libcap2:armhf
+libcap2-bin
+libcgi-fast-perl
+libcgi-pm-perl
+libcgmanager0:armhf
+libck-connector0:armhf
+libclass-accessor-perl
+libclass-c3-perl
+libclass-c3-xs-perl
+libclc-dev
+libclone-perl
+libcloog-isl4:armhf
+libcolord2:armhf
+libcolorhug2:armhf
+libcomerr2:armhf
+libcommon-sense-perl
+libconfig++-dev:armhf
+libconfig++9:armhf
+libconfig-dev:armhf
+libconfig-doc
+libconfig9:armhf
+libcpan-meta-perl
+libcroco3:armhf
+libcryptsetup4
+libcups2:armhf
+libcurl3:armhf
+libcurl3-gnutls:armhf
+libdaemon0:armhf
+libdata-optlist-perl
+libdata-section-perl
+libdatrie1:armhf
+libdb5.3:armhf
+libdbus-1-3:armhf
+libdconf1:armhf
+libdebconfclient0:armhf
+libdevil-dev
+libdevil1c2
+libdevmapper1.02.1:armhf
+libdigest-hmac-perl
+libdistro-info-perl
+libdns-export100
+libdns100
+libdpkg-perl
+libdrm-dev:armhf
+libdrm-exynos1:armhf
+libdrm-freedreno1:armhf
+libdrm-nouveau2:armhf
+libdrm-omap1:armhf
+libdrm-radeon1:armhf
+libdrm2:armhf
+libedit2:armhf
+libelf1:armhf
+libelfg0:armhf
+libelfg0-dev
+libemail-valid-perl
+libencode-locale-perl
+libept1.4.12:armhf
+liberror-perl
+libestr0
+libevent-2.0-5:armhf
+libevent-core-2.0-5:armhf
+libevent-dev
+libevent-extra-2.0-5:armhf
+libevent-openssl-2.0-5:armhf
+libevent-pthreads-2.0-5:armhf
+libexif12:armhf
+libexpat1:armhf
+libexporter-lite-perl
+libfakeroot:armhf
+libfcgi-perl
+libffi6:armhf
+libfftw3-3:armhf
+libfftw3-bin
+libfftw3-dev:armhf
+libfftw3-double3:armhf
+libfftw3-single3:armhf
+libfile-basedir-perl
+libfile-fcntllock-perl
+libfile-listing-perl
+libfl-dev:armhf
+libflac8:armhf
+libfont-afm-perl
+libfontconfig1:armhf
+libfreetype6:armhf
+libfribidi0:armhf
+libgcc-4.9-dev:armhf
+libgcc1:armhf
+libgcrypt20:armhf
+libgd3:armhf
+libgdbm3:armhf
+libgdk-pixbuf2.0-0:armhf
+libgdk-pixbuf2.0-common
+libgeoip1:armhf
+libgettextpo-dev:armhf
+libgettextpo0:armhf
+libgl1-mesa-dev:armhf
+libgl1-mesa-dri:armhf
+libgl1-mesa-glx:armhf
+libglapi-mesa:armhf
+libglib-perl
+libglib2.0-0:armhf
+libglib2.0-data
+libglu1-mesa:armhf
+libgmp-dev:armhf
+libgmp10:armhf
+libgmp3-dev
+libgmpxx4ldbl:armhf
+libgnutls-deb0-28:armhf
+libgnutls-openssl27:armhf
+libgomp1:armhf
+libgpg-error0:armhf
+libgphoto2-6:armhf
+libgphoto2-l10n
+libgphoto2-port10:armhf
+libgpm2:armhf
+libgraphite2-3:armhf
+libgssapi-krb5-2:armhf
+libgssapi3-heimdal:armhf
+libgtk-3-0:armhf
+libgtk-3-bin
+libgtk-3-common
+libgtk2-perl
+libgtk2.0-0:armhf
+libgtk2.0-bin
+libgtk2.0-common
+libgudev-1.0-0:armhf
+libgusb2:armhf
+libharfbuzz0b:armhf
+libhcrypto4-heimdal:armhf
+libheimbase1-heimdal:armhf
+libheimntlm0-heimdal:armhf
+libhogweed2:armhf
+libhtml-form-perl
+libhtml-format-perl
+libhtml-parser-perl
+libhtml-tagset-perl
+libhtml-tree-perl
+libhttp-cookies-perl
+libhttp-daemon-perl
+libhttp-date-perl
+libhttp-message-perl
+libhttp-negotiate-perl
+libhx509-5-heimdal:armhf
+libicu52:armhf
+libidn11:armhf
+libieee1284-3:armhf
+libintl-perl
+libio-html-perl
+libio-pty-perl
+libio-socket-inet6-perl
+libio-socket-ssl-perl
+libio-string-perl
+libio-stringy-perl
+libipc-run-perl
+libirs-export91
+libisc-export95
+libisc95
+libisccc90
+libisccfg-export90
+libisccfg90
+libisl13:armhf
+libjasper1:armhf
+libjbig-dev:armhf
+libjbig0:armhf
+libjpeg-dev:armhf
+libjpeg-turbo8:armhf
+libjpeg-turbo8-dev:armhf
+libjpeg8:armhf
+libjpeg8-dev:armhf
+libjs-jquery
+libjson-c2:armhf
+libjson-glib-1.0-0:armhf
+libjson-glib-1.0-common
+libjson-perl
+libjson-xs-perl
+libjson0:armhf
+libk5crypto3:armhf
+libkeyutils1:armhf
+libklibc
+libkmod2:armhf
+libkrb5-26-heimdal:armhf
+libkrb5-3:armhf
+libkrb5support0:armhf
+liblcms2-2:armhf
+liblcms2-dev:armhf
+libldap-2.4-2:armhf
+liblist-moreutils-perl
+libllvm3.6:armhf
+liblocale-gettext-perl
+liblockfile-bin
+liblockfile1:armhf
+liblog-message-perl
+liblog-message-simple-perl
+libltdl7:armhf
+liblua5.2-0:armhf
+liblwp-mediatypes-perl
+liblwp-protocol-https-perl
+liblwres90
+liblzma-dev:armhf
+liblzma5:armhf
+libmagic1:armhf
+libmailtools-perl
+libmirclient8:armhf
+libmircommon3:armhf
+libmirprotobuf0:armhf
+libmng2:armhf
+libmodule-build-perl
+libmodule-pluggable-perl
+libmodule-signature-perl
+libmount1:armhf
+libmpc-dev:armhf
+libmpc3:armhf
+libmpdec2:armhf
+libmpfr-dev:armhf
+libmpfr4:armhf
+libmro-compat-perl
+libncurses5:armhf
+libncursesw5:armhf
+libnet-dns-perl
+libnet-domain-tld-perl
+libnet-http-perl
+libnet-ip-perl
+libnet-smtp-ssl-perl
+libnet-ssleay-perl
+libnettle4:armhf
+libnewt0.52:armhf
+libnih-dbus1:armhf
+libnih1:armhf
+libnss-mdns:armhf
+libogg0:armhf
+libopts25:armhf
+libp11-kit0:armhf
+libpackage-constants-perl
+libpam-modules:armhf
+libpam-modules-bin
+libpam-runtime
+libpam-systemd:armhf
+libpam0g:armhf
+libpango-1.0-0:armhf
+libpango-perl
+libpangocairo-1.0-0:armhf
+libpangoft2-1.0-0:armhf
+libparams-util-perl
+libparse-debcontrol-perl
+libparse-debianchangelog-perl
+libpcre3:armhf
+libperl5.20
+libperlio-gzip-perl
+libpipeline1:armhf
+libpixman-1-0:armhf
+libplymouth4:armhf
+libpng12-0:armhf
+libpod-latex-perl
+libpod-readme-perl
+libpolkit-agent-1-0:armhf
+libpolkit-backend-1-0:armhf
+libpolkit-gobject-1-0:armhf
+libpopt0:armhf
+libprocps3:armhf
+libprotobuf9:armhf
+libproxy1:armhf
+libpthread-stubs0-dev:armhf
+libpulse0:armhf
+libpython-stdlib:armhf
+libpython2.7:armhf
+libpython2.7-minimal:armhf
+libpython2.7-stdlib:armhf
+libpython3-stdlib:armhf
+libpython3.4:armhf
+libpython3.4-minimal:armhf
+libpython3.4-stdlib:armhf
+librarian0
+libreadline6:armhf
+libregexp-common-perl
+librest-0.7-0:armhf
+libroken18-heimdal:armhf
+librtmp1:armhf
+libruby2.1:armhf
+libsane:armhf
+libsane-common
+libsasl2-2:armhf
+libsasl2-modules:armhf
+libsasl2-modules-db:armhf
+libsdl1.2debian:armhf
+libselinux1:armhf
+libsemanage-common
+libsemanage1:armhf
+libsensors4:armhf
+libsepol1:armhf
+libsigsegv2:armhf
+libslang2:armhf
+libsmartcols1:armhf
+libsndfile1:armhf
+libsocket6-perl
+libsoftware-license-perl
+libsoup-gnome2.4-1:armhf
+libsoup2.4-1:armhf
+libsqlite3-0:armhf
+libss2:armhf
+libssl1.0.0:armhf
+libstatgrab9
+libstdc++-4.9-dev:armhf
+libstdc++6:armhf
+libsub-exporter-perl
+libsub-install-perl
+libsub-name-perl
+libsystemd0:armhf
+libtasn1-6:armhf
+libtcl8.6:armhf
+libterm-ui-perl
+libtext-levenshtein-perl
+libtext-soundex-perl
+libtext-template-perl
+libtext-unidecode-perl
+libthai-data
+libthai0:armhf
+libtie-ixhash-perl
+libtiff5:armhf
+libtiff5-dev:armhf
+libtiffxx5:armhf
+libtimedate-perl
+libtinfo5:armhf
+libtxc-dxtn-s2tc0:armhf
+libubsan0:armhf
+libudev1:armhf
+libunistring0:armhf
+liburi-perl
+libusb-0.1-4:armhf
+libusb-1.0-0:armhf
+libustr-1.0-1:armhf
+libuuid1:armhf
+libv4l-0:armhf
+libv4lconvert0:armhf
+libvorbis0a:armhf
+libvorbisenc2:armhf
+libvpx1:armhf
+libvte-2.90-9
+libvte-2.90-common
+libwayland-client0:armhf
+libwayland-cursor0:armhf
+libwind0-heimdal:armhf
+libwrap0:armhf
+libwww-perl
+libwww-robotrules-perl
+libx11-6:armhf
+libx11-data
+libx11-dev:armhf
+libx11-doc
+libx11-xcb-dev:armhf
+libx11-xcb1:armhf
+libxapian22
+libxau-dev:armhf
+libxau6:armhf
+libxcb-dri2-0:armhf
+libxcb-dri2-0-dev:armhf
+libxcb-dri3-0:armhf
+libxcb-dri3-dev:armhf
+libxcb-glx0:armhf
+libxcb-glx0-dev:armhf
+libxcb-present-dev:armhf
+libxcb-present0:armhf
+libxcb-randr0:armhf
+libxcb-randr0-dev:armhf
+libxcb-render0:armhf
+libxcb-render0-dev:armhf
+libxcb-shape0:armhf
+libxcb-shape0-dev:armhf
+libxcb-shm0:armhf
+libxcb-sync-dev:armhf
+libxcb-sync1:armhf
+libxcb-xfixes0:armhf
+libxcb-xfixes0-dev:armhf
+libxcb1:armhf
+libxcb1-dev:armhf
+libxcomposite1:armhf
+libxcursor1:armhf
+libxdamage-dev:armhf
+libxdamage1:armhf
+libxdmcp-dev:armhf
+libxdmcp6:armhf
+libxext-dev:armhf
+libxext6:armhf
+libxfixes-dev:armhf
+libxfixes3:armhf
+libxi6:armhf
+libxinerama1:armhf
+libxkbcommon0:armhf
+libxml-libxml-perl
+libxml-namespacesupport-perl
+libxml-parser-perl
+libxml-sax-base-perl
+libxml-sax-expat-perl
+libxml-sax-perl
+libxml2:armhf
+libxmuu1:armhf
+libxpm4:armhf
+libxrandr2:armhf
+libxrender1:armhf
+libxshmfence-dev:armhf
+libxshmfence1:armhf
+libxtables10
+libxtst6:armhf
+libxxf86dga1:armhf
+libxxf86vm-dev:armhf
+libxxf86vm1:armhf
+libyaml-0-2:armhf
+linaro-nano
+linaro-overlay-minimal
+lintian
+linux-firmware
+linux-libc-dev:armhf
+lm-sensors
+locales
+lockfile-progs
+login
+logrotate
+lsb-base
+lsb-release
+m4
+make
+makedev
+man-db
+manpages
+manpages-dev
+mawk
+mesa-common-dev:armhf
+mime-support
+mir-client-platform-mesa2:armhf
+module-init-tools
+mount
+mountall
+multiarch-support
+nano
+ncurses-base
+ncurses-bin
+ncurses-term
+net-tools
+netbase
+netcat-openbsd
+ntp
+ntpdate
+ocl-icd-dev
+ocl-icd-libopencl1:armhf
+ocl-icd-opencl-dev:armhf
+opencl-headers
+openssh-client
+openssh-server
+openssh-sftp-server
+openssl
+passwd
+patch
+patchutils
+perl
+perl-base
+perl-modules
+pkg-config
+plymouth
+plymouth-theme-ubuntu-text
+policykit-1
+procps
+python
+python-apt-common
+python-minimal
+python2.7
+python2.7-minimal
+python3
+python3-apt
+python3-chardet
+python3-debian
+python3-magic
+python3-minimal
+python3-pkg-resources
+python3-requests
+python3-six
+python3-urllib3
+python3.4
+python3.4-minimal
+rarian-compat
+read-edid
+readline-common
+rename
+rsync
+rsyslog
+ruby
+ruby2.1
+rubygems-integration
+screen
+sed
+sensible-utils
+sgml-base
+sgml-data
+shared-mime-info
+ssh
+ssh-import-id
+strace
+sudo
+synaptic
+systemd
+systemd-sysv
+sysv-rc
+sysvinit-utils
+t1utils
+tar
+tcpd
+tcsh
+texinfo
+tmux
+tzdata
+ubuntu-keyring
+ucf
+udev
+unzip
+upstart
+usbutils
+util-linux
+vim-common
+vim-nox
+vim-runtime
+wdiff
+wget
+whiptail
+x11-common
+x11proto-core-dev
+x11proto-damage-dev
+x11proto-dri2-dev
+x11proto-fixes-dev
+x11proto-gl-dev
+x11proto-input-dev
+x11proto-kb-dev
+x11proto-xext-dev
+x11proto-xf86vidmode-dev
+xauth
+xdg-user-dirs
+xkb-data
+xml-core
+xorg-sgml-doctools
+xtrans-dev
+xz-utils
+zlib1g:armhf
+zlib1g-dev:armhf</li>
+</ul>
+
+  </div>
+
+  
+</article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Your awesome title</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>
+            
+              Your awesome title
+            
+            </li>
+            
+            <li><a href="mailto:your-email@domain.com">your-email@domain.com</a></li>
+            
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/jekyll"><span class="icon icon--github"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">jekyll</span></a>
+
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/jekyllrb"><span class="icon icon--twitter"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+</span><span class="username">jekyllrb</span></a>
+
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

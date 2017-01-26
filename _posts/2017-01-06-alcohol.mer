@@ -1,0 +1,28 @@
+graph LR;
+  alcohol==>hangover;
+  alcohol--nAc-->dopamine;
+  alcohol-.nAc intracellular.->taurine;
+  alcohol--nAc extracellular-->taurine;
+  alcohol--VTA-->nAChR;
+  alcohol-.->mTOR;
+  alcohol-.liver.->anabolism;
+  alcohol--muscle-->anabolism;
+  alcohol--liver-->NADH/NAD+;
+  alcohol--dose dependent---testosterone;
+  alcohol-.testes.->testosterone;
+  alcohol-->cortisol;
+  alcohol-->prolactin;
+  alcohol-.->leptin;
+  alcohol--acetominophen-->hepatoxicity;
+  alcohol--ketosis-->hepatoxicity;
+  aspirin--gastric ADH-->alcohol;
+  agmatine--alcohol-->ulcers;
+  alcohol-->ulcers;
+
+  ethanol--ADHI,III-->acetaldehyde;
+  ethanol--catalase peroxisomes-->acetaldehyde;
+  ethanol--CYP2E1-->acetaldehyde;
+  acetaldehyde--ALDH-->acetate;
+  ethanol-->intestinalpermeability;
+  ethanol-.haemorrhagic erosion-.->epithelium;
+  ethanol-.barrier junctions-.->epithelium;

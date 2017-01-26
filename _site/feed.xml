@@ -1,0 +1,1134 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-01-26T11:04:58-06:00</updated><id>http://localhost:4000//</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2017/01/26/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2017-01-26T10:48:03-06:00</published><updated>2017-01-26T10:48:03-06:00</updated><id>http://localhost:4000/jekyll/update/2017/01/26/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2017/01/26/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry><entry><title type="html">Alcohol</title><link href="http://localhost:4000/2017/01/06/alcohol.mer" rel="alternate" type="text/html" title="Alcohol" /><published>2017-01-06T00:00:00-06:00</published><updated>2017-01-06T00:00:00-06:00</updated><id>http://localhost:4000/2017/01/06/alcohol</id><content type="html" xml:base="http://localhost:4000/2017/01/06/alcohol.mer">graph LR;
+  alcohol==&gt;hangover;
+  alcohol--nAc--&gt;dopamine;
+  alcohol-.nAc intracellular.-&gt;taurine;
+  alcohol--nAc extracellular--&gt;taurine;
+  alcohol--VTA--&gt;nAChR;
+  alcohol-.-&gt;mTOR;
+  alcohol-.liver.-&gt;anabolism;
+  alcohol--muscle--&gt;anabolism;
+  alcohol--liver--&gt;NADH/NAD+;
+  alcohol--dose dependent---testosterone;
+  alcohol-.testes.-&gt;testosterone;
+  alcohol--&gt;cortisol;
+  alcohol--&gt;prolactin;
+  alcohol-.-&gt;leptin;
+  alcohol--acetominophen--&gt;hepatoxicity;
+  alcohol--ketosis--&gt;hepatoxicity;
+  aspirin--gastric ADH--&gt;alcohol;
+  agmatine--alcohol--&gt;ulcers;
+  alcohol--&gt;ulcers;
+
+  ethanol--ADHI,III--&gt;acetaldehyde;
+  ethanol--catalase peroxisomes--&gt;acetaldehyde;
+  ethanol--CYP2E1--&gt;acetaldehyde;
+  acetaldehyde--ALDH--&gt;acetate;
+  ethanol--&gt;intestinalpermeability;
+  ethanol-.haemorrhagic erosion-.-&gt;epithelium;
+  ethanol-.barrier junctions-.-&gt;epithelium;</content><summary type="html">graph LR;
+  alcohol==&gt;hangover;
+  alcohol--nAc--&gt;dopamine;
+  alcohol-.nAc intracellular.-&gt;taurine;
+  alcohol--nAc extracellular--&gt;taurine;
+  alcohol--VTA--&gt;nAChR;
+  alcohol-.-&gt;mTOR;
+  alcohol-.liver.-&gt;anabolism;
+  alcohol--muscle--&gt;anabolism;
+  alcohol--liver--&gt;NADH/NAD+;
+  alcohol--dose dependent---testosterone;
+  alcohol-.testes.-&gt;testosterone;
+  alcohol--&gt;cortisol;
+  alcohol--&gt;prolactin;
+  alcohol-.-&gt;leptin;
+  alcohol--acetominophen--&gt;hepatoxicity;
+  alcohol--ketosis--&gt;hepatoxicity;
+  aspirin--gastric ADH--&gt;alcohol;
+  agmatine--alcohol--&gt;ulcers;
+  alcohol--&gt;ulcers;</summary></entry><entry><title type="html">Alcohol</title><link href="http://localhost:4000/biochemistry,/health/2017/01/06/alcohol.html" rel="alternate" type="text/html" title="Alcohol" /><published>2017-01-06T00:00:00-06:00</published><updated>2017-01-06T00:00:00-06:00</updated><id>http://localhost:4000/biochemistry,/health/2017/01/06/alcohol</id><content type="html" xml:base="http://localhost:4000/biochemistry,/health/2017/01/06/alcohol.html">&lt;h2 id=&quot;goal&quot;&gt;Goal&lt;/h2&gt;
+&lt;p&gt;To abolish the toxic, unwanted effects of alcohol commonly known as a hangover by administration of commonly available dietary supplements without affecting greater damage.&lt;/p&gt;
+
+&lt;h3 id=&quot;secondary-goals&quot;&gt;Secondary-Goals&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Minimize the effort required to avert a hangover&lt;/li&gt;
+  &lt;li&gt;Keep the wanted effects of alcohol intact&lt;/li&gt;
+  &lt;li&gt;Focus on short term, acute effects&lt;/li&gt;
+  &lt;li&gt;Maximize subsequent exercise performance&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;acute-effects-of-ethanol&quot;&gt;Acute Effects of Ethanol&lt;/h2&gt;
+
+&lt;h2 id=&quot;targets&quot;&gt;Targets&lt;/h2&gt;
+
+&lt;h2 id=&quot;pubmed-searches&quot;&gt;Pubmed Searches&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://eutils.ncbi.nlm.nih.gov/entrez/eutils/erss.cgi?rss_guid=1FKYAX__W2XpZZm58xCDY1jFdXcL9bJl2qxYZQeyXSqqvxVQig&quot;&gt;alcohol metabolism review, free full text, humans, last 5 years&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
+&lt;p&gt;This is a change.&lt;/p&gt;
+
+&lt;h1 id=&quot;references&quot;&gt;References&lt;/h1&gt;</content><summary type="html">Goal
+To abolish the toxic, unwanted effects of alcohol commonly known as a hangover by administration of commonly available dietary supplements without affecting greater damage.</summary></entry><entry><title type="html">Theory of Learning</title><link href="http://localhost:4000/brain/2016/09/19/Theory-of-Learning.html" rel="alternate" type="text/html" title="Theory of Learning" /><published>2016-09-19T00:00:00-05:00</published><updated>2016-09-19T00:00:00-05:00</updated><id>http://localhost:4000/brain/2016/09/19/Theory-of-Learning</id><content type="html" xml:base="http://localhost:4000/brain/2016/09/19/Theory-of-Learning.html">&lt;h1 id=&quot;stm&quot;&gt;STM&lt;/h1&gt;
+
+&lt;p&gt;Goal: To be able to reproduce all previous knowledge on a particular topic from memory - exact and conceptual replication.&lt;/p&gt;
+
+&lt;p&gt;Suppositions:
+* older information is more likely to be false
+* older information is more likely understood and learned first
+* information volume increases with time
+* encoding time is a limiting factor on learning
+* information volume is a limiting factor on learning
+* writing is the largest store of information
+*&lt;/p&gt;
+
+&lt;p&gt;Short cut suppositions:
+* conceptual replication is more important than exact replication&lt;/p&gt;
+
+&lt;p&gt;Start from the earliest, most influential papers. Contrast early beliefs and suppositions with current theory.&lt;/p&gt;
+
+&lt;p&gt;It might be helpful to others following this path to provide s&lt;/p&gt;</content><summary type="html">STM</summary></entry><entry><title type="html">AI</title><link href="http://localhost:4000/chemistry/2016/09/19/chemintro.html" rel="alternate" type="text/html" title="AI" /><published>2016-09-19T00:00:00-05:00</published><updated>2016-09-19T00:00:00-05:00</updated><id>http://localhost:4000/chemistry/2016/09/19/chemintro</id><content type="html" xml:base="http://localhost:4000/chemistry/2016/09/19/chemintro.html"></content><summary type="html"></summary></entry><entry><title type="html">AI</title><link href="http://localhost:4000/programming,brain/2016/09/19/AI.html" rel="alternate" type="text/html" title="AI" /><published>2016-09-19T00:00:00-05:00</published><updated>2016-09-19T00:00:00-05:00</updated><id>http://localhost:4000/programming,brain/2016/09/19/AI</id><content type="html" xml:base="http://localhost:4000/programming,brain/2016/09/19/AI.html">&lt;h1 id=&quot;ai-algorithms&quot;&gt;AI Algorithms&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Monte Carlo Tree Search&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;key-terms&quot;&gt;Key Terms&lt;/h1&gt;
+
+&lt;h2 id=&quot;art&quot;&gt;ART&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;bottom-up activation&lt;/li&gt;
+  &lt;li&gt;top-down expectations&lt;/li&gt;
+  &lt;li&gt;category&lt;/li&gt;
+  &lt;li&gt;competitive learning&lt;/li&gt;
+  &lt;li&gt;hebbian learning&lt;/li&gt;
+  &lt;li&gt;anti-hebbian learning&lt;/li&gt;
+  &lt;li&gt;lateral inhibition&lt;/li&gt;
+  &lt;li&gt;attention&lt;/li&gt;
+  &lt;li&gt;intention/attention&lt;/li&gt;
+  &lt;li&gt;catastrophic forgetting&lt;/li&gt;
+  &lt;li&gt;modulatory on-center&lt;/li&gt;
+  &lt;li&gt;modulatory off-surround&lt;/li&gt;
+  &lt;li&gt;resonance&lt;/li&gt;
+  &lt;li&gt;attentional system
+    &lt;ul&gt;
+      &lt;li&gt;expected events&lt;/li&gt;
+      &lt;li&gt;familiar events&lt;/li&gt;
+      &lt;li&gt;resonance&lt;/li&gt;
+      &lt;li&gt;attention&lt;/li&gt;
+      &lt;li&gt;learning&lt;/li&gt;
+      &lt;li&gt;recognition&lt;/li&gt;
+      &lt;li&gt;Temporal cortex - Prefrontal cortex&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;orienting system
+    &lt;ul&gt;
+      &lt;li&gt;unexpected events&lt;/li&gt;
+      &lt;li&gt;unfamiliar events&lt;/li&gt;
+      &lt;li&gt;reset&lt;/li&gt;
+      &lt;li&gt;memory search&lt;/li&gt;
+      &lt;li&gt;hypothesis testing&lt;/li&gt;
+      &lt;li&gt;hippocampal system&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;event-related potentials&lt;/li&gt;
+  &lt;li&gt;laminar computing&lt;/li&gt;
+  &lt;li&gt;working memory&lt;/li&gt;
+  &lt;li&gt;sequence learning&lt;/li&gt;
+  &lt;li&gt;bipole property&lt;/li&gt;
+  &lt;li&gt;working memory&lt;/li&gt;
+  &lt;li&gt;primacy gradient
+*&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;numenta&quot;&gt;Numenta&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;SDR
+*&lt;/li&gt;
+&lt;/ul&gt;</content><summary type="html">AI Algorithms</summary></entry><entry><title type="html">HTM on Parallella</title><link href="http://localhost:4000/programming/2016/09/14/parallella.html" rel="alternate" type="text/html" title="HTM on Parallella" /><published>2016-09-14T00:00:00-05:00</published><updated>2016-09-14T00:00:00-05:00</updated><id>http://localhost:4000/programming/2016/09/14/parallella</id><content type="html" xml:base="http://localhost:4000/programming/2016/09/14/parallella.html">&lt;h1 id=&quot;specifications&quot;&gt;Specifications&lt;/h1&gt;
+&lt;p&gt;Parallella board - kickstarter version with Zynq 7020
+16-core Epiphany processor&lt;/p&gt;
+
+&lt;h1 id=&quot;initial-setup&quot;&gt;Initial Setup&lt;/h1&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt update&lt;/code&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt upgrade&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;static-ip-configuration&quot;&gt;Static IP Configuration&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo vi /etc/network/interfaces.d/eth0&lt;/code&gt;
+Changed “dhcp” to static and added the relevant information.
+&lt;code class=&quot;highlighter-rouge&quot;&gt;
+auto eth0
+iface eth0 inet static
+        address 192.168.1.3
+        netmask 255.255.255.0
+        gateway 192.168.1.1
+&lt;/code&gt;
+Modified the DNS server configuration.
+&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo vi /etc/resolv.conf&lt;/code&gt;
+Modified to include one original DNS server from my ISP (75.76.84.70), one google server, and my gateway.
+&lt;code class=&quot;highlighter-rouge&quot;&gt;
+domain knology.net
+search knology.net
+nameserver 75.76.84.70
+nameserver 8.8.8.8
+nameserver 192.168.1.1
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;nodejs&quot;&gt;Node.js&lt;/h1&gt;
+&lt;p&gt;[Node.js Source Code] https://nodejs.org/dist/v4.5.0/node-v4.5.0.tar.gz
+&lt;code class=&quot;highlighter-rouge&quot;&gt;wget https://nodejs.org/dist/v4.5.0/node-v4.5.0.tar.gz&lt;/code&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;tar -xvf node-v4.5.0.tar.gz&lt;/code&gt;
+`cd node-v4.5.0’
+‘sudo ./configure’
+‘sudo make -j16’&lt;/p&gt;
+
+&lt;h1 id=&quot;apendix-a-installed-apps&quot;&gt;Apendix A: Installed Apps&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;acl&lt;/li&gt;
+  &lt;li&gt;adduser&lt;/li&gt;
+  &lt;li&gt;apt&lt;/li&gt;
+  &lt;li&gt;apt-utils&lt;/li&gt;
+  &lt;li&gt;at&lt;/li&gt;
+  &lt;li&gt;at-spi2-core&lt;/li&gt;
+  &lt;li&gt;avahi-daemon&lt;/li&gt;
+  &lt;li&gt;base-files&lt;/li&gt;
+  &lt;li&gt;base-passwd&lt;/li&gt;
+  &lt;li&gt;bash&lt;/li&gt;
+  &lt;li&gt;bc&lt;/li&gt;
+  &lt;li&gt;bind9-host&lt;/li&gt;
+  &lt;li&gt;binutils&lt;/li&gt;
+  &lt;li&gt;bison&lt;/li&gt;
+  &lt;li&gt;bsdmainutils&lt;/li&gt;
+  &lt;li&gt;bsdutils&lt;/li&gt;
+  &lt;li&gt;build-essential&lt;/li&gt;
+  &lt;li&gt;busybox-initramfs&lt;/li&gt;
+  &lt;li&gt;bwm-ng&lt;/li&gt;
+  &lt;li&gt;bzip2&lt;/li&gt;
+  &lt;li&gt;ca-certificates&lt;/li&gt;
+  &lt;li&gt;clinfo&lt;/li&gt;
+  &lt;li&gt;colord&lt;/li&gt;
+  &lt;li&gt;colord-data&lt;/li&gt;
+  &lt;li&gt;console-setup&lt;/li&gt;
+  &lt;li&gt;console-setup-linux&lt;/li&gt;
+  &lt;li&gt;coreutils&lt;/li&gt;
+  &lt;li&gt;cpio&lt;/li&gt;
+  &lt;li&gt;cpp&lt;/li&gt;
+  &lt;li&gt;cpp-4.9&lt;/li&gt;
+  &lt;li&gt;cron&lt;/li&gt;
+  &lt;li&gt;curl&lt;/li&gt;
+  &lt;li&gt;dash&lt;/li&gt;
+  &lt;li&gt;dbus&lt;/li&gt;
+  &lt;li&gt;dconf-gsettings-backend:armhf&lt;/li&gt;
+  &lt;li&gt;dconf-service&lt;/li&gt;
+  &lt;li&gt;dctrl-tools&lt;/li&gt;
+  &lt;li&gt;debconf&lt;/li&gt;
+  &lt;li&gt;debianutils&lt;/li&gt;
+  &lt;li&gt;device-tree-compiler&lt;/li&gt;
+  &lt;li&gt;devscripts&lt;/li&gt;
+  &lt;li&gt;dh-python&lt;/li&gt;
+  &lt;li&gt;diffstat&lt;/li&gt;
+  &lt;li&gt;diffutils&lt;/li&gt;
+  &lt;li&gt;distro-info-data&lt;/li&gt;
+  &lt;li&gt;dmsetup&lt;/li&gt;
+  &lt;li&gt;docbook-xml&lt;/li&gt;
+  &lt;li&gt;dpkg&lt;/li&gt;
+  &lt;li&gt;dpkg-dev&lt;/li&gt;
+  &lt;li&gt;dput&lt;/li&gt;
+  &lt;li&gt;e2fslibs:armhf&lt;/li&gt;
+  &lt;li&gt;e2fsprogs&lt;/li&gt;
+  &lt;li&gt;emacs-nox&lt;/li&gt;
+  &lt;li&gt;emacs24-bin-common&lt;/li&gt;
+  &lt;li&gt;emacs24-common&lt;/li&gt;
+  &lt;li&gt;emacs24-common-non-dfsg&lt;/li&gt;
+  &lt;li&gt;emacs24-nox&lt;/li&gt;
+  &lt;li&gt;emacsen-common&lt;/li&gt;
+  &lt;li&gt;ethtool&lt;/li&gt;
+  &lt;li&gt;fake-hwclock&lt;/li&gt;
+  &lt;li&gt;fakeroot&lt;/li&gt;
+  &lt;li&gt;file&lt;/li&gt;
+  &lt;li&gt;findutils&lt;/li&gt;
+  &lt;li&gt;flex&lt;/li&gt;
+  &lt;li&gt;fontconfig&lt;/li&gt;
+  &lt;li&gt;fontconfig-config&lt;/li&gt;
+  &lt;li&gt;fonts-dejavu-core&lt;/li&gt;
+  &lt;li&gt;ftp&lt;/li&gt;
+  &lt;li&gt;g++&lt;/li&gt;
+  &lt;li&gt;g++-4.9&lt;/li&gt;
+  &lt;li&gt;gawk&lt;/li&gt;
+  &lt;li&gt;gcc&lt;/li&gt;
+  &lt;li&gt;gcc-4.9&lt;/li&gt;
+  &lt;li&gt;gcc-4.9-base:armhf&lt;/li&gt;
+  &lt;li&gt;gcc-5-base:armhf&lt;/li&gt;
+  &lt;li&gt;gdb&lt;/li&gt;
+  &lt;li&gt;gdbserver&lt;/li&gt;
+  &lt;li&gt;geoip-database&lt;/li&gt;
+  &lt;li&gt;gettext&lt;/li&gt;
+  &lt;li&gt;gettext-base&lt;/li&gt;
+  &lt;li&gt;git&lt;/li&gt;
+  &lt;li&gt;git-man&lt;/li&gt;
+  &lt;li&gt;glib-networking:armhf&lt;/li&gt;
+  &lt;li&gt;glib-networking-common&lt;/li&gt;
+  &lt;li&gt;glib-networking-services&lt;/li&gt;
+  &lt;li&gt;gnupg&lt;/li&gt;
+  &lt;li&gt;gpgv&lt;/li&gt;
+  &lt;li&gt;grep&lt;/li&gt;
+  &lt;li&gt;groff-base&lt;/li&gt;
+  &lt;li&gt;gsettings-desktop-schemas&lt;/li&gt;
+  &lt;li&gt;gzip&lt;/li&gt;
+  &lt;li&gt;hardening-includes&lt;/li&gt;
+  &lt;li&gt;hicolor-icon-theme&lt;/li&gt;
+  &lt;li&gt;hostname&lt;/li&gt;
+  &lt;li&gt;htop&lt;/li&gt;
+  &lt;li&gt;i2c-tools&lt;/li&gt;
+  &lt;li&gt;ifplugd&lt;/li&gt;
+  &lt;li&gt;ifupdown&lt;/li&gt;
+  &lt;li&gt;info&lt;/li&gt;
+  &lt;li&gt;init&lt;/li&gt;
+  &lt;li&gt;init-system-helpers&lt;/li&gt;
+  &lt;li&gt;initramfs-tools&lt;/li&gt;
+  &lt;li&gt;initramfs-tools-bin&lt;/li&gt;
+  &lt;li&gt;initscripts&lt;/li&gt;
+  &lt;li&gt;insserv&lt;/li&gt;
+  &lt;li&gt;install-info&lt;/li&gt;
+  &lt;li&gt;intltool-debian&lt;/li&gt;
+  &lt;li&gt;iperf&lt;/li&gt;
+  &lt;li&gt;iproute&lt;/li&gt;
+  &lt;li&gt;iproute2&lt;/li&gt;
+  &lt;li&gt;iputils-ping&lt;/li&gt;
+  &lt;li&gt;isc-dhcp-client&lt;/li&gt;
+  &lt;li&gt;isc-dhcp-common&lt;/li&gt;
+  &lt;li&gt;iso-codes&lt;/li&gt;
+  &lt;li&gt;kbd&lt;/li&gt;
+  &lt;li&gt;keyboard-configuration&lt;/li&gt;
+  &lt;li&gt;klibc-utils&lt;/li&gt;
+  &lt;li&gt;kmod&lt;/li&gt;
+  &lt;li&gt;krb5-locales&lt;/li&gt;
+  &lt;li&gt;language-pack-en&lt;/li&gt;
+  &lt;li&gt;language-pack-en-base&lt;/li&gt;
+  &lt;li&gt;less&lt;/li&gt;
+  &lt;li&gt;libacl1:armhf
+libalgorithm-c3-perl
+libalgorithm-diff-perl
+libalgorithm-diff-xs-perl
+libalgorithm-merge-perl
+liballegro4.4:armhf
+libapparmor1:armhf
+libapt-inst1.5:armhf
+libapt-pkg-perl
+libapt-pkg4.12:armhf
+libarchive-extract-perl
+libarchive-zip-perl
+libasan1:armhf
+libasn1-8-heimdal:armhf
+libasound2:armhf
+libasound2-data
+libasprintf-dev:armhf
+libasprintf0c2:armhf
+libasyncns0:armhf
+libatk-bridge2.0-0:armhf
+libatk1.0-0:armhf
+libatk1.0-data
+libatm1:armhf
+libatomic1:armhf
+libatspi2.0-0:armhf
+libattr1:armhf
+libaudit-common
+libaudit1:armhf
+libauthen-sasl-perl
+libavahi-client3:armhf
+libavahi-common-data:armhf
+libavahi-common3:armhf
+libavahi-core7:armhf
+libbabeltrace-ctf1:armhf
+libbabeltrace1:armhf
+libbind9-90
+libbison-dev:armhf
+libblkid1:armhf
+libboost-filesystem1.55.0:armhf
+libboost-system1.55.0:armhf
+libbsd0:armhf
+libbz2-1.0:armhf
+libc-bin
+libc-dev-bin
+libc6:armhf
+libc6-dbg:armhf
+libc6-dev:armhf
+libcaca0:armhf
+libcairo-gobject2:armhf
+libcairo-perl
+libcairo2:armhf
+libcap-ng0:armhf
+libcap2:armhf
+libcap2-bin
+libcgi-fast-perl
+libcgi-pm-perl
+libcgmanager0:armhf
+libck-connector0:armhf
+libclass-accessor-perl
+libclass-c3-perl
+libclass-c3-xs-perl
+libclc-dev
+libclone-perl
+libcloog-isl4:armhf
+libcolord2:armhf
+libcolorhug2:armhf
+libcomerr2:armhf
+libcommon-sense-perl
+libconfig++-dev:armhf
+libconfig++9:armhf
+libconfig-dev:armhf
+libconfig-doc
+libconfig9:armhf
+libcpan-meta-perl
+libcroco3:armhf
+libcryptsetup4
+libcups2:armhf
+libcurl3:armhf
+libcurl3-gnutls:armhf
+libdaemon0:armhf
+libdata-optlist-perl
+libdata-section-perl
+libdatrie1:armhf
+libdb5.3:armhf
+libdbus-1-3:armhf
+libdconf1:armhf
+libdebconfclient0:armhf
+libdevil-dev
+libdevil1c2
+libdevmapper1.02.1:armhf
+libdigest-hmac-perl
+libdistro-info-perl
+libdns-export100
+libdns100
+libdpkg-perl
+libdrm-dev:armhf
+libdrm-exynos1:armhf
+libdrm-freedreno1:armhf
+libdrm-nouveau2:armhf
+libdrm-omap1:armhf
+libdrm-radeon1:armhf
+libdrm2:armhf
+libedit2:armhf
+libelf1:armhf
+libelfg0:armhf
+libelfg0-dev
+libemail-valid-perl
+libencode-locale-perl
+libept1.4.12:armhf
+liberror-perl
+libestr0
+libevent-2.0-5:armhf
+libevent-core-2.0-5:armhf
+libevent-dev
+libevent-extra-2.0-5:armhf
+libevent-openssl-2.0-5:armhf
+libevent-pthreads-2.0-5:armhf
+libexif12:armhf
+libexpat1:armhf
+libexporter-lite-perl
+libfakeroot:armhf
+libfcgi-perl
+libffi6:armhf
+libfftw3-3:armhf
+libfftw3-bin
+libfftw3-dev:armhf
+libfftw3-double3:armhf
+libfftw3-single3:armhf
+libfile-basedir-perl
+libfile-fcntllock-perl
+libfile-listing-perl
+libfl-dev:armhf
+libflac8:armhf
+libfont-afm-perl
+libfontconfig1:armhf
+libfreetype6:armhf
+libfribidi0:armhf
+libgcc-4.9-dev:armhf
+libgcc1:armhf
+libgcrypt20:armhf
+libgd3:armhf
+libgdbm3:armhf
+libgdk-pixbuf2.0-0:armhf
+libgdk-pixbuf2.0-common
+libgeoip1:armhf
+libgettextpo-dev:armhf
+libgettextpo0:armhf
+libgl1-mesa-dev:armhf
+libgl1-mesa-dri:armhf
+libgl1-mesa-glx:armhf
+libglapi-mesa:armhf
+libglib-perl
+libglib2.0-0:armhf
+libglib2.0-data
+libglu1-mesa:armhf
+libgmp-dev:armhf
+libgmp10:armhf
+libgmp3-dev
+libgmpxx4ldbl:armhf
+libgnutls-deb0-28:armhf
+libgnutls-openssl27:armhf
+libgomp1:armhf
+libgpg-error0:armhf
+libgphoto2-6:armhf
+libgphoto2-l10n
+libgphoto2-port10:armhf
+libgpm2:armhf
+libgraphite2-3:armhf
+libgssapi-krb5-2:armhf
+libgssapi3-heimdal:armhf
+libgtk-3-0:armhf
+libgtk-3-bin
+libgtk-3-common
+libgtk2-perl
+libgtk2.0-0:armhf
+libgtk2.0-bin
+libgtk2.0-common
+libgudev-1.0-0:armhf
+libgusb2:armhf
+libharfbuzz0b:armhf
+libhcrypto4-heimdal:armhf
+libheimbase1-heimdal:armhf
+libheimntlm0-heimdal:armhf
+libhogweed2:armhf
+libhtml-form-perl
+libhtml-format-perl
+libhtml-parser-perl
+libhtml-tagset-perl
+libhtml-tree-perl
+libhttp-cookies-perl
+libhttp-daemon-perl
+libhttp-date-perl
+libhttp-message-perl
+libhttp-negotiate-perl
+libhx509-5-heimdal:armhf
+libicu52:armhf
+libidn11:armhf
+libieee1284-3:armhf
+libintl-perl
+libio-html-perl
+libio-pty-perl
+libio-socket-inet6-perl
+libio-socket-ssl-perl
+libio-string-perl
+libio-stringy-perl
+libipc-run-perl
+libirs-export91
+libisc-export95
+libisc95
+libisccc90
+libisccfg-export90
+libisccfg90
+libisl13:armhf
+libjasper1:armhf
+libjbig-dev:armhf
+libjbig0:armhf
+libjpeg-dev:armhf
+libjpeg-turbo8:armhf
+libjpeg-turbo8-dev:armhf
+libjpeg8:armhf
+libjpeg8-dev:armhf
+libjs-jquery
+libjson-c2:armhf
+libjson-glib-1.0-0:armhf
+libjson-glib-1.0-common
+libjson-perl
+libjson-xs-perl
+libjson0:armhf
+libk5crypto3:armhf
+libkeyutils1:armhf
+libklibc
+libkmod2:armhf
+libkrb5-26-heimdal:armhf
+libkrb5-3:armhf
+libkrb5support0:armhf
+liblcms2-2:armhf
+liblcms2-dev:armhf
+libldap-2.4-2:armhf
+liblist-moreutils-perl
+libllvm3.6:armhf
+liblocale-gettext-perl
+liblockfile-bin
+liblockfile1:armhf
+liblog-message-perl
+liblog-message-simple-perl
+libltdl7:armhf
+liblua5.2-0:armhf
+liblwp-mediatypes-perl
+liblwp-protocol-https-perl
+liblwres90
+liblzma-dev:armhf
+liblzma5:armhf
+libmagic1:armhf
+libmailtools-perl
+libmirclient8:armhf
+libmircommon3:armhf
+libmirprotobuf0:armhf
+libmng2:armhf
+libmodule-build-perl
+libmodule-pluggable-perl
+libmodule-signature-perl
+libmount1:armhf
+libmpc-dev:armhf
+libmpc3:armhf
+libmpdec2:armhf
+libmpfr-dev:armhf
+libmpfr4:armhf
+libmro-compat-perl
+libncurses5:armhf
+libncursesw5:armhf
+libnet-dns-perl
+libnet-domain-tld-perl
+libnet-http-perl
+libnet-ip-perl
+libnet-smtp-ssl-perl
+libnet-ssleay-perl
+libnettle4:armhf
+libnewt0.52:armhf
+libnih-dbus1:armhf
+libnih1:armhf
+libnss-mdns:armhf
+libogg0:armhf
+libopts25:armhf
+libp11-kit0:armhf
+libpackage-constants-perl
+libpam-modules:armhf
+libpam-modules-bin
+libpam-runtime
+libpam-systemd:armhf
+libpam0g:armhf
+libpango-1.0-0:armhf
+libpango-perl
+libpangocairo-1.0-0:armhf
+libpangoft2-1.0-0:armhf
+libparams-util-perl
+libparse-debcontrol-perl
+libparse-debianchangelog-perl
+libpcre3:armhf
+libperl5.20
+libperlio-gzip-perl
+libpipeline1:armhf
+libpixman-1-0:armhf
+libplymouth4:armhf
+libpng12-0:armhf
+libpod-latex-perl
+libpod-readme-perl
+libpolkit-agent-1-0:armhf
+libpolkit-backend-1-0:armhf
+libpolkit-gobject-1-0:armhf
+libpopt0:armhf
+libprocps3:armhf
+libprotobuf9:armhf
+libproxy1:armhf
+libpthread-stubs0-dev:armhf
+libpulse0:armhf
+libpython-stdlib:armhf
+libpython2.7:armhf
+libpython2.7-minimal:armhf
+libpython2.7-stdlib:armhf
+libpython3-stdlib:armhf
+libpython3.4:armhf
+libpython3.4-minimal:armhf
+libpython3.4-stdlib:armhf
+librarian0
+libreadline6:armhf
+libregexp-common-perl
+librest-0.7-0:armhf
+libroken18-heimdal:armhf
+librtmp1:armhf
+libruby2.1:armhf
+libsane:armhf
+libsane-common
+libsasl2-2:armhf
+libsasl2-modules:armhf
+libsasl2-modules-db:armhf
+libsdl1.2debian:armhf
+libselinux1:armhf
+libsemanage-common
+libsemanage1:armhf
+libsensors4:armhf
+libsepol1:armhf
+libsigsegv2:armhf
+libslang2:armhf
+libsmartcols1:armhf
+libsndfile1:armhf
+libsocket6-perl
+libsoftware-license-perl
+libsoup-gnome2.4-1:armhf
+libsoup2.4-1:armhf
+libsqlite3-0:armhf
+libss2:armhf
+libssl1.0.0:armhf
+libstatgrab9
+libstdc++-4.9-dev:armhf
+libstdc++6:armhf
+libsub-exporter-perl
+libsub-install-perl
+libsub-name-perl
+libsystemd0:armhf
+libtasn1-6:armhf
+libtcl8.6:armhf
+libterm-ui-perl
+libtext-levenshtein-perl
+libtext-soundex-perl
+libtext-template-perl
+libtext-unidecode-perl
+libthai-data
+libthai0:armhf
+libtie-ixhash-perl
+libtiff5:armhf
+libtiff5-dev:armhf
+libtiffxx5:armhf
+libtimedate-perl
+libtinfo5:armhf
+libtxc-dxtn-s2tc0:armhf
+libubsan0:armhf
+libudev1:armhf
+libunistring0:armhf
+liburi-perl
+libusb-0.1-4:armhf
+libusb-1.0-0:armhf
+libustr-1.0-1:armhf
+libuuid1:armhf
+libv4l-0:armhf
+libv4lconvert0:armhf
+libvorbis0a:armhf
+libvorbisenc2:armhf
+libvpx1:armhf
+libvte-2.90-9
+libvte-2.90-common
+libwayland-client0:armhf
+libwayland-cursor0:armhf
+libwind0-heimdal:armhf
+libwrap0:armhf
+libwww-perl
+libwww-robotrules-perl
+libx11-6:armhf
+libx11-data
+libx11-dev:armhf
+libx11-doc
+libx11-xcb-dev:armhf
+libx11-xcb1:armhf
+libxapian22
+libxau-dev:armhf
+libxau6:armhf
+libxcb-dri2-0:armhf
+libxcb-dri2-0-dev:armhf
+libxcb-dri3-0:armhf
+libxcb-dri3-dev:armhf
+libxcb-glx0:armhf
+libxcb-glx0-dev:armhf
+libxcb-present-dev:armhf
+libxcb-present0:armhf
+libxcb-randr0:armhf
+libxcb-randr0-dev:armhf
+libxcb-render0:armhf
+libxcb-render0-dev:armhf
+libxcb-shape0:armhf
+libxcb-shape0-dev:armhf
+libxcb-shm0:armhf
+libxcb-sync-dev:armhf
+libxcb-sync1:armhf
+libxcb-xfixes0:armhf
+libxcb-xfixes0-dev:armhf
+libxcb1:armhf
+libxcb1-dev:armhf
+libxcomposite1:armhf
+libxcursor1:armhf
+libxdamage-dev:armhf
+libxdamage1:armhf
+libxdmcp-dev:armhf
+libxdmcp6:armhf
+libxext-dev:armhf
+libxext6:armhf
+libxfixes-dev:armhf
+libxfixes3:armhf
+libxi6:armhf
+libxinerama1:armhf
+libxkbcommon0:armhf
+libxml-libxml-perl
+libxml-namespacesupport-perl
+libxml-parser-perl
+libxml-sax-base-perl
+libxml-sax-expat-perl
+libxml-sax-perl
+libxml2:armhf
+libxmuu1:armhf
+libxpm4:armhf
+libxrandr2:armhf
+libxrender1:armhf
+libxshmfence-dev:armhf
+libxshmfence1:armhf
+libxtables10
+libxtst6:armhf
+libxxf86dga1:armhf
+libxxf86vm-dev:armhf
+libxxf86vm1:armhf
+libyaml-0-2:armhf
+linaro-nano
+linaro-overlay-minimal
+lintian
+linux-firmware
+linux-libc-dev:armhf
+lm-sensors
+locales
+lockfile-progs
+login
+logrotate
+lsb-base
+lsb-release
+m4
+make
+makedev
+man-db
+manpages
+manpages-dev
+mawk
+mesa-common-dev:armhf
+mime-support
+mir-client-platform-mesa2:armhf
+module-init-tools
+mount
+mountall
+multiarch-support
+nano
+ncurses-base
+ncurses-bin
+ncurses-term
+net-tools
+netbase
+netcat-openbsd
+ntp
+ntpdate
+ocl-icd-dev
+ocl-icd-libopencl1:armhf
+ocl-icd-opencl-dev:armhf
+opencl-headers
+openssh-client
+openssh-server
+openssh-sftp-server
+openssl
+passwd
+patch
+patchutils
+perl
+perl-base
+perl-modules
+pkg-config
+plymouth
+plymouth-theme-ubuntu-text
+policykit-1
+procps
+python
+python-apt-common
+python-minimal
+python2.7
+python2.7-minimal
+python3
+python3-apt
+python3-chardet
+python3-debian
+python3-magic
+python3-minimal
+python3-pkg-resources
+python3-requests
+python3-six
+python3-urllib3
+python3.4
+python3.4-minimal
+rarian-compat
+read-edid
+readline-common
+rename
+rsync
+rsyslog
+ruby
+ruby2.1
+rubygems-integration
+screen
+sed
+sensible-utils
+sgml-base
+sgml-data
+shared-mime-info
+ssh
+ssh-import-id
+strace
+sudo
+synaptic
+systemd
+systemd-sysv
+sysv-rc
+sysvinit-utils
+t1utils
+tar
+tcpd
+tcsh
+texinfo
+tmux
+tzdata
+ubuntu-keyring
+ucf
+udev
+unzip
+upstart
+usbutils
+util-linux
+vim-common
+vim-nox
+vim-runtime
+wdiff
+wget
+whiptail
+x11-common
+x11proto-core-dev
+x11proto-damage-dev
+x11proto-dri2-dev
+x11proto-fixes-dev
+x11proto-gl-dev
+x11proto-input-dev
+x11proto-kb-dev
+x11proto-xext-dev
+x11proto-xf86vidmode-dev
+xauth
+xdg-user-dirs
+xkb-data
+xml-core
+xorg-sgml-doctools
+xtrans-dev
+xz-utils
+zlib1g:armhf
+zlib1g-dev:armhf&lt;/li&gt;
+&lt;/ul&gt;</content><summary type="html">Specifications
+Parallella board - kickstarter version with Zynq 7020
+16-core Epiphany processor</summary></entry><entry><title type="html">H2O2 Concentraion</title><link href="http://localhost:4000/chemistry/2015/08/11/concH2O2.html" rel="alternate" type="text/html" title="H2O2 Concentraion" /><published>2015-08-11T00:00:00-05:00</published><updated>2015-08-11T00:00:00-05:00</updated><id>http://localhost:4000/chemistry/2015/08/11/concH2O2</id><content type="html" xml:base="http://localhost:4000/chemistry/2015/08/11/concH2O2.html">&lt;h3&gt;Concetration of Hydrogen Peroxide Soltuion via Evaporation&lt;/h3&gt;
+&lt;h4&gt;Motivation&lt;/h4&gt;
+&lt;p&gt;Hydrogen peroxide is used in many experiments as a source of oxygen. It is famous for the &lt;a target=&quot;new_window&quot; href=&quot;http://www.youtube.com/watch?v=ezsur0L0L1c&quot;&gt;elephant toothpaste&lt;/a&gt; experiment. H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt; is also used for many explosive syntheses (which I won't be covering here). Unfortunately, it has become increasingly difficult to obtain 30% hydrogen peroxide. H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt; is sold in almost every grocery store as 3% stabilized solution. It is a simple matter of heating the solution to drive off 10x the water to concentrate it. One problem arises because hydrogen peroxide decomposes easily in the presence of light or heat. There are many videos out there about concentrating H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;, so I would just like to mention an adaptation I found that helps quell this problem.&lt;/p&gt;
+&lt;h4&gt;Process &amp; Experimental Set Up&lt;/h4&gt;
+H&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt; is subjected to elevated temperatures. Air is passed over the liquid to facilitate evaporation. Care should be taken to minimize foreign particles in the air stream.
+&lt;br&gt;My system consists of a candle warmer and a pyrex bowl under an aluminum foil &quot;hat&quot; with a computer fan blowing over it. The foil provides a cover against particles and light (as much as possible anyway).
+&lt;h4&gt;Notes&lt;/h4&gt;
+The maximum concentration using this method is about 30%. The higher the temperature the faster the decomposition but also the faster you will obtain the end product. If you are willing to wait long enough, you can just let the peroxide sit out. It will slowly (many days or weeks) evaporate. I don't know exactly what the concentration would be since 70% peroxide spontaneously detonates at room temperature. I bet you could use chemical dehydration with silica gel or something similar. That would virtually eliminate particles and decomposition... that will be next.
+
+Watch [this](http://www.youtube.com/embed/xvYeefmbmZI &quot;YouTube&quot;) video for a good demo of the project (not mine).</content><summary type="html">Concetration of Hydrogen Peroxide Soltuion via Evaporation
+Motivation
+Hydrogen peroxide is used in many experiments as a source of oxygen. It is famous for the elephant toothpaste experiment. H2O2 is also used for many explosive syntheses (which I won't be covering here). Unfortunately, it has become increasingly difficult to obtain 30% hydrogen peroxide. H2O2 is sold in almost every grocery store as 3% stabilized solution. It is a simple matter of heating the solution to drive off 10x the water to concentrate it. One problem arises because hydrogen peroxide decomposes easily in the presence of light or heat. There are many videos out there about concentrating H2O2, so I would just like to mention an adaptation I found that helps quell this problem.
+Process &amp; Experimental Set Up
+H2O2 is subjected to elevated temperatures. Air is passed over the liquid to facilitate evaporation. Care should be taken to minimize foreign particles in the air stream.
+My system consists of a candle warmer and a pyrex bowl under an aluminum foil &quot;hat&quot; with a computer fan blowing over it. The foil provides a cover against particles and light (as much as possible anyway).
+Notes
+The maximum concentration using this method is about 30%. The higher the temperature the faster the decomposition but also the faster you will obtain the end product. If you are willing to wait long enough, you can just let the peroxide sit out. It will slowly (many days or weeks) evaporate. I don't know exactly what the concentration would be since 70% peroxide spontaneously detonates at room temperature. I bet you could use chemical dehydration with silica gel or something similar. That would virtually eliminate particles and decomposition... that will be next.</summary></entry><entry><title type="html">Methylene Blue</title><link href="http://localhost:4000/chemistry,nootropics/2015/06/08/methyleneblue.html" rel="alternate" type="text/html" title="Methylene Blue" /><published>2015-06-08T00:00:00-05:00</published><updated>2015-06-08T00:00:00-05:00</updated><id>http://localhost:4000/chemistry,nootropics/2015/06/08/methyleneblue</id><content type="html" xml:base="http://localhost:4000/chemistry,nootropics/2015/06/08/methyleneblue.html">&lt;h1 id=&quot;abstract&quot;&gt;Abstract&lt;/h1&gt;
+&lt;p&gt;Herein contains the synopsis of my research on MB as a rarely used, highly experimental modifier of mitochondrial metabolism. MB can act as an alternative electron acceptor/donor enhancing the efficiency of energy production. MB tends to accumulate in areas of high metabolic need (e.g. brain tissue). [Phase 3 clinical trials] are under way using Rember© for treatment of Alzheimer’s Disease showing great promise. MB’s action is dose-dependent with many interactions that vary by concentration.&lt;/p&gt;
+
+&lt;p&gt;The purification and formulation of MB is paramount to ensure safety and efficacy. Impurities including heavy metals and similarly structured dyes are commonly found in commercial pharmaceutical formulations. The pharmacokinetics of MB depends highly on the structure of the dye and the absorption dynamics. MB can be bought OTC as dry powder or solution in lab, reagent, and sometimes pharmaceutical grade. Purification in a home lab is possible.&lt;/p&gt;
+
+&lt;h2 id=&quot;claims&quot;&gt;Claims&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Methylene blue can be made safe and non-toxic when properly prepared and administered orally.&lt;/li&gt;
+  &lt;li&gt;Methylene blue can function as an alternative electron accepter/donor and bypass certain complexes of the &lt;abbr title=&quot;Electron Transport Chain&quot;&gt;ETC&lt;/abbr&gt;.&lt;/li&gt;
+  &lt;li&gt;Methylene blue has dose dependent effects and proper formulation is essential.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;authors-conclusions&quot;&gt;Author’s Conclusions&lt;/h2&gt;
+&lt;p&gt;MB’s interactions with MAO are the limiting factor in my personal use. The benefits (if real at all) are not sufficient to deprive myself of aged cheddar cheese. I will likely pick up this project again when the completed clinical trial has been published.&lt;/p&gt;
+
+&lt;h2 id=&quot;plain-language-summary&quot;&gt;Plain Language Summary&lt;/h2&gt;
+&lt;p&gt;MB may increase performance in many aspects of life including memory, attention, general physical performance, and possibly help prevent certain diseases like cognitive decline. MB has been used for more than a century and has a well known safety profile. Caution is advised for attempting to supplement with MB at home, however. Many over the counter forms may be contaminated with impurities that cause adverse health effects. The effects are radically different at varying doses.&lt;/p&gt;
+
+&lt;h2 id=&quot;abstract-1&quot;&gt;Abstract&lt;/h2&gt;
+&lt;p&gt;Herein contains the synopsis of my research on MB as a rarely used, experimental modifier of mitochondrial metabolism. MB can act as an alternative electron acceptor/donor enhancing the efficiency of energy production. MB tends to accumulate in areas of high metabolic need (e.g. brain tissue) due to MB’s aromatic and redox nature. [Phase 3 clinical trials] are under way using Rember© for treatment of Alzheimer’s Disease showing great promise. MB’s action is dose-dependent with many interactions that vary by concentration.&lt;/p&gt;
+
+&lt;p&gt;The purification and formulation of MB are paramount to ensure safety and efficacy. Impurities including heavy metals and similarly structured dyes are commonly found in commercial pharmaceutical formulations. The pharmacokinetics of MB depends highly on the structure of the dye and the absorption dynamics. MB can be bought OTC as dry powder or solution in lab, reagent, and sometimes illegal pharmaceutical grade and purified at home using easily obtainable chemicals and equipment.&lt;/p&gt;
+
+&lt;h2 id=&quot;physical-characteristics&quot;&gt;Physical Characteristics&lt;/h2&gt;
+
+&lt;h3 id=&quot;moities&quot;&gt;Moities&lt;/h3&gt;
+&lt;p&gt;Acetyl-, Leuco-, Hydrates-&lt;/p&gt;
+
+&lt;h2 id=&quot;pharmacokinetics&quot;&gt;Pharmacokinetics&lt;/h2&gt;
+&lt;p&gt;MB’s absorption is affected by pH, oxidation status,
+MB has a substantially alterted pharmacokinetics from the more traditional zenobiotics due to the Mitochondrial Membrane Potential (&lt;abbr title=&quot;Mitochondrial Membrane Potential&quot;&gt;MMP&lt;/abbr&gt;).&lt;/p&gt;
+
+&lt;h3 id=&quot;interactions&quot;&gt;Interactions&lt;/h3&gt;
+&lt;p&gt;Given as the in-vitro EC50:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Acetylcholinesterase inhibition (1 μM)&lt;/li&gt;
+  &lt;li&gt;Nitric Oxide Synthase inhibition (5 μM)&lt;/li&gt;
+  &lt;li&gt;Oxidation of Cysteine Residues (2-30 μM)&lt;/li&gt;
+  &lt;li&gt;β-Amyloid Aggregation inhibition (2.3-12.4 μM)&lt;/li&gt;
+  &lt;li&gt;Monoamine Oxidase B inhibition (5.5 μM)&lt;/li&gt;
+  &lt;li&gt;Glutamatergic inhibition (5-50 μM)&lt;/li&gt;
+  &lt;li&gt;Noradrenaline Uptake inhibition (50 μM)&lt;/li&gt;
+  &lt;li&gt;Guanylate Cyclase inhibition (60 μM)&lt;/li&gt;
+  &lt;li&gt;Monoamine Oxidase A inhibition (0.16 μM)&lt;/li&gt;
+  &lt;li&gt;Enhanced Mitochondrial β Oxidation (0.3 μM)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;adverse-interactions&quot;&gt;Adverse Interactions&lt;/h4&gt;
+&lt;p&gt;Apparently when MOAIs are mixed with tyramine containing foods, a hypertensive crisis can occur in certain sensitive individuals… Namely, me.&lt;/p&gt;
+
+&lt;h2 id=&quot;methylene-blue-preparation&quot;&gt;Methylene Blue Preparation&lt;/h2&gt;
+
+&lt;h3 id=&quot;purification&quot;&gt;Purification&lt;/h3&gt;
+&lt;p&gt;Aiming for &amp;gt;98% purity. Minimizing heavy metal contamination and similarly structured dyes. Rubber gloves are your friend since MB dyes just about anything and at extremely low concentrations.
+Each method of purification can be applied in any order or combination. As with any purification, more is better but at the cost of greater product loss. Most contamination will be in the form of inorganic metal salts and like structured dyes. Soluble impurities can be made soluble by the addition of a precipitant. Recrystallization allows separation of precipitated product from dissolved impurities. Organic extraction removes similar dyes. I am currently purifying a Methylene Blue product bought online labeled as 93% dye content. Procedures will be administered in this order:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Dissolve MB in excess water&lt;/li&gt;
+  &lt;li&gt;Add precipitant&lt;/li&gt;
+  &lt;li&gt;Filter MB solution and discard filtrete&lt;/li&gt;
+  &lt;li&gt;Organic Extraction&lt;/li&gt;
+  &lt;li&gt;pH adjustment&lt;/li&gt;
+  &lt;li&gt;Heating to vaporize dissolved organic solvent&lt;/li&gt;
+  &lt;li&gt;Hot Salt Recrystallization&lt;/li&gt;
+  &lt;li&gt;(optional) Cool Acid Recrystallization for recovery&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;hot-salt-recrystallization&quot;&gt;Hot Salt Recrystallization&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;20g crude MB dissolved in 1700 ml H~2~O at 65°C&lt;/li&gt;
+  &lt;li&gt;Add 200g pure NaCl&lt;/li&gt;
+  &lt;li&gt;Cool mixture to 22°C over 3.5 hours&lt;/li&gt;
+  &lt;li&gt;Vacuum filter resulting crystals and dry at 75°C for 16 hours
+    &lt;ul&gt;
+      &lt;li&gt;optional washing with chilled, saturated salt solution&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;cool-acid-recrystallization&quot;&gt;Cool Acid Recrystallization&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;20g crude MB dissolved in 1700 ml H2O at 65°C&lt;/li&gt;
+  &lt;li&gt;Cool to 22°C&lt;/li&gt;
+  &lt;li&gt;Adjust pH to 1 using aqueous HCl&lt;/li&gt;
+  &lt;li&gt;Vacuum filter suspension and dry at 75°C over 16 hours
+    &lt;ul&gt;
+      &lt;li&gt;optional washing with chilled, HCl solution&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;organic-extraction&quot;&gt;Organic Extraction&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;Add 20% by volume immiscible organic solvent (DCM, Naptha, toluene) to MB solution&lt;/li&gt;
+  &lt;li&gt;Mix extensively for &amp;gt;10 minutes&lt;/li&gt;
+  &lt;li&gt;Allow layers to separate&lt;/li&gt;
+  &lt;li&gt;Remove organic solvent layer by draining or siphoning&lt;/li&gt;
+  &lt;li&gt;Repeat 1-4 times&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;metal-precipitation&quot;&gt;Metal Precipitation&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;4.5g crude MB dissolved in 125ml at 65°C&lt;/li&gt;
+  &lt;li&gt;Cool solution to room temperature&lt;/li&gt;
+  &lt;li&gt;Prepare a separate solution of sodium carbonate (163mg Na~2~CO~3~ in 10ml H~2~O)&lt;/li&gt;
+  &lt;li&gt;Add sodium carbonate solution to MB&lt;/li&gt;
+  &lt;li&gt;Stir for &amp;gt;10 minutes&lt;/li&gt;
+  &lt;li&gt;Vaccum filter and collect filtrate for further processing&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;final-procedure&quot;&gt;Final Procedure&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;Dissolve 5g crude MB in 230 ml H20&lt;/li&gt;
+  &lt;li&gt;Heat solution to 65°C for &amp;gt;30 min while stirring&lt;/li&gt;
+  &lt;li&gt;Cool solution to 10°C&lt;/li&gt;
+  &lt;li&gt;Prepare solution of 163mg sodium carbonate in 10ml H2O&lt;/li&gt;
+  &lt;li&gt;Add Na2CO3 solution to MB solution at once&lt;/li&gt;
+  &lt;li&gt;Stir continuously for 15 min&lt;/li&gt;
+  &lt;li&gt;Vacuum filter and discard solid products&lt;/li&gt;
+  &lt;li&gt;Add 50ml organic solvent (naphtha) to MB solution&lt;/li&gt;
+  &lt;li&gt;Stir vigorously for 10 min&lt;/li&gt;
+  &lt;li&gt;Siphon or separate aqueous layer from mixture ensuring no organic layer is taken&lt;/li&gt;
+  &lt;li&gt;Discard or recycle organic layer&lt;/li&gt;
+  &lt;li&gt;Repeat steps 8-11 twice more or as needed to yield colorless organic layer&lt;/li&gt;
+  &lt;li&gt;Adjust resulting solution to pH five using dilute HCl&lt;/li&gt;
+  &lt;li&gt;Heat solution to 65°C for &amp;gt;10 min&lt;/li&gt;
+  &lt;li&gt;Add 118mg sodium chloride per milliliter solution&lt;/li&gt;
+  &lt;li&gt;Vacuum filter solution to yield purified crystals of MB&lt;/li&gt;
+  &lt;li&gt;Dry crystals at 75°C over 16 hours to achieve final product&lt;/li&gt;
+  &lt;li&gt;Optional: repeat all or none of the purification procedures for greater purity or recovering product&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;formulation&quot;&gt;Formulation&lt;/h3&gt;
+&lt;p&gt;Methylene Blue can be consumed as a solution through direct ingestion or formed into capsules. I began with the former for easy formulation and testing. This method leaves something to be desired for long term ease of use and definitely for taste. Depending on the oxidation state of MB, the taste can be somewhat off-putting and possibly cause some throat irritation. The reduced form is almost tasteless. The best option to mitigate these issues is to manufacture pills or capsules. Capsules are somewhat easier and completely mask the taste with little effort. Care must be taken to ensure MB is delivered in the stomach and in the reduced form as much as possible. Degradation of MB can occur in the high pH of the lower gut resulting in uneven and unpredictable effects. Again, quick-dissolving gelatin capsules are ideal delivery vehicles here. In addition, since only small amounts of MB are needed per dose, an inert filler should be added. Optional inclusion of a thixotropic suspending agent can increase optimal absorption by increasing the time for stomach passage. The addition of ascorbic acid will reduce MB in the low pH of the stomach to its more effective leuco form.&lt;/p&gt;
+
+&lt;p&gt;Further research is necessary to determine what effect the absorption and pharmacological effects of the alternate forms of MB would have on the results of previous trials and research. It may very well be the in vitro studies showing almost an order of magnitude increase in mitochondrial respiration with MB exposure are not translated well to humans simply because of the pharmacokinetic differences. Some research indicates that only leuco-MB crosses the BBB. Still, other evidence points to equal forms of color and colorless forms of MB in serum. Most likely this is caused by the balancing effects of other antioxidant compounds and electron donors in the blood stream. In any case, it can’t hurt to include an innocuous reducing compound in the formula.&lt;/p&gt;
+
+&lt;h4 id=&quot;dosing&quot;&gt;Dosing&lt;/h4&gt;
+&lt;p&gt;Clinical trials with Rember™ indicate good performance for patients with cognitive decline in the 30-100mg three time daily formulation. It is worth noting that the 100mg dose suffered from absorption issues and subsequently lost some of its efficacy. Many subjective reports from the community (/r/nootropics, longecity) indicate best performance at three orders of magnitude lower doses. I will summarily dismiss these reports as a combination of poor methodology, placebo, and the limitation of adverse hematological effects. The intended benefits are dose dependent so the formulation must reflect the goal of the user.&lt;/p&gt;
+
+&lt;h4 id=&quot;liquid-formulation&quot;&gt;Liquid Formulation&lt;/h4&gt;
+&lt;p&gt;Maximum concentration of MB in water is approximately 43mg/ml (4.3%). The addition of ascorbic acid further reduces solubility. It is therefore best to aim for 1-2% concentration. If an accurate scale is available, daily preparation of solutions are possible. The scale that I am using at the moment has an accuracy of only 0.01g so I usually prepare large batch which can be portioned out as needed. As an example formula for a month’s supply:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Dissolve 5.4g MB in 270 ml H~2~0&lt;/li&gt;
+  &lt;li&gt;Add 10.8g ascorbic acid&lt;/li&gt;
+  &lt;li&gt;Stir for &amp;gt;10min&lt;/li&gt;
+  &lt;li&gt;Consume 3ml three times daily&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Solution is easily stored in 10ml syringes. Consumption can be done by directly squirting the solution to the back of the tongue. Although, this method results in a very blue tongue. An alternative is to dispense the solution into a larger amount of water to consume over several minutes. Of course, you could dispense an entire day’s worth of MB into a water bottle and sip throughout the day resulting in very even serum concentrations. I’m usually to busy/distracted to remember to do this method and end up with half drunk bottles at bedtime.&lt;/p&gt;
+
+&lt;p&gt;With those issues in mind I have chosen easily available products to create this formula. Microcrystalline cellulose will function as the filler and excipient. I was able to obtain a sample of Aerosil 200, a commercial colloidal silicon dioxide product intended as a thixotropic suspending agent. The ideal dose as indicated by the clinical trials of Rember will be between thirty and ninety milligrams.&lt;/p&gt;
+
+&lt;h2 id=&quot;unsorted&quot;&gt;Unsorted&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;cationic thiazine dye&lt;/li&gt;
+  &lt;li&gt;low redox potential - efficient cycling&lt;/li&gt;
+  &lt;li&gt;tyramine induced hypertensive crisis&lt;/li&gt;
+  &lt;li&gt;genotoxic effects with concurrent light exposure&lt;/li&gt;
+  &lt;li&gt;light exposure with MB alters function during in vitro experiments (photosensitized)&lt;/li&gt;
+  &lt;li&gt;major metabolites, azure B &amp;amp; A, and their effects on MAOs&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- Abbreviations --&gt;</content><summary type="html">Abstract
+Herein contains the synopsis of my research on MB as a rarely used, highly experimental modifier of mitochondrial metabolism. MB can act as an alternative electron acceptor/donor enhancing the efficiency of energy production. MB tends to accumulate in areas of high metabolic need (e.g. brain tissue). [Phase 3 clinical trials] are under way using Rember© for treatment of Alzheimer’s Disease showing great promise. MB’s action is dose-dependent with many interactions that vary by concentration.</summary></entry><entry><title type="html">Spot Welder</title><link href="http://localhost:4000/electronics/2011/12/10/spotwelder.html" rel="alternate" type="text/html" title="Spot Welder" /><published>2011-12-10T00:00:00-06:00</published><updated>2011-12-10T00:00:00-06:00</updated><id>http://localhost:4000/electronics/2011/12/10/spotwelder</id><content type="html" xml:base="http://localhost:4000/electronics/2011/12/10/spotwelder.html">&lt;div id=&quot;conhead&quot;&gt;
+	&lt;a href=&quot;/projects/spotwelder/full.JPG&quot;&gt;&lt;img src=&quot;/projects/spotwelder/full_s.JPG&quot; width=&quot;250&quot; alt=&quot;Spotwelder Image Overview&quot;&gt;&lt;/a&gt;
+	&lt;br&gt;Click on the image for the large version.
+&lt;/div&gt;
+
+&lt;h2&gt;Background&lt;/h2&gt;
+&lt;p&gt;I first got interested in this project because I needed to spot weld titanium cathodes and anodes for the &lt;a href=&quot;/projects/chloratecell.html&quot;&gt;Chlorate cell project&lt;/a&gt;. I also use it to make frames for other projects such as the &lt;a href=&quot;/projects/hotplate.html&quot;&gt;$1.49 hot plate&lt;/a&gt;. A quick Google search brought a tutorial from Hack A Day's page: &lt;a target=&quot;new_window&quot; href=&quot;http://hackaday.com/2009/06/23/how-to-build-your-own-spot-welder/&quot;&gt;Spot Welder&lt;/a&gt;. I started out with a close copy of their spot welder but found it to be unsatisfactory. Probably because I used pre-1982 pennies for the contacts instead of MIG welder tips like they suggested. The wires I used were way too small for the current produced. So I built a second one using steel bolts as the contacts and beefier wiring. It is somewhat better but not the best.&lt;/p&gt;
+&lt;p&gt;Spot welders join two thin pieces of metal together by resistive heating. The metal is sandwiched between two contacts and a large current (&gt;400 amps) is applied. The contact point between the two metal pieces has a high resistance and heats up to the melting point. The metal flows together and becomes one piece. The current is removed and the is metal allowed to cool. Now you have a spot of welded metal. Spot welders are used industrially to make just about every metal frame on the market from cars to toasters. They give short and precise welding without heating up the whole piece. They are limited to thin metal about nine gauge or smaller and usually aluminum or steel only. Spot welders are usually capacitor bank units instead of the constant source welders made by amateurs. Check out the &lt;a target=&quot;new_window&quot; href=&quot;http://en.wikipedia.org/wiki/Spot_welding&quot;&gt;wikipedia page&lt;/a&gt; on spot welding for more info.&lt;/p&gt;
+
+&lt;h2&gt;The Making of...&lt;/h2&gt;
+&lt;p&gt;The image at the top of the page is the finished welder. I have made lots of good welds with this machine. Overall it took about an hour to make. Most of that time I was fighting with the MOT secondary. It was more of an epic two day battle really.&lt;/p&gt;
+&lt;h3&gt;Step 1: Transformer&lt;/h3&gt;
+&lt;a href=&quot;/projects/spotwelder/transformer.JPG&quot;&gt;&lt;img src=&quot;/projects/spotwelder/transformer_s.JPG&quot; width=&quot;200&quot; alt=&quot;Rewound Transformer&quot;&gt;&lt;/a&gt;
+&lt;p&gt;The first thing to do is locate a suitable transformer. Microwave Oven Transformers (MOT) are the best. They are designed for high power applications (&gt;1 KW) and the MOTs are easy to rewind. Not to mention that people throw them out all the time. Often they just have a blown fuse and rarely, if ever, the transformers are blown. If you don't have a microwave to rip apart post an add in your local freecycle or free craigslist. You will undoubtedly get a few hits. Try to find the heaviest transformer you can. Heavier means more power when it comes to transformers. Here is a good &lt;a target=&quot;new_window&quot; href=&quot;http://www.instructables.com/id/How-To-Take-Apart-A-Microwave/&quot;&gt;Instructable&lt;/a&gt; about taking apart a microwave. &lt;/p&gt;
+&lt;p&gt;Now that you have a transformer you will have to strip the secondary coil (the fine wire set) in order to rewind it. This takes a combination of strength and skill with a lot of will power. I used a chisel and hammer to shave off the wires on the four points of contact with the laminated core. Alternatively you can just use a cutoff wheel with a dremel. Make sure you wear gloves, a facemask, and goggles when you cut into the secondary. I'm not sure if the epoxy used is toxic but it certainly can't be good for your lungs or eyes.&lt;/p&gt;
+&lt;p&gt;To rewind the transformer you will need some beefy wires. I used an old set of jumper cables. The smaller the wire you use the faster it will heat up. Certainly don't use anything less than 3 or 4 AWG. Here is a good table for &lt;a target=&quot;new_window&quot; href=&quot;http://www.powerstream.com/Wire_Size.htm&quot;&gt;AWG current handling&lt;/a&gt;. If you don't have anything that large you can gang smaller wires together. That's what I did for my first spot welder. The wires would get extremely hot after only a few seconds of use and then I would have to wait for them to cool. Not exactly a fast process. Sorry I don't have pictures of that one. The jumper cables barely heat up even after several welds. Aim to have about three or four turns in your secondary rewinding. This really depends on your wire choice and how big your transformer is. Three to five volts is typically what a spot welder runs at. The cool thing about such a low voltage is that there is very low risk of electrocution. Pretty much the only way to get electrocuted by the arms is if it started raining salt water and then you grabbed both arms. Now that you have a secondary it is time to create the arms and supports.&lt;/p&gt;
+
+&lt;h3&gt;Step 2: Supports and Arms&lt;/h3&gt;
+&lt;a href=&quot;/projects/spotwelder/supports.JPG&quot;&gt;&lt;img src=&quot;/projects/spotwelder/supports_s.JPG&quot; width=&quot;200&quot; alt=&quot;Supports&quot;&gt;&lt;/a&gt;
+&lt;p&gt;Somehow you have to get the power to the metal being welded. You have to be able to maneuver your metal into place and clamp down on it. You also have to carry large currents without heating significantly. Then the arms have to have supports that allow pivot. How do you accomplish all this you ask? I used 3/8&quot; soft copper tubing and sheet metal. It helps to have long, skinny arms like the ones shown. They allow you to make welds in tight places and small spaces. You could use the same wire as the secondary windings for the arms. It would have to be supported somehow. The bottom arm is screwed into the wooden base and electrically insulated from the sheet metal support. The wires from the transformer are just squeezed into the tubing and crimped into place. I used some electrical tape to reduce movement between the two. The support uses a single bolt and two washers as the pivot point.
+&lt;/p&gt;
+&lt;h3&gt;Step 3: Electrical Control&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;/projects/spotwelder/switches.JPG&quot;&gt;&lt;img src=&quot;/projects/spotwelder/switches_s.JPG&quot; width=&quot;200&quot; alt=&quot;Power Control Switches&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A good spot weld is largely a function of time. Too little time and the metals don't heat enough, too much time and the electrodes degrade and the metal oxidizes producing a poor weld. A regular light switch can be used for timing. Put it in series with the primary winding. They are only designed for about ten amps so you can't put it on the secondary side. I chose to include a second switch as a safety precaution. To operate you must have both switches on.
+&lt;br&gt;*Do not forget to core ground your MOT. If you don't the core will kill you if you touch it. All you have to do is connect a grounding wire (usually green) to one of the transformer mounting screws. Doing something so easy to avoid death: probably a good idea.&lt;/p&gt;
+&lt;h3&gt;Step 4: Contacts&lt;/h3&gt;
+&lt;a href=&quot;/projects/spotwelder/contacts.JPG&quot;&gt;&lt;img src=&quot;/projects/spotwelder/contacts_s.JPG&quot; width=&quot;200&quot; alt=&quot;Welding Contacts&quot;&gt;&lt;/a&gt;
+&lt;p&gt;If you have some tungsten laying around that would be great. Unfortunately I did not. I used two 1 1/2 inches bolts with a diameter of about 0.25 inch. Definitely not the best choice but it worked. The copper was flattened at the end and a hole drilled through. Two nuts can secure the bolts to the arms. Make sure to sand all the contact points to ensure a good connection. Pretty simple huh?&lt;/p&gt;
+&lt;h2&gt;Results&lt;/h2&gt;
+&lt;p&gt;And now you have a spot welder. Grab some metal and start welding. &lt;a target=&quot;new_window&quot; href=&quot;http://www.robot-welding.com/Welding_parameters.htm&quot;&gt;This&lt;/a&gt; page will give you an idea of the spot welding time, cycles, electrode diameter, etc. I typically use three or four cycles at 5 seconds for welding 1.5 mm titanium cathodes. You can do a test weld and then break it. A good weld will rip off a &quot;nugget&quot; of the metal.&lt;/p&gt;
+&lt;p&gt;&lt;object width=&quot;420&quot; height=&quot;315&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://www.youtube.com/v/hr-SQwcQj7E?version=3&amp;amp;hl=en_US&quot;&gt;&lt;/param&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot;&gt;&lt;/param&gt;&lt;param name=&quot;allowscriptaccess&quot; value=&quot;always&quot;&gt;&lt;/param&gt;&lt;embed src=&quot;http://www.youtube.com/v/hr-SQwcQj7E?version=3&amp;amp;hl=en_US&quot; type=&quot;application/x-shockwave-flash&quot; width=&quot;420&quot; height=&quot;315&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot;&gt;&lt;/embed&gt;&lt;/object&gt;&lt;/p&gt;</content><summary type="html">Click on the image for the large version.</summary></entry></feed>
