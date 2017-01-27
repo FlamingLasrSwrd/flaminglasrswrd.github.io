@@ -1,10 +1,13 @@
 <header class="site-header">
 
-  <nav class="main-nav">
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/about/">About</a></li>
-    </ul>
-  </nav>
+<nav class="navbar navbar-static-top" role="navigation">
+  <ul class="nav navbar-nav">
+    {% for page in {{site.pages}} %}
+      {% if {{page.title}} != 'null' %}
+        <li><a href="{{page.url}}">{{page.title}}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</nav>
 
 </header>

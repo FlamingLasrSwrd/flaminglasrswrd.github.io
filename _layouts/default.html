@@ -4,18 +4,15 @@
   <body>
     {% include header.html %}
     <div class="wrapper">
-
       <section>
         <div id="title">
           <h1>{{ site.title | default: site.github.repository_name }}</h1>
           <p>{{ site.description | default: site.github.project_tagline }}</p>
           <hr>
         </div>
-
-        {{ content }}
-
       </section>
-
     </div>
+    {{ content }}
+    {% include footer.html %}
   </body>
 </html>
