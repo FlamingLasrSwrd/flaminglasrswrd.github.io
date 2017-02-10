@@ -78,3 +78,18 @@ From matchbooks -> 0.03g/box -> 2600 boxes!
 ## Classes - Item Types
 * Structure
 * Methods
+
+
+# Vaporized Hydrogen Peroxide Generator
+
+## Heating Element
+
+- Nichrome wire taken from a toaster
+- Sodium silicate (water glass) refractory binder
+- Variable power supply.
+
+### Sodium silicate recipe
+- 10 ml H2O
+- 4g Sodium hydroxide
+- 6g silica gel
+- Heat to dissolve. Add H2O if precipitate forms.

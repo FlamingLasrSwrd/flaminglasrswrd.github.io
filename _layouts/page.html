@@ -1,3 +1,25 @@
----
-layout: default
----
+<!doctype html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+    <div class="wrapper">
+      <section>
+        <div id="title">
+          <h1>{{ page.title }}</h1>
+          {% if page.exerpt %}
+          <p>{{ page.exerpt }}</p>
+          {% endif %}
+          <hr>
+        </div>
+      </section>
+    </div>
+    {% include content.html %}
+
+    {% include footer.html %}
+
+  </body>
+</html>
