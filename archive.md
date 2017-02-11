@@ -2,7 +2,6 @@
   layout: page
   title: "Archive"
 ---
-
 <ul>
 {% for post in site.categories.archive %}
 <li>

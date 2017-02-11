@@ -2,8 +2,6 @@
   layout: page
   title: "Active"
 ---
-
-
 <ul>
 {% for post in site.categories.active %}
 <li>
