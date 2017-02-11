@@ -6,9 +6,11 @@
 ---
 
 # Posts
-{% for p in site.posts %}
-
-  <h3><a href="{{ site.url }}{{ p.url }}">{{ p.title }}</a></h3>
-  {{ p.excerpt | markdownify | normalize_whitespace }}
-
-{% endfor %}
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      {{ post.excerpt | markdownify | normalize_whitespace }}
+    </li>
+  {% endfor %}
+</ul>

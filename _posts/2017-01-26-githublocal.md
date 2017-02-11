@@ -3,9 +3,10 @@ layout: post
 title:  "Github Pages Local Build"
 date:   2017-01-26
 status: complete
-categories: programming
+tags: programming
 ---
 
+<!--more-->
 
 # Github Pages local build
 

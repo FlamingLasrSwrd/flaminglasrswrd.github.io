@@ -2,9 +2,10 @@
 layout: post
 title:  "HTM on Parallella"
 date:   2016-09-14
-categories: programming
+tags: programming
 ---
 
+<!--more-->
 # Specifications
 Parallella board - kickstarter version with Zynq 7020
 16-core Epiphany processor

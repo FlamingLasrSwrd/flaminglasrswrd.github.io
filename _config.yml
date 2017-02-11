@@ -14,11 +14,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: So Little Time
+short_title: SLT
 email: your-email@domain.com
 description: >
   An unfinished collection.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://ekdunn.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: ""
+url: "https://ekdunn.github.io"
 #twitter_username: jekyllrb
 github_username:  ekdunn
 
@@ -31,3 +32,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
 permalink: pretty
+
+# Conversion
+excerpt_separator: "<!--more-->"

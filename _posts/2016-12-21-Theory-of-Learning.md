@@ -3,10 +3,12 @@ layout: post
 title:  "Theory of Learning"
 date:   2016-09-19
 status: active
-categories: brain
+tags: brain
 abstract: >
 
 ---
+
+<!--more-->
 
 # STM
 

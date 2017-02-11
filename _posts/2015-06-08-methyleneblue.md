@@ -5,9 +5,11 @@ date:   2015-06-08
 modified: 2016-09-19
 updated: 2015-06-08
 status: inactive
-categories: chemistry nootropics
+tags: biochemistry nootropics
 
 ---
+
+<!--more-->
 # Abstract
 Herein contains the synopsis of my research on MB as a rarely used, highly experimental modifier of mitochondrial metabolism. MB can act as an alternative electron acceptor/donor enhancing the efficiency of energy production. MB tends to accumulate in areas of high metabolic need (e.g. brain tissue). [Phase 3 clinical trials] are under way using Rember© for treatment of Alzheimer’s Disease showing great promise. MB’s action is dose-dependent with many interactions that vary by concentration.
 
