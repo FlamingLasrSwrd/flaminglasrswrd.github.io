@@ -2,7 +2,7 @@
 layout: post
 title:  "Theory of Learning"
 date:   2016-09-19
-status: active
+category: active
 tags: brain
 abstract: >
 

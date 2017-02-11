@@ -3,6 +3,7 @@ layout: post
 title:  "HTM on Parallella"
 date:   2016-09-14
 tags: programming
+category: archive
 ---
 
 <!--more-->

@@ -2,7 +2,7 @@
 layout: post
 title:  "Github Pages Local Build"
 date:   2017-01-26
-status: complete
+category: active
 tags: programming
 ---
 
