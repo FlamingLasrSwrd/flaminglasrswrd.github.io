@@ -1,0 +1,51 @@
+---
+layout: post
+title: "Loft Bed"
+date: "2017-02-27 11:19:01 -0600"
+---
+
+# Welcome to my Lair
+
+## Tiny Room
+
+My current accommodations include a bedroom that is 11' by 11' with two closets spanning the same wall measuring another 2' deep. This is quite a decrement from my last housing situation which included basement and garage storage. At least I get to throw away all (many) of the things I have been hoarding for years.
+
+My attention over the last year has turned to biology and with it comes new lab requirements. I would benefit greatly from a clean room with HEPA or equivalent air filtration. My glovebox can handle all the sterile work, but I still need something at least ISO class 8 or better. But where to put it...
+
+
+## The Pieces
+
+At the moment I have a glass L-shaped desk for my computer which measures 5' by 5' at the outside corners with each leg of the *L* measuring 2' deep. Furthermore, I built two work tables last year with a footprint of 2' by 4'. One is 37.5" tall, and the other is 42.5" tall. I am willing to give one up if I must...
+
+Of course science isn't all that I must fit into this room. A chest-of-drawers makes up the remainder of the large furniture with a dimensions 3' by 1.5' by 4'2". What about a bed you ask... right now I have a bed roll composed of various squishy mats which I roll and unroll every day. Not very comfortable and probably not very healthy. So amongst all this furniture, I must include a bed. Full size is probably the best balance between comfort and size.
+
+# Alternative Beds
+
+* [murphy](https://en.wikipedia.org/wiki/Murphy_bed)
+  * requires permanent modifications to apartment
+* [trap door hideaway](http://hgtvhome.sndimg.com/content/dam/images/hgtv/fullset/2012/1/25/0/CI-Ikea_live-reverse-bunk-bed_s4x3.jpg.rend.hgtvcom.966.725.jpeg)
+  * possible, but requires clearing project space every day
+* hammock
+  * same as murphy
+* [cot](https://en.wikipedia.org/wiki/Camp_bed)
+  * possible, but not very comfortable
+* [petate](https://en.wikipedia.org/wiki/Petate) or bed-roll
+  * same as cot
+* [charpai](https://en.wikipedia.org/wiki/Charpai) rope beds
+  * same as cot
+
+Ultimately I settled on a lofted bed. Vertical space is the final frontier. I briefly considered putting the clean room directly under the bed, but that would only leave about 5' of height and I stand 5'11" tall.
+
+# The Frame
+
+## Prior Art
+
+[Pinterest](https://www.pinterest.com/pin/14777505000437964/)
+
+Of notable interest:
+* [Jay's Custom Creations](http://jayscustomcreations.com/2013/03/full-size-loft-bed/)
+* [eHow](http://www.ehow.com/how_4423455_build-dorm-loft-bed.html) - very little information
+* [Ryan Clayton Deco ](https://ryanclaytondeco.wordpress.com/2015/08/09/bunk-bed-plans/) - complex
+## Basic Description
+
+I don't need anything particularly fancy, so cheap pine will suffice. A full size bed is 54" by 75" and from 5" to 20" thick. I slept on a bunk bed as a child. I have one very traumatic memory of falling from the top bunk, so I think a railing is in order. A small end-table would be nice for an outlet and phone charger. Recycled wood is cheaper.
