@@ -8,17 +8,18 @@ category: archive
 
 <!--more-->
 # Specifications
-Parallella board - kickstarter version with Zynq 7020
-16-core Epiphany processor
+* Parallella board - kickstarter version with Zynq 7020
+* 16-core Epiphany processor
+* ssh parallella@192.168.1.3
 
 # Initial Setup
 
-`sudo apt update`
+`sudo apt update`  
 `sudo apt upgrade`
 
 ## Static IP Configuration
 
-`sudo vi /etc/network/interfaces.d/eth0`
+`sudo vi /etc/network/interfaces.d/eth0`  
 Changed "dhcp" to static and added the relevant information.
 ```
 auto eth0
@@ -27,8 +28,8 @@ iface eth0 inet static
         netmask 255.255.255.0
         gateway 192.168.1.1
 ```
-Modified the DNS server configuration.
-`sudo vi /etc/resolv.conf`
+Modified the DNS server configuration.  
+`sudo vi /etc/resolv.conf`  
 Modified to include one original DNS server from my ISP (75.76.84.70), one google server, and my gateway.
 ```
 domain knology.net
@@ -39,12 +40,17 @@ nameserver 192.168.1.1
 ```
 
 # Node.js
-[Node.js Source Code] https://nodejs.org/dist/v4.5.0/node-v4.5.0.tar.gz
-`wget https://nodejs.org/dist/v4.5.0/node-v4.5.0.tar.gz`
-`tar -xvf node-v4.5.0.tar.gz`
-`cd node-v4.5.0'
-'sudo ./configure'
-'sudo make -j16'
+[Node.js Source Code](https://nodejs.org/dist/v4.5.0/node-v4.5.0.tar.gz)  
+`wget https://nodejs.org/dist/v4.5.0/node-v4.5.0.tar.gz`  
+`tar -xvf node-v4.5.0.tar.gz`  
+`cd node-v4.5.0'`  
+`'sudo ./configure'`  
+`'sudo make -j16'`  
+
+# Numenta
+`sudo apt-get install python-pip`  
+`sudo apt-get install python-numpy`  
+`sudo pip install nupic`  
 
 
 # Apendix A: Installed Apps
