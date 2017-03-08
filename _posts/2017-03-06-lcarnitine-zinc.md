@@ -8,6 +8,7 @@ date: "2017-03-06 11:51:09 -0600"
 <!--more-->
 
 # Zinc Purification
+Used food grade equipment: mason jars...  
 Zinc Carbonate
   - 125.388 g/mol
   - ZnCO3
@@ -34,4 +35,7 @@ Sodium Carbonate
 14. 33g sodium carbonate dissolved in 100ml H2O, filtered
 15. Added to sulfate soln. until pH 7 - overshot adjusted with dilute HCl
 16. evaporated to dryness; yield: 38g ZnCO3 hydrate
-17. 
+17. neutralized with household vinegar (slowly)
+18. filtered
+19. evaporated to dryness; <100 <html>&deg</html> C
+20.
