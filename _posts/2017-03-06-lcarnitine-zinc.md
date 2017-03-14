@@ -6,8 +6,6 @@ category: active
 tags: chemistry
 related: Alcohol
 ---
-A bound form of zinc and carnitine has
-
 <!--more-->
 
 # Zinc Purification

@@ -3,7 +3,7 @@ layout: post
 title: "Loft Bed"
 date: "2017-02-27 11:19:01 -0600"
 ---
-
+<!--more-->
 # Welcome to my Lair
 
 ## Tiny Room
