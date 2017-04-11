@@ -1,0 +1,17 @@
+---
+layout: post
+title: "LISP"
+date: "2017-04-02 16:00:52 -0500"
+category: active
+tags: AI programming
+---
+
+[Install Emacs with Slime on Ubuntu](http://www.cs.wcupa.edu/rkline/index/emacs-lisp.html)
+
+```
+sudo apt update
+sudo apt upgrade
+sudo apt install clisp emacs slime
+```
+`clisp` is for command line REPL
+Emacs+Slime is a gui implementation of LISP
