@@ -25,6 +25,4 @@ group :jekyll_plugins do
 gem 'execjs'
 gem 'therubyracer'
 
-gem 'jekyll-scholar'
-
 end
