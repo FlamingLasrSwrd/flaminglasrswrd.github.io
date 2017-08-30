@@ -2,7 +2,6 @@
 layout: post
 title:  "Graduate School Timeline"
 date:   2017-08-27
-status: active
 tags: school
 category: active
 abstract: >
