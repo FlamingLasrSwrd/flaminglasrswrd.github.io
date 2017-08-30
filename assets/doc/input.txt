@@ -1,0 +1,72 @@
+* ScanTesla Parameter Input File  V-7.62
+*
+* This file should be in the same directory as the program.
+*
+* Lines starting with "*" are ignored.
+*
+* The program expects these input parameters in order and as shown.
+*
+* These parameters define the coil values to be scanned.
+*
+* Cprimary (Farads) - start, stop, Inc
+263e-9
+263e-9
+5.0e-9
+* Rprimary (Ohms) - Start, Stop, Inc
+0.1
+0.1
+1.0
+* Lprimary (Heneries) - Start, Stop, Inc
+15e-6
+25e-6
+5e-7
+* Lsecondary (Heneries) - Start, Stop, Inc
+294.0e-3
+294.0e-3
+1.0e-3
+* Coupling - Start, Stop, Inc
+0.05
+0.3
+0.05
+* Rsecondary (Ohms) - Start, Stop, Inc
+289
+289
+1.0
+* Csecondary (Farads) - Start, Stop, Inc
+17e-12
+17e-12
+1.0e-12
+* Cload (Farads) - Start, Stop, Inc - If Inc < 0 then automatic streamer load is used
+2.0e-12
+4.0e-12
+-1.0e-12
+* Terminal Diameter (Sphere or toroid cord section) inches
+14
+* Strike Distance in inches
+1000.0
+* Rload (Ohms) - Start, Stop, Inc
+220.0e3
+220.0e3
+1.0e3
+* Time (sec) - Start, Stop, Inc - If Inc < 0 then automatic timing is used
+0.0e-6
+1000.0e-6
+-1.0e-7
+* Vrail - DRSSTC Buss Rail Voltage (volts) - 0.0 for a conventional coil.
+340
+* VCprimary Initial Value (volts) - Primary capacitor voltage for a conventional coil.  0.0 for a DRSSTC.
+0.0
+* BPS - Coil Breaks Per Second
+120
+*Dwell Time (sec) start, stop, inc - DRSSTC T1 time.  Quench Time for conventional coil.
+10.0e-6
+300.0e-6
+10.0e-6
+* DRSSTC Current Limit (Amps) - Set very high for conventional coil.
+500
+* Coil Power Limit (Watts)
+900
+* Goal Type - 0=find maximum VCsecondary  1=find maximum streamer power  2=find all
+* 3=find maximum leader length  If negative, no waveform file is made (faster!!).
+-1
+*

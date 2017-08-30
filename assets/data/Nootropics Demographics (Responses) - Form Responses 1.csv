@@ -1,0 +1,10 @@
+,,,Age Groups,,Labels,Count,,Label,Count
+,Totals,,0,10,0-10,0,,"Below 10,000 USD",0
+Submissions,167,,11,14,11-14,0,,"10,001-30,000 USD",37
+Adverse Reactions,25,,15,18,15-18,13,,"30,001 - 50,000 USD",33
+,,,19,22,19-22,46,,"50,001 - 70,000 USD",21
+Average Income,#VALUE!,,23,30,23-30,74,,"70,001 - 90,000 USD",11
+Median Income,,,31,40,31-40,21,,"Above 90,001 USD",28
+,,,41,50,41-50,7,,Count,161
+,,,51,60,51-60,0,,Simple Error,0.04
+,,,61,100,61-100,0,,,

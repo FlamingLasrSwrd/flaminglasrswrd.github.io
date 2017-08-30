@@ -1,0 +1,913 @@
+ScanTesla  V-7.62  June 4, 2006  Terry Fritz 
+C1 2.630000e-007 2.630000e-007 5.000000e-009 
+R1 1.000000e-001 1.000000e-001 1.000000e+000 
+L1 1.500000e-005 2.500000e-005 0.500000e-006 
+L2 2.940000e-001 2.940000e-001 1.000000e-003 
+K12 5.000000e-002 0.300000e+000 5.000000e-002 
+R2 2.890000e+002 2.890000e+002 1.000000e+000 
+C2 1.700000e-011 1.700000e-011 1.000000e-012 
+C3 0.200000e-011 0.400000e-011 -1.000000e-012 
+R3 2.200000e+005 2.200000e+005 1.000000e+003 
+T1 0.000000e+000 1.000000e-003 -1.000000e-007 
+Terminal Diameter 1.400000e+001 
+Strike Distance 1.000000e+003 
+Vrail 3.400000e+002 
+VCpri_init 0.000000e+000 
+BPS 1.200000e+002 
+DwellTime 1.000000e-005 0.300000e-003 1.000000e-005 
+Current_Limit 5.000000e+002 
+CoilPower_Limit 9.000000e+002 
+Goal Type 1 
+
+
+
+ScanTesla  V-7.62  June 4, 2006  Terry Fritz 
+Goal = 1.634892e-003  Maxium Load Energy 
+Model Number = 1 
+Goal Number = 1 
+Cprimary = 2.630000e-007 
+Lprimary = 1.500000e-005 
+Rprimary = 1.000000e-001 
+Coupling = 0.050000 
+Csecondary = 1.700000e-011 
+Lsecondary = 2.940000e-001 
+Rsecondary = 2.890000e+002 
+Cload = 0.000000e+000 
+Rload = 2.200000e+005 
+BPS = 120.000000 
+Dwell (T1) Time = 1.000000e-005 
+Ilprimay Maximum = -132.493617 
+ICprimary RMS (Arms) = 3.128083   ILsecondary RMS (Arms) = 0.009102 
+VCprimary Maximum = -1031.293334 
+VCsecondary Maximum = -13166.084295 
+Coil Power = 1.198682   Primary Bang Energy = 0.009989 
+Load Power = 0.196187   Load Bang Energy = 0.001635 
+Leader Length (in) = 1.043981  Streamer 
+Primary F0 = 80130.274016   Secondary F0 = 71190.493865
+Load Energy Rise Time (uSec) = 231.747616 
+
+
+
+ScanTesla  V-7.62  June 4, 2006  Terry Fritz 
+Goal = 1.272225e-002  Maxium Load Energy 
+Model Number = 2 
+Goal Number = 2 
+Cprimary = 2.630000e-007 
+Lprimary = 1.500000e-005 
+Rprimary = 1.000000e-001 
+Coupling = 0.050000 
+Csecondary = 1.700000e-011 
+Lsecondary = 2.940000e-001 
+Rsecondary = 2.890000e+002 
+Cload = 0.000000e+000 
+Rload = 2.200000e+005 
+BPS = 120.000000 
+Dwell (T1) Time = 2.000000e-005 
+Ilprimay Maximum = -233.794023 
+ICprimary RMS (Arms) = 7.286573   ILsecondary RMS (Arms) = 0.025386 
+VCprimary Maximum = 1960.012867 
+VCsecondary Maximum = 36550.476188 
+Coil Power = 7.031141   Primary Bang Energy = 0.058593 
+Load Power = 1.526670   Load Bang Energy = 0.012722 
+Leader Length (in) = 2.898204  Streamer 
+Primary F0 = 80130.274016   Secondary F0 = 71190.493865
+Load Energy Rise Time (uSec) = 234.992333 
+
+
+
+ScanTesla  V-7.62  June 4, 2006  Terry Fritz 
+Goal = 4.366152e-002  Maxium Load Energy 
+Model Number = 3 
+Goal Number = 3 
+Cprimary = 2.630000e-007 
+Lprimary = 1.500000e-005 
+Rprimary = 1.000000e-001 
+Coupling = 0.050000 
+Csecondary = 1.700000e-011 
+Lsecondary = 2.940000e-001 
+Rsecondary = 2.890000e+002 
+Cload = 0.000000e+000 
+Rload = 2.200000e+005 
+BPS = 120.000000 
+Dwell (T1) Time = 3.000000e-005 
+Ilprimay Maximum = 381.758581 
+ICprimary RMS (Arms) = 14.045979   ILsecondary RMS (Arms) = 0.047037 
+VCprimary Maximum = 3060.841111 
+VCsecondary Maximum = 68546.671322 
+Coil Power = 25.608625   Primary Bang Energy = 0.213405 
+Load Power = 5.239383   Load Bang Energy = 0.043662 
+Leader Length (in) = 5.435284  Streamer 
+Primary F0 = 80130.274016   Secondary F0 = 71190.493865
+Load Energy Rise Time (uSec) = 235.616316 
+
+
+
+ScanTesla  V-7.62  June 4, 2006  Terry Fritz 
+Goal = 4.801902e-002  Maxium Load Energy 
+Model Number = 33 
+Goal Number = 4 
+Cprimary = 2.630000e-007 
+Lprimary = 1.550000e-005 
+Rprimary = 1.000000e-001 
+Coupling = 0.050000 
+Csecondary = 1.700000e-011 
+Lsecondary = 2.940000e-001 
+Rsecondary = 2.890000e+002 
+Cload = 0.000000e+000 
+Rload = 2.200000e+005 
+BPS = 120.000000 
+Dwell (T1) Time = 3.000000e-005 
+Ilprimay Maximum = 375.496468 
+ICprimary RMS (Arms) = 13.615183   ILsecondary RMS (Arms) = 0.049324 
+VCprimary Maximum = 2959.347445 
+VCsecondary Maximum = 70986.972800 
+Coil Power = 25.012612   Primary Bang Energy = 0.208438 
+Load Power = 5.762283   Load Bang Energy = 0.048019 
+Leader Length (in) = 5.628784  Streamer 
+Primary F0 = 78827.255892   Secondary F0 = 71190.493865
+Load Energy Rise Time (uSec) = 236.466433 
+
+
+
+ScanTesla  V-7.62  June 4, 2006  Terry Fritz 
+Goal = 7.815538e-002  Maxium Load Energy 
+Model Number = 34 
+Goal Number = 5 
+Cprimary = 2.630000e-007 
+Lprimary = 1.550000e-005 
+Rprimary = 1.000000e-001 
+Coupling = 0.050000 
+Csecondary = 1.700000e-011 
+Lsecondary = 2.940000e-001 
+Rsecondary = 2.890000e+002 
+Cload = 0.000000e+000 
+Rload = 2.200000e+005 
+BPS = 120.000000 
+Dwell (T1) Time = 4.000000e-005 
+Ilprimay Maximum = 480.134386 
+ICprimary RMS (Arms) = 19.407722   ILsecondary RMS (Arms) = 0.062942 
+VCprimary Maximum = -3750.680798 
+VCsecondary Maximum = -94419.662941 
+Coil Power = 48.191052   Primary Bang Energy = 0.401592 
+Load Power = 9.378645   Load Bang Energy = 0.078155 
+Leader Length (in) = 7.486836  Streamer 
+Primary F0 = 78827.255892   Secondary F0 = 71190.493865
+Load Energy Rise Time (uSec) = 233.041221 
+
+
+
+ScanTesla  V-7.62  June 4, 2006  Terry Fritz 
+Goal = 9.992591e-002  Maxium Load Energy 
+Model Number = 64 
+Goal Number = 6 
+Cprimary = 2.630000e-007 
+Lprimary = 1.600000e-005 
+Rprimary = 1.000000e-001 
+Coupling = 0.050000 
+Csecondary = 1.700000e-011 
+Lsecondary = 2.940000e-001 
+Rsecondary = 2.890000e+002 
+Cload = 0.000000e+000 
+Rload = 2.200000e+005 
+BPS = 120.000000 
+Dwell (T1) Time = 4.000000e-005 
+Ilprimay Maximum = 450.697340 
+ICprimary RMS (Arms) = 18.686273   ILsecondary RMS (Arms) = 0.071154 
+VCprimary Maximum = -3747.333135 
+VCsecondary Maximum = 101643.159444 
+Coil Power = 48.381420   Primary Bang Energy = 0.403178 
+Load Power = 11.991109   Load Bang Energy = 0.099926 
+Leader Length (in) = 8.059610  Streamer 
+Primary F0 = 77585.804197   Secondary F0 = 71190.493865
+Load Energy Rise Time (uSec) = 235.610112 
+
+
+
+ScanTesla  V-7.62  June 4, 2006  Terry Fritz 
+Goal = 1.220398e-001  Maxium Load Energy 
+Model Number = 94 
+Goal Number = 7 
+Cprimary = 2.630000e-007 
+Lprimary = 1.650000e-005 
+Rprimary = 1.000000e-001 
+Coupling = 0.050000 
+Csecondary = 1.700000e-011 
+Lsecondary = 2.940000e-001 
+Rsecondary = 2.890000e+002 
+Cload = 0.000000e+000 
+Rload = 2.200000e+005 
+BPS = 120.000000 
+Dwell (T1) Time = 4.000000e-005 
+Ilprimay Maximum = -438.002113 
+ICprimary RMS (Arms) = 18.163263   ILsecondary RMS (Arms) = 0.078622 
+VCprimary Maximum = -3744.041582 
+VCsecondary Maximum = 110675.342203 
+Coil Power = 49.434637   Primary Bang Energy = 0.411955 
+Load Power = 14.644781   Load Bang Energy = 0.122040 
+Leader Length (in) = 8.775801  Streamer 
+Primary F0 = 76401.218540   Secondary F0 = 71190.493865
+Load Energy Rise Time (uSec) = 236.776328 
+
+
+
+ScanTesla  V-7.62  June 4, 2006  Terry Fritz 
+Goal = 1.468122e-001  Maxium Load Energy 
+Model Number = 124 
+Goal Number = 8 
+Cprimary = 2.630000e-007 
+Lprimary = 1.700000e-005 
+Rprimary = 1.000000e-001 
+Coupling = 0.050000 
+Csecondary = 1.700000e-011 
+Lsecondary = 2.940000e-001 
+Rsecondary = 2.890000e+002 
+Cload = 0.000000e+000 
+Rload = 2.200000e+005 
+BPS = 120.000000 
+Dwell (T1) Time = 4.000000e-005 
+Ilprimay Maximum = -431.226755 
+ICprimary RMS (Arms) = 17.867924   ILsecondary RMS (Arms) = 0.086224 
+VCprimary Maximum = -3740.911182 
+VCsecondary Maximum = 119701.979162 
+Coil Power = 51.695508   Primary Bang Energy = 0.430796 
+Load Power = 17.617468   Load Bang Energy = 0.146812 
+Leader Length (in) = 9.491552  Streamer 
+Primary F0 = 75269.286060   Secondary F0 = 71190.493865
+Load Energy Rise Time (uSec) = 240.469931 
+
+
+
+ScanTesla  V-7.62  June 4, 2006  Terry Fritz 
+Goal = 1.627279e-001  Maxium Load Energy 
+Model Number = 154 
+Goal Number = 9 
+Cprimary = 2.630000e-007 
+Lprimary = 1.750000e-005 
+Rprimary = 1.000000e-001 
+Coupling = 0.050000 
+Csecondary = 1.700000e-011 
+Lsecondary = 2.940000e-001 
+Rsecondary = 2.890000e+002 
+Cload = 0.000000e+000 
+Rload = 2.200000e+005 
+BPS = 120.000000 
+Dwell (T1) Time = 4.000000e-005 
+Ilprimay Maximum = -424.746668 
+ICprimary RMS (Arms) = 17.651181   ILsecondary RMS (Arms) = 0.090773 
+VCprimary Maximum = -3717.434732 
+VCsecondary Maximum = 124701.049168 
+Coil Power = 53.070956   Primary Bang Energy = 0.442258 
+Load Power = 19.527349   Load Bang Energy = 0.162728 
+Leader Length (in) = 9.887944  Streamer 
+Primary F0 = 74186.218284   Secondary F0 = 71190.493865
+Load Energy Rise Time (uSec) = 241.284708 
+
+
+
+ScanTesla  V-7.62  June 4, 2006  Terry Fritz 
+Goal = 1.757956e-001  Maxium Load Energy 
+Model Number = 184 
+Goal Number = 10 
+Cprimary = 2.630000e-007 
+Lprimary = 1.800000e-005 
+Rprimary = 1.000000e-001 
+Coupling = 0.050000 
+Csecondary = 1.700000e-011 
+Lsecondary = 2.940000e-001 
+Rsecondary = 2.890000e+002 
+Cload = 0.000000e+000 
+Rload = 2.200000e+005 
+BPS = 120.000000 
+Dwell (T1) Time = 4.000000e-005 
+Ilprimay Maximum = -418.549062 
+ICprimary RMS (Arms) = 17.322789   ILsecondary RMS (Arms) = 0.094343 
+VCprimary Maximum = -3657.482255 
+VCsecondary Maximum = -128993.602982 
+Coil Power = 53.688039   Primary Bang Energy = 0.447400 
+Load Power = 21.095473   Load Bang Energy = 0.175796 
+Leader Length (in) = 10.228314  Streamer 
+Primary F0 = 73148.597696   Secondary F0 = 71190.493865
+Load Energy Rise Time (uSec) = 241.289656 
+
+
+
+ScanTesla  V-7.62  June 4, 2006  Terry Fritz 
+Goal = 1.872338e-001  Maxium Load Energy 
+Model Number = 214 
+Goal Number = 11 
+Cprimary = 2.630000e-007 
+Lprimary = 1.850000e-005 
+Rprimary = 1.000000e-001 
+Coupling = 0.050000 
+Csecondary = 1.700000e-011 
+Lsecondary = 2.940000e-001 
+Rsecondary = 2.890000e+002 
+Cload = 0.000000e+000 
+Rload = 2.200000e+005 
+BPS = 120.000000 
+Dwell (T1) Time = 4.000000e-005 
+Ilprimay Maximum = -412.622092 
+ICprimary RMS (Arms) = 16.888398   ILsecondary RMS (Arms) = 0.097359 
+VCprimary Maximum = -3568.194279 
+VCsecondary Maximum = -133081.861989 
+Coil Power = 53.733532   Primary Bang Energy = 0.447779 
+Load Power = 22.468059   Load Bang Energy = 0.187234 
+Leader Length (in) = 10.552485  Streamer 
+Primary F0 = 72153.332304   Secondary F0 = 71190.493865
+Load Energy Rise Time (uSec) = 239.351385 
+
+
+
+ScanTesla  V-7.62  June 4, 2006  Terry Fritz 
+Goal = 3.367172e-001  Maxium Load Energy 
+Model Number = 215 
+Goal Number = 12 
+Cprimary = 2.630000e-007 
+Lprimary = 1.850000e-005 
+Rprimary = 1.000000e-001 
+Coupling = 0.050000 
+Csecondary = 1.700000e-011 
+Lsecondary = 2.940000e-001 
+Rsecondary = 2.890000e+002 
+Cload = 0.000000e+000 
+Rload = 2.200000e+005 
+BPS = 120.000000 
+Dwell (T1) Time = 5.000000e-005 
+Ilprimay Maximum = -479.048562 
+ICprimary RMS (Arms) = 21.802807   ILsecondary RMS (Arms) = 0.130565 
+VCprimary Maximum = 4273.124268 
+VCsecondary Maximum = 176327.010779 
+Coil Power = 92.876378   Primary Bang Energy = 0.773970 
+Load Power = 40.406067   Load Bang Energy = 0.336717 
+Leader Length (in) = 13.981531  Streamer 
+Primary F0 = 72153.332304   Secondary F0 = 71190.493865
+Load Energy Rise Time (uSec) = 241.846072 
+
+
+
+ScanTesla  V-7.62  June 4, 2006  Terry Fritz 
+Goal = 3.699985e-001  Maxium Load Energy 
+Model Number = 245 
+Goal Number = 13 
+Cprimary = 2.630000e-007 
+Lprimary = 1.900000e-005 
+Rprimary = 1.000000e-001 
+Coupling = 0.050000 
+Csecondary = 1.700000e-011 
+Lsecondary = 2.940000e-001 
+Rsecondary = 2.890000e+002 
+Cload = 1.123956e-013 
+Rload = 2.200000e+005 
+BPS = 120.000000 
+Dwell (T1) Time = 5.000000e-005 
+Ilprimay Maximum = 472.101352 
+ICprimary RMS (Arms) = 21.254533   ILsecondary RMS (Arms) = 0.136856 
+VCprimary Maximum = 4268.554003 
+VCsecondary Maximum = 184455.975175 
+Coil Power = 95.000643   Primary Bang Energy = 0.791672 
+Load Power = 44.399821   Load Bang Energy = 0.369999 
+Leader Length (in) = 14.674373  Streamer 
+Primary F0 = 71197.616832   Secondary F0 = 71190.493865
+Load Energy Rise Time (uSec) = 239.193399 
+
+
+
+ScanTesla  V-7.62  June 4, 2006  Terry Fritz 
+Goal = 4.006350e-001  Maxium Load Energy 
+Model Number = 275 
+Goal Number = 14 
+Cprimary = 2.630000e-007 
+Lprimary = 1.950000e-005 
+Rprimary = 1.000000e-001 
+Coupling = 0.050000 
+Csecondary = 1.700000e-011 
+Lsecondary = 2.940000e-001 
+Rsecondary = 2.890000e+002 
+Cload = 2.149242e-013 
+Rload = 2.200000e+005 
+BPS = 120.000000 
+Dwell (T1) Time = 5.000000e-005 
+Ilprimay Maximum = 465.579986 
+ICprimary RMS (Arms) = 20.957489   ILsecondary RMS (Arms) = 0.142401 
+VCprimary Maximum = 4265.098149 
+VCsecondary Maximum = 191615.473117 
+Coil Power = 97.869081   Primary Bang Energy = 0.815576 
+Load Power = 48.076203   Load Bang Energy = 0.400635 
+Leader Length (in) = 15.289545  Streamer 
+Primary F0 = 70278.899415   Secondary F0 = 71190.493865
+Load Energy Rise Time (uSec) = 239.474439 
+
+
+
+ScanTesla  V-7.62  June 4, 2006  Terry Fritz 
+Goal = 4.190562e-001  Maxium Load Energy 
+Model Number = 305 
+Goal Number = 15 
+Cprimary = 2.630000e-007 
+Lprimary = 0.200000e-004 
+Rprimary = 1.000000e-001 
+Coupling = 0.050000 
+Csecondary = 1.700000e-011 
+Lsecondary = 2.940000e-001 
+Rsecondary = 2.890000e+002 
+Cload = 2.699302e-013 
+Rload = 2.200000e+005 
+BPS = 120.000000 
+Dwell (T1) Time = 5.000000e-005 
+Ilprimay Maximum = 459.383601 
+ICprimary RMS (Arms) = 20.724397   ILsecondary RMS (Arms) = 0.145634 
+VCprimary Maximum = 4239.736558 
+VCsecondary Maximum = 195439.644210 
+Coil Power = 99.376088   Primary Bang Energy = 0.828134 
+Load Power = 50.286743   Load Bang Energy = 0.419056 
+Leader Length (in) = 15.619581  Streamer 
+Primary F0 = 69394.852910   Secondary F0 = 71190.493865
+Load Energy Rise Time (uSec) = 239.931339 
+
+
+
+ScanTesla  V-7.62  June 4, 2006  Terry Fritz 
+Goal = 4.258726e-001  Maxium Load Energy 
+Model Number = 335 
+Goal Number = 16 
+Cprimary = 2.630000e-007 
+Lprimary = 2.050000e-005 
+Rprimary = 1.000000e-001 
+Coupling = 0.050000 
+Csecondary = 1.700000e-011 
+Lsecondary = 2.940000e-001 
+Rsecondary = 2.890000e+002 
+Cload = 2.946360e-013 
+Rload = 2.200000e+005 
+BPS = 120.000000 
+Dwell (T1) Time = 5.000000e-005 
+Ilprimay Maximum = 453.503468 
+ICprimary RMS (Arms) = 20.397852   ILsecondary RMS (Arms) = 0.146809 
+VCprimary Maximum = 4180.323339 
+VCsecondary Maximum = 197153.459841 
+Coil Power = 98.951491   Primary Bang Energy = 0.824596 
+Load Power = 51.104711   Load Bang Energy = 0.425873 
+Leader Length (in) = 15.767816  Streamer 
+Primary F0 = 68543.350074   Secondary F0 = 71190.493865
+Load Energy Rise Time (uSec) = 239.848213 
+
+
+
+ScanTesla  V-7.62  June 4, 2006  Terry Fritz 
+Goal = 7.036881e-001  Maxium Load Energy 
+Model Number = 396 
+Goal Number = 17 
+Cprimary = 2.630000e-007 
+Lprimary = 2.150000e-005 
+Rprimary = 1.000000e-001 
+Coupling = 0.050000 
+Csecondary = 1.700000e-011 
+Lsecondary = 2.940000e-001 
+Rsecondary = 2.890000e+002 
+Cload = 1.101251e-012 
+Rload = 2.200000e+005 
+BPS = 120.000000 
+Dwell (T1) Time = 6.000000e-005 
+Ilprimay Maximum = -499.194707 
+ICprimary RMS (Arms) = 24.136480   ILsecondary RMS (Arms) = 0.188697 
+VCprimary Maximum = -4758.681850 
+VCsecondary Maximum = 251860.266804 
+Coil Power = 153.008512   Primary Bang Energy = 1.275071 
+Load Power = 84.442575   Load Bang Energy = 0.703688 
+Leader Length (in) = 20.607503  Streamer 
+Primary F0 = 66930.339423   Secondary F0 = 71190.493865
+Load Energy Rise Time (uSec) = 243.536790 
+
+
+
+ScanTesla  V-7.62  June 4, 2006  Terry Fritz 
+Goal = 7.848320e-001  Maxium Load Energy 
+Model Number = 815 
+Goal Number = 18 
+Cprimary = 2.630000e-007 
+Lprimary = 1.800000e-005 
+Rprimary = 1.000000e-001 
+Coupling = 0.100000 
+Csecondary = 1.700000e-011 
+Lsecondary = 2.940000e-001 
+Rsecondary = 2.890000e+002 
+Cload = 1.570195e-012 
+Rload = 2.200000e+005 
+BPS = 120.000000 
+Dwell (T1) Time = 5.000000e-005 
+Ilprimay Maximum = -461.081087 
+ICprimary RMS (Arms) = 19.962761   ILsecondary RMS (Arms) = 0.199365 
+VCprimary Maximum = 3803.679668 
+VCsecondary Maximum = -282610.898976 
+Coil Power = 145.543326   Primary Bang Energy = 1.212861 
+Load Power = 94.179842   Load Bang Energy = 0.784832 
+Leader Length (in) = 23.421169  Streamer 
+Primary F0 = 73148.597696   Secondary F0 = 71190.493865
+Load Energy Rise Time (uSec) = 231.036555 
+
+
+
+ScanTesla  V-7.62  June 4, 2006  Terry Fritz 
+Goal = 8.681322e-001  Maxium Load Energy 
+Model Number = 845 
+Goal Number = 19 
+Cprimary = 2.630000e-007 
+Lprimary = 1.850000e-005 
+Rprimary = 1.000000e-001 
+Coupling = 0.100000 
+Csecondary = 1.700000e-011 
+Lsecondary = 2.940000e-001 
+Rsecondary = 2.890000e+002 
+Cload = 1.734155e-012 
+Rload = 2.200000e+005 
+BPS = 120.000000 
+Dwell (T1) Time = 5.000000e-005 
+Ilprimay Maximum = 433.680165 
+ICprimary RMS (Arms) = 19.046612   ILsecondary RMS (Arms) = 0.209656 
+VCprimary Maximum = 3768.593561 
+VCsecondary Maximum = -293189.922599 
+Coil Power = 153.170561   Primary Bang Energy = 1.276421 
+Load Power = 104.175865   Load Bang Energy = 0.868132 
+Leader Length (in) = 24.404927  Streamer 
+Primary F0 = 72153.332304   Secondary F0 = 71190.493865
+Load Energy Rise Time (uSec) = 231.867323 
+
+
+
+ScanTesla  V-7.62  June 4, 2006  Terry Fritz 
+Goal = 9.384661e-001  Maxium Load Energy 
+Model Number = 875 
+Goal Number = 20 
+Cprimary = 2.630000e-007 
+Lprimary = 1.900000e-005 
+Rprimary = 1.000000e-001 
+Coupling = 0.100000 
+Csecondary = 1.700000e-011 
+Lsecondary = 2.940000e-001 
+Rsecondary = 2.890000e+002 
+Cload = 1.896010e-012 
+Rload = 2.200000e+005 
+BPS = 120.000000 
+Dwell (T1) Time = 5.000000e-005 
+Ilprimay Maximum = 424.143440 
+ICprimary RMS (Arms) = 18.297711   ILsecondary RMS (Arms) = 0.217965 
+VCprimary Maximum = 3733.911510 
+VCsecondary Maximum = -303548.222392 
+Coil Power = 159.844431   Primary Bang Energy = 1.332037 
+Load Power = 112.615929   Load Bang Energy = 0.938466 
+Leader Length (in) = 25.376059  Streamer 
+Primary F0 = 71197.616832   Secondary F0 = 71190.493865
+Load Energy Rise Time (uSec) = 235.541592 
+
+
+
+ScanTesla  V-7.62  June 4, 2006  Terry Fritz 
+Goal = 1.476948e+000  Maxium Load Energy 
+Model Number = 876 
+Goal Number = 21 
+Cprimary = 2.630000e-007 
+Lprimary = 1.900000e-005 
+Rprimary = 1.000000e-001 
+Coupling = 0.100000 
+Csecondary = 1.700000e-011 
+Lsecondary = 2.940000e-001 
+Rsecondary = 2.890000e+002 
+Cload = 3.122931e-012 
+Rload = 2.200000e+005 
+BPS = 120.000000 
+Dwell (T1) Time = 6.000000e-005 
+Ilprimay Maximum = 499.748861 
+ICprimary RMS (Arms) = 23.068667   ILsecondary RMS (Arms) = 0.273460 
+VCprimary Maximum = -4034.638387 
+VCsecondary Maximum = 379480.618105 
+Coil Power = 252.087428   Primary Bang Energy = 2.100729 
+Load Power = 177.233802   Load Bang Energy = 1.476948 
+Leader Length (in) = 32.737586  Streamer 
+Primary F0 = 71197.616832   Secondary F0 = 71190.493865
+Load Energy Rise Time (uSec) = 232.311147 
+
+
+
+ScanTesla  V-7.62  June 4, 2006  Terry Fritz 
+Goal = 1.561257e+000  Maxium Load Energy 
+Model Number = 906 
+Goal Number = 22 
+Cprimary = 2.630000e-007 
+Lprimary = 1.950000e-005 
+Rprimary = 1.000000e-001 
+Coupling = 0.100000 
+Csecondary = 1.700000e-011 
+Lsecondary = 2.940000e-001 
+Rsecondary = 2.890000e+002 
+Cload = 3.240524e-012 
+Rload = 2.200000e+005 
+BPS = 120.000000 
+Dwell (T1) Time = 6.000000e-005 
+Ilprimay Maximum = 482.353473 
+ICprimary RMS (Arms) = 21.907131   ILsecondary RMS (Arms) = 0.281133 
+VCprimary Maximum = -3987.554888 
+VCsecondary Maximum = 386531.438826 
+Coil Power = 258.214039   Primary Bang Energy = 2.151784 
+Load Power = 187.350815   Load Bang Energy = 1.561257 
+Leader Length (in) = 33.443147  Streamer 
+Primary F0 = 70278.899415   Secondary F0 = 71190.493865
+Load Energy Rise Time (uSec) = 236.201764 
+
+
+
+ScanTesla  V-7.62  June 4, 2006  Terry Fritz 
+Goal = 1.598864e+000  Maxium Load Energy 
+Model Number = 936 
+Goal Number = 23 
+Cprimary = 2.630000e-007 
+Lprimary = 0.200000e-004 
+Rprimary = 1.000000e-001 
+Coupling = 0.100000 
+Csecondary = 1.700000e-011 
+Lsecondary = 2.940000e-001 
+Rsecondary = 2.890000e+002 
+Cload = 3.314980e-012 
+Rload = 2.200000e+005 
+BPS = 120.000000 
+Dwell (T1) Time = 6.000000e-005 
+Ilprimay Maximum = 446.945767 
+ICprimary RMS (Arms) = 21.005821   ILsecondary RMS (Arms) = 0.284481 
+VCprimary Maximum = -3948.590599 
+VCsecondary Maximum = 390976.240418 
+Coil Power = 259.417254   Primary Bang Energy = 2.161810 
+Load Power = 191.863701   Load Bang Energy = 1.598864 
+Leader Length (in) = 33.889877  Streamer 
+Primary F0 = 69394.852910   Secondary F0 = 71190.493865
+Load Energy Rise Time (uSec) = 236.328767 
+
+
+
+ScanTesla  V-7.62  June 4, 2006  Terry Fritz 
+Goal = 2.413349e+000  Maxium Load Energy 
+Model Number = 937 
+Goal Number = 24 
+Cprimary = 2.630000e-007 
+Lprimary = 0.200000e-004 
+Rprimary = 1.000000e-001 
+Coupling = 0.100000 
+Csecondary = 1.700000e-011 
+Lsecondary = 2.940000e-001 
+Rsecondary = 2.890000e+002 
+Cload = 4.768754e-012 
+Rload = 2.200000e+005 
+BPS = 120.000000 
+Dwell (T1) Time = 7.000000e-005 
+Ilprimay Maximum = -490.449077 
+ICprimary RMS (Arms) = 24.687402   ILsecondary RMS (Arms) = 0.349512 
+VCprimary Maximum = 4135.787753 
+VCsecondary Maximum = 474907.539382 
+Coil Power = 385.901184   Primary Bang Energy = 3.215843 
+Load Power = 289.601911   Load Bang Energy = 2.413349 
+Leader Length (in) = 42.612527  Streamer 
+Primary F0 = 69394.852910   Secondary F0 = 71190.493865
+Load Energy Rise Time (uSec) = 236.761075 
+
+
+
+ScanTesla  V-7.62  June 4, 2006  Terry Fritz 
+Goal = 2.429085e+000  Maxium Load Energy 
+Model Number = 967 
+Goal Number = 25 
+Cprimary = 2.630000e-007 
+Lprimary = 2.050000e-005 
+Rprimary = 1.000000e-001 
+Coupling = 0.100000 
+Csecondary = 1.700000e-011 
+Lsecondary = 2.940000e-001 
+Rsecondary = 2.890000e+002 
+Cload = 4.803002e-012 
+Rload = 2.200000e+005 
+BPS = 120.000000 
+Dwell (T1) Time = 7.000000e-005 
+Ilprimay Maximum = -474.464717 
+ICprimary RMS (Arms) = 23.752949   ILsecondary RMS (Arms) = 0.350630 
+VCprimary Maximum = 4085.194453 
+VCsecondary Maximum = -476822.722977 
+Coil Power = 383.488887   Primary Bang Energy = 3.195741 
+Load Power = 291.490242   Load Bang Energy = 2.429085 
+Leader Length (in) = 42.818015  Streamer 
+Primary F0 = 68543.350074   Secondary F0 = 71190.493865
+Load Energy Rise Time (uSec) = 236.930351 
+
+
+
+ScanTesla  V-7.62  June 4, 2006  Terry Fritz 
+Goal = 3.220218e+000  Maxium Load Energy 
+Model Number = 968 
+Goal Number = 26 
+Cprimary = 2.630000e-007 
+Lprimary = 2.050000e-005 
+Rprimary = 1.000000e-001 
+Coupling = 0.100000 
+Csecondary = 1.700000e-011 
+Lsecondary = 2.940000e-001 
+Rsecondary = 2.890000e+002 
+Cload = 6.106038e-012 
+Rload = 2.200000e+005 
+BPS = 120.000000 
+Dwell (T1) Time = 8.000000e-005 
+Ilprimay Maximum = 481.279540 
+ICprimary RMS (Arms) = 26.176943   ILsecondary RMS (Arms) = 0.403705 
+VCprimary Maximum = 4181.112933 
+VCsecondary Maximum = -547756.016108 
+Coil Power = 502.122738   Primary Bang Energy = 4.184356 
+Load Power = 386.426167   Load Bang Energy = 3.220218 
+Leader Length (in) = 50.636226  Streamer 
+Primary F0 = 68543.350074   Secondary F0 = 71190.493865
+Load Energy Rise Time (uSec) = 238.097496 
+
+
+
+ScanTesla  V-7.62  June 4, 2006  Terry Fritz 
+Goal = 3.825547e+000  Maxium Load Energy 
+Model Number = 969 
+Goal Number = 27 
+Cprimary = 2.630000e-007 
+Lprimary = 2.050000e-005 
+Rprimary = 1.000000e-001 
+Coupling = 0.100000 
+Csecondary = 1.700000e-011 
+Lsecondary = 2.940000e-001 
+Rsecondary = 2.890000e+002 
+Cload = 7.219308e-012 
+Rload = 2.200000e+005 
+BPS = 120.000000 
+Dwell (T1) Time = 9.000000e-005 
+Ilprimay Maximum = 481.279540 
+ICprimary RMS (Arms) = 28.613734   ILsecondary RMS (Arms) = 0.440033 
+VCprimary Maximum = 4181.112933 
+VCsecondary Maximum = 605595.220262 
+Coil Power = 596.979559   Primary Bang Energy = 4.974830 
+Load Power = 459.065595   Load Bang Energy = 3.825547 
+Leader Length (in) = 57.315850  Streamer 
+Primary F0 = 68543.350074   Secondary F0 = 71190.493865
+Load Energy Rise Time (uSec) = 235.617313 
+
+
+
+ScanTesla  V-7.62  June 4, 2006  Terry Fritz 
+Goal = 4.403438e+000  Maxium Load Energy 
+Model Number = 970 
+Goal Number = 28 
+Cprimary = 2.630000e-007 
+Lprimary = 2.050000e-005 
+Rprimary = 1.000000e-001 
+Coupling = 0.100000 
+Csecondary = 1.700000e-011 
+Lsecondary = 2.940000e-001 
+Rsecondary = 2.890000e+002 
+Cload = 8.468219e-012 
+Rload = 2.200000e+005 
+BPS = 120.000000 
+Dwell (T1) Time = 1.000000e-004 
+Ilprimay Maximum = 481.279540 
+ICprimary RMS (Arms) = 30.948940   ILsecondary RMS (Arms) = 0.472111 
+VCprimary Maximum = 4181.112933 
+VCsecondary Maximum = -667769.713648 
+Coil Power = 688.706103   Primary Bang Energy = 5.739218 
+Load Power = 528.412508   Load Bang Energy = 4.403438 
+Leader Length (in) = 64.809317  Streamer 
+Primary F0 = 68543.350074   Secondary F0 = 71190.493865
+Load Energy Rise Time (uSec) = 227.593194 
+
+
+
+ScanTesla  V-7.62  June 4, 2006  Terry Fritz 
+Goal = 4.650910e+000  Maxium Load Energy 
+Model Number = 971 
+Goal Number = 29 
+Cprimary = 2.630000e-007 
+Lprimary = 2.050000e-005 
+Rprimary = 1.000000e-001 
+Coupling = 0.100000 
+Csecondary = 1.700000e-011 
+Lsecondary = 2.940000e-001 
+Rsecondary = 2.890000e+002 
+Cload = 9.180942e-012 
+Rload = 2.200000e+005 
+BPS = 120.000000 
+Dwell (T1) Time = 1.100000e-004 
+Ilprimay Maximum = 481.279540 
+ICprimary RMS (Arms) = 32.686347   ILsecondary RMS (Arms) = 0.485213 
+VCprimary Maximum = 4181.112933 
+VCsecondary Maximum = 702075.481141 
+Coil Power = 733.072753   Primary Bang Energy = 6.108940 
+Load Power = 558.109143   Load Bang Energy = 4.650910 
+Leader Length (in) = 69.085655  Streamer 
+Primary F0 = 68543.350074   Secondary F0 = 71190.493865
+Load Energy Rise Time (uSec) = 215.775855 
+
+
+
+ScanTesla  V-7.62  June 4, 2006  Terry Fritz 
+Goal = 4.869590e+000  Maxium Load Energy 
+Model Number = 972 
+Goal Number = 30 
+Cprimary = 2.630000e-007 
+Lprimary = 2.050000e-005 
+Rprimary = 1.000000e-001 
+Coupling = 0.100000 
+Csecondary = 1.700000e-011 
+Lsecondary = 2.940000e-001 
+Rsecondary = 2.890000e+002 
+Cload = 9.880479e-012 
+Rload = 2.200000e+005 
+BPS = 120.000000 
+Dwell (T1) Time = 1.200000e-004 
+Ilprimay Maximum = 481.279540 
+ICprimary RMS (Arms) = 35.110257   ILsecondary RMS (Arms) = 0.496526 
+VCprimary Maximum = 4181.112933 
+VCsecondary Maximum = -734974.975601 
+Coil Power = 778.954953   Primary Bang Energy = 6.491291 
+Load Power = 584.350797   Load Bang Energy = 4.869590 
+Leader Length (in) = 73.282873  Streamer 
+Primary F0 = 68543.350074   Secondary F0 = 71190.493865
+Load Energy Rise Time (uSec) = 198.268687 
+
+
+
+ScanTesla  V-7.62  June 4, 2006  Terry Fritz 
+Goal = 5.048981e+000  Maxium Load Energy 
+Model Number = 973 
+Goal Number = 31 
+Cprimary = 2.630000e-007 
+Lprimary = 2.050000e-005 
+Rprimary = 1.000000e-001 
+Coupling = 0.100000 
+Csecondary = 1.700000e-011 
+Lsecondary = 2.940000e-001 
+Rsecondary = 2.890000e+002 
+Cload = 1.021661e-011 
+Rload = 2.200000e+005 
+BPS = 120.000000 
+Dwell (T1) Time = 1.300000e-004 
+Ilprimay Maximum = 481.279540 
+ICprimary RMS (Arms) = 36.989364   ILsecondary RMS (Arms) = 0.505620 
+VCprimary Maximum = 4181.112933 
+VCsecondary Maximum = 750523.826852 
+Coil Power = 816.660507   Primary Bang Energy = 6.805504 
+Load Power = 605.877714   Load Bang Energy = 5.048981 
+Leader Length (in) = 75.299641  Streamer 
+Primary F0 = 68543.350074   Secondary F0 = 71190.493865
+Load Energy Rise Time (uSec) = 183.825272 
+
+
+
+ScanTesla  V-7.62  June 4, 2006  Terry Fritz 
+Goal = 5.282466e+000  Maxium Load Energy 
+Model Number = 1002 
+Goal Number = 32 
+Cprimary = 2.630000e-007 
+Lprimary = 2.100000e-005 
+Rprimary = 1.000000e-001 
+Coupling = 0.100000 
+Csecondary = 1.700000e-011 
+Lsecondary = 2.940000e-001 
+Rsecondary = 2.890000e+002 
+Cload = 1.013534e-011 
+Rload = 2.200000e+005 
+BPS = 120.000000 
+Dwell (T1) Time = 1.200000e-004 
+Ilprimay Maximum = 465.308169 
+ICprimary RMS (Arms) = 32.196211   ILsecondary RMS (Arms) = 0.517045 
+VCprimary Maximum = -4128.550991 
+VCsecondary Maximum = -746779.595217 
+Coil Power = 814.914474   Primary Bang Energy = 6.790954 
+Load Power = 633.895877   Load Bang Energy = 5.282466 
+Leader Length (in) = 74.812043  Streamer 
+Primary F0 = 67722.442017   Secondary F0 = 71190.493865
+Load Energy Rise Time (uSec) = 207.464462 
+
+
+
+ScanTesla  V-7.62  June 4, 2006  Terry Fritz 
+Goal = 5.695218e+000  Maxium Load Energy 
+Model Number = 1003 
+Goal Number = 33 
+Cprimary = 2.630000e-007 
+Lprimary = 2.100000e-005 
+Rprimary = 1.000000e-001 
+Coupling = 0.100000 
+Csecondary = 1.700000e-011 
+Lsecondary = 2.940000e-001 
+Rsecondary = 2.890000e+002 
+Cload = 1.078581e-011 
+Rload = 2.200000e+005 
+BPS = 120.000000 
+Dwell (T1) Time = 1.300000e-004 
+Ilprimay Maximum = 465.308169 
+ICprimary RMS (Arms) = 33.286722   ILsecondary RMS (Arms) = 0.536870 
+VCprimary Maximum = -4128.550991 
+VCsecondary Maximum = 776486.425622 
+Coil Power = 877.618969   Primary Bang Energy = 7.313491 
+Load Power = 683.426198   Load Bang Energy = 5.695218 
+Leader Length (in) = 78.714885  Streamer 
+Primary F0 = 67722.442017   Secondary F0 = 71190.493865
+Load Energy Rise Time (uSec) = 198.309447 
+
+Models Tested = 3780 / 3780 

@@ -1,0 +1,73 @@
+Partlist
+
+Exported from DRSSTC_pndriver.brd at 6/15/2012 2:12:34 PM
+
+EAGLE Version 6.2.0 Copyright (c) 1988-2012 CadSoft
+
+Assembly variant: 
+
+Part     Value          Package  Library                Position (inch)       Orientation
+
+BR1                     RB1A     rectifier              (0.775 2.175)         R0
+C1       .1u            C0805K   rcl                    (0.425 1.95)          MR180
+C2       .1u            C0805K   rcl                    (1.05 1.775)          MR0
+C3       22n            C0805K   rcl                    (1.4 1.425)           R90
+C4       1n             C0805K   rcl                    (0.6625 0.3625)       MR180
+C5       .1u            C0805K   rcl                    (0.6625 0.4625)       MR180
+C6       1n             C0805K   rcl                    (0.7875 0.4625)       MR180
+C7       .1u            C0805K   rcl                    (0.7875 0.5625)       MR180
+C8       .1u            C1206K   rcl                    (2.1375 0.5625)       MR0
+C9       .1u            C0805K   rcl                    (2.85 0.825)          R0
+C10      .1u            C0805K   rcl                    (2.85 0.05)           R0
+C11      10u            C1206K   rcl                    (3.5 1.1)             R0
+C12      10u            C1206K   rcl                    (2.95 1.05)           MR0
+C13      10u            C1206K   rcl                    (2.95 0.275)          MR0
+C14      10u            C1206K   rcl                    (3.5 1.225)           R0
+C15      100u           E3,5-10  rcl                    (1.2 2.175)           R270
+C16      330u           E3,5-8   rcl                    (1.975 1.95)          R180
+C17      330u           E3,5-8   rcl                    (2.125 0.225)         R180
+C18      330u           E3,5-8   rcl                    (2.95 1.75)           R180
+C19      .1u            C0805K   rcl                    (1.475 0.275)         R180
+C20      .1u            C0805K   rcl                    (2.1 1.675)           R180
+D1       1n5819         RAD5G    diode                  (0.35 1.675)          R270
+D2       1n5819         RAD5G    diode                  (0.575 1.35)          R90
+D3       1n5337B        RAD5G    diode                  (0.35 1.35)           R90
+D4       1n5337B        RAD5G    diode                  (0.575 1.675)         R270
+D5       1n4148         D-7.5    diode                  (1.025 1.925)         R180
+D6       1n4148         D-7.5    diode                  (0.75 1.775)          R270
+D7       1n4148         D-7.5    diode                  (1.5375 1.425)        R270
+D8       1n5819         RAD5G    diode                  (0.1875 1.0375)       R180
+D9       1n5819         RAD5G    diode                  (0.55 1.0375)         R180
+D10      1n5819         RAD5G    diode                  (0.1875 0.7)          R180
+D11      1n5819         RAD5G    diode                  (0.55 0.7375)         R180
+D13                     LED5MM   led                    (1.825 0.05)          R0
+D14      1n4148         D-7.5    diode                  (3.175 0.85)          R180
+D15      1n4148         D-7.5    diode                  (3.175 0.075)         R180
+D16                     LED5MM   led                    (1.225 0.05)          R0
+IC1      74HC14         DIL14    40xx                   (1.025 1.475)         R270
+IC2      74HC08         DIL14    40xx                   (1.5 0.575)           R270
+IC3      74HC74         DIL14    40xx                   (2.075 1.375)         R270
+IC4      LM311n         DIP08    motorola-sensor-driver (0.725 0.4125)        R270
+IC5      7824T          TO220V   transistor-pnp         (2.95 2.2)            R0
+IC6      7809T          TO220V   transistor-pnp         (2.325 2.2)           R0
+IC7      7805T          TO220V   transistor-pnp         (1.625 2.2)           R0
+IC8      UCC27423       DIP08    motorola-sensor-driver (2.125 0.6125)        R270
+JP1                     1X02     pinhead                (0.15 1.475)          R90
+JP2                     1X02     pinhead                (1 0.7875)            R90
+JP4                     1X02     pinhead                (0.4 0.875)           R180
+JP5                     MA04-1   con-lstb               (3.55 0.825)          R90
+JP6                     1X02     pinhead                (0.425 2.125)         R90
+Q1       STB16NF06      TO263-3  linear                 (2.725 1.175)         R0
+Q2       STB16NF06      TO263-3  linear                 (2.725 0.4)           R0
+Q3       STB16PF06      TO263-3  linear                 (3.175 1.175)         R0
+Q4       STB16PF06      TO263-3  linear                 (3.175 0.4)           R0
+R1       1k             C0805K   rcl                    (0.6 1.95)            MR180
+R2       20k            C0805K   rcl                    (1.4 1.525)           R90
+R3       10k            B64Y     pot                    (0.4875 0.1)          R180
+R4       10R            0204/7   rcl                    (0.2375 0.5)          R0
+R7       1k             C0805K   rcl                    (0.975 0.5)           R270
+R8       470            C1206K   rcl                    (2.0625 0.05)         MR0
+R9       1k             C0805K   rcl                    (3.175 0.85)          MR0
+R10      1k             C0805K   rcl                    (3.175 0.075)         MR0
+R11      10R            0207/2V  rcl                    (3.5 1.375)           R180
+R12      1k             C1206K   rcl                    (1.525 0.05)          MR0
