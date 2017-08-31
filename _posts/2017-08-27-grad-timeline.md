@@ -45,10 +45,8 @@ I found a workbook provided by Kaplan. I shall work through it and if I have tim
 
 ## Wed, Aug 30, 2017 - Researchers
 **Before:** The whole goal of grad school is to learn more about AI. I can start that research now and accomplish some of my grad application goals at the same time. Today I should focus on defining my research goals and finding some others who have the same.  
-**After:**
-
-**Time Spent:**
-
+**After:** I think I am more confused. AI just isn't specific enough. I thought I would just be looking at CS programs, but now I have to look at cognitive and brain sciences too.  
+**Time Spent:** 6 hrs
 
 
 [MOOC]: /active/2017/08/28/MOOC/
