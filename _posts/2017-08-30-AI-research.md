@@ -17,7 +17,7 @@ Many researchers view biological data as convoluted and unnecessary or perhaps e
 ## Evolution Vs Big Data
 *Given sufficient time and the right optimization function, big data driven AI research will derive what evolution created over eons with biological intelligence.*
 
-If one could surmise the goal of the evolutionary development of a central nervous system, what would it be?[1][^1] It would be to generate a processing and storage medium that can use past information to manipulate the world in a way that benefits the organism.
+If one could surmise the goal of the evolutionary development of a central nervous system, what would it be?[^1] It would be to generate a processing and storage medium that can use past information to manipulate the world in a way that benefits the organism.
 
 Many of the problems of AI research are shared by evolution.
 * How is information stored?
@@ -28,19 +28,18 @@ Many of the problems of AI research are shared by evolution.
 *A list of researchers or groups which I reference heavily.*
 
 ## Stephen Grossberg
-[Adaptive Resonance Theory (ART)][^grossberg_adaptive_2013] is a top-level architecture derived from biological data. It is quite hard to adequately describe ART is just a few sentences. Grossberg's research encompases more than 40 years of development with information spanning all areas of AI research. Here is one sentence of the various explanations given by Grossberg:
+Adaptive Resonance Theory (ART)[^grossberg_adaptive_2013] is a top-level architecture derived from biological data. It is quite hard to adequately describe ART is just a few sentences. Grossberg's research encompases more than 40 years of development with information spanning all areas of AI research. Here is one sentence of the various explanations given by Grossberg:
 
 > ART provides functional and mechanistic explanations of such diverse topics as laminar cortical circuitry; invariant object and scenic gist learning and recognition; prototype, surface, and boundary attention; gamma and beta oscillations; learning of entorhinal grid cells and hippocampal place cells; computation of homologous spatial and temporal mechanisms in the entorhinal–hippocampal system; vigilance breakdowns during autism and medial temporal amnesia; cognitive–emotional interactions that focus attention on valued objects in an adaptively timed way; item–order–rank working memories and learned list chunks for the planning and control of sequences of linguistic, spatial, and motor information; conscious speech percepts that are influenced by future context; auditory streaming in noise during source segregation; and speaker normalization.
 
 I have been working my way through Grossberg's work for the better part of a year and I still feel ignorant. From what I have gathered so far, ART will be an integral part of my research in the future.
 
 ### Summary
-Adaptive Resonance Theory defines several entities in the brain which control the flow of information processing throughout the bulk of the memory storage/computational medium. ART does not explain the fine grain details of cortex organization and information processing as [Numenta][#Numenta] does. Rather, ART focuses on what information those repeating units are exposed to and assumes those units will process and learn that information interchangeably. Two particularly interesting concepts of ART and its successors (e.g. ARTSCAN) are the "ART search cycle" and "invariant category learning". The former details how a brain might go about combining old, stable memories with novel information without compromising the integrity of the first. The latter combines this with an internal learning switch that inhibits the search cycle while more information is gathered.
+Adaptive Resonance Theory defines several entities in the brain which control the flow of information processing throughout the bulk of the memory storage/computational medium. ART does not explain the fine grain details of cortex organization and information processing as [#Numenta][] does. Rather, ART focuses on what information those repeating units are exposed to and assumes those units will process and learn that information interchangeably. Two particularly interesting concepts of ART and its successors (e.g. ARTSCAN) are the "ART search cycle" and "invariant category learning". The former details how a brain might go about combining old, stable memories with novel information without compromising the integrity of the first. The latter combines this with an internal learning switch that inhibits the search cycle while more information is gathered.
 
 ## Numenta
 Jeff Hawkins and his research group has developed a more localized theory of the brain: Hierarchical Temporal Memory (HTM). Their research attempts to model a single column of neurons in the neocortex. Unlike Deep Learning and similiar algorithms, HTM uses temporal information integrally.
-> We demonstrate that HTM networks learn complex high-order sequences from data streams, rapidly adapt to changing statistics in the data, naturally handle multiple predictions and branching sequences, and exhibit high tolerance to system faults. [(Cui et. al, 2016)][^cui_continuous_2016]
-
+> We demonstrate that HTM networks learn complex high-order sequences from data streams, rapidly adapt to changing statistics in the data, naturally handle multiple predictions and branching sequences, and exhibit high tolerance to system faults. [^cui_continuous_2016]
 
 # Current Working Theory
 
