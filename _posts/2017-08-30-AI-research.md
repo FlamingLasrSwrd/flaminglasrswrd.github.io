@@ -5,7 +5,7 @@ date:   2017-08-30
 tags: school
 category: active
 ---
-
+Artificial intelligence has held my interest longer than any other topic I have researched. What follows is a collection of researchers and their contribution to the field of AI as well as its implication for my research.
 <!--more-->
 
 # Research Interests

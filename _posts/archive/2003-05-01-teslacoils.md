@@ -1,0 +1,127 @@
+---
+layout: post
+title:  "Tesla Coils"
+date:   2003-05-01
+tags: electronics
+category: archive
+---
+Tesla coils were my first and probably my longest deep dive into a project. I built my first coil around age 12. I even won first place at a regional science fair with it that same year. I even managed to use a much larger one as a final project all the way into college. Only some of my notes on the most recent coil version survived the years.
+<!--more-->
+## DRSSTC in Action
+<div><iframe width="560" height="315" src="https://www.youtube.com/embed/Ov16ToLt-lM?rel=0" frameborder="0" allowfullscreen></iframe></div>
+
+## DRSSTC
+
+### 5/15/12
+
+<p>So I built my first DRSSTC in the past few weeks. I had to do a final project for my PHSX 536: Electronic Circuit Design and Measurement class. I didn't choose a wimpy LED flasher circuit or anything like that.... I chose a <a target="new_window" href="http://wiki.4hv.org/index.php/Dual_Resonant_Solid_State_Tesla_Coil">Dual Resonant Solid State Tesla Coil</a>. In retrospect, probably not something that should be done in a few weeks. It never officially worked. While taking some voltage measurements one of the 40n60 IGBTs blew up in my face. Scary... but no permanent damage. I wrote a nice <a target="new_window" href="/assets/doc/DRSSTC.pdf">paper</a> on it however. There might be some things wrong with it. I kinda had to BS a little about the things I didn't understand. Hopefully my teacher doesn't understand either and skips over those parts. You can read it to get a good understanding of the <a target="new_window" href="http://stevehv.4hv.org/drsstc_design.htm">schematic</a> I used. Thanks Steve!</p>
+<hr />
+
+### 6/5/12
+
+<p>I didn't get an internship this summer. :,( On the positive side, now I have nothing to do but everything I want to do. I made a list of things that I want to accomplish this summer. One of them is build an audio modulated DRSSTC with an arc length longer than I am tall (~6'). All my classmates told me to call them when it was finished. Of course I am going to show off!</p>
+
+#### Secondary
+
+<p>So I have an idea of the arc length that I want. I started browsing around to get an idea of the size I would need to achieve 6'. I again came to Steve's website and his <a target="new_window" href="http://stevehv.4hv.org/DRSSTC2.htm">DRSSTC-2</a>. So apparently I am looking at a secondary form size of between 6" and 8". The local Home Depot sells 4 inch drain pipe (OD=4.215"). This definitely would not suffice. So I settled on the <a target="new_window" href="http://www.homedepot.com/h_d1/N-5yc1v/R-100321209/h_d2/ProductDisplay?catalogId=10053&langId=-1">8" cardboard concrete tube</a>. I have seen multiple websites with various suggestions for aspect ratios. Most stick between 1:3 to 1:5. I will go for 1:4 because its in the middle. The <a target="new_window" href="http://wiki.4hv.org/index.php/Dual_Resonant_Solid_State_Tesla_Coil">4Hv Wiki</a> suggests a wire size between 22-28 AWG for an 8" form. I went with 27 AWG because that is what I could find <a target="new_window" href="http://candhsurplus.com/product/wire/page1.htm">surplus</a> for a decent price. </p>
+<ul>
+	<li>Diameter = 7.75"</li>
+	<li>Length = 43.75"</li>
+	<li>27 AWG wire</li>
+	<li>N = 3020 Turns</li>
+	<li>L = 295 mH</li>
+	<li>C = 17 pF</li>
+	<li>f<sub>res</sub> = 71,190 Hz</li>
+</ul>
+<hr />
+
+### 6/10/12
+
+<p>For those of you who have been doing these kinds of projects you know what happens when you really get into one. Everything else just kinda falls by the wayside. Unfortunately for you this means that I don't update the site all that often. I do however have a few websites that you should read up on.
+<ul>
+	<li><a target="new_window" href="http://www.goodchildengineering.net/tesla-coils">Goodchild Engineering</a> - Electrical Engineering student at ASU. Lots of good pics.</li>
+	<li><a target="new_window" href="http://simreal.com/content/TeslaDesignPage1">Simulated Reality Systems</a> - Very detailed intro to designing a DRSSTC.</li>
+	<li><a target="new_window" href="http://www.hilo90mhz.hungrychild.org/tesla/DRSSTC/DRSSTC.html">Chester's Electronic Labs</a> - An example of Steve Wards original driver.</li>
+</ul>
+</p>
+<hr />
+
+### 6/15/12
+
+#### Controller Board
+
+<p>I finally got the controller board done. It is based on Steve Ward's <a target="new_window" href="http://stevehv.4hv.org/new_driver.html">universal driver 1.3</a>, but it is modified slightly. The schematic is the same, but I made the PCB more suitable for the <a target="new_window" href="http://www.instructables.com/id/Cheap-and-Easy-Toner-Transfer-for-PCB-Making/">Toner Transfer Method</a> for PCB manufacture. A note on PCBs: don't use Ferric Chloride! It is terrible for the environment. Use <a target="new_window" href="http://www.instructables.com/id/Stop-using-Ferric-Chloride-etchant!--A-better-etc/">copper chloride</a> instead.</p>
+<ul>
+	<li><a href="/assets/doc/controller.brd">Controller PCB</a> - Cadsoft Eagle Board File (Error Fixed 7/11/12)</li>
+	<li><a href="/assets/doc/controller_transfer.pdf">Toner Transfer</a> - PDF file to print on a laser printer</li>
+	<li><a href="/assets/doc/controller_parts.txt">Parts List</a> - TXT file with a basic parts list</li>
+</ul>
+<p>I would suggest looking over <a target="new_window" href="http://www.instructables.com/id/how-to-use-eaglecad/">this</a> instructable for an idea how to use Eagle.
+For some reason whenever a board file is saved, the polygon doesn't show up when you reopen it. If you want to edit the board, make sure you use the Ratsnest button to show the GND planes. If you just want to straight copy the board, you can use the transfer page. It is just a pdf file with two copies of the top and bottom of the board to be used in the Toner Transfer Method. The parts list is the same (nearly) as Steve Ward's. Some of the parts are obsolete so you might have to substitute. I will try and post a copy of the order I placed with Mouser.</p>
+
+#### Simulations
+
+<p><a target="new_window" href="http://wiki.4hv.org/index.php/ScanTesla">Scan Tesla</a> was developed by Terry Fritz in order to simply simulate a tesla coil (both solid state and original) using lumped circuit elements. Basically you just input the possible dimensions of your coil (secondary and primary inductance, tank capacitance, etc.) and Scan Tesla runs through each possibility and spits out the best one. Pretty neat software I must say. So anyway, <a href="/assets/doc/input.txt">here</a> is the input text file and <a href="/assets/doc/output.txt">here</a> is the output I get. I ended up winding 43.75" before running out of space. That works out to be about 3000 turns of wire. Quite a bit higher than you usually see. Scan tesla suggested that the benefits of a higher inductance outweighed the increase in resistance. I guess we will see... I measured the resistance of the wire using a standard digital multimeter. The <a target="new_window" href="http://hamwaves.com/antennas/inductance.html">inductance calculator</a> I used suggested that my resistance should be around 1300 ohms. It was 289 ohms. Something is wrong here. Maybe the inductance calculator includes some reactance from the inductor as well? They do ask for the design frequency which would suggest they did. I am hoping that 289 ohms is right. My output drops significantly if the secondary resistance is 1300 ohms, obviously. The expected resistance for 27 AWG wire is about 51 ohms per thousand feet. That gives about 315 ohms resistance total. Much closer to what I measured. Skin depth is greater than the conductor diameter (below 130 KHz anyway).</p>
+<p>I might try and modify Scan Tesla to include some practical design considerations. If you want to find the ideal number of turns in your coil you have to run separate simulations because secondary resistance and inductance are not linked. The program would just use the lowest resistance and highest inductance. Hardly a real world situation.</p>
+
+#### IGBTs
+
+<p>I am using the <a target="new_window" href="http://ixdev.ixys.com/DataSheet/99177.pdf">IXYS 60N60C2D1</a> brick IGBT. A lot of people say that it is underpowered for DRSSTC work, but it was cheap and still available on Mouser. It isn't that hard to adapt a system to a different IGBT if I want to upgrade later. I ran into <a target="new_window" href="http://www.microsemi.com/en/sites/default/files/micnotes/APT0201.pdf">this</a> article on IGBTs. It is a great read and very helpful. I would suggest at least browsing through it.</p>
+
+#### Gate Driver Transformers
+
+<p>The <a target="new_window" href="http://wiki.4hv.org/index.php/Gate_drive_transformer">HvWiki</a> on GDTs is very helpful. Check thedatastream.4hv.org link at the bottom of that page for some more info on GDTs. So now that I have an IGBT, I can start calculations on the GDT. I choose to use B64290L618X38 toroidal ferrites from Epcos. Probably should buy the next size up to increase the cross sectional surface area, but they work for now.</p>
+<ul>
+	<li>Drive Voltage = 12V</li>
+	<li>Frequency = 67.7 KHz</li>
+	<li>A<sub>L</sub> = 10,700 nH/N<sup>2</sup></li>
+	<li>XSA = 51.26 mm<sup>2</sup></li>
+</ul>
+<p>This means that I need more than 8.3 turns to avoid saturation. With 10 turns... The inductance is 1.07 mH. The magnitizing current (rms) is 48 mA. The gate current is 13 mA. The total current a driver must supply is 61 mA.</p>
+
+<hr />
+### 6/20/12
+<p>I finished ordering the components for the controller board from mouser. Click <a target="new_window" href="http://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=ef87f8155c">here</a> to access the order. I might have ordered some extra things or forgot something, but that should give you a good idea what to purchase.</p>
+<p>I ordered some <a target="new_window" href="http://www.cde.com/catalogs/942C.pdf">942C20P15K-F</a> capacitors today. I was looking at $8.35 a piece from mouser. Thankfully, I found a better place: <a target="new_window" href="http://www.onlinecomponents.com/cornell-dubilier_942c20p15k-f.html?p=10932642">Online Components</a>. Woohoo for $3.75 each. Plus the minimum order is 1. I feel much better now. I guess we will see if they are a good supplier.</p>
+<p>I plan on using 4 in series and 5 in parallel for a total of 188nF at 6000 VDC. I will add some 940C20s that I bought earlier by mistake to increase the capacitance to 263nF. Hopefully they won't feel ashamed by their bigger cousins.</p>
+
+<hr />
+### 7/11/12
+<p>I haven't done much these past couple of weeks. I made the primary coil supports. Made the MMC bank. Finished the control board. I just have the last bit of contruction to do. Then it will be time for first light! I still have to test the control board. It is a new design afterall.</p>
+<p>A note on the controller board: the 9 Volt power line was bridged to the two outputs of the UCC27423. I noticed this only after I had completed my board. I just sanded off the connection. I fixed the problem on the Eagle board file, but not the transfer. I will get to that in a little bit.</p>
+
+<hr />
+### 7/27/12
+<p>It Works!!!! I got first light on the massive coil. Three feet at least. I didn't have time to measure before death however. It took a bit of fiddling and rigging to get it to work though. I figured out that the opto-isolator used by Steve Ward inverted the interrupter signal, so there was an extra run through the 74HC14 hex-inverting trigger. Good thing my over current detector wasn't working correctly. It somehow blocked the signal no matter what. I will have to take a look at that. It might have something to do with the fact that the 74HC74 flip-flop that Steve used being active high, while mine (the TI version) was active low. I fixed the extra inverter on the .brd file above by passing the interrupter through an extra.</p>
+<p>So I tried to use a microcontroller to audio-modulate the interrupter. Catastrophic failure resulted... I haven't had time to look at it though. I had it disabled at the time of failure obviously. So now the question: I designed the system for bolt-in replacement of the IGBTs. I can spend the $40 to replace the two blown ones, or I can try to upgrade. CM300s seem to be a popular choice, but they require more complicated drivers. <a target="new_window" href="http://thedatastream.4hv.org/inazuma_mk1_drsstc.htm">This</a> guy tried to use TO-247 IGBTs which are much cheaper. Three or four dollars a piece. The mounting is harder though. I think I will attempt to parallel two IGBTs each in a full-bridge for a total of eight. More on this to come.</p>
+
+<hr />
+### 10/14/12
+<p>So I finally got around to ordering replacement 60n60s. I got some TO-247s as well (FGH40N60SMD).</p>
+
+### 07/24/13
+<p>So I have been tasked with igniting the bonfire at a local caving meeting. A couple years ago I was assigned the same task and I used a flame thrower to accomplish said task. Obviously I have to do better this year. So I was thinking... why not use a tesla coil?? I could even improve upon my last design.</p>
+<p>I have been thinking about it over the last couple weeks and I have decided on a DRSSTC magnifier system based on Tesla's original patents. If you haven't already, read over Tesla's Colorado Springs notes. It helped a lot. So I am thinking a three coil system would be best. A tightly coupled primary and secondary with a detacted free resonator.</p>
+#### Thought Experiment
+<p>Imagine a swing. Any swing will go. Imagine that you have a fiend on that swing who like to go really high. If you push the swing once, it develops a certain natural rythmic frequency. After a couple swings it slows down and eventually comes to a hault. In order to get the largest swing it is beneficial to make the intial push very fast and very hard thus allowing for the greatest impart of energy. Alternately you could impart the same energy over several periods of oscillation by striking the swing at the same frequency as the natural one. A short push (and detachment) at the crest of each swing is sufficient. Now imagine that the only way for you to push this swing is with a spring that is permanently attached to the swing and you. The best way to achieve height for your friend on the swing is to match the springs size and strength to that of the swing. That way, you can continue to provide small pushes at the crest of the oscillation. A spring that isn't matched to the same frequency will only hurt the height. <br /> If you haven't figured it out already the swing system is a tesla coil. The swing, spring, and you are the free resonator, secondary, and primary, respectively. A few changes have to be made however. In a Tesla magnifier the primary is tightly coupled to the secondary to get the fastest energy transfer. It is also not resonant which means instead of a spring to push and pull the swing, you just have a pole. <br />I would say that the best system is one that grabs the swing with a perfect grip at any point (most likely crossing zero deflection) and pushes the swing in the direction of motion. After the maximum energy has been transferred, the grip is let go. Now... how to do this in a tesla coil? Well you certainly need a system with the same resonating frequency in both the primary tank circuit and secondary/free coil circuit. That was Tesla's first discovery. You also need a mechanism for aligning the frequencies and for gripping/letting go of the coil. Most coils use loose coupling between the primary and secondary to achive this. But that means relatively small amounts of energy are transferred per cycle. Its like using a continuous stream of water from a hose to push your swing. If the stream is also varying in strength according to its resonance (that matches the swing's) it won't disconnect persay, but it will slow down or stop when pushing in the opposite direction.</p>
+
+### 07/25/13 Designing a Tesla Coil
+<p>I have been working on this for a few days now: trying to find formulas that define the best configuration of a tesla coil. While reading through the Colorado Springs Notes I saw a remark made by Tesla, "Now the secondary, to be at best, should work with all jars [capacitors] available and the regulating coil should be all cut out in the primary. This is namely the condition corresponding to the full output and the highest economy." Tesla had to use an additional inductor in the tank circuit to tune the coil since he used a static, unadjustable primary. So anyway... I will keep a list here of basic design principles that may or may not be correct or up to date as I add to it:
+<ol>
+	<li>Higher inductance to resistance ratio results in a better performing coil. ie. L/R is proportional to Q. <a target="new_window" href="http://en.wikipedia.org/wiki/Q_factor#RLC_circuits"><sup>1</sup></a></li>
+	<li>Reduce parasitic capacitance in all coils. <a target="new_window" href="http://en.wikipedia.org/wiki/Parasitic_capacitance"><sup>2</sup></a></li>
+	<li>Total length of any resonating circuit must be 1/4 of the wavelength of the standing wave in the material.</li>
+	<li>Use the largest capacitance your power supply can handle.</li>
+	<li>The ratio of inductances between primary and secondary (free resonator) determine the maximum voltage gain.</li>
+	<li>The coil is meant to resonate: coupling is key.</li>
+</ol>
+And now some explanations on each point...
+<ol>
+	<li>Obviously you should reduce resistance and increase inductance here. The problem is that they are inversely related. The more turns of wire you put on a certain form (increasing L), the greater the resistance due to added length. Tesla initially tried to cool the coils below room temperature (he even has a patent for cooling with liquid air) to decrease resistance. His later work does not use this method however. I suppose that it could be the increase in parasitic capacitance due to a higher permitivity surrounding the coil. Immersing the coil in a liquid increases the capacitance between the wires and adds to the overall impedance. I'm sure there is a balance between the two. Just adding dry ice to a coil can decrease the resistance by 40% or more. With a tube type primary coil it might be possible to cool by pumping a cooling fluid through. Something like dry ice in acetone as a cheap alternative to liquid N2. I was thinking of making the coil as a standalone form (sealed with some protectant) and just stuffing the center with dry ice during runs. I can't find anything on the loss tangent of solid CO2 so I guess I will just have to experiment.</li>
+	<li>Parasitic capacitance is as bad as it sounds. Between each coil on a form there exists a voltage difference. And with any voltage difference there comes a capacitance. It is on the order of 1 pF or less, but it is there none the less. Each little inductor capacitor circuit has its own resonant frequency which is much higher that that of the whole coil. The distributed capacitance has the effect of many little spring-mass systems on our swing example. They must be charged and discharged with each cycle adding to the total loss and reduces energy transfer to the system. I guess you could try to design a system where the resonant frequency of the parasite caps and inductors is an overtone of the whole system... One way of accomplishing reducing loss is to increase the spacing between wires. The greater the distance the lower the capacitance. This is fine for the free resonator, but the secondary needs to be tighly coupled to the primary and thus needs tighly spaced wires. Additionally the greater the spacing, the lower the inductance for a certain height so you run into physical constraints. <br />Another possibility is to limit the dielectric covering wires. A higher <a target="new_window" href="http://www.rfcafe.com/references/electrical/dielectric-constants-strengths.htm">permitivity</a> will results in larger capacitance as well. Teflon (PTFE), single build magnet wire is probably the best you can get right now in terms of low permitivity (~2) and loss (0.0003). But that comes at a (very large) price. Regular magnet wire is usually polyurethane (3.5 and 0.008). The coating is very thin so there isn't that much to worry about. Obviously whatever form you use for your coil will also benefit from a low permitivity and low loss. PVC is not too bad for permitivity but the loss is horrible (~3 and 0.02). Its even worse because PVC absorbs moisture (>55 and >0.04). Obviously vaccum would be the best (1 and 0) but who can afford that large a vaccum chamber...? Alternatively you can just use air, but it has a very low breakdown voltage. The voltage difference between wires might be enough to arc over and destroy the coil. Tesla also suggested in his magnifier patent to keep the wire spacing at a minimum to ensure the coil acted as a single conductor of the diameter of the coil form to reduce leakage to the atmosphere. Some testing or simulation is needed to find the best configuration here. Check out <a target="new_window" href="http://www.g3ynh.info/zdocs/magnetics/appendix/self_res/self-res.pdf">this paper (pdf)</a> for a good discussion on solenoid inductance and self capacitance. In short, parasitic capacitance is extremely hard to calculate. I used the doubly-asymptotic, empirically corrected (DAE) formula for self capacitance.</li>
+	<li>This is kinda debated among the community and I don't really understand why. Basically the coil develops a standing electrical wave in operation. Ensuring the coil's length is close to 1/4 the wavelength of EM radiation in your conductor of choice keeps the first anti-node (and thus the highest potential) near the top. I rarely see the 1/4 wave idea talked about except in highly studied (normally academic based) tesla designs. Tesla reiterated the point almost every time he designed a coil so I'm going to stick with that idea.</li>
+	<li>The whole point of a coil is the get the largest amount of energy into the secondary (and free resonator) and transform that energy into the largest electrical field possible. This starts with the tank circuit storing the largest amount of power. Obviously you are limited by the amount of power by your supply. For example, if you have a variac that can only take 10 Amps, that would be your limit. You should choose the largest cap that 10 Amps can charge at whatever voltage and design from there. With a larger capacitor, comes a smaller inductor for the same frequency however. A smaller inductor will most likely have a smaller coupling thus limiting the transfer of energy per cycle. You give some, you take some... electrical power that is.</li>
+	<li>As with any transformer, the ratio of inductances determines the voltage gain. There is certainly more at work here but for simplicity's sake (and my own ignorance) I won't go into detail. But just know that you are aiming for the highest inductance possible in the secondary and free resonator while still maintaining a strong transfer of energy. Also, I saw on some website that I can't remember that it is advisable to keep the free resonator above 3x the inductance of the secondary. The point was illustrated as a bell being struck by a clapper. A 5 lb bell would be ill suited by a 1 ton clapper. Anything more than some inductance smaller than the free resonator would be a waste.</li>
+	<li>Not only do you want a large transfer of energy but you also need to let the coil resonate to get the largest voltage. Ideally you would strike (input energy then disconnect) the free resonator with some set of energy and let it ring by itself. Unfortunately this is kinda impossible due to physical constraints. The only way to do it is to transfer energy slowly over several oscillations with a very loose coupling. The transfer goes both ways in this kind of system though. Energy will be taken out of the resonator and dumped back in the primary. Every time the energy oscillated back to the starting position (magnetic energy in the inductor), energy is lost to the primary again. A loose coupling between the systems helps eliminate this. It seems to me that the worst problem with the whole tesla coil design is the limit imposed by the coupling. The ultimate limitation is in the transfer of energy back to the primary tank on each cycle, not the resistance or other means of dissipation of the secondary. Some simulation is necessary here. <br />Tesla originally used a flat pancake secondary to combat this. The outermost coil was grounded and the innermost coil was the output. The primary encircled the secondary. That way you could get a very good transfer of energy to the outermost coils and the inner part would resonate freely (sort of). Tesla later moved on to the three coil magnifier system as a way to further reduce the coupling problem. A detached free resonator was electrically connected to an unresonating secondary of high coupling to the primary. Energy could be transferred to the secondary effectively over very few cycles and the free coil could resonate without magnetically transferring energy back to the primary. It seems to me that you still have transfer through the secondary to the primary but who knows. </li>
+</ol>
+</p>

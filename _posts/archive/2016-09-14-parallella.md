@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "HTM on Parallella"
+title:  "Parallella"
 date:   2016-09-14
 tags: programming
 category: archive
 ---
-
+I supported a kickstarter a while back to develop a 16-core FPGA based microcomputer capable of running a standard(ish) linux distro. And thus... Parallella was born. Currently, my parallella board is collecting dust because I don't have the knowledge to take advantage of multi-threading.
 <!--more-->
 # Specifications
 * Parallella board - kickstarter version with Zynq 7020

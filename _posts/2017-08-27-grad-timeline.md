@@ -4,10 +4,8 @@ title:  "Graduate School Timeline"
 date:   2017-08-27
 tags: school
 category: active
-abstract: >
-
 ---
-Now that my cursory evaluation of [applying to grad school](/active/2017/08/25/grad-school/) has been written I can focus on the detailed implementation.
+Now that my cursory evaluation of [applying to grad school](/active/2017/08/25/grad-school/) has been written I can focus on the detailed implementation and lay out my timeline for the next three months.
 <!--more-->
 
 # Goals

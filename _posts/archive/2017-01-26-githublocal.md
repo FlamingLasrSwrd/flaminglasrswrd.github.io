@@ -2,10 +2,10 @@
 layout: post
 title:  "Github Pages Local Build"
 date:   2017-01-26
-category: active
+category: archive
 tags: programming
 ---
-
+Some environment work on getting this site up and running.
 <!--more-->
 
 # Github Pages local build
