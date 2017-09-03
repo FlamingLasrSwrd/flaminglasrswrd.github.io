@@ -12,7 +12,7 @@ layout: default
             {% if post.summary %}
               {{ post.summary }}
             {% else %}
-              {{ post.excerpt | remove: '<h1>' | remove: '</h1>' }}
+              {{ post.excerpt }}
             {% endif %}
           </span>
         </div>
