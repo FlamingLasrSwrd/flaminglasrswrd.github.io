@@ -8,6 +8,11 @@ category: active
 Now that my cursory evaluation of [applying to grad school](/active/2017/08/25/grad-school/) has been written I can focus on the detailed implementation and lay out my timeline for the next three months.
 <!--more-->
 
+# Daily Work
+## Targets
+* 1 hour of learning: 3 hours of implementation
+* 10% planning: 90% doing
+
 # Goals
 
 ## By Time
@@ -46,5 +51,22 @@ I found a workbook provided by Kaplan. I shall work through it and if I have tim
 **After:** I think I am more confused. AI just isn't specific enough. I thought I would just be looking at CS programs, but now I have to look at cognitive and brain sciences too.  
 **Time Spent:** 6 hrs
 
+## Thu, Aug 30, 2017 - Website
+**Before:** Need to work on the site. Its horrendous.  
+**After:**  It's less horrendous.  
+**Time Spent:** 6 hrs
+
+## Sun, Sep 3, 2017 - Back on the Wagon
+**Before:** I fell off the wagon. Let's get back to it. Over the weekend I did a few hours of work on the site and some AI work, but not very much. Mostly I spent time watching Youtube :( Today I would like to set up some structure to my days.  
+**After:**  
+
+**Time Spent:**
+
+## Sun, Sep 3, 2017 -
+**Before:**
+
+**After:**
+
+**Time Spent:**
 
 [MOOC]: /active/2017/08/28/MOOC/
