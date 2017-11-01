@@ -41,8 +41,19 @@ Adaptive Resonance Theory defines several entities in the brain which control th
 Jeff Hawkins and his research group has developed a more localized theory of the brain: Hierarchical Temporal Memory (HTM). Their research attempts to model a single column of neurons in the neocortex. Unlike Deep Learning and similiar algorithms, HTM uses temporal information integrally.
 > We demonstrate that HTM networks learn complex high-order sequences from data streams, rapidly adapt to changing statistics in the data, naturally handle multiple predictions and branching sequences, and exhibit high tolerance to system faults. [^cui_continuous_2016]
 
-# Current Working Theory
+# Coherence
+A system of information is said to be coherent if all statements in the system are logically consistent, i.e. that the implications or propositions of one subsystem are not at odds with other statements. It is an epistemology of relative truth. A system can be the entire universe, a brain, or the energy of a single photon. A system must also contain definitions of the boundaries of that system.
 
+> Implied: Mathematics of propositional logic.  
+> All men are mortal. -> Draws two boundaries: *Men* and *Mortals*. Places *men* within the boundaries of *mortals*.  
+> Socrates is a man. -> Draws a third boundary: *Socrates*. Places Socrates within the boundaries of *Man*.  
+> ... Socrates is mortal. -> Implies Socrates is within the boundaries of *Mortal*.  
+
+Rather than an implication of the verisimilitude of a person's belief, I use this epistemology to explain one aspect of intelligence: Each new bit of information is judged by its coherence with the brain rather than its truth.
+The human mind[^brainvmind][] is influenced by the past both immediately perceived information and evolutionary.
+
+
+[^brainvmind]: The *brain* is the physical implementation of the mind's workings.
 
 # Bibliography
 [^grossberg_adaptive_2013]: Grossberg, Stephen. 2013. “Adaptive Resonance Theory: How a Brain Learns to Consciously Attend, Learn, and Recognize a Changing World.” Neural Networks 37: 1–47. doi:10.1016/j.neunet.2012.09.017.
