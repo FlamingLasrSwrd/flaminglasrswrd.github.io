@@ -24,5 +24,5 @@ group :jekyll_plugins do
 
 gem 'execjs'
 gem 'therubyracer'
-
+gem "nokogiri", "~> 1.8.1"
 end
