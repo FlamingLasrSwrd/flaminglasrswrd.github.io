@@ -5,8 +5,7 @@ date: 2017-08-30T00:00:00.000Z
 tags: school
 category: active
 ---
-
-Artificial intelligence has held my interest longer than any other topic I have researched. What follows is a collection of researchers and their contribution to the field of AI as well as its implication for my research. <!-- more -->
+Artificial intelligence has held my interest longer than any other topic I have researched. Here are my notes on AI. They are not really for the benefit of reading, just the writing. I rarely even read it. <!-- more -->
 
 # Research Interests
 
@@ -97,7 +96,7 @@ Adds spatially invariant feature recognition.
 
 # Competition
 
-- local groups of units which can represent similar but mutually exclusive objects compete with one another for output by inhibiting the output of others
+- local groups of units which can represent similar but mutually exclusive objects compete with one another for output by inhibiting the output of others while sharing roughly similar inputs
 - unit activity correlates with certainty of output
 - feed-back from feed-forward projections of a local group modulate inputs of local group to increase certainty
 - all unit activity (certainty) and data transmission decays with time
@@ -106,6 +105,36 @@ Adds spatially invariant feature recognition.
 Feed-forward information from the senses traverses the hierarchy of processing until it reaches a point of uncertainty. That point is where the mutual activation of a local group of cells and their resultant mutual inhibition reduces the group's output to below the activation threshold of the next layer. Three possibilities can occur as a result of this uncertainty. The first two result in a winning cell in the local group which continues the information propagation upwards. The third does not result in a winner and ends the information processing. The first process uses information from higher layers to fill in missing or manipulate bottom-up data. This provides a means of corroborating feature maps across a larger spatial or temporal space. The second process results as an integration of signal over time and is essentially a measure of the most likely. The extra time that it takes to reach a threshold of activation is the balancing factor between processing efficiency and capacity. More feature sets can be compared if an intelligence has the time to examine all of them at once. Conversely, if an intelligence has been trained to think quickly, less feature sets can be compared. The third process is the terminal fate of all sensory information in the brain. If the uncertainty cannot be clarified by either feed-back or time, the information decays and is lost. The ratio of time to action is a measure of tolerance to uncertainty.
 
 # Ideas
+
+## Use Cases
+
+The space of possible problems for AI to work on:
+
+- linear categorization; entirely feedforward capable inputs; simple input to output mapping
+- expected non-occurrence of reward
+- unexpected non-occurrence of reward
+- specific vs. general inputs
+- goal orientated behavior
+- external reward
+- expectation
+- unexpectation
+- noise vs. saturation
+- one-to-many
+- many-to-one
+- inhibitory matching
+- excitatory matching
+- stability vs. plasticity
+
+A global reinforcement center? A global measure of uncertainty prevents spurious, random associations from guiding action. Tonically inhibit action until global convergence of certainty is achieved. This includes measures of physical movement are taught to the cerebellum...
+
+- learning is propagated backward from appropriate outputs
+- what if no training signal is defined?
+
+  - learning spans the combinations of inputs to the limit of processing capabilities
+
+- a training signal accelerates development in the wanted direction
+
+  - e.g. given sufficient observation without any reward, a human child has the capacity to learn to speak. However, this is probably not possible given the time it would require and the shear number of possible inputs.
 
 What if consciousness was developed in humans because our brain's capacity outstripped its inputs? I.e. The sensory information (in the mathematical sense) decays as it travels to higher and higher levels of processing and is successively obscured by internal hallucinations (feed-back projections). The sensory information never reaches our highest levels of processing and therefore leaves a certain amount of high level processing available solely for internal computation. In essence, some brain capacity is devoted entirely to processing internal, spontaneous information generation. The amount and capacity of this processing is what we call consciousness. In contrast, lower animals have a lower brain capacity to sensory input ratio and therefore do not possess the ability to think outside the realm of their inputs. Schizophrenia is a disease of too much consciousness.
 
