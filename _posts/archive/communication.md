@@ -2,7 +2,6 @@
 layout: post
 title:  "Communication Checklist"
 date: "04/06/2015"
-tags:
 category: archive
 ---
 <!--more-->

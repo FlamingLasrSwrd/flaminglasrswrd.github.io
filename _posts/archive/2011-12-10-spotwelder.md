@@ -4,11 +4,10 @@ title:  "Spot Welder"
 date:   2011-12-10
 tags: electronics
 category: archive
-abstract: >
-  Spot welders are used to affix two materials by melting and fusing under pressure without the addition of filler material. A simple spot welder can be constructed at home using a microwave over transformer.
 ---
-
+Spot welders are used to affix two materials by melting and fusing under pressure without the addition of filler material. A simple spot welder can be constructed at home using a microwave over transformer.
 <!--more-->
+
 <div id="conhead">
 	<a href="/assets/img/full.JPG"><img src="/assets/img/full_s.JPG" width="250" alt="Spotwelder Image Overview"></a>
 	<br>Click on the image for the large version.
