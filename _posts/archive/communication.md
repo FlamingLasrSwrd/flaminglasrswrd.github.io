@@ -4,9 +4,8 @@ title:  "Communication Checklist"
 date: "04/06/2015"
 category: archive
 ---
+A generalized communications checklist/outline following the Five Cannons of Rhetoric as a summary of my introduction to public speaking class.
 <!--more-->
-
-A generalized communications checklist/outline following the Five Cannons of Rhetoric as a summary of my introduction to public speaking class:
 
 ## Invention
 

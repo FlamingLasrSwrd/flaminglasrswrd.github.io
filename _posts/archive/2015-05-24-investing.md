@@ -5,6 +5,7 @@ date:   2015-05-24
 tags: finance
 category: archive
 ---
+Started with an analysis of some ETFs... Conclusion: [Wealthfront](https://wealthfront.com) does it better.
 <!--more-->
 ## Intro
 So I was listening to an [episode][] of the Tim Ferriss show a few weeks ago with Tony Robbins as the guest. The topic of discussion was mainly around his new book [Money: Master the Game][] in which Tony details his interviews of several of the most profitable finance *movers and shakers* today. Oddly enough, that very next day my mother warned me that if I didn't start investing soon I wouldn't have anything for retirement. So I figured I would devote a few hours to research and reporting on investing.

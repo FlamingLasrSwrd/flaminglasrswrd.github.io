@@ -140,3 +140,10 @@ git push origin
 ```
 
 Check your email to make sure everything built as it should -github sends you build error messages. Then check your site at [your_username].github.io.
+
+# Update 3/6/18
+I received a message from Github stating that one of my dependencies had a security vulnerability. So I had to update my gems.
+In my git repo folder:
+```
+bundle update
+```

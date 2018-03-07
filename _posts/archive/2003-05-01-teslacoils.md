@@ -5,7 +5,8 @@ date: 2003-05-01T00:00:00.000Z
 tags: electronics
 category: archive
 ---
-Tesla coils were my first and probably my longest deep dive into a project. I built my first coil around age 12\. I even won first place at a regional science fair with it that same year. I even managed to use a much larger one as a final project all the way into college. Only some of my notes on the most recent coil version survived the years. <!-- more -->
+Tesla coils were my first and probably my longest deep dive into a project. I built my first coil around age 12. I even won first place at a regional science fair with it that same year. I managed to use a much larger version as a final project all the way into college. Only some of my notes on the most recent coil version survived the years.
+<!-- more -->
 
 # DRSSTC in Action
 
@@ -36,11 +37,7 @@ So I have an idea of the arc length that I want. I started browsing around to ge
 - N = 3020 Turns
 - L = 295 mH
 - C = 17 pF
-- f
-
-  <sub>res</sub>
-
-  = 71,190 Hz
+- f<sub>res</sub> = 71,190 Hz
 
 --------------------------------------------------------------------------------
 
@@ -82,17 +79,8 @@ The [HvWiki](http://wiki.4hv.org/index.php/Gate_drive_transformer) on GDTs is ve
 
 - Drive Voltage = 12V
 - Frequency = 67.7 KHz
-- A
-
-  <sub>L</sub>
-
-  = 10,700 nH/N
-
-  <sup>2</sup>
-
-- XSA = 51.26 mm
-
-  <sup>2</sup>
+- A<sub>L</sub> = 10,700 nH/N<sup>2</sup>
+- XSA = 51.26 mm<sup>2</sup>
 
 This means that I need more than 8.3 turns to avoid saturation. With 10 turns... The inductance is 1.07 mH. The magnitizing current (rms) is 48 mA. The gate current is 13 mA. The total current a driver must supply is 61 mA.
 

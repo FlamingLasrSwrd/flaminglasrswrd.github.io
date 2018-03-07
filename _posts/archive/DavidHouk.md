@@ -5,6 +5,8 @@ date: "05/09/2015"
 tags:
 category: archive
 ---
+A speech I gave for a COMS class. The assignment was to give/read a eulogy or other serious, semi-private speech. I chose to talk about my grandfather, whom I loved dearly.
+<!--more-->
 
 David Bruce Houk. Known to me and the rest of his grandchildren as "Grampy". A teacher. A patriarch. A champion of his own will. Grampy was a remarkable man.
 

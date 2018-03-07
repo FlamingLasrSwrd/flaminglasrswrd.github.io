@@ -5,6 +5,7 @@ date: "03/25/2015"
 tags: biology
 category: archive
 ---
+Started noted on evaluating my 23andme data, but discontinued (I don't know enough genetics). If you are interested in this, contact me and we can exchange 23andme data.
 <!--more-->
 
 # Phenotypic Data

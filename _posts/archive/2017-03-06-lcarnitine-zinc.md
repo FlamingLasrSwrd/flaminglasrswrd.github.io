@@ -6,6 +6,7 @@ category: archive
 tags: chemistry
 related: Alcohol
 ---
+A few notes on synthesizing L-Carnitine Zinc: a pharmaceutical? for protecting the gut. Possible use in the anti-hangover project.
 <!--more-->
 
 # Zinc Purification
