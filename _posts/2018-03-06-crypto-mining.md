@@ -7,4 +7,4 @@ tags: programming
 ---
 <!--more-->
 
-[Nvidia Overclock script][/assets/src/overclock.sh]
+[Nvidia Overclock script](/assets/src/overclock.sh)
