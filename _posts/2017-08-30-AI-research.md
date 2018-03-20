@@ -6,7 +6,7 @@ tags: school
 category: active
 ---
 Artificial intelligence has held my interest longer than any other topic I have researched. Here are my notes on AI. They are not really for the benefit of reading, just the writing. I rarely even read it.
-<!-- more -->
+<!--more-->
 
 # Research Interests
 
