@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: So Little Time
 short_title: SLT
-email: your-email@domain.com
+email: elijah.k.dunn@gmail.com
 description: >
   An unfinished collection.
 baseurl: ""
@@ -25,6 +25,8 @@ date_format: "%b %-d, %Y"
 header_pages:
  - about.md
  - archive.md
+ - STM.md
+ - journal.md
 
 # Build settings
 markdown: kramdown
@@ -71,7 +73,7 @@ fb_page_id:
 
 # Disqus post comments
 # (leave blank to disable Disqus)
-disqus_shortname:
+disqus_shortname: elijahkd
 
 # txtpen post comments
 # (leave blank to disable txtpen)
@@ -84,10 +86,10 @@ facebook_appid:
 facebook_comments_number: 10
 
 # Social icons
-github_username:
-reddit_username:
+github_username: ekdunn
+reddit_username: brainenhance
 bitbucket_username:
-stackoverflow_id:
+stackoverflow_id: 9530723
 twitter_username:
 skype_username:
 steam_nickname:
@@ -95,11 +97,12 @@ google_plus_id:
 linkedin_username:
 angellist_username:
 medium_id:
-bitcoin_url:
+bitcoin_url: 32Raj9qa4tZeXEK1aq9wonr8t9GHZYqy7t
 paypal_url:
 flattr_button:
 telegram_username:
 vk_id:
+wikipedia_username: Ekdunn
 
 # Post sharing icons
 show_sharing_icons: false

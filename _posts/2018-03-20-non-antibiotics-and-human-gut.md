@@ -17,17 +17,17 @@ I must stress that this data is preliminary, in-vitro, and has possible conflict
 
 Researchers simulated the effect of small concentrations of common drugs on gut bacteria by measuring their growth rate in-vitro. Thirty-eight species of bacteria were chosen to represent the diversity of the human microbiome and the constraints of high-throughput testing.
 
-> All 38 species are found in the gut of healthy individuals and are part of a larger strain resource panel for the healthy human gut microbiome. [^1]
+> All 38 species are found in the gut of healthy individuals and are part of a larger strain resource panel for the healthy human gut microbiome. <sup id="a1">[1](#f1)</sup>
 
 The species chosen included some disease causing species such as Clostridia difficile and Fusobacterium nucleatum, which cause "C. diff" infections and contribute to peridontal disease, respectively. A [common probiotic][], Lactobacillus paracasei, was also tested.
 
 Similarly, the compounds were chosen to represent a broad array of drug classes (anti-diabetics, antipsychotics, NSAIDS, etc.).
 
-> Most compounds are administered to humans (1,079), and they cover all main therapeutic classes (Supplementary Table 1).[^1]
+> Most compounds are administered to humans (1,079), and they cover all main therapeutic classes (Supplementary Table 1).<sup id="a2">[1](#f1)</sup>
 
 Unfortunately, only off-patent drugs were screened here, which limits direct comparison of these results to some of the most commonly prescribed drugs today. Furthermore, some of the drugs were tested at lower concentrations than a typical dose would produce due to technique constraints.
 
-> In summary, we probed human-targeted drugs largely within physiologically relevant concentrations and our data are likely to under-report the impact of human-targeted drugs on gut bacteria.[^1]
+> In summary, we probed human-targeted drugs largely within physiologically relevant concentrations and our data are likely to under-report the impact of human-targeted drugs on gut bacteria.<sup id="a3">[1](#f1)</sup>
 
 For instance, researchers estimated the the compound Fluvastatin (cholesterol lowering statin; trade name Lescol) reaches approximately 30uM concentration in the human gut while they were only able to test it at 20uM.
 
@@ -37,19 +37,19 @@ For instance, researchers estimated the the compound Fluvastatin (cholesterol lo
 
 A most shocking statistic is the sheer number of drugs that could inhibit the growth of gut bacteria despite being classified as *non-antibiotic*.
 
-> Notably, 27% of the non-antibiotic drugs were also active in our screen.[^1]
+> Notably, 27% of the non-antibiotic drugs were also active in our screen.<sup id="a4">[1](#f1)</sup>
 
 Somewhat expectedly, compounds that are used to treat viruses, parasites, and similar are more likely to be antibiotic.
 
-> More than half of the anti-infectives against viruses or eukaryotes exhibited anticommensal activity (47 drugs; Fig. 1a, b).[^1]
+> More than half of the anti-infectives against viruses or eukaryotes exhibited anticommensal activity (47 drugs; Fig. 1a, b).<sup id="a5">[1](#f1)</sup>
 
 Even though many common drugs weren't tested due to patent laws, we can draw some conclusions about the possibility of microbiome interactions from chemical similarity:
 
-> Drugs from all major ATC indication areas exhibited anticommensal activity, with antineoplastics, hormones and compounds that target the nervous system inhibiting gut bacteria more than other medications (Extended Data Figs 9a, 10).[^1]
+> Drugs from all major ATC indication areas exhibited anticommensal activity, with antineoplastics, hormones and compounds that target the nervous system inhibiting gut bacteria more than other medications (Extended Data Figs 9a, 10).<sup id="a6">[1](#f1)</sup>
 
 All these data point to some fairly alarming consequences, so the researchers attempted to match their in-vitro data with the small amount of in-vivo data in the literature.
 
-> Nonetheless, we find high concordance between the effects of drugs in vitro and in humans, confirming clinical relevance and direct anticommensal activity for the aforementioned cases.[^1]
+> Nonetheless, we find high concordance between the effects of drugs in vitro and in humans, confirming clinical relevance and direct anticommensal activity for the aforementioned cases.<sup id="a7">[1](#f1)</sup>
 
 Two notable drugs that correlate well with the in-vivo data are metformin (for type-II diabetes) and omeprazole (for heartburn).
 
@@ -60,15 +60,15 @@ Two notable drugs that correlate well with the in-vivo data are metformin (for t
 
 While the results are notable in and of themselves, the widespread implications are even more so. The researchers comment on the pharmaceutical industry as a whole:  
 
-> Moreover, one could speculate that pharmaceuticals, used regularly in our times, may be contributing to a decrease in microbiome diversity in modern Western societies.[^1]
+> Moreover, one could speculate that pharmaceuticals, used regularly in our times, may be contributing to a decrease in microbiome diversity in modern Western societies.<sup id="a8">[1](#f1)</sup>
 
 And to the possibility that bacterial inhibition from antipsychotics may not be a bug, but a feature:
 
->  This raises the possibility that direct bacterial inhibition may not only manifest as side effect of antipsychotics, but also be part of their mechanism of action.[^1]
+>  This raises the possibility that direct bacterial inhibition may not only manifest as side effect of antipsychotics, but also be part of their mechanism of action.<sup id="a9">[1](#f1)</sup>
 
 Even more alarming is the implication that the development of antibiotic resistant superbugs may not be entirely due to antibiotics themselves.
 
-> All of these results point to an overlap between resistance mechanisms against antibiotics and against human-targeted drugs, implying a hitherto unnoticed risk of acquiring antibiotic resistance by consuming non-antibiotic drugs.[^1]
+> All of these results point to an overlap between resistance mechanisms against antibiotics and against human-targeted drugs, implying a hitherto unnoticed risk of acquiring antibiotic resistance by consuming non-antibiotic drugs.<sup id="a10">[1](#f1)</sup>
 
 It's not all bad, however. *C. diff* is a common hospital acquired infection and it notoriously difficult to get rid of. Perhaps this research might open up new ways to combat some antibiotic resistant infections by combining the typical antibiotic course with one of the promising, non-antibiotic drugs found in this study.
 
@@ -78,11 +78,11 @@ It's not all bad, however. *C. diff* is a common hospital acquired infection and
 
 As I said in the intro, don't go running off to dump all your drugs down the toilet. First of all, that's a poor way to dispose of your pharmaceuticals. Secondly:
 
-> However, before any translational application can be pursued, our in vitro findings need to be tested rigorously in vivo (in animal models, pharmacokinetic studies and clinical trials) and understood better mechanistically.[^1]
+> However, before any translational application can be pursued, our in vitro findings need to be tested rigorously in vivo (in animal models, pharmacokinetic studies and clinical trials) and understood better mechanistically.<sup id="a11">[1](#f1)</sup>
 
 One note on the potential conflicts of interest: the lab where the research was conducted has filed for patents directly profiting from the results of this study. While this is not uncommon (many professors and researchers sign agreements with their employers giving away intellectual property rights), it is worth noting.
 
-> [European Molecular Biology Laboratory] has filed two patent applications on repurposing compounds identified in this study for the treatment of infections and for modulating the composition of the gut microbiome, and on the use of the in vitro model of the human gut microbiome to study the impact of xenobiotics...[^1]
+> [European Molecular Biology Laboratory] has filed two patent applications on repurposing compounds identified in this study for the treatment of infections and for modulating the composition of the gut microbiome, and on the use of the in vitro model of the human gut microbiome to study the impact of xenobiotics...<sup id="a12">[1](#f1)</sup>
 
 **A lot of research is still needed to determine the real impact of these drugs on your microbiome.**
 
@@ -90,7 +90,7 @@ One note on the potential conflicts of interest: the lab where the research was 
 
 This is quite exciting research. It could explain some of the common side effects in clinical trials with unknown pathophysiology. This data may give us some much needed insight on the variability of drug reactions and new avenues of research to pursue in the future.
 
-As for me, I've been considering eating more resistant starch[^2] lately and this research just convinced me.
+As for me, I've been considering eating more resistant starch<sup id="b1">[2](#f2)</sup> lately and this research just convinced me.
 
 We really have a lot to learn about the bacterial friends we carry with us our whole lives.
 
@@ -98,8 +98,8 @@ We really have a lot to learn about the bacterial friends we carry with us our w
 
 # Bibliography
 
-[^1]: Maier, Lisa, Mihaela Pruteanu, Michael Kuhn, Georg Zeller, Anja Telzerow, Exene Erin Anderson, Ana Rita Brochado, et al. “Extensive Impact of Non-Antibiotic Drugs on Human Gut Bacteria.” Nature, March 19, 2018. https://doi.org/10.1038/nature25979.
+<b id="f1">1</b> Maier, Lisa, Mihaela Pruteanu, Michael Kuhn, Georg Zeller, Anja Telzerow, Exene Erin Anderson, Ana Rita Brochado, et al. “Extensive Impact of Non-Antibiotic Drugs on Human Gut Bacteria.” Nature, March 19, 2018. https://doi.org/10.1038/nature25979. [↩](#a1)[↩](#a2)[↩](#a3)[↩](#a4)[↩](#a5)[↩](#a6)[↩](#a7)[↩](#a8)[↩](#a9)[↩](#a10)[↩](#a11)[↩](#a12)
 
-[^2]: Yang, Xiaoping, Kwame Oteng Darko, Yanjun Huang, Caimei He, Huansheng Yang, Shanping He, Jianzhong Li, Jian Li, Berthold Hocher, and Yulong Yin. “Resistant Starch Regulates Gut Microbiota: Structure, Biochemistry and Cell Signalling.” Cellular Physiology and Biochemistry 42, no. 1 (2017): 306–18. https://doi.org/10.1159/000477386.
+<b id="f2">2</b> Yang, Xiaoping, Kwame Oteng Darko, Yanjun Huang, Caimei He, Huansheng Yang, Shanping He, Jianzhong Li, Jian Li, Berthold Hocher, and Yulong Yin. “Resistant Starch Regulates Gut Microbiota: Structure, Biochemistry and Cell Signalling.” Cellular Physiology and Biochemistry 42, no. 1 (2017): 306–18. https://doi.org/10.1159/000477386. [↩](#b1)
 
 [common probiotic]: https://www.amazon.com/s/?field-keywords=Lactobacillus+paracasei
