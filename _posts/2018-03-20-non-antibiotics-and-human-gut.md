@@ -5,8 +5,7 @@ date: "2018-03-20 13:10"
 category: active
 tags: biology steemit
 ---
-
-<!--more-->
+New research in the journal Nature has demonstrated that many of the drugs we take every day may have hitherto unknown microbiome effects: My notes.<!--more-->
 
 # Intro
 **[New research](https://www.nature.com/articles/nature25979) in the journal Nature has demonstrated that many of the drugs we take every day may have hitherto unknown microbiome effects.** Using high-throughput techniques, researchers measured the growth rate of 38 species of common gut bacteria after exposure to over 1,000 drugs at low concentrations. These drugs included many common antipsychotics and even OTC medications like aspirin. They found that almost a quarter of the compounds surveyed inhibited at least one species of bacteria and noted that this is probably an underestimate of their effects.
