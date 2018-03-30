@@ -4,6 +4,7 @@ title: "Chemistry Reference"
 date: "2018-03-05 20:26"
 category: active
 tags: chemistry reference
+link-citations: true
 ---
 <!--more-->
 
@@ -19,7 +20,7 @@ tags: chemistry reference
 - the resulting catalyst is reduced with flowing hydrogen at 250C for 5 hrs
   - alternatively, catalyst can be activated in situ with primary alcohol
 
-[(Sivaraj, 1988)](#@SivarajCharacterizationcopperalumina1988)
+@sivaraj_characterization_1988
 
 ## Cu/SiO2 + Ammonia
 -> approximately 17% wt Cu with 41 sq.m/g Cu surface area
@@ -32,7 +33,7 @@ tags: chemistry reference
 - dry overnight at 120C
 - calcine at 450C for 4 hrs
 
-[(Dong,2016)](#@DongComparativestudysilicasupported2016)
+[](#@dong_comparative_2016)
 
 ## Cu/SiO2 + Urea
 -> 19% wt Cu; 18 sq.m/g Cu surface area
@@ -43,7 +44,6 @@ tags: chemistry reference
 - dry overnight at 120C
 - calcine at 450C for 4 hrs
 
-[(Dong,2016)](#@DongComparativestudysilicasupported2016)
+@dong_comparative_2016
 
-
-[#bibliography]: #
+# References
