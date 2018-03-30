@@ -1,0 +1,23 @@
+<ul>
+
+{% for record in site.data.zotero %}
+  <li class="{{record.type}}">
+        <h2 class='title'>{{record.title}}</h2>
+        <table><tbody>
+          <tr><th class='type'>Type</th><td>{{record.type}}</td></tr>
+          {% for a in record.author %}
+            <tr><th class='author'>Author</th><td>
+              {{a.family}}, {{a.given}}</td></tr>
+          {% endfor %}
+          <tr><th class='volume'>Volume</th><td>{{record.volume}}</td></tr>
+          <tr><th class='issue'>Issue</th><td>{{record.issue}}</td></tr>
+          <tr><th class='pages'>Pages</th><td>{{record.pages}}</td></tr>
+          <tr><th class='publisher'>Publisher</th><td>{{record.publisher}}</td></tr>
+          <tr><th class='issued'>Issued</th><td>{{record.issued}}</td></tr>
+          <tr><th class='accessed'>Accessed</th><td>{{record.accessed}}</td></tr>
+          <tr><th class='modified'>Modified</th><td>{{modified}}</td></tr>
+        </tbody></table>
+      </li>
+{% endfor %}
+
+</ul>

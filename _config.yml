@@ -73,7 +73,7 @@ fb_page_id:
 
 # Disqus post comments
 # (leave blank to disable Disqus)
-disqus_shortname: elijahkd
+disqus_shortname:
 
 # txtpen post comments
 # (leave blank to disable txtpen)
@@ -92,13 +92,13 @@ bitbucket_username:
 stackoverflow_id: 9530723
 twitter_username:
 skype_username:
-steam_nickname:
+steam_nickname: ekdunn
 google_plus_id:
 linkedin_username:
 angellist_username:
 medium_id:
 bitcoin_url: 32Raj9qa4tZeXEK1aq9wonr8t9GHZYqy7t
-paypal_url:
+paypal_url: paypal.me/ekdunn
 flattr_button:
 telegram_username:
 vk_id:

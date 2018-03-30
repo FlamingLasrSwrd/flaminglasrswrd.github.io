@@ -4,6 +4,7 @@ _private/
 _site/
 .sass-cache/
 .jekyll-metadata
+Gemfile.lock
 
 # C++
 # Prerequisites
