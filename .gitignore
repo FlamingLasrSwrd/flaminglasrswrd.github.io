@@ -39,3 +39,7 @@ Gemfile.lock
 *.exe
 *.out
 *.app
+
+# Python
+*.pyc
+*.ipynb_checkpoints*
