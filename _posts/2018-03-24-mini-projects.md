@@ -4,9 +4,35 @@ title: "Mini Projects"
 date: "2018-03-24 15:41"
 category: archive
 ---
-A list of shorter projects. Mostly displayed as images.<!--more-->
+A list of shorter projects.<!--more-->
 
 # Intermittent Wifi
+**Update2:**
+I may have it figured. I think that my wifi issue was hard to diagnose because it had to do with encryption. Basically, every time my wifi card wanted to get a better signal (change AP's) or experienced too much interference on a particular channel, it used a random MAC address to attempt a reconnect. Unfortuantely, something about the PEAP-MSCHAPv2 verification algorithm at my University was rejecting the new MAC addresses and anything that caused my card to cycle would end up loosing connectivity. So bluetooth and locking my computer would cause cycling and end the connection (without actually ending it). Anyway, now I have a seemingly stable connection after stabilizing the driver and network manager.
+
+## Driver Fix
+To test:
+```bash
+sudo modprobe -r rtl8821ae
+sudo modprobe rtl8821ae msi=1 ant_sel=2
+```
+To make permanent:
+```bash
+echo "options rtl8821ae msi=1 ant_sel=2" | sudo tee /etc/modprobe.d/rtl8821ae.conf
+```
+- I am still using the rtl8821ae from lwfinger driver found below.
+
+## Network Manager Fix
+```bash
+echo -e "[device-mac-randomization]\nwifi.scan-rand-mac-address=0" | sudo tee -a /etc/NetworkManager/NetworkManager.conf
+```
+There's probably a better place for that than in the NetworkManager.conf file.
+
+## Archive
+
+**Update:**
+I'm still having trouble with the wifi, so don't follow this procedure. Leaving it here for archival purposes.
+
 I've always had trouble with this laptop hardware. Sometimes the wifi would cut in and out. Sometimes the audio would have lots of artifacts. F.Lux didn't work at all. Just weird stuff. I believe most of it is related to kernel and drivers. Recently, the wifi has been extremely slow, but only intermittently. Also, I've been getting ubuntu error reporting pop-ups dealing with systemd-journald SIGABRT messages on every boot. After a few hours of fiddling, I finally realized the two were related. Apparently, there's a bug somewhere in bluetooth causing the error on boot. I don't use bluetooth at all so I tried to disable the service. That didn't work either. Eventually I figured out that I also had to blacklist the driver.
 My grub is not standard either. I had to do some fiddling to get it to boot properly with GNOME and an encrypted drive.
 I'm not sure if this is related, but I was having trouble with ```sudo``` commands. Any sudo command in terminal would take several seconds to ask for my password. I used [this solution][]. Basically, just add your hostname to ```/etc/hosts``` at the end of a couple lines.
