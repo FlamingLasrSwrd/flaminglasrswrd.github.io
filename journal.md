@@ -3,7 +3,27 @@ layout: page
 title: Journal
 permalink: /journal/
 ---
-Semi-unfiltered life updates in the moment. Do not take seriously or literally.<!--more-->
+Semi-unfiltered life updates in the moment barely useful to me. Do not take seriously or literally.<!--more-->
+
+## 06 APR 2018
+Feeling much better today.
+
+I think I'll move any conversations about AI to a separate [page][] from now on.
+
+## 05 APR 2018
+Had a depressive episode this morning. Only just arrived at the library (3:30pm). Tested a hypothesis that this episode might be related to nitric oxide system. Consumed 6g of citrulline and 5-6 leaves of kale to test. Oral mouthwash last night and exercise depleted body stores of nitric oxide precursors. That intervention doesn't seem to be working sufficiently. I have a constant need for comfort.
+
+**QOTD:** How does the brain determine what inputs represent features and what are classes? Does it separate the two? Are classes disjoint? Features not so?
+
+## 04 APR 2018
+### Why do we have short term memory?
+Is it solely to organize actions into a specific order? A telephone number consists of numbers 0-9 but only the specific order is important. Altering the connection weights between any particular number and that sequence isn't very useful. I.e. The fact that a particular sequence has a 9 in it doesn't matter.
+
+If you were to ask Alexa, "What time is it?" You don't want the response to be, "1:26 PM the time it is." Although technically correct (the best kind of correct), it is not the typical response and it doesn't conform to the rules of grammar and syntax. Unless you asked Alexa to change her name to Yoda, of course. An example so simple is certainly understandable for humans because the time scale of the order switching is only a few seconds (within the human short term memory window). A desirable AI system should ideally be able to order an infinite sequence of events, which is obviously impossible.
+
+Hmmm... it seems that visual imagination is competitive in space while auditory imagination is competitive in time. For example, when I think about how a particular object looks and activate its critical feature pattern, that object appears in my mind always in the center of focus. If I attempt to place that object in my periphery, my focus always snaps to it. I cannot simultaneously hold my focus at the center of the visual field and imagine an object in my periphery. I can, of course, imagine lots of different objects of varying complexity, but never two objects of a class. E.g. I can imagine a red circle and a blue circle but not both simultaneously. My mind's eye flits back and forth between them, unable to make permanent changes to the appearance of either. Oddly enough, if the circles touch or overlap, I can imagine them as one shape (like a figure eight). In essence, visual imagination is competitive in space. An object is regarded as one if it is continuous in space, and only one object can be manipulated in imagination at a time.
+
+Likewise, auditory imagination is competitive in time although this one is considerable harder to explain because I cannot express it in alternate dimensionality like I do with visual imagination.
 
 ## 03 APR 2018
 I dreamed of Prolog last night. Do you know how hard it is to program in your dreams?
@@ -56,3 +76,4 @@ Baranes, Adrien, Pierre-Yves Oudeyer, and Jacqueline Gottlieb. 2015. “Eye Move
 [schedule post]: {{ site.baseurl }}{% link _posts/2018-03-29-schedule.md %}
 [primary alcohol catalysis]: {{ site.baseurl }}{% link _posts/2018-03-26-primary-alcohol-catalysis.md %}
 [nitric acid production]: {{ site.baseurl }}{% link _posts/2018-03-26-nitric-acid.md %}
+[page]: {{ site.baseurl }}{% link _posts/2017-08-30-AI-research.md %}#journal

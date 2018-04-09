@@ -6,6 +6,88 @@ category: archive
 ---
 A list of shorter projects.<!--more-->
 
+# Initramfs Trouble
+
+Today I woke up to a system that wouldn't boot. The system just dropped to the busybox terminal after 30 seconds giving an error that said ```/dev/mapper/ubuntu--vg-root``` couldn't be located. ```cat /dev/mapper``` only gave *control* or something like that. Obviously it would never find the drive: I had full disk encryption and was never asked for a password. Booting to a different kernel work once, but I foolishly executed ```update-initramfs -u -k all``` and killed all my other kernels at once. I couldn't just decrypt the drive because ```cat /proc/modules``` didn't show *cryptsetup* at all.
+
+So I went on an adventure for six hours this morning attempting to fix it. The [best explanation][] I could find was that something went wrong with LVM making the system not recognize the encrypted drive on boot. I believe my issue sprang from removing ```libreadline5``` because of some dependency issues with ```swi-prolog```. I ended up just building SWIP-pl from source, but somehow I managed to screw up *libreadline*. The short version is:
+
+- boot using ubuntu live flash drive with persistence enabled
+- mount the drive including the encrypted portion
+- chroot into the drive
+- reinstall lvm2
+  - I had to download packages separately using the live disk system then install them in the chrooted system
+- comment out a line in the initramfs script to stop sync [a bug][]
+- update-initramfs
+
+## Persistent Flash drive
+Persistence may not be necessary in all cases, but it makes things much simpler. On another ubuntu system with a spare flash drive mounted at ```/dev/sdd``` and fresh copy of ubuntu 12.04 downloaded at ```~/Downloads/ubuntu-16.04.4-desktop-amd64.iso``` [ref][]:
+
+```bash
+sudo add-apt-repository ppa:mkusb/ppa
+sudo apt update
+sudo apt install mkusb
+# The p is persistence; mkusb was replaced by dus but this still works
+sudo -H mkusb ~/Downloads/ubuntu-16.04.4-desktop-amd64.iso p
+```
+
+I could only get the *classic* version to run as gui. Just follow the on screen instructions and go with the defaults if unsure. I alloted 100% for the persistence volume. It takes several minutes for mkusb to finish. After, you should be able to unplug the device and boot up the broken system.
+
+## Boot and Fix
+So now you have a bootable ubuntu live flash drive with persistence plugged into your broken system. If you haven't already, enable booting from the flash drive in your BIOS (hold down Shift or F2 or F8 or some other F-key). Start up your system and select "Try Ubuntu with persistence." It should be the default option.
+
+If everything goes to plan you now have a copy of ubuntu running and an encrypted drive at ```/dev/sda```. Launch a terminal (```Ctrl-Alt-T```):
+
+```bash
+sudo cryptsetup luksOpen /dev/sda3 sda3_crypt
+# Enter your password to decrypt
+sudo vgchange -ay
+sudo mount /dev/mapper/ubuntu--vg-root /mnt
+sudo mount /dev/sda2 /mnt/boot
+sudo mount -t proc proc /mnt/proc
+sudo mount -o bind /dev /mnt/dev
+sudo chroot /mnt
+```
+
+For some reason I couldn't resolve any hosts (```sudo apt update``` returned unresolved hosts). Probably because of all the weird stuff with my wifi card shown below. Either way, in a separate terminal running as the ubuntu live user:
+
+```bash
+sudo apt update
+cd /mnt/tmp
+sudo apt-get download lvm2
+# if you messed up with libreadline like I did:
+sudo apt-get download libreadline5
+exit
+```
+
+So now we have the *.deb* packages downloaded in ```/mnt/tmp``` which is running under the chroot terminal from earlier. Go back to that terminal:
+
+```bash
+dpkg -i libreadline5_5.2+dfsg-3build1_amd64.deb
+dpkg -i lvm2_2.02.133-1ubuntu10_amd64.deb
+# or whatever versions of libreadline5 and lvm2 you downloaded
+# I attempted to run:
+dpkg --configure -a
+# But it just hung and never completed update-initramfs
+# If you run:
+update-initramfs -u -v
+# It hangs on the line: Building cpio /boot/initrd.img-4.4.0-116-generic.new initramfs
+```
+
+So I also located [a bug][] in ubuntu which causes *sync* to hang. To fix you need to comment out (insert *#*) the line that says ```sync``` (line 176) under the ```generate_initramfs``` function in the file ```/dev/usr/sbin/update-initramfs```. Make sure you are editing the */dev/* version not the live flash drive version.
+
+Now that sync has been stopped, you can continue with dpkg:
+
+```bash
+dpkg --configure -a
+# I also updated initramfs manually just to be sure:
+update-initramfs -v -u
+# Or a specific kernel version:
+update-initramfs -v -d -k 4.4.0-116-generic && update-initramfs -v -c -k 4.4.0-116-generic
+```
+
+So that's it! Hopefully. You should be able to shutdown the live system, reboot to the original drive, and enter your password. If all that works you can reinstall any experimental kernels you may have and ```update-initramfs``` will be called automatically. One last thing, make sure you uncomment that sync line from ```/usr/sbin/update-initramfs```. You can run ```sudo update-initramfs -u -v -k all``` afterwards to make sure everything is square.
+
 # Intermittent Wifi
 **Update2:**
 I may have it figured. I think that my wifi issue was hard to diagnose because it had to do with encryption. Basically, every time my wifi card wanted to get a better signal (change AP's) or experienced too much interference on a particular channel, it used a random MAC address to attempt a reconnect. Unfortuantely, something about the PEAP-MSCHAPv2 verification algorithm at my University was rejecting the new MAC addresses and anything that caused my card to cycle would end up loosing connectivity. So bluetooth and locking my computer would cause cycling and end the connection (without actually ending it). Anyway, now I have a seemingly stable connection after stabilizing the driver and network manager.
@@ -74,7 +156,9 @@ A friend of mine is making a necklace and needs a few charms made from pennies.
 They are all 2013 pennies. Holes were drilled and countersunk to prevent wear. The rings are made from 14 AWG copper wire and soldered with lead-free (silver) solder. I attempted to solder the ring directly to the penny at a 90 degree angle, but couldn't get the solder to flow well enough to make it attractive.
 
 
-
 [this solution]: https://serverfault.com/questions/38114/why-does-sudo-command-take-long-to-execute
 [lwfinger/rtlwifi_new]: https://github.com/lwfinger/rtlwifi_new/
 [asus x550VX laptop]: https://www.asus.com/us/Laptops/X550VX/overview/
+[a bug]: https://bugs.launchpad.net/ubuntu/+source/initramfs-tools/+bug/1667512
+[ref]: https://askubuntu.com/a/753163
+[best explanation]: https://feeding.cloud.geek.nz/posts/recovering-from-unbootable-ubuntu-encrypted-lvm-root-partition/
