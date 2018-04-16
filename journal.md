@@ -5,6 +5,9 @@ permalink: /journal/
 ---
 Semi-unfiltered life updates in the moment barely useful to me. Do not take seriously or literally.<!--more-->
 
+## 14 APR 2018
+A week of uninterrupted happiness and motivation. I can't remember if that has ever happened to me. Since the last episode on April 5, I have been eating a salad composed principally of leafy green every morning. The hypothesis is that somehow nitric oxide is contributing to my happiness. But whatever the real reason this is working, I'm not going to stop with the breakfast salads.
+
 ## 06 APR 2018
 Feeling much better today.
 
