@@ -31,6 +31,12 @@ Higher frequencies (>5KHz) are more efficient than mains frequencies.[^4] This i
 ## Feed Gas
 
 
+# Yield Calculations
+Haber-Bosch nitrogen fixation = 0.48 MJ/mol
+Glidarc = 4.8 MJ/mol = 1.3 KWh/mol => $0.11/mol
+15 mol nitric acid (68%) => $1.65 per liter in electricity costs
+
+
 # Notes
 - Use ammonia, nitrite, nitrate aquarium test strips for efficiency measurements.
 - What is the influence of humid air addition to the feed gas? Does it produce ammonia?

@@ -20,7 +20,7 @@ Many researchers view biological data as convoluted and unnecessary or perhaps e
 
 _Given sufficient time and the right optimization function, big data driven AI research will derive what evolution created over eons with biological intelligence._
 
-If one could surmise the goal of the evolutionary development of a central nervous system, what would it be?[^1] It would be to generate a processing and storage medium that can use past information to manipulate the world in a way that benefits the organism.
+If one could surmise the maximization function of central nervous system natural selection, what would it be? It would be to generate a processing and storage medium that can use past information to manipulate the world in a way that benefits the organism.
 
 Many of the problems of AI research are shared by evolution.
 
@@ -34,7 +34,7 @@ _A list of researchers or groups which I reference heavily._
 
 ## Stephen Grossberg
 
-Adaptive Resonance Theory (ART)[^grossberg_adaptive_2013] is a top-level architecture derived from biological data. It is quite hard to adequately describe ART is just a few sentences. Grossberg's research encompases more than 40 years of development with information spanning all areas of AI research. Here is one sentence of the various explanations given by Grossberg:
+Adaptive Resonance Theory (ART)[^GrossbergAdaptiveResonanceTheory2013] is a top-level architecture derived from biological data. It is quite hard to adequately describe ART is just a few sentences. Grossberg's research encompases more than 40 years of development with information spanning all areas of AI research. Here is one sentence of the various explanations given by Grossberg:
 
 > ART provides functional and mechanistic explanations of such diverse topics as laminar cortical circuitry; invariant object and scenic gist learning and recognition; prototype, surface, and boundary attention; gamma and beta oscillations; learning of entorhinal grid cells and hippocampal place cells; computation of homologous spatial and temporal mechanisms in the entorhinal–hippocampal system; vigilance breakdowns during autism and medial temporal amnesia; cognitive–emotional interactions that focus attention on valued objects in an adaptively timed way; item–order–rank working memories and learned list chunks for the planning and control of sequences of linguistic, spatial, and motor information; conscious speech percepts that are influenced by future context; auditory streaming in noise during source segregation; and speaker normalization.
 
@@ -140,7 +140,16 @@ A global reinforcement center? A global measure of uncertainty prevents spurious
 What if consciousness was developed in humans because our brain's capacity outstripped its inputs? I.e. The sensory information (in the mathematical sense) decays as it travels to higher and higher levels of processing and is successively obscured by internal hallucinations (feed-back projections). The sensory information never reaches our highest levels of processing and therefore leaves a certain amount of high level processing available solely for internal computation. In essence, some brain capacity is devoted entirely to processing internal, spontaneous information generation. The amount and capacity of this processing is what we call consciousness. In contrast, lower animals have a lower brain capacity to sensory input ratio and therefore do not possess the ability to think outside the realm of their inputs. Schizophrenia is a disease of too much consciousness.
 
 # Journal
-*Not useful for anyone but me.*
+*Not likely useful to anyone.*
+
+## 17 APR 2018
+- If you define the set of brain inputs ```I```, the total number of brain nodes ```N```, and stipulate that node inputs are preinstantiated, each node will have ```i <= N+I``` for inputs ```i```. A fully connected brain has ```i = N+I```. A brain with ```i < N+I``` is necessarily hierarchical. A hierarchical brain would be more efficient but less capable: A hierarchical brain can learn faster but with less specificity. A non-recursive node has ```i <= N+I-1```. Recursive connections can be used to define temporal relation of a node to itself, i.e. the decay time of its signal.
+
+### What is the fundamental computational unit of the mind?
+Is it the neuronal activation? A collection of neuronal activations, i.e. SDR? What if the fundamental unit of computation is the synapse? Hebbian neurons represent the synapse as a simple transfer function, linear or otherwise. That interpretation permeates the literature. What if synaptic transmission goes both ways? What if the activation of the post-synaptic neuron feeds back to the presynaptic neuron to alter its excitation? Like a confirmation signal. Pre says to Post, "I detect this feature." Post says to Pre, "I detect this class, of which, you say your feature is composed." Post and Pre both increase connection weight. Alternatively, Post says to Pre, "I didn't detect a class, of which, you say your feature is composed." Pre and Post decrement their transmitter release and capture, respectively. Presynaptic reuptake and glial uptake seems to be related here.
+
+**Update** This is sometimes called the retrograde messenger system...[^regehr_activity-dependent_2009]
+
 
 ## 06 APR 2018
 ### Attributes, Classes, Objects, Properties, Values, Inputs
@@ -154,6 +163,12 @@ This whole system also seems separate from any actual input manipulation like vi
 
 # Bibliography
 
-[^grossberg_adaptive_2013]: Grossberg, Stephen. 2013\. "Adaptive Resonance Theory: How a Brain Learns to Consciously Attend, Learn, and Recognize a Changing World." Neural Networks 37: 1–47\. doi:10.1016/j.neunet.2012.09.017\. [^cui_continuous_2016]: Cui, Yuwei, Subutai Ahmad, and Jeff Hawkins. 2016\. "Continuous Online Sequence Learning with an Unsupervised Neural Network Model." Neural Computation 28 (11): 2474–2504\. doi:10.1162/NECO_a_00893.
+[^GrossbergAdaptiveResonanceTheory2013]: Grossberg, Stephen. 2013\. "Adaptive Resonance Theory: How a Brain Learns to Consciously Attend, Learn, and Recognize a Changing World." Neural Networks 37: 1–47. <https://doi.org/10.1016/j.neunet.2012.09.017>.
+[^cui_continuous_2016]: Cui, Yuwei, Subutai Ahmad, and Jeff Hawkins. 2016\. "Continuous Online Sequence Learning with an Unsupervised Neural Network Model." *Neural Computation* 28 (11): 2474–2504. <https://doi.org/10.1162/NECO_a_00893>.
+[^regehr_activity-dependent_2009]: Regehr, Wade G., Megan R. Carey, and Aaron R. Best. 2009. “Activity-Dependent Regulation of Synapses by Retrograde Messengers.” *Neuron* 63 (2): 154–70. <https://doi.org/10.1016/j.neuron.2009.06.021>.
 
-[^1]: Yes, I know that isn't how evolution works.
+
+
+<!--Abbreviations-->
+*[TOTD]: Thought of the Day
+*[SDR]: Sparse Distributed Representation

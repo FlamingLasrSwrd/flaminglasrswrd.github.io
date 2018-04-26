@@ -5,6 +5,11 @@ permalink: /journal/
 ---
 Semi-unfiltered life updates in the moment barely useful to me. Do not take seriously or literally.<!--more-->
 
+## 17 APR 2018
+I tried to use <eatthismuch.com> yesterday. A mildly unpleasant experience. Don't get me wrong, its an admirable site. It just has limitations, which in my opinion, are debilitating. I am now convinced I should write my own.
+
+A few weeks ago I looked into writing my own recipe recommender system. When I located eatthismuch, I decided it wasn't worth it (without even looking at the site in depth). Competition is not my strong suit. But, now, having actually reviewed the site, it doesn't appear all its cracked up to be. They haven't actually captured the semantics of recipes and food prep. The site just seems like a backend collection of if...then statements without any sort of knowledge. For instance, I told the site that I would prefer to eat the food 'whole egg' for breakfast. So when I refreshed the recommendations, the site gave me 1-2 whole *raw* eggs for breakfast. A human, of course, would recognize that input as saying that I would prefer to use eggs as an ingredient in my breakfasts. Of course, I could learn how to use the site properly, but I don't want to do that. I want a recipe/food/meal prep program to have zero learning curve. Like a human whom you ask, "What should I make for dinner tonight." Therefore, I would like to attempt a meal planning service.
+
 ## 14 APR 2018
 A week of uninterrupted happiness and motivation. I can't remember if that has ever happened to me. Since the last episode on April 5, I have been eating a salad composed principally of leafy green every morning. The hypothesis is that somehow nitric oxide is contributing to my happiness. But whatever the real reason this is working, I'm not going to stop with the breakfast salads.
 
