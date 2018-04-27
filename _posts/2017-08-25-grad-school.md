@@ -5,10 +5,11 @@ date:   2017-08-25
 tags: school
 category: active
 ---
+Exploring grad school.<!--more-->
+
 # Introduction
 
 I want(need) to be in school. Last night I was talking to a friend, lamenting my lack of access to people in my discipline. If only I could converse with another person in the AI field, I could determine if my ideas were novel and great or just moronic. She suggested that I attend grad school (like so many before her). So let's explore this possibility...
-<!--more-->
 
 # Taking Stock
 
