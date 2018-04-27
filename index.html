@@ -5,16 +5,16 @@ layout: default
   {% if paginator.total_posts > 0 %}
     <div class="posts">
       {% for post in paginator.posts %}
-        <div class="post py3">
-          <p class="post-meta">{{ post.date | date: site.date_format }}</p>
-          <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="h1 post-title">{{ post.title }}</h3></a>
-          <span class="post-summary">
-            {% if post.summary %}
-              {{ post.summary }}
-            {% else %}
-              {{ post.excerpt | remove: '<h1>' | remove: '</h1>' }}
+        <div class="post py2">
+          <div class="post-meta">{{ post.last_modified_at | date: site.date_format }}</div>
+          <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><div class="post-title">{{ post.title }}</div></a>
+          <div class="post-summary">
+            {% if post.abstract %}
+              {{ post.abstract | strip_html | truncate: 150 }}
+            {% elsif post.excerpt %}
+              {{ post.excerpt | strip_html | truncate: 150 }}
             {% endif %}
-          </span>
+          </div>
         </div>
       {% endfor %}
     </div>

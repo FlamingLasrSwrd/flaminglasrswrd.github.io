@@ -13,19 +13,17 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: So Little Time
-short_title: SLT
+title: SLT Research
+short_title: SLTR
 email: elijah.k.dunn@gmail.com
 description: >
   An unfinished collection.
 baseurl: ""
-url: "https://ekdunn.github.io"
+url: "https://sltresearch.com"
 github_username:  ekdunn
 date_format: "%b %-d, %Y"
 header_pages:
  - about.md
- - archive.md
- - STM.md
  - journal.md
 
 # Build settings
@@ -35,12 +33,13 @@ plugins:
   - jekyll-feed
   - github-pages
   - jekyll-paginate
+  - jekyll-last-modified-at
 exclude:
   - Gemfile
   - Gemfile.lock
   - _private
 permalink: pretty
-paginate: 5
+paginate: 7
 
 # Conversion
 excerpt_separator: "<!--more-->"
@@ -133,10 +132,12 @@ text:
     stumbleupon:  'Share on StumbleUpon'
     hackernews:   'Share on Hacker News'
   post:
+    created:        'Created'
     updated:        'Updated'
     minute_read:    'minute read'
     related_posts:  'Related Posts'
   index:
+    updated: 'Updated'
     coming_soon: 'Coming soon...'
   contact:
     email:    'Email Address'

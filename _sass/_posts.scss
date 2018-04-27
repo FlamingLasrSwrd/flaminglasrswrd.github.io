@@ -14,15 +14,16 @@
   padding-bottom: 0;
 }
 
-.post-link .post-title {
+.post-title,
+.post .post-title {
   margin-top: 0;
   font-weight: 600;
   color: #333;
+  font-size: $h1;
 }
 
 .post-footer {
   @extend .italic;
-
   margin-top: .75rem;
   text-align: center;
 }
@@ -33,16 +34,32 @@
   border-radius: 50%;
 }
 
+.post .post-meta,
 .meta,
 .post-meta {
   width: auto;
   font-weight: 300;
-  margin: 0;
-  padding: .25em 0;
   color: #7a7a7a;
   font-style: italic;
+  font-size: 70%;
+  margin-right: 1em;
 }
 
 .related-post-title {
   border-bottom: thin solid #f3f3f3;
+}
+
+.post-summary,
+.abstract {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 80%;
+  margin-left: 2em;
+  padding-left: 2em;
+  margin-top: 1em;
+}
+
+.footnotes p {
+  margin-left: 2em;
+  text-indent: -2em;
 }

@@ -1,0 +1,17 @@
+---
+layout: page
+---
+
+{% for post in site.categories[page.category] %}
+  <div class="post py2">
+    <div class="post-meta">{{ post.last_modified_at | date: site.date_format }}</div>
+    <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><div class="post-title">{{ post.title }}</div></a>
+    <div class="post-summary">
+      {% if post.abstract %}
+        {{ post.abstract | strip_html | truncate: 150 }}
+      {% elsif post.excerpt %}
+        {{ post.excerpt | strip_html | truncate: 150 }}
+      {% endif %}
+    </div>
+  </div>
+{% endfor %}

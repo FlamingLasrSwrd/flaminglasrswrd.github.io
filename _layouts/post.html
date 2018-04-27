@@ -2,24 +2,45 @@
 layout: default
 ---
 
-{% assign minutes = content | strip_html | number_of_words | divided_by: 180 %}
+{% assign minutes = content | strip_html | number_of_words | divided_by: 140 %}
 {% if minutes == 0 %}
 {% assign minutes = 1 %}
 {% endif %}
 
+
 <div class="post-header mb2">
-  <h1>{{ page.title }}</h1>
-  <span class="post-meta">{{ page.date | date: site.date_format }}</span><br>
+  <div class="post-title">{{ page.title }}</div>
+  <span class="post-meta">{{site.text.post.created}}: {{ page.date | date: site.date_format }}</span>
   {% if page.update_date %}
-    <span class="post-meta">{{ site.text.post.updated }}: {{ page.update_date | date: site.date_format }}</span><br>
+    <span class="post-meta">{{ site.text.post.updated }}: {{ page.update_date | date: site.date_format }}</span>
+  {% else %}
+    <span class="post-meta">{{ site.text.post.updated }}: {{ page.last_modified_at | date: site.date_format }}</span>
   {% endif %}
-  <span class="post-meta small">
+  {% if page.categories %}
+    <span class="post-meta">
+      {% for cat in page.categories %}
+        <a href="/category/{{ cat }}">{{ cat }}</a>
+      {% endfor %}
+    </span>
+  {% endif %}
+  {% if page.tags %}
+    <span class="post-meta">
+      {% for tag in page.tags %}
+      <a href="/tags/{{ tag }}">{{ tag }}</a> 
+      {% endfor %}
+    </span>
+  {% endif %}
+  <span class="post-meta">
   {% if page.minutes %}
     {{ page.minutes }} {{ site.text.post.minute_read }}
   {% else %}
     {{ minutes }} {{ site.text.post.minute_read }}
   {% endif %}
   </span>
+  {% if page.abstract %}
+    <div class="abstract">{{ page.abstract }}</div>
+  {% endif %}
+
 </div>
 
 <article class="post-content">
