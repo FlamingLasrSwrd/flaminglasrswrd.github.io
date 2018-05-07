@@ -4,9 +4,9 @@ title:  "Github Pages Local Build"
 date:   2017-01-26
 category: archive
 tags: programming
+abstract: >
+  Some environment work on getting this site up and running.
 ---
-Some environment work on getting this site up and running.
-<!--more-->
 
 # Github Pages local build
 

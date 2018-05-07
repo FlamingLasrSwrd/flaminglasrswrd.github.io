@@ -3,8 +3,15 @@ layout: "post"
 title: "Mini Projects"
 date: "2018-03-24 15:41"
 category: archive
+abstract: >
+  A list of shorter projects.
 ---
-A list of shorter projects.<!--more-->
+
+# References in Markdown Regex
+```
+[@]+\b([a-zA-Z_0-9-]*)+\b
+[^$1]
+```
 
 # Initramfs Trouble
 

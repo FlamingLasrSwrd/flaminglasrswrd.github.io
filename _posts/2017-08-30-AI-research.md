@@ -4,9 +4,9 @@ title: AI Research
 date: 2017-08-30T00:00:00.000Z
 tags: school
 category: active
+abstract: >
+  Artificial intelligence has held my interest longer than any other topic I have researched. Here are my notes on AI. They are not really for the benefit of reading, just the writing. I rarely even read it.
 ---
-Artificial intelligence has held my interest longer than any other topic I have researched. Here are my notes on AI. They are not really for the benefit of reading, just the writing. I rarely even read it.
-<!--more-->
 
 # Research Interests
 

@@ -4,18 +4,19 @@ title:  "Investing"
 date:   2015-05-24
 tags: finance
 category: archive
+abstract: >
+  Started with an analysis of some ETFs... Conclusion: [Wealthfront](https://wealthfront.com) does it better.
 ---
-Started with an analysis of some ETFs... Conclusion: [Wealthfront](https://wealthfront.com) does it better.
-<!--more-->
-## Intro
+
+# Intro
 So I was listening to an [episode][] of the Tim Ferriss show a few weeks ago with Tony Robbins as the guest. The topic of discussion was mainly around his new book [Money: Master the Game][] in which Tony details his interviews of several of the most profitable finance *movers and shakers* today. Oddly enough, that very next day my mother warned me that if I didn't start investing soon I wouldn't have anything for retirement. So I figured I would devote a few hours to research and reporting on investing.
 
-## Summary
+# Summary
 My personal breakdown of investing for retirement. Funds are auto-deposited each month into my Roth-IRA trading account. Stocks and ETFs are purchased quarterly based on a balanced and diversified portfolio while targeting stability over the long term, ease of access, low cost, and broad market exposure. This page should not be taken as investment advice: this is only a recording.
 
-## Choices
+# Choices
 
-### Targets
+## Targets
 * Low cost
 * Low gross expense ratio
 * High volume
@@ -23,7 +24,7 @@ My personal breakdown of investing for retirement. Funds are auto-deposited each
 
 Vanguard and iShares ETFs seem to fit well with all the requirements. Vanguard seems a little more expensive, but not always. Unfortunately, I cannot find a good commodities ETF provided by either so I went with Powershares.
 
-### Diversification
+## Diversification
 * 40% Long term bonds
 * 30% Stocks
 * 15% Intermediate bonds
@@ -31,7 +32,7 @@ Vanguard and iShares ETFs seem to fit well with all the requirements. Vanguard s
     - 50% Gold
     - 50% Other Commodities (oil, pork bellies, etc.)
 
-### Rebalancing
+## Rebalancing
 
 * Purchase ETFs with quarterly deposits
     - buy as many shares as possible up to deposit percentage split amount (e.g. if $1,000 deposited, only purchase up to $75(7.5%) in gold)
@@ -44,14 +45,14 @@ Since I do not contribute enough money to purchase all of my picks each month, I
 
 Every quarter I will shift funds from high performing to underperforming sectors in an effort to maintain my portfolio balance. Furthermore, the accrued deposits can be used to purchase new shares. Sectors on the downturn will be given priority. Only the percentage alloted to each sector can be spent at any given quarter which leads to dollar cost averaging in the long term.
 
-### Current Stock/ETF Picks
+## Current Stock/ETF Picks
 * Long term bonds: ILTB - iShares Core 10+ Year USD Bond ETF
 * Stocks: VT - Vanguard Total World Stock Index Fund ETF Shares
 * Intermediate bonds: BIV - Vanguard Intermediate-Term Bond Index Fund ETF Shares
 * Gold: IAU - iShares Gold Trust
 * Commodities: DBC - PowerShares DB Commodity Index Tracking Fund
 
-## Further Research
+# Further Research
 * Real Estate Investment Trusts (REIT) diversification
 * Further stock picks research
     - possible single company investing to play around with
@@ -59,10 +60,10 @@ Every quarter I will shift funds from high performing to underperforming sectors
     - Prioritize for dividends?
 * Purchasing each month instead of quarter?
 
-## Resources
+# Resources
 [Money: Master the Game][]
 
 
-## References
+# References
 [Money: Master the Game]: http://www.amazon.com/MONEY-Master-Game-Financial-Freedom-ebook/dp/B00MZAIU4G
 [episode]: http://fourhourworkweek.com/2014/10/15/money-master-the-game/

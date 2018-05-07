@@ -6,9 +6,8 @@ modified: 2016-09-19
 updated: 2015-06-08
 category: archive
 tags: biochemistry nootropics chemistry
+  Methylene Blue is a rare nootropic. I experimented with it for a while but ultimately stopped due to its MAO activity. Perhaps I will resurrect this project when mitochondrial function is my primary limiting factor and I am willing to give up eating ages cheeses.
 ---
-Methylene Blue is a rare nootropic. I experimented with it for a while but ultimately stopped due to its MAO activity. Perhaps I will resurrect this project when mitochondrial function is my primary limiting factor and I am willing to give up eating ages cheeses.
-<!--more-->
 
 # Abstract
 Herein contains the synopsis of my research on MB as a rarely used, highly experimental modifier of mitochondrial metabolism. MB can act as an alternative electron acceptor/donor enhancing the efficiency of energy production. MB tends to accumulate in areas of high metabolic need (e.g. brain tissue). [Phase 3 clinical trials] are under way using Rember© for treatment of Alzheimer’s Disease showing great promise. MB’s action is dose-dependent with many interactions that vary by concentration.

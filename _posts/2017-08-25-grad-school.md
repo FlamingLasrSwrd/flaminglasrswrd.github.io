@@ -4,8 +4,9 @@ title:  "Graduate School Application"
 date:   2017-08-25
 tags: school
 category: active
+abstract: >
+  Exploring the possibility of grad school.
 ---
-Exploring grad school.<!--more-->
 
 # Introduction
 

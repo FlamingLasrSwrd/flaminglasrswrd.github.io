@@ -4,9 +4,9 @@ title: "Leviathan"
 date: "2018-03-10 12:13"
 category: active
 tags: politics
+abstract: >
+  An (incomplete) open letter responding to the recent political discourse on the Parkland, FL school shooting on Feb. 14, 2018.
 ---
-An open letter responding to the recent political discourse on the Parkland, FL school shooting on Feb. 14, 2018.
-<!--more-->
 
 *To all those who participated in the discussion following this tragedy*,
 

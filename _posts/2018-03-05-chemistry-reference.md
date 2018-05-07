@@ -3,10 +3,10 @@ layout: "post"
 title: "Chemistry Reference"
 date: "2018-03-05 20:26"
 category: active
-tags: chemistry reference
-link-citations: true
+tags: chemistry
+abstract: >
+  A collection of syntheses.
 ---
-<!--more-->
 
 # Copper Catalysts for Primary Alcohol Dehydrogenation
 

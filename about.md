@@ -2,10 +2,10 @@
 layout: page
 title: About
 permalink: /about/
+abstract: >
+  The following descriptions are good approximations of my character, but always with caveats and made to be as grandiose as possible.
 ---
-The following are good approximations of my character, but always with caveats and as grandiose as possible:<!--more-->
-
-## Titles
+# Titles
 In no particular order:
 - Pragmatist
 - Secular Humanist
@@ -18,7 +18,7 @@ In no particular order:
 - Animal
 - Resident of Earth
 
-## Philosophical Inspiration
+# Philosophical Inspiration
 - Seneca
 - Sagan
 - Marx
@@ -27,19 +27,26 @@ In no particular order:
 - Hobbes
 - Nietzsche
 
-## Other Influences
+# Other Influences
 - Too much science fiction
   - Heinlein
   - Dick
   - Bradbury
   - Asimov
 
-## Current Life Goal
+# Current Life Goal
 To maximize my contribution to the human race.
 - maximize the total AUC of contribution vs time
 - contribution: open to subjective interpretation; anything from reproduction to global welfare; Eudaimonia
 
-## Stats
+# Research Process
+My current research process proceeds through several utility programs:
+- [Zotero][]
+- [Master PDF Editor][]
+- [Zotfile][]
+- [Atom][]
+
+# Stats
 
 - [ENTP][][^1]
 - Typicall score high on Need for Cognition, Openness to Experience, and Epistemic Curiosity
@@ -53,3 +60,7 @@ To maximize my contribution to the human race.
 <!--links-->
 [ENTP]: https://www.16personalities.com/entp-personality
 [OpenPsychometrics]: https://openpsychometrics.org
+[Zotero]: https://www.zotero.org/
+[Master PDF Editor]: https://code-industry.net/masterpdfeditor/
+[Zotfile]: https://zotfile.com/
+[Atom]: https://atom.io/

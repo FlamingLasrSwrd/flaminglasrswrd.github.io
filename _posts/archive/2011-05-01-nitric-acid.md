@@ -4,9 +4,9 @@ title:  "Nitric Acid"
 date:   2011-05-01
 tags: electronics fireworks
 category: archive
+abstract: >
+  Some notes on nitric acid production.
 ---
-Some notes on nitric acid production.
-<!--more-->
 
 <div><iframe width="560" height="315" src="https://www.youtube.com/embed/2yE7v4wkuZU?rel=0" frameborder="0" allowfullscreen></iframe></div>
 

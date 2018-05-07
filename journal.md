@@ -5,6 +5,13 @@ permalink: /journal/
 ---
 Semi-unfiltered life updates in the moment barely useful to me. Do not take seriously or literally.<!--more-->
 
+## 04 MAY 2018
+Been a little off lately. Not quite to the point of depression, but certainly getting there. I'm sure my RescueTime and logkeys data will show how little I've worked the past 3 days. Further evidence for the Kale experiment started a little less than a month ago. I haven't had any symptoms since I started except for now, exactly coinciding with a break from consuming leafy greens.
+
+## 29 APR 2018
+So I didn't sleep last night. I "went" to bed at 4am and got up again at 5am without any actual sleep.
+Writing academic papers even informally on this blog is painstaking. I wish there was a IDE for journal article writing.
+
 ## 17 APR 2018
 I tried to use <eatthismuch.com> yesterday. A mildly unpleasant experience. Don't get me wrong, its an admirable site. It just has limitations, which in my opinion, are debilitating. I am now convinced I should write my own.
 

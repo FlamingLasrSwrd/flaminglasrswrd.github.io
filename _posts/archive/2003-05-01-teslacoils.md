@@ -4,9 +4,9 @@ title: Tesla Coils
 date: 2003-05-01T00:00:00.000Z
 tags: electronics
 category: archive
+abstract: >
+  Tesla coils were my first and probably my longest deep dive into a project. I built my first coil around age 12. I even won first place at a regional science fair with it that same year. I managed to use a much larger version as a final project all the way into college. Only some of my notes on the most recent coil version survived the years.
 ---
-Tesla coils were my first and probably my longest deep dive into a project. I built my first coil around age 12. I even won first place at a regional science fair with it that same year. I managed to use a much larger version as a final project all the way into college. Only some of my notes on the most recent coil version survived the years.
-<!--more-->
 
 # DRSSTC in Action
 

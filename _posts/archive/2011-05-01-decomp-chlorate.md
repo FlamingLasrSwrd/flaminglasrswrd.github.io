@@ -4,9 +4,10 @@ title:  "Chlorate Decomposition"
 date:   2011-05-01
 tags: chemistry fireworks
 category: archive
+abstract: >
+  Making chlorates with electrochemistry is fairly easy. Perchlorates are quite a bit more troubling. Unless, of course, you just heat your chlorates up...
 ---
-Making chlorates with electrochemistry is fairly easy. Perchlorates are quite a bit more troubling. Unless, of course, you just heat your chlorates up...
-<!--more-->
+
 <div>
 	<a href="/assets/img/holder.JPG"><img src="/assets/img/holder_s.JPG" width="250" alt="Alcohol Lamp Set Up"></a>
 	<br>Click on the image for the large version.

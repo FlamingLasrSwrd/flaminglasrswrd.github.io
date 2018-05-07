@@ -4,9 +4,9 @@ title:  "Recrystallization"
 date:   2011-05-01
 tags: chemistry fireworks
 category: archive
+abstract: >
+  An example of purification by recrystallization using potassium chlorate.
 ---
-An example of purification by recrystallization using potassium chlorate.
-<!--more-->
 
 <div>
 	<a href="/assets/img/scales.JPG"><img src="/assets/img/scales_s.JPG" width="250"></a>
