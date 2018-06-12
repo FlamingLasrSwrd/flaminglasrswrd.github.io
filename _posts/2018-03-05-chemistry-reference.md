@@ -8,6 +8,17 @@ abstract: >
   A collection of syntheses.
 ---
 
+# Nitric Acid
+Sulfuric Acid + Potassium Nitrate <-> Potassium Bisulfate + Nitric Acid
+- 500mL flask
+- 100mL water
+- 202g KNO3
+- 116mL 93% Sulfuric Acid
+- collect all distillate (~325mL; ~50% nitric acid)
+- immediately clean all glassware
+- redistill nitric acid
+  - everything over 118 C is azeotropic 68%
+
 # Copper Catalysts for Primary Alcohol Dehydrogenation
 
 ## Cu/Al2O3 + Urea

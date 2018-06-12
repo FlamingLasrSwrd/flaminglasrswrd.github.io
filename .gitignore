@@ -44,3 +44,5 @@ Gemfile.lock
 # Python
 *.pyc
 *.ipynb_checkpoints*
+
+.ropeproject/

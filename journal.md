@@ -5,6 +5,9 @@ permalink: /journal/
 ---
 Semi-unfiltered life updates in the moment barely useful to me. Do not take seriously or literally.<!--more-->
 
+## 15 MAY 2018
+I need to get back to work. Spent the weekend at my parents house. Partly for my brother's graduation and partly for Mother's Day. All my sibs were there. I didn't get a headache this time... curious.
+
 ## 04 MAY 2018
 Been a little off lately. Not quite to the point of depression, but certainly getting there. I'm sure my RescueTime and logkeys data will show how little I've worked the past 3 days. Further evidence for the Kale experiment started a little less than a month ago. I haven't had any symptoms since I started except for now, exactly coinciding with a break from consuming leafy greens.
 

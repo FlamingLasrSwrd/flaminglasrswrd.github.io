@@ -7,3 +7,13 @@ tags: chemistry
 abstract: >
   Oxidation/dehydrogenation of primary alcohols using catalysts to form their corresponding aldehydes.
 ---
+
+# Work Log
+
+## 26 May 2018
+
+Isolating various metalic catalyst precursors:
+- Barium (rust converter)
+- Nickel (US 5 cent piece)
+- Gold (from previous experiments)
+- Platinum
