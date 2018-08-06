@@ -7,6 +7,7 @@ abstract: >
 ---
 # Titles
 In no particular order:
+
 - Pragmatist
 - Secular Humanist
 - Atheist
@@ -36,11 +37,13 @@ In no particular order:
 
 # Current Life Goal
 To maximize my contribution to the human race.
+
 - maximize the total AUC of contribution vs time
 - contribution: open to subjective interpretation; anything from reproduction to global welfare; Eudaimonia
 
 # Research Process
 My current research process proceeds through several utility programs:
+
 - [Zotero][]
 - [Master PDF Editor][]
 - [Zotfile][]

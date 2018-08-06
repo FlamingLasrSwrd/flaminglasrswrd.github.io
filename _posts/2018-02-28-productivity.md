@@ -17,8 +17,14 @@ I couldn't figure out how to get logkeys to start on boot. The service kept givi
 
 [My Keymap][]
 
+# Log
 
+# References
+
+<!--Annotations-->
 [Logkeys manpage](http://manpages.ubuntu.com/manpages/trusty/man8/logkeys.8.html)
 
 [Harvard doctoral study]: https://www.trackyourhappiness.org/
-[My Keymap]: {{ site.baseurl }}/assets/src/my_keymap
+[My Keymap]: {{ site.baseurl }}assets/src/my_keymap
+
+<!--Glossary-->

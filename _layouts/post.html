@@ -36,10 +36,27 @@ layout: default
   {% else %}
     {{ minutes }} {{ site.text.post.minute_read }}
   {% endif %}
-  </span>
+</span>
+<span class="post-meta">
+  {% for format in site.pandoc.outputs %}
+    {% capture extension %}{{ format | first }}{% endcapture %}
+    {% assign s = page.url | remove: '.html' | split: '/' %}
+    <a href="{{ page.url | remove:'.html' }}/{{ s.last }}.{{ extension }}">
+      {{ extension }}
+    </a>
+  {% endfor %}
+</span>
+
+<span class="abstract-header">
   {% if page.abstract %}
     <div class="abstract">{{ page.abstract }}</div>
   {% endif %}
+  {% if page.graphical-abstract %}
+    <div class="graphical-abstract">
+      <img src="{{ page.graphical-abstract | prepend: site.url}}" alt="Graphical Abstract">
+    </div>
+  {% endif %}
+</span>
 
 </div>
 

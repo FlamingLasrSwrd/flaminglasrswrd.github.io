@@ -1,45 +1,32 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: SLT Research
-short_title: SLTR
-email: elijah.k.dunn@gmail.com
+title: Newton's Flaming Laser Sword
+short_title: FlamingLasrSwrd
+#email: elijah.k.dunn+fls@gmail.com
 description: >
   An unfinished collection.
 baseurl: ""
-url: "sltresearch.com"
-github_username:  ekdunn
+url: "http://flaminglasersword.com"
+#github_username:  flaminglasrswrd
 date_format: "%b %-d, %Y"
 header_pages:
  - about.md
- - journal.md
+ - log.md
 
 # Build settings
-markdown: kramdown
+#markdown: kramdown
 theme: jekyll-theme-midnight
-plugins:
-  - jekyll-feed
-  - github-pages
-  - jekyll-paginate
-  - jekyll-last-modified-at
+#plugins_dir:
+#  - jekyll-feed
+#  - github-pages
+#  - jekyll-paginate
+#  - jekyll-last-modified-at
+#  - jekyll-pandoc-multiple-formats
 exclude:
   - Gemfile
   - Gemfile.lock
   - _private
 permalink: pretty
 paginate: 7
+#destination: ../flaminglasersword/
 
 # Conversion
 excerpt_separator: "<!--more-->"
@@ -49,7 +36,7 @@ excerpt_separator: "<!--more-->"
 google_verification:
 # Use either direct GA implementation or set up GTM account
 # - using both will skew your data (leave blank to not use at all)
-google_analytics:
+google_analytics: UA-121123907-1
 google_tag_manager:
 # Bing services
 bing_verification:
@@ -57,9 +44,9 @@ bing_verification:
 animated:             false
 show_related_posts:   false
 show_post_footers:    false
-show_social_icons:    false
+show_social_icons:    true
 ajaxify_contact_form: false
-enable_mathjax: false
+enable_mathjax: true
 extended_fonts: false
 enable_anchorjs: false
 
@@ -67,8 +54,8 @@ enable_anchorjs: false
 post_preview_image: false
 # Facebook Page integration
 # (for instant articles and other stuff)
-fb_page: false
-fb_page_id:
+fb_page: https://www.facebook.com/FlamingLasrSwrd/
+fb_page_id: FlamingLasrSwrd
 
 # Disqus post comments
 # (leave blank to disable Disqus)
@@ -80,16 +67,19 @@ txtpen_sitename:
 
 # Facebook Comments plugin
 # (leave blank to disable Facebook Comments, otherwise set it to true)
-facebook_comments:
+facebook_comments: true
 facebook_appid:
 facebook_comments_number: 10
 
 # Social icons
-github_username: ekdunn
-reddit_username: brainenhance
-bitbucket_username:
+github_username: flaminglasrswrd
+reddit_username: flaminglasrswrd
+wikipedia_username: flaminglasrswrd
+instructables_username: FlamingLasrSwrd
 stackoverflow_id: 9530723
-twitter_username:
+twitter_username: flaminglasrswrd
+instagram_username: flaminglasrswrd
+bitbucket_username:
 skype_username:
 steam_nickname: ekdunn
 google_plus_id:
@@ -101,7 +91,7 @@ paypal_url: paypal.me/ekdunn
 flattr_button:
 telegram_username:
 vk_id:
-wikipedia_username: Ekdunn
+
 
 # Post sharing icons
 show_sharing_icons: false
@@ -150,3 +140,21 @@ text:
       error:    'Error!'
   thanks: 'Thanks for contacting us. We will reply as soon as possible.'
   og_locale: 'en_US'
+
+# Pandoc
+markdown: pandoc
+pandoc:
+    skip: true
+#    bundle_permalink: 'bundle/:output_ext/:slug.:output_ext'
+    papersize: 'a5paper'
+    sheetsize: 'a4paper'
+    imposition: true
+    binder: true
+    covers_dir: assets/covers
+    signature: 20
+    flags: '--smart'
+    site_flags: '--toc --bibliography=_data/library.bib --metadata link-citations=true'
+    outputs:
+      latex:
+      pdf: '--latex-engine=xelatex'
+      epub: '--epub-chapter-level=2'

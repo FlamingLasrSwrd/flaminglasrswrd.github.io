@@ -7,6 +7,38 @@ abstract: >
   A list of shorter projects.
 ---
 
+# Server upgrade
+**in-progress**
+I was getting tired of rigging my old Ubuntu 16.04 desktop-turned server. So I decided to fresh install Ubuntu 18.04 server with OpenStack:
+
+```bash
+# ssh into server
+sudo apt update
+sudo apt upgrade
+sudo ufw allow OpenSSH
+#sudo ufw enable #firewall blocks OpenStack installation
+sudo snap install conjure-up --classic
+sudo apt install zfsutils-linux
+sudo snap install lxd
+/snap/bin/lxd init
+# verify lxc is setup correctly
+lxc launch ubuntu:16.04 u1
+lxc exec u1 ping ubuntu.com
+sudo apt install maas
+sudo maas init
+conjure-up
+# OpenStack with NovaLXD
+# localhost
+# use defaults for everything except 'dir' for storage
+# Canonical livepath kernels: https://ubuntu.com/livepatch
+sudo snap install canonical-livepatch
+sudo canonical-livepatch enable [my-livepatch-token]
+```
+
+
+# Jafar Costume
+![][assets/img/jafarstaff.jpg]
+
 # References in Markdown Regex
 ```
 [@]+\b([a-zA-Z_0-9-]*)+\b
@@ -159,13 +191,19 @@ Apparently, that bluetooth driver is unnecessary. ```sudo service bluetooth star
 
 # Penny Charms
 A friend of mine is making a necklace and needs a few charms made from pennies.  
-![image](/assets/img/penny.jpg)  
+![image](assets/img/penny.jpg)  
 They are all 2013 pennies. Holes were drilled and countersunk to prevent wear. The rings are made from 14 AWG copper wire and soldered with lead-free (silver) solder. I attempted to solder the ring directly to the penny at a 90 degree angle, but couldn't get the solder to flow well enough to make it attractive.
 
+# Log
 
+# References
+
+<!--Annotations-->
 [this solution]: https://serverfault.com/questions/38114/why-does-sudo-command-take-long-to-execute
 [lwfinger/rtlwifi_new]: https://github.com/lwfinger/rtlwifi_new/
 [asus x550VX laptop]: https://www.asus.com/us/Laptops/X550VX/overview/
 [a bug]: https://bugs.launchpad.net/ubuntu/+source/initramfs-tools/+bug/1667512
 [ref]: https://askubuntu.com/a/753163
 [best explanation]: https://feeding.cloud.geek.nz/posts/recovering-from-unbootable-ubuntu-encrypted-lvm-root-partition/
+
+<!--Glossary-->

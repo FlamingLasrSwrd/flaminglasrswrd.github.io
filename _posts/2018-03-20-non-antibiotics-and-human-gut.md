@@ -98,8 +98,8 @@ We really have a lot to learn about the bacterial friends we carry with us our w
 
 # Bibliography
 
-<b id="f1">1</b> Maier, Lisa, Mihaela Pruteanu, Michael Kuhn, Georg Zeller, Anja Telzerow, Exene Erin Anderson, Ana Rita Brochado, et al. “Extensive Impact of Non-Antibiotic Drugs on Human Gut Bacteria.” Nature, March 19, 2018. https://doi.org/10.1038/nature25979. [↩](#a1)[↩](#a2)[↩](#a3)[↩](#a4)[↩](#a5)[↩](#a6)[↩](#a7)[↩](#a8)[↩](#a9)[↩](#a10)[↩](#a11)[↩](#a12)
+<b id="f1">1</b> Maier, Lisa, Mihaela Pruteanu, Michael Kuhn, Georg Zeller, Anja Telzerow, Exene Erin Anderson, Ana Rita Brochado, et al. “Extensive Impact of Non-Antibiotic Drugs on Human Gut Bacteria.” Nature, March 19, 2018. https://doi.org/10.1038/nature25979. [$\uparrow$](#a1)[$\uparrow$](#a2)[$\uparrow$](#a3)[$\uparrow$](#a4)[$\uparrow$](#a5)[$\uparrow$](#a6)[$\uparrow$](#a7)[$\uparrow$](#a8)[$\uparrow$](#a9)[$\uparrow$](#a10)[$\uparrow$](#a11)[$\uparrow$](#a12)
 
-<b id="f2">2</b> Yang, Xiaoping, Kwame Oteng Darko, Yanjun Huang, Caimei He, Huansheng Yang, Shanping He, Jianzhong Li, Jian Li, Berthold Hocher, and Yulong Yin. “Resistant Starch Regulates Gut Microbiota: Structure, Biochemistry and Cell Signalling.” Cellular Physiology and Biochemistry 42, no. 1 (2017): 306–18. https://doi.org/10.1159/000477386. [↩](#b1)
+<b id="f2">2</b> Yang, Xiaoping, Kwame Oteng Darko, Yanjun Huang, Caimei He, Huansheng Yang, Shanping He, Jianzhong Li, Jian Li, Berthold Hocher, and Yulong Yin. “Resistant Starch Regulates Gut Microbiota: Structure, Biochemistry and Cell Signalling.” Cellular Physiology and Biochemistry 42, no. 1 (2017): 306–18. https://doi.org/10.1159/000477386. [$\uparrow$](#b1)
 
 [common probiotic]: https://www.amazon.com/s/?field-keywords=Lactobacillus+paracasei

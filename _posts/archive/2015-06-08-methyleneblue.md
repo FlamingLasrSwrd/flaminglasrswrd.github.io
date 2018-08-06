@@ -42,16 +42,16 @@ MB has a substantially alterted pharmacokinetics from the more traditional zenob
 ### Interactions
 Given as the in-vitro EC50:
 
-*  Acetylcholinesterase inhibition (1 &mu;M)
-*  Nitric Oxide Synthase inhibition (5 &mu;M)
-*  Oxidation of Cysteine Residues (2-30 &mu;M)
-*  &beta;-Amyloid Aggregation inhibition (2.3-12.4 &mu;M)
-*  Monoamine Oxidase B inhibition (5.5 &mu;M)
-*  Glutamatergic inhibition (5-50 &mu;M)
-*  Noradrenaline Uptake inhibition (50 &mu;M)
-*  Guanylate Cyclase inhibition (60 &mu;M)
-*  Monoamine Oxidase A inhibition (0.16 &mu;M)
-*  Enhanced Mitochondrial &beta; Oxidation (0.3 &mu;M)
+- Acetylcholinesterase inhibition (1 $\mu$M)
+- Nitric Oxide Synthase inhibition (5 $\mu$M)
+- Oxidation of Cysteine Residues (2-30 $\mu$M)
+- $\beta$-Amyloid Aggregation inhibition (2.3-12.4 $\mu$M)
+- Monoamine Oxidase B inhibition (5.5 $\mu$M)
+- Glutamatergic inhibition (5-50 $\mu$M)
+- Noradrenaline Uptake inhibition (50 $\mu$M)
+- Guanylate Cyclase inhibition (60 $\mu$M)
+- Monoamine Oxidase A inhibition (0.16 $\mu$M)
+- Enhanced Mitochondrial $\beta$ Oxidation (0.3 $\mu$M)
 
 #### Adverse Interactions
 Apparently when MOAIs are mixed with tyramine containing foods, a hypertensive crisis can occur in certain sensitive individuals... Namely, me.
@@ -72,17 +72,17 @@ Each method of purification can be applied in any order or combination. As with 
 8. (optional) Cool Acid Recrystallization for recovery
 
 #### Hot Salt Recrystallization
-1. 20g crude MB dissolved in 1700 ml H~2~O at 65&deg;C
+1. 20g crude MB dissolved in 1700 ml H~2~O at 65$^{\circ}$C
 2. Add 200g pure NaCl
-3. Cool mixture to 22&deg;C over 3.5 hours
-4. Vacuum filter resulting crystals and dry at 75&deg;C for 16 hours
+3. Cool mixture to 22$^{\circ}$C over 3.5 hours
+4. Vacuum filter resulting crystals and dry at 75$^{\circ}$C for 16 hours
     * optional washing with chilled, saturated salt solution
 
 #### Cool Acid Recrystallization
-1. 20g crude MB dissolved in 1700 ml H2O at 65&deg;C
-2. Cool to 22&deg;C
+1. 20g crude MB dissolved in 1700 ml H2O at 65$^{\circ}$C
+2. Cool to 22$^{\circ}$C
 3. Adjust pH to 1 using aqueous HCl
-4. Vacuum filter suspension and dry at 75&deg;C over 16 hours
+4. Vacuum filter suspension and dry at 75$^{\circ}$C over 16 hours
     * optional washing with chilled, HCl solution
 
 #### Organic Extraction
@@ -93,7 +93,7 @@ Each method of purification can be applied in any order or combination. As with 
 5. Repeat 1-4 times
 
 #### Metal Precipitation
-1. 4.5g crude MB dissolved in 125ml at 65&deg;C
+1. 4.5g crude MB dissolved in 125ml at 65$^{\circ}$C
 2. Cool solution to room temperature
 3. Prepare a separate solution of sodium carbonate (163mg Na~2~CO~3~ in 10ml H~2~O)
 4. Add sodium carbonate solution to MB
@@ -102,8 +102,8 @@ Each method of purification can be applied in any order or combination. As with 
 
 #### Final Procedure
 1. Dissolve 5g crude MB in 230 ml H20
-2. Heat solution to 65&deg;C for >30 min while stirring
-3. Cool solution to 10&deg;C
+2. Heat solution to 65$^{\circ}$C for >30 min while stirring
+3. Cool solution to 10$^{\circ}$C
 4. Prepare solution of 163mg sodium carbonate in 10ml H2O
 5. Add Na2CO3 solution to MB solution at once
 6. Stir continuously for 15 min
@@ -114,10 +114,10 @@ Each method of purification can be applied in any order or combination. As with 
 11. Discard or recycle organic layer
 12. Repeat steps 8-11 twice more or as needed to yield colorless organic layer
 13. Adjust resulting solution to pH five using dilute HCl
-14. Heat solution to 65&deg;C for >10 min
+14. Heat solution to 65$^{\circ}$C for >10 min
 15. Add 118mg sodium chloride per milliliter solution
 17. Vacuum filter solution to yield purified crystals of MB
-18. Dry crystals at 75&deg;C over 16 hours to achieve final product
+18. Dry crystals at 75$^{\circ}$C over 16 hours to achieve final product
 19. Optional: repeat all or none of the purification procedures for greater purity or recovering product
 
 ### Formulation

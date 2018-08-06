@@ -8,7 +8,7 @@ abstract: >
   Spot welders are used to affix two materials by melting and fusing under pressure without the addition of filler material. A simple spot welder can be constructed at home using a microwave over transformer.
 ---
 
-![](/assets/img/full.JPG)
+![](assets/img/full.JPG)
 
 # Background
 
@@ -21,7 +21,7 @@ The image at the top of the page is the finished welder. I have made lots of goo
 
 ## Step 1: Transformer
 
-![](/assets/img/transformer.JPG)
+![](assets/img/transformer.JPG)
 
 The first thing to do is locate a suitable transformer. Microwave Oven Transformers (MOT) are the best. They are designed for high power applications (>1 KW) and the MOTs are easy to rewind. Not to mention that people throw them out all the time. Often they just have a blown fuse and rarely, if ever, the transformers are blown. If you don't have a microwave to rip apart post an add in your local freecycle or free craigslist. You will undoubtedly get a few hits. Try to find the heaviest transformer you can. Heavier generally means more power when it comes to transformers.
 
@@ -31,13 +31,13 @@ To rewind the transformer you will need some beefy wires. I used an old set of j
 
 ## Step 2: Supports and Arms
 
-![](/assets/img/supports.JPG)
+![](assets/img/supports.JPG)
 
 Somehow you have to get the power to the metal being welded. You have to be able to maneuver your metal into place and clamp down on it. You also have to carry large currents without heating significantly. Then the arms have to have supports that allow pivot. How do you accomplish all this you ask? I used 3/8" soft copper tubing and sheet metal. It helps to have long, skinny arms like the ones shown. They allow you to make welds in tight places and small spaces. You could use the same wire as the secondary windings for the arms. It would have to be supported somehow. The bottom arm is screwed into the wooden base and electrically insulated from the sheet metal support. The wires from the transformer are just squeezed into the tubing and crimped into place. I used some electrical tape to reduce movement between the two. The support uses a single bolt and two washers as the pivot point.
 
 ## Step 3: Electrical Control
 
-![](/assets/img/switches.JPG)
+![](assets/img/switches.JPG)
 
 A good spot weld is largely a function of time. Too little time and the metals don't heat enough, too much time and the electrodes degrade and the metal oxidizes producing a poor weld. A regular light switch can be used for timing. Put it in series with the primary winding. They are only designed for about ten amps so you can't put it on the secondary side. I chose to include a second switch as a safety precaution. To operate you must have both switches on.
 
@@ -45,7 +45,7 @@ A good spot weld is largely a function of time. Too little time and the metals d
 
 ## Step 4: Contacts
 
-![](/assets/img/contacts.JPG)
+![](assets/img/contacts.JPG)
 
 If you have some tungsten laying around that would be great. Unfortunately I did not. I used two 1 1/2 inches bolts with a diameter of about 0.25 inch. Definitely not the best choice but it worked. The copper was flattened at the end and a hole drilled through. Two nuts can secure the bolts to the arms. Make sure to sand all the contact points to ensure a good connection. Pretty simple huh?
 
