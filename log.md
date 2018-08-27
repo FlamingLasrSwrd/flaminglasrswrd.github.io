@@ -2,8 +2,79 @@
 layout: page
 title: "Work Log"
 permalink: /log/
+abstract: >
+  Semi-unfiltered life updates in the moment barely useful to me. Do not take seriously or literally.
 ---
-Semi-unfiltered life updates in the moment barely useful to me. Do not take seriously or literally.<!--more-->
+
+## 27 Aug 2018
+- more work on the server
+  - setting up kvms for tor services
+  - I might relocated some of the other services mentioned in the server post to kvm for security
+  - need to generate some certificates
+- messed with some security settings in Tomato
+  - turned off pretty much all logging -> will need to reenable them as I do more research into their pen testing usage
+
+## 21 Aug 2018
+- Meal Planner
+
+## 20 Aug 2018
+School has started again: terrible drivers are a tolerable evil in exchange for the library staying open later than 5pm.
+
+- more remailer website work
+
+## 19 Aug 2018
+- ScanTesla finished but didn't output anything -> time completely wasted
+- continue work on remailer
+  - choosing a theme and relearning css
+
+## 18 Aug 2018
+- made another batch of Play Hard
+- worked on the remailer website
+
+## 17 Aug 2018
+- more meal planner app
+  - learning about graph databases [@neo4j_tips_2015]
+
+## 16 Aug 2018
+- continued distillation of DMSO
+  - had some kind of light brown liquid in the receiving flask, possible suck back from the pump?
+    - I'm dumb. I released the vacuum but the system was still warm and as it cooled it sucked the vacuum oil into the flask.
+  - going to have to redistill
+- I still want to make a meal planner app...
+
+## 15 Aug 2018
+- researching urea hydrolysis for ammonia production
+  - urease?
+    - not available to buy
+    - extract from vegetable matter? -> seems like a lot of work
+- production of sodium by DES
+  - using aluminum? -> energetically favorable by 1250 kj/mol
+  - still need anhydrous metal chloride
+- Hydrogen peroxide sterilization
+  - vacuum chamber
+- Started distilling DMSO from 90% cream -> PITA
+  - vacuum distillation at around 90C with direct heating
+
+## 10 Aug 2018
+- more server: plex
+
+Last night I was a part of a conversation about work. One of my friends was considering a promotion. He would be transitioning from working somewhat independently to managing a dozen people. Essentially the discussion boiled down to how much his happiness was worth to him. Everyone in the room agreed that their current work situation was not ideal. The descriptions ranged from "I don't hate working there" to "I really hate my job". These are highly skilled workers, mind you. I saw how these people, whom I admire, just hated work or at the very least thought of it as a necessary evil.
+I never want to be that way.
+
+## 09 Aug 2018
+- more server
+
+## 08 Aug 2018
+- reinstalled Ubuntu 18.04 LTS on the server (again)
+  - gave a write-up of the setup
+
+## 07 Aug 2018
+- more site work
+  - changed fonts: more simplistic
+
+## 06 Aug 2018
+- worked on this site
+- TODO: correct image alignment of post graphical abstracts
 
 ## 05 Aug 2018
 - haven't been feeling the best lately; had my first migraine in something like a year yesterday
@@ -132,7 +203,7 @@ Items Needed:
 ## 28 Jun 2018
 - Made Jafar costume.
 
-![Jafar and Iago](assets/img/20180628_191905.jpg)
+![Jafar and Iago]({{ site.url }}/assets/img/20180628_191905.jpg)
 
 ## 27 Jun 2018
 - Research on AGEs for reddit...

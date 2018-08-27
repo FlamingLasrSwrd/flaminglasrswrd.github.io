@@ -3,10 +3,20 @@ layout: post
 title: Tesla Coils
 date: 2003-05-01T00:00:00.000Z
 tags: electronics
-category: archive
+category: active
+author: Elijah K. Dunn
 abstract: >
   Tesla coils were my first and probably my longest deep dive into a project. I built my first coil around age 12. I even won first place at a regional science fair with it that same year. I managed to use a much larger version as a final project all the way into college. Only some of my notes on the most recent coil version survived the years.
 ---
+# Again!
+So I have picked up this project again circa 2018. My sister has asked me to look into making a small tesla coil for her haunted house. Enough to be scary but not too dangerous.
+
+# Design Parameters
+- secondary
+  - height: min, max
+  - width: min, max
+  - wire_size: min, max
+
 
 # DRSSTC in Action
 
@@ -15,7 +25,39 @@ abstract: >
 </iframe>
 </div>
 
-# DRSSTC
+# Log
+
+## 26 Aug 2018
+- about halfway through the simulations so far
+- what diameter primary wire (tube) do I need?
+  - 1/4 soft copper tubing: 9.5mm outside diameter
+    - [Copper tubing sizes](https://www.petersenproducts.com/Copper-Tubing-Sizes-s/1979.htm)
+  - at 100 KHz skin depth is $\delta = ~0.21mm$
+  - total area for current using 1/4 copper: $D_{out} = 12mm^2$
+    - $A = \pi*(D_{out}^2 - (D_{out}-\delta)^2)$
+  - Gives a max (power supply) current of around 35A -> Not large enough
+    - [Wire gauge current limits](http://www.powerstream.com/Wire_Size.htm)
+    - max RMS current of my IGBTs (IXGN60N60) is 60A
+  - total area for current using 3/8" copper tubing: $D_{out} = 16.4mm^2$
+  - Max current = 47A... still not enough but I'm going to use it anyway. What's a little resistive heating between friends?
+- I'll need at least 1,000 ft of secondary wire
+  - 20-30 AWG
+- I would really like to have a formless secondary coil for less interturn capacitance and loss
+  - use a pvc form to wind it, epoxy it, then remove the form
+  - just a few end caps of thick material for mounting
+- I have plenty of polycarbonate for making the electronics base and primary coil supports
+- Teflon insulator between primary and secondary? Kapton?
+  - I have some kapton film somewhere.
+  - Kapton sells tape using a silicone adhesive
+  - I could wrap the bottom (and top?) of the secondary with a few layers of kapton using silicone as glue to prevent arcs
+- Strike ring?
+
+## 25 Aug 2018
+
+## 13 Aug 2018
+- started work on modifying ScanTesla -> probably won't finish it unless I have a lot more time
+  - evolutionary algorithms would be great here
+- started ScanTesla running calculations: 146,257,650 simulations to go...
 
 ## 5/15/12
 

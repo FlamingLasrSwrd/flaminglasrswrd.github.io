@@ -3,7 +3,9 @@ layout: "post"
 title: "Flaming Laser Sword"
 date: "2018-06-29 19:23"
 category: active
-tags: 
+tags:
+author: Elijah K. Dunn
+zotero-collection: https://www.zotero.org/ekdunn/items/collectionKey/KYHTMHU9
 abstract: >
   Creating the FlamingLasrSwrd persona.
 ---

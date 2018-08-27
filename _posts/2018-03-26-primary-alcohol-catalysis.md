@@ -5,6 +5,7 @@ date: "2018-03-26 11:32"
 category: active
 tags: chemistry
 author: Elijah K. Dunn
+zotero-collection: https://www.zotero.org/ekdunn/items/collectionKey/RFA8NCVX
 abstract: >
   Oxidation/dehydrogenation of primary alcohols using catalysts to form their corresponding aldehydes.
 ---

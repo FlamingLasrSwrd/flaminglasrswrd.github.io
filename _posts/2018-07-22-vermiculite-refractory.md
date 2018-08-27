@@ -13,6 +13,8 @@ graphical-abstract:
 # Introduction
 Chemically bonded vermiculite (CBV) is so easy and extremely cheap. It really only has one ingredient: vermiculite. Commonly sold as loose fill attic insulation or as a soil amendment by the cubic foot. With a little bit of an acid binder and some force, CBV can withstand temperatures high enough to melt copper with low shrinkage and high insulating value. The only downside is the need for a strong mold to withstand ~350 kPa during the ramming process. Thick wood works just fine, so it isn't really a major downside.
 
+Initial tests using a brick style mold worked great. Baking the mold in the oven for a few hours increases the hardness sufficiently that it can be removed without cracking. Half an hour under a bunsen burner greatly increases the strength. The finished brick can be easily cut with a wood saw. Testing on a lab furnace mold didn't work as well, however. It fit into my oven just fine, but the wood mold was close enough to the heating coil that it started to burn. So I had to cut the drying phase short. This resulting in the whole thing crumbling when the mold was removed. Solution: either use individual bricks to build a furnace al la Doug's Lab and others, or use a heat proof mold. [@dougs_lab_diy_2016]
+
 ## Stats of CBV
 characteristic                   | value
 ---------------------------------|----------------------------------------------

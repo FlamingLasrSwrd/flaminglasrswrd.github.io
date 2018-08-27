@@ -5,6 +5,8 @@ date: "2018-03-26 11:34"
 category: active
 link-citations: true
 tags: chemistry
+author: Elijah K. Dunn
+zotero-collection: https://www.zotero.org/ekdunn/items/collectionKey/DBGV3U9D
 abstract: >
   Atmospheric nitrogen fixation for the amateur using plasma.
 ---

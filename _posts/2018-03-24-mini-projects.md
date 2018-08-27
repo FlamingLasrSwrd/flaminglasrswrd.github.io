@@ -6,36 +6,6 @@ category: archive
 abstract: >
   A list of shorter projects.
 ---
-
-# Server upgrade
-**in-progress**
-I was getting tired of rigging my old Ubuntu 16.04 desktop-turned server. So I decided to fresh install Ubuntu 18.04 server with OpenStack:
-
-```bash
-# ssh into server
-sudo apt update
-sudo apt upgrade
-sudo ufw allow OpenSSH
-#sudo ufw enable #firewall blocks OpenStack installation
-sudo snap install conjure-up --classic
-sudo apt install zfsutils-linux
-sudo snap install lxd
-/snap/bin/lxd init
-# verify lxc is setup correctly
-lxc launch ubuntu:16.04 u1
-lxc exec u1 ping ubuntu.com
-sudo apt install maas
-sudo maas init
-conjure-up
-# OpenStack with NovaLXD
-# localhost
-# use defaults for everything except 'dir' for storage
-# Canonical livepath kernels: https://ubuntu.com/livepatch
-sudo snap install canonical-livepatch
-sudo canonical-livepatch enable [my-livepatch-token]
-```
-
-
 # Jafar Costume
 ![][assets/img/jafarstaff.jpg]
 

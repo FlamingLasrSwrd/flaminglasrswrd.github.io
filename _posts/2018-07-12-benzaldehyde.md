@@ -5,6 +5,7 @@ date: "2018-07-12 15:06"
 category: active
 tags: chemistry
 author: Elijah K. Dunn
+zotero-collection: https://www.zotero.org/ekdunn/items/collectionKey/9B757BAD
 abstract: >
   Producing benzaldehyde for the amateur chemist.
 graphical-abstract: "/assets/img/benzaldehyde.png"
@@ -19,17 +20,16 @@ Benzaldehyde is a precursor to a huge number of organic compounds. Synthesis in 
 # Methods
 
 ## Chromyl Chloride and Dichloromethane
-![Benzaldehyde by the oxidation of chromyl chloride in dichloromethane]({{site.url}}/assets/img/benzaldehyde-chromyl.png)
+![Benzaldehyde by the oxidation of toluene by chromyl chloride in dichloromethane]({{site.url}}/assets/img/benzaldehyde-etard.png)
 
 - Attempt by Dennis Phillips aka NileRed: 51% yield [@dennis_phillips_making_2017]
 
 ## Benzoic Acid and Hypochlorite
-![Benzaldehyde by the action of hypochlorite on benzoic acid in acidic conditions.]({{site.url}}/assets/img/benzaldehyde-hypochlorite.png)
 
 - 12% yield based on Benzoic Acid. [@scott_daniel_benzaldehyde_2017]
 
 ## Sodium Persulfate and Iron-Copper Catalysts
-![Benzaldehyde by the action of sodium persulfate on toluene with cupric and ferrous catalysts.]({{site.url}}/assets/img/benzaldehyde-persulfate-cupric-ferrous.png)
+![Benzaldehyde by the action of sodium persulfate on toluene with cupric and ferrous catalysts.]({{site.url}}/assets/img/benzaldehyde-persulfate.png)
 
 > Ferrous-Copper Catalyst: Toluene (7.6 g.), water (35 ml.), ferrous sulphate (0.110 g.) heptahydrate, cupric acetate (0.072 g.) and methanol (8 ml.) are placed in a 250 ml. reactor.
 >
@@ -52,7 +52,7 @@ Benzaldehyde is a precursor to a huge number of organic compounds. Synthesis in 
 
 ## 13 Jul 2018
 - started research on various methods used in the literature
-- fiddled with Marvin for 5 hours
+- fiddled with Marvin for 5 hours: Chemdraw is wayyyy better
 
 
 # Bibliography

@@ -4,6 +4,8 @@ title: AI Research
 date: 2017-08-30T00:00:00.000Z
 tags: school
 category: active
+author: Elijah K. Dunn
+zotero-collection: https://www.zotero.org/ekdunn/items/collectionKey/VJCJE86P
 abstract: >
   Artificial intelligence has held my interest longer than any other topic I have researched. Here are my notes on AI. They are not really for the benefit of reading, just the writing. I rarely even read it.
 ---
