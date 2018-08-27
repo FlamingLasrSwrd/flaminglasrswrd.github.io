@@ -41,10 +41,15 @@ layout: default
   {% for format in site.pandoc.outputs %}
     {% capture extension %}{{ format | first }}{% endcapture %}
     {% assign s = page.url | remove: '.html' | split: '/' %}
-    <a href="{{ page.url | remove:'.html' }}/{{ s.last }}.{{ extension }}">
+    <a href="{{ page.url | remove:'.html' }}/{{ s.last }}.{{ extension }}" target="_blank">
       {{ extension }}
     </a>
   {% endfor %}
+</span>
+<span class="post-meta">
+  {% if page.zotero-collection %}
+    <a href="{{ page.zotero-collection }}" target="_blank">Zotero Ref</a>
+  {% endif %}
 </span>
 
 <span class="abstract-header">
@@ -53,7 +58,7 @@ layout: default
   {% endif %}
   {% if page.graphical-abstract %}
     <div class="graphical-abstract">
-      <img src="{{ page.graphical-abstract | prepend: site.url}}" alt="Graphical Abstract">
+      <img src="{{ page.graphical-abstract | prepend: site.url }}" alt="Graphical Abstract - {{ page.title }}" style="max-width: 500px; max-height: 250px" align="middle">
     </div>
   {% endif %}
 </span>
@@ -76,24 +81,26 @@ layout: default
   <script src="https://txtpen.com/embed.js?site={{txtpen.txtpen_sitename}}" />
 {% endif %}
 
-{% if site.disqus_shortname %}
-  <div id="disqus_thread"></div>
-  <script type="text/javascript">
-    var disqus_shortname  = '{{ site.disqus_shortname }}';
-    var disqus_identifier = '{{ page.id }}';
-    var disqus_title      = {{ page.title | jsonify }};
+{% if jekyll.environment == "production" %}
+  {% if site.disqus_shortname %}
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      var disqus_shortname  = '{{ site.disqus_shortname }}';
+      var disqus_identifier = '{{ page.id }}';
+      var disqus_title      = {{ page.title | jsonify }};
 
-    (function() {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-{% endif %}
+      (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  {% endif %}
 
-{% if site.facebook_comments %}
-  <div class="fb-comments" data-href="{{ site.url }}{{ page.url }}" data-width="100%" data-numposts="{{ site.facebook_comments_number }}"></div>
+  {% if site.facebook_comments %}
+    <div class="fb-comments" data-href="{{ site.url }}{{ page.url }}" data-width="100%" data-numposts="{{ site.facebook_comments_number }}"></div>
+  {% endif %}
 {% endif %}
 
 {% if site.show_related_posts %}

@@ -1,4 +1,5 @@
 <head>
+  {% if jekyll.environment == "production" %}
     {% if site.google_tag_manager %}
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -6,6 +7,7 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','{{ site.google_tag_manager }}');</script>
     {% endif %}
+  {% endif %}
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{% if page.title %}{{ page.title | strip_html }} &#8211; {% endif %}{{ site.title | strip_html }}</title>
@@ -44,13 +46,14 @@
     {% endif %}
 
     <!-- Verifications -->
-    {% if site.google_verification %}
-      <meta name="google-site-verification" content="{{ site.google_verification }}" />
+    {% if jekyll.environment == "production" %}
+      {% if site.google_verification %}
+        <meta name="google-site-verification" content="{{ site.google_verification }}" />
+      {% endif %}
+      {% if site.bing_verification %}
+        <meta name="msvalidate.01" content="{{ site.bing_verification }}" />
+      {% endif %}
     {% endif %}
-    {% if site.bing_verification %}
-      <meta name="msvalidate.01" content="{{ site.bing_verification }}" />
-    {% endif %}
-
     <!-- Open Graph -->
     <!-- From: https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
     <meta property="og:locale" content="{{ site.text.og_locale }}">
@@ -92,14 +95,16 @@
     <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
     <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
 
-    {% if site.google_analytics %}
-    <script type="text/javascript">
-       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-       ga('create', '{{ site.google_analytics }}', 'auto');
-       ga('send', 'pageview');
-    </script>
+    {% if jekyll.environment == "production" %}
+      {% if site.google_analytics %}
+      <script type="text/javascript">
+         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+         ga('create', '{{ site.google_analytics }}', 'auto');
+         ga('send', 'pageview');
+      </script>
+      {% endif %}
     {% endif %}
 </head>
