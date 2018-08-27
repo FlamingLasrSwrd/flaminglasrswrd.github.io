@@ -12,7 +12,6 @@ header_pages:
  - log.md
 
 # Build settings
-#markdown: kramdown
 theme: jekyll-theme-midnight
 #plugins_dir:
 #  - jekyll-feed
@@ -24,6 +23,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - _private
+  - _mdwriter.cson
 permalink: pretty
 paginate: 7
 #destination: ../flaminglasersword/
@@ -73,21 +73,21 @@ facebook_comments_number: 10
 
 # Social icons
 github_username: flaminglasrswrd
-reddit_username: flaminglasrswrd
+#reddit_username: flaminglasrswrd
 wikipedia_username: flaminglasrswrd
 instructables_username: FlamingLasrSwrd
-stackoverflow_id: 9530723
+#stackoverflow_id: 9530723
 twitter_username: flaminglasrswrd
 instagram_username: flaminglasrswrd
 bitbucket_username:
 skype_username:
-steam_nickname: ekdunn
+#steam_nickname: ekdunn
 google_plus_id:
 linkedin_username:
 angellist_username:
 medium_id:
 bitcoin_url: 32Raj9qa4tZeXEK1aq9wonr8t9GHZYqy7t
-paypal_url: paypal.me/ekdunn
+#paypal_url: paypal.me/ekdunn
 flattr_button:
 telegram_username:
 vk_id:
@@ -144,7 +144,7 @@ text:
 # Pandoc
 markdown: pandoc
 pandoc:
-    skip: true
+    skip: false
 #    bundle_permalink: 'bundle/:output_ext/:slug.:output_ext'
     papersize: 'a5paper'
     sheetsize: 'a4paper'
@@ -158,3 +158,37 @@ pandoc:
       latex:
       pdf: '--latex-engine=xelatex'
       epub: '--epub-chapter-level=2'
+
+pgp: |
+  -----BEGIN PGP PUBLIC KEY BLOCK-----
+
+  Version: GnuPG v1
+
+  mQENBFqB0kQBCACsy501CowTdQtF7ci8pDnLas33hSCcntMykg5DoB4lvKTeqOo+
+  Sa5d8c7yrJ2HAfR5b70xQjOOeKt0KCN4bCJWtMoBuGfp8fU7Z/0gH0DA4k7Q0BXA
+  UCM++8Jzcw4Y9EWH9HgsudPpmpKJpWnaII2EA1Ajp4aaU7J756F8YXBm/G8zwWf+
+  UNzb4b5PCx0BiwFftJ6MSLYJXzHJZlBJ8txvqEH88DN3MPwvQjPkTXujTbRhTPp1
+  ZC2DBGF9fVeaR5udydagwnCQeRgr/PAD86Vh8cHGZNj8KlP6Grzq+o7+BTF9ZC+O
+  G6eeHGvwud+XJgYmMZ7d4y04n1DemfeYjx2ZABEBAAG0JUVsaWphaCBEdW5uIDxl
+  bGlqYWguay5kdW5uQGdtYWlsLmNvbT6JATgEEwECACIFAlqB0kQCGwMGCwkIBwMC
+  BhUIAgkKCwQWAgMBAh4BAheAAAoJEJ5ZJPY9FvT8q1wH+wS0+eblVRwFrCQVwkSQ
+  2kk5AMOBBGQUA9exXYLCuGVhKR+0zpscdwFFaYJdHH1MNnLWFo8EjITwE5ADc/yg
+  U809w5XMCoRaeC/mPrPTmp5Z0q733ISVM5DNxLp4ncE2qkXsOrWs+ceaIQzkshsR
+  FBkeKiI+NVb1H875Xvhdgr0J6376r8aSXfGGGz2EE/r0tXfnUMMcwmMUrwXImzAT
+  WJIguxNnB4Bax6elVPsBNGA97EIRe8uJGGLv7GZIcekLbfiVVk81v+v5qESb5qM8
+  p/huUo3XXbwhKq9MtU/C+0X2s3zbizVxIPb2+wYMmAzroJ8/enXmgyMR3ixz95+U
+  2e65AQ0EWoHSRAEIALmZiKpxcf8Jn4hVlI6CjhnuqRrgVVblgitW4YvkkDdm6P9Z
+  nxlXPJyJW1K5piOOGfFbBz7N7mGWKK45+TNOxiLrEIdluFLVrw6kFdkufL8bOUMc
+  1tWb5YkOCpx983MOa5nOxesAvCHDjmfayh6NgfHRJhJuL9VVkFEoKRmQ8JOw94kR
+  rSnwG2G8Ep+F//wQPpzuAFAY42uYsSs8muFtICthvRON4auc86HiNXlFw7G8bWH1
+  xcgon8V2X0Tt5Vh0hurKmAg9MrO+Q86fW2VZ8Ygs1SAe6G/O7AHIrH3f0UMZgff9
+  PuDjYKpUOo1pMFcawXsfA0DGDgeUp7YvVfIceS8AEQEAAYkBHwQYAQIACQUCWoHS
+  RAIbDAAKCRCeWST2PRb0/IuhCACoMqHPbKynUDA+PWI8IHR4xUpVImkcR6iDOgO0
+  XVWePQfsYFxHjCZ08obn7LHrZ9jvuKtJgbtY72k+XFneTp4RHLG9rSxzTKMVg+xx
+  5igDO4Z7jlDjCpCUTLOb0cmKgVizq9wDi5WGeuz2+NWadXtwBIFd4k7rKwZD6+XI
+  7vz6+u4ClIxiC+3wxKgf1/cg9I8Ri96sQ7ovjb/PuBGE8xon+VzwrKnklj9tnXtT
+  v5WexViuWeIxdsKSv6MhUFNfPUZ3S4/+6B1t5rBTmw47oK07TDFXa5HHeakvEsHt
+  YjY/rk5zY7Vlqcnrc6cotjBNoZznsj2N8PI10pD71ZWVsEfI
+  =6+Gq
+
+  -----END PGP PUBLIC KEY BLOCK-----
