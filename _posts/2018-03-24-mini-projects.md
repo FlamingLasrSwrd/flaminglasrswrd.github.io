@@ -6,6 +6,7 @@ category: archive
 abstract: >
   A list of shorter projects.
 ---
+
 # Jafar Costume
 ![][assets/img/jafarstaff.jpg]
 

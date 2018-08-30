@@ -6,11 +6,16 @@ abstract: >
   Semi-unfiltered life updates in the moment barely useful to me. Do not take seriously or literally.
 ---
 
+## 30 Aug 2018
+I spent all day yesterday fixing my laptop OS. It started with a simple upgrade that I had been delaying for several weeks. For some unknown reason, the update failed but didn't roll back the changes. So I was left with a half functioning 18.04 system that failed to log in after I rebooted. Fortunately I had backed up my drive the day before. I made an extra copy of my home folder just in case.
+So I figured this would be a good opportunity to try out Qubes. Six hours later, I still hadn't been able to get it to work. I was able to get into the text installation menus, but couldn't get encryption to work due to a known bug. I'm fairly certain the problems I was having were: *A*) Nvidia graphics and *B*) PCIE related. I tried every grub flag that I found on the internet... must have rebooted a hundred times. Finally I gave up on Qubes and settled on a clean install of Ubuntu 18.04. After much fiddling with grub flags I got it to work.
+
 ## 27 Aug 2018
 - more work on the server
   - setting up kvms for tor services
   - I might relocated some of the other services mentioned in the server post to kvm for security
   - need to generate some certificates
+  - need to work out the interfaces and forwarding
 - messed with some security settings in Tomato
   - turned off pretty much all logging -> will need to reenable them as I do more research into their pen testing usage
 
