@@ -7,6 +7,14 @@ abstract: >
   A list of shorter projects.
 ---
 
+# Neo4j Ubuntu 18.04
+Apparently Neo4j doesn't like the current version of Java. I couldn't get it to start until I installed *oracle-java8*:
+```bash
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
+sudo apt-get install oracle-java8-installer
+```
+
 # Jafar Costume
 ![][assets/img/jafarstaff.jpg]
 
@@ -100,7 +108,7 @@ So that's it! Hopefully. You should be able to shutdown the live system, reboot 
 
 # Intermittent Wifi
 **Update2:**
-I may have it figured. I think that my wifi issue was hard to diagnose because it had to do with encryption. Basically, every time my wifi card wanted to get a better signal (change AP's) or experienced too much interference on a particular channel, it used a random MAC address to attempt a reconnect. Unfortuantely, something about the PEAP-MSCHAPv2 verification algorithm at my University was rejecting the new MAC addresses and anything that caused my card to cycle would end up loosing connectivity. So bluetooth and locking my computer would cause cycling and end the connection (without actually ending it). Anyway, now I have a seemingly stable connection after stabilizing the driver and network manager.
+I may have it figured. I think that my wifi issue was hard to diagnose because it had to do with encryption. Basically, every time my wifi card wanted to get a better signal (change AP's) or experienced too much interference on a particular channel, it used a random MAC address to attempt a reconnect. Unfortunately, something about the PEAP-MSCHAPv2 verification algorithm at my University was rejecting the new MAC addresses and anything that caused my card to cycle would end up loosing connectivity. So bluetooth and locking my computer would cause cycling and end the connection (without actually ending it). Anyway, now I have a seemingly stable connection after stabilizing the driver and network manager.
 
 ## Driver Fix
 To test:

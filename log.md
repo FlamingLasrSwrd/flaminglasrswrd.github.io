@@ -6,6 +6,83 @@ abstract: >
   Semi-unfiltered life updates in the moment barely useful to me. Do not take seriously or literally.
 ---
 
+## 30 Oct 2018
+- Lost in the infinite
+
+## 28 Oct 2018
+- Elijah's Quick Whiskey turned out ok
+  - the color was a deep red-brown; darker than most whiskeys
+  - the taste was acceptable; it was still 40% ethanol...
+  - I don't have much to compare it to, since I've never drank from a bottle of whiskey that costs more than $20
+- I would like to build a large food dehydrator...
+
+## 25 Oct 2018
+- attempted the first test of quick aged whiskey yesterday
+  - 720 ml 40% alcohol from sugar wash
+    - previously used ozonolysis, carbon filtration, [@shinnosuke_onuki_purification_2007] and 4x distillation to purify
+    - made sure to remove 10ml of the head to limit methanol
+    - mixed 300ml azeotropic ethanol with 420 ml H2O
+  - added 10g of apple wood chips; broiled in the oven for 5 min to simulate the charring of barrels
+  - 1 hour at 120C/15 psig in mason jar with lid closed tight
+  - let cool
+  - the color is quite nice; a light brick red
+- Second run through the autoclave today
+- Finished the CO2 scrubber yesterday
+  - bubble air through solution
+    - NaOH + CaOH + CO2 -> NaOH + CaCO3
+    - sodium hydroxide is an absorption catalyst through the production of sodium carbonate
+    - calcium carbonate precipitates for easy removal
+
+## 16 Oct 2018
+- looking into making aged whiskey very quickly
+  - UV irradiation (possibly with catalyst + heat) to catalyze the breakdown of lignin into aromatic compounds
+  - heat (possibly lower intensity photoirradiation) to catalyze the synthesis of more complex aromatic compounds
+- could probably make whiskey from the lignin in cardboard or newspaper ;)
+
+### Aged Whiskey
+- Extraction phase
+  - fluctuating high temperature and pressure of ethanol and oak barrel material
+    - maybe sonication? - probably not scalable
+    - maybe requires oxygen? (probably not)
+- Irradiation phase
+  - UV irradiation (280–300 nm [@lanzalunga_photo-_2000]) to catalyze lignin degradation
+  - ozonation? - no; leads to overoxidation
+- Alternate until finished
+  - use opacity as an indicator of extraction efficiency or completeness
+
+## 13 Oct 2018
+- some password work
+  - I would like to publish my method of generating and securing passwords, but that would make me more vulnerable.
+
+## 10 Oct 2018
+- more tesla coil work: getting close to first light
+
+## 08 Oct 2018
+- more tesla coil work
+- My sleep schedule has been really weird lately
+  - I still get around 8 hrs of sleep per night, but I tend to fall asleep around 3-4am --not exactly a typical sleep schedule
+- I've spent more time that I should have watching Star Trek TNG over the last few weeks
+
+## 20 Sep 2018
+- more tesla coil work
+
+## 19 Sep 2018
+- Picked up a pattern and material for a pretty sweet red dress for the Larryville RDR
+
+## 18 Sep 2018
+- ScanTesla output was jibberish... :(
+
+## 17 Sep 2018
+- ScanTesla output file is 22GB... I need to load it onto my server for analysis
+  - the original program is supposed to output the best config, but for some reason it didn't work
+- I would love to rewrite ScanTesla to include elements from JavaTC and some evolutionary algo stuff
+  - Stated work on converting some equations in the literature to python code
+  - might need to learn more numpy to make it efficient
+
+## 16 Sep 2018
+- soldered SMD chips to UD2.7c board
+- worked with JavaTC a bit to determine the right secondary coil form
+
 ## 30 Aug 2018
 I spent all day yesterday fixing my laptop OS. It started with a simple upgrade that I had been delaying for several weeks. For some unknown reason, the update failed but didn't roll back the changes. So I was left with a half functioning 18.04 system that failed to log in after I rebooted. Fortunately I had backed up my drive the day before. I made an extra copy of my home folder just in case.
 So I figured this would be a good opportunity to try out Qubes. Six hours later, I still hadn't been able to get it to work. I was able to get into the text installation menus, but couldn't get encryption to work due to a known bug. I'm fairly certain the problems I was having were: *A*) Nvidia graphics and *B*) PCIE related. I tried every grub flag that I found on the internet... must have rebooted a hundred times. Finally I gave up on Qubes and settled on a clean install of Ubuntu 18.04. After much fiddling with grub flags I got it to work.

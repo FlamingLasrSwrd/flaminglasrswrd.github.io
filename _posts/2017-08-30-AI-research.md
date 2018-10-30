@@ -144,10 +144,6 @@ What if consciousness was developed in humans because our brain's capacity outst
 # Journal
 *Not likely useful to anyone.*
 
-## 06 JUN 2018
-
-
-
 ## 17 APR 2018
 - If you define the set of brain inputs ```I```, the total number of brain nodes ```N```, and stipulate that node inputs are preinstantiated, each node will have ```i <= N+I``` for inputs ```i```. A fully connected brain has ```i = N+I```. A brain with ```i < N+I``` is necessarily hierarchical. A hierarchical brain would be more efficient but less capable: A hierarchical brain can learn faster but with less specificity. A non-recursive node has ```i <= N+I-1```. Recursive connections can be used to define temporal relation of a node to itself, i.e. the decay time of its signal.
 

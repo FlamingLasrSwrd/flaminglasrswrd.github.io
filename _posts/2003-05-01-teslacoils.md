@@ -27,6 +27,44 @@ So I have picked up this project again circa 2018. My sister has asked me to loo
 
 # Log
 
+## 14 OCt 2018
+I missed my deadline :(
+
+## 10 Oct 2018
+- interrupter work
+
+## 09 Oct 2018
+- mostly framing work: using nylon bolts to attach various components together
+
+## 08 Oct 2018
+- secondary coil has been wound and coated with 1/2 pint of polyurethane
+  - I would have preferred to use epoxy, but I didn't want to spend the extra $30
+- Primary coil supports were cut from 1/2" HDPE cutting board
+  - 7/32 holes were drilled to accommodate the 1/4" annealed copper tube
+  - a polycarbonate circle was cut for the base of the primary coil
+- copper bus bar was cut for the full bridge of IXG60n60's
+  - I'm a little worried that I cut the bus bar a little small, but too late now
+  - I configured the electrolytic capacitors in parallel: if I want a voltage doubler I will need to redo it
+- made a toroidal topload from 8" dryer duct wrapped in aluminum tape
+  - I also have a 4" duct if I need more capacitance (probably)
+
+## 21 Sep 2018
+- attempted to make a cone out of paper
+  - 8" radius at low voltage end and 0.8" at high voltage end
+  - total height 20.25"; winding length 21.5"; ~2500feet of 26AWG double build magnet wire
+  - traced out a 123 degree arc at a radius of 23.4"
+  - unless you had many layers... not going to work
+- I just bought a 27" traffic cone instead
+  - it is a little smaller than I was planning, but it will work
+  - now... to build a coil winding jig
+- Finished the winding jig
+  - it just so happens that the small end of the traffic cone fits right into my ice cream maker's gear: perfect
+
+## 20 Sep 2018
+- comparing the benefits of a conical secondary?
+  - one paper [@craven_significant_2017] suggests the reduced self capacitance of the coil is the primary benefit
+  - a smaller self-capacitance allows for a larger topload: decreasing stress on the coil and increasing breakout voltage for a given resonant frequency
+
 ## 26 Aug 2018
 - about halfway through the simulations so far
 - what diameter primary wire (tube) do I need?

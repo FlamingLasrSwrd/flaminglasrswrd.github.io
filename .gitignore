@@ -45,4 +45,8 @@ Gemfile.lock
 *.pyc
 *.ipynb_checkpoints*
 
+# Atom
 .ropeproject/
+
+# Markdown Writer for Atom
+_mdwriter.cson
