@@ -50,7 +50,7 @@ To maximize my contribution to the human race.
 My current research process proceeds through several utility programs:
 
 - [Zotero][]
-- [Master PDF Editor][]
+- [Foxit PDF reader][]
 - [Zotfile][]
 - [Better Bibtex][]
 - [Atom][]
@@ -67,6 +67,8 @@ My current research process proceeds through several utility programs:
 
 # Contact
 
+Email me: flaminglasrswrd at protonmail dot com
+
 {{ site.pgp }}
 
 <!--notes-->
@@ -77,7 +79,7 @@ My current research process proceeds through several utility programs:
 [ENTP]: https://www.16personalities.com/entp-personality
 [OpenPsychometrics]: https://openpsychometrics.org
 [Zotero]: https://www.zotero.org/
-[Master PDF Editor]: https://code-industry.net/masterpdfeditor/
+[Foxit PDF reader]: https://www.foxitsoftware.com/pdf-reader/
 [Zotfile]: https://zotfile.com/
 [Atom]: https://atom.io/
 [Better Bibtex]: https://retorque.re/zotero-better-bibtex/

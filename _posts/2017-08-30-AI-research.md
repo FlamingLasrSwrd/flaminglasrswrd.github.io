@@ -144,6 +144,41 @@ What if consciousness was developed in humans because our brain's capacity outst
 # Journal
 *Not likely useful to anyone.*
 
+## 01 Dev 2018
+I have noticed a lot of commonalities between ART and HTM theories. In ART, the problem of input complexity is solved by concatenating the input with its logical *not*. In HTM, the input is converted to a Sparse Distributed Representation. Both allow the AI to accept far more input than a one-hot system. Similarly, boosting in HTM accomplishes the same task as the set-reset mechanism in ART. Namely, a learning speed that varies with the comprehension of the AI in response to a particular input. One idea that is not currently (well) represented in HTM but is present in ART is visual grouping. In some sense, the spatial pooler accomplishes this task but at a network level. Unlike ART which does it at a cellular level... Something to include in future version of HTM perhaps.
+
+## 12 Nov 2018
+
+### Principles
+- fast, local inhibition
+  - fast -> predicted cells are more likely to fire than non-predicted cells
+    - prediction becomes a self-reinforcing behavior; centering a neuron on a set of temporally coincident inputs
+  - local -> spatial coincidence and local inhibition results in differentiation of similar inputs
+  - spatial coincidence is a practical way to group similar neurons; grouping neurons by inputs (from a programming standpoint) is more difficult
+    - Maybe using some sort of bitmask to identify groupings? But that wouldn't work with hashed values like in SDR theory
+    - In HTM, the spatial coincidence is set up during initialization and cannot be changed at runtime; something I wish to avoid
+- feedforward input
+  - the set of neurons must completely encompass the input set (field) to be capable of understanding the input
+- prediction
+  - the ability to bridge temporally or spatially disparate signals
+  - should a basal connection transition to a proximal connection with sufficient input presentation?
+- expectation
+  - top-down signal similar to basal connections in that it predisposes a neuron to fire
+  - the difference is that proximal and basal inputs only cover a narrow, continuous field whereas apical connection cover a wider breadth
+    - the dark pattern that constitutes the pupils of a person's face can be learned by basal and proximal dendrites; the complex patters that encompass the entire face can be learned only through apical expectation
+  - can be used as temporary storage of information
+
+### Sparse Distributed Representations
+An ANN according to [@hawkins_why_2016-1] requires three types of inputs: proximal, basal, and apical. Proximal connections drive the action potential at the soma robustly. This constitutes the classic receptive field of the neuron and the basis for almost all ANN's to date. Basal connections cannot directly stimulate and action potential, rather they provide contextual prediction that predisposes an action potential to fire sooner. HTM theory does not deal with apical connects except to say they are somehow involved in feedback or top-down expectations. This whole system is reminiscent of the how the visual system is portrayed in the work of Grossberg. Probably because they are studying the same systems...
+
+Using the HTM/NuPIC system [@taylor_numenta_2018] is a real pain: So many settings and hyperparameters. For instance, one of the key parameters you have to figure out is how many sequences your HTM system should be capable of knowing. If I knew that, I wouldn't need an ANN...
+
+Apical dendrites provide top-down context: linking successively broader regions of inputs into a single concept. This is an ideal system for backpropagation, but with the added benefit of competetive inhibition.
+
+The main problem that I have with this theory is not in its accuracy. I think it is very accurate, and that's my problem. Sequence learning and HTM theory exactly capture what is known in psychology as superstition. Cause and effect can only be linked by a *sequence* of learned behaviors. Even if the cause is seconds or minutes beforehand, every temporal step propagating back from the reinforcement must be occupied by a behavior. This may be one of the differences in human cognition: we can ascertain causes (somehow) without establishing a perfect chain of events leading from cause to effect. E.g. Humans can deduce that a knock on the door at 6pm is the result of our calling Pizza Hut 30 minutes prior. We don't need to establish a ritualistic sequence of events that results in that knock. We have made a connection between disparate events by some feature of human cognition that is not (pronounced?) in lower animals.
+
+This same feature of cognition can be seen in the work surrounding Neam Chimpsky (Nim). Human language can often separate a key concept and its disambiguation by many words, sentences, or even entire pages of text. Whereas Nim could only string together a few words (signs) to signify a single thought. This *suspension of clarification* is a key concept that requires more thought/research.
+
 ## 17 APR 2018
 - If you define the set of brain inputs ```I```, the total number of brain nodes ```N```, and stipulate that node inputs are preinstantiated, each node will have ```i <= N+I``` for inputs ```i```. A fully connected brain has ```i = N+I```. A brain with ```i < N+I``` is necessarily hierarchical. A hierarchical brain would be more efficient but less capable: A hierarchical brain can learn faster but with less specificity. A non-recursive node has ```i <= N+I-1```. Recursive connections can be used to define temporal relation of a node to itself, i.e. the decay time of its signal.
 

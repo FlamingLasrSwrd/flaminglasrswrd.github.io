@@ -7,8 +7,11 @@ tags: chemistry fire
 author: Elijah K. Dunn
 abstract: >
   A high temperature, insulating refractory exclusively from the hardware store at one-tenth the cost of and better than commercial firebricks or ceramic fiber.
-graphical-abstract:
+graphical-abstract: "/assets/img/20181222_200313.jpg"
 ---
+
+**Update 30 Dec 2018:** Molded refractories are a pain to deal with because of the required compression. A better option is to make a brick mold and build your furnace separately.
+
 
 # Introduction
 Chemically bonded vermiculite (CBV) is so easy and extremely cheap. It really only has one ingredient: vermiculite. Commonly sold as loose fill attic insulation or as a soil amendment by the cubic foot. With a little bit of an acid binder and some force, CBV can withstand temperatures high enough to melt copper with low shrinkage and high insulating value. The only downside is the need for a strong mold to withstand ~350 kPa during the ramming process. Thick wood works just fine, so it isn't really a major downside.

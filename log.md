@@ -6,8 +6,73 @@ abstract: >
   Semi-unfiltered life updates in the moment barely useful to me. Do not take seriously or literally.
 ---
 
+## 12 Dec 2018
+I've been bingeing Stargate Atlantis lately and I've noticed one thing in particular. Every member of the Atlantis team has one job and one job only (apart from support staff). They don't have to worry about making food or paying for medical care. They don't have to worry about the majority of cleaning including their clothing. They wear practically the same thing everyday and it is expected of them to do so. Everything apart from the problems in their respective fields is completely taken care of. I wish I had the means to make that happen for myself. Even better would be to have to means to provide that for the entire human race. Maybe this is why I am drawn to being one of the first to colonize mars. 
+
+## 30 Nov 2018
+
+### Crypto bot trading
+The problem is invariance. Every AI/bot trader I have seen used static prices and maybe some technical indicators to train. But a stock price isn't based on whether its $300 or $3 (except in a categorical penny stock vs. blue chip sort of way, but that data is included in the volatility). What I'm talking about is the same mechanism by which a person recognizes the same graphical trend between stocks and over time (e.g., resistance levels). Or put another way, the absolute number of seconds since the epoch doesn't matter, but the day of the week certainly does. The key is finding the appropriate invariant parameters, or better yet creating an AI that can. Since the latter has been the subject of research for decades and not likely to be solved quickly, I am forced to stick to the former.
+
+Some of the more advanced crypto bots use the order book which can be useful. An interesting technique is to determine the total number of new book orders placed per unit time. That might be incorporated.
+
+When a trader looks at a chart, what do they see?
+- up/down trends
+  - is the current price above or below the price(s) of the last time period
+- what did the stock do at this previous price? (resistance level)
+
+How to format data input to be invariant?
+
+- prices are not based on absolute values
+  - inputs should be percent change from the previous time period(s)
+  - time periods should scale: kind of like a fractal, self-similar on many levels
+
+Hard coding some day trading strategies?
+E.g. resistance level:
+- locate similar prices in the historical data
+- determine if support or resistance level
+- if support: predict a bull market
+- if resistance: predict a bear market
+
+I envision a network of regions that each have a prediction on future prices. Output: [(price1, time_delta1, certainty1),(price2, time_delta2, certainty2),...]. Alternatively, the output can be (price_delta1, time_delta1, certainty1). The predictions are combined based on their certainties and orders executed appropriately. Regions can be intermixed, but that may be more complicated than necessary at the moment. A region can be as simple as extrapolation from the EMAs or as complex as a whole deep learning AI. The regions are curated based on performance and replaced as necessary.
+
+Instead of prices, the input will look like [+0.23,-0.1,-0.15,...]. Basically a price delta.
+
+## 20 Nov 2018
+- More mHTM work
+
+## 19 Nov 2018
+- Worked on [mHTM](https://github.com/tehtechguy/mHTM) porting to python 3 code
+
+## 12 Nov 2018
+- Started to get back into using Anki more effectively
+- I would love to build a anki app that organizes cards based on classes and functions:
+  - a function is a card set which certain aspects can be modified, but the card serves the same purpose
+    - e.g. learning how to add: 5+5=10 is the same *function* as 3+6=9
+      - the numbers don't matter; only the function
+    - only a single card is presented to check if a function is known
+    - the next presentation of a function is a different card from the set
+    - cards can be generated on demand if the function is something a computer can deduce
+      - works for the function *add* but doesn't work for *plural form of the word:*
+  - a class...
+
+**Note**: upon further reflection, this sort of thing will naturally sort itself out by virtue of the rating system. If a card is easy to remember because it is based on a shared function, the user can simply rate it as *easy to remember*.
+
+
+## 11 Nov 2018
+
+### Learning Programming Languages
+- start by accessing which libraries/functions are most commonly used
+  - github analysis
+
+## 09 Nov 2018
+Had a dream last night that I disappointed my parents regarding school. Figures. Really changes your perspective. #journal
+I noticed over the last couple weeks that I am getting fat. Starting keto again seems like a good idea. I was still working on the farm the last time I really got into ketosis. I suffered from headaches all the time because of it. #journal
+
+- been researching a lot of cyber security lately
+
 ## 30 Oct 2018
-- Lost in the infinite
+Lost in the infinite #journal
 
 ## 28 Oct 2018
 - Elijah's Quick Whiskey turned out ok
@@ -52,16 +117,14 @@ abstract: >
 
 ## 13 Oct 2018
 - some password work
-  - I would like to publish my method of generating and securing passwords, but that would make me more vulnerable.
+  - I would like to publish my method of generating and securing passwords, but that would make me more vulnerable
 
 ## 10 Oct 2018
 - more tesla coil work: getting close to first light
 
 ## 08 Oct 2018
 - more tesla coil work
-- My sleep schedule has been really weird lately
-  - I still get around 8 hrs of sleep per night, but I tend to fall asleep around 3-4am --not exactly a typical sleep schedule
-- I've spent more time that I should have watching Star Trek TNG over the last few weeks
+- My sleep schedule has been really weird lately. I still get around 8 hrs of sleep per night, but I tend to fall asleep around 3-4am --not exactly a typical sleep schedule. I've spent more time that I should have watching Star Trek TNG over the last few weeks #journal
 
 ## 20 Sep 2018
 - more tesla coil work
@@ -100,7 +163,7 @@ So I figured this would be a good opportunity to try out Qubes. Six hours later,
 - Meal Planner
 
 ## 20 Aug 2018
-School has started again: terrible drivers are a tolerable evil in exchange for the library staying open later than 5pm.
+School has started again: terrible drivers are a tolerable evil in exchange for the library staying open later than 5pm. #journal
 
 - more remailer website work
 
@@ -140,8 +203,7 @@ School has started again: terrible drivers are a tolerable evil in exchange for 
 ## 10 Aug 2018
 - more server: plex
 
-Last night I was a part of a conversation about work. One of my friends was considering a promotion. He would be transitioning from working somewhat independently to managing a dozen people. Essentially the discussion boiled down to how much his happiness was worth to him. Everyone in the room agreed that their current work situation was not ideal. The descriptions ranged from "I don't hate working there" to "I really hate my job". These are highly skilled workers, mind you. I saw how these people, whom I admire, just hated work or at the very least thought of it as a necessary evil.
-I never want to be that way.
+Last night I was a part of a conversation about work. One of my friends was considering a promotion. He would be transitioning from working somewhat independently to managing a dozen people. Essentially the discussion boiled down to how much his happiness was worth to him. Everyone in the room agreed that their current work situation was not ideal. The descriptions ranged from "I don't hate working there" to "I really hate my job". These are highly skilled workers, mind you. I saw how these people, whom I admire, just hated work or at the very least thought of it as a necessary evil. I never want to be that way. #journal
 
 ## 09 Aug 2018
 - more server
@@ -159,7 +221,7 @@ I never want to be that way.
 - TODO: correct image alignment of post graphical abstracts
 
 ## 05 Aug 2018
-- haven't been feeling the best lately; had my first migraine in something like a year yesterday
+- haven't been feeling the best lately; had my first migraine in something like a year yesterday #journal
 - ethanol brewing has successfully yielded more than a gallon of ~80%
   - the distillation column didn't separate as well as I hope- I suspect the small entrance hole (1/8" pipe) was too small
   - I overloaded the column and contaminated the liquor with copper. Doesn't matter since I'm not drinking it and I'll be running it through an all glass system for the final distillation
@@ -354,7 +416,7 @@ Syntax, toy problem, blah, syntax, syntax, syntax, toy problem. That's how the v
 
 I've run into this problem headfirst while learning Prolog. Of the few tutorials on Youtube, none of them cover anything more than syntax. Github is full of *practice problems* from such and such a college course or book.
 
-Fortunately, I've come across a book which might be of use for the particular area of Prolog. [*The Practice of Prolog*](#sterling_practice_1990) teaches how to develop a project in Prolog from start to finish.
+Fortunately, I've come across a book which might be of use for the particular area of Prolog. ~~The Practice of Prolog~~ [@sterling_practice_1990] teaches how to develop a project in Prolog from start to finish.
 
 ## 02 APR 2018
 Recently I have been learning about Prolog. I like the idea of pure declarative languages. The beauty of simply defining the problem and having the interpreter/compiler solve the problem is striking. It is quite different from my previous programming adventures in C++ and python. I stumbled upon a realization this morning: Backtracking in Prolog seems to be the exact mechanism that Adaptive Resonance Theory calls "Resonance and Reset".
@@ -380,14 +442,7 @@ I don't think I can completely eliminate my cell phone. I did that once. For abo
 
 ## 21 Mar 2018kugelrohr
 Made some updates to this site.
-[(Baranes, Oudeyer, and Gottlieb 2015)](#BaranesEyemovementsreveal2015)
 
-## References
-{:#sterling_practice_1990}
-Sterling, Leon. 1990. The Practice of Prolog. MIT Press. <https://books.google.com/books?id=DaziVk05wk0C>.
-
-{:#BaranesEyemovementsreveal2015}
-Baranes, Adrien, Pierre-Yves Oudeyer, and Jacqueline Gottlieb. 2015. “Eye Movements Reveal Epistemic Curiosity in Human Observers.” *Vision Research* 117 (Supplement C): 81–90. <https://doi.org/10.1016/j.visres.2015.10.009>.
 
 ## Footnotes
 [^1]: 18+ hr fast + fermentable fiber + high protein + vegetables: Testing the effect of fiber consumption on tolerability of intermittent fasting
