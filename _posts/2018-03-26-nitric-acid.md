@@ -45,6 +45,9 @@ Glidarc = 4.8 MJ/mol = 1.3 KWh/mol => $0.11/mol
 
 # Log
 
+## 16 Mar 2019
+> Within the range of process parameters investigated in this study, the energy consumption per kg of NOx found to be lowest at 8 kHz and 30 µs, which is 9.1 kWh/kg of NOx for 6870 PPMv of NOx. [@patil_plasma_2016]
+
 ## 26 Mar 2018
 - Use ammonia, nitrite, nitrate aquarium test strips for efficiency measurements.
 - What is the influence of humid air addition to the feed gas? Does it produce ammonia?

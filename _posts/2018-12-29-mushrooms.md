@@ -13,6 +13,45 @@ graphical-abstract:
 
 # Work Log
 
+## 12 Jan 2019
+Studying the various process techniques and grains for spawn production.
+
+### Process Variables
+- Rinse
+- Soak
+- Sterilization times
+- Sterilization temperatures
+
+### Grains
+- Wheat
+  - hard winter red
+  - gold
+  - bulk
+- Rye
+- Millet (sorghum)
+  - popping
+  - gold
+- Economy Bird Seed mix
+- Popcorn
+- Sunflower seeds
+- Oats
+
+### Grain Characteristics
+- As packaged
+  - density
+  - moisture content
+  - roughage percentage
+  - "floaters" percentage
+- 24 hour soak
+  - density
+  - moisture content
+  - bursting percentage
+- Contamination frequency
+-
+
+## 05 Jan 2019
+- volatile organic compounds that inhibit pinning and fruiting [@noble_volatile_2009]
+
 ## 04 Jan 2019
 
 ### Investigating local substrates and supplements

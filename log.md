@@ -6,8 +6,47 @@ abstract: >
   Semi-unfiltered life updates in the moment barely useful to me. Do not take seriously or literally.
 ---
 
+## 26 Feb 2019
+Today I would like to look into a minimal cost, nutritionally complete diet.
+
+Food replacements (e.g. Soylent, Huel) are a possibility, or rather their [DIY counterparts](https://www.completefoods.com).
+
+Constructed a makeshift dean-stark trap using basic glassware and round bottom flask with a distillation arm. My fume hood isn't tall enough to incorporate the whole setup, so it is sitting in front. Since this is only ethyl acetate, water, and acetic acid, I don't need much in the way of fume0 extraction. Also, the temperature controller box is working perfectly.
+
+Diethyl ether might make a better drying agent, but I don't want to deal with the hazards associated with it.
+
+The whole process takes a long time to complete. I anticipate several days for a full gallon jug to yield approximately 180g of glacial acetic acid. Just a guess... about $0.75 for the electricity and ~$5 for the gallon of vinegar = $120 per gallon. That doesn't include the time invested or any inevitable losses of ethyl acetate or vinegar. Glacial acetic acid routinely sells for ~$50 per gallon on eBay. Obviously not the most economical. Once running, the system requires very little intervention. Just emptying the water trap and refilling the boiling flask with new dilute acid ever few hours.
+
+Alternatively, one could use calcium chloride to cause an equilibrium inversion and distill out the acetic acid directly [@garwin_separation_1950]. A huge number of theoretical plates is necessary though. At 60% concentration of calcium chloride, it might be possible to distill the vinegar using my equipment. It would still require something like 20 plates. 304 Stainless isn't good enough for high concentration acetic acid (316 is fine). Maybe a diy spinning band column using magnetic bearings at the bottom...
+
+The relative volatility of regular acetic acid:water at 5% concetration is something like 1.01 and you would have to distill all that water first. That requires hundreds of plates and a lot of time. With 60% CaCl2, its close to 1.61 requiring 15ish plates. [@berg_dehydration_1992] Still... you would lose a lot of acetic acid.
+
+Best just to buy sodium acetate and distill over sulfuric acid.
+
+
+## 25 Feb 2019
+Experimenting with ethyl acetate as an azeotropic drying agent for dilute acetic acid.
+![Ethyl acetate - water - acetic acid distillation](assets/img/20190225_160218.jpg)
+
+Works well enough for a single pass. Now I just need a dean-stark trap...
+
+Column packing material: apparently glass beads don't have enough surface area. Many people use stainless steel scrubbing pads, but those aren't entirely inert. Cutting slices from pipettes is too labor intensive.
+
+## 21 Feb 2019
+Made a PID temperature controller box today for about $20.
+![PID temperature controller box](assets/img/20190221_193202.jpg)
+
+Made from a cheap [Rex C-100 PID controller from China](https://www.ebay.com/p/Rex-c100-Digital-PID-Temperature-Controller-Regulator-K-Thermocouple-40a-SSR-H5/6018107649) and a GFI outlet. Those PID regulators come with a 40A SSR and a thermocouple. For $15 you really can't beat it. The box is from an old computer power supply. I used a receptacle instead of hard wiring so I can use it for all kinds of equipment. From sous vide to lab furnace. I even bought a second controller for additional devices if I need it.
+
+## 22 Jan 2019
+Plant propagation techniques
+- hydroponic
+  - droplet sizes
+  - rockwool: use mineral wool insulation in place of Grodan cubes
+- simple
+
 ## 12 Dec 2018
-I've been bingeing Stargate Atlantis lately and I've noticed one thing in particular. Every member of the Atlantis team has one job and one job only (apart from support staff). They don't have to worry about making food or paying for medical care. They don't have to worry about the majority of cleaning including their clothing. They wear practically the same thing everyday and it is expected of them to do so. Everything apart from the problems in their respective fields is completely taken care of. I wish I had the means to make that happen for myself. Even better would be to have to means to provide that for the entire human race. Maybe this is why I am drawn to being one of the first to colonize mars. 
+I've been bingeing Stargate Atlantis lately and I've noticed one thing in particular. Every member of the Atlantis team has one job and one job only (apart from support staff). They don't have to worry about making food or paying for medical care. They don't have to worry about the majority of cleaning including their clothing. They wear practically the same thing everyday and it is expected of them to do so. Everything apart from the problems in their respective fields is completely taken care of. I wish I had the means to make that happen for myself. Even better would be to have to means to provide that for the entire human race. Maybe this is why I am drawn to being one of the first to colonize mars.
 
 ## 30 Nov 2018
 
