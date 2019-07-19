@@ -28,7 +28,7 @@ Sulfuric Acid + Potassium Nitrate <-> Potassium Bisulfate + Nitric Acid
 - stop after reaction flask begins to foam excessively
 - immediately clean all glassware
 - redistill nitric acid
-  - everything over 118 C is azeotropic 68% [@dougs_lab_nitric_2015]
+    - everything over 118 C is azeotropic 68% [@dougs_lab_nitric_2015]
 
 # Copper Catalysts for Primary Alcohol Dehydrogenation
 
@@ -40,7 +40,7 @@ Sulfuric Acid + Potassium Nitrate <-> Potassium Bisulfate + Nitric Acid
 - the solution is heated to 90-95C with constant stirring for 7+ hours or until pH=7.5
 - the solution is filtered; washed with dH2O; calcined at 400C for 24 hrs
 - the resulting catalyst is reduced with flowing hydrogen at 250C for 5 hrs
-  - alternatively, catalyst can be activated in situ with primary alcohol
+    - alternatively, catalyst can be activated in situ with primary alcohol
 
 @sivaraj_characterization_1988
 

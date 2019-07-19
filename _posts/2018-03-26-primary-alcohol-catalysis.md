@@ -25,6 +25,9 @@ CH3OH ->[Cu] CH2O + H2
 
 # Work Log
 
+## 13 Jul 2019
+User jimmymajesty achieved excellent results by using air-oxidized copper plated nichrome wire in a ketene apparatus <http://www.sciencemadness.org/talk/viewthread.php?tid=55&goto=search&pid=176566>
+
 ## 19 Jun 2018
 
 - Investigating the production of mesoporous carbon catalysts.
@@ -45,13 +48,13 @@ CH3OH ->[Cu] CH2O + H2
 Isolating various metalic catalyst precursors:
 
 - Barium (rust converter)
-  * **cheaper as [barium carbonate glaze](https://digitalfire.com/4sight/material/barium_carbonate_86.html)**
+    - **cheaper as [barium carbonate glaze](https://digitalfire.com/4sight/material/barium_carbonate_86.html)**
 - Nickel (US 5 cent piece)
-  * available as [nickel carbonate colorant](https://digitalfire.com/4sight/material/nickel_carbonate_1073.html): better to buy because of toxicity issues with electrolyzing nickel compounds
+    - available as [nickel carbonate colorant](https://digitalfire.com/4sight/material/nickel_carbonate_1073.html): better to buy because of toxicity issues with electrolyzing nickel compounds
 - Gold (from previous experiments)
 - Platinum
 
-# Bibliography
+# References
 
 <!--Annotations-->
 

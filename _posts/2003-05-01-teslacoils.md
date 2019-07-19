@@ -13,9 +13,9 @@ So I have picked up this project again circa 2018. My sister has asked me to loo
 
 # Design Parameters
 - secondary
-  - height: min, max
-  - width: min, max
-  - wire_size: min, max
+    - height: min, max
+    - width: min, max
+    - wire_size: min, max
 
 
 # DRSSTC in Action
@@ -38,63 +38,63 @@ I missed my deadline :(
 
 ## 08 Oct 2018
 - secondary coil has been wound and coated with 1/2 pint of polyurethane
-  - I would have preferred to use epoxy, but I didn't want to spend the extra $30
+    - I would have preferred to use epoxy, but I didn't want to spend the extra $30
 - Primary coil supports were cut from 1/2" HDPE cutting board
-  - 7/32 holes were drilled to accommodate the 1/4" annealed copper tube
-  - a polycarbonate circle was cut for the base of the primary coil
+    - 7/32 holes were drilled to accommodate the 1/4" annealed copper tube
+    - a polycarbonate circle was cut for the base of the primary coil
 - copper bus bar was cut for the full bridge of IXG60n60's
-  - I'm a little worried that I cut the bus bar a little small, but too late now
-  - I configured the electrolytic capacitors in parallel: if I want a voltage doubler I will need to redo it
+    - I'm a little worried that I cut the bus bar a little small, but too late now
+    - I configured the electrolytic capacitors in parallel: if I want a voltage doubler I will need to redo it
 - made a toroidal topload from 8" dryer duct wrapped in aluminum tape
-  - I also have a 4" duct if I need more capacitance (probably)
+    - I also have a 4" duct if I need more capacitance (probably)
 
 ## 21 Sep 2018
 - attempted to make a cone out of paper
-  - 8" radius at low voltage end and 0.8" at high voltage end
-  - total height 20.25"; winding length 21.5"; ~2500feet of 26AWG double build magnet wire
-  - traced out a 123 degree arc at a radius of 23.4"
-  - unless you had many layers... not going to work
+    - 8" radius at low voltage end and 0.8" at high voltage end
+    - total height 20.25"; winding length 21.5"; ~2500feet of 26AWG double build magnet wire
+    - traced out a 123 degree arc at a radius of 23.4"
+    - unless you had many layers... not going to work
 - I just bought a 27" traffic cone instead
-  - it is a little smaller than I was planning, but it will work
-  - now... to build a coil winding jig
+    - it is a little smaller than I was planning, but it will work
+    - now... to build a coil winding jig
 - Finished the winding jig
-  - it just so happens that the small end of the traffic cone fits right into my ice cream maker's gear: perfect
+    - it just so happens that the small end of the traffic cone fits right into my ice cream maker's gear: perfect
 
 ## 20 Sep 2018
 - comparing the benefits of a conical secondary?
-  - one paper [@craven_significant_2017] suggests the reduced self capacitance of the coil is the primary benefit
-  - a smaller self-capacitance allows for a larger topload: decreasing stress on the coil and increasing breakout voltage for a given resonant frequency
+    - one paper [@craven_significant_2017] suggests the reduced self capacitance of the coil is the primary benefit
+    - a smaller self-capacitance allows for a larger topload: decreasing stress on the coil and increasing breakout voltage for a given resonant frequency
 
 ## 26 Aug 2018
 - about halfway through the simulations so far
 - what diameter primary wire (tube) do I need?
-  - 1/4 soft copper tubing: 9.5mm outside diameter
-    - [Copper tubing sizes](https://www.petersenproducts.com/Copper-Tubing-Sizes-s/1979.htm)
-  - at 100 KHz skin depth is $\delta = ~0.21mm$
-  - total area for current using 1/4 copper: $D_{out} = 12mm^2$
-    - $A = \pi*(D_{out}^2 - (D_{out}-\delta)^2)$
-  - Gives a max (power supply) current of around 35A -> Not large enough
-    - [Wire gauge current limits](http://www.powerstream.com/Wire_Size.htm)
-    - max RMS current of my IGBTs (IXGN60N60) is 60A
-  - total area for current using 3/8" copper tubing: $D_{out} = 16.4mm^2$
-  - Max current = 47A... still not enough but I'm going to use it anyway. What's a little resistive heating between friends?
+    - 1/4 soft copper tubing: 9.5mm outside diameter
+      - [Copper tubing sizes](https://www.petersenproducts.com/Copper-Tubing-Sizes-s/1979.htm)
+    - at 100 KHz skin depth is $\delta = ~0.21mm$
+    - total area for current using 1/4 copper: $D_{out} = 12mm^2$
+      - $A = \pi*(D_{out}^2 - (D_{out}-\delta)^2)$
+    - Gives a max (power supply) current of around 35A -> Not large enough
+      - [Wire gauge current limits](http://www.powerstream.com/Wire_Size.htm)
+      - max RMS current of my IGBTs (IXGN60N60) is 60A
+    - total area for current using 3/8" copper tubing: $D_{out} = 16.4mm^2$
+    - Max current = 47A... still not enough but I'm going to use it anyway. What's a little resistive heating between friends?
 - I'll need at least 1,000 ft of secondary wire
-  - 20-30 AWG
+    - 20-30 AWG
 - I would really like to have a formless secondary coil for less interturn capacitance and loss
-  - use a pvc form to wind it, epoxy it, then remove the form
-  - just a few end caps of thick material for mounting
+    - use a pvc form to wind it, epoxy it, then remove the form
+    - just a few end caps of thick material for mounting
 - I have plenty of polycarbonate for making the electronics base and primary coil supports
 - Teflon insulator between primary and secondary? Kapton?
-  - I have some kapton film somewhere.
-  - Kapton sells tape using a silicone adhesive
-  - I could wrap the bottom (and top?) of the secondary with a few layers of kapton using silicone as glue to prevent arcs
+    - I have some kapton film somewhere.
+    - Kapton sells tape using a silicone adhesive
+    - I could wrap the bottom (and top?) of the secondary with a few layers of kapton using silicone as glue to prevent arcs
 - Strike ring?
 
 ## 25 Aug 2018
 
 ## 13 Aug 2018
 - started work on modifying ScanTesla -> probably won't finish it unless I have a lot more time
-  - evolutionary algorithms would be great here
+    - evolutionary algorithms would be great here
 - started ScanTesla running calculations: 146,257,650 simulations to go...
 
 ## 5/15/12

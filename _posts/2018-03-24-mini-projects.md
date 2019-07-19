@@ -16,7 +16,7 @@ sudo apt-get install oracle-java8-installer
 ```
 
 # Jafar Costume
-![][assets/img/jafarstaff.jpg]
+![Jafar Costume][{{ site.url }}/assets/img/jafarstaff.jpg]
 
 # References in Markdown Regex
 ```
@@ -34,7 +34,7 @@ So I went on an adventure for six hours this morning attempting to fix it. The [
 - mount the drive including the encrypted portion
 - chroot into the drive
 - reinstall lvm2
-  - I had to download packages separately using the live disk system then install them in the chrooted system
+    - I had to download packages separately using the live disk system then install them in the chrooted system
 - comment out a line in the initramfs script to stop sync [a bug][]
 - update-initramfs
 
@@ -169,11 +169,10 @@ For the record, I am using the rtl8821ae driver from [lwfinger/rtlwifi_new][] on
 Apparently, that bluetooth driver is unnecessary. ```sudo service bluetooth start``` works just fine. Perhaps the conflict was that rtlwifi_new shipped with appropriate bluetooth drivers? Anyway, you can reenable the service ```sudo systemctl enable bluetooth.service```.
 
 # Penny Charms
-A friend of mine is making a necklace and needs a few charms made from pennies.  
-![image](assets/img/penny.jpg)  
-They are all 2013 pennies. Holes were drilled and countersunk to prevent wear. The rings are made from 14 AWG copper wire and soldered with lead-free (silver) solder. I attempted to solder the ring directly to the penny at a 90 degree angle, but couldn't get the solder to flow well enough to make it attractive.
+A friend of mine is making a necklace and needs a few charms made from pennies.
 
-# Log
+![image]({{ site.url }}/assets/img/penny.jpg)  
+They are all 2013 pennies. Holes were drilled and countersunk to prevent wear. The rings are made from 14 AWG copper wire and soldered with lead-free (silver) solder. I attempted to solder the ring directly to the penny at a 90 degree angle, but couldn't get the solder to flow well enough to make it attractive.
 
 # References
 

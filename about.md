@@ -63,7 +63,7 @@ My current research process proceeds through several utility programs:
 - [ENTP][][^1]
 - Typicall score high on Need for Cognition, Openness to Experience, and Epistemic Curiosity
 
-![Big Five personality results.](/assets/img/big5.png) [^2]
+![Big Five personality results.]({{ site.url }}/assets/img/big5.png) [^2]
 
 # Contact
 

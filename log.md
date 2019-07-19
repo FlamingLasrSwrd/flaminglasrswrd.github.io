@@ -6,6 +6,176 @@ abstract: >
   Semi-unfiltered life updates in the moment barely useful to me. Do not take seriously or literally.
 ---
 
+## 05 Jul 2019
+Started drying the copper chloride solution. For weeks now it has been sitting in my fume hood. I bubbled ozone through muriatic acid and copper to create copper (II) chloride. I'm hoping to use this to make anhydrous aluminum chloride by single displacement.
+
+## 04 Jul 2019
+Lots and lots of cleaning/organization.
+
+## 03 Jul 2019
+It's really difficult to fit all my projects into a 12'x12' room and a tiny storage shed...
+
+## 02 Jul 2019
+The last few weeks have been exhausting: Wedding, MVOR, Guatemala trip, MINK. Now back to science...
+
+I have been reading about the history of psychedelics research because of their resurgence in treating mental disorders. I think there is ample opportunity here for someone to translate the science into effective treatment on Youtube or other social media platform. I bet a channel devoted to illustrating (but not actually performing) the chemical reactions needed for synthesis of these drugs would be very popular. Unfortunately, Youtube would likely demonetize any such channel.
+
+Working on vapor phase nitration of paraffins. Seems like a refluxing system I had in mind will return the nitropropanes as well as nitric acid. I think I will have to do a single pass system, which would be wasteful. Perhaps nitrogen dioxide would be better?
+
+Glidarc atmospheric nitrogen fixation: Finally got my big flyback from home. Tomorrow I will give it a test with the ZVS driver I bought on eBay. The idea is to build something similar to [@patil_plasma_2016]. I'm debating whether to just go with the simple Jacob's ladder design that has been done by a few amateurs. I also want to try adding a DBD ozone generator immediately following the Glidarc chamber. I believe the ozone will help oxidize the nitric oxide.
+
+One important point of the Patil et al. paper is that frequency is important for Glidarc efficiency. Every amateur build of a plasma nitrogen fixation apparatus has used low frequency (60 hertz) transformers. The paper found the highest energy efficiency at 8 kHz; the middle of their test range. I am not sure what the typical frequency of a flyback is, but it is probably better than 60.
+
+5+5 is the typical winding configuration for the primary on flyback transformers.
+
+## 15 Jun 2019
+Finally ready to test the DES Ethaline (2:1 ethylene glycol:choline chloride) for some organic transformations. First test: decarboxylation of Vitamin B3 (Niacin) to pyridine. I decided on using basic copper carbonate because of availability. I'm hoping that the reaction will proceed faster and give better yields than traditional destructive distillation (32%) or the best amateur catalytic prep using copper chromite (86%) [@dougslab_pyridine_2015].
+
+To a 250ml flask:
+
+- 25g niacin
+- 6g basic copper carbonate
+- ~150ml ethaline
+
+Heat flask to 50C to start decomposition. Obvious evolution of carbon dioxide happening. Stir bar broke free after about 10 minutes of heating. Continued ramping up the heat. At heating mantle set at 210C, significant distillation occurred at still temp starting at 56C. The mixture is at approximately 135C.
+
+I should have analyzed the expected return of pyridine before I started. Quantitative yield would be ~16g pyridine. I was so disappointed when I only recovered about 15ml even though this is close to quantitative. I hope to do a scaled up version in the future. A copper chromite catalyst might speed the reaction.
+
+## 14 Jun 2019
+Performed a test run of the NMP distillation from the old CitriStrip.
+
+- Dilute CitriStrip with same volume of distilled water
+- stir for several minutes to ensure all NMP is dissolved in the water
+- filter through glass or polyester fiber (slow process)
+- let settle overnight
+- filter again through filter paper or cotton
+- distill under vacuum (water aspirator distills NMP at ~150C)
+
+## 12 Jun 2019
+I call the Liqiud Creosote test a bust: It is too dilute to be useful.
+
+## 11 Jun 2019
+Currently running a distillation of the Meeco's Red Devil Liquid Creosote destroyer attempting to recover "acetic acid glacial". It is not looking good. Of a total 600ml, 50-100ml distilled below 100C. I am still collecting at 100C.
+
+## 10 Jun 2019
+Worked on the strawberry wine project.
+
+## 06 Jun 2019
+Finished construction of a TA4 snr based temperature controller. I needed something that was more accurate than my other Rex C-100 based one. I also bought a Pt100 RTD probe for more accurate readings. The autotune function on the TA4 is really nice.
+
+## 28 May 2019
+Applied single-part epoxy to the inside of the fume hood.
+
+Put a magic eraser wrapped in foil in the oven at 500F too see if that was sufficient temperature to carburize it... it is not.
+
+## 27 May 2019
+
+Finally started rebuilding the fume hood. It is hard to rebuild when you barely have room to walk let alone rotate several 2'x4' MDF boards around.
+
+Next time I am buying all my building materials from Home Depot. The Menards boards were up to 1/4" off dimension and several degrees out of square. They gave me a lot of trouble: Not worth a few dollars in savings.
+
+I did, however, manage to stumble upon a potential source of glacial acetic acid. "Meeco Liquid Creosote Remover" has "acetic acid, glacial" listed as its only ingredient. I can't find a SDS anywhere. I will run some tests to make sure when my fume hood is functional again. It was only $10 for a quart.
+
+I'm not excited about the loudness of my exhaust fan. I am currently using a permanent magnet leaf blower driven with a standard dimmer. This is convenient because I can adjust the speed to match the danger of the experiment. It can really move some air. Unfortunately, the designers of leaf blowers aren't too concerned about loudness.
+
+## 25 May 2019
+
+How about we mix plaster of paris with vermiculite to form a castable, insulating refractory? It seems that calcium sulfate (anhydrite) decomposes above 1200C [@newman_behavior_1941]. This is perfect for use with vermiculite which decomposes at around 1100C.
+
+Mixed a test batch of verm:plaster insulating refractory. 500ml verm + 250ml water (mixed) + 500 ml plaster. I added to my greased 4x8 inch mold and let it set for 1 hr before dislodging and drying in the oven at 350 for 1hr. It only formed a 1" thick brick but it seems pretty stable. The plaster I used is a mix of calcium sulfate, carbonate, and silica. If these bricks hold up, I will try it with a more pure product.
+
+Apparently the reason for the DIY refractory community abstaining from vermiculite is that it "absorbs water and when heated will crack the refractory". I'm not sure where this idea came from. Perhaps [backyard metalcasting](http://www.backyardmetalcasting.com/refractories.html)? The author states that vermiculite is added to potting soil to retain moisture and this makes it unsuitable for refractories. This doesn't mean it is hygroscopic. Perlite has about half to two-thirds the water holding capacity of vermiculite but it isn't zero [keensteading](https://www.keensteading.com/perlite-vs-vermiculite/). As with any water based refractory, a burnout period is required before use. I suppose we will just have to see how it holds up.
+
+## 24 May 2019
+I woke up this morning at 6am, unable to return back to sleep because of back pain. I need to fix this bed thing.
+
+I have been neglecting my sleep for a long time now mostly because of cost. Why would I spend $500 on a mattress when I can buy and air mattress for $10? My back... that's why.
+
+I looked into ordering a mattress from Leesa primarily because I want to support one of the many creators I listen to/watch. The Skeptics Guide has a 25% off advert deal with Leesa so I tried there first. For a full sized mattress it was approximately $650. Not too bad, but more than I would like. I'll find something cheaper and just donate them the money.
+
+All of the mattress companies have diagrams depicting their various layers and features displayed proudly on their sites. They all seem to just be various densities of foam stacked upon one another. A cooling layer here. A support layer there. Meh... why don't I just build my own.
+
+Amazon has cheap mattress toppers available from 1-4 inches of many densities and materials. I'm a side sleeper and I get really hot at night. Especially when my significant other sleeps over. So I ended up buying a 3" latex foam and a 2" memory foam set. I'm not sure in which order I will put them, though.
+
+One project I have had in the back of my mind for years now is a water cooled bed.
+
+## 22 May 2019
+Perhaps it is better to work at a small scale: shake flask culture.
+
+- https://www.thingiverse.com/thing:2983846
+
+How about we use one-half of a disposable syringe filter for the bubbler? They already have appropriate sizes and are autoclavable... **Nope: the filter material is thin and impossible to extract without damage.**
+
+Just bought ~$60 worth of wood to rebuild the fume hood. Half inch and three-quarter inch MDF for the walls and some eighth inch hardiboard for baffles. I plan on painting everything with some white single part epoxy I have and then sealing edges with silicone. LED lights would be nice.
+
+## 21 May 2019
+Looking into lab-scale bioreactor builds.
+
+- aeration: only SS brewing and alumina aerators are autoclavable
+- https://create.arduino.cc/projecthub/open-bioeconomy-lab/microbial-bioreactor-d7f61b
+- https://sites.google.com/site/opensourcebioreactor/
+
+I really need to organize my projects better. I have 20ish going on right now and most of them are primarily in my head.
+
+## 19 May 2019
+Finished (mostly) the lofted bed frame. Attached a clothes hanger bar to the underside. Works quite well.
+
+## 18 May 2019
+I am practically useless if I take bacopa extract in the morning without breakfast. I assume that the same would happen with any supplement that is supposed to be taken with food.
+
+I am currently constructing a bed loft. It shouldn't be that difficult but I keep making simple mistakes. Drilling holes in the wrong place. Making cuts on the wrong side of the line. Just stupid stuff.
+
+"Magic Erasers" are made from melamine foam. Carburization after inpregnation with graphene oxide would be fun to do. [@tjandra_melamine_2018]
+
+I have been researching plasma nitrogen fixation as a source of nitric acid for the amateur for a while now ([nitric acid collection on Zotero](https://www.zotero.org/ekdunn/items/collectionKey/DBGV3U9D)). A new method got my attention: photocatalytic nitrogen fixation using carbon nitride/metal oxide composites [@mou_one-step_2019]. The process uses a DES composed of urea, melamine, and metal chlorides. The urea-melamine DES is capable of dissolving the metals quite effectively. Carburization produces a homogeneous carbon nitride/metal oxide catalyst that shows remarkable efficiency in photocatalytic ammonia production.
+
+## 29 Apr 2019
+Perchlorate electrolysis research. Lead dioxide or glassy carbon anodes?
+
+- seems like glassy carbon can be made from just about any carbon polymer [@pocard_doped_1992]
+- perhaps a thin coating of some resin (e.g. urethane) onto gouging rods and vacuum pyrolysis to form a glassy carbon coated graphite rod?
+
+## 06 Apr 2019
+Researching truffle production. A summary of the info I have gathered so far:
+
+Black truffles (Tuber melanosporum) can sell for $800-$3000 per pound. A single acre of oak or hazlenut trees can produce 25-150 lbs per year. That's $20,000-$450,000 per acre per year. Maturation of a plantation takes 5-10 years. One particular site claims closer to 3 years to first harvest. A single stand can produce for 50+ years if properly managed. Infection by competing fungi seems to be a major killer of plantations. As many as half of startup plantations fail due to owner negligence or giving up. Infected seedlings can be purchased for $25-$75 each. Around 200 trees are required per acre. This is $5000-$15,000 per acre startup. Plus the cost of fertilization and application of agricultural lime (truffles life basic soil). I would prefer a method that doesn't require so much startup capital.
+
+Irrigation might be necessary. As will protection from freezing. Extended freezing temperatures could kill the truffles. Irrigation can be done only over the burn spots produced by developing fungi to reduce water usage.
+
+Significant infection by competing fungi can occur by placing a truffle plantation in close proximity to established tree stands.
+
+Perhaps I can do the inoculations myself. A company in the UK sells 100g sachets of truffle spore compost, which supposedly can be dumped around the roots of a tree to infect it. I wonder if I can buy a fresh truffle and extract the spores myself. Agar cultivation appears out of the question. Truffle mycelia require tree roots to propagate.
+
+So I have a couple options. I can buy just a few infected trees and hope they can infect other trees by proximity alone. I can take a chance on the spore sachets. Spores can be obtained by crushing truffles directly.
+
+## 31 Mar 2019
+Mixed up a batch of choline chloride: zinc chloride DES. 1:1 molar ratio roughly (48g ChCl + 45g ZnCl2). ChCl is deliquescent and my container was apparently quite porous, so it was pretty wet. This made approximately 75ml. [@bagh_ionic_2014] uses ratios 1:1 to 1:3 so I'm not too worried about exact numbers.
+
+## 11 Mar 2019
+I will be away from home for about two weeks and unable to work on any projects. Gotta make that money...
+
+## 03 Mar 2019
+Racked the strawberry wine today. Gave it a taste test as well. Pretty good... Still carbonated a bit, but tasty nonetheless.
+
+Finally settled on LEDs for a grow light.
+
+
+## 28 Feb 2019
+Day 3 of acetic acid distillation. Recovered an additional 110ml water. All of this work for 15g of glacial acetic acid??
+
+## 27 Feb 2019
+Day 2 of acetic acid distillation. Recovered about 120ml of water from the system. It took almost 10 hours of distillation to get that much. I started with 300ml of 5% acetic acid.
+
+I watched a video just now on [Why FYRE Was Never Real - Wisecrack Vlog](https://youtu.be/ASoaHKRGXu4). I had no idea that there are people whose main purpose in life is to take Instagram photos and share them. I can understand those who garner followers to attract advertisers and the income that they bring. But fame for fame's sake? What does that even do for you? I suppose I am too much of a pragmatist.
+
+Made a hydroponic herb garden today from parts around my house. It uses a small fountain pump to move water from the reservoir at the bottom of the bucket to the three restricted drip emitters. The media is 25:75 vermiculite:coco coir.
+
+![Hydroponic herb garden]({{ site.url }}/assets/img/20190227_175450.jpg)
+
+I had some trouble with the first drip emitters. I used a circular length of polypropylene tubing with holes poked in it. Of course the holes got plugged. Even after rinsing the media several times and wrapping the pump in several layers of polyfill stuffing. So I switched to drip emitters.
+
+Looking into plastic as a viable column packing material for low temperature distillation. Polypropylene seems an acceptable choice for ethanol:water mixtures [@adogbo_performance_2013]. Nylon is also resistant to ethanol and has an appropriately high boiling point. Both plastics can be bought as small tubing and cut into "raschig" rings. Nylon absorbs water though. Plastics probably wouldn't transfer heat a well as most other materials. Considering you can buy a pound of ceramic raschig rings on eBay for $14, or just use stainless scrub pads this doesn't seem worth it.
+
 ## 26 Feb 2019
 Today I would like to look into a minimal cost, nutritionally complete diet.
 
@@ -26,7 +196,7 @@ Best just to buy sodium acetate and distill over sulfuric acid.
 
 ## 25 Feb 2019
 Experimenting with ethyl acetate as an azeotropic drying agent for dilute acetic acid.
-![Ethyl acetate - water - acetic acid distillation](assets/img/20190225_160218.jpg)
+![Ethyl acetate - water - acetic acid distillation]({{ site.url }}/assets/img/20190225_160218.jpg)
 
 Works well enough for a single pass. Now I just need a dean-stark trap...
 
@@ -34,15 +204,16 @@ Column packing material: apparently glass beads don't have enough surface area. 
 
 ## 21 Feb 2019
 Made a PID temperature controller box today for about $20.
-![PID temperature controller box](assets/img/20190221_193202.jpg)
+![PID temperature controller box]({{ site.url }}/assets/img/20190221_193202.jpg)
 
 Made from a cheap [Rex C-100 PID controller from China](https://www.ebay.com/p/Rex-c100-Digital-PID-Temperature-Controller-Regulator-K-Thermocouple-40a-SSR-H5/6018107649) and a GFI outlet. Those PID regulators come with a 40A SSR and a thermocouple. For $15 you really can't beat it. The box is from an old computer power supply. I used a receptacle instead of hard wiring so I can use it for all kinds of equipment. From sous vide to lab furnace. I even bought a second controller for additional devices if I need it.
 
 ## 22 Jan 2019
 Plant propagation techniques
+
 - hydroponic
-  - droplet sizes
-  - rockwool: use mineral wool insulation in place of Grodan cubes
+      - droplet sizes
+      - rockwool: use mineral wool insulation in place of Grodan cubes
 - simple
 
 ## 12 Dec 2018
@@ -56,18 +227,20 @@ The problem is invariance. Every AI/bot trader I have seen used static prices an
 Some of the more advanced crypto bots use the order book which can be useful. An interesting technique is to determine the total number of new book orders placed per unit time. That might be incorporated.
 
 When a trader looks at a chart, what do they see?
+
 - up/down trends
-  - is the current price above or below the price(s) of the last time period
+      - is the current price above or below the price(s) of the last time period
 - what did the stock do at this previous price? (resistance level)
 
 How to format data input to be invariant?
 
 - prices are not based on absolute values
-  - inputs should be percent change from the previous time period(s)
-  - time periods should scale: kind of like a fractal, self-similar on many levels
+      - inputs should be percent change from the previous time period(s)
+      - time periods should scale: kind of like a fractal, self-similar on many levels
 
 Hard coding some day trading strategies?
 E.g. resistance level:
+
 - locate similar prices in the historical data
 - determine if support or resistance level
 - if support: predict a bull market
@@ -86,14 +259,14 @@ Instead of prices, the input will look like [+0.23,-0.1,-0.15,...]. Basically a 
 ## 12 Nov 2018
 - Started to get back into using Anki more effectively
 - I would love to build a anki app that organizes cards based on classes and functions:
-  - a function is a card set which certain aspects can be modified, but the card serves the same purpose
-    - e.g. learning how to add: 5+5=10 is the same *function* as 3+6=9
-      - the numbers don't matter; only the function
-    - only a single card is presented to check if a function is known
-    - the next presentation of a function is a different card from the set
-    - cards can be generated on demand if the function is something a computer can deduce
-      - works for the function *add* but doesn't work for *plural form of the word:*
-  - a class...
+      - a function is a card set which certain aspects can be modified, but the card serves the same purpose
+        - e.g. learning how to add: 5+5=10 is the same *function* as 3+6=9
+          - the numbers don't matter; only the function
+        - only a single card is presented to check if a function is known
+        - the next presentation of a function is a different card from the set
+        - cards can be generated on demand if the function is something a computer can deduce
+          - works for the function *add* but doesn't work for *plural form of the word:*
+      - a class...
 
 **Note**: upon further reflection, this sort of thing will naturally sort itself out by virtue of the rating system. If a card is easy to remember because it is based on a shared function, the user can simply rate it as *easy to remember*.
 
@@ -102,7 +275,7 @@ Instead of prices, the input will look like [+0.23,-0.1,-0.15,...]. Basically a 
 
 ### Learning Programming Languages
 - start by accessing which libraries/functions are most commonly used
-  - github analysis
+      - github analysis
 
 ## 09 Nov 2018
 Had a dream last night that I disappointed my parents regarding school. Figures. Really changes your perspective. #journal
@@ -115,48 +288,48 @@ Lost in the infinite #journal
 
 ## 28 Oct 2018
 - Elijah's Quick Whiskey turned out ok
-  - the color was a deep red-brown; darker than most whiskeys
-  - the taste was acceptable; it was still 40% ethanol...
-  - I don't have much to compare it to, since I've never drank from a bottle of whiskey that costs more than $20
+      - the color was a deep red-brown; darker than most whiskeys
+      - the taste was acceptable; it was still 40% ethanol...
+      - I don't have much to compare it to, since I've never drank from a bottle of whiskey that costs more than $20
 - I would like to build a large food dehydrator...
 
 ## 25 Oct 2018
 - attempted the first test of quick aged whiskey yesterday
-  - 720 ml 40% alcohol from sugar wash
-    - previously used ozonolysis, carbon filtration, [@shinnosuke_onuki_purification_2007] and 4x distillation to purify
-    - made sure to remove 10ml of the head to limit methanol
-    - mixed 300ml azeotropic ethanol with 420 ml H2O
-  - added 10g of apple wood chips; broiled in the oven for 5 min to simulate the charring of barrels
-  - 1 hour at 120C/15 psig in mason jar with lid closed tight
-  - let cool
-  - the color is quite nice; a light brick red
+    - 720 ml 40% alcohol from sugar wash
+      - previously used ozonolysis, carbon filtration, [@shinnosuke_onuki_purification_2007] and 4x distillation to purify
+      - made sure to remove 10ml of the head to limit methanol
+      - mixed 300ml azeotropic ethanol with 420 ml H2O
+    - added 10g of apple wood chips; broiled in the oven for 5 min to simulate the charring of barrels
+    - 1 hour at 120C/15 psig in mason jar with lid closed tight
+    - let cool
+    - the color is quite nice; a light brick red
 - Second run through the autoclave today
 - Finished the CO2 scrubber yesterday
-  - bubble air through solution
-    - NaOH + CaOH + CO2 -> NaOH + CaCO3
-    - sodium hydroxide is an absorption catalyst through the production of sodium carbonate
-    - calcium carbonate precipitates for easy removal
+    - bubble air through solution
+      - NaOH + CaOH + CO2 -> NaOH + CaCO3
+      - sodium hydroxide is an absorption catalyst through the production of sodium carbonate
+      - calcium carbonate precipitates for easy removal
 
 ## 16 Oct 2018
 - looking into making aged whiskey very quickly
-  - UV irradiation (possibly with catalyst + heat) to catalyze the breakdown of lignin into aromatic compounds
-  - heat (possibly lower intensity photoirradiation) to catalyze the synthesis of more complex aromatic compounds
+    - UV irradiation (possibly with catalyst + heat) to catalyze the breakdown of lignin into aromatic compounds
+    - heat (possibly lower intensity photoirradiation) to catalyze the synthesis of more complex aromatic compounds
 - could probably make whiskey from the lignin in cardboard or newspaper ;)
 
 ### Aged Whiskey
 - Extraction phase
-  - fluctuating high temperature and pressure of ethanol and oak barrel material
-    - maybe sonication? - probably not scalable
-    - maybe requires oxygen? (probably not)
+    - fluctuating high temperature and pressure of ethanol and oak barrel material
+      - maybe sonication? -> probably not scalable
+      - maybe requires oxygen? (probably not)
 - Irradiation phase
-  - UV irradiation (280–300 nm [@lanzalunga_photo-_2000]) to catalyze lignin degradation
-  - ozonation? - no; leads to overoxidation
+    - UV irradiation (280–300 nm [@lanzalunga_photo-_2000]) to catalyze lignin degradation
+    - ozonation? -> no; leads to overoxidation
 - Alternate until finished
-  - use opacity as an indicator of extraction efficiency or completeness
+    - use opacity as an indicator of extraction efficiency or completeness
 
 ## 13 Oct 2018
 - some password work
-  - I would like to publish my method of generating and securing passwords, but that would make me more vulnerable
+    - I would like to publish my method of generating and securing passwords, but that would make me more vulnerable
 
 ## 10 Oct 2018
 - more tesla coil work: getting close to first light
@@ -176,10 +349,10 @@ Lost in the infinite #journal
 
 ## 17 Sep 2018
 - ScanTesla output file is 22GB... I need to load it onto my server for analysis
-  - the original program is supposed to output the best config, but for some reason it didn't work
+    - the original program is supposed to output the best config, but for some reason it didn't work
 - I would love to rewrite ScanTesla to include elements from JavaTC and some evolutionary algo stuff
-  - Stated work on converting some equations in the literature to python code
-  - might need to learn more numpy to make it efficient
+    - Stated work on converting some equations in the literature to python code
+    - might need to learn more numpy to make it efficient
 
 ## 16 Sep 2018
 - soldered SMD chips to UD2.7c board
@@ -191,12 +364,12 @@ So I figured this would be a good opportunity to try out Qubes. Six hours later,
 
 ## 27 Aug 2018
 - more work on the server
-  - setting up kvms for tor services
-  - I might relocated some of the other services mentioned in the server post to kvm for security
-  - need to generate some certificates
-  - need to work out the interfaces and forwarding
+    - setting up kvms for tor services
+    - I might relocated some of the other services mentioned in the server post to kvm for security
+    - need to generate some certificates
+    - need to work out the interfaces and forwarding
 - messed with some security settings in Tomato
-  - turned off pretty much all logging -> will need to reenable them as I do more research into their pen testing usage
+    - turned off pretty much all logging -> will need to reenable them as I do more research into their pen testing usage
 
 ## 21 Aug 2018
 - Meal Planner
@@ -209,7 +382,7 @@ School has started again: terrible drivers are a tolerable evil in exchange for 
 ## 19 Aug 2018
 - ScanTesla finished but didn't output anything -> time completely wasted
 - continue work on remailer
-  - choosing a theme and relearning css
+    - choosing a theme and relearning css
 
 ## 18 Aug 2018
 - made another batch of Play Hard
@@ -217,27 +390,27 @@ School has started again: terrible drivers are a tolerable evil in exchange for 
 
 ## 17 Aug 2018
 - more meal planner app
-  - learning about graph databases [@neo4j_tips_2015]
+    - learning about graph databases [@neo4j_tips_2015]
 
 ## 16 Aug 2018
 - continued distillation of DMSO
-  - had some kind of light brown liquid in the receiving flask, possible suck back from the pump?
-    - I'm dumb. I released the vacuum but the system was still warm and as it cooled it sucked the vacuum oil into the flask.
-  - going to have to redistill
+    - had some kind of light brown liquid in the receiving flask, possible suck back from the pump?
+      - I'm dumb. I released the vacuum but the system was still warm and as it cooled it sucked the vacuum oil into the flask.
+    - going to have to redistill
 - I still want to make a meal planner app...
 
 ## 15 Aug 2018
 - researching urea hydrolysis for ammonia production
-  - urease?
-    - not available to buy
-    - extract from vegetable matter? -> seems like a lot of work
+    - urease?
+      - not available to buy
+      - extract from vegetable matter? -> seems like a lot of work
 - production of sodium by DES
-  - using aluminum? -> energetically favorable by 1250 kj/mol
-  - still need anhydrous metal chloride
+    - using aluminum? -> energetically favorable by 1250 kj/mol
+    - still need anhydrous metal chloride
 - Hydrogen peroxide sterilization
-  - vacuum chamber
+    - vacuum chamber
 - Started distilling DMSO from 90% cream -> PITA
-  - vacuum distillation at around 90C with direct heating
+    - vacuum distillation at around 90C with direct heating
 
 ## 10 Aug 2018
 - more server: plex
@@ -249,11 +422,11 @@ Last night I was a part of a conversation about work. One of my friends was cons
 
 ## 08 Aug 2018
 - reinstalled Ubuntu 18.04 LTS on the server (again)
-  - gave a write-up of the setup
+    - gave a write-up of the setup
 
 ## 07 Aug 2018
 - more site work
-  - changed fonts: more simplistic
+    - changed fonts: more simplistic
 
 ## 06 Aug 2018
 - worked on this site
@@ -262,9 +435,9 @@ Last night I was a part of a conversation about work. One of my friends was cons
 ## 05 Aug 2018
 - haven't been feeling the best lately; had my first migraine in something like a year yesterday #journal
 - ethanol brewing has successfully yielded more than a gallon of ~80%
-  - the distillation column didn't separate as well as I hope- I suspect the small entrance hole (1/8" pipe) was too small
-  - I overloaded the column and contaminated the liquor with copper. Doesn't matter since I'm not drinking it and I'll be running it through an all glass system for the final distillation
-  - added come charcoal to remove some impurities- mostly worried about methanol
+    - the distillation column didn't separate as well as I hope- I suspect the small entrance hole (1/8" pipe) was too small
+    - I overloaded the column and contaminated the liquor with copper. Doesn't matter since I'm not drinking it and I'll be running it through an all glass system for the final distillation
+    - added come charcoal to remove some impurities- mostly worried about methanol
 
 ## 27 Jul 2018
 - ethanol brewing is slowing; since this is entirely for chemistry, I'll let it ferment to completion
@@ -274,7 +447,7 @@ Last night I was a part of a conversation about work. One of my friends was cons
 ## 26 Jul 2018
 - A lot has happened; I've been too busy to update here :(
 - Started a test on ozone sterilization for ethanol production on Monday?
-  - I originally wanted to do a side-by-side test of ozone versus placebo, but I messed up the procedure. So I just sparged ozone in both 5 gal carboys to make sure it was feasible in the first place. Plus, I am almost out of abosolute ethanol for the lab. I will have to make a fractionating column to distill it.
+    - I originally wanted to do a side-by-side test of ozone versus placebo, but I messed up the procedure. So I just sparged ozone in both 5 gal carboys to make sure it was feasible in the first place. Plus, I am almost out of abosolute ethanol for the lab. I will have to make a fractionating column to distill it.
 - Urea evaporation went poorly. The original solution is perfectly clean, but attempting to boil 2.5 gallons of liquid outside that emits ammonia is difficult to keep clean. Also, I neglected to check whether the latex rubber tubing I used as a gasket was compatible with ammonia. Spoiler... it isn't. So now I am recrystallizing the urea just like I would have done with cheaper fertilizer grade.
 - The gym bet failed. Partly because my partner wasn't able to start the bet and partly because it is just too much of a time commitment. Even 30-45 min per day seems excessive. I made it a week without interruption but decided to end it after that. For now, I do a few sprints or quick foot ladder drills in the morning. Just enough to get my heart rate up and that seems to be working.
 - The DES one-pot recovery hasn't worked. My guess is that the total solubility of metals in DES is lower than water so I need a greater volume. Something I can easily look up. I started with 1/10 mole choline chloride:1/5 mole ethylene glycol. Roughly 10 mL of solution. A small crystal of iodine was added. I added a sim card for the gold content. The plastic card warped and the iodine color was lost over a day or so, but the gold bits of the card seemed only slightly degraded. I added more iodine but after several days the sim card remained unchanged. I could use more DES or I could electroplate the solution. If all the metal has dissolved in the DES, electroplating will give pure metals. If I recycle the solution by electrolysis and dissolution simultaneously, the metals will plate as impure alloys or even metal sponge.
@@ -290,56 +463,56 @@ Last night I was a part of a conversation about work. One of my friends was cons
 - currently evaporating urea solution (Blue DEF) to get highly pure urea
 - still evaporating the zinc ammonium chloride solution; foaming is a major problem; probably better to buy it next time
 - made some iodine ([Doug's Lab Video](https://youtu.be/E5eWKoZ5JzM))
-  - for ionometallurgy [@mchem_ionometallurgy_2013]
+    - for ionometallurgy [@mchem_ionometallurgy_2013]
 - The conical flask I was making zinc chloride in cracked! I guess I really will have to buy it...
 
 ## 08 Jul 2018
 - DES's are even more awesome than I imagined [@liu_recent_2015, @alonso_deep_2016]
 - applications to explore:
-  - electropolishing of stainless
-  - electrodeposition of aluminum
-  - biodiesel manufacture
-  - electrowinning of gold plating
-  - organic synthesis of all kinds :)
+    - electropolishing of stainless
+    - electrodeposition of aluminum
+    - biodiesel manufacture
+    - electrowinning of gold plating
+    - organic synthesis of all kinds :)
 - further investigation of [@bagh_ionic_2014] revealed an electrochemical window of only 2.66-3.74 V for DES5 from 100-130C, so it makes sense that I was depositing zinc using 5V
-  - make sure temperature is above 130C and voltage is <3.7V
+    - make sure temperature is above 130C and voltage is <3.7V
 - Testing second batch (1/5 mol scale) of DES5
-  - amine smell when attempting to dry >160C... definitely didn't finish drying
-  - attempting 3.3V 150C electrolysis using MMO/titanium anode/cathode; actual voltage is 2.66V;
-  - saturated with at least 15g sodium chloride
+    - amine smell when attempting to dry >160C... definitely didn't finish drying
+    - attempting 3.3V 150C electrolysis using MMO/titanium anode/cathode; actual voltage is 2.66V;
+    - saturated with at least 15g sodium chloride
 
 ## 07 Jul 2018
 - finished construction of the verm box
 - initial tests with DES resulted in precipitated spongy grey material onto the cathode
-  - Two possibilities: sodium was being produced and reacting with residual water
-  - zinc was being reduced from the DES because the voltage was ~5.0V which might be enough to break the Choline chloride: Zinc chloride bond -> will try 3.3V tomorrow
+    - Two possibilities: sodium was being produced and reacting with residual water
+    - zinc was being reduced from the DES because the voltage was ~5.0V which might be enough to break the Choline chloride: Zinc chloride bond -> will try 3.3V tomorrow
 - Started a second 1/5 mole scale using pure HCl this time
-  - 16.28g zinc oxide + 15g H2O + 80g HCl 20.2% -> 41.7g ZnCl2*4H2O
-  - reduced the resulting liquid to saturated solution; made sure white HCl fumes were gone
-  - added 28g choline chloride
-  - boiled to get rid of water; >150C
-  - total weight of beaker + stir bar + DES = 69.5g
+    - 16.28g zinc oxide + 15g H2O + 80g HCl 20.2% -> 41.7g ZnCl2*4H2O
+    - reduced the resulting liquid to saturated solution; made sure white HCl fumes were gone
+    - added 28g choline chloride
+    - boiled to get rid of water; >150C
+    - total weight of beaker + stir bar + DES = 69.5g
 - DES's would make a great high temp heat transfer liquid instead of mineral oil or other flammable solvent
 - the first test was with a small piece of platinum wire + copper cathode; not much current flow; will try larger MMO anode + titanium cathode tomorrow
-  - in order to make this a good video, I should try more readily available cathodes; carbon for starters
+    - in order to make this a good video, I should try more readily available cathodes; carbon for starters
 - high index of refraction for DES5 (n = 1.5) [@bagh_ionic_2014] makes images appear larger than expected from a glass of water (n = 1.3)
 - TODO: add pic of DES index of refraction demo
 
 ## 05 Jul 2018
 - filmed starting construction of vermiculite refractory box
-  - constructing the box is probably not the best
-  - I should just suck it up and use a round metal former
+    - constructing the box is probably not the best
+    - I should just suck it up and use a round metal former
 - synthesized zinc chloride 1/10 scale: 8.14g ZnO + 25g HCl 32% soln. + 5mL H2O
-  - apparently anhydrous zinc chloride was used in the paper [@bagh_ionic_2014]
-  - I added the requisite amount of choline chloride (14g)
-  - Tomorrow I will evaporate it down. Hopefully the DES is enough to keep hydrolysis to a minimum
+    - apparently anhydrous zinc chloride was used in the paper [@bagh_ionic_2014]
+    - I added the requisite amount of choline chloride (14g)
+    - Tomorrow I will evaporate it down. Hopefully the DES is enough to keep hydrolysis to a minimum
 - researched platinum group metals concentration in street dust
 
 ## 04 Jul 2018
 - filming during daylight
 - still working on getting the server back up and running
-  - apparently OpenStack is only available for ubuntu16 and I installed 18 :(
-  - trying to get it working...
+    - apparently OpenStack is only available for ubuntu16 and I installed 18 :(
+    - trying to get it working...
 -
 
 ## 03 Jul 2018
@@ -373,6 +546,7 @@ make install
 - Ridge: a single 3-tab single cut into three covers 18 inches of ridge
 
 Items Needed:
+
 - dumpster or large trash can
 - gloves
 - belts with nail holders?
@@ -386,7 +560,7 @@ Items Needed:
 ## 28 Jun 2018
 - Made Jafar costume.
 
-![Jafar and Iago]({{ site.url }}/assets/img/20180628_191905.jpg)
+![Jafar and Iago]({{ site.url }}/{{ site.url }}/assets/img/20180628_191905.jpg)
 
 ## 27 Jun 2018
 - Research on AGEs for reddit...
@@ -395,10 +569,11 @@ Items Needed:
 - Day 2 of the gym bet successfully completed.
 - Still consuming at least 6 'salads' per week. Still haven't had a depressive episode. Longest streak in history for me.
 - looking at insulating refractory mixes
-  - vermiculite with sulfuric/phosphoric acid chemical binder [@ekedahl_chemically_1959]
+    - vermiculite with sulfuric/phosphoric acid chemical binder [@ekedahl_chemically_1959]
 - working on site setup
 
 TODO:
+
 - fix website(s)
 - plan for upcoming videos
 - order chemicals for upcoming videos
@@ -487,6 +662,8 @@ Made some updates to this site.
 [^1]: 18+ hr fast + fermentable fiber + high protein + vegetables: Testing the effect of fiber consumption on tolerability of intermittent fasting
 [^2]: 500ml milk + 30g whey protein + creatine, ALCAR, NAC, TMG, citrulline, beta alanine, taurine, agmatine, ornithine, vit C, Mg, K, Zn, potato starch
 
-[primary alcohol catalysis]: {{ site.baseurl }}{% link _posts/2018-03-26-primary-alcohol-catalysis.md %}
-[nitric acid production]: {{ site.baseurl }}{% link _posts/2018-03-26-nitric-acid.md %}
-[page]: {{ site.baseurl }}{% link _posts/2017-08-30-AI-research.md %}#journal
+[primary alcohol catalysis]: {{ site.url }}{% link _posts/2018-03-26-primary-alcohol-catalysis.md %}
+[nitric acid production]: {{ site.url }}{% link _posts/2018-03-26-nitric-acid.md %}
+[page]: {{ site.url }}{% link _posts/2017-08-30-AI-research.md %}#journal
+
+# References

@@ -6,6 +6,7 @@ modified: 2016-09-19
 updated: 2015-06-08
 category: archive
 tags: biochemistry nootropics chemistry
+abstract: >
   Methylene Blue is a rare nootropic. I experimented with it for a while but ultimately stopped due to its MAO activity. Perhaps I will resurrect this project when mitochondrial function is my primary limiting factor and I am willing to give up eating ages cheeses.
 ---
 

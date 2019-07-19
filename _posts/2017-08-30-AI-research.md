@@ -132,12 +132,9 @@ A global reinforcement center? A global measure of uncertainty prevents spurious
 
 - learning is propagated backward from appropriate outputs
 - what if no training signal is defined?
-
-  - learning spans the combinations of inputs to the limit of processing capabilities
-
+    - learning spans the combinations of inputs to the limit of processing capabilities
 - a training signal accelerates development in the wanted direction
-
-  - e.g. given sufficient observation without any reward, a human child has the capacity to learn to speak. However, this is probably not possible given the time it would require and the shear number of possible inputs.
+    - e.g. given sufficient observation without any reward, a human child has the capacity to learn to speak. However, this is probably not possible given the time it would require and the shear number of possible inputs.
 
 What if consciousness was developed in humans because our brain's capacity outstripped its inputs? I.e. The sensory information (in the mathematical sense) decays as it travels to higher and higher levels of processing and is successively obscured by internal hallucinations (feed-back projections). The sensory information never reaches our highest levels of processing and therefore leaves a certain amount of high level processing available solely for internal computation. In essence, some brain capacity is devoted entirely to processing internal, spontaneous information generation. The amount and capacity of this processing is what we call consciousness. In contrast, lower animals have a lower brain capacity to sensory input ratio and therefore do not possess the ability to think outside the realm of their inputs. Schizophrenia is a disease of too much consciousness.
 
@@ -151,25 +148,25 @@ I have noticed a lot of commonalities between ART and HTM theories. In ART, the 
 
 ### Principles
 - fast, local inhibition
-  - fast -> predicted cells are more likely to fire than non-predicted cells
+    - fast -> predicted cells are more likely to fire than non-predicted cells
     - prediction becomes a self-reinforcing behavior; centering a neuron on a set of temporally coincident inputs
-  - local -> spatial coincidence and local inhibition results in differentiation of similar inputs
-  - spatial coincidence is a practical way to group similar neurons; grouping neurons by inputs (from a programming standpoint) is more difficult
-    - Maybe using some sort of bitmask to identify groupings? But that wouldn't work with hashed values like in SDR theory
-    - In HTM, the spatial coincidence is set up during initialization and cannot be changed at runtime; something I wish to avoid
+    - local -> spatial coincidence and local inhibition results in differentiation of similar inputs
+    - spatial coincidence is a practical way to group similar neurons; grouping neurons by inputs (from a programming standpoint) is more difficult
+      - Maybe using some sort of bitmask to identify groupings? But that wouldn't work with hashed values like in SDR theory
+      - In HTM, the spatial coincidence is set up during initialization and cannot be changed at runtime; something I wish to avoid
 - feedforward input
-  - the set of neurons must completely encompass the input set (field) to be capable of understanding the input
+    - the set of neurons must completely encompass the input set (field) to be capable of understanding the input
 - prediction
-  - the ability to bridge temporally or spatially disparate signals
-  - should a basal connection transition to a proximal connection with sufficient input presentation?
+    - the ability to bridge temporally or spatially disparate signals
+    - should a basal connection transition to a proximal connection with sufficient input presentation?
 - expectation
-  - top-down signal similar to basal connections in that it predisposes a neuron to fire
-  - the difference is that proximal and basal inputs only cover a narrow, continuous field whereas apical connection cover a wider breadth
-    - the dark pattern that constitutes the pupils of a person's face can be learned by basal and proximal dendrites; the complex patters that encompass the entire face can be learned only through apical expectation
-  - can be used as temporary storage of information
+    - top-down signal similar to basal connections in that it predisposes a neuron to fire
+    - the difference is that proximal and basal inputs only cover a narrow, continuous field whereas apical connection cover a wider breadth
+      - the dark pattern that constitutes the pupils of a person's face can be learned by basal and proximal dendrites; the complex patters that encompass the entire face can be learned only through apical expectation
+    - can be used as temporary storage of information
 
 ### Sparse Distributed Representations
-An ANN according to [@hawkins_why_2016-1] requires three types of inputs: proximal, basal, and apical. Proximal connections drive the action potential at the soma robustly. This constitutes the classic receptive field of the neuron and the basis for almost all ANN's to date. Basal connections cannot directly stimulate and action potential, rather they provide contextual prediction that predisposes an action potential to fire sooner. HTM theory does not deal with apical connects except to say they are somehow involved in feedback or top-down expectations. This whole system is reminiscent of the how the visual system is portrayed in the work of Grossberg. Probably because they are studying the same systems...
+An ANN according to [@hawkins_why_2016] requires three types of inputs: proximal, basal, and apical. Proximal connections drive the action potential at the soma robustly. This constitutes the classic receptive field of the neuron and the basis for almost all ANN's to date. Basal connections cannot directly stimulate and action potential, rather they provide contextual prediction that predisposes an action potential to fire sooner. HTM theory does not deal with apical connects except to say they are somehow involved in feedback or top-down expectations. This whole system is reminiscent of the how the visual system is portrayed in the work of Grossberg. Probably because they are studying the same systems...
 
 Using the HTM/NuPIC system [@taylor_numenta_2018] is a real pain: So many settings and hyperparameters. For instance, one of the key parameters you have to figure out is how many sequences your HTM system should be capable of knowing. If I knew that, I wouldn't need an ANN...
 

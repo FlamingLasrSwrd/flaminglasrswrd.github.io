@@ -55,6 +55,6 @@ Benzaldehyde is a precursor to a huge number of organic compounds. Synthesis in 
 - fiddled with Marvin for 5 hours: Chemdraw is wayyyy better
 
 
-# Bibliography
+# References
 
 <!--Annotations-->

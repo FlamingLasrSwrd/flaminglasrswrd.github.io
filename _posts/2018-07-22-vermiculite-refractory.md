@@ -6,7 +6,7 @@ category: active
 tags: chemistry fire
 author: Elijah K. Dunn
 abstract: >
-  A high temperature, insulating refractory exclusively from the hardware store at one-tenth the cost of and better than commercial firebricks or ceramic fiber.
+  A high temperature, insulating refractory exclusively from the hardware store at one-tenth the cost of and better than commercial firebricks or ceramic fiber. It is a pain to mold into complex shapes, however.
 graphical-abstract: "/assets/img/20181222_200313.jpg"
 ---
 
@@ -47,7 +47,7 @@ Using a clay binder instead of a chemical one will increase the heat conductivit
 ## Ingredients
 - 100 parts vermiculite insulation
 - 5 parts magnesium sulfate heptahydrate (Epsom salts)
-  - dissolve MgSO4 in 20 parts water
+    - dissolve MgSO4 in 20 parts water
 - 4 parts 35% phosphoric acid (concrete etch)
 - 10 parts 92% sulfuric acid (drain cleaner)
 
@@ -55,21 +55,21 @@ Using a clay binder instead of a chemical one will increase the heat conductivit
 - calculate total volume of refractory material needed for your mold
 - multiply by 350 kilograms per cubic meter (22 pounds per cubic foot) to obtain the necessary weight of vermiculite to start with
 - measure out that amount of vermiculite
-  - this will likely be done in batches
+    - this will likely be done in batches
 - measure out 5% of the mass of vermiculite as magnesium sulfate heptahydrate
 - dilute magnesium sulfate in 4 times its mass in water
 - use a spray bottle to coat the vermiculite in the magnesium sulfate solution while mixing thoroughly
 - measure out 4% of the mass of vermiculite as dilute (~35%) phosphoric acid
-  - this can be obtained as concrete etcher (not the muriatic acid kind)
+    - this can be obtained as concrete etcher (not the muriatic acid kind)
 - measure out 10% of the mass of vermiculite as concentrated (>92%) sulfuric acid and add to phosphoric acid
-  - this can be obtained at drain cleaner from most hardware stores
-  - *warning* this will generate a lot of heat
+    - this can be obtained at drain cleaner from most hardware stores
+    - *warning* this will generate a lot of heat
 - use the spray bottle to coat the vermiculite with the acid mixture while mixing thoroughly
-  - vermiculite should remain relatively dry and easy to mix
+    - vermiculite should remain relatively dry and easy to mix
 - ram small portions of mix into your mold using a hammer
-  - the goal is 200-700 kPa (30-100 psi) compression which is roughly the force per unit area of a hammer strike across the hammer head
-  - the greater the compression -> the greater the strength -> the lesser the insulation
-  - mixture must be used within a few hours
+    - the goal is 200-700 kPa (30-100 psi) compression which is roughly the force per unit area of a hammer strike across the hammer head
+    - the greater the compression -> the greater the strength -> the lesser the insulation
+    - mixture must be used within a few hours
 - after ramming, the refractory has enough strength to be handled lightly
 - the strength can be increased by first drying and then calcining (optional)
 - drying occurs above 200C (400F)
@@ -79,17 +79,17 @@ Using a clay binder instead of a chemical one will increase the heat conductivit
 - I have a mold that requires 20 liters (0.7 cubic feet) of refractory to fill
 - That means I need a total of 7 kg vermiculite
 - I can't do all that at once, so I'm splitting it into 3 batches:
-  - 2.33kg vermiculite is added to mixing tub *wear a mask*
-  - 117g epsom salts is added to spray bottle
-  - 466g water is added to bottle and mixed thoroughly to dissolve
-  - vermiculite is coated evenly with magnesium sulfate spray
-  - 93g of dilute phosphoric acid is added to bottle *wear gloves*
-  - vermiculite is coated evenly with phosphoric acid spray
-  - 233g concentrated is added to bottle
-  - coat the vermiculite evenly with sulfuric acid spray
-  - pack the refractory into the mold a little at a time
-  - repeat 2 more times for a total of 7kg vermiculite used
-  - let sit overnight
+    - 2.33kg vermiculite is added to mixing tub *wear a mask*
+    - 117g epsom salts is added to spray bottle
+    - 466g water is added to bottle and mixed thoroughly to dissolve
+    - vermiculite is coated evenly with magnesium sulfate spray
+    - 93g of dilute phosphoric acid is added to bottle *wear gloves*
+    - vermiculite is coated evenly with phosphoric acid spray
+    - 233g concentrated is added to bottle
+    - coat the vermiculite evenly with sulfuric acid spray
+    - pack the refractory into the mold a little at a time
+    - repeat 2 more times for a total of 7kg vermiculite used
+    - let sit overnight
 
 
 # Log

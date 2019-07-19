@@ -127,12 +127,12 @@ I can **retake the GRE** for a better score. This is likely a necessity anyway s
 -------------------------------------------
 To recap (in no particular order):
 * **finish this site**
-  * upload past writing samples
-  * upload AI-specific research notes
-  * improve the writing quality of existing pages
-  * publish my other projects
-  * publish notes on individual professor's research
-  * publish daily, weekly, and monthly reviews
+    - upload past writing samples
+    - upload AI-specific research notes
+    - improve the writing quality of existing pages
+    - publish my other projects
+    - publish notes on individual professor's research
+    - publish daily, weekly, and monthly reviews
 * code the various AI algorithms and upload to github
 * read more current AI journal articles
 * find work with KU professors

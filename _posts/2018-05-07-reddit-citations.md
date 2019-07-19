@@ -48,9 +48,9 @@ Library.bib is in bibtex format and can be imported using a reference manager li
 
 - integrated reference manager group storage
 - hosted storage
-  - self
-  - commercial
-  - crypto
+    - self
+    - commercial
+    - crypto
 
 ## Legality
 

@@ -2,7 +2,7 @@
 layout: "post"
 title: "One-Pot Precious Metal Recovery"
 date: "2018-07-16 11:32"
-category: active
+category: inactive
 tags: chemistry
 author: Elijah K. Dunn
 zotero-collection: https://www.zotero.org/ekdunn/items/collectionKey/Q4JJWSH6
