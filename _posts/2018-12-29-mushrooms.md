@@ -3,12 +3,13 @@ layout: "post"
 title: "Mushrooms"
 date: "2018-12-29 17:22"
 category: active
-tags: mushrooms
+tags: mushrooms biology
 author: Elijah K. Dunn
 zotero-collection: https://www.zotero.org/ekdunn/items/collectionKey/DLI8YQMP
+gallery: fungi
 abstract: >
-Starting a mushroom growing business: L. edodes to P. ostreatus.
-graphical-abstract:
+  Notes on starting a mushroom growing business: L. edodes to P. ostreatus.
+graphical-abstract: /assets/img/fungi/20181022_235533.jpg
 ---
 
 # Work Log
@@ -74,5 +75,8 @@ I'm looking into vitamin and mineral supplementation.
 ## 29 Dec 2018
 Started research collection on ideal substrate formulas.
 
+# Bibliography
 
-# References
+<!--notes-->
+
+<!--links-->

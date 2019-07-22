@@ -6,6 +6,7 @@ category: active
 tags: chemistry
 author: Elijah K. Dunn
 zotero-collection:
+gallery:
 abstract: >
   Ammonia and nitric acid from ammonium nitrate.
 graphical-abstract:
@@ -14,7 +15,7 @@ graphical-abstract:
 # Work Log
 
 ## 15 Jul 2019
-Attempted the synthesis. I won't be doing this again. Adding the sulfuric acid results in a lot of decomposition. The ammonia reaction didn't go to completion because there wasn't enough water.
+Attempted the synthesis. I won't be doing this again. Adding the sulfuric acid results in a lot of decomposition. The ammonia reaction didn't go to completion because there wasn't enough water. Better to pay the extra money and buy the nitrate and ammonium salts separately.
 
 ## 14 Jul 2019
 
@@ -31,3 +32,9 @@ Starting from 180g ammonium nitrate (the contents of two ice packs) in 500mL fla
 - yields: 38g ammonia as 128g (142ml) 30% NH4OH (80g NH4OH); 70g (46ml) nitric acid
 
 NaOH is probably the monohydrate form. Would that be enough water to dry mix the ingredients and distill the ammonia?
+
+# Bibliography
+
+<!--notes-->
+
+<!--links-->

@@ -5,9 +5,11 @@ date: "2018-07-22 12:06"
 category: active
 tags: chemistry fire
 author: Elijah K. Dunn
+zotero-collection:
+gallery: verm-refractory
 abstract: >
   A high temperature, insulating refractory exclusively from the hardware store at one-tenth the cost of and better than commercial firebricks or ceramic fiber. It is a pain to mold into complex shapes, however.
-graphical-abstract: "/assets/img/20181222_200313.jpg"
+graphical-abstract: "/assets/img/verm-refractory/20181222_200313.jpg"
 ---
 
 **Update 30 Dec 2018:** Molded refractories are a pain to deal with because of the required compression. A better option is to make a brick mold and build your furnace separately.
@@ -125,4 +127,8 @@ Test run:
 - 1.25g mg sulfate + 5g H2O
 - 2.5g H2SO4 + 1g ~40% H3PO4
 
-# References
+# Bibliography
+
+<!--notes-->
+
+<!--links-->

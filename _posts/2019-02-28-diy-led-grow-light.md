@@ -6,9 +6,10 @@ category: active
 tags: biology electronics
 author: Elijah K. Dunn
 zotero-collection:
+gallery: led-grow-light
 abstract: >
   Designing a low-cost, high-performance LED grow light for plants.
-graphical-abstract:
+graphical-abstract: /assets/img/led-grow-light/20190417_125938.jpg
 ---
 
 # Intro
@@ -26,7 +27,7 @@ Total: 52,251 lumens @ 460 watts
 # Work Log
 
 ## 12 Mar 2019
-What about the cost of increasing to 10,000 lux/sq.ft.? The price per square foot will change, but the choice of COBs will not. Two drivers can provide power enough to illuminate 3.4 sq.ft.. I think I would like at least 5 sq.ft. of grow room so buying 3 drivers is probably better (52,251 lumens: 5.2 sq.ft. @10,000 or 7.5 @7,000). That's 421 watts consumed and $23-$25 per month in electricity. Plus a little for loss from the drivers.
+What about the cost of increasing to 10,000 lux/sq.ft.? The price per square foot will change, but the choice of COBs will not. Two drivers can provide power enough to illuminate 3.4 sq.ft.. I think I would like at least 5 sq.ft. of grow room so buying 3 drivers is probably better (52,251 lumens: 5.2 sq.ft. at 10,000 or 7.5 at 7,000). That's 421 watts consumed and $23-$25 per month in electricity. Plus a little for loss from the drivers.
 
 **1 lumen per square foot is 0.0929 lux**
 
@@ -205,7 +206,7 @@ The spectral diagram for the 90 CRI bulbs is much close to ideal for chlorophyll
 [A better search]
 
 
-# References
+# Bibliography
 
 [^1]: Uses almost the same forward current and voltage as the 16.7W version. Probably a misprint.
 [^2]: Extracted from digikey, which used average lumens instead of minimum lumens.

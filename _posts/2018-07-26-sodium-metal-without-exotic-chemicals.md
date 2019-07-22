@@ -6,9 +6,10 @@ category: active
 tags: chemistry
 author: Elijah K. Dunn
 zotero-collection: https://www.zotero.org/ekdunn/items/collectionKey/BSA2ISD9
+gallery: des/sodium
 abstract: >
   Making sodium metal without using exotic chemicals, solvents, or apparatus using deep eutectic solvents.
-graphical-abstract:
+graphical-abstract: /assets/img/des/sodium/20180706_190930.jpg
 ---
 
 # Intro
@@ -21,4 +22,10 @@ The idea here is to make sodium using deep eutectic solvents to catalyze the rea
 - DES's have the advantage of reusability and low vapor pressure
 - Might face the same problems that NurdRage was having in his sodium production due to water contamination
 
-# References
+# Work Log
+
+# Bibliography
+
+<!--notes-->
+
+<!--links-->

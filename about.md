@@ -10,7 +10,9 @@ abstract: >
 # Site Title
 *Newton's flaming laser sword* is a term coined in 2004 by Mike Alder. In an article in __Philosophy Now__, Alder draws a parallel between the well known *Occam's Razor* and this new cleaving tool. With Occam's razor the search space of possible solutions to a problem or question only the most parsimonious survives. While this is extremely helpful, Newton's flaming laser sword is "much sharper and more dangerous". Put simply, it says that only propositions that can be tested with science should be considered or even discussed.  [@alder_newtons_2004]
 
-# Titles
+Thus the scope of this site is defined: Anything that can be tested with science. More narrowly I tend to stick to the fields of chemistry, physics, philosophy, electronics, and computer science.
+
+# Descriptive Titles
 In no particular order:
 
 - Pragmatist
@@ -35,10 +37,10 @@ In no particular order:
 
 # Other Influences
 - Too much science fiction
-  - Heinlein
-  - Dick
-  - Bradbury
-  - Asimov
+   - Heinlein
+   - Dick
+   - Bradbury
+   - Asimov
 
 # Current Life Goal
 To maximize my contribution to the human race.
@@ -57,6 +59,10 @@ My current research process proceeds through several utility programs:
 - [Pandoc][]
 - [Jekyll][]
 - [Github][]
+
+## Building This Website
+
+This site is first written in pandoc markdown format using Atom. Then a series of hacks and poorly coded {{liquid}} tags are fed into Jekyll. The ruby gem jekyll-pandoc uses a bibliography exported by Better-Bibtex from Zotero to generate the appropriate citations using a custom .csl style I made for markdown. The complete set of html and associated files are backed up to github and transferred via sftp to my web host NearlyFreeSpeech.net.
 
 # Stats
 

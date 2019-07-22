@@ -3,12 +3,13 @@ layout: "post"
 title: "Nitric Acid"
 date: "2018-03-26 11:34"
 category: active
-link-citations: true
-tags: chemistry
+tags: chemistry electronics
 author: Elijah K. Dunn
 zotero-collection: https://www.zotero.org/ekdunn/items/collectionKey/DBGV3U9D
+gallery: plasma-nitric-acid
 abstract: >
   Atmospheric nitrogen fixation for the amateur using plasma.
+graphical-abstract: /assets/img/plasma-nitric-acid/20190704_025019.jpg
 ---
 
 # Prior Art
@@ -40,7 +41,7 @@ Haber-Bosch nitrogen fixation = 0.48 MJ/mol
 Glidarc = 4.8 MJ/mol = 1.3 KWh/mol => $0.11/mol
 15 mol nitric acid (68%) => $1.65 per liter in electricity costs
 
-# Log
+# Work Log
 
 ## 19 Jul 2019
 Added two 940C20P15K-F caps to the tank capacitance of the ZVS driver to decrease the frequency. Power levels now peak at about 150W and average around 100W.
@@ -89,9 +90,9 @@ First preliminary test of the glidarc reactor went well. It was just a couple of
 - What is the influence of humid air addition to the feed gas? Does it produce ammonia?
 - Adding ozone to the resultant gas stream to oxidize NO to NO2 quickly?
 
-# References
+# Bibliography
 
-<!--Annotations-->
+<!--notes-->
+
+<!--links-->
 [Sciencemadness]: http://www.sciencemadness.org/talk/viewthread.php?tid=1518
-
-<!--Glossary-->

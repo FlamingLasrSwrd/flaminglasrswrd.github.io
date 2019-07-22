@@ -6,6 +6,7 @@ category: biology
 tags: active
 author: Elijah K. Dunn
 zotero-collection:
+gallery:
 abstract: >
   Minimal diets: satisfy (almost) all nutritional requirements at the lowest cost.
 graphical-abstract:
@@ -94,4 +95,8 @@ Interesting that the USDA couldn't meet their own standards for Vitamin E or pot
 
 Sodium levels were similarly modified so that the plan allowed for no more than the average intake and not the recommended intake.
 
-# References
+# Bibliography
+
+<!--notes-->
+
+<!--links-->

@@ -3,8 +3,16 @@ layout: page
 title: "Work Log"
 permalink: /log/
 abstract: >
-  Semi-unfiltered life updates in the moment barely useful to me. Do not take seriously or literally.
+  Semi-unfiltered life updates in the moment barely useful to me. Do not take seriously or literally. Project specific updates are located on their respective posts.
 ---
+
+## 20 Jul 2019
+Recovering the gallium from a chunk of aluminum I made over a decade ago using the NurdRage ether extraction technique.
+
+Lots of work on the website.
+
+## 19 Jul 2019
+One of my dumpster diving adventures yielded 900mg of platinum wire: 800 of which is currently dissolving in aqua regia to be made into 10% Pt on Carbon catalyst.
 
 ## 05 Jul 2019
 Started drying the copper chloride solution. For weeks now it has been sitting in my fume hood. I bubbled ozone through muriatic acid and copper to create copper (II) chloride. I'm hoping to use this to make anhydrous aluminum chloride by single displacement.

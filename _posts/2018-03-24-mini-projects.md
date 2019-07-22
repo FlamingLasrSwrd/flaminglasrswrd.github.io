@@ -16,7 +16,7 @@ sudo apt-get install oracle-java8-installer
 ```
 
 # Jafar Costume
-![Jafar Costume][{{ site.url }}/assets/img/jafarstaff.jpg]
+![Jafar Costume][/assets/img/jafar/jafarstaff.jpg]
 
 # References in Markdown Regex
 ```
@@ -171,10 +171,11 @@ Apparently, that bluetooth driver is unnecessary. ```sudo service bluetooth star
 # Penny Charms
 A friend of mine is making a necklace and needs a few charms made from pennies.
 
-![image]({{ site.url }}/assets/img/penny.jpg)  
+![image](/assets/img/penny-necklace/penny.jpg)
+
 They are all 2013 pennies. Holes were drilled and countersunk to prevent wear. The rings are made from 14 AWG copper wire and soldered with lead-free (silver) solder. I attempted to solder the ring directly to the penny at a 90 degree angle, but couldn't get the solder to flow well enough to make it attractive.
 
-# References
+# Bibliography
 
 <!--Annotations-->
 [this solution]: https://serverfault.com/questions/38114/why-does-sudo-command-take-long-to-execute

@@ -7,20 +7,23 @@ baseurl: ""
 url: "http://flaminglasersword.com"
 #github_username:  flaminglasrswrd
 date_format: "%b %-d, %Y"
+author: Elijah K. Dunn
 header_pages:
  - about.md
  - category/active.html
  - category/archive.html
  - log.md
+# - gallery.md
+# - bibliography.md
 
 # Build settings
 theme: jekyll-theme-midnight
-#plugins_dir:
-#  - jekyll-feed
+plugins_dir:
+  - jekyll-feed
 #  - github-pages
-#  - jekyll-paginate
-#  - jekyll-last-modified-at
-#  - jekyll-pandoc-multiple-formats
+  - jekyll-paginate
+  - jekyll-last-modified-at
+  - jekyll-pandoc-multiple-formats
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -28,7 +31,7 @@ exclude:
   - _mdwriter.cson
 permalink: pretty
 paginate: 7
-#destination: ../flaminglasersword/
+destination: ../flaminglasersword/
 
 # Conversion
 excerpt_separator: "<!--more-->"
@@ -58,20 +61,6 @@ post_preview_image: false
 # (for instant articles and other stuff)
 fb_page: https://www.facebook.com/FlamingLasrSwrd/
 fb_page_id: FlamingLasrSwrd
-
-# Disqus post comments
-# (leave blank to disable Disqus)
-disqus_shortname:
-
-# txtpen post comments
-# (leave blank to disable txtpen)
-txtpen_sitename:
-
-# Facebook Comments plugin
-# (leave blank to disable Facebook Comments, otherwise set it to true)
-facebook_comments: true
-facebook_appid:
-facebook_comments_number: 10
 
 # Social icons
 github_username: flaminglasrswrd
@@ -144,22 +133,32 @@ text:
   og_locale: 'en_US'
 
 # Pandoc
-markdown: pandoc
+markdown: Pandoc
 pandoc:
-    skip: true
-#    bundle_permalink: 'bundle/:output_ext/:slug.:output_ext'
-    papersize: 'a5paper'
-    sheetsize: 'a4paper'
-    imposition: true
-    binder: true
-    covers_dir: assets/covers
-    signature: 20
-    flags: '--smart'
-    site_flags: '--toc --bibliography=_data/library.bib --metadata link-citations=true'
-    outputs:
-      latex:
-      pdf: '--latex-engine=xelatex'
-      epub: '--epub-chapter-level=2'
+  # jekyll-pandoc
+  extensions:
+    - normalize
+    - smart
+    - mathjax
+    - toc
+    - csl: _posts/custom.csl
+    - bibliography: _data/library.bib
+
+  # jekyll-pandoc-multiple-formats
+  skip: false
+  bundle_permalink: 'bundle/:output_ext/:slug.:output_ext'
+  papersize: 'a5paper'
+  sheetsize: 'a4paper'
+  imposition: true
+  binder: true
+  covers_dir: assets/covers
+  signature: 20
+  flags: '--smart'
+  site_flags: '--toc --bibliography=_data/library.bib --metadata link-citations=true'
+#  outputs:
+#    latex:
+#    pdf: '--latex-engine=xelatex'
+#    epub: '--epub-chapter-level=2'
 
 pgp: |
   -----BEGIN PGP PUBLIC KEY BLOCK-----

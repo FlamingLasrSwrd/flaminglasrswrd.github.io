@@ -2,12 +2,13 @@
 layout: "post"
 title: "Jumbo Salad Spinner"
 date: "2019-07-13 18:25"
-category: {category}
-tags: {tags}
+category: active
+tags:
 author: Elijah K. Dunn
 zotero-collection:
+gallery:
 abstract: >
-
+  Building a 5gal salad spinner for a local volunteer kitchen.
 graphical-abstract:
 ---
 

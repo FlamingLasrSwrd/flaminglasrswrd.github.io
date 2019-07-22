@@ -6,6 +6,7 @@ category: active
 tags: biology electronics
 author: Elijah K. Dunn
 zotero-collection: https://www.zotero.org/ekdunn/items/collectionKey/LHPUXSLC
+gallery: hydroponics
 abstract: >
   Growing plants in water: an automated approach.
 graphical-abstract:
@@ -299,8 +300,7 @@ python3 setup.py install --force-pi --user
 pip3 install --user adafruit-circuitpython-DS18X20
 ```
 
-# References
-
+# Bibliography
 
 <!--notes-->
 [^1]: Optional; Used to monitor water quality in the reservoir and as a backup water level sensor.

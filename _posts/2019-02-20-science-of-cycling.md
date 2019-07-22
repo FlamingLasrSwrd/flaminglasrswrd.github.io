@@ -6,6 +6,7 @@ category: active
 tags: biology physics
 author: Elijah K. Dunn
 zotero-collection: https://www.zotero.org/ekdunn/items/collectionKey/BAA7JBUJ
+gallery:
 abstract: >
   Applying physics, biology, and kinaestetics to cycling.
 graphical-abstract:
@@ -54,3 +55,9 @@ Earlier today I was explaining to my roommate the physics of why a heavier perso
 - explanations of some key biomarkers in cycling training/testing
     - VO2max, FTP, lactate threshold, etc.
 - grading systems
+
+# Bibliography
+
+<!--notes-->
+
+<!--links-->

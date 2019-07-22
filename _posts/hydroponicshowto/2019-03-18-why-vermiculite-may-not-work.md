@@ -7,9 +7,11 @@ tags:
 author: Elijah K. Dunn
 zotero-collection:
 abstract: >
-
+  Using vermiculite in hydroponic media mixes might be troubling for pH control.
 graphical-abstract:
 ---
+
+**This is a test post for a new website called hydroponicshowto.com.**
 
 > Only as little as 2.5 g of vermiculite was able to
 neutralise 25 mL of nutrient solutions... [@indrasumunar_vermiculites_2013]

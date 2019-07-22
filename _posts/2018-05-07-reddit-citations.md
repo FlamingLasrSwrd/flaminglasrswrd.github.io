@@ -2,10 +2,14 @@
 layout: "post"
 title: "Reddit Citations"
 date: "2018-05-07"
-category: active
+category: inactive
 tags: programming
+author: Elijah K. Dunn
+zotero-collection: https://www.zotero.org/groups/2185229/citereddit
+gallery:
 abstract: >
   Creating a Zotero shared group by scraping all the citations in the more scholarly subreddits.
+graphical-abstract: /assets/img/citereddit/citeredditlogo.png
 ---
 # Cite Reddit
 
@@ -81,10 +85,10 @@ See ```TODO``` items in ```scrape.py```. There are many.
 
 
 
-# Log
+# Work Log
 
-# References
+# Bibliography
 
-<!--Annotations-->
+<!--notes-->
 
-<!--Glossary-->
+<!--links-->

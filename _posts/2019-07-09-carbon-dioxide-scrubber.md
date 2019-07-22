@@ -2,18 +2,17 @@
 layout: "post"
 title: "Carbon Dioxide Scrubber"
 date: "2019-07-09 23:26"
-category: {category}
-tags: {tags}
+category: active
+tags: chemistry
 author: Elijah K. Dunn
 zotero-collection: https://www.zotero.org/ekdunn/items/collectionKey/G5QGA3YQ
+gallery:
 abstract: >
   Designing a personal carbon dioxide scrubber.
 graphical-abstract:
 ---
 
 # Scrubber
-
-## Options
 
 ### Solvents
 - sodium hydroxide/calcium hydroxide solutions
@@ -33,3 +32,7 @@ A human respires about .08-.13 cubic meters of CO2 per hour (100 liters, ~4 mol,
 Seems that the best performing DES's are capable of 10% weight absorption of CO2. This alone is not enough to be useful, but it might work in conjunction with calcium hydroxide.
 
 # Bibliography
+
+<!--notes-->
+
+<!--links-->

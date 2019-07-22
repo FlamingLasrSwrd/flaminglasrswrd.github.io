@@ -6,8 +6,10 @@ category: active
 tags: chemistry
 author: Elijah K. Dunn
 zotero-collection: https://www.zotero.org/ekdunn/items/collectionKey/RFA8NCVX
+gallery: catalysts
 abstract: >
   Oxidation/dehydrogenation of primary alcohols using catalysts to form their corresponding aldehydes.
+graphical-abstract: /assets/img/catalysts/nickel/20180529_141246.jpg
 ---
 
 # Ethanol
@@ -45,7 +47,7 @@ User jimmymajesty achieved excellent results by using air-oxidized copper plated
 
 ## 26 May 2018
 
-Isolating various metalic catalyst precursors:
+Isolating various metallic catalyst precursors:
 
 - Barium (rust converter)
     - **cheaper as [barium carbonate glaze](https://digitalfire.com/4sight/material/barium_carbonate_86.html)**
@@ -54,9 +56,8 @@ Isolating various metalic catalyst precursors:
 - Gold (from previous experiments)
 - Platinum
 
-# References
+# Bibliography
 
-<!--Annotations-->
+<!--notes-->
 
-<!--Glossary-->
-*[DES]: Deep Eutectic Solvents
+<!--links-->

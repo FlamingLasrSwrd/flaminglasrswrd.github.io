@@ -6,16 +6,16 @@ category: active
 tags: chemistry
 author: Elijah K. Dunn
 zotero-collection: https://www.zotero.org/ekdunn/items/collectionKey/9B757BAD
+gallery: benzaldehyde
 abstract: >
   Producing benzaldehyde for the amateur chemist.
-graphical-abstract: "/assets/img/benzaldehyde.png"
+graphical-abstract: "/assets/img/benzaldehyde/benzaldehyde.png"
 ---
 
 # Introduction
 Benzaldehyde is a precursor to a huge number of organic compounds. Synthesis in a high yield at a low cost is the ultimate goal. Expensive reagents are to be avoided. Bonus points for doing it quickly.
 
 # Properties
-
 
 # Methods
 
@@ -54,7 +54,8 @@ Benzaldehyde is a precursor to a huge number of organic compounds. Synthesis in 
 - started research on various methods used in the literature
 - fiddled with Marvin for 5 hours: Chemdraw is wayyyy better
 
+# Bibliography
 
-# References
+<!--notes-->
 
-<!--Annotations-->
+<!--links-->
