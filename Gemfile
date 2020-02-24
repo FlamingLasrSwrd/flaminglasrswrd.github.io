@@ -24,7 +24,7 @@ group :jekyll_plugins do
    gem "jekyll-feed", "~> 0.6"
    gem 'execjs'
    gem 'therubyracer'
-   gem "nokogiri", "~> 1.8.1"
+   gem "nokogiri", "~> 1.10.8"
    gem 'jekyll-last-modified-at'
 #   gem 'jekyll-pandoc-multiple-formats'
    gem 'jekyll-theme-midnight'
