@@ -24,10 +24,11 @@ group :jekyll_plugins do
    gem "jekyll-feed", "~> 0.6"
    gem 'execjs'
    gem 'therubyracer'
-   gem "nokogiri", "~> 1.8.5"
+   gem "nokogiri", "~> 1.11.4"
    gem 'jekyll-last-modified-at'
 #   gem 'jekyll-pandoc-multiple-formats'
    gem 'jekyll-theme-midnight'
    gem 'jekyll-paginate'
    gem 'jekyll-pandoc'
+   gem 'addressable', '~> 2.8.0'
 end
