@@ -3,7 +3,8 @@ layout: "post"
 title: "Minimal Cost & Nutritionally Complete Food"
 date: "2019-02-26 18:45"
 category: biology
-tags: active
+phase: exploratory
+tags: archive
 author: Elijah K. Dunn
 zotero-collection:
 gallery:

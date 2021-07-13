@@ -3,13 +3,14 @@ layout: "post"
 title: "Sodium Metal Without Exotic Chemicals"
 date: "2018-07-26 13:30"
 category: active
+phase: experimental
 tags: chemistry
 author: Elijah K. Dunn
 zotero-collection: https://www.zotero.org/ekdunn/items/collectionKey/BSA2ISD9
 gallery: des/sodium
 abstract: >
   Making sodium metal without using exotic chemicals, solvents, or apparatus using deep eutectic solvents.
-graphical-abstract: /assets/img/des/sodium/20180706_190930.jpg
+graphical-abstract: /assets/img/des/sodium/190720-163819-des-sodium-platinum-electrolysis-sponge-zinc-deposition.jpg
 ---
 
 # Intro

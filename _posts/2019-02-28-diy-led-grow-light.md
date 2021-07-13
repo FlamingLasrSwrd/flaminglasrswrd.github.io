@@ -3,13 +3,14 @@ layout: "post"
 title: "DIY LED Grow Light"
 date: "2019-02-28 15:14"
 category: active
+phase: results
 tags: biology electronics
 author: Elijah K. Dunn
 zotero-collection:
 gallery: led-grow-light
 abstract: >
   Designing a low-cost, high-performance LED grow light for plants.
-graphical-abstract: /assets/img/led-grow-light/20190417_125938.jpg
+graphical-abstract: /assets/img/led-grow-light/190819-130950-diy-led-grow-light-quick-test.JPG
 ---
 
 # Intro
@@ -26,6 +27,87 @@ Total: 52,251 lumens @ 460 watts
 
 # Work Log
 
+## 18 Apr 2021
+Just uploading my [strip light cost comparison](/assets/doc/striplights-digikey.ods).
+
+## 24 Nov 2020
+I am building a new grow light for a small succulent garden.
+
+I would like this grow light to be self-standing and be somewhat visually appealing. With my new 3D printer, I have the capability to make the electronics enclosure from the ground up with relative ease.
+
+I bought a SL-B8T4N90LAWW strip and IDLC-45-1050 supply. The succulent box that this light is intended for is meant to sit astride a 4x4 post. So there is a 3 5/8" cavity that the electronics can occupy. [It looks like this](https://www.homedepot.com/p/Bloem-Deck-Rail-Planter-24-in-Terra-Cotta-Plastic-Deck-Rail-Planter-477241-1001/301861704).
+
+The plan is to have all of the electronics in a box that sits on the table and slides into the post cavity. The box will contain the power supply and a digital timer. The weight of the box will keep the lamp arm from tipping over (hopefully).
+
+![](/assets/img/led-grow-light/led-grow-light-succulent-light-electronics-box-dims.JPG)
+
+I bought a [cheap plug in digital timer](https://www.menards.com/main/electrical/light-switches-dimmers-outlets/outlet-timers/smart-electrician-reg-digital-timer/81339/p-3149259783272843-c-6471.htm) and gutted it.
+
+![](/assets/img/led-grow-light/led-grow-light-succulent-light-timer-disassembled.JPG)
+
+Initially I thought that the front panel was too complicated to reproduce, so I sketched the layout reusing the faceplate as a whole.
+
+![](/assets/img/led-grow-light/led-grow-light-succulent-light-electronics-box-draft.JPG)
+
+But ultimately I decided that I should just do the work and model the faceplate. This will be a good opportunity to learn more CAD. After attempting a couple times to trace over a picture, I decided that I needed more accurate measurements if I wanted it to work. So I ordered some calipers.
+
+And now I await Amazon.
+
+## 22 Oct 2020
+I made a small succulent garden for a friend a few months ago. Now that it is fall, the plants need some supplemental lighting.
+
+I selected a Samsung ‎SL-B8T4N90LAWW‎ strip light and a Mean Well IDLC-45-1050‎ to power it.
+
+## 17 Nov 2019
+I gave the prototype panel to a friend for his basement aquaponics setup. He is so happy with the lighting intensity, he asked if I could build another one.
+
+### Cost Breakdown
+
+| Item | Cost per Item | Units | Total |
+| ---- | ------------- | ----- | ----- |
+| BXRE-27G6500-D-73 | $10.85 | 2 | $21.70 |
+| BXRE-40E6500-D-73 | $10.85 | 1 | $10.85 |
+| ELG-150-C1400A    | $47.52 | 1 | $47.52 |
+|Arctic Alpine 64 GT cooler| $8.52 | 3 | $25.56 |
+| AC110-12V 10W PS  |  $6.19 | 1 |  $6.19 |
+| Cellular PVC ceiling tile 4 sq ft | $13.45 | 0.5 | $6.73 |
+| SPST 250V 10A rocker switch |  $0.60 | 1 | $0.60 |
+
+So a total of $119.48. Plus a few connectors, wire, hooks, shipping, etc. Call it **$130 per panel in materials**
+
+Each panel only takes 2-3 hours to assemble. Probably a lot less if some sort of standardized manufacturing was involved.
+
+## 21 Aug 2019
+Ran some thermal tests today on the mostly finished panel. With an ambient temperature of 25C, the temperature of the heat sink edge stayed around 34C. Just next to the COB the temperature leveled off around 42C: 98% relative luminous flux according to the [the datasheet][]. The temperature can approach 57C if the panel is laid flat on a table. Even then the relative luminous flux is around 95%. The heat sinks return to 30C after only a minute when COB power is removed. I am happy with these thermal tests.
+
+![](/assets/img/led-grow-light/190821-082656-diy-led-grow-light-thermal-testing.JPG)
+
+It is impossible to work on this panel without sunglasses.
+
+## 20 Aug 2019
+Bought some IP65 12V power supplies for the fans instead of attempting to rig one of my own from an old wall wort. They were $6 each for 10W. That's enough for a set of three fans.
+
+## 19 Aug 2019
+This page is apparently one of my most popular, despite its lack of practical information.
+
+I ran a quick test of one of the COBs, blinding myself in the process. Damn these things are bright. I think I will go with a flat plate support instead of the aluminum bracketing I originally planned.
+
+![](/assets/img/led-grow-light/190819-130950-diy-led-grow-light-quick-test.JPG)
+
+I picked up a 2'x2' stucco ceiling panel. It isn't actually stucco, it is PVC foam. It just has a stucco pattern for looks. I cut it in half to make two panels that can be adjusted as needed. Three COBs per panel is a little luminous (~9Klumens per square foot), but the driver can be adjusted.
+
+![](/assets/img/led-grow-light/190819-160136-diy-led-grow-light-cut-panel.JPG)
+
+![](/assets/img/led-grow-light/190819-161930-diy-led-grow-light-heatsink-hole-trace.JPG)
+
+![](/assets/img/led-grow-light/190819-162630-diy-led-grow-light-heatsink-hole-cut.JPG)
+
+![](/assets/img/led-grow-light/190820-135812-diy-led-grow-light-heatsink-clips.JPG)
+
+![](/assets/img/led-grow-light/190819-164546-diy-led-grow-light-heatsink-holes.JPG)
+
+The panel is currently utilizing two BXRE-27G6500-D-73 and one BXRE-40E6500-D-73 driven with a single ELG-150-C1400A. When they arrive, a separate 12V power supply will run the fans.
+
 ## 12 Mar 2019
 What about the cost of increasing to 10,000 lux/sq.ft.? The price per square foot will change, but the choice of COBs will not. Two drivers can provide power enough to illuminate 3.4 sq.ft.. I think I would like at least 5 sq.ft. of grow room so buying 3 drivers is probably better (52,251 lumens: 5.2 sq.ft. at 10,000 or 7.5 at 7,000). That's 421 watts consumed and $23-$25 per month in electricity. Plus a little for loss from the drivers.
 
@@ -35,7 +117,7 @@ What about the cost of increasing to 10,000 lux/sq.ft.? The price per square foo
 Heat sink? I would prefer active cooling. [ARCTIC Alpine 64 GT](https://www.amazon.com/gp/product/B001A5V1K2) looks pretty good. I will tap some blind holes for mounting bolts. It features an 80mm fan and dissipates 65W all for the low price of $7.87.
 
 ## 03 Mar 2019
-I looked into LED strip lights AKA Quantum Boards. From what I have looked at they are generally the same as COBs. [LED strips | digikey]. The [SI-B8T341B2CUS ](https://www.digikey.com/product-detail/en/samsung-semiconductor-inc/SI-B8T341B2CUS/1510-2215-ND/6623999) strip is slightly higher cost but has similar efficiency and light output. The only categorical advantage I can see is the distribution of the light over a wider area.
+I looked into LED strip lights AKA Quantum Boards. From what I have looked at they are generally the same as COBs. [LED strips | digikey]. The [SI-B8T341B2CUS](https://www.digikey.com/product-detail/en/samsung-semiconductor-inc/SI-B8T341B2CUS/1510-2215-ND/6623999) strip is slightly higher cost but has similar efficiency and light output. The only categorical advantage I can see is the distribution of the light over a wider area.
 
 ## 02 Mar 2019
 What about driving the diodes in series instead of using a single supply for each diode? So glad my physics degree is helping me with this project.
@@ -322,6 +404,8 @@ The spectral diagram for the 90 CRI bulbs is much close to ideal for chlorophyll
 
 [CMT1407-0000-000N0U0A30U]: https://www.mouser.com/ProductDetail/Cree-Inc/CMT1407-0000-000N0U0A30U?qs=sGAEpiMZZMu4Prknbu83y%252BlrQIM%2FH7mNbJS7OONKC4l5Ca4IoCLLIw%3D%3D
 
+[CXA1512-0000-000N00M230G]: https://www.mouser.com/ProductDetail/Cree-Inc/CXA1512-0000-000N00M230G?qs=%2Fha2pyFadui2tF2f%252BrCuvTbl14KSpr8r%252Bm%252BIIgMjCeYn8Vrjb1pxHV5dmE3SIPXj
+
 [CXA1512-0000-000F00M40E1]: https://www.mouser.com/ProductDetail/Cree-Inc/CXA1512-0000-000F00M40E1?qs=sGAEpiMZZMu4Prknbu83y2v%252BSc%2F9JbOg3SkQEVjlXWroGuudCTL3JQ%3D%3D
 
 [CXA1512-0000-000F00M40E3]: https://www.mouser.com/ProductDetail/Cree-Inc/CXA1512-0000-000F00M40E3?qs=sGAEpiMZZMu4Prknbu83y2v%252BSc%2F9JbOg3k4cF4PoeCPJIEBylxeI%252BQ%3D%3D
@@ -331,3 +415,5 @@ The spectral diagram for the 90 CRI bulbs is much close to ideal for chlorophyll
 [CXA1507-0000-000N0UD427H]: https://www.mouser.com/ProductDetail/Cree-Inc/CXA1507-0000-000N0UD427H?qs=sGAEpiMZZMu4Prknbu83y8%252BOyfcV9kMeVgOzvhAxJpU%3D
 
 [white, high power LEDs on mouser]: https://www.mouser.com/Optoelectronics/LED-Lighting/LED-Emitters/High-Power-LEDs-White/_/N-8usfjZ1yzvvqx?Ns=Pricing%7c0&No=100&P=1yooko6Z1yonoecZ1yci252Z1yvhvgeZ1yzt855Z1yzt876Z1yzt87eZ1yzt879Z1yzt851Z1yzt850Z1yzt86z&Rl=8usfjZgjdhgkZ1yzri0aZ1yxt7pySGT
+
+[the datasheet]: https://www.bridgelux.com/sites/default/files/resource_media/Bridgelux%20DS103%20V22%20Gen%207%20Array%20Datasheet%2020181105%20Rev%20N.pdf)

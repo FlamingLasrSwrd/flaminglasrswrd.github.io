@@ -2,8 +2,9 @@
 layout: "post"
 title: "Why you may want to rethink vermiculite media"
 date: "2019-03-18 15:12"
-category: active
-tags:
+category: archive
+phase: write-up
+tags: biology
 author: Elijah K. Dunn
 zotero-collection:
 abstract: >

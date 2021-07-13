@@ -1,11 +1,10 @@
 title: Newton's Flaming Laser Sword
-short_title: FlamingLasrSwrd
-#email: elijah.k.dunn+fls@gmail.com
+short_title: FLS
+#email: flaminglasrswrd@protonmail.com
 description: >
-  An unfinished collection.
+  An (always) unfinished collection of science machines.
 baseurl: ""
-url: "http://flaminglasersword.com"
-#github_username:  flaminglasrswrd
+url: "https://flaminglasersword.com"
 date_format: "%b %-d, %Y"
 author: Elijah K. Dunn
 header_pages:
@@ -28,9 +27,9 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - _private
-  - _mdwriter.cson
+#  - _mdwriter.cson
 permalink: pretty
-paginate: 7
+paginate: 10
 destination: ../flaminglasersword/
 
 # Conversion
@@ -38,7 +37,7 @@ excerpt_separator: "<!--more-->"
 
 
 # Google services
-google_verification:
+google_verification: pKUGvnTMbpPcz4cTtIkbcLLOpevbAfuGVbUSTkvc5XY
 # Use either direct GA implementation or set up GTM account
 # - using both will skew your data (leave blank to not use at all)
 google_analytics: UA-121123907-1
@@ -64,25 +63,35 @@ fb_page_id: FlamingLasrSwrd
 
 # Social icons
 github_username: flaminglasrswrd
-#reddit_username: flaminglasrswrd
+reddit_username: flaminglasrswrd
 wikipedia_username: flaminglasrswrd
 instructables_username: FlamingLasrSwrd
-#stackoverflow_id: 9530723
+stackoverflow_id: 9530723
 twitter_username: flaminglasrswrd
 instagram_username: flaminglasrswrd
 bitbucket_username:
 skype_username:
-#steam_nickname: ekdunn
+steam_nickname: ekdunn
 google_plus_id:
 linkedin_username:
 angellist_username:
 medium_id:
-bitcoin_url: 32Raj9qa4tZeXEK1aq9wonr8t9GHZYqy7t
-#paypal_url: paypal.me/ekdunn
+paypal_url: https://paypal.me/ekdunn
 flattr_button:
 telegram_username:
 vk_id:
 academictorrents: lasrswrd
+ko-fi: flaminglasrswrd
+
+# Cryptocurrency Addresses
+crypto:
+  BTC: 3M3K3YB1AwFG4kU1ssW4BUUJNyYTE2ueRg
+  ETH: 0x14F9eEF5FAeE331D5D7C352bBcdBa92E077E346d
+  BCH: qq3ruthwuzj5z2ng20ct2jsxevumpgs7fgzx7c5rgv
+  ETC: 0x60B6b5b46c0a2495797C9a7FfB4da1c8f907c1DA
+  LTC: MVYaKVyzzdjmWLKeaPTayVhkpErRrn6qQd
+  XMR: 48yFbg1yuNBVKZSCuiPDEp9Z2ZAhYsL4EdChWJ7V2JsXeBwrqbToFjPBLQHaeKBHvMP61YuJ7FbzmLkMekfvtxt97oBgA4G
+  ZEC: t1KNhE3BdPnTGBijr2QJLQLRNcbFieQXLco
 
 # Post sharing icons
 show_sharing_icons: false
@@ -141,7 +150,8 @@ pandoc:
     - smart
     - mathjax
     - toc
-    - csl: _posts/custom.csl
+#    - csl: _posts/custom.csl
+    - csl: assets/src/csl/chicago-author-date.csl
     - bibliography: _data/library.bib
 
   # jekyll-pandoc-multiple-formats
@@ -160,7 +170,7 @@ pandoc:
 #    pdf: '--latex-engine=xelatex'
 #    epub: '--epub-chapter-level=2'
 
-pgp: |
+pgp: |-
   -----BEGIN PGP PUBLIC KEY BLOCK-----
 
   Version: GnuPG v1
@@ -193,3 +203,6 @@ pgp: |
   =6+Gq
 
   -----END PGP PUBLIC KEY BLOCK-----
+
+
+end-line: "This is an end line"

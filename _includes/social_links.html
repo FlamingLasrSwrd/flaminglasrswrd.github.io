@@ -1,5 +1,5 @@
 <div class="social-icons">
-  <div class="social-icons-right">
+  <div class="social-icons-center">
     {% if site.github_username %}
       <a class="fa fa-github" href="https://github.com/{{ site.github_username }}"></a>
     {% endif %}
@@ -43,14 +43,30 @@
     {% if site.vk_id %}
       <a class="fa fa-vk" href="https://vk.com/{{ site.vk_id }}"></a>
     {% endif %}
-    {% if site.bitcoin_url %}
-      <a class="fa fa-bitcoin" href="{{ site.bitcoin_url }}"></a>
+    {% if site.flattr_button %}
+      {{ site.flattr_button }}
     {% endif %}
+<!-- Show me the money -->
     {% if site.paypal_url %}
       <a class="fa fa-paypal" href="{{ site.paypal_url }}"></a>
     {% endif %}
-    {% if site.flattr_button %}
-      {{ site.flattr_button }}
+<br>
+    {% if site.ko-fi %}
+      <a class="fa" href="https://www.ko-fi.com/{{ site.ko-fi }}">
+        <img src="/assets/img/icons/icon-ko-fi.svg">
+      </a>
+    {% endif %}
+    {% if site.crypto %}
+      {% for coin in site.crypto %}
+        <a class="btn fa" data-toggle="collapse" href="#{{ coin[0] }}" role="button" aria-expanded="false" aria-controls="{{ coin[0] }}">
+          <img src="/assets/img/icons/crypto/{{ coin[0] }}.svg">
+        </a>
+      {% endfor %}
+      {% for coin in site.crypto %}
+        <div class="collapse" id="{{ coin[0] }}">
+            <div class="card card-body small">{{coin[1]}}</div>
+        </div>
+      {% endfor %}
     {% endif %}
   </div>
 </div>

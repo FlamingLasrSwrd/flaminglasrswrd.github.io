@@ -4,6 +4,7 @@ title:  "Investing"
 date:   2015-05-24
 tags: finance
 category: archive
+phase: design
 abstract: >
   Started with an analysis of some ETFs... Conclusion: [Wealthfront](https://wealthfront.com) does it better.
 ---

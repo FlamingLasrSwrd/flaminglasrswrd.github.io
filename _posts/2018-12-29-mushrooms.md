@@ -3,16 +3,29 @@ layout: "post"
 title: "Mushrooms"
 date: "2018-12-29 17:22"
 category: active
+phase: experimental
 tags: mushrooms biology
 author: Elijah K. Dunn
 zotero-collection: https://www.zotero.org/ekdunn/items/collectionKey/DLI8YQMP
 gallery: fungi
 abstract: >
   Notes on starting a mushroom growing business: L. edodes to P. ostreatus.
-graphical-abstract: /assets/img/fungi/20181022_235533.jpg
+graphical-abstract: /assets/img/fungi/190720-150319-fungi-laundry-basket-oyster.jpg
 ---
 
 # Work Log
+
+## 06 Oct
+2nd generation grain for Lion's mane and reishi jars. I started three of each and only had time to transfer one of each. The two jars of militaris has yet to reach 100% coverage.
+
+One Lion's mane jar had contamination. Considering my success rate with agar lately, I don't believe it was my technique.
+
+I am not going to have the space to grow all of these jars out. Guess they will have to be Christmas presents or something.
+
+## 28 Sep 2020
+Started Lion's Mane, Reishi, and C. militaris grain masters from LC. Standard no-rinse, no-soak oat prep.
+
+I attempted to resurrect some old Shiitake and Oyster LCs on agar. No such luck. I guess 4 years is just too old.
 
 ## 12 Jan 2019
 Studying the various process techniques and grains for spawn production.

@@ -1,11 +1,15 @@
 ---
 layout: post
 title:  "IEC Fusion"
-date:   2011-05-01
+date:   2007-10-01
 tags: electronics
 category: archive
+phase: experimental
+zotero-collection:
+gallery: fusor
 abstract: >
   For a senior project in high school I elected to build a fusion reactor for some reason. At the time, I was the youngest person (15) to ever attempt to do so. I never actually achieved fusion. I did, however, get some great images of plasma inside the reactor, and the project got my foot in the door for research at CERN later.
+graphical-abstract: /assets/img/fusor/glowing_iec_fusion.jpg
 ---
 
 # My Fusor in Action

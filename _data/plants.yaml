@@ -1,0 +1,138 @@
+---
+lemon-balm:
+  genus: Melissa
+  species: officinalis
+  cultivar:
+  common-name:
+    - balm
+    - lemon balm
+    - common balm
+    - balm mint
+  examine: https://examine.com/supplements/melissa-officinalis/
+  important-compounds:
+    - Rosmarinic acid
+
+gotu-kola:
+  genus: Centella
+  species: asiatica
+  cultivar:
+  common-name:
+
+piper-auritum:
+  genus: Piper
+  species: auritum
+  cultivar:
+  common-name:
+    - rootbeer plant
+    - hoja santa
+    - yerba santa
+    - hierba santa
+    - Mexican pepperleaf
+    - sacred pepper
+    - false kava
+bacopa:
+  genus: Bacopa
+  species: monnieri
+  cultivar:
+  common-name:
+
+ashwagandha:
+  genus: Withania
+  species: somnifera
+  cultivar:
+  common-name:
+
+yellow-turmeric:
+  genus: Curcuma domestica
+  species:
+  cultivar:
+  common-name:
+
+kanna:
+  genus: Sceletium
+  species: tortuosum
+  cultivar:
+  common-name:
+  examine:
+  important-compounds:
+tobacco:
+  genus: Nicotiana
+  species: tabacum
+  cultivar: TC 592
+  common-name:
+
+aztec-tobacco:
+  genus: Nicotiana
+  species: rustica
+  cultivar: TR 1
+  common-name:
+
+st-johns-wort:
+  genus: Hypericum
+  species: perforatum
+  cultivar: PI 664859
+  common-name:
+
+rhodiola:
+  genus: Rhodiola
+  species: rosea
+  cultivar:
+  common-name:
+
+marigold:
+  genus: Calendula
+  species: officinalis
+  cultivar: resina
+  common-name:
+
+phalaris:
+  genus: Phalaris
+  species: aquatica
+  cultivar: PI 314963
+  common-name:
+
+ephedra:
+  genus: Ephedra
+  species: californica
+  cultivar: W6 46543
+  common-name:
+
+borage:
+  genus: Borago
+  species: officinalis
+  cultivar:
+  common-name:
+
+periwinkle:
+  genus: Cantharanthus
+  species: roseus
+  cultivar: PI 538776
+  common-name:
+
+morning-glory:
+  genus: Ipomoea
+  species: tricolor
+  cultivar: PI 633607
+  common-name:
+
+epazote:
+  genus: Dysphania
+  species: ambrosioides
+  cultivar: PI 612852
+  common-name:
+
+lavender:
+  genus: Lavandula
+  species: vera
+  cultivar:
+  common-name:
+
+example:
+  genus:
+  species:
+  cultivar:
+  common-name:
+  examine:
+  important-compounds:
+
+---

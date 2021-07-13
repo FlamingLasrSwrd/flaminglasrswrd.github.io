@@ -3,6 +3,7 @@ layout: post
 title: "L-Carnitine Zinc"
 date: "2017-03-06 11:51:09 -0600"
 category: archive
+phase: results
 tags: chemistry
 related: Alcohol
 abstract: >

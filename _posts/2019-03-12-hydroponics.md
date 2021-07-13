@@ -3,21 +3,26 @@ layout: "post"
 title: "Hydroponics"
 date: "2019-03-12 11:35"
 category: active
+phase: design
 tags: biology electronics
 author: Elijah K. Dunn
 zotero-collection: https://www.zotero.org/ekdunn/items/collectionKey/LHPUXSLC
 gallery: hydroponics
 abstract: >
   Growing plants in water: an automated approach.
-graphical-abstract:
+graphical-abstract: /assets/img/plants/plants-tobacco-kratky-seedling.JPG
 ---
 
 # Prior Art
 
-- [yieldbuddy](http://yieldbuddy.com/)
+- [Mycodo](https://github.com/kizniche/Mycodo)
+    - An open source environmental regulation system
+- [yieldbuddy](https://yieldbuddy.com/)
+    - raspberry Pi + arduino stack
 - [DRO-Matic](https://github.com/drolsen/DRO-Matic)
+    - fully automatic arduino dosing system
 - [Atlas Scientific](https://www.atlas-scientific.com/)
-    - everything at a price
+    - everything at a price...
 - [Aeroponics V4 | Sony Arouje](https://sonyarouje.com/2016/10/06/aeroponic-controller-v4/)
     - manual pH/nutrient adjustment
 - [Hydruino | Instructables](https://www.instructables.com/id/Hyduino-Automated-Hydroponics-with-an-Arduino/)
@@ -38,10 +43,10 @@ graphical-abstract:
     - large system based on commercial automation equipment
 - [GrowMau5 DIY pH automation | YouTube](https://youtu.be/OCYezZtpQOI)
     - based on commercial pH controller
-- [Arduino Hydroponics Controller | Youtube](https://youtu.be/5KDkkAL9a5I)
 - [Build your own Hydroponics System Using Arduino | CityOS Tech Workshops](https://cityos.io/topic/301/Build-Your-Own-Hydroponic-System-using-Arduino)
     - a piecemeal set of basic arduino automation instructions
 - [OpenGarden](https://www.cooking-hacks.com/documentation/tutorials/open-garden-hydroponics-irrigation-system-sensors-plant-monitoring/)
+    - a self-contained kit for sale
 - [Food Computer | MIT](https://www.media.mit.edu/posts/build-a-food-computer/)
     - An extensive MIT project focused on environmental plant studies and standardization and not productivity maximization
 
@@ -72,6 +77,36 @@ graphical-abstract:
     - or the drop-in [adafruit package](https://github.com/adafruit/Adafruit_Python_PureIO)
 
 # Work Log
+
+## 24 Nov 2020
+Kratky hydroponics is not suitable for long term growth. Every time you top up the reservoir, you drown the "air roots" and the plant suffers. Maintaining a consistent liquid level manually is a possibility, but that sucks. I could use float valves.
+
+I think I will use a regular pump recirculating system instead.
+
+## 29 Sep 2020
+I'm leaving town for 10 days. I need a way to water my plants.
+
+Ten days isn't long enough for the internal clock to drift far enough that it isn't useful so I won't need a RTC right now.
+
+[Capacitive moisture sensors](https://www.switchdoc.com/2020/06/tutorial-capacitive-moisture-sensor-grove/)
+
+[Soil moisture sensors—How they work. Why some are not research-grade.](https://www.metergroup.com/environment/articles/tdr-fdr-capacitance-compared/)
+
+Soil capacitance measurements are affected by frequency and by temperature.
+
+## 21 Aug 2019
+
+### DIY Rooting Hormone Gel
+I started with [this](https://scienceinhydroponics.com/2017/07/making-your-own-diy-plant-rooting-gel.html) formula but used the potassium salt of indole-3-butyric acid instead of IBA. I also wanted a higher concentration of IBA (90mM) because of a paper on cloning walnuts suggested a higher concentration was better [@stevens_origin_2017].
+
+## 20 Aug 2019
+Built an ultrasonic cloner today.
+
+![](/assets/img/hydroponics/190820-131938-hydroponics-ultrasonic-cloner-side-view.JPG)
+
+![](/assets/img/hydroponics/190820-132038-hydroponics-ultrasonic-cloner-peek-mist.JPG)
+
+I have several hydroponic tests in the works and I want a stable line of plants to compare the results.
 
 ## 22 Mar 2019
 Looked into growing specialty crops in aquaponic/hydroponic systems. Saffron would yield $1-2 per square foot in 3-4 months. Definitely not worth the labor.

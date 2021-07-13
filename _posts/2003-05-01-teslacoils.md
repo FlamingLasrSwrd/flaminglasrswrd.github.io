@@ -3,6 +3,7 @@ layout: "post"
 title: "Tesla Coils"
 date: "2003-05-01"
 category: active
+phase: experimental
 tags: electronics
 author: Elijah K. Dunn
 zotero-collection: https://www.zotero.org/ekdunn/items/collectionKey/SGUSHQ6L
@@ -35,20 +36,35 @@ I missed my deadline :(
 ## 10 Oct 2018
 - interrupter work
 
+It gets a little messy around here when I'm this close to a deadline:
+
+![](/assets/img/tesla/20180916_214011-tesla-t2c2-messy-workspace.jpg)
+
 ## 09 Oct 2018
 - mostly framing work: using nylon bolts to attach various components together
 
+![](/assets/img/tesla/20181009_142623-tesla-t2c2-secondary-end-cap.jpg)
+
 ## 08 Oct 2018
-- secondary coil has been wound and coated with 1/2 pint of polyurethane
-    - I would have preferred to use epoxy, but I didn't want to spend the extra $30
-- Primary coil supports were cut from 1/2" HDPE cutting board
-    - 7/32 holes were drilled to accommodate the 1/4" annealed copper tube
-    - a polycarbonate circle was cut for the base of the primary coil
-- copper bus bar was cut for the full bridge of IXG60n60's
-    - I'm a little worried that I cut the bus bar a little small, but too late now
-    - I configured the electrolytic capacitors in parallel: if I want a voltage doubler I will need to redo it
-- made a toroidal topload from 8" dryer duct wrapped in aluminum tape
-    - I also have a 4" duct if I need more capacitance (probably)
+Made a toroidal topload from 8" dryer duct wrapped in aluminum tape. I also have a 4" duct if I need more capacitance (probably).
+
+![](/assets/img/tesla/20181006_005949-tesla-t2c2-topload.jpg)
+
+Secondary coil has been wound and coated with 1/2 pint of polyurethane. I would have preferred to use epoxy, but I didn't want to spend the extra $30
+
+![](/assets/img/tesla/20180922_190114-tesla-t2c2-winding-secondary.jpg)
+
+Primary coil supports were cut from 1/2" HDPE cutting board. 7/32 holes were drilled to accommodate the 1/4" annealed copper tube.
+
+![](/assets/img/tesla/20181002_204053-tesla-t2c2-cutting-board-primary-supports.jpg)
+
+A polycarbonate circle was cut for the base of the primary coil.
+
+![](/assets/img/tesla/20181008_221104-tesla-t2c2-primary-on-structure.jpg)
+
+Copper bus bar was cut for the full bridge of IXG60n60's. I'm a little worried that I cut the bus bar too small, but too late now. I configured the electrolytic capacitors in parallel: if I want a voltage doubler I will need to redo it.
+
+![](/assets/img/tesla/20181007_001719-tesla-bus-close.jpg)
 
 ## 21 Sep 2018
 - attempted to make a cone out of paper
@@ -61,6 +77,8 @@ I missed my deadline :(
     - now... to build a coil winding jig
 - Finished the winding jig
     - it just so happens that the small end of the traffic cone fits right into my ice cream maker's gear: perfect
+
+![](/assets/img/tesla/20180921_223522-tesla-t2c2-traffic-cone-winding-jig.jpg)
 
 ## 20 Sep 2018
 - comparing the benefits of a conical secondary?
@@ -161,15 +179,15 @@ I plan on using 4 in series and 5 in parallel for a total of 188nF at 6000 VDC. 
 
 I finally got the controller board done. It is based on Steve Ward's [universal driver 1.3](http://stevehv.4hv.org/new_driver.html), but it is modified slightly. The schematic is the same, but I made the PCB more suitable for the [Toner Transfer Method](http://www.instructables.com/id/Cheap-and-Easy-Toner-Transfer-for-PCB-Making/) for PCB manufacture. A note on PCBs: don't use Ferric Chloride! It is terrible for the environment. Use [copper chloride](http://www.instructables.com/id/Stop-using-Ferric-Chloride-etchant!--A-better-etc/) instead.
 
-- [Controller PCB](assets/doc/controller.brd) - Cadsoft Eagle Board File (Error Fixed 7/11/12)
-- [Toner Transfer](assets/doc/controller_transfer.pdf) - PDF file to print on a laser printer
-- [Parts List](assets/doc/controller_parts.txt) - TXT file with a basic parts list
+- [Controller PCB](/assets/doc/controller.brd) - Cadsoft Eagle Board File (Error Fixed 7/11/12)
+- [Toner Transfer](/assets/doc/controller_transfer.pdf) - PDF file to print on a laser printer
+- [Parts List](/assets/doc/controller_parts.txt) - TXT file with a basic parts list
 
 I would suggest looking over [this](http://www.instructables.com/id/how-to-use-eaglecad/) instructable for an idea how to use Eagle. For some reason whenever a board file is saved, the polygon doesn't show up when you reopen it. If you want to edit the board, make sure you use the Ratsnest button to show the GND planes. If you just want to straight copy the board, you can use the transfer page. It is just a pdf file with two copies of the top and bottom of the board to be used in the Toner Transfer Method. The parts list is the same (nearly) as Steve Ward's. Some of the parts are obsolete so you might have to substitute. I will try and post a copy of the order I placed with Mouser.
 
 ### Simulations
 
-[Scan Tesla](http://wiki.4hv.org/index.php/ScanTesla) was developed by Terry Fritz in order to simply simulate a tesla coil (both solid state and original) using lumped circuit elements. Basically you just input the possible dimensions of your coil (secondary and primary inductance, tank capacitance, etc.) and Scan Tesla runs through each possibility and spits out the best one. Pretty neat software I must say. So anyway, [here](assets/doc/input.txt) is the input text file and [here](assets/doc/output.txt) is the output I get. I ended up winding 43.75" before running out of space. That works out to be about 3000 turns of wire. Quite a bit higher than you usually see. Scan tesla suggested that the benefits of a higher inductance outweighed the increase in resistance. I guess we will see... I measured the resistance of the wire using a standard digital multimeter. The [inductance calculator](http://hamwaves.com/antennas/inductance.html) I used suggested that my resistance should be around 1300 ohms. It was 289 ohms. Something is wrong here. Maybe the inductance calculator includes some reactance from the inductor as well? They do ask for the design frequency which would suggest they did. I am hoping that 289 ohms is right. My output drops significantly if the secondary resistance is 1300 ohms, obviously. The expected resistance for 27 AWG wire is about 51 ohms per thousand feet. That gives about 315 ohms resistance total. Much closer to what I measured. Skin depth is greater than the conductor diameter (below 130 KHz anyway).
+[Scan Tesla](http://wiki.4hv.org/index.php/ScanTesla) was developed by Terry Fritz in order to simply simulate a tesla coil (both solid state and original) using lumped circuit elements. Basically you just input the possible dimensions of your coil (secondary and primary inductance, tank capacitance, etc.) and Scan Tesla runs through each possibility and spits out the best one. Pretty neat software I must say. So anyway, [here](/assets/doc/input.txt) is the input text file and [here](/assets/doc/output.txt) is the output I get. I ended up winding 43.75" before running out of space. That works out to be about 3000 turns of wire. Quite a bit higher than you usually see. Scan tesla suggested that the benefits of a higher inductance outweighed the increase in resistance. I guess we will see... I measured the resistance of the wire using a standard digital multimeter. The [inductance calculator](http://hamwaves.com/antennas/inductance.html) I used suggested that my resistance should be around 1300 ohms. It was 289 ohms. Something is wrong here. Maybe the inductance calculator includes some reactance from the inductor as well? They do ask for the design frequency which would suggest they did. I am hoping that 289 ohms is right. My output drops significantly if the secondary resistance is 1300 ohms, obviously. The expected resistance for 27 AWG wire is about 51 ohms per thousand feet. That gives about 315 ohms resistance total. Much closer to what I measured. Skin depth is greater than the conductor diameter (below 130 KHz anyway).
 
 I might try and modify Scan Tesla to include some practical design considerations. If you want to find the ideal number of turns in your coil you have to run separate simulations because secondary resistance and inductance are not linked. The program would just use the lowest resistance and highest inductance. Hardly a real world situation.
 
@@ -196,7 +214,7 @@ For those of you who have been doing these kinds of projects you know what happe
 - [Chester's Electronic Labs](http://www.hilo90mhz.hungrychild.org/tesla/DRSSTC/DRSSTC.html) - An example of Steve Wards original driver.
 
 ## 15 May 2012
-So I built my first DRSSTC in the past few weeks. I had to do a final project for my PHSX 536: Electronic Circuit Design and Measurement class. I didn't choose a wimpy LED flasher circuit or anything like that.... I chose a [Dual Resonant Solid State Tesla Coil](http://wiki.4hv.org/index.php/Dual_Resonant_Solid_State_Tesla_Coil). In retrospect, probably not something that should be done in a few weeks. It never officially worked. While taking some voltage measurements one of the 40n60 IGBTs blew up in my face. Scary... but no permanent damage. I wrote a nice [paper](assets/doc/DRSSTC.pdf) on it however. There might be some things wrong with it. I kinda had to BS a little about the things I didn't understand. Hopefully my teacher doesn't understand either and skips over those parts. You can read it to get a good understanding of the [schematic](http://stevehv.4hv.org/drsstc_design.htm) I used. Thanks Steve!
+So I built my first DRSSTC in the past few weeks. I had to do a final project for my PHSX 536: Electronic Circuit Design and Measurement class. I didn't choose a wimpy LED flasher circuit or anything like that.... I chose a [Dual Resonant Solid State Tesla Coil](http://wiki.4hv.org/index.php/Dual_Resonant_Solid_State_Tesla_Coil). In retrospect, probably not something that should be done in a few weeks. It never officially worked. While taking some voltage measurements one of the 40n60 IGBTs blew up in my face. Scary... but no permanent damage. I wrote a nice [paper](/assets/doc/DRSSTC.pdf) on it however. There might be some things wrong with it. I kinda had to BS a little about the things I didn't understand. Hopefully my teacher doesn't understand either and skips over those parts. You can read it to get a good understanding of the [schematic](http://stevehv.4hv.org/drsstc_design.htm) I used. Thanks Steve!
 
 ## 5 May 2012
 I didn't get an internship this summer. :,( On the positive side, now I have nothing to do but everything I want to do. I made a list of things that I want to accomplish this summer. One of them is build an audio modulated DRSSTC with an arc length longer than I am tall (~6'). All my classmates told me to call them when it was finished. Of course I am going to show off!

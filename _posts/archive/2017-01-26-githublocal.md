@@ -3,6 +3,7 @@ layout: post
 title:  "Github Pages Local Build"
 date:   2017-01-26
 category: archive
+phase: results
 tags: programming
 abstract: >
   Some environment work on getting this site up and running.

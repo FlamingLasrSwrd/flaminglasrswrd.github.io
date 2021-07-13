@@ -2,7 +2,8 @@
 layout: "post"
 title: "Reddit Citations"
 date: "2018-05-07"
-category: inactive
+category: archive
+phase: results
 tags: programming
 author: Elijah K. Dunn
 zotero-collection: https://www.zotero.org/groups/2185229/citereddit

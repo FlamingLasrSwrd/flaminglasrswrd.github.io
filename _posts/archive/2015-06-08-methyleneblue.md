@@ -5,6 +5,7 @@ date:   2015-06-08
 modified: 2016-09-19
 updated: 2015-06-08
 category: archive
+phase: write-up
 tags: biochemistry nootropics chemistry
 abstract: >
   Methylene Blue is a rare nootropic. I experimented with it for a while but ultimately stopped due to its MAO activity. Perhaps I will resurrect this project when mitochondrial function is my primary limiting factor and I am willing to give up eating ages cheeses.
@@ -61,7 +62,7 @@ Apparently when MOAIs are mixed with tyramine containing foods, a hypertensive c
 
 ### Purification
 Aiming for >98% purity. Minimizing heavy metal contamination and similarly structured dyes. Rubber gloves are your friend since MB dyes just about anything and at extremely low concentrations.
-Each method of purification can be applied in any order or combination. As with any purification, more is better but at the cost of greater product loss. Most contamination will be in the form of inorganic metal salts and like structured dyes. Soluble impurities can be made soluble by the addition of a precipitant. Recrystallization allows separation of precipitated product from dissolved impurities. Organic extraction removes similar dyes. I am currently purifying a Methylene Blue product bought online labeled as 93% dye content. Procedures will be administered in this order:
+Each method of purification can be applied in any order or combination. As with any purification, more is better but at the cost of greater product loss. Most contamination will be in the form of inorganic metal salts and like structured dyes. Soluble impurities can be made insoluble by the addition of a precipitant. Recrystallization allows separation of precipitated product from dissolved impurities. Organic extraction removes similar dyes. I am currently purifying a Methylene Blue product bought online labeled as 93% dye content. Procedures will be administered in this order:
 
 1. Dissolve MB in excess water
 2. Add precipitant

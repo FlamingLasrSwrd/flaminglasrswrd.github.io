@@ -2,7 +2,8 @@
 layout: "post"
 title: "Productivity"
 date: "2018-02-28 17:34"
-category: active
+category: archive
+phase: experimental
 tags: computers
 abstract: >
   Keylogging and mouse tracking data can be used as a primary endpoint for evaluating the effect of any *quantified self* data that one seeks to track. RescueTime is also available to monitor mouse movement and time.

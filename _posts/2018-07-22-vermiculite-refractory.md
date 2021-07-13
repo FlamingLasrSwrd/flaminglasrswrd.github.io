@@ -2,14 +2,15 @@
 layout: "post"
 title: "Vermiculite Refractory"
 date: "2018-07-22 12:06"
-category: active
+category: archive
+phase: results
 tags: chemistry fire
 author: Elijah K. Dunn
 zotero-collection:
 gallery: verm-refractory
 abstract: >
   A high temperature, insulating refractory exclusively from the hardware store at one-tenth the cost of and better than commercial firebricks or ceramic fiber. It is a pain to mold into complex shapes, however.
-graphical-abstract: "/assets/img/verm-refractory/20181222_200313.jpg"
+graphical-abstract: /assets/img/verm-refractory/20180630_190114-verm-refractory-brick-testing.jpg
 ---
 
 **Update 30 Dec 2018:** Molded refractories are a pain to deal with because of the required compression. A better option is to make a brick mold and build your furnace separately.
@@ -93,8 +94,79 @@ Using a clay binder instead of a chemical one will increase the heat conductivit
     - repeat 2 more times for a total of 7kg vermiculite used
     - let sit overnight
 
-
 # Log
+
+## 21 Sep 2019
+There's some delamination that I can feel under the surface of the brick I made last week. I made a second brick starting with 450g of vermiculite. This was insufficient to make a full brick, unfortunately.
+
+Brick making would be a lot easier if I had a hydraulic press. Perhaps I could try to squish the mold between my car and a floor jack. That would only give about 1000lbs because my car is tiny.
+
+## 15 Sep 2019
+So I've been looking into phosphate binders. Apparently, the reaction of alumina and phosphoric acid only takes place above 127C [@lopes_self-flowing_2017]. Magnesia on the other hand, converts to the phosphate at room temperature. I'm thinking a phosphoric acid, magnesia, alumina, vermiculite refractory. Alumina isn't commonly available in big box stores, but it is available at every pottery store. I'm only using it because I have some and it is extremely refractory. I'll run some tests on magnesia bonded only.
+
+Magnesia (sort of) is available as magnesium hydroxide "Milk of Magnesia" laxative.
+
+I have been using Krud Kutter Concrete Clean & Etch as my source of phosphoric acid (25-50%). I also found OUT filter mate Heavy Duty Softener cleaner to contain 15-40% phosphoric acid according to the sds. The choice is yours.
+
+TODO: titrate each phosphoric acid source
+
+Also, finding some sort of clay binder for mineral wool insulation would be awesome. As it is, mineral wool is too fragile.
+
+- 15.85g verm (2x the volume of my mold)
+- added 1ml milk of magnesia (~0.8g) to a test tube (0.5%)
+- diluted with 5ml H2O
+- added ~1.5ml dilute phosphoric acid (solution immediately clears) (10%)
+- solution is mixed slowly into vermiculite
+- mix is pressed with thumb into small mold (stainless condiment cup)
+- compressed mix occupies approximately 40% of the volume of the free flowing mix
+- mold is heated with propane burner
+
+There's quite a lot of expansion upon heating: 15% or more. The mix might have to be dried while compressed. Or heated more evenly in an oven. In any case, I stopped heating after a few minutes and the thing crumbled. More experimentation is needed.
+
+I decided to give brick making another go. For a single 9"x4.5"x2.5" standard firebrick:
+
+- 1.29lbs (1lb 4.6oz) vermiculite
+- 30g magnesium sulfate
+- 60g phosphoric acid (double the recipe)
+- 60g sulfuric acid
+- 30g alumina
+
+I was unable to compress the brick sufficiently to use all of the mix. Next batch should be 3-4oz less. For the surface of this brick (~40 sq. in), over 2000 lbs of pressure is needed for appropriate compression.
+
+The formed brick was dried overnight in the mold and then put in the oven at 350F.
+
+## 11 Aug 2019
+Let's try some alternative recipes using silicate bonded vermiculite. Start by making some sodium silicate from cat litter and drain cleaner.
+
+- 60g silica gel cat litter (60.1g/mol)
+- 200ml H2O
+- 20g sodium hydroxide drain cleaner (40.0g/mol)
+
+This results in a 29% solution of 2:1 sodium silicate solution with a density of 1.2g/ml. Ideally, a ratio of 2.0-2.5:1 silicate to alkali is used for refractory purposes. I started with 2:1 for solubility.
+
+If this goes well, I will move on to using potassium silicate for greater temperature resistance. Sodium formulations are limited to about 650C. If you are using perlite, go with the cheaper sodium because the limiting factor is the melting point of perlite.
+
+This test run will be with 100ml of fine vermiculite and 10ml (12g total; 3.5g silicate) of my silicate solution. The ingredients are mixed in a baggie and poured into a 2 inch PVC section of 4 inches length. The mix is then compressed under my weight to a volume of about half. I then used a carbon dioxide generator to blow through about 1L of CO2, which is way more than required (25% by weight of silicate or 0.9g/400ml).
+
+![](/assets/img/verm-refractory/190811-143230-verm-refractory-silicate-test-1-fill.JPG)
+
+![](/assets/img/verm-refractory/190811-143428-verm-refractory-silicate-test-1-compressed.JPG)
+
+![](/assets/img/verm-refractory/190811-150942-verm-refractory-silicate-test-1-CO2-setup.JPG)
+
+So... ya... that didn't work. The test puck disintegrated.
+
+![](/assets/img/verm-refractory/190811-153956-verm-refractory-silicate-test-1-failure.JPG)
+
+Let's try more silicate. 30ml silicate solution per 100ml vermiculite this time. Upon compression the silicate solution dribbled out of the bottom of the mold. I decided to bake the puck in the oven at 500F before exposing it to direct flame to reduce heat shock and cracking. I might have to make a more concentrated silicate solution.
+
+The puck seems to be cured on the outside.
+
+![](/assets/img/verm-refractory/190811-171330-verm-refractory-silicate-test-2.JPG)
+
+But it definitely isn't on the inside.
+
+![](/assets/img/verm-refractory/190811-202738-verm-refractory-silicate-test-2-inside.JPG)
 
 ## 30 Jun 2018
 - Refractory bricks: 8"x4"x2.5" -> 80 in^3 -> 0.0463 ft^3 -(23.6 lbs/ft^3)-> 1.09 lbs -> **fill each brick mold with 494g refractory mix**
@@ -113,6 +185,7 @@ Using a clay binder instead of a chemical one will increase the heat conductivit
 - The first vermiculite refractory went great; even hand compression had pretty good characteristics despite 1/5th the density
 
 Recipe:
+
 - 100 parts vermiculite
 - 5 parts magnesium sulfate hemihydrate as 20% soln.
 - add slowly; mix to uniformity
