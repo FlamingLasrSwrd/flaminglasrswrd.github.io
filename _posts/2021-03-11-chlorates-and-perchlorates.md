@@ -52,7 +52,7 @@ The ideal cathode for chlorate production has a low oxygen overpotential.
 **indicates composite reaction**
 [@viswanathan_chemical_1984, @neodo_electrolysis_2012, @czarnetzki_formation_1992, @wanngard_catalyzing_2017]
 
-The maximum chloride to chlorate conversion efficiency is 66%. [@sreekumar_adaptive_2020]
+The maximum chloride to chlorate conversion efficiency is 66% for a cell without pH control. [@sreekumar_adaptive_2020]
 
 
 # Work Log

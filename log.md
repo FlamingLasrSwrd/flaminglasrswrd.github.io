@@ -6,8 +6,195 @@ abstract: >
   Semi-unfiltered life updates in the moment barely useful to me. Do not take seriously or literally. Project specific updates are located on their respective posts.
 ---
 
+## 03 Sep 2021
+Furious work on the scooter project has ceased. Working at a much more leisurely pace now. I've been using so many rattle cans that my dominant index finger is numb and tingly.
+
+I need to buy replacement [bolts](https://www.boltdepot.com/cart/168125). I'll pay extra for 316 stainless steel socket cap bolts. Phillips is stupid and should be outlawed.
+
+Also, the pull toward a BOM website is definitely real. The struggle to understand, match, purchase, etc. parts for diy projects is substantial and duplicated every time a project is built. There must be a better way. [Voron sourcing guide](https://www.vorondesign.com/sourcing_guide).
+
+Finally bought an analytical balance. Mettler-Toledo AE200s: An ancient and bulky 0.1mg/205g balance. Not too bad for $160. I paid a bit extra for a guaranteed working item (with free returns).
+
+Made my first Etsy sale.
+
+There was a resurgence of mealybugs on the Kratom. On a completely different plant than before. I used an isopropyl alcohol soaked cotton swab to kill any that I could find. Then I spray down all of the plants with Eight permethrin.
+
+Permethrins don't seem to be very effective any more. There is probably some resistance going on.
+
+I ordered an acetamiprid-based systemic pesticide. Hopefully this will control them.
+
+Apparently resistance is easily gained after only a few generations. So the key would be to hit them hard and early. [1](https://link.springer.com/article/10.1007/s12600-021-00936-6) [2](https://link.springer.com/article/10.1007/s12600-016-0519-0) [3](https://onlinelibrary.wiley.com/doi/full/10.1002/ps.3783)
+
+Alternatively, lady bugs (Coleoptera) are predators of mealybugs, especially larvae. [4](https://pubmed.ncbi.nlm.nih.gov/30635871/) If I continue to have and when the acetamiprid has sufficiently dispersed, I will try this.
+
+As a last resort, I can use modified atmosphere treatment. However, the last time I tried this I let it go too long and killed my plant.
+
+Given the neonicotinoid mode of action, suffocation in a modified atmosphere would probably happen faster if the two were used in combination.
+
+Dry ice still isn't available at my local Hyvee, at least, according to their website. I can order it online with a ridiculous shipping fee. I'll have to check with Praxair.
+
+In any case, they are almost too big for my closet now. I need a new space.
+
+Ontology generation really shows you just how terrible our minds are. For example, when reorganizing ontologies, it is often necessary to abstract a certain feature but that extraction of said feature is near impossible. The color of a red balloon can be easily visualized differently and therefore abstracted, but the elasticity of a balloon cannot be unless you already know that mylar ballons exist.
+
+Perhaps more illustratively, I am trying to abstract and objects intended use from its construction. A pulley is used to transmit linear motion of a belt to rotary motion, but that is merely a product of its construction, namely rotational symmetry. Sealing washers and plain washers have identical construction, but their deformation properties lead to different uses. So if I have an ontology based upon use-cases, switching to a property-based ontology is not trivial.
+
+## 18 Aug 2021
+Well that sucked. Aqueous ammonia generator was supposed to yield 1L at 30%. Instead I got 750ml at 7%. I'm sure a lot of it is still dissolved in the ~2.5 liters of reaction mixture. The reaction took 2 days, so I'm not going to run it any longer.
+
+## 17 Aug 2021
+
+[A thorough guide to simple lithium ion charging circuits](https://www.homemade-circuits.com/simplest-safest-li-ion-battery-charger/).
+
+## 15 Aug 2021
+Friction welded some bits of the scooter front fender. It must be made of polyethylene because of the trouble I had. Polypropylene would have been better.
+
+I also reupholstered the seat. It will probably need to be redone. The material isn't exactly upholstery grade.
+
+## 14 Aug 2021
+
+> The ferric salt process uses a solution of ferric ammonium (or alkali-metal) oxalate. Typically, a 2% solution of ferric ammonium oxalate is used at 40°C, and the anodized metal is immersed in this for 15 min, the pH being adjusted to between 4·5 and 6 with oxalic acid or ammonia as necessary. For bronze colours the anodized material may be dipped successively in 2% cobalt acetate solution and then 2% potassium permanganate, at 35°C. [@giles_dyeing_1979]
+
+
+> It can be seen that the ferrioxalate solution is liable to exercise an appreciable solvent effect on the anodic film at pH values below 4·5. Moreover, the colour imparted to the anodic film became more marked the higher the pH. Values between 4·5 and 6·0 appeared to be generally satisfactory. For accurate colour matching, it is essential that the pH be adjusted with oxalic acid from batch to batch. It was found that approximately 1 gm of anodic film raised the pH of 11. of 2% wt/vol ferrioxalate solution approximately 0·2 from a commencing pH of 5·7.[@kape_production_1957]
+
+
+Some long term studies of inorganic dyes.[@kape_longterm_1981]
+
+It seems that iron oxide based dyes (decomposition product of iron ammonium oxalate?) have excellent stability. Beyond that of any organic dye tested.
+
+> However, the gold colour produced by immersing the anodized metal into an aqueous solution of ammonium or sodium ferrioxalate was well known, and the colour seemed relatively stable as judged by some five years' outdoor exposure in various places around the world.
+
+A student's lab procedure [@donahue_anodizing_2014].
+
+## 10 Aug 2021
+
+- [Raspian OS Lite](https://www.raspberrypi.org/software/operating-systems/)
+- [Headless setup](https://www.raspberrypi.org/documentation/computers/configuration.html#setting-up-a-headless-raspberry-pi)
+- [Static IP](https://www.raspberrypi.org/documentation/computers/configuration.html#static-ip-addresses)
+- [SSH config](https://www.raspberrypi.org/documentation/computers/remote-access.html#ssh)
+- [SSH key](https://www.raspberrypi.org/documentation/computers/remote-access.html#copy-your-public-key-to-your-raspberry-pi)
+- [Mycodo install](https://kizniche.github.io/Mycodo/)
+
+
+## 09 Aug 2021
+After weeks of CAD work, the Fungi Controller box v 1.0 has been printed.
+
+## 05 Aug 2021
+
+Did some scooter work.
+
+![](/assets/img/scooter/scooter-cleaned-fuel-distribution-parts.jpg)
+
+5ml of orange oil and the same of dish soap works well as an ultrasonic bath solvent.
+
+Every time I upgrade this computer, I regret not making a list of the changes I make and programs I install. Ahhh well. Maybe next time.
+
+## 29 Jul 2021
+
+Researched aluminum anodizing. I think I might have trouble with the scooter parts I wish to anodize. They are almost certainly cast aluminum which often contains significant amount of (unanodizable) silicon. This results in uneven coloration especially when a caustic preetching step is used.
+
+I forsee two options: a preetching step that includes hydrofluoric acid or some other form of coloration.
+
+I might have more luck with physical coloring.[@sheasby_electrolytic_1981]
+
+Or perhaps inorganic dyes would work?
+
+## 28 Jul 2021
+
+Finally found a proper vin [decoding](http://ozebook.com/compendium/suzi/engine-nos/engnos.htm).
+
+My scooter is a 1981 Suzuki FS50X.
+
+My drive was throwing random errors and failed the SMART tests, so I bought a new solid state drive. Just a 480Gb Microcenter house-brand. It took all yesterday and most of today to install Ubuntu 20.04 and transfer my files.
+
+I had some ethernet trouble on the laptop. Ethernet takes a long time to connect, if it connects at all. I installed a different driver `sudo apt install r8168-dkms` and rebooted.
+
+https://askubuntu.com/questions/1308793/realtek-r8169-driver-ubuntu-20-04-with-rtl8111-8168-8411-pci-express-gigabit-et  
+https://jaredreisinger.com/blog/realtek-8111e-8168-driver-ubuntu/
+
+*edit* I should have just checked the cable first. I found my roommate's bike helmet stashed in the basket where I keep the internet router and modem. It had knocked the ethernet cable loose.
+
+Did some titanium anodizing. At least until I burned a fuse on the variac by touching the two electrodes together at 35V.
+
+![](/assets/img/log/log-titanium-anodizing-spot.jpg)
+
+# 26 Jul 2021
+
+I bought a scooter last night from a friend. 1981 Suzuki FS50. It shouldn’t take much work to get it running again.
+
+## 23 Jul 2021
+[3D printed solid bearings](https://airwolf3d.com/2014/12/04/3d-printed-bearings-arrived/)
+
+The filament [*iglidurr* page](https://airwolf3d.com/shop/igus-iglidurr-l180-pf-tribo-filament) doesn't exist.
+
+I think it would be possible to 3d print the bearing out of PLA and then impregnate the contact surface with solid lubricant (teflon, graphite, molybdenum).
+
+## 20 Jul 2021
+It is so hard to find connectors without a name.
+
+For the record, the [connectors used](https://www.digikey.com/short/dh3qm1hn) on hot-swappable server power supplies are called edgeboard connectors:
+
+| attribute | value |
+| --------- | ----- |
+| positions | 64 |
+| positions per row   | 32  |
+| rows   | 2  |
+| pitch   | 2.54mm/0.100"  |
+| card thickness   |  1.57mm/0.062"(1/16") |
+
+
+## 16 Jul 2021
+Started printing the parts for a Precise peristaltic pump.
+
+## 13 Jul 2021
+The planetary mill research continues.
+
+The more that I play with the numbers, the more that I think plastic friction wheels are fine. I don't need 1 hp for 2x250g jars. I think scaling to 1/4 hp motor at 600rpm is more appropriate.
+
+From the equations mentioned earlier, that means the friction wheels need a radius of at least 20mm and a contact thickness of at least 8mm.
+
+I kind of just want to print a few gears and see if it destroys itself.
+
+[How to Design and 3D print basic spur gears (video playlist)](https://www.youtube.com/playlist?list=PL4Yme23PQa9njUgvH2o2HP03-4RtZObzO)
+
+Or I could read a book/[@schultz_introduction_2004]
+
+[Design of Plastic Gears](https://khkgears.net/new/gear_knowledge/gear_technical_reference/design-of-plastic-gears.html)
+
+[Engineering Principles for Plastic Gears](https://gearsolutions.com/features/engineering-principles-for-plastic-gears/)
+
+A pair of herringbone idler gears straddling the drive and planet gears might help distribute the load even more. The shaft of one of the idler gears could be pulled toward the other by spring tension to give a little play and allow for installation meshing.
+
+I need to narrow down some design constraints. DC brushed electric motors are commonly available in the sub-1KW range with relatively low rpms for less than $100. They are intended for ebikes and such. Higher power means more cooling and more robust gearing, so it is best to think small.
+
+
+| constraint | value |
+| ---------- | ----- |
+| input power | < 500W  |
+| capacity   | 2 x 100g  |
+| volume   | 2 x 250ml  |
+| speed ratio   | -2:1  |
+
+
+Speed ratio is variable:
+
+> On the basis of video camera images, no considerable influence of
+speed ratio on the grinding ball motion pattern could be observed in
+the range −3bkb−1.[@rosenkranz_experimental_2011]
+
+Planetary mills get hot:
+
+> Temperatures over 200°C are typical in planetary mills operating at similar milling intensities.[@takacs_temperature_2006]
+
+This is unacceptable for pyrotechnic compositions (the impetus for this project).
+
 ## 12 Jul 2021
 More work on the whistles. The spray mask worked well.
+
+![](/assets/img/log/log-train-whistle-spray-paint-mask.jpg)
+
+![](/assets/img/log/log-train-whistle-colors.jpg)
 
 Retsch PM100 planetary ball mill parameters:
 
@@ -93,7 +280,7 @@ Zinc gluconate is 14.3% zinc w/w. Corn syrup is 76% sugar. Honey is ~82% sugar. 
 - 0.28g glycine
 - 1/4 tsp any flavoring oil (e.g. lemon)
 
-![](zinc-honey-lemon-lozenges.jpg)
+![](/assets/img/log/log-zinc-lozenges.jpg)
 
 > Patients were given 120 lozenges and were asked to dissolve 1 lozenge in their mouths every 2 hours while awake for as long as they had cold  symptoms.
 
@@ -1553,7 +1740,7 @@ I watched a video just now on [Why FYRE Was Never Real - Wisecrack Vlog](https:/
 
 Made a hydroponic herb garden today from parts around my house. It uses a small fountain pump to move water from the reservoir at the bottom of the bucket to the three restricted drip emitters. The media is 25:75 vermiculite:coco coir.
 
-![Hydroponic herb garden]({{ site.url }}/assets/img/20190227_175450.jpg)
+![Hydroponic herb garden](/assets/img/20190227_175450.jpg)
 
 I had some trouble with the first drip emitters. I used a circular length of polypropylene tubing with holes poked in it. Of course the holes got plugged. Even after rinsing the media several times and wrapping the pump in several layers of polyfill stuffing. So I switched to drip emitters.
 
@@ -1579,7 +1766,7 @@ Best just to buy sodium acetate and distill over sulfuric acid.
 
 ## 25 Feb 2019
 Experimenting with ethyl acetate as an azeotropic drying agent for dilute acetic acid.
-![Ethyl acetate - water - acetic acid distillation]({{ site.url }}/assets/img/20190225_160218.jpg)
+![Ethyl acetate - water - acetic acid distillation](/assets/img/20190225_160218.jpg)
 
 Works well enough for a single pass. Now I just need a dean-stark trap...
 
@@ -1587,7 +1774,7 @@ Column packing material: apparently glass beads don't have enough surface area. 
 
 ## 21 Feb 2019
 Made a PID temperature controller box today for about $20.
-![PID temperature controller box]({{ site.url }}/assets/img/20190221_193202.jpg)
+![PID temperature controller box](/assets/img/20190221_193202.jpg)
 
 Made from a cheap [Rex C-100 PID controller from China](https://www.ebay.com/p/Rex-c100-Digital-PID-Temperature-Controller-Regulator-K-Thermocouple-40a-SSR-H5/6018107649) and a GFI outlet. Those PID regulators come with a 40A SSR and a thermocouple. For $15 you really can't beat it. The box is from an old computer power supply. I used a receptacle instead of hard wiring so I can use it for all kinds of equipment. From sous vide to lab furnace. I even bought a second controller for additional devices if I need it.
 
@@ -1943,7 +2130,7 @@ Items Needed:
 ## 28 Jun 2018
 - Made Jafar costume.
 
-![Jafar and Iago]({{ site.url }}/{{ site.url }}/assets/img/20180628_191905.jpg)
+![Jafar and Iago](//assets/img/20180628_191905.jpg)
 
 ## 27 Jun 2018
 - Research on AGEs for reddit...
@@ -2045,8 +2232,8 @@ Made some updates to this site.
 [^1]: 18+ hr fast + fermentable fiber + high protein + vegetables: Testing the effect of fiber consumption on tolerability of intermittent fasting
 [^2]: 500ml milk + 30g whey protein + creatine, ALCAR, NAC, TMG, citrulline, beta alanine, taurine, agmatine, ornithine, vit C, Mg, K, Zn, potato starch
 
-[primary alcohol catalysis]: {{ site.url }}{% link _posts/2018-03-26-primary-alcohol-catalysis.md %}
-[nitric acid production]: {{ site.url }}{% link _posts/2018-03-26-nitric-acid.md %}
-[page]: {{ site.url }}{% link _posts/2017-08-30-AI-research.md %}#journal
+[primary alcohol catalysis]: {{ site.baseurl }}{% link _posts/2018-03-26-primary-alcohol-catalysis.md %}
+[nitric acid production]: {{ site.baseurl }}{% link _posts/2018-03-26-nitric-acid.md %}
+[page]: {{ site.baseurl }}{% link _posts/2017-08-30-AI-research.md %}#journal
 
 # References

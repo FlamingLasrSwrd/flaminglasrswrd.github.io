@@ -76,7 +76,7 @@ An emergency food often used by hikers and doomsday preppers. Optimized for high
     - meal replacement powders are not all that much more expensive than dry milk and contain a lot more vitamins
     - Omega 3:6 ratio is a little worrying (175:1)
 
-As a reference: [USDA Food Plans: Cost of Food Report](https://www.cnpp.usda.gov/USDAFoodPlansCostofFood). The lowest cost "Thrifty Plan" for a male adult is $6.14 per day. Highlights from the diet (per week):
+As a reference: [USDA Food Plans: Cost of Food Report](https://www.fns.usda.gov/cnpp/usda-food-plans-cost-food-reports). The lowest cost "Thrifty Plan" for a male adult is $6.14 per day. Highlights from the diet (per week):
 
 - 10.75 lbs of lowfat milk
 - 6.79 lbs vegetables (including:

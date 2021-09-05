@@ -1,0 +1,235 @@
+I"�,<h1 id="intro">Intro</h1>
+<p>My parents have a stretch of land of approximately twenty acres which, at the present moment, is generating no income. Our neighbor bails hay from the land a few times a year. We don’t charge him for this service since it keeps small trees and shrubs from taking over and it’s the neighborly thing to do.</p>
+<p>Since none of us children want to farm the land or wish to rent it out, I decided to look into timber production. The idea is to have a minimally managed tree farm from which my siblings and I can retire. Initial projections indicate that 10-15 acres of properly managed black walnut trees can provide an income of $300k to $1M after 40-60 years. Growth time variation is largely site specific, and the income variation is largely management specific. A similarly sized veneer quality tree can go for 3-15x the price of a sawlog tree.<span class="citation" data-cites="treiman_missouri_2017">(Treiman and Morris 2017)</span> The goal, then, is to maximize the production of veneer quality logs.</p>
+<p>This page is dedicated to developing a plan and schedule for establishing a primarily black walnut timber plantation on 12 acres of north eastern Kansas forest/grassland.</p>
+<h1 id="site-evaluation">Site Evaluation</h1>
+<h2 id="initial-conditions">Initial Conditions</h2>
+<h3 id="suitability-index">Suitability Index</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Factor</th>
+<th>My value</th>
+<th>Criteria Value (0-1; higher is better)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Depth Limit(multiplicative)</td>
+<td>&gt;200cm (none)</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>Flood Duration</td>
+<td>None</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>AWC limit(multiplicative)</td>
+<td>31.5cm</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>Wetness</td>
+<td>&gt;200cm</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>Depth(additive)</td>
+<td>&gt;200cm (none)</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>Texture</td>
+<td>25% clay; 3% sand</td>
+<td>1,1</td>
+</tr>
+<tr class="odd">
+<td>AWC(additive)</td>
+<td>31.5cm</td>
+<td>?</td>
+</tr>
+<tr class="even">
+<td>pH</td>
+<td>6.1</td>
+<td>?</td>
+</tr>
+<tr class="odd">
+<td>Fragments</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>Flood Frequency</td>
+<td>none</td>
+<td>0</td>
+</tr>
+<tr class="odd">
+<td>Landform</td>
+<td>summit-shoulder</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>Historic Vegetation</td>
+<td>woodland</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Total Index Value:</strong> <code>1*(.21*1+.21*1+.21*1+.08*0.85+.08*1+0.07*1) = **0.85**</code> <span class="citation" data-cites="wallace_black_2008">(Wallace and Young 2008)</span></p>
+<p><em>?</em> Doesn’t give any indication of how “Sigmoid curve scaled” is conducted.</p>
+<h1 id="stock-selection">Stock Selection</h1>
+<table>
+<thead>
+<tr class="header">
+<th>feature</th>
+<th>heritability (h^2)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>height</td>
+<td>0.4-0.55</td>
+</tr>
+<tr class="even">
+<td>diameter</td>
+<td>0.35-0.65</td>
+</tr>
+<tr class="odd">
+<td>tree form</td>
+<td>0.4-0.5</td>
+</tr>
+<tr class="even">
+<td>foliation date</td>
+<td>0.92</td>
+</tr>
+<tr class="odd">
+<td>defoliation date</td>
+<td>0.73; 0.13</td>
+</tr>
+<tr class="even">
+<td>sweep</td>
+<td>0.32</td>
+</tr>
+<tr class="odd">
+<td>number of crooks</td>
+<td>0.24</td>
+</tr>
+<tr class="even">
+<td>branch angle</td>
+<td>0.2</td>
+</tr>
+<tr class="odd">
+<td>branch number</td>
+<td>0.41</td>
+</tr>
+<tr class="even">
+<td>multiple stems</td>
+<td>0.13</td>
+</tr>
+<tr class="odd">
+<td>insect damage</td>
+<td>0.27</td>
+</tr>
+<tr class="even">
+<td>leaf angle</td>
+<td>0.32</td>
+</tr>
+<tr class="odd">
+<td>anthracnose resistance</td>
+<td>high</td>
+</tr>
+<tr class="even">
+<td>heartwood area</td>
+<td>0.4</td>
+</tr>
+</tbody>
+</table>
+<p>So really the only features worth looking for are foliation dates and anthracnose resistance. An extended growing season is preferable with more southern trees having earlier foliation and later defoliation dates. Rink et al. recommends obtaining seeds from 100-200 miles south of plantation. <span class="citation" data-cites="rink_practical_2017">(Rink et al. 2017)</span> The Lawrence (where I live) is about 75 miles south of my home making it a fairly good place to source walnuts. Perhaps just south of town would be more appropriate.</p>
+<p>Highly profitable figure wood does not appear to be heritable, either. <span class="citation" data-cites="mckenna_propagating_2015">(McKenna et al. 2015)</span></p>
+<h1 id="site-preparation">Site Preparation</h1>
+<table>
+<thead>
+<tr class="header">
+<th>option</th>
+<th>values</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>weed control</td>
+<td>chemical, mechanical, natural</td>
+</tr>
+<tr class="even">
+<td>cover crop</td>
+<td>true/false</td>
+</tr>
+</tbody>
+</table>
+<p>Jacobs et al. recommends mechanical site preparation followed by herbicide application before and after planting black walnut seedlings using a mechanical planter. The first year after planting is the most critical for survival. Cover crops do not significantly alter survival of seedlings, but that may have been a statistical anomaly. Current deer browse control methods are lacking. Only about half of trees were free to grow at 5 years. <span class="citation" data-cites="jacobs_establishment_2004">(Jacobs, Ross-Davis, and Davis 2004)</span></p>
+<h1 id="agroforestry">Agroforestry</h1>
+<p>Hops can be planted on the perimeter of a newly established plantation and ginseng seems to be tolerant of any stage of black walnut growth. <span class="citation" data-cites="ha_costs_2017">(Ha et al. 2017)</span></p>
+<h1 id="current-plan">Current Plan</h1>
+<ul>
+<li>obtain an excess of black walnuts from the south Lawrence area</li>
+<li>scarify seeds underground at the farm over winter</li>
+<li>obtain more specific soil tests</li>
+<li>optional broad spectrum herbicide</li>
+<li>burn field in late fall</li>
+<li>disc field</li>
+<li>plant cover crop of clover in fall or spring</li>
+<li>plant windbreak of locusts transplanted from south pasture</li>
+</ul>
+<h1 id="notes">Notes</h1>
+<ul>
+<li>Maple Trees: Would need about 25 trees per gallon per year of maple syrup with a maturation time of 10-15 years… :(</li>
+<li>emailed doug.wallace to figure out sigmoid scaling curve; <strong>no reply</strong></li>
+<li>south pasture: 2 acres; north pasture: 9.8 acres; pond: 2.2 acres; ditch: 1.2 acres; mowable yard: 1.1 acres; total: 16.3; usable: 11.8-14 acres</li>
+<li>a friend recommended pecan trees in addition to walnuts: I am not that interested in nut production, so pecans aren’t likely to make an appearance</li>
+<li>I am a little disappointed that I will be unable to grow wasabi plants– they require much colder temperatures</li>
+<li>A friend of mine who works for the Kansas forestry service says that “Thousand Cankers Disease” isn’t something to be worried about. It is easy to handle in the early stages, so just keep an eye out for it.</li>
+</ul>
+<h1 id="work-log">Work Log</h1>
+<h2 id="may-2020">15 May 2020</h2>
+<p>This project has fallen by the wayside.</p>
+<p>I’m searching for a way to propagate black walnut trees. The softwood cutting didn’t work at all. The original paper authors also failed to get mature tree cuttings to root.</p>
+<p>The University of California appears to have had success with <a href="http://walnutrootstock.ucanr.edu/WIP/Propagation/layering/Air_Layering/">air layering</a> saplings. I would like to give this a try.</p>
+<p>Also,</p>
+<h2 id="aug-2019">21 Aug 2019</h2>
+<p>First clone testing using the new ultrasonic cloner. Softwood cutting taken from my neighbor’s small walnut tree (3-4 years old). Leaves trimmed to all but the last two. This would be classified as a mature plant and thus unlikely to develop roots.</p>
+<h2 id="mar-2019">18 Mar 2019</h2>
+<p>Clones may be better for timber plantations: they tend to grow faster at the expense of nut production. <span class="citation" data-cites="rink_practical_2017">(Rink et al. 2017)</span></p>
+<h2 id="mar-2019-1">17 Mar 2019</h2>
+<p>Twelve acres of land with walnuts planted in 8’x8’ spacing equals around 8200 plants.</p>
+<h2 id="mar-2019-2">16 Mar 2019</h2>
+<p>Looking into taking cuttings from my local dog park. Softwood cuttings rooted in a mist bench with K-IBA using 3:1 perlite:vermiculite resulted in 72% success. <span class="citation" data-cites="stevens_origin_2017">(Stevens and Pijut 2017)</span></p>
+<p>IBA-potassium salt: 241.33 g/mol; 90mM solution = 21.7g/L; can be bought on eBay for ~$1 per gram;</p>
+<p><a href="https://scienceinhydroponics.com/2017/07/making-your-own-diy-plant-rooting-gel.html">DIY rooting hormone gel</a> - a gel made from carbopol 940</p>
+<p>Do I want to construct a fog chamber or just go with a solid media? I could try using coco-coir or rockwool. Why not all three? A fogger is &lt;$20.</p>
+<h1 id="bibliography">Bibliography</h1>
+<!--notes-->
+<!--links-->
+<div id="refs" class="references">
+<div id="ref-ha_costs_2017">
+<p>Ha, Kim, Shadi Atallah, Tamara Benjamin, Lori Hoagland, Lenny Farlee, Extension Forester, and Keith Woeste. 2017. “Costs and Returns of Producing Hops in Established Tree Plantations,” no. FN-546-W (June): 8.</p>
+</div>
+<div id="ref-jacobs_establishment_2004">
+<p>Jacobs, Douglass F., Amy L. Ross-Davis, and Anthony S. Davis. 2004. “Establishment Success of Conservation Tree Plantations in Relation to Silvicultural Practices in Indiana, USA.” <em>New Forests</em> 28 (1): 23–36. <a href="https://doi.org/10.1023/B:NEFO.0000031329.70631.d0" class="uri">https://doi.org/10.1023/B:NEFO.0000031329.70631.d0</a>.</p>
+</div>
+<div id="ref-mckenna_propagating_2015">
+<p>McKenna, James R., Wayne A. Geyer, Keith E. Woeste, and Daniel L. Cassens. 2015. “Propagating Figured Wood in Black Walnut.” <em>Open Journal of Forestry</em> 05 (05): 518–25. <a href="https://doi.org/10.4236/ojf.2015.55045" class="uri">https://doi.org/10.4236/ojf.2015.55045</a>.</p>
+</div>
+<div id="ref-rink_practical_2017">
+<p>Rink, George, J. W. Van Sambeek, Phil O’Connor, and Mark Coggeshall. 2017. “Practical Strategies of Black Walnut Genetic Improvementan Update.” <em>Walnut Council Bulletin. 44(2): 1-3, 10-11.</em> 44 (2). <a href="https://www.fs.usda.gov/treesearch/pubs/54216" class="uri">https://www.fs.usda.gov/treesearch/pubs/54216</a>.</p>
+</div>
+<div id="ref-stevens_origin_2017">
+<p>Stevens, Micah E., and Paula M. Pijut. 2017. “Origin of Adventitious Roots in Black Walnut (Juglans Nigra) Softwood Cuttings Rooted Under Optimized Conditions in a Fog Chamber.” <em>New Forests</em> 48 (5): 685–97. <a href="https://doi.org/10.1007/s11056-017-9592-6" class="uri">https://doi.org/10.1007/s11056-017-9592-6</a>.</p>
+</div>
+<div id="ref-treiman_missouri_2017">
+<p>Treiman, Tom, and Mike Morris. 2017. “Missouri Timber Price Trends July-Sept. 2017.” Vol. 27 No. 3. Missouri Department of Conservation, Forestry Division. <a href="https://mdc.mo.gov/sites/default/files/downloads/TPTJulSept2017.pdf" class="uri">https://mdc.mo.gov/sites/default/files/downloads/TPTJulSept2017.pdf</a>.</p>
+</div>
+<div id="ref-wallace_black_2008">
+<p>Wallace, Douglas c, and Fred J. Young. 2008. “Black Walnut Suitability Index: A Natural Resources Conservation Service National Soil Information System Based Interpretive Model.” <em>Proceedings of the Central Hardwood Forest Conference</em> 24. <a href="https://www.fs.usda.gov/treesearch/pubs/14098" class="uri">https://www.fs.usda.gov/treesearch/pubs/14098</a>.</p>
+</div>
+</div>
+:ET

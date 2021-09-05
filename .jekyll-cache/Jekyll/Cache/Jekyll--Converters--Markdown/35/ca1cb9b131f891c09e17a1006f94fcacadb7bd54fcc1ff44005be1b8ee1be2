@@ -1,0 +1,64 @@
+I"�<h1 id="github-pages-local-build">Github Pages local build</h1>
+<p>I’m still not clear on local ownership and permissions when dealing with code development. I’ve been fiddling with jekyll and github pages for a couple weeks now to no avail. I think the issue is that I tried to install the basic ruby using <code>sudo apt-get install</code> which leads to permission trouble later. So I decided to remove everything and install it the right way…</p>
+<p>Reinstall ruby.</p>
+<pre><code>sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get remove ruby</code></pre>
+<p>I got an error message saying the <code>/var/lib/gems</code> folder was not deleted because it wasn’t empty, so I deleted it manually.</p>
+<pre><code>sudo rm -r /var/lib/gems</code></pre>
+<p>Make sure everything is gone.</p>
+<pre><code>sudo apt-get autoremove</code></pre>
+<p>Copy of the procedure from <a href="https://stackoverflow.com/questions/37720892/you-dont-have-write-permissions-for-the-var-lib-gems-2-3-0-directory#37956249">Write permissions for var/lib/gems/</a> on reinstalling ruby [the right way] using rbenv.</p>
+<pre><code>sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties libffi-dev
+git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+echo &#39;export PATH=&quot;$HOME/.rbenv/bin:$PATH&quot;&#39; &gt;&gt; ~/.bashrc
+echo &#39;eval &quot;$(rbenv init -)&quot;&#39; &gt;&gt; ~/.bashrc
+exec $SHELL
+git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+echo &#39;export PATH=&quot;$HOME/.rbenv/plugins/ruby-build/bin:$PATH&quot;&#39; &gt;&gt; ~/.bashrc
+exec $SHELL
+rbenv install 2.3.1
+rbenv global 2.3.1
+ruby -v</code></pre>
+<p>Starting with the <a href="https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/">Github Pages Local Setup</a> article.</p>
+<pre><code>ruby --version
+gem install bundler
+rbenv rehash</code></pre>
+<p>At this point I got another error saying that I didn’t have write permission to a folder so I changed ownership.</p>
+<pre><code>/home/[username]/.bundle/cache/compact_index/rubygems.org.443.29b0360b937aa4d161703e6160654e47/versions`
+sudo chown -R $(whoami):$(whoami) ~/.bundler</code></pre>
+<p>Now I can run <code>gem install bundler</code> without issue. Since I was starting from scratch, I initialized a new git repo.</p>
+<pre><code>git init web
+cd web</code></pre>
+<p>Created a Gemfile for bundler to use.</p>
+<pre><code>nano Gemfile</code></pre>
+<pre><code>source &#39;https://rubygems.org&#39;
+gem &#39;github-pages&#39;, group: :jekyll_plugins</code></pre>
+<p>Then installed the dependencies with bundle.</p>
+<pre><code>bundle install</code></pre>
+<p>Now you are set to create a blank jekyll template which can be used for local builds on github pages.</p>
+<pre><code>jekyll new website</code></pre>
+<p><strong>Alternatively</strong>, if you wish to use an existing, empty github repo (as I did):</p>
+<pre><code>git clone [your_repo_URL]
+jekyll new [your_repo_name]
+cd [your_repo_name]</code></pre>
+<p>Preview the build on a local server at the default <a href="http://127.0.0.1:4000">127.0.0.1:4000</a>.</p>
+<pre><code>bundle exec jekyll serve</code></pre>
+<p>If any errors crop up, add the requisite gem to your Gemfile as I had to do due to a lack of a Java runtime environment.</p>
+<pre><code>nano Gemfile</code></pre>
+<p>Add the lines at the end of the file.</p>
+<pre><code>gem &#39;execjs&#39;
+gem &#39;therubyracer&#39;</code></pre>
+<p>Then install the gems.</p>
+<pre><code>bundle install</code></pre>
+<p>Rebuild and serve.</p>
+<pre><code>bundle exec jekyll serve</code></pre>
+<p>As long as everything looks good, commit and push everything to your repo.</p>
+<pre><code>git add -A
+git commit -a
+git push origin</code></pre>
+<p>Check your email to make sure everything built as it should -github sends you build error messages. Then check your site at [your_username].github.io.</p>
+<h1 id="update-3618">Update 3/6/18</h1>
+<p>I received a message from Github stating that one of my dependencies had a security vulnerability. So I had to update my gems. In my git repo folder:</p>
+<pre><code>bundle update</code></pre>
+:ET

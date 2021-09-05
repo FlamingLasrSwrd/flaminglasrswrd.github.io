@@ -1,0 +1,127 @@
+I"k<blockquote>
+<p>?- How many Prolog programmers does it take to screw in a lightbulb?<br />
+no</p>
+</blockquote>
+<h1 id="development">Development</h1>
+<p>Prolog allows the programmer to define pure black box programs using a consistent, simple grammar.</p>
+<h1 id="system-operators">System Operators</h1>
+<div class="sourceCode"><pre class="sourceCode prolog"><code class="sourceCode prolog"><span class="kw">--&gt;</span>
+<span class="kw">:-</span>
+<span class="fu">?-</span>
+<span class="kw">;</span>
+|
+<span class="kw">-&gt;</span>
+*-&gt;
+<span class="kw">,</span>
+:=
+<span class="kw">\+</span>
+<span class="dt">&lt;</span>
+<span class="kw">=</span>
+<span class="fu">=..</span>
+=@=
+\=@=
+<span class="dt">=:=</span>
+<span class="er">=&lt;</span>
+<span class="fu">==</span>
+<span class="dt">=\=</span>
+<span class="er">&gt;</span>
+<span class="dt">&gt;=</span>
+<span class="fu">@&lt;</span>
+<span class="fu">@=&lt;</span>
+<span class="fu">@&gt;</span>
+<span class="fu">@&gt;=</span>
+<span class="kw">\=</span>
+<span class="fu">\==</span>
+&gt;:&lt;
+:&lt;
+<span class="fu">:</span>
+<span class="fu">+</span>
+<span class="fu">-</span>
+/\
+\/
+?
+<span class="fu">*</span>
+<span class="fu">/</span>
+<span class="fu">//</span>
+&lt;&lt;
+&gt;&gt;
+<span class="fu">**</span>
+<span class="fu">^</span>
+<span class="fu">+</span>
+<span class="fu">-</span>
+\
+<span class="kw">.</span>
+$
+<span class="kw">!</span>
+(
+)
+<span class="dt">_</span>
+[
+]</code></pre></div>
+<h1 id="built-in-predicates">Built-in Predicates</h1>
+<div class="sourceCode"><pre class="sourceCode prolog"><code class="sourceCode prolog"><span class="kw">dynamic</span>
+discontiguous
+<span class="kw">initialization</span>
+meta<span class="dt">_</span>predicate
+module<span class="dt">_</span>transparent
+<span class="fu">multifile</span>
+public
+thread<span class="dt">_</span>local
+thread<span class="dt">_</span>initialization
+volatile
+as
+<span class="dt">is</span>
+xor
+<span class="dv">mod</span>
+<span class="dv">rem</span>
+<span class="dv">div</span>
+rdiv
+<span class="dt">max</span>
+<span class="dt">min</span>
+<span class="dv">truncate</span>
+<span class="dv">floor</span>
+<span class="dv">round</span>
+ceil
+<span class="fl">sqrt</span>
+<span class="fl">cos</span>
+<span class="fl">tan</span>
+<span class="fl">asin</span>
+<span class="fl">acos</span>
+atan
+<span class="fl">atan2</span>
+sinh
+asinh
+acosh
+atanh
+<span class="fl">log</span>
+log<span class="er">10</span>
+<span class="fl">exp</span>
+<span class="fl">pi</span>
+e
+write
+writeq
+read
+open
+between
+assert
+asserta
+retract
+retractall
+length
+member
+reverse
+append
+name
+nth<span class="er">0</span>
+nth<span class="er">1</span>
+atom<span class="dt">_</span>length
+consult
+nl</code></pre></div>
+<h1 id="interpreter-control">Interpreter Control</h1>
+<div class="sourceCode"><pre class="sourceCode prolog"><code class="sourceCode prolog">halt
+listing
+trace
+notrace
+<span class="kw">;</span>
+a</code></pre></div>
+:ET

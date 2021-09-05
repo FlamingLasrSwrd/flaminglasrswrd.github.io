@@ -1,0 +1,265 @@
+I"�k<h1 id="introduction">Introduction</h1>
+<p>I was getting tired of rigging my old Ubuntu 16.04 desktop-turned server. So I decided to spend a few dollars and buy some old (circa 2012) server hardware.</p>
+<p>I use this server mainly for python and web development. It also has some general purpose file storage for backups and such.</p>
+<h1 id="basic-setup">Basic Setup</h1>
+<p>Throughout this page I will refer to two physical computers: my laptop and the server. The server is located at <code>192.168.1.10</code> and my laptop at <code>192.168.1.2</code>. My laptop runs Ubuntu 16.04. For the installation of Ubuntu server 18.04 on my server, I hook up a temporary monitor with a spare GPU. Otherwise, the server runs headless with access only via SSH and only using my key. I set the non-root sudo user as <code>user</code> and the server hostname as <code>host</code>. Change these as you see fit.</p>
+<p>Install Ubuntu server as usual by following the on-screen directions. I opted to automatically install security updates and use an encrypted LVM. I also checked to box to install OpenSSH.</p>
+<p>The new Ubuntu installer does not include encrypted drives so you will need to grab an alternate image <a href="http://cdimage.ubuntu.com/releases/18.04/release/">here</a>. This isn’t necessary, I just prefer whole disk encryption. <strong>NOTE:</strong> you will have to enter the decryption password on every reboot. This is especially difficult for a headless system. Enable encryption only if you are super paranoid and don’t mind being physically present for every reboot.</p>
+<p>After the fresh install of with encrypted LVM and OpenSSH:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">sudo</span> apt update
+<span class="fu">sudo</span> apt dist-upgrade</code></pre></div>
+<p>Enable firewall:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">sudo</span> ufw allow in openSSH
+<span class="fu">sudo</span> ufw enable</code></pre></div>
+<p>Set static IP (replace the interface name and ip addresses for your system):</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">sudo</span> nano /etc/netplan/01-netcfg.yaml</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">network</span>:
+  <span class="ex">version</span>: 2
+  <span class="ex">renderer</span>: networkd
+  <span class="ex">ethernets</span>:
+    <span class="ex">enp1s0f0</span>:
+      <span class="ex">dhcp4</span>: no
+      <span class="ex">dhcp6</span>: no
+      <span class="ex">addresses</span>: [192.168.1.10/24, ]
+      <span class="ex">gateway4</span>: 192.168.1.1
+      <span class="ex">nameservers</span>:
+        <span class="ex">addresses</span>: [192.168.1.1,8.8.8.8,1.1.1.1]</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">sudo</span> netplan apply
+<span class="fu">sudo</span> reboot</code></pre></div>
+<p>You will need to log in again to the new ip address. To install the python 3.6 version of anaconda (<strong>not miniconda</strong>) and set up python environments:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">wget</span> https://repo.anaconda.com/archive/Anaconda3-5.2.0-Linux-x86_64.sh
+<span class="fu">chmod</span> +x Anaconda3-5.2.0-Linux-x86_64.sh
+<span class="fu">bash</span> Anaconda3-5.2.0-Linux-x86_64.sh</code></pre></div>
+<p>Answer the questions as you see fit. I went with the default user installation. Set up py36 and py27 environments:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">conda</span> update conda
+<span class="ex">conda</span> create --name py36 python=3.6
+<span class="ex">conda</span> create --name py27 python=2.7
+<span class="bu">source</span> activate py36
+<span class="ex">pip</span> install --upgrade pip
+<span class="bu">source</span> activate py27
+<span class="ex">pip</span> install --upgrade pip
+<span class="bu">source</span> deactivate</code></pre></div>
+<p>I wanted to only allow ssh key logins from my laptop. <strong>From my laptop terminal window</strong>:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">ssh-copy-id</span> [SERVER_USERNAME]@[SERVER_IP_ADDRESS]</code></pre></div>
+<p>Now ssh into the server again and modify the ssh config file:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">sudo</span> nano /etc/ssh/sshd_config</code></pre></div>
+<p>Uncomment the line <code>PasswordAuthentication yes</code> and change it to:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">PasswordAuthentication</span> no</code></pre></div>
+<p>Exit and write your changes. Then restart ssh:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">sudo</span> systemctl restart ssh</code></pre></div>
+<p>Log out and log back in to make sure everything works:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="bu">exit</span>
+<span class="fu">ssh</span> [SERVER_USERNAME]@[SERVER_IP_ADDRESS]</code></pre></div>
+<p>I also wanted a few services:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">sudo</span> apt update
+<span class="fu">sudo</span> apt install python-dev python3-dev build-essential git
+<span class="fu">sudo</span> mysql_secure_installation</code></pre></div>
+<p>I also activated live-patch kernel updates by following <a href="https://ubuntu.com/livepatch">these instructions</a>. Best to be safe with Spectre and Meltdown so close in recent memory.</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">sudo</span> snap install canonical-livepatch
+<span class="fu">sudo</span> canonical-livepatch enable [LIVEPATCH-KEY]</code></pre></div>
+<p>And reboot just for good measure:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">sudo</span> reboot</code></pre></div>
+<h1 id="rabbitmq">RabbitMQ</h1>
+<p>The best way to install RabbitMQ is to follow <a href="https://www.rabbitmq.com/install-debian.html#apt">the instructions to add the PPA</a>. For the impatient:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">wget</span> -O - <span class="st">&#39;https://dl.bintray.com/rabbitmq/Keys/rabbitmq-release-signing-key.asc&#39;</span> <span class="kw">|</span> <span class="fu">sudo</span> apt-key add -
+<span class="bu">echo</span> <span class="st">&quot;deb https://dl.bintray.com/rabbitmq/debian bionic main&quot;</span> <span class="kw">|</span> <span class="fu">sudo</span> tee /etc/apt/sources.list.d/bintray.rabbitmq.list
+<span class="fu">sudo</span> apt update
+<span class="fu">sudo</span> apt install rabbitmq-server
+<span class="fu">sudo</span> service rabbitmq-server start</code></pre></div>
+<p>If you are running Uncomplicated Firewall (you should be), you can create an app profile:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">sudo</span> nano /etc/ufw/applications.d/rabbitmq-server</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">[<span class="ex">RabbitMQ</span>]
+<span class="va">title=</span>An <span class="ex">open</span> source message broker.
+<span class="va">description=</span>A <span class="ex">lightweight</span> and easy to deploy message broker from rabbitmq.com.
+<span class="va">ports=</span>4369,5671:5672,25672,35672:35682,15672/tcp</code></pre></div>
+<p>Then allow it in UFW:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">sudo</span> ufw app update RabbitMQ
+<span class="fu">sudo</span> ufw allow RabbitMQ</code></pre></div>
+<p>Port 15672/tcp is only needed if you want the web UI:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">sudo</span> rabbitmq-plugins enable rabbitmq_management
+<span class="fu">sudo</span> service rabbitmq-server restart</code></pre></div>
+<p>By default the user <em>guest</em> can only access the web UI on <em>localhost</em>, so we have to create admin user with better security:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">sudo</span> rabbitmqctl add_user [USERNAME] [PASSWORD]
+<span class="fu">sudo</span> rabbitmqctl set_user_tags [USERNAME] administrator
+<span class="fu">sudo</span> rabbitmqctl set_permissions -p / [USERNAME] <span class="st">&quot;.*&quot;</span> <span class="st">&quot;.*&quot;</span> <span class="st">&quot;.*&quot;</span></code></pre></div>
+<p>It’s best to delete the guest account:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">sudo</span> rabbitmqctl delete_user guest</code></pre></div>
+<p>You should now be able to access the UI at <code>http://[SERVER_IP_ADDRESS]:15672</code> using the newly created account.</p>
+<p>Enable rabbitmq at startup:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">sudo</span> systemctl enable rabbitmq-server</code></pre></div>
+<p>It would probably be better to only allow admin to work on <em>localhost</em> and create a separate user for other work, but that’s for another day.</p>
+<h1 id="self-signed-certificate">Self-Signed Certificate</h1>
+<h1 id="setting-up-nupic">Setting up NuPIC</h1>
+<p><a href="https://github.com/numenta/nupic">NuPIC</a>) is one of my favorite AIs at the moment. It takes a little bit of work to get it running, however.</p>
+<p>Just in case you didn’t do the above setup, here’s what’s needed from a fresh install of ubuntu server 18.04:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">sudo</span> apt update
+<span class="fu">sudo</span> apt upgrade
+<span class="fu">sudo</span> apt install build-essential python-dev mysql-server git
+<span class="fu">sudo</span> mysql_secure_installation</code></pre></div>
+<p>Assuming you are using anaconda:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">conda</span> create --name nupic python=2.7
+<span class="bu">source</span> activate nupic
+<span class="ex">pip</span> install --upgrade pip
+<span class="ex">pip</span> install nupic</code></pre></div>
+<p>I also like to have the nupic repo to run tests and such:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">git</span> clone https://github.com/numenta/nupic.git</code></pre></div>
+<p>If you chose to set a root password (you should), then the default config for nupic will not work. You could give nupic admin privileges under the root login or you can create a new user called nupic. After logging into your mysql server as root <code>sudo mysql</code>:</p>
+<pre class="mysql"><code>CREATE DATABASE nupic;
+CREATE USER &#39;nupic&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;nupic&#39;;
+GRANT ALL PRIVILEGES ON nupic.* TO &#39;nupic&#39;@&#39;localhost&#39;;</code></pre>
+<p>Repetitive I know. Set the username, password, and database to whatever you want. Now we must update the nupic config to match the mysql login we just created:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">nano</span> ~/anaconda3/envs/nupic/lib/python2.7/site-packages/nupic-1.0.6.dev0-py2.7.egg/nupic/support/nupic-default.xml</code></pre></div>
+<p>Change the <code>nupic.cluster.database.user</code> variable to your new mysql user:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="op">&lt;</span><span class="ex">property</span><span class="op">&gt;</span>
+  <span class="op">&lt;</span><span class="ex">name</span><span class="op">&gt;</span>nupic.cluster.database.user<span class="op">&lt;</span>/name<span class="op">&gt;</span>
+  <span class="op">&lt;</span><span class="ex">value</span><span class="op">&gt;</span>nupic<span class="op">&lt;</span>/value<span class="op">&gt;</span>
+  <span class="op">&lt;</span><span class="ex">description</span><span class="op">&gt;</span>Username for the MySQL database server <span class="op">&lt;</span>/description<span class="op">&gt;</span>
+<span class="op">&lt;</span>/<span class="ex">property</span><span class="op">&gt;</span></code></pre></div>
+<p>And change the <code>nupic.cluster.database.passwd</code> variable to your new password:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="op">&lt;</span><span class="ex">property</span><span class="op">&gt;</span>
+  <span class="op">&lt;</span><span class="ex">name</span><span class="op">&gt;</span>nupic.cluster.database.passwd<span class="op">&lt;</span>/name<span class="op">&gt;</span>
+  <span class="op">&lt;</span><span class="ex">value</span><span class="op">&gt;</span>nupic<span class="op">&lt;</span>/value<span class="op">&gt;</span>
+  <span class="op">&lt;</span><span class="ex">description</span><span class="op">&gt;</span>Password for the MySQL database server <span class="op">&lt;</span>/description<span class="op">&gt;</span>
+<span class="op">&lt;</span>/<span class="ex">property</span><span class="op">&gt;</span></code></pre></div>
+<p>And that’s it. You should have a running nupic setup. You can run the unit tests:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="bu">cd</span> ~/nupic/
+<span class="ex">py.test</span> tests/unit</code></pre></div>
+<h1 id="webdav">WebDAV</h1>
+<p>My Zotero account far exceeds their built in cloud file storage. I could pay Zotero for extra storage (which I hope to do when I have money), or I can set up a WebDAV server myself. I followed <a href="https://www.digitalocean.com/community/tutorials/how-to-configure-webdav-access-with-apache-on-ubuntu-14-04">this instruction set from DigitalOcean</a>. For the lazy: Install the necessary components:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">sudo</span> apt install apache2 apache2-utils
+<span class="fu">sudo</span> a2enmod dav
+<span class="fu">sudo</span> a2enmod dav_fs
+<span class="fu">sudo</span> a2enmod auth_digest</code></pre></div>
+<p>Open ports in UFW:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">sudo</span> ufw allow in apache</code></pre></div>
+<p>Create webdav directory and update permission:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">sudo</span> mkdir /var/www/webdav
+<span class="fu">sudo</span> chown -R www-data:www-data /var/www/</code></pre></div>
+<p>Create a webdav user called zotero and update permissions (enter a good password at the prompt):</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">sudo</span> htdigest -c /etc/apache2/users.password webdav zotero
+<span class="fu">sudo</span> chown www-data:www-data /etc/apache2/users.password</code></pre></div>
+<p>Modify the apache2 config at <code>sudo nano /etc/apache2/sites-available/000-default.conf</code> to serve the webdav folder by adding this to the <code>&lt;VirtualHost&gt; section:</code></p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="co"># WebDAV</span>
+<span class="ex">Alias</span> /webdav /var/www/webdav
+<span class="op">&lt;</span><span class="ex">Directory</span> /var/www/webdav/<span class="op">&gt;</span>
+        <span class="ex">DAV</span> On
+        <span class="ex">AuthType</span> Digest
+        <span class="ex">AuthName</span> <span class="st">&quot;webdav&quot;</span>
+        <span class="ex">AuthUserFile</span> /etc/apache2/users.password
+        <span class="ex">Require</span> valid-user
+<span class="op">&lt;</span>/<span class="ex">Directory</span><span class="op">&gt;</span></code></pre></div>
+<p>As well as</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">DavLockDB</span> /var/www/DavLock</code></pre></div>
+<p>to the first line of the file.</p>
+<p>Zotero requires a folder called zotero in the webdav directory. Also, a Zotero library can get pretty large, so I’m creating a symlink to a non-system disk mounted at <code>/media/2TB/</code> with more space:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">sudo</span> ln -s /media/2TB/media/zotero /var/www/webdav/zotero</code></pre></div>
+<p>You probably could make the changes in the apache2 config file, but that would require different permission on my disk, which I don’t want to do.</p>
+<p>Restart to update all the changes:</p>
+<pre><code>sudo service apache2 restart</code></pre>
+<p>You should be able to access your WebDAV at <code>http://[SERVER_IP_ADDRESS]/webdav/</code> with the username and password set earlier. Zotero Settings: Edit -&gt; Preferences -&gt; Sync -&gt; File Sync -&gt; Sync Attachment files in My Library using <a href="#webdav">WebDAV</a></p>
+<p>Later I will update WebDAV to work over SSL, but this isn’t strictly necessary. I don’t use the WebDAV for anything other than zotero and all that info is public anyway. Your webdav password will be sent in clear-text so don’t reuse a password (you shouldn’t be doing that anyway).</p>
+<h1 id="plex-media-server">Plex Media Server</h1>
+<p>I followed <a href="https://linuxize.com/post/how-to-install-plex-media-server-on-ubuntu-18-04/">these instructions</a> pretty much to the letter, so I won’t repost them here. In order to play some of the files I also installed vlc <code>sudo apt install vlc</code>. It was easier than tracking down all the necessary codecs one-by-one.</p>
+<h1 id="mongodb">MongoDB</h1>
+<p>I follow <a href="https://websiteforstudents.com/install-mongodb-on-ubuntu-18-04-lts-beta-server/">these instructions</a> almost verbatim. The only change I made was to add a profile for UFW <code>sudo nano /etc/ufw/applications.d/mongod</code>:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">[<span class="ex">mongodb</span>]
+<span class="va">title=</span>NoSQL <span class="ex">database</span> program
+<span class="va">description=</span>A <span class="fu">free</span> and open-source cross-platform document-oriented database program.
+<span class="va">ports=</span>27017/tcp</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">sudo</span> ufw allow in mongodb</code></pre></div>
+<h1 id="factorio-headless-server">Factorio Headless Server</h1>
+<p>Download a copy of the <a href="https://www.factorio.com/download-headless">Factorio headless image</a>.</p>
+<h1 id="torrent-server">Torrent Server</h1>
+<p>I want to be able to share some large files. In all likelihood, only a few downloads will ever happen, so I think a torrent server would be appropriate. Unfortunately, my favorite torrent client, Transmission, does not have a built in tracker, so I am forced to use qBittorrent. My server is headless, so I’m following <a href="https://github.com/qbittorrent/qBittorrent/wiki/Setting-up-qBittorrent-on-Ubuntu-server-as-daemon-with-Web-interface-%2815.04-and-newer%29">these installation instructions</a> for the basic setup. Then I need it to <a href="https://github.com/qbittorrent/qBittorrent/wiki/How-to-use-qBittorrent-as-a-tracker">act as a tracker</a>. Unfortunately, I couldn’t get this to work even after several hours of fiddling. I resorted to using public trackers obtained <a href="https://github.com/ngosang/trackerslist">here</a>. Since I’m apparently not smart enough to get my server to act as a tracker, I have elected to scrap the whole thing and use Transmission. One day I might return: TODO: Work on public torrent tracker system for server The main use of my torrent services at the moment is mirroring data for [academictorrents.com][]. So far I have almost dozens of supported torrents from them clocking in at about 600GB. Check out <a href="http://academictorrents.com/userdetails.php?id=8987">my lasrswrd profile</a>. I generally selected torrents to host by looking for fewer than ten mirrors and only one or two in the U.S.. I also looked at the number of downloads and upload date: a preference for recent and popular torrents. I also download things like OS images via the server so they can be uploaded in kind.</p>
+<h1 id="dynamic-dns">Dynamic DNS</h1>
+<p>I’ve always had good luck with [noip.com][]. Normally I would install their <a href="https://www.noip.com/support/knowledgebase/installing-the-linux-dynamic-update-client-on-ubuntu/">dynamic update client on the server</a>, but I have found a better way. <a href="https://en.wikipedia.org/wiki/Tomato_(firmware)">Tomato</a> has a setting for dynamic updates. Its as simple as adding your login info and hostname and clicking <em>save</em>. Now my server can be reached at <code>flaminglasersword.ddns.net</code>.</p>
+<h1 id="kvm">KVM</h1>
+<h2 id="tor-bridge">Tor Bridge</h2>
+<p>I would like to help the TOR project in any way that I can. I don’t have a fast internet connection (circa 30Mb down/5Mb up), so I can’t run a full relay. The only thing I can do at the moment is run an <a href="https://www.torproject.org/docs/bridges.html.en">obfuscated bridge</a>. The first step is to create a new KVM to host the tor service. I’m using a copy of Ubuntu 16.04 for stability and compatibility. A TOR bridge doesn’t need all that much in terms of processing and memory. The limiting factor is the bandwidth. I may upgrade the RAM in the future. First some prep for the host:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">sudo</span> ufw allow in Apache<span class="dt">\ </span>Secure</code></pre></div>
+<p>A copy of Ubuntu Server was downloaded using the <a href="http://releases.ubuntu.com/16.04/ubuntu-16.04.5-server-amd64.iso.torrent">torrent link</a> and copied to <code>/var/lib/libvirt/images/</code>. Create the new KVM:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">sudo</span> virt-install --name Ubuntu-16.04 --ram=512 --vcpus=1 --cpu host --hvm --disk path=/var/lib/libvirt/images/ubuntu-16.04-vm1,size=8 --cdrom /var/lib/libvirt/boot/ubuntu-16.04.5-server-amd64.iso --graphics vnc</code></pre></div>
+<p>https://www.torproject.org/docs/debian.html.en#ubuntu</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">sudo</span> apt install gnupg2</code></pre></div>
+<h1 id="standalone-slurm">Standalone Slurm</h1>
+<p>Instructions derived from <a href="https://stackoverflow.com/questions/48410583/slurm-standalone-system-ubuntu-16-04-3-compiled-not-working-authentication">here</a> and <a href="https://rolk.github.io/2015/04/20/slurm-cluster">here</a></p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">sudo</span> apt install libhdf5-dev freeipmi-common libdbi1 libfreeipmi16 libhwloc-plugins libhwloc5 libipmimonitoring5a liblua5.1-0 libmysqlclient20 librrd8 libslurmdb32 munge mysql-server cgroup-bin
+<span class="fu">wget</span> https://download.schedmd.com/slurm/slurm-18.08.3.tar.bz2
+<span class="fu">tar</span> -xvf slurm-18.08.3.tar.bz2
+<span class="bu">cd</span> slurm-18.08.3
+<span class="ex">./configure</span> --prefix=/etc/init.d/ --sysconfdir=/etc/slurm-llnl/
+<span class="fu">make</span>
+<span class="fu">make</span> install
+<span class="fu">sudo</span> /usr/sbin/create-munge-key</code></pre></div>
+<p>Log into your mysql server as root.</p>
+<pre class="mysql"><code>create database slurm_acct_db;
+create user &#39;slurm&#39;@&#39;localhost&#39;;
+set password for &#39;slurm&#39;@&#39;localhost&#39; = &#39;slurm&#39;;
+grant usage on *.* to &#39;slurm&#39;@&#39;localhost&#39;;
+grant all privileges on slurm_acct_db.* to &#39;slurm&#39;@&#39;localhost&#39;;
+flush privileges;</code></pre>
+<p>Use whatever password you think appropriate.</p>
+<p>Make the config files.</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">sudo</span> mkdir /etc/slurm-llnl
+<span class="fu">sudo</span> nano /etc/slurm-llnl/cgroup.conf</code></pre></div>
+<pre><code>CgroupAutomount=yes
+ConstrainCores=no
+ConstrainRAMSpace=no</code></pre>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">sudo</span> nano /etc/slurm-llnl/slurm.conf</code></pre></div>
+<pre><code>ControlMachine=host
+AuthType=auth/none
+CryptoType=crypto/munge
+MpiDefault=none
+ProctrackType=proctrack/cgroup
+ReturnToService=1
+SlurmctldPidFile=/var/run/slurm-llnl/slurmctld.pid
+SlurmctldPort=6817
+SlurmdPidFile=/var/run/slurm-llnl/slurmd.pid
+SlurmdPort=6818
+SlurmdSpoolDir=/var/spool/slurmd
+SlurmUser=slurm
+SlurmdUser=slurm
+StateSaveLocation=/var/spool/slurmd
+SwitchType=switch/none
+TaskPlugin=task/none
+InactiveLimit=0
+KillWait=30
+MinJobAge=300
+SlurmctldTimeout=120
+SlurmdTimeout=300
+Waittime=0
+FastSchedule=1
+SchedulerType=sched/backfill
+SelectType=select/linear
+AccountingStorageType=accounting_storage/none
+AccountingStoreJobComment=YES
+ClusterName=cluster
+JobCompType=jobcomp/none
+JobAcctGatherFrequency=30
+JobAcctGatherType=jobacct_gather/none
+SlurmctldDebug=5
+SlurmctldLogFile=/var/log/slurm-llnl/slurmctld.log
+SlurmdDebug=3
+NodeName=host NodeAddr=xxx.xxx.xxx.xxx.xx CPUs=24 CoresPerSocket=6 ThreadsPerCore=2 State=UNKNOWN RealMemory=24670964
+PartitionName=debug Nodes=host Default=YES MaxTime=INFINITE State=UP</code></pre>
+<p>Change <code>NodeName=</code> and <code>Nodes=</code> to match whatever you put in <code>ControlMachine=</code>. Change <code>CPUs=</code>, <code>CoresPerSocket=</code>, <code>ThreadsPerCore=</code>, <code>RealMemory=</code> to match your system.</p>
+<p>Use bash: <code>free</code> to determine your RealMemory, and <code>lscpu</code> to determine CPU info.</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">sudo</span> nano /etc/slurm-llnl/slurmdb.conf</code></pre></div>
+<pre><code># slurmDBD info
+DbdAddr=localhost
+DbdHost=localhost
+SlurmUser=slurm
+DebugLevel=4
+PidFile=/var/run/slurm-llnl/slurmdbd.pid
+
+# Database info
+StorageType=accounting_storage/mysql
+StoragePass=slurm
+StorageUser=slurm
+StorageLoc=slurm_acct_db</code></pre>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">sudo</span> mkdir /var/log/slurm-llnl /var/spool/slurmd /var/run/slurm-llnl</code></pre></div>
+<p>Change permissions:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">sudo</span> chown -R slurm:slurm /etc/slurm-llnl/ /var/log/slurm-llnl/ /var/run/slurm-llnl
+<span class="fu">sudo</span> chmod -R 664 /etc/slurm-llnl/slurm.conf /etc/slurm-llnl/slurmdb.conf /etc/slurm-llnl/cgroup.conf</code></pre></div>
+<p><em>Note:</em> If you have trouble with the <code>make</code> commands, try <code>sudo make</code> instead.</p>
+:ET

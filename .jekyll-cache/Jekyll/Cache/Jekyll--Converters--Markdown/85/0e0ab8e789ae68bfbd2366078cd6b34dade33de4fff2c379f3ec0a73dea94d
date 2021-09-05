@@ -1,0 +1,20 @@
+I"!<p><strong>This is a test post for a new website called hydroponicshowto.com.</strong></p>
+<blockquote>
+<p>Only as little as 2.5 g of vermiculite was able to neutralise 25 mL of nutrient solutions… <span class="citation" data-cites="indrasumunar_vermiculites_2013">(Indrasumunar and Gresshoff 2013)</span></p>
+</blockquote>
+<p>When it comes to designing a hydroponic system, choosing media is one of the most important decisions a grower needs to make. From biochar to zeolite, how do you know which one is right for your system? One important feature you should <strong>consider</strong> is <strong>buffer capacity</strong> or the ability to resist changes in pH. Knowing how your media interacts with your nutrient solution is paramount for a successful system. Vermiculite might just interact with your system in ways you weren’t expecting.</p>
+<p>Vermiculite is a porous, lightweight media made by heating the solid mineral form until it pops like popcorn. This process is called exfoliation. The tiny pores and cracks that develop are what allows vermiculite to hold so much water and nutrients. While this may seem like an advantage, the same process also has some draw backs:</p>
+<blockquote>
+<p>The results of this current experiment show that the supplied pH to the vermiculite is not what actually experienced by the plants. <span class="citation" data-cites="indrasumunar_vermiculites_2013">(Indrasumunar and Gresshoff 2013)</span></p>
+</blockquote>
+<p>Researchers at the University of Queensland were attempting to measure the growth of soybeans in slightly acidic solutions when they discovered something odd about vermiculite. They found that <strong>vermiculite</strong> has a strong buffer capacity that <strong>tends towards pH 9-10</strong>. Even adding a buffering agent to keep the pH at 6.15 didn’t keep the solution from turning basic in just a few hours.</p>
+<p>The researchers concluded that <strong>vermiculite “should be cautiously used as growth substrate.”</strong> If, however, your system needs to stay around pH 9 (I don’t know why it would), vermiculite is a perfect substrate. It would take large acid/base loads to swing your system’s pH in either direction.</p>
+<p>For the soil growers out there, adding 2-4% by weight ground peat to your vermiculite can keep your pH in the ideal 6-7 range. Peat probably isn’t an ideal media for hydroponics, however. The fine particles can clog drip emitters and nozzles.</p>
+<p><strong>If you want to use vermiculite in your hydroponics system to save money, you might end up paying for it in pH down.</strong></p>
+<h1 id="references" class="unnumbered">References</h1>
+<div id="refs" class="references">
+<div id="ref-indrasumunar_vermiculites_2013">
+<p>Indrasumunar, Arief, and Peter M Gresshoff. 2013. “Vermiculite’s Strong Buffer Capacity Renders It Unsuitable for Studies of Acidity on Soybean (Glycine Max L.) Nodulation and Growth.” <em>BMC Research Notes</em> 6 (November): 465. <a href="https://doi.org/10.1186/1756-0500-6-465" class="uri">https://doi.org/10.1186/1756-0500-6-465</a>.</p>
+</div>
+</div>
+:ET

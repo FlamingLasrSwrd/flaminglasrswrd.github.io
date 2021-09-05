@@ -1,0 +1,22 @@
+I"�<h1 id="intro">Intro</h1>
+<p>The idea here is to make sodium using deep eutectic solvents to catalyze the reaction between magnesium and sodium hydroxide (chloride?) or electrolyze a sodium salt. No tertiary alcohol catalysts or exotic solvents required.</p>
+<ul>
+<li>Choline chloride:zinc chloride seems to be a suitable DES
+<ul>
+<li>both have to be purchased online</li>
+</ul></li>
+<li>solubilities are not that great, but that may not be a problem if you are going with the Mg/NaOH route</li>
+<li>Mostly based on the research from <span class="citation" data-cites="bagh_ionic_2014">(Bagh 2014)</span></li>
+<li>DES’s have the advantage of reusability and low vapor pressure</li>
+<li>Might face the same problems that NurdRage was having in his sodium production due to water contamination</li>
+</ul>
+<h1 id="work-log">Work Log</h1>
+<h1 id="bibliography">Bibliography</h1>
+<!--notes-->
+<!--links-->
+<div id="refs" class="references">
+<div id="ref-bagh_ionic_2014">
+<p>Bagh, Fatemeh Saadat Ghareh. 2014. “Ionic Liquids and Deep Eutectic Solvents and Their Potential Use in Production of Sodium.” PhD thesis, Kuala Lumpur: University of Malaya.</p>
+</div>
+</div>
+:ET

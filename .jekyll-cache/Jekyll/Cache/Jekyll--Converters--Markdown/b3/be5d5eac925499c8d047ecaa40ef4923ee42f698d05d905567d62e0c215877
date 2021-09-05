@@ -1,0 +1,35 @@
+I"�
+<h1 id="intro">Intro</h1>
+<p>So I need a cold trap to protect my vacuum pump.</p>
+<h1 id="design-considerations">Design Considerations</h1>
+<p>For the initial design we will stick to 1 atm air as a working fluid, a loudspeaker driver, and PLA construction.</p>
+<h1 id="work-log">Work Log</h1>
+<h2 id="todo">TODO</h2>
+<ul>
+<li>[ ]</li>
+</ul>
+<h2 id="mar-2021">20 Mar 2021</h2>
+<p>Watch <a href="https://www.youtube.com/watch?v=kkBBkQ8jFRY">Acoustic Cooling &amp; How To Manipulate Heat With Sound (Thermoacoustics Part 2)</a></p>
+<h2 id="feb-2021">17 Feb 2021</h2>
+<p>Los Alamos lab has <a href="https://www.lanl.gov/org/ddste/aldps/materials-physics-applications/condensed-matter-magnet-science/thermoacoustics/computer-codes.php">a thermoacoustic design program</a>. It doesn’t seem to work out of the box with wine on Ubuntu, so I’ll have to check it out later.</p>
+<p>Also, I discovered OpenFOAM: an OS CFD software. It only takes up a gig of hard drive space!</p>
+<p>PLA would make a great stack material. It has lower thermal conductivity and higher heat capacity than mylar (0.13 W/m K, 1800 J/kg K) which is a good thing. <span class="citation" data-cites="raut_design_2017">(Raut and Wankhede 2017)</span></p>
+<p>Ooooo phase change thermoacoustic refrigerator. <span class="citation" data-cites="yang_environmentally-sound_2021">(Yang, Blanc, and Ramon 2021)</span></p>
+<p>So I’m thinking that I should just model a 3D printable thermoacoustic device and see how well it performs. Run a few numbers in the optimization equations to get basic parameters and see what happens. <span class="citation" data-cites="alamir_thermoacoustic_2020">(Alamir 2020)</span></p>
+<h2 id="feb-2021-1">17 Feb 2021</h2>
+<p>Project Created!</p>
+<h1 id="bibliography">Bibliography</h1>
+<!--notes-->
+<!--links-->
+<div id="refs" class="references">
+<div id="ref-alamir_thermoacoustic_2020">
+<p>Alamir, Mahmoud. 2020. “Thermoacoustic Energy Conversion Devices: Novel Insights.” <em>International Journal of Heat and Mass Transfer</em> 172 (October). <a href="https://doi.org/10.37934/arfmts.77.2.130144" class="uri">https://doi.org/10.37934/arfmts.77.2.130144</a>.</p>
+</div>
+<div id="ref-raut_design_2017">
+<p>Raut, Ashish S, and Dr U S Wankhede. 2017. “Design and Optimization of Stack for Eco-Friendly Thermoacoustic Refrigeration System.” <em>International Journal of Science Technology &amp; Engineering</em> 4 (6): 7.</p>
+</div>
+<div id="ref-yang_environmentally-sound_2021">
+<p>Yang, Rui, Nathan Blanc, and Guy Z. Ramon. 2021. “Environmentally-Sound: An Acoustic-Driven Heat Pump Based on Phase Change.” <em>Energy Conversion and Management</em> 232 (March): 113848. <a href="https://doi.org/10.1016/j.enconman.2021.113848" class="uri">https://doi.org/10.1016/j.enconman.2021.113848</a>.</p>
+</div>
+</div>
+:ET

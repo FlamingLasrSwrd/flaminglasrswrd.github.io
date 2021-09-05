@@ -28,7 +28,7 @@ I suggest that common ground can be found in the balance of the right to life an
 
 I do not wish to get into a discussion of semantics (which may be my downfall) --suffice to say that the writers saw fit to separate life and liberty into distinct rights. This distinction is made all too real when considering gun rights and the space between complete gun restriction and complete open access. Guns are a necessary but not sufficient cause of gun violence. To belabor the point, if you could instantly remove all guns from the US (practicality aside), gun use would plummet to zero just as quickly. If one does not have a gun, one cannot use a gun.
 
-![image]({{ site.url }}/assets/img/leviathan_gun_single.jpg)
+![image](/assets/img/leviathan_gun_single.jpg)
 
 **Work in Progress**
 

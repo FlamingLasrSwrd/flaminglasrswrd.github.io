@@ -1,0 +1,98 @@
+I"W)<p>Unlike PPE for healthcare workers, public masks are designed to prevent transmission from you to others. This alleviates many of the design constraints that NIOSH requires of their masks. Principally, the blockage of the smallest particles emitted from the body, the so called <em>aerosolized</em> particles, isn’t a high priority.</p>
+<p>Similarly, preventing the transmission of large <em>intertial</em> droplets is relatively easy when the filter material is close to the source.</p>
+<p><em>Disclaimer: I have no qualifications. If any of my statements conflict with those of professionals, please disregard mine.</em></p>
+<p><em>Do your own research. This is mine.</em></p>
+<h1 id="ideal-mask-features">Ideal Mask Features</h1>
+<p>An ideal mask should:</p>
+<ol type="1">
+<li>be form fitting and sealed</li>
+</ol>
+<p>A mask is useless unless you are actually breathing through it. Any filtering material will provide some level of protection, so the most important feature should be form.</p>
+<p>This is controlled mainly by your chosen mask pattern. The bridge of the nose and jawline are the most difficult contours to match. The noseline is almost always molded using a ductile metal. Thin aluminum strips are common for disposable masks but are probably insufficient for reusable masks since aluminum work hardens and cracks easily. More on this later.</p>
+<p>Material choice is also important. A large differential pressure due to overly constricting filter media will result in a lot of filter bypass.</p>
+<ol start="2" type="1">
+<li>be comfortable</li>
+</ol>
+<p>Constantly adjusting your mask just transfers germs from fomites to hands to face. A mask should have consistent pressure around the sealing surface circumference. The counter-pressure mechanism (e.g., ear-loops) should also be comfortable.</p>
+<ol start="3" type="1">
+<li>filter as small of particles as possible without affecting the other design constraints</li>
+</ol>
+<p>Once the fit and comfort are guaranteed, filtering capabilities should be maximized. This is accomplished by filter media choice.</p>
+<ol start="4" type="1">
+<li>work consistently for as long as possible</li>
+</ol>
+<p>Typical public excursions for me are less than an hour. This is plenty of time for moisture to accumulate in a mask and reduce airflow to the point of violating feature number one.</p>
+<p>This is where many DIY mask materials fail. Most household fabrics are hydrophilic: trapping and wicking moisture and contaminants. This leads to, at best, a mask which is hard to breathe through and, at worst, a source of contamination itself.</p>
+<p>An ideal mask should be hydrophobic enough to withstand possibly many hours of exposure to moisture saturated air at above ambient temperatures. It should also be abrasion resistant.</p>
+<ol start="5" type="1">
+<li>be reusable</li>
+</ol>
+<p>Reusable masks are the ideal. Since we don’t have to worry about electret materials loosing their potency, washable media is within our reach.</p>
+<ol start="6" type="1">
+<li>be fashionable: because it’s already socially problematic to wear a mask. Let’s not make it worse.</li>
+</ol>
+<p>The US population has been hesitant to adopt masks in public for whatever reason. Smoothing the transition by making a mask visually appealing is preferable.</p>
+<h1 id="my-situation">My Situation</h1>
+<p>It is important to note that I have access to methods and materials that most do not. The <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/diy-cloth-face-coverings.html">CDC website</a> gives instructions on several simple masks made from simple household items. If all you have are bandanas, coffee filters, and rubber bands… follow their instructions.</p>
+<p>This page is for the slightly more advanced (and unverified) techniques.</p>
+<h1 id="materials">Materials</h1>
+<p>The first specification for surgical masks was in 1918 by Huller and Colwell:</p>
+<blockquote>
+<p>Following a series of tests, the group concluded that the amount of gauze placed in superimposed layers necessary to provide complete protection from those that were infected had to be the equivalent to a total of 300 threads per inch.<span class="citation" data-cites="belkin_evolution_1997">(Belkin 1997)</span></p>
+</blockquote>
+<p>Current professional surgical type masks are 3-ply: a melt-blown layer sandwiched between to non-woven fabrics.<span class="citation" data-cites="hutten_handbook_2016">(Hutten 2016)</span></p>
+<blockquote>
+<p>The relative efficiency of the different masks was found to be, in descending order, polypropylene fibers, polyester-rayon fibers, glass-fiber mats, and cellulose (paper).<span class="citation" data-cites="belkin_evolution_1997">(Belkin 1997)</span></p>
+</blockquote>
+<h2 id="liquid-penetration">Liquid Penetration</h2>
+<p>After only a few minutes of breathing, any face mask material will likely be saturated with the condensed liquid generated by the wearer. If said wearer is sick, that liquid will contain potentially infectious virus particles. If that filter material is hydrophilic or wicking, that contaminated liquid will migrate to the outside surface only to be propelled into the air by the next sufficiently forceful breath.</p>
+<p>In short, the path of liquid from inside-to-out or vice versa must be broken by a hydrophobic layer (i.e. a capillary break layer). But a hydrophilic layer cannot be omitted entirely:</p>
+<blockquote>
+<p>They found the absorbent material preferable, because particles of mucus seemed to adhere to it more quickly and firmly.</p>
+</blockquote>
+<h2 id="additives">Additives</h2>
+<p>Many abiotic substances have been tested for incorporation into mask design. Glycerin and aluminum subacetate, while effective, are uncomfortable and odorous.<span class="citation" data-cites="belkin_evolution_1997">(Belkin 1997)</span></p>
+<p>Recently, there has been a large upwelling of research into metallic nanoparticles, specifically copper and silver.</p>
+<p>It has already been shown that SARS-CoV-2 is eliminated on copper surfaces after four hours. Stainless steel and plastic, on the other hand, supports the virus for at least 72 hours.</p>
+<h1 id="deflection-masks">Deflection Masks</h1>
+<p>If our primary goal is the deflect those inertial-type particles, then we simply have to change their direction. Instead of particles leaving the mouth and traveling in a straight (or rather parabolic) line directly to unsuspecting mucus membranes, deflected particles would travel down and settle on the innocuous floor.</p>
+<p>Wearing a face-shield might be just as effective as any mask for regular conversation. Unless you are very tall and talking to someone very short.</p>
+<p>Current mask design allows for this mechanism to deflect exhaled air across the cheeks and ears via a loose fit in this area. As long as the mask is of a single curved backward unit, the pressure of exhalation will deflect droplets backward.</p>
+<p>The smaller droplets, by virtue of being in the “diffusion” regime, are not affected by deflection principles.</p>
+<p>Because of this deflection effect, it is better to sneeze directly toward a person than turn:</p>
+<blockquote>
+<p>…if a person wearing a mask had to cough or sneeze, it was better to face the wound and not turn to one side, as most people instinctively do[<span class="citation" data-cites="belkin_evolution_1997">Belkin (1997)</span>]</p>
+</blockquote>
+<h1 id="other-social-changes">Other Social Changes</h1>
+<blockquote>
+<p>For example, speaking without a mask in ordinary conversational tone for 5 minutes projected relatively few bacteria from the mouth and only for a distance of 1 to 2 feet… On the other hand, speaking without a mask in a loud tone for 5 minutes generated considerably more,with one organism projecting more than 3 feet.<span class="citation" data-cites="belkin_evolution_1997">(Belkin 1997)</span></p>
+</blockquote>
+<p>This line of research has since been reevaluated and has subsequently produced the current recommendation of six feet.</p>
+<h1 id="nomenclature">Nomenclature</h1>
+<blockquote>
+<p>The described purpose of face masks are to prevent the spread of infections from the wearer and to protect the user from body fluids splashed or sprayed, whereas respirators are used to protect the wearer from others with confirmed or possible respiratory infections. <span class="citation" data-cites="chughtai_use_2013">(Chughtai, Seale, and MacIntyre 2013)</span></p>
+</blockquote>
+<p>So we will be using face mask or just <em>mask</em> throughout this article.</p>
+<h1 id="particle-size">Particle Size</h1>
+<p>Droplets greater than about one micrometer are driven primarily by inertia. They tend to continue in the direction in which they were emitted.</p>
+<p>Below about 100 nanometers, intermolecular forces (Brownian motion) tends to dominate and keep droplets suspended for long periods. These aerosols quickly lose forward momentum and have a subsequently random motion.</p>
+<p>Between these two regions exists the hardest droplets to filter because both diffusive and inertial movement are prominent. A droplet has sufficient momentum to pass through a filter with sufficient random movement to wiggle through filter media.</p>
+<p>Testing N95 masks against the more difficult 300 nanometer droplets ensures that all particles, larger and smaller, are filtered with greater than 95% efficiency.</p>
+<h1 id="work-log">Work Log</h1>
+<h2 id="jun-2020">15 Jun 2020</h2>
+<p>Archived this project because cloth masks with nonwoven polypropylene filter insert works well enough.</p>
+<h1 id="bibliography">Bibliography</h1>
+<!--notes-->
+<!--links-->
+<div id="refs" class="references">
+<div id="ref-belkin_evolution_1997">
+<p>Belkin, Nathan L. 1997. “The Evolution of the Surgical Mask: Filtering Efficiency Versus Effectiveness.” <em>Infection Control and Hospital Epidemiology</em> 18 (1): 49–57. <a href="https://doi.org/10.2307/30141964" class="uri">https://doi.org/10.2307/30141964</a>.</p>
+</div>
+<div id="ref-chughtai_use_2013">
+<p>Chughtai, Abrar Ahmad, Holly Seale, and Chandini Raina MacIntyre. 2013. “Use of Cloth Masks in the Practice of Infection Control Evidence and Policy Gaps.” <em>International Journal of Infection Control</em> 9 (3). <a href="https://doi.org/10.3396/IJIC.v9i3.020.13" class="uri">https://doi.org/10.3396/IJIC.v9i3.020.13</a>.</p>
+</div>
+<div id="ref-hutten_handbook_2016">
+<p>Hutten, Irwin M. 2016. <em>Handbook of Nonwoven Filter Media</em>. Amsterdam ; Boston, MA: Butterworth Heinemann, an imprint of Elsevier.</p>
+</div>
+</div>
+:ET

@@ -1,0 +1,170 @@
+I"�<h1 id="sources">Sources</h1>
+<h2 id="edx"><a href="https://www.edx.org">EdX</a></h2>
+<p>A non-profit online purveyor of courses.</p>
+<p>Programs * <a href="https://www.edx.org/course/artificial-intelligence-ai-columbiax-csmm-101x-1">Artificial Intelligence</a> (9/10/17); Free; $1200 for MicroMasters credential; 12 weeks per course @ 8-10hrs per course-week; Colombia 7.5 credit hours; * <a href="https://www.edx.org/course/robotics-columbiax-csmm-103x-0">Robotics</a> (9/10/17); Free; $300 for certificate * <a href="https://www.edx.org/course/animation-cgi-motion-columbiax-csmm-104x-0">Animation and CGI Motion</a> (9/10/17); Free; $300 for certificate * <a href="https://www.edx.org/course/artificial-intelligence-ai-columbiax-csmm-101x-1">Artificial Intelligence</a> (9/10/17); Free; $300 for certificate * <a href="https://www.edx.org/course/machine-learning-columbiax-csmm-102x-1">Machine Learning</a> (9/10/17); Free; $300 for certificate * <a href="https://www.edx.org/professional-certificate/israelx-sparse-representations-from-theory-to-practice">Sparse Representations in Signal and Image Processing</a> (10/24/17); $198; 5 weeks per course @ 5-6hrs per course-week; IsraelX * [Spare Representations in Signal and Image Processing Fundamentals][] (10/24/17); $99 * <a href="https://www.edx.org/course/sparse-representations-image-processing-israelx-236862-2x">Sparse Representation in Image Processing: From Theory to Practice</a> (2/27/18); $99</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 23%" />
+<col style="width: 10%" />
+<col style="width: 8%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Program Name</th>
+<th>Class Name</th>
+<th>Sources</th>
+<th>Cost</th>
+<th>Start Date</th>
+<th>Prerequisites</th>
+<th>Time</th>
+<th>Length</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.udacity.com/course/programming-foundations-with-python--ud036">Intro to Python Programming</a></td>
+<td>udacity</td>
+<td>Free</td>
+<td>none</td>
+<td>none</td>
+<td></td>
+<td>5 weeks</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.udacity.com/course/intro-to-artificial-intelligence--cs271">Intro to Artificial Intelligence</a></td>
+<td>udacity</td>
+<td>Free</td>
+<td>none</td>
+<td>python</td>
+<td></td>
+<td>4 months</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.udacity.com/course/machine-learning--ud262">Machine Learning Udacity</a></td>
+<td>udacity; Georgia Tech</td>
+<td>Free</td>
+<td>none</td>
+<td>python; Intro to AI</td>
+<td></td>
+<td>4 months</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.edx.org/course/data-science-readiness-assessment-notredamex-ds101x">Data Science Readiness Assessment</a></td>
+<td>EdX; Notre Dame</td>
+<td>Free/$49</td>
+<td>1/22/17</td>
+<td>none</td>
+<td>10hrs</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.edx.org/micromasters/columbiax-artificial-intelligence">Artificial Intelligence MicroMasters</a> ($1200)</td>
+<td><a href="https://www.edx.org/course/robotics-columbiax-csmm-103x-0">Robotics</a></td>
+<td>EdX; Colombia</td>
+<td>Free/$300</td>
+<td>9/10/17</td>
+<td>linear algebra;calculus;python</td>
+<td>8-10hrs</td>
+<td>12 weeks</td>
+</tr>
+<tr class="even">
+<td>“</td>
+<td><a href="https://www.edx.org/course/animation-cgi-motion-columbiax-csmm-104x-0">Animation and CGI Motion</a></td>
+<td>EdX; Colombia</td>
+<td>Free/$300</td>
+<td>9/10/17</td>
+<td>“”</td>
+<td>8-10hrs</td>
+<td>12 weeks</td>
+</tr>
+<tr class="odd">
+<td>“</td>
+<td><a href="https://www.edx.org/course/artificial-intelligence-ai-columbiax-csmm-101x-1">Artificial Intelligence</a></td>
+<td>EdX; Colombia</td>
+<td>Free/$300</td>
+<td>9/10/17</td>
+<td>“”; probability and stats</td>
+<td>8-10hrs</td>
+<td>12 weeks</td>
+</tr>
+<tr class="even">
+<td>“</td>
+<td><a href="https://www.edx.org/course/machine-learning-columbiax-csmm-102x-1">Machine Learning</a></td>
+<td>EdX; Colombia</td>
+<td>Free/$300</td>
+<td>9/10/17</td>
+<td>“”</td>
+<td>8-10hrs</td>
+<td>12 weeks</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.edx.org/professional-certificate/israelx-sparse-representations-from-theory-to-practice">Sparse Representations in Signal and Image Processing</a> ($198)</td>
+<td><a href="https://www.edx.org/course/sparse-representations-signal-image-israelx-236862-1x">Sparse Representations in Signal and Image Processing Fundamentals</a></td>
+<td>EdX; Technion</td>
+<td>Free/$99</td>
+<td>10/24/17</td>
+<td>advanced linear algebra; signal and image processing familiarity</td>
+<td>5-6hrs</td>
+<td>5 weeks</td>
+</tr>
+<tr class="even">
+<td>“</td>
+<td><a href="https://www.edx.org/course/sparse-representations-image-processing-israelx-236862-2x">Sparse Representation in Image Processing: From Theory to Practice</a></td>
+<td>EdX; Technion</td>
+<td>Free/$99</td>
+<td>2/27/18</td>
+<td>Sparse Representations: Fundamentals</td>
+<td>5-6hrs</td>
+<td>5 weeks</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.edx.org/micromasters/data-science">Data Science</a> ($1260)</td>
+<td><a href="https://www.edx.org/course/python-data-science-uc-san-diegox-dse200x">Python for Data Science</a></td>
+<td>Edx; UCSanDiego</td>
+<td>Free/$350</td>
+<td>5/31/17</td>
+<td>basic programming</td>
+<td>8-10hrs</td>
+<td>10 weeks</td>
+</tr>
+<tr class="even">
+<td>“</td>
+<td><a href="https://www.edx.org/course/statistics-probability-data-science-uc-san-diegox-dse210x">Statistics and Probability in Data Science using Python</a></td>
+<td>Edx; UCSanDiego</td>
+<td>Free/$350</td>
+<td>10/27/17</td>
+<td>calculus;linear algebra;Python for Data Science</td>
+<td>8-10hrs</td>
+<td>10 weeks</td>
+</tr>
+<tr class="odd">
+<td>“</td>
+<td><a href="https://www.edx.org/course/machine-learning-data-science-uc-san-diegox-ds220x">Machine Learning for Data Science</a></td>
+<td>Edx; UCSanDiego</td>
+<td>Free/$350</td>
+<td>1/2/18</td>
+<td>Stats and Prob in Data Science using Python</td>
+<td>8-10hrs</td>
+<td>10 weeks</td>
+</tr>
+<tr class="even">
+<td>“</td>
+<td><a href="https://www.edx.org/course/big-data-analytics-using-spark-uc-san-diegox-dse230x">Big Data Analytics Using Spark</a></td>
+<td>Edx; UCSanDiego</td>
+<td>Free/$350</td>
+<td>5/31/18</td>
+<td>Machine Learning for Data Science</td>
+<td>8-10hrs</td>
+<td>10 weeks</td>
+</tr>
+</tbody>
+</table>
+<p>Preference is given to courses that are led by academics over industry professionals.</p>
+<h1 id="the-timeline">The Timeline</h1>
+<p><a href="https://www.udacity.com/course/programming-foundations-with-python--ud036">Intro to Python Programming</a> –&gt; <a href="https://www.edx.org/course/artificial-intelligence-ai-columbiax-csmm-101x-1">Artificial Intelligence</a> –&gt; <a href="https://www.udacity.com/course/machine-learning--ud262">Machine Learning Udacity</a></p>
+<p>Anytime after python: * <a href="https://www.edx.org/course/data-science-readiness-assessment-notredamex-ds101x">Data Science Readiness Assessment</a> * <a href="https://www.edx.org/course/python-data-science-uc-san-diegox-dse200x">Python for Data Science</a></p>
+:ET

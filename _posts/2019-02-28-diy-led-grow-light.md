@@ -138,7 +138,7 @@ I just found out that Bridgelux isn't listed on mouser at all. So off to digikey
 
 It seems that Bridgelux spectrum characteristics are similar to Cree, so my conclusions about color temperature still hold. Probably because they use the same doping materials for the LED manufacture.
 
-Check out [my spreadsheet]({{ site.url }}/assets/doc/COBs_digikey.ods) for a better price analysis. Some selections:
+Check out [my spreadsheet](/assets/doc/COBs_digikey.ods) for a better price analysis. Some selections:
 
 |     Part Number   |  Cost  |  CCT  |Lumens|Current|Voltage|lm/W|CRI|#/sq.ft.|$/sq.ft. initial|$/sq.ft 1yr|$/sq.ft. 5yr|
 | ----------------- | ------ | ----- | ----- | --- | ---- | --- |----| ---- | ------ | ------ | ------- |
@@ -305,7 +305,7 @@ The spectral diagram for the 90 CRI bulbs is much close to ideal for chlorophyll
 [CMT2890-0000-000P0B0A40E]: https://www.mouser.com/ProductDetail/Cree-Inc/CMT2890-0000-000P0B0A40E?qs=sGAEpiMZZMu4Prknbu83y%252BlrQIM%2FH7mNu789bQ27ReqfnTvG008j2w%3D%3D
 [ELG-240-C1400B]: https://www.mouser.com/ProductDetail/MEAN-WELL/ELG-240-C1400B?qs=sGAEpiMZZMvV8Y9YugmIgk59%2FApAE%2FIVB3MmBjWTkYEX60FVWGQkJg%3D%3D
 
-[LED price analysis (spreadsheet)]: {{ site.url }}/assets/doc/LED_price_analysis.ods
+[LED price analysis (spreadsheet)]: /assets/doc/LED_price_analysis.ods
 
 [A better search]: https://www.mouser.com/Optoelectronics/LED-Lighting/LED-Emitters/High-Power-LEDs-White/_/N-8usfjZ1yzvvqx?P=1yooko6Z1yonoecZ1yci252Z1yxpyhjZ1yxq3mwZ1yxptx8Z1yxpu8sZ1yvhvgeZ1yzt855Z1yzrumgZ1yzt876Z1yzt85wZ1yzt83qZ1yzt84hZ1yzt86sZ1yzt87eZ1yzt879Z1yzt851Z1yzt850Z1yzt86z&Rl=8usfjZgjdhgkZ1y8tpzvZ1y9gvpdSGT&Ns=Pricing|0
 

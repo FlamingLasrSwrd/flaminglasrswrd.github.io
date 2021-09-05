@@ -1,0 +1,110 @@
+I"<!<h1 id="site-title">Site Title</h1>
+<p><em>Newton’s flaming laser sword</em> is a term coined in 2004 by Mike Alder. In an article in <strong>Philosophy Now</strong>, Alder draws a parallel between the well known <em>Occam’s Razor</em> and this new cleaving tool. With Occam’s razor, the search space of possible solutions to a problem or question only the most parsimonious survives. While this is extremely helpful, Newton’s flaming laser sword is “much sharper and more dangerous”. Put simply, it says that only propositions that can be tested with science should be considered or even discussed. <span class="citation" data-cites="alder_newtons_2004">(Alder 2004)</span></p>
+<p>Thus the scope of this site is defined: Anything that can be tested with science. More narrowly I tend to stick to the fields of chemistry, physics, philosophy, electronics, and computer science.</p>
+<h1 id="descriptive-titles">Descriptive Titles</h1>
+<p>In no particular order:</p>
+<ul>
+<li>Pragmatist</li>
+<li>Secular Humanist</li>
+<li>Atheist</li>
+<li>Existentialist</li>
+<li>Egotistical Altruist</li>
+<li>Skeptic</li>
+<li>Hopeful Marxist</li>
+<li>Human</li>
+<li>Animal</li>
+<li>Resident of Earth</li>
+</ul>
+<h1 id="philosophical-inspiration">Philosophical Inspiration</h1>
+<ul>
+<li>Seneca</li>
+<li>Sagan</li>
+<li>Marx</li>
+<li>Freud</li>
+<li>Feynman</li>
+<li>Hobbes</li>
+<li>Nietzsche</li>
+</ul>
+<h1 id="other-influences">Other Influences</h1>
+<ul>
+<li>Too much science fiction</li>
+<li>Heinlein</li>
+<li>Dick</li>
+<li>Bradbury</li>
+<li>Asimov</li>
+</ul>
+<h1 id="current-life-goal">Current Life Goal</h1>
+<p>To maximize my contribution to the human race.</p>
+<ul>
+<li>maximize the total AUC of contribution vs time</li>
+<li>contribution: open to subjective interpretation; anything from reproduction to global welfare; Eudaimonia</li>
+</ul>
+<h1 id="research-process">Research Process</h1>
+<p>My current research process proceeds through several utility programs:</p>
+<ul>
+<li><a href="https://www.zotero.org/">Zotero</a></li>
+<li><a href="https://www.foxitsoftware.com/pdf-reader/">Foxit PDF reader</a></li>
+<li><a href="https://zotfile.com/">Zotfile</a></li>
+<li><a href="https://retorque.re/zotero-better-bibtex/">Better Bibtex</a></li>
+<li><a href="https://atom.io/">Atom</a></li>
+<li><a href="https://pandoc.org">Pandoc</a></li>
+<li><a href="https://jekyllrb.com/">Jekyll</a></li>
+<li><a href="https://github.com">Github</a></li>
+</ul>
+<h2 id="building-this-website">Building This Website</h2>
+<p>This site is first written in pandoc markdown format using Atom. The markdown-writer plugin (and <a href="/_mdwriter.cson">personalized config file</a>) is particularly useful.</p>
+<p>Then a series of hacks and poorly coded tags are fed into Jekyll. The ruby gem jekyll-pandoc uses a bibliography exported by Better-Bibtex from Zotero to generate the appropriate citations using a custom .csl style I made for markdown. The complete set of html and associated files are backed up to github and transferred via a <a href="/assets/src/push_fls_site.sh">rsync script</a> to my web host NearlyFreeSpeech.net.</p>
+<h2 id="progress-phase-tags">Progress Phase Tags</h2>
+<p>Each project page will have a <em>progress</em> liquid tag that describes how far along each project is.</p>
+<h3 id="exploratory">Exploratory</h3>
+<p>The first phase. This is the initial research phase where the project general parameters are expanded or narrowed. Prior art is located and skimmed.</p>
+<p>It is at this phase that a project is determined to be feasible. Primary reasons for project abandon are: expense, lack of tooling, or sufficient documentation elsewhere.</p>
+<p>A project in the exploratory phase may or may not have a dedicated project page. They usually start as an aside on the <a href="https://flaminglasersword.com/work-log.html">Work Log</a> page.</p>
+<h3 id="research">Research</h3>
+<p>Primary research is more of an extension of the exploratory phase than a distinct phase. The major difference is more thorough documentation of prior art and research. This is where Zotero comes into play.</p>
+<p>Projects in the research phase are given posts.</p>
+<h3 id="experimental">Experimental</h3>
+<p>Some projects require intermediate experimentation to determine direction and/or gain experience. These experiments will probably not be documented extensively except to point out failures and ultimate success.</p>
+<h3 id="design">Design</h3>
+<p>Once experimentation and/or research has revealed a path forward, the design phase begins. Small details are worked out.</p>
+<h3 id="results">Results</h3>
+<p>Primary results are reported. This may or may not come before the design phase.</p>
+<h3 id="write-up">Write-Up</h3>
+<p>The final and ideal end-point of a project is a write-up. Of course there will be notes along the way, but a complete how-to or more formal <em>Methods</em> description is easier to repeat.</p>
+<h2 id="priority-tags">Priority Tags</h2>
+<p>Sometimes projects have fallen out of interest. <em>low</em> - <em>high</em> priority tags reflect that.</p>
+<h1 id="stats">Stats</h1>
+<ul>
+<li><a href="https://www.16personalities.com/entp-personality">ENTP</a><a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a></li>
+<li>Typicall score high on Need for Cognition, Openness to Experience, and Epistemic Curiosity</li>
+</ul>
+<p><img src="https://flaminglasersword.com/assets/img/big5.png" alt="Big Five personality results." /><a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a></p>
+<h1 id="contact">Contact</h1>
+<p>Email me: flaminglasrswrd at protonmail dot com</p>
+<button class="btn" type="button" data-toggle="collapse" data-target="#pgp" aria-expanded="false" aria-controls="pgp">
+PGP Public Key
+</button>
+<div id="pgp" class="collapse">
+<div class="card card-body">
+<pre><code>-----BEGIN PGP PUBLIC KEY BLOCK-----</code></pre>
+<p>Version: GnuPG v1</p>
+<p>mQENBFqB0kQBCACsy501CowTdQtF7ci8pDnLas33hSCcntMykg5DoB4lvKTeqOo+ Sa5d8c7yrJ2HAfR5b70xQjOOeKt0KCN4bCJWtMoBuGfp8fU7Z/0gH0DA4k7Q0BXA UCM++8Jzcw4Y9EWH9HgsudPpmpKJpWnaII2EA1Ajp4aaU7J756F8YXBm/G8zwWf+ UNzb4b5PCx0BiwFftJ6MSLYJXzHJZlBJ8txvqEH88DN3MPwvQjPkTXujTbRhTPp1 ZC2DBGF9fVeaR5udydagwnCQeRgr/PAD86Vh8cHGZNj8KlP6Grzq+o7+BTF9ZC+O G6eeHGvwud+XJgYmMZ7d4y04n1DemfeYjx2ZABEBAAG0JUVsaWphaCBEdW5uIDxl bGlqYWguay5kdW5uQGdtYWlsLmNvbT6JATgEEwECACIFAlqB0kQCGwMGCwkIBwMC BhUIAgkKCwQWAgMBAh4BAheAAAoJEJ5ZJPY9FvT8q1wH+wS0+eblVRwFrCQVwkSQ 2kk5AMOBBGQUA9exXYLCuGVhKR+0zpscdwFFaYJdHH1MNnLWFo8EjITwE5ADc/yg U809w5XMCoRaeC/mPrPTmp5Z0q733ISVM5DNxLp4ncE2qkXsOrWs+ceaIQzkshsR FBkeKiI+NVb1H875Xvhdgr0J6376r8aSXfGGGz2EE/r0tXfnUMMcwmMUrwXImzAT WJIguxNnB4Bax6elVPsBNGA97EIRe8uJGGLv7GZIcekLbfiVVk81v+v5qESb5qM8 p/huUo3XXbwhKq9MtU/C+0X2s3zbizVxIPb2+wYMmAzroJ8/enXmgyMR3ixz95+U 2e65AQ0EWoHSRAEIALmZiKpxcf8Jn4hVlI6CjhnuqRrgVVblgitW4YvkkDdm6P9Z nxlXPJyJW1K5piOOGfFbBz7N7mGWKK45+TNOxiLrEIdluFLVrw6kFdkufL8bOUMc 1tWb5YkOCpx983MOa5nOxesAvCHDjmfayh6NgfHRJhJuL9VVkFEoKRmQ8JOw94kR rSnwG2G8Ep+F//wQPpzuAFAY42uYsSs8muFtICthvRON4auc86HiNXlFw7G8bWH1 xcgon8V2X0Tt5Vh0hurKmAg9MrO+Q86fW2VZ8Ygs1SAe6G/O7AHIrH3f0UMZgff9 PuDjYKpUOo1pMFcawXsfA0DGDgeUp7YvVfIceS8AEQEAAYkBHwQYAQIACQUCWoHS RAIbDAAKCRCeWST2PRb0/IuhCACoMqHPbKynUDA+PWI8IHR4xUpVImkcR6iDOgO0 XVWePQfsYFxHjCZ08obn7LHrZ9jvuKtJgbtY72k+XFneTp4RHLG9rSxzTKMVg+xx 5igDO4Z7jlDjCpCUTLOb0cmKgVizq9wDi5WGeuz2+NWadXtwBIFd4k7rKwZD6+XI 7vz6+u4ClIxiC+3wxKgf1/cg9I8Ri96sQ7ovjb/PuBGE8xon+VzwrKnklj9tnXtT v5WexViuWeIxdsKSv6MhUFNfPUZ3S4/+6B1t5rBTmw47oK07TDFXa5HHeakvEsHt YjY/rk5zY7Vlqcnrc6cotjBNoZznsj2N8PI10pD71ZWVsEfI =6+Gq</p>
+<p>—–END PGP PUBLIC KEY BLOCK—–</p>
+</div>
+</div>
+<h1 id="bibliography">Bibliography</h1>
+<!--notes-->
+<!--links-->
+<div id="refs" class="references">
+<div id="ref-alder_newtons_2004">
+<p>Alder, Mike. 2004. “Newton’s Flaming Laser Sword.” <em>Philosophy Now</em>, no. 46. <a href="https://philosophynow.org/issues/46/Newtons_Flaming_Laser_Sword" class="uri">https://philosophynow.org/issues/46/Newtons_Flaming_Laser_Sword</a>.</p>
+</div>
+</div>
+<section class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>This used to be INTP, but I’ve come out of my shell a bit. Also, Myers-Briggs isn’t a very good test anyway.<a href="#fnref1">↩</a></p></li>
+<li id="fn2"><p>I disagree with the results on agreeableness. I am usually quite trustful, straightforward, altruistic, and modest. I would not consider myself tender-minded. This particular test from <a href="https://openpsychometrics.org">OpenPsychometrics</a> had some unusual questions.<a href="#fnref2">↩</a></p></li>
+</ol>
+</section>
+:ET

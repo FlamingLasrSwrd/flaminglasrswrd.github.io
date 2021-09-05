@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0">
+  <info>
+    <title>Simple Markdown References</title>
+    <title-short>SMR</title-short>
+    <id>http://www.zotero.org/styles/simple-markdown-references</id>
+    <link href="http://www.zotero.org/styles/simple-markdown-references" rel="self"/>
+    <link href="https://forums.zotero.org/discussion/65821/create-new-export-format" rel="documentation"/>
+    <author>
+      <name>Frank Bennett</name>
+    </author>
+    <contributor>
+      <name>Zotero user azaghal_of_belegost</name>
+    </contributor>
+    <category citation-format="note"/>
+    <category field="social_science"/>
+    <updated>2015-01-11T22:02:33+00:00</updated>
+    <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
+  </info>
+  <macro name="title-mac">
+    <choose>
+      <if variable="title">
+        <text variable="title" prefix="*" suffix="*"/>
+      </if>
+      <else>
+        <text value="**No title**"/>
+      </else>
+    </choose>
+  </macro>
+  <macro name="doi-mac">
+    <choose>
+      <if variable="DOI">
+        <group>
+          <text variable="DOI" prefix="doi:[" suffix="]"/>
+          <text variable="DOI" prefix="(https://doi.org/" suffix=")"/>
+        </group>
+      </if>
+      <else>
+        <text value="**no doi available**"/>
+      </else>
+    </choose>
+  </macro>
+  <citation>
+    <layout delimiter="; ">
+      <group delimiter=", ">
+        <text macro="title-mac"/>
+        <text macro="doi-mac"/>
+      </group>
+    </layout>
+  </citation>
+</style>

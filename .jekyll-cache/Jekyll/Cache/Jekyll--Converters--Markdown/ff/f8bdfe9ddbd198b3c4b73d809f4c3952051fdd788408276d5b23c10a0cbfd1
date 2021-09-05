@@ -1,0 +1,226 @@
+I"�<<h1 id="ammonium-hydroxide">Ammonium Hydroxide</h1>
+<h2 id="urea">Urea</h2>
+<p><a href="https://www.youtube.com/watch?v=0-jJ5QF-EVE">Make Concentrated Ammonia | NurdRage</a></p>
+<ul>
+<li>200ml water</li>
+<li>90g urea</li>
+<li>120g sodium hydroxide</li>
+<li>100g absorption water</li>
+<li>yield: ~37g ammonia at 27% concentration</li>
+</ul>
+<h2 id="ammonium-salt">Ammonium salt</h2>
+<p><a href="https://www.youtube.com/watch?v=gh4gGkk74iU">Ammonia Generator | Doug’s Lab</a></p>
+<ul>
+<li>13.2g ammonium sulfate dissolved in 30ml water (1/10th molar scale)</li>
+<li>9g sodium hydroxide (1.1eq)</li>
+<li>40ml absorption water</li>
+</ul>
+<p><em>3L flask 30% version</em></p>
+<ul>
+<li>6 molar scale</li>
+<li>793g ammonium sulfate in 1L water</li>
+<li>530g sodium hydroxide</li>
+<li>700ml absorption water</li>
+</ul>
+<h1 id="ferric-ammonium-oxalate">Ferric Ammonium Oxalate</h1>
+<p>1 molar iron ammonium oxalate (428g as trihydrate) synthesis starting from iron oxide:</p>
+<ul>
+<li>85g iron oxide (1.1 eq)</li>
+<li>378g oxalic acid dihydrate</li>
+<li>51.1g ammonium hydroxide</li>
+</ul>
+<blockquote>
+<p>Crystallise it from hot water (0.5ml/g)<span class="citation" data-cites="armarego_purification_2017">(Armarego 2017)</span></p>
+</blockquote>
+<p>If using (511ml) 10% ammonia, boil away about 300 ml before cooling to recrystallize.</p>
+<p>Or better yet, buy it. Oxalic acid is more expensive than the final product.</p>
+<h1 id="purification-of-hardware-store-chemicals">Purification of Hardware Store Chemicals</h1>
+<p>Many of these purifications have a drying step. Consult <a href="https://www.chem.ucla.edu/~bacher/Specialtopics/Drying%20Agents.html">this page</a> before using any unnamed drying agent.</p>
+<h2 id="ethylene-glycol">Ethylene Glycol</h2>
+<p>EG is commonly available as the main ingredient of vehicle antifreeze. There are higher boiling glycol contaminants and nonvolatile corrosion inhibitors. Distill first at 197C. Then dry with magnesium or calcium sulfate and fractionally distill (under vacuum if you choose). The first 1-5% will be cloudy because of the water content and may be discarded.</p>
+<h2 id="dcm">DCM</h2>
+<p>Unfortunately, dichloromethane isn’t sold in OTC any more. Probably a good thing. It’s really bad news.</p>
+<p>DCM and methanol form an azeotrope at 37.8C (93% DCM).</p>
+<p>DCM, especially from the hardware store, has methanol and water impurities. If this is your source, first separate the binders and thickeners by distillation in a water bath. Then wash the DCM/MeOH distillate with water and proceed as usual.</p>
+<p>Add 10-20ml concentrated sulfuric acid per liter. Stir for a few hours. Decant. Wash with 5% bicarbonate solution and then distilled water to neutralize. Predry with CaCl2 (also removing trace MeOH). Distill over magnesium sulfate. Store in dark bottle over molecular sieves.</p>
+<p>I still have a gallon of DCM-based paint stripper left from the old days. When I finish using it, I will likely move on to 2-Methyltetrahydrofuran or cyclepentyl methyl ether. In places where acceptable, I have already converted to using ethyl acetate, although EtOAc tends to be reactive or unstable.</p>
+<h2 id="hydrochloric-acid">Hydrochloric Acid</h2>
+<p>HCl is commonly sold as “muriatic acid” for cleaning concrete. It is concentrated (32%) and full of metal chlorides.</p>
+<p>Purification is done by distilling the azeotrope (20% HCl, bp 109C). To 300ml deionized water, add 500ml of commercial muriatic acid and distill.</p>
+<h2 id="ethyl-acetate">Ethyl Acetate</h2>
+<p>EtOAc can be procured as “<a href="https://www.kleanstrip.com/uploads/documents/GME71SUB_SDS-1636.pdf">M.E.K Substitute</a>” for around $26 per gallon. eBay’s cheapest listing is for technical grade at $43 per gallon.</p>
+<p>Purification is pretty easy. The main impurities are water, ethanol, and acetic acid. Water can be removed by drying with a suitable drying agent (K<sub>2</sub>CO<sub>3</sub>, CaSO<sub>4</sub> or MgSO<sub>4</sub>). If a neutral or acidic drying agent is used, a separate prewashing step with a base is necessary to neutralize the acetic acid. Ethanol-EtOAc azeotrope boils at 62.3C. Water-EtOAc azeotrope boils at 70.4C. There is also a ternary azeotrope at 70.3C.</p>
+<p>~5g of anhydrous potassium carbonate is added to 2L technical grade EtOAC to dry and neutralize for several hours. Then distill. I discard the first 2-4% just to be safe.</p>
+<p>Alternatively, EtOAc can be washed with 5% sodium carbonate solution, then dried with calcium or magnesium sulfate. Then distill.</p>
+<h2 id="acetone">Acetone</h2>
+<p>The main impurities in acetone are water and small quantities of other organics. The water cannot be removed with silica gel, calcium chloride, magnesium sulfate, or alumina since these lead to more impurities.</p>
+<p>Dry acetone with 25g/L calcium sulfate for several hours. Molecular sieves can also be used. Decant and distill over 10 g/L fresh calcium sulfate.</p>
+<p>If you care about the organic impurities, reflux acetone and add small portions of potassium permanganate until violet color persists. Then dry and distill as usual.</p>
+<p>Do not let the dessicants remain in the solution for more than a few hours. Molecular sieves, for example, work well for initial drying but actually catalyse condensation reactions in the long run. <span class="citation" data-cites="burfield_desiccant_1978">(Burfield and Smithers 1978)</span></p>
+<h2 id="toluene">Toluene</h2>
+<p>Toluene is sold as a solvent in most hardware stores, although it is becoming increasingly hard to come by.</p>
+<p>The main impurities in toluene are water and sulfurous compounds.</p>
+<p>Add 100ml concentrated sulfuric acid per liter of toluene and mix for several hours. Decant and repeat until the acid remains clear (3-4 times). Then wash toluene with 5% sodium bicarbonate solution being careful to avoid bubble over. Wash with water. Then dry over calcium sulfate, calcium chloride, or molecular sieves for 1-3 days. Distill and discard the first 5%.</p>
+<p>The same procedure applies to xylene.</p>
+<h2 id="methanol">Methanol</h2>
+<p>Methanol is sold for about $5 per liter as HEET brand gas line antifreeze. The ISOHEET version is isopropanol.</p>
+<p>Methanol is just full of impurities. Water, ketones, aldehydes, ammmonia, alcohols, and lots more. I mostly care about the water, so I fractionally distill and discard 3-5%.</p>
+<p>If I ever need analytical grade methanol, I will add 5g of degreased magnesium turnings and 0.5g iodine to a 2L flask. Warm the flask until iodine vapor coats the turnings. Add 50ml methanol and heat to reflux for 10-20 minutes. Cool. Add 1L methanol and reflux for a few hours. Then distill.</p>
+<h2 id="isopropanol">Isopropanol</h2>
+<p>Isopropyl alcohol is everywhere sold as rubbing alcohol in water solutions as high as 99%. With the recent epidemic, sources were scarce, so I purified my stock from ISOHEET.</p>
+<p>ISOHEET contains additives so the first step is to distill. Stop distillation when the last 5-10 ml is left. Dry the distillate with calcium sulfate or molecular sieves.</p>
+<p>Isopropanol tends to form explosive peroxides in storage, especially while in contact with oxygen. Reflux with stannous chloride to remove.</p>
+<h1 id="anhydrous-magnesium-sulfate-from-epsom-salts">Anhydrous Magnesium Sulfate from Epsom Salts</h1>
+<ul>
+<li>Epsom salts =&gt; Magnesium Sulfate Heptahydrate</li>
+<li>Dry in a thin layer; stirring often</li>
+<li>heat to 150C (300F) for 1 hours =&gt; monohydrate</li>
+<li>heat to 200C (390F) for 30 min =&gt; anhydrous</li>
+<li>heat to 250C (480F) for 30 min =&gt; just to be sure</li>
+<li>yield: 49% weight basis; nearly quantitative on a molar basis</li>
+<li>120.366 g/mol (anhydrous)</li>
+<li>246.47 g/mol (heptahydrate) <span class="citation" data-cites="hippie3_making_2003">(Hippie3 2003)</span></li>
+</ul>
+<h1 id="nitric-acid">Nitric Acid</h1>
+<p>Sulfuric Acid + Potassium Nitrate &lt;-&gt; Potassium Bisulfate + Nitric Acid</p>
+<ul>
+<li>500mL flask</li>
+<li>100mL water</li>
+<li>202g KNO3</li>
+<li>116mL 93% Sulfuric Acid</li>
+<li>collect all distillate (~163mL; ~50% nitric acid)</li>
+<li>stop after reaction flask begins to foam excessively</li>
+<li>immediately clean all glassware</li>
+<li>redistill nitric acid
+<ul>
+<li>everything over 118 C is azeotropic 68% <span class="citation" data-cites="dougs_lab_nitric_2015">(Doug’s Lab 2015)</span></li>
+</ul></li>
+</ul>
+<h1 id="copper-catalysts-for-primary-alcohol-dehydrogenation">Copper Catalysts for Primary Alcohol Dehydrogenation</h1>
+<h2 id="cual2o3-urea">Cu/Al2O3 + Urea</h2>
+<p><strong>approximately 23% wt. Cu with 41 sq.m/g Cu surface area</strong></p>
+<ul>
+<li>20.6g (0.110 mol) of Cu(NO3)2 is added to 2L 1.2M Urea solution in a 3L flask</li>
+<li>20g of 200 mesh gamma-alumina is added</li>
+<li>the solution is heated to 90-95C with constant stirring for 7+ hours or until pH=7.5</li>
+<li>the solution is filtered; washed with dH2O; calcined at 400C for 24 hrs</li>
+<li>the resulting catalyst is reduced with flowing hydrogen at 250C for 5 hrs
+<ul>
+<li>alternatively, catalyst can be activated in situ with primary alcohol</li>
+</ul></li>
+</ul>
+<p><span class="citation" data-cites="sivaraj_characterization_1988">Sivaraj and Kantarao (1988)</span></p>
+<h2 id="cusio2-ammonia">Cu/SiO2 + Ammonia</h2>
+<p><strong>approximately 17% wt Cu with 41 sq.m/g Cu surface area</strong></p>
+<ul>
+<li>11.3g Cu(NO3)2*3H2O is dissolved in 150ml dH2O</li>
+<li>18ml of 28% Ammonia soln. is added over 30 min with stirring</li>
+<li>12g of fumed SiO2 is added</li>
+<li>stir for 4hrs at 35C</li>
+<li>heat soln to 90C for 2 hrs or until pH reaches 6-7</li>
+<li>filter and wash with dH2O</li>
+<li>dry overnight at 120C</li>
+<li>calcine at 450C for 4 hrs <span class="citation" data-cites="dong_comparative_2016-1">(Dong et al. 2016)</span></li>
+</ul>
+<h2 id="cusio2-urea">Cu/SiO2 + Urea</h2>
+<p><strong>19% wt Cu; 18 sq.m/g Cu surface area</strong></p>
+<ul>
+<li>11.3g Cu(NO3)2*3H2O is dissolved in 150ml dH2O with 28.2g urea</li>
+<li>12.0g fumed SiO2 is added under stirring</li>
+<li>heat to 90C until pH reaches 6-7</li>
+<li>filter soln; wash with dH2O</li>
+<li>dry overnight at 120C</li>
+<li>calcine at 450C for 4 hrs <span class="citation" data-cites="dong_comparative_2016-1">(Dong et al. 2016)</span></li>
+</ul>
+<h1 id="carbon-dioxide-generator">Carbon Dioxide Generator</h1>
+<p><span class="math inline">\(MgSO_{4}\cdot7H_{2}O + 2NaHCO_{3} \to 2NaSO_{4} + Mg(OH)_{2} + 8H_{2}O + 2CO_{2}\)</span></p>
+<p>For every liter of <span class="math inline">\(CO_{2}\)</span> (45mmol; 1.98g) required, mix 5.54g epsom salts (magnesium sulfate heptahydrate) with 1.89g sodium bicarbonate.</p>
+<h1 id="chloroform-synthesis">Chloroform Synthesis</h1>
+<p>Assuming calcium hypochlorite is roughly twice the enthalpy of formation of the sodium variety (twice the number of hypochlorite groups), the total enthalpy change for this synthesis is 670 kJ/mol chloroform.</p>
+<p>For every mole of chloroform produced (120g; 81 ml), approximately 2kg (110 mol) of ice will melt. I believe the hth pool chlorine product uses pre-hydrated hypochlorite, so the heat of solution isn’t an issue. If anhydrous hypochlorite is used, an additional 940 kJ/mol will be evolved.</p>
+<h2 id="procedure">Procedure</h2>
+<p>For each mole (81ml) of chloroform produced:</p>
+<ul>
+<li>2kg of ice is added to a suitable glass or plastic container</li>
+<li>215g of pure calcium hypochlorite is added as 370g of 58% hypochlorite pool chlorinator</li>
+<li>A few hundred mLs of water may be needed to dissolve the hypochlorite</li>
+<li>1 mol of butanone (90ml), acetone (74ml), 95% ethanol (61ml), or isopropanol (76ml) is added over the course of a few minutes with stirring</li>
+</ul>
+<h2 id="standard-enthalpy-of-formation">Standard enthalpy of formation</h2>
+<ul>
+<li>butanone = -273.3 kJ/mol</li>
+<li>chloroform = -134.3 kJ/mol</li>
+<li>sodium hypochlorite = -347.1 kJ/mol</li>
+<li>calcium hypochlorite &lt; -150 cal/g (-90 kJ/mol)</li>
+<li>propionic acid = -510.8 kJ/mol</li>
+</ul>
+<h2 id="heat-of-solution">Heat of solution</h2>
+<ul>
+<li>calcium hypochlorite = 150 kcal/mol (627 kJ/mol)</li>
+</ul>
+<h2 id="enthalpy-change-of-fusion">Enthalpy change of fusion</h2>
+<ul>
+<li>water = 6.01 kJ/mol</li>
+</ul>
+<h2 id="heat-capacity">Heat capacity</h2>
+<ul>
+<li>water = 75.4 J/(mol K)</li>
+</ul>
+<h1 id="copper-barium-chromite">Copper Barium Chromite</h1>
+<ul>
+<li>12.6g ammonium dichromate (100 mmol)+ 33 ml H2O</li>
+<li>25g copper II sulfate pentahydrate (100 mmol) + 60ml H2O</li>
+<li>42ml 10% ammonia</li>
+<li>2g barium carbonate (10mmol) + nitric acid</li>
+</ul>
+<h1 id="ammonia">Ammonia</h1>
+<ul>
+<li>200ml water</li>
+<li>90g urea</li>
+<li>120g sodium hydroxide</li>
+<li>bubble through 100ml water</li>
+<li>heat for 3 hours</li>
+</ul>
+<p>36.8g 51g ammonia produced</p>
+<h1 id="trimethyl-borate">Trimethyl Borate</h1>
+<p><a href="https://www.youtube.com/watch?v=iyHOBQl-yQI">Make Wildfire | NurdRage</a></p>
+<ul>
+<li>200g borax</li>
+<li>650ml methanol</li>
+<li>slowly add 100g sulfuric acid with reflux condenser in place</li>
+<li>fractionally distill methanol-TMB azeotrope at 54C over ~10 hours</li>
+</ul>
+<p><a href="https://www.sciencemadness.org/talk/viewthread.php?tid=16439">Methyl Borate | Sciencemadness (u/Magpie)</a></p>
+<ul>
+<li>50g boric acid (calcined to boric oxide)</li>
+<li>183ml methanol</li>
+</ul>
+<h1 id="sources">Sources</h1>
+<ul>
+<li><a href="http://www.orgsyn.org/">OrgSyn</a></li>
+</ul>
+<h1 id="log">Log</h1>
+<h1 id="references">References</h1>
+<!--Annotations-->
+<!--Glossary-->
+<div id="refs" class="references">
+<div id="ref-armarego_purification_2017">
+<p>Armarego, W. L. F. 2017. <em>Purification of Laboratory Chemicals</em>. Eighth edition. Amsterdam: Butterworth-Heinemann is an imprint of Elsevier.</p>
+</div>
+<div id="ref-burfield_desiccant_1978">
+<p>Burfield, David R., and Roger H. Smithers. 1978. “Desiccant Efficiency in Solvent Drying. 3. Dipolar Aprotic Solvents.” <em>The Journal of Organic Chemistry</em> 43 (20): 3966–8. <a href="https://doi.org/10.1021/jo00414a038" class="uri">https://doi.org/10.1021/jo00414a038</a>.</p>
+</div>
+<div id="ref-dong_comparative_2016-1">
+<p>Dong, Xiaohuan, Xiangang Ma, Hengyong Xu, and Qingjie Ge. 2016. “Comparative Study of Silica-Supported Copper Catalysts Prepared by Different Methods: Formation and Transition of Copper Phyllosilicate.” <em>Catalysis Science &amp; Technology</em> 6 (12): 4151–8. <a href="https://doi.org/10.1039/C5CY01965F" class="uri">https://doi.org/10.1039/C5CY01965F</a>.</p>
+</div>
+<div id="ref-dougs_lab_nitric_2015">
+<p>Doug’s Lab. 2015. “Nitric Acid Day!” <a href="https://www.youtube.com/watch?v=mG4OaPTWPOA" class="uri">https://www.youtube.com/watch?v=mG4OaPTWPOA</a>.</p>
+</div>
+<div id="ref-hippie3_making_2003">
+<p>Hippie3. 2003. “Making Your Own Dessicant from Epsom Salts.” <em>Mycotopia</em>. <a href="https://mycotopia.net/archives/discus/messages/5/31575.html?1061997827" class="uri">https://mycotopia.net/archives/discus/messages/5/31575.html?1061997827</a>.</p>
+</div>
+<div id="ref-sivaraj_characterization_1988">
+<p>Sivaraj, Ch., and P. Kantarao. 1988. “Characterization of Copper/Alumina Catalysts Prepared by DepositionPrecipitation Using Urea Hydrolysis: I. Nitrous Oxide Decomposition and Reaction of Ethanol.” <em>Applied Catalysis</em> 45 (1): 103–14. <a href="https://doi.org/10.1016/S0166-9834(00)82396-9" class="uri">https://doi.org/10.1016/S0166-9834(00)82396-9</a>.</p>
+</div>
+</div>
+:ET

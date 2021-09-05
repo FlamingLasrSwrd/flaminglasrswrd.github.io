@@ -1,0 +1,202 @@
+I"�G<h1 id="parts-selection">Parts Selection</h1>
+<p>The <strong>linear bushings</strong> are the cylindrical type with a 15mm OD. Any of the LM8- series of linear bearings will work. These are are small (17mm), regular (24mm), and large (45mm) versions: LM8SUU, LM8UU, LM8LUU, respectively. The original design fits the small overall length version LM8SUU. I’m going with the lm8uu because it was cheaper.</p>
+<p><strong>688zz bearings</strong> are common type. The cheapest will do since it isn’t going fast or experiencing too much radial load.</p>
+<p>The <strong>limit switches</strong> are SPST-NO, OFF-MOM, chassis mount, levered (preferably roller) switches (<a href="https://www.digikey.com/short/z9j8dj">digikey search string</a>). They are also available on eBay by searching for “lever switch” typically under the <a href="https://www.ebay.com/b/Limit-Switches-/111606">“Limit Switches” category</a>.</p>
+<h1 id="work-log">Work Log</h1>
+<h2 id="todo">TODO</h2>
+<h2 id="dec-2020">11 Dec 2020</h2>
+<p>I set the current limiting V_ref to 0.180.</p>
+<p>YEL - RED - BLU - ORA</p>
+<h2 id="jul-2020">07 Jul 2020</h2>
+<p>Some work was done on another project page.</p>
+<p>Manually disconnecting the push block from the lead screw to load a syringe would be nice.</p>
+<h2 id="jun-2020">29 Jun 2020</h2>
+<p><a href="https://metafluidics.org/">Metafluidics | Open Repository for Fluidic Systems</a></p>
+<p><a href="https://github.com/pachterlab/poseidon">Poseidon: Open source bioinstrumentation</a><span class="citation" data-cites="booeshaghi_design_2019">(Booeshaghi et al. 2019)</span></p>
+<h2 id="jun-2020-1">28 Jun 2020</h2>
+<p>There’s a question of precision that has to be made here.</p>
+<p>If you want precision and a long life, use a lead screw not a threaded rod. <a href="https://www.3ders.org/articles/20151127-ditch-the-threaded-rod-in-your-reprap-3d-printer-and-upgrade-to-a-lead-screw-z-axis.html">Ditch the threaded rod in your RepRap 3D printer | 3Ders</a></p>
+<p><a href="https://www.youtube.com/watch?v=dz2N6qxstk4">This</a> design (video) uses slide in adapters to hold the syringes which can be changed out quickly for different sizes. <a href="https://www.youtube.com/watch?v=sx5VR6oJWaY&amp;list=PLX53bZT1uB5lPl_5kWw40hWeIYNU5rnih&amp;index=1">Video playlist</a> and <a href="https://chem.uncg.edu/croatt/flow-chemistry/">website</a>.</p>
+<p>That site also has a page discussing <a href="https://chem.uncg.edu/croatt/flow-chemistry/designing-and-connecting-the-tubing/">tubing for flow reactors</a> which is really helpful.</p>
+<p>They recommend PFA tubing for flow reactors. I initially decided on stainless because of its heat conductance (~14 W/mK). PFA, PEEK, PTFE, PP, PE tubing all hover around 0.2-0.4. PFA seems to resist just about about everything whereas SS responds terribly to chlorine containing chemicals especially acids.</p>
+<p><a href="https://www.mass-spec.ru/projects/diy/syringe_pump/eng/"><strong>Open-Source Syringe Pump | Mass Spectrometry Laboratory; Moscow State University</strong></a> <span class="citation" data-cites="samokhin_syringe_2020">(Samokhin 2020)</span></p>
+<p>This looks to be exactly what I need.</p>
+<p>The large online 3D print services are expensive! The lowest quote I got was $174 for a single pump’s worth of parts excluding the case! Or… I could order from TREATSTOCK instead and pay $60 for all three including the cases.</p>
+<h2 id="jun-2020-2">27 Jun 2020</h2>
+<p>After having looked more closely, I think the 500g force sensor will be more useful for my applications. It more closely matches the PendoTech PRESS-S-000 pressure sensor used in the feedback syringe pump model.<span class="citation" data-cites="lake_low-cost_2017">(Lake, Heyde, and Ruder 2017)</span></p>
+<p>So a 500g load sensor with 0.5% error will need and ADC capable of at least 200 bits.</p>
+<h2 id="jun-2020-3">24 Jun 2020</h2>
+<p>Minimum and maximum flow rates using different syringe sizes based on pump mechanics is given in Table 3.<span class="citation" data-cites="garcia_low-cost_2018">(Garcia, Liu, and DeRisi 2018)</span></p>
+<p>Using 1-50ml syringes gives a minimum flow rate of 0.1 uL/s and a maximum of 2.8ml/s. But that doesn’t take into account the maximum force of ~1N that we can measure using the 100g sensor.</p>
+<p>The output area of a syringe is standard at 1.3<span class="math inline">\(mm^{2}\)</span>. In reality, it is the taper that is standard, but this is just an estimate.</p>
+<p>From Bernoulli’s equation:</p>
+<span class="math display">\[\begin{equation}
+\frac{\rho}{2} ( {q_{1}^{2} - q_{2}^{2} \over A^{2}} ) = \Delta P
+\end{equation}\]</span>
+<p>This only sort of applies since we are using two different systems and not the same system in two different states.</p>
+<p>There has to be a way to calculate the work done by 1N over the plunger travel length and find the flow rate that way… Gah! I see why everyone just uses CFD.</p>
+<p>Moving on…</p>
+<h3 id="control-system">Control System</h3>
+<p>That system is a little more elaborate–using a touchscreen control. I like that idea.<span class="citation" data-cites="garcia_low-cost_2018">(Garcia, Liu, and DeRisi 2018)</span> Which brings me on to the concept of control.</p>
+<p>A touch screen adds an additional $50-$80 to the project. Some resistive touch screens are in the $30-$40 range. Perhaps web-server control? That would ease the transition to automation via API as well.</p>
+<p>Small TFT screens with tactile switches would work and be much cheaper. But they are clunky and not amenable to upgrades. TFT screens come in at $10-$20 depending on the resolution and size. They still might be appropriate for displaying operating data in tandem with a web server backend for major control. LED segment displays might work for the bare minimum of information at around $5.</p>
+<p>I think we are splitting hairs here on price.</p>
+<p>I wonder if you could use some sort of spring based damper to reduce the variation in force between steps. Since we know the forces involved (&lt;1N), we can easily pick and appropriate spring.</p>
+<p>Although an elastomer based solution might be better. A simple butyl rubber cutout placed somewhere in the line of force would probably be sufficient. I bet a plastic plunger (both the seal and piston arm) provides some smoothing. Less so for glass syringes.</p>
+<p>Useful Data:</p>
+<ul>
+<li>flow rate</li>
+<li>flow direction</li>
+<li>time elapsed</li>
+<li>time remaining</li>
+<li>status</li>
+<li>total volume delivered</li>
+<li>mode: infusion, continuous</li>
+<li>syringe style/type</li>
+<li>force/pressure</li>
+<li>target volume</li>
+<li>total elapsed infusion time</li>
+<li>time started, ended, current time</li>
+<li>manual control: forward/reverse</li>
+<li>calibration menu</li>
+</ul>
+<p>Trying to find a control system or open source protocol to adapt to this system. A completely open source lab, from the software to the hardware would be awesome. Even more so if the data produced was added to a blockchain so that it couldn’t be altered later. The data could be encrypted/decrypted for privacy, but it couldn’t be altered. Developers could get a reward whenever their control software is used.</p>
+<p>Looks like <a href="https://en.wikipedia.org/wiki/Standardization_in_Lab_Automation">Standard in Lab Automation | SiLA</a> is the only actively developing protocol standard.</p>
+<p><a href="https://en.wikipedia.org/wiki/Laboratory_information_management_system">Laboratory Information Management systems | LIMS</a> is more of a database than a control protocol. Might be useful to look into any reporting standards here.</p>
+<h3 id="design">Design</h3>
+<p><a href="https://www.youtube.com/watch?v=kkQ3RC0657s">Syringe Pump Overview | Cole-Parmer</a>.</p>
+<h4 id="clamps">Clamps</h4>
+<p>Some of the open source designs seem to limit themselves on a particular syringe style or size. For instance, the touchscreen version can only accommodate a single syringe size without swapping out different 3D printed parts.<span class="citation" data-cites="garcia_low-cost_2018">(Garcia, Liu, and DeRisi 2018)</span> I think researchers get excited about bespoke 3D parts when generic is often more suitable.</p>
+<p>Commercial versions have a rounded or angled well in which the syringe sits with clamping pressure applied with a screw-tightened cross bar (e.g. <a href="https://www.kdscientific.com/media/catalog/product/cache/1/image/1800x/040ec09b1e35df139433887a97daa66f/k/d/kds-780100-kds100-syringe-pump.jpg">kdScientific 100 series</a>).</p>
+<p>The <a href="https://www.sisweb.com/art/lc/kds210.jpg">kdScientific 210</a> features an adjustable clamp to secure the syringe body flange. This would help relieve tension on the syringe body (and reduce deformation) for both forward and reverse action (infusion and withdraw). A similar clamp is also located on the plunger arm.</p>
+<p><a href="https://www.chemyx.com/wp-content/uploads/2016/09/DSC_2613.png">Another example</a> from Chemyx.</p>
+<h4 id="carriage">Carriage</h4>
+<p>There are several variations. Every commercial version I see is horizontal. Although the Cole-parmer versions can be flipped.</p>
+<p>Limit switches are commonly used to prevent the carriage from extending beyond the work area boundaries in case of an error. Considering that the overall length of syringes varies considerably with syringe volume, some sort of mechanism for limiting the draw length needs to be in place. This could be implemented in software but a hardware option is better.</p>
+<h2 id="jun-2020-4">23 Jun 2020</h2>
+<p>Project Created!</p>
+<p>A few open-source syringe pumps have been published.<span class="citation" data-cites="wijnen_open-source_2014">(Wijnen et al. 2014)</span> <span class="citation" data-cites="cubberley_inexpensive_2017">(Cubberley and Hess 2017)</span> <span class="citation" data-cites="garcia_low-cost_2018">(Garcia, Liu, and DeRisi 2018)</span></p>
+<p>I like the idea of PID pressure feedback for smoother flow.<span class="citation" data-cites="lake_low-cost_2017">(Lake, Heyde, and Ruder 2017)</span></p>
+<p>My microfluidics work might encompass some corrosive chemicals in the future, so the standard pressure transducers won’t work. I tried to find some <a href="https://www.digikey.com/short/zhv1w7">compatible sensors on digikey</a>, but none of them seemed to work. I had to manually look through each datasheet to find the suitable working conditions, btw.</p>
+<p>I thought about using some sort of manometer for indirect, non-contact pressure measurement via fluid height. While that might still work, I have a better idea… The pressure can be determined by the force on the syringe (duh!).</p>
+<p>Some calibration would be necessary. Syringe (head) size is an obvious factor.</p>
+<p>Ultimately we are trying to determine flow rate and use that measurement to keep the flow rate stable over time. Since liquids are (relatively) incompressible, their flow is proportional to pressure.</p>
+<p>A thermal liquid flow meter might be useful here and a DIY project worth looking into. Or you could buy a <a href="https://www.idt.com/us/en/document/dst/fs1012-datasheet">FS2012 MEMS mass flow sensor from Renesas</a> for $44. That measures relatively high flow rates of 1 lpm and is nonlinear at &lt;50ml/min.</p>
+<p>The advantages of force measurement compared to pressure are of reusability and non-contact. A single force gauge is required per syringe and the load cell never comes in contact with the working fluid.</p>
+<h3 id="force-sensor-requirements">Force Sensor Requirements</h3>
+<p>Wijnen et. al measured the force produced by their designs, but did not use it as an active feedback mechanism.<span class="citation" data-cites="wijnen_open-source_2014">(Wijnen et al. 2014)</span> From their data we can determine that our motor-screw combo will output up to 200N. That’s ~50psi for a 50ml syringe (1 square inch head size). Lake et. al measured pressures for a simple two-input mixed microreactor from 0-3 psig.<span class="citation" data-cites="lake_low-cost_2017">(Lake, Heyde, and Ruder 2017)</span></p>
+<p>So I think 0-10 psig is probably common. For a 50 ml syringe, that’s about 0-40N (4000g). I’m using a 50ml syringe because I think it is the largest that anyone would use for microreactor work. Using a smaller syringe would reduce the force needed for a given pressure, so consider these values to be a maximum.</p>
+<p>If one were to use a 1ml syringe with a head diameter of 0.15 inches and a maximum pressure of 10psig gives 0.8 newtons or 80g of force. That’s pretty small. A single load cell for multiple syringe sizes probably isn’t going to work if you want any decent level of accuracy.</p>
+<p>So we are looking for a load cell (force sensor) capable of measuring 0-4kg for the 50ml design. Fortunately for use, this is a really common size and already used in arduino projects (<a href="https://www.sparkfun.com/products/14729%5D">SparkFun SEN-14729 | $10.95</a>).</p>
+<p>Sparkfun also has a 500g variety (<a href="https://www.sparkfun.com/products/14728">SEN-14728 | $9.95</a>) and a 100g variety (<a href="https://www.sparkfun.com/products/14727">SEN-14727 | $8.95</a>).</p>
+<p>The 500g variety would allow for measurement of up to 5N. That’s up to 1 psi on the 500ml syringe and up to 60psi on the 1ml syringe. I suppose you will have to decide on your process design parameters to pick the best option.</p>
+<p><em>Note</em> These calculations are actually in pound-force, but I am too lazy to fix it. You live on the same planet as I do, so they should be similar to pound-mass.</p>
+<p>Here’s a table to give you a rough idea of the choices. These measurements are based on the random glass syringes I have laying around: YMMV.</p>
+<table>
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 15%" />
+<col style="width: 10%" />
+<col style="width: 12%" />
+<col style="width: 10%" />
+<col style="width: 12%" />
+<col style="width: 8%" />
+<col style="width: 11%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>syringe capacity</strong></th>
+<th><strong>head diameter</strong></th>
+<th><strong>100g max</strong></th>
+<th><strong>100g error</strong></th>
+<th><strong>500g max</strong></th>
+<th><strong>500g error</strong></th>
+<th><strong>5kg max</strong></th>
+<th><strong>5kg error</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><em>ml</em></td>
+<td><em>mm</em></td>
+<td><em>psi</em></td>
+<td><em>psi</em></td>
+<td><em>psi</em></td>
+<td><em>psi</em></td>
+<td><em>psi</em></td>
+<td>*psi</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>3.9</td>
+<td>12</td>
+<td>0.06</td>
+<td>60</td>
+<td>0.3</td>
+<td>600</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>11</td>
+<td>1.5</td>
+<td>0.007</td>
+<td>7.5</td>
+<td>0.04</td>
+<td>75</td>
+<td>0.4</td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td>14</td>
+<td>0.92</td>
+<td>0.005</td>
+<td>4.6</td>
+<td>0.02</td>
+<td>46</td>
+<td>0.2</td>
+</tr>
+<tr class="odd">
+<td>50</td>
+<td>25</td>
+<td>0.29</td>
+<td>0.0014</td>
+<td>1.4</td>
+<td>0.007</td>
+<td>14</td>
+<td>0.07</td>
+</tr>
+</tbody>
+</table>
+<p>The equation used to calculate these values (using the stated units):</p>
+<span class="math display">\[\begin{equation}
+P_{max} = \frac{F_{max}}{ 454 \pi (\frac{D}{2*25.4})^2 }
+\end{equation}\]</span>
+<p>In other words, a pump with interchangeable syringes 1-50ml with a 100g load cell will allow you to measure from 0-12 psi with a minimum accuracy of 0.06psi. I think this is suitable.</p>
+<p>I know that there is a way to calculate the fluid velocity based on these values, but I don’t want to get into that right now. We can just assume for now that the flow rate will be the same for a given load cell since the force applied to the plunger is the same. At least, I think that makes sense.</p>
+<p>…Or maybe I’m completely wrong and the flow velocity is proportional to the square root of the pressure. Idk. It has been a long time since my fluid dynamics class.</p>
+<p>Looks like I have more reading to do. <a href="https://schoolbag.info/chemistry/microreactors">Microreactors in Organic Chemistry and Catalysts, Second Edition (2013)</a></p>
+<h1 id="bibliography">Bibliography</h1>
+<!--notes-->
+<!--links-->
+<div id="refs" class="references">
+<div id="ref-booeshaghi_design_2019">
+<p>Booeshaghi, A. Sina, Eduardo da Veiga Beltrame, Dylan Bannon, Jase Gehring, and Lior Pachter. 2019. “Design Principles for Open Source Bioinstrumentation: The Poseidon Syringe Pump System as an Example.” <em>bioRxiv</em>, January, 521096. <a href="https://doi.org/10.1101/521096" class="uri">https://doi.org/10.1101/521096</a>.</p>
+</div>
+<div id="ref-cubberley_inexpensive_2017">
+<p>Cubberley, Mark S., and William A. Hess. 2017. “An Inexpensive Programmable Dual-Syringe Pump for the Chemistry Laboratory.” <em>Journal of Chemical Education</em> 94 (1): 72–74. <a href="https://doi.org/10.1021/acs.jchemed.6b00598" class="uri">https://doi.org/10.1021/acs.jchemed.6b00598</a>.</p>
+</div>
+<div id="ref-garcia_low-cost_2018">
+<p>Garcia, Valentina E., Jamin Liu, and Joseph L. DeRisi. 2018. “Low-Cost Touchscreen Driven Programmable Dual Syringe Pump for Life Science Applications.” <em>HardwareX</em> 4 (October): e00027. <a href="https://doi.org/10.1016/j.ohx.2018.e00027" class="uri">https://doi.org/10.1016/j.ohx.2018.e00027</a>.</p>
+</div>
+<div id="ref-lake_low-cost_2017">
+<p>Lake, John R., Keith C. Heyde, and Warren C. Ruder. 2017. “Low-Cost Feedback-Controlled Syringe Pressure Pumps for Microfluidics Applications.” <em>PLOS ONE</em> 12 (4): e0175089. <a href="https://doi.org/10.1371/journal.pone.0175089" class="uri">https://doi.org/10.1371/journal.pone.0175089</a>.</p>
+</div>
+<div id="ref-samokhin_syringe_2020">
+<p>Samokhin, A. S. 2020. “Syringe Pump Created Using 3d Printing Technology and Arduino Platform.” <em>Journal of Analytical Chemistry</em> 75 (3): 416–21. <a href="https://doi.org/10.1134/S1061934820030156" class="uri">https://doi.org/10.1134/S1061934820030156</a>.</p>
+</div>
+<div id="ref-wijnen_open-source_2014">
+<p>Wijnen, Bas, Emily J. Hunt, Gerald C. Anzalone, and Joshua M. Pearce. 2014. “Open-Source Syringe Pump Library.” <em>PLOS ONE</em> 9 (9): e107216. <a href="https://doi.org/10.1371/journal.pone.0107216" class="uri">https://doi.org/10.1371/journal.pone.0107216</a>.</p>
+</div>
+</div>
+:ET

@@ -1,0 +1,67 @@
+I";<h1 id="introduction">Introduction</h1>
+<p>Benzaldehyde is a precursor to a huge number of organic compounds. Synthesis in a high yield at a low cost is the ultimate goal. Expensive reagents are to be avoided. Bonus points for doing it quickly.</p>
+<h1 id="properties">Properties</h1>
+<h1 id="methods">Methods</h1>
+<h2 id="chromyl-chloride-and-dichloromethane">Chromyl Chloride and Dichloromethane</h2>
+<figure>
+<img src="/assets/img/benzaldehyde/benzaldehyde-etard.png" alt="Benzaldehyde by the oxidation of toluene by chromyl chloride in dichloromethane" /><figcaption>Benzaldehyde by the oxidation of toluene by chromyl chloride in dichloromethane</figcaption>
+</figure>
+<p>Attempt by Dennis Phillips aka NileRed: 51% yield <span class="citation" data-cites="dennis_phillips_making_2017">(Dennis Phillips 2017)</span></p>
+<h2 id="benzoic-acid-and-hypochlorite">Benzoic Acid and Hypochlorite</h2>
+<ul>
+<li>12% yield based on Benzoic Acid. <span class="citation" data-cites="scott_daniel_benzaldehyde_2017">(Scott Daniel 2017)</span></li>
+</ul>
+<h2 id="sodium-persulfate-and-iron-copper-catalysts">Sodium Persulfate and Iron-Copper Catalysts</h2>
+<figure>
+<img src="/assets/img/benzaldehyde/benzaldehyde-persulfate.png" alt="Benzaldehyde by the action of sodium persulfate on toluene with cupric and ferrous catalysts." /><figcaption>Benzaldehyde by the action of sodium persulfate on toluene with cupric and ferrous catalysts.</figcaption>
+</figure>
+<blockquote>
+<p>Ferrous-Copper Catalyst: Toluene (7.6 g.), water (35 ml.), ferrous sulphate (0.110 g.) heptahydrate, cupric acetate (0.072 g.) and methanol (8 ml.) are placed in a 250 ml. reactor.</p>
+<p>Sodium persulphate (47.05 g.) in an aqueous-methanol solution of sodium persulphate is added slowly to the mixture which is maintained at 70° C., in an atmosphere of nitrogen and under agitation.</p>
+<p>The organic phase is separated after two hours and the aqueous phase is extracted with ethyl ether.</p>
+<p>The combined organic phases are distilled to afford 8.29 g. (95% yield) of very pure benzaldehyde (compared against a pure sample). <span class="citation" data-cites="maggioni_process_1979">(Maggioni 1979)</span></p>
+</blockquote>
+<p>Attempt by sum_lab gave single-digit yields. <span class="citation" data-cites="sum_lab_benzaldehyde_2018">(sum_lab 2018)</span></p>
+<h2 id="cinnamon-oil">Cinnamon Oil</h2>
+<figure>
+<img src="/assets/img/benzaldehyde/benzaldehyde-cinnamaldehyde.png" alt="Benzaldehyde from cinnamon oil" /><figcaption>Benzaldehyde from cinnamon oil</figcaption>
+</figure>
+<p>Attempt by NileRed yielded 10% on weight basis of cinnamon oil. <span class="citation" data-cites="nilered_making_2016">(NileRed 2016)</span></p>
+<h2 id="pyrolysis">Pyrolysis</h2>
+<h1 id="work-log">Work Log</h1>
+<h2 id="apr-2020">19 Apr 2020</h2>
+<p>Attempting benzaldehyde by peroxide oxidation of toluene in Ethaline.</p>
+<p>I don’t have any ferric chloride, so I followed the [Make Ferric Chloride | NurdRage] video procedure.</p>
+<ul>
+<li>20 g scrap iron</li>
+<li>100ml water</li>
+<li>100ml 12M HCl</li>
+<li>top up to 200ml with HCl</li>
+<li>200ml 3% H2O2</li>
+</ul>
+<h2 id="jul-2018">13 Jul 2018</h2>
+<ul>
+<li>started research on various methods used in the literature</li>
+<li>fiddled with Marvin for 5 hours: Chemdraw is wayyyy better</li>
+</ul>
+<h1 id="bibliography">Bibliography</h1>
+<!--notes-->
+<!--links-->
+<div id="refs" class="references">
+<div id="ref-dennis_phillips_making_2017">
+<p>Dennis Phillips. 2017. “Making Benzaldehyde (Étard Reaction).” <a href="https://www.youtube.com/watch?v=L8kFJPEZdwM" class="uri">https://www.youtube.com/watch?v=L8kFJPEZdwM</a>.</p>
+</div>
+<div id="ref-maggioni_process_1979">
+<p>Maggioni, Paolo. 1979. Process for preparing aromatic aldehydes and ketones. US4146582A, issued March 1979. <a href="https://patents.google.com/patent/US4146582A/en?oq=4%2c146%2c582">https://patents.google.com/patent/US4146582A/en?oq=4%2c146%2c582</a>.</p>
+</div>
+<div id="ref-nilered_making_2016">
+<p>NileRed. 2016. “Making Benzaldehyde (from Cinnamon Oil).” <a href="https://www.youtube.com/watch?v=Fui19FPh0R0" class="uri">https://www.youtube.com/watch?v=Fui19FPh0R0</a>.</p>
+</div>
+<div id="ref-scott_daniel_benzaldehyde_2017">
+<p>Scott Daniel. 2017. “Benzaldehyde via Hypochlorite Oxidation of Benzyl Alcohol.” <a href="https://www.youtube.com/watch?v=ExogvX4vD78" class="uri">https://www.youtube.com/watch?v=ExogvX4vD78</a>.</p>
+</div>
+<div id="ref-sum_lab_benzaldehyde_2018">
+<p>sum_lab. 2018. “Benzaldehyde Attempt 1.” <a href="https://www.youtube.com/watch?v=G_PSJAtfmso" class="uri">https://www.youtube.com/watch?v=G_PSJAtfmso</a>.</p>
+</div>
+</div>
+:ET

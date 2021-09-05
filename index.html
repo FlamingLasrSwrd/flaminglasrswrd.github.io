@@ -13,7 +13,7 @@ layout: default
           <div class="post-summary">
             {% if post.graphical-abstract %}
               <a href="{{ post.url | prepend: site.baseurl }}">
-                <img class="img-fluid" src="{{ post.graphical-abstract | prepend: site.url }}" alt="Graphical Abstract">
+                <img class="img-fluid" src="{{ post.graphical-abstract | prepend: site.baseurl }}" alt="Graphical Abstract">
               </a>
             {% elsif post.abstract %}
               {{ post.abstract | strip_html | truncate: 150 }}

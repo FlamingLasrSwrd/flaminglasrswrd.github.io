@@ -1,0 +1,50 @@
+I"�<h1 id="cite-reddit">Cite Reddit</h1>
+<p><strong>Source code and bibliographic files are hosted on Github: <a href="https://github.com/FlamingLasrSwrd/citereddit">flaminglasrswrd/citereddit</a>.</strong></p>
+<p><strong>Database</strong> is located at <a href="https://www.zotero.org/groups/2185229/citereddit/items">citereddit Zotero Group</a></p>
+<h1 id="intro">Intro</h1>
+<p>Many subreddits revolve around academic citations. <a href="https://reddit.com/r/Nootropics">/r/Nootropics/</a>, <a href="https://reddit.com/r/DrugNerds">/r/DrugNerds/</a>, <a href="https://reddit.com/r/FoodNerds">/r/FoodNerds/</a> are among my favorite sources for new science. Unfortunately, these academic reddits consist of a loose collection of urls. They lack the sharability of a bibliographic database.</p>
+<p>I propose creating a research database through a popular reference manager like Zotero or Mendeley. We could, of course, do this manually, but ain’t nobody got time for that. Scraping for citations automatically sounds like a better option.</p>
+<p>The <a href="https://www.reddit.com/r/Nootropics/comments/8hrwrh/nootropics_citation_database/">announcement post</a> on reddit explains the impetus and initial planning comments.</p>
+<h1 id="right-now">Right now</h1>
+<p>The current version of citereddit is quite messy. It is controlled via command line like this:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">python</span> scrape.py -s [API_SECRET] -i [API_ID] -r [SUBREDDIT] -u [USERNAME] -p [PASSWORD]</code></pre></div>
+<p>In order for this to work, you must also have an active zotero translation server running (built from source) and have compiled the PRAW library with my changes yourself. I don’t expect anyone to be able to do this. Future versions will be considerably more user friendly. For now, the script outputs three files for each call.</p>
+<ul>
+<li>library.bib</li>
+<li>main.log</li>
+<li>urls.txt</li>
+</ul>
+<p>So a call for subreddit <code>Nootropics</code> produces <code>Nootropics_library.bib</code> etc.</p>
+<p>Library.bib is in bibtex format and can be imported using a reference manager like Zotero. Main.log is a complete debug log for each run. <code>urls.txt</code> is a one-per-line list of urls imported by the script. If a url was successfully imported, the url is followed by <code>**(successful)**</code>. This file and the debug information is intended to be used later to prevent duplicates.</p>
+<h1 id="process">Process</h1>
+<ol type="1">
+<li>scrape subreddit for links</li>
+<li>import links to <a href="https://www.zotero.org/groups/2185229/citereddit/items">Zotero</a> using web translators</li>
+<li>export group to <a href="https://www.mendeley.com/community/citereddit/">Mendeley</a> or other formats</li>
+</ol>
+<h1 id="future-considerations">Future Considerations</h1>
+<h2 id="storage">Storage</h2>
+<ul>
+<li>integrated reference manager group storage</li>
+<li>hosted storage
+<ul>
+<li>self</li>
+<li>commercial</li>
+<li>crypto</li>
+</ul></li>
+</ul>
+<h2 id="legality">Legality</h2>
+<p>Sharing the full-text content of references which are obtained from behind a paywall probably infringes copyright.</p>
+<h2 id="note-sharing">Note Sharing</h2>
+<p>Zotero offers annotation syncing with each reference. Mendeley has group editing of pdfs. The bibtex citation format has a key for “notes”.</p>
+<h2 id="integration">Integration</h2>
+<p>Reddit is not the only informal source of citations. <a href="https://examine.com">Examine</a> is a very reputable source in the world of supplements, boasting hundreds of thousands of citations. It is referenced often on these subreddits. Integration with their internal reference database (if they have one) would be mutually beneficial.</p>
+<h1 id="current-issues">Current Issues</h1>
+<p>See <code>TODO</code> items in <code>scrape.py</code>. There are many.</p>
+<!--links-->
+<!--annotations-->
+<h1 id="work-log">Work Log</h1>
+<h1 id="bibliography">Bibliography</h1>
+<!--notes-->
+<!--links-->
+:ET

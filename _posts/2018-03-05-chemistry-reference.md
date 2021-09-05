@@ -9,6 +9,48 @@ abstract: >
 graphical-abstract: /assets/img/ketene/ketene-setup-landscape.JPG
 ---
 
+# Ammonium Hydroxide
+
+## Urea
+
+[Make Concentrated Ammonia | NurdRage](https://www.youtube.com/watch?v=0-jJ5QF-EVE)
+
+- 200ml water
+- 90g urea
+- 120g sodium hydroxide
+- 100g absorption water
+- yield: ~37g ammonia at 27% concentration
+
+## Ammonium salt
+
+[Ammonia Generator | Doug's Lab](https://www.youtube.com/watch?v=gh4gGkk74iU)
+
+- 13.2g ammonium sulfate dissolved in 30ml water (1/10th molar scale)
+- 9g sodium hydroxide (1.1eq)
+- 40ml absorption water
+
+*3L flask 30% version*
+
+- 6 molar scale
+- 793g ammonium sulfate in 1L water
+- 530g sodium hydroxide
+- 700ml absorption water
+
+
+# Ferric Ammonium Oxalate
+
+1 molar iron ammonium oxalate (428g as trihydrate) synthesis starting from iron oxide:
+
+- 85g iron oxide (1.1 eq)
+- 378g oxalic acid dihydrate
+- 51.1g ammonium hydroxide
+
+> Crystallise it from hot water (0.5ml/g)[@armarego_purification_2017]
+
+If using (511ml) 10% ammonia, boil away about 300 ml before cooling to recrystallize.
+
+Or better yet, buy it. Oxalic acid is more expensive than the final product.
+
 # Purification of Hardware Store Chemicals
 Many of these purifications have a drying step. Consult [this page](https://www.chem.ucla.edu/~bacher/Specialtopics/Drying%20Agents.html) before using any unnamed drying agent.
 

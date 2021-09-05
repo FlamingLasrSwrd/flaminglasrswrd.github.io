@@ -1,0 +1,37 @@
+I"�<h1 id="work-log">Work Log</h1>
+<h2 id="todo">TODO</h2>
+<ul>
+<li>[ ]</li>
+</ul>
+<h2 id="mar-2021">03 Mar 2021</h2>
+<p>This example rowing machine uses the charging of ultracapacitors as lightweight regenerative braking but relies on a freewheeling clutch for the return stroke (not eccentric). It is controlled by a <a href="https://www.analog.com/en/analog-dialogue/raqs/raq-issue-183.html">four-quadrant power converter</a> with adjustable ratio (forward braking and reverse motoring). Simple and effective. <span class="citation" data-cites="richter_impedance_2015">(Richter and Selvaraj 2015)</span></p>
+<p>Position is measured using an optical encoder placed on the motor system. A load cell on the handle measures the force.</p>
+<p>Ultracapacitors on the order of several hundred farads are expensive even for this scaled-down version.</p>
+<p>The behavior of this system is very close to natural rowing conditions.</p>
+<p><a href="https://circuitglobe.com/four-quadrant-operation-of-dc-motor.html">Four Quadrant Operation of DC Motor</a></p>
+<p>A very detailed four-qudrant power converter used at CERN. See section 5.3 Four-quadrant linear stage. <span class="citation" data-cites="thurel_switched_2015">(Thurel 2015)</span></p>
+<p>Simple torque controlled motors would directly discharge the excess power into the power electronics. They would likely overheat at the several hundred watt level. <a href="https://www.youtube.com/watch?v=sTjh5KbStGE">Brushless Motors Torque Control using ARDUINO and SOLO (ESC - BLDC - PMSM) in Closed-loop Mode</a></p>
+<p><a href="https://www.edgefxkits.com/blog/arduino-based-4-quadrant-dc-motor-control/">Arduino based 4 Quadrant DC Motor Control</a></p>
+<p>The thesis work of Zolezzi uses a 1Kw 2500 RPM 3N-m AC servo. <span class="citation" data-cites="zolezzi_design_2017">(Zolezzi and Jose 2017)</span> Something <a href="https://www.ebay.com/itm/Servo-Motor-1KW-4NM-AC-Servo-CNC-2500PRM-Pure-Copper-Processing-Steel-Sheet/372788345885">like this costs about $120</a> although the lack of competition at that price leads me to think there is something wrong.</p>
+<blockquote>
+<p>The operation of the control system can be summarized as follows: there are two discrete states: coupled (pull phase) and decoupled (return phase). An impedance regulator is used during the pull phase to provide the force-velocity characteristic corresponding to a flywheel, a nonlinear damper and a small spring action. The force along the pull chain is monitored in this mode. Near the end of the pull stroke, when the force crosses a lower threshold, a transition to the decoupled mode is triggered. The target impedance of the regulator is switched to provide a very low inertia and damping, along with the spring action. At the same time, a real-time simulation of the flywheel is started, mimicking a decelerating flywheel in a conventional machine. The user reverses motion and returns to the starting position and initiates a new pull phase. When the velocity of the chain rises above the velocity of the virtual flywheel, the coupled mode is re-engaged, and the entire cycle repeated.</p>
+</blockquote>
+<p>Position, force, and velocity measurements are needed. Optical encoders on the sprocket and flywheel are used to measure the angular speed. The control system is entirely implemented using a <a href="https://www.dspace.com/en/inc/home/products/hw/microlabbox.cfm">DSpace MicroLabBox</a>.</p>
+<p>Servos are used instead of steppers because the torque vs. speed graph is relatively linear in the former. Steppers lose significant torque above a certain speed.</p>
+<h2 id="mar-2021-1">03 Mar 2021</h2>
+<p>Project Created!</p>
+<h1 id="bibliography">Bibliography</h1>
+<!--notes-->
+<!--links-->
+<div id="refs" class="references">
+<div id="ref-richter_impedance_2015">
+<p>Richter, H., and D. Selvaraj. 2015. “Impedance Control with Energy Regeneration in Advanced Exercise Machines.” In <em>2015 American Control Conference (ACC)</em>, 5890–5. <a href="https://doi.org/10.1109/ACC.2015.7172263" class="uri">https://doi.org/10.1109/ACC.2015.7172263</a>.</p>
+</div>
+<div id="ref-thurel_switched_2015">
+<p>Thurel, Y. 2015. “Switched Mode Four-Quadrant Power Converters.” <a href="https://doi.org/10.5170/CERN-2015-003.141" class="uri">https://doi.org/10.5170/CERN-2015-003.141</a>.</p>
+</div>
+<div id="ref-zolezzi_design_2017">
+<p>Zolezzi, De las Casas, and Humberto Jose. 2017. “Design and Control of a Powered Rowing Machine with Programmable Impedance.” PhD thesis, Cleveland State University. <a href="https://etd.ohiolink.edu/apexprod/rws_olink/r/1501/10?clear=10&amp;p10_accession_num=csu1501517088458169" class="uri">https://etd.ohiolink.edu/apexprod/rws_olink/r/1501/10?clear=10&amp;p10_accession_num=csu1501517088458169</a>.</p>
+</div>
+</div>
+:ET

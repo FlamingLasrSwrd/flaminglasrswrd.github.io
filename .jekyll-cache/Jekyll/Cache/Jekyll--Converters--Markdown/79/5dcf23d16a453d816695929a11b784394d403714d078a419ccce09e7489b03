@@ -1,0 +1,43 @@
+I"�<h1 id="scrubber">Scrubber</h1>
+<h3 id="solvents">Solvents</h3>
+<ul>
+<li>sodium hydroxide/calcium hydroxide solutions</li>
+<li>DESs</li>
+<li>ammonia</li>
+<li>MEA</li>
+</ul>
+<h1 id="log">Log</h1>
+<h2 id="sep-2019">15 Sep 2019</h2>
+<p>Well that failed…</p>
+<p>At some point the water pump failed and the whole assembly leaked caustic soda solution onto my hardwood floor. I removed the liquid and neutralized it with vinegar. I’ll have to sand and restain the floor before my landlord sees it haha.</p>
+<p>After running some more calculations I have determined that it is cheaper to heat/cool outside air than to purchase absorbent. <strong>So for the foreseeable future, I will be leaving my bedroom window open instead.</strong></p>
+<p>The only way I could see this working is if some sort of regeneration system could be devised. That is certainly too complex for a bedroom sized operation since it requires calcination. Further research is needed into alternative absorption/adsorption methods.</p>
+<h2 id="sep-2019-1">06 Sep 2019</h2>
+<p>The scrubber has been humming away in the corner of my room for a few days. Nothing to report. I should probably take a sample of the liquid to determine how much CO2 was absorbed, but I have more important things to do…</p>
+<h2 id="sep-2019-2">04 Sep 2019</h2>
+<p>Significant progress has been made.</p>
+<p>According to previous calculations, over 300g of calcium hydroxide would be needed every hour to capture the CO2 from just a single person. I think the engineering toolbox numbers are wrong. A different source says the maximum CO2 release per person is about 700g per day <span class="citation" data-cites="peggy_release_2008">(Peggy 2008)</span>. This lowers the number to 50g per hour: Still quite significant.</p>
+<p>A 300ml working volume scrubber is charged with 2.4 moles (100g) sodium hydroxide (8 M soln) and 50g lime.</p>
+<h2 id="jul-2019">09 Jul 2019</h2>
+<p>In my adventures growing shiitake and oyster mushrooms I discovered that carbon dioxide can be quite dangerous in the right concentrations. For a week or two I was waking up with headaches and fatigue. I finally figured out that the dozens of jars of colonizing grain spawn were releasing enough CO2 that I was mildly suffocating during the night with my door closed. Thus the initial CO2 scrubber was born. It was a simple thing. Just air bubbled through a tube filled with dilute sodium hydroxide solution that was occasionally topped up with calcium hydroxide. After a few days the solution would turn clear and more CaOH was added.</p>
+<p>5% duty cycle on the water pump achieves 90% reduction in energy requirement with little decrement to absorption efficiency. <span class="citation" data-cites="mahmoudkhani_low_2009">(Mahmoudkhani et al. 2009)</span></p>
+<p>A human respires about .08-.13 cubic meters of CO2 per hour (100 liters, ~4 mol, 180g). That is the target for the initial design. <span class="citation" data-cites="noauthor_carbon_2004">(“Carbon Dioxide Concentrations in Rooms with People” 2004)</span> My little bedroom is approximately 100 cubic meters. Just my breathing will increase the CO2 levels to about 1400ppm over the course of a night. <span class="citation" data-cites="noauthor_carbon_2004-1">(“Carbon Dioxide Emission from People” 2004)</span></p>
+<p>Seems that the best performing DES’s are capable of 10% weight absorption of CO2. This alone is not enough to be useful, but it might work in conjunction with calcium hydroxide.</p>
+<h1 id="bibliography">Bibliography</h1>
+<!--notes-->
+<!--links-->
+<div id="refs" class="references">
+<div id="ref-noauthor_carbon_2004">
+<p>“Carbon Dioxide Concentrations in Rooms with People.” 2004. <em>Engineering Toolbox</em>. <a href="https://www.engineeringtoolbox.com/pollution-concentration-rooms-d_692.html" class="uri">https://www.engineeringtoolbox.com/pollution-concentration-rooms-d_692.html</a>.</p>
+</div>
+<div id="ref-noauthor_carbon_2004-1">
+<p>“Carbon Dioxide Emission from People.” 2004. <em>Engineering Toolbox</em>. <a href="https://www.engineeringtoolbox.com/co2-persons-d_691.html" class="uri">https://www.engineeringtoolbox.com/co2-persons-d_691.html</a>.</p>
+</div>
+<div id="ref-mahmoudkhani_low_2009">
+<p>Mahmoudkhani, M., K. R. Heidel, J. C. Ferreira, D. W. Keith, and R. S. Cherry. 2009. “Low Energy Packed Tower and Caustic Recovery for Direct Capture of Co2 from Air.” <em>Energy Procedia</em>, Greenhouse Gas Control Technologies 9, 1 (1): 1535–42. <a href="https://doi.org/10.1016/j.egypro.2009.01.201" class="uri">https://doi.org/10.1016/j.egypro.2009.01.201</a>.</p>
+</div>
+<div id="ref-peggy_release_2008">
+<p>Peggy. 2008. “Release of Carbon Dioxide by Individual Humans.” Blog. <em>GLOBE Scientists’ Blog</em>. <a href="https://www.globe.gov/explore-science/scientists-blog/archived-posts/sciblog/index.html_p=183.html" class="uri">https://www.globe.gov/explore-science/scientists-blog/archived-posts/sciblog/index.html_p=183.html</a>.</p>
+</div>
+</div>
+:ET

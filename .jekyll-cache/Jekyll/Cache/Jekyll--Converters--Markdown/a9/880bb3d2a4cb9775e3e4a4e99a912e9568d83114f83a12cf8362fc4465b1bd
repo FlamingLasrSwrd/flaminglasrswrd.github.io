@@ -1,0 +1,527 @@
+I"��<h1 id="electrodes">Electrodes</h1>
+<p>The ideal anode for chlorate production has a low hydrogen overpotential.</p>
+<p>The ideal cathode for chlorate production has a low oxygen overpotential.</p>
+<h1 id="chemistry">Chemistry</h1>
+<table>
+<tbody>
+<tr class="odd">
+<td>Cl<sup>-</sup> + 2H<sub>2</sub>O</td>
+<td>⇌</td>
+<td>HClO<sub>2</sub> + 3H<sup>+</sup> + 4e<sup>-</sup></td>
+<td>+1.66</td>
+</tr>
+<tr class="even">
+<td>Cl<sup>-</sup> + 2H<sub>2</sub>O</td>
+<td>⇌</td>
+<td>ClO<sub>2</sub> + 4H<sup>+</sup> + 5e<sup>-</sup></td>
+<td>+1.60</td>
+</tr>
+<tr class="odd">
+<td>HClO + H<sub>2</sub>O</td>
+<td>⇌</td>
+<td>HClO<sub>2</sub> + 2H<sup>+</sup> + 2e<sup>-</sup></td>
+<td>+1.41</td>
+</tr>
+<tr class="even">
+<td>2Cl<sup>-</sup></td>
+<td>⇌</td>
+<td>Cl<sub>2</sub> + 2e<sup>-</sup></td>
+<td>+1.36</td>
+</tr>
+<tr class="odd">
+<td>HClO<sub>2</sub></td>
+<td>⇌</td>
+<td>ClO<sub>2</sub> + H<sup>+</sup> + e<sup>-</sup></td>
+<td>+1.28</td>
+</tr>
+<tr class="even">
+<td>2H<sub>2</sub>O</td>
+<td>⇌</td>
+<td>O<sub>2</sub> + 4H<sup>+</sup> + 4e<sup>-</sup></td>
+<td>+1.23</td>
+</tr>
+<tr class="odd">
+<td>ClO<sub>3</sub><sup>-</sup> + H<sub>2</sub>O</td>
+<td>⇌</td>
+<td>ClO<sub>4</sub><sup>-</sup> + 2H<sup>+</sup> + 2e<sup>-</sup></td>
+<td>+1.19</td>
+</tr>
+<tr class="even">
+<td>ClO<sub>3</sub><sup>-</sup> + 2H +  e<sup>-</sup></td>
+<td>⇌</td>
+<td>ClO<sub>2</sub>(g) + H<sub>2</sub>O</td>
+<td>+1.18</td>
+</tr>
+<tr class="odd">
+<td><strong>6HClO + 3H<sub>2</sub>O</strong></td>
+<td>⇌</td>
+<td><strong>3/2O<sub>2</sub> + 2ClO<sub>3</sub><sup>-</sup> + 4Cl<sup>-</sup> + 12H<sup>+</sup> + 6e<sup>-</sup></strong></td>
+<td><strong>+1.14</strong></td>
+</tr>
+<tr class="even">
+<td>ClO<sub>2</sub><sup>-</sup></td>
+<td>⇌</td>
+<td>ClO<sub>2</sub> + e<sup>-</sup></td>
+<td>+1.04</td>
+</tr>
+<tr class="odd">
+<td>HClO<sub>2</sub> + H<sub>2</sub>O</td>
+<td>⇌</td>
+<td>ClO<sub>3</sub><sup>-</sup> + 3H<sup>+</sup> + 2e<sup>-</sup></td>
+<td>+0.97</td>
+</tr>
+<tr class="even">
+<td>ClO<sup>-</sup> + H<sub>2</sub>O + 2e<sup>-</sup></td>
+<td>⇌</td>
+<td>Cl<sup>-</sup> + 2OH<sup>-</sup></td>
+<td>+0.89</td>
+</tr>
+<tr class="odd">
+<td><strong>6ClO<sup>-</sup> + 3H<sub>2</sub>O</strong></td>
+<td>⇌</td>
+<td><strong>3/2O<sub>2</sub> + 2ClO<sub>3</sub><sup>-</sup> + 4Cl<sup>-</sup> + 6H<sup>+</sup> + 6e<sup>-</sup></strong></td>
+<td><strong>+0.69</strong></td>
+</tr>
+<tr class="even">
+<td>ClO3<sup>-</sup> + 3H<sub>2</sub>O + 6e<sup>-</sup></td>
+<td>⇌</td>
+<td>Cl<sup>-</sup> + 6OH<sup>-</sup></td>
+<td>+0.63</td>
+</tr>
+<tr class="odd">
+<td>6 ClO<sup>-</sup> + 3H<sub>2</sub>O</td>
+<td>⇌</td>
+<td>2ClO<sub>3</sub><sup>-</sup> + 6H<sup>+</sup> + 4Cl<sup>-</sup> + 3/2O<sub>2</sub> + 6e<sup>-</sup></td>
+<td>+0.46</td>
+</tr>
+<tr class="even">
+<td>2H<sup>+</sup> + 2e<sup>-</sup></td>
+<td>⇌</td>
+<td>H<sub>2</sub></td>
+<td>-0.36</td>
+</tr>
+<tr class="odd">
+<td>TiO<sup>2+</sup> + 2H<sup>+</sup> + 4e<sup>-</sup></td>
+<td>⇌</td>
+<td>Ti<sub>(s)</sub> + H<sub>2</sub>O</td>
+<td>-0.93</td>
+</tr>
+<tr class="even">
+<td>Mn<sup>2+</sup> + 2e<sup>-</sup></td>
+<td>⇌</td>
+<td>Mn<sub>(s)</sub></td>
+<td>-1.19</td>
+</tr>
+<tr class="odd">
+<td>Ti<sub>2</sub>O<sub>3(s)</sub> + 2H<sup>+</sup> + 2e<sup>-</sup></td>
+<td>⇌</td>
+<td>2TiO<sub>(s)</sub> + H<sub>2</sub>O</td>
+<td>-1.23</td>
+</tr>
+<tr class="even">
+<td>TiO<sub>(s)</sub> + 2H<sup>+</sup> + 2e<sup>-</sup></td>
+<td>⇌</td>
+<td>Ti<sub>(s)</sub> + H<sub>2</sub>O</td>
+<td>-1.31</td>
+</tr>
+<tr class="odd">
+<td>Ti<sup>3+</sup> + 3e<sup>-</sup></td>
+<td>⇌</td>
+<td>Ti<sub>(s)</sub></td>
+<td>-1.37</td>
+</tr>
+<tr class="even">
+<td>Ti<sup>2+</sup> + 2e<sup>-</sup></td>
+<td>⇌</td>
+<td>Ti<sub>(s)</sub></td>
+<td>-1.63</td>
+</tr>
+<tr class="odd">
+<td>Na<sup>+</sup> + e<sup>-</sup></td>
+<td>⇌</td>
+<td>Na<sub>(s)</sub></td>
+<td>-2.71</td>
+</tr>
+<tr class="even">
+<td>K<sup>+</sup> + e<sup>-</sup></td>
+<td>⇌</td>
+<td>K<sub>(s)</sub></td>
+<td>-2.93</td>
+</tr>
+</tbody>
+</table>
+<p><strong>indicates composite reaction</strong> <span class="citation" data-cites="viswanathan_chemical_1984">(Viswanathan and Tilak 1984, <span class="citation" data-cites="neodo_electrolysis_2012">Neodo et al. (2012)</span>, <span class="citation" data-cites="czarnetzki_formation_1992">Czarnetzki and Janssen (1992)</span>, <span class="citation" data-cites="wanngard_catalyzing_2017">Wanngård and Wildlock (2017)</span>)</span></p>
+<p>The maximum chloride to chlorate conversion efficiency is 66% for a cell without pH control. <span class="citation" data-cites="sreekumar_adaptive_2020">(Sreekumar, Kallingal, and Lakshmanan 2020)</span></p>
+<h1 id="work-log">Work Log</h1>
+<h2 id="todo">TODO</h2>
+<ul>
+<li>[ ]</li>
+</ul>
+<h2 id="mar-2021">12 Mar 2021</h2>
+<p><a href="https://www.chemguide.co.uk/physical/redoxeqia/predict.html">Making predictions using redox (electrode) potentials</a> was very helpful in the basics of redox reactions.</p>
+<p>Chromate is important:</p>
+<blockquote>
+<p>The fraction of chlorate formed by chromate catalysis depends primarily on the dichromate concentration but also on pH and other operation parameters. Under industrial operation conditions, it is reasonable to assume that 30–70% of the chlorate is formed by chromate catalysis. <span class="citation" data-cites="wanngard_catalyzing_2017">(Wanngård and Wildlock 2017)</span></p>
+</blockquote>
+<p>It isn’t great for the environment or operator.</p>
+<blockquote>
+<p>Unfortunately, the serious environmental and health concerns related to hexavalent chromium mean there is an urgent need to find an alternative solution to achieve the required selectivity. <span class="citation" data-cites="endrodi_towards_2018">(Endrődi et al. 2018)</span></p>
+</blockquote>
+<p>pH control can only get you so far:</p>
+<blockquote>
+<p>In the close vicinity of the cathode, however, the pH is highly alkaline due to the hydrogen evolution reaction.</p>
+</blockquote>
+<p>This wouldn’t be as big of a problem in a fluidized bed. But that might have other effects. The stabilization of chromate at the cathode might actually be because of the localized increase in pH…</p>
+<p>More MMO construction information:</p>
+<blockquote>
+<p>Two types of titanium electrodes were employed to act as anodes: (1) a titanium substrate with a coating of mixed ruthenium and titanium oxides (40 mol.% RuO2); (2) a titanium substrate coated by the thermal decomposition of a salt mixture of RuC13. 3H20, TIC14, PdC12 and SnC12 in isopropanol to provide a catalytic layer of composition 14 at.% Ru, 35 at.% Ti, 17 at.% Pd and 34 at.% Sn [7]. The supporting titanium sheets were first thoroughly degreased, etched and pickled in boiling hydrochloric acid (20% HC1). Several coating layers of the above compositions in isopropanol were repeatedly painted onto one side of the strips, dried at 323 K to remove the alcohol and baked in air for 10 min in an electric furnace at 723 K. After usually five repeated paintings and dryings to get a coating of 10 g m-z on the pure metal, a final baking was conducted in an electric furnace at 773 K with an excess of oxygen (mostly in air) for about 60 min [8]. <span class="citation" data-cites="spasojevic_electrocatalytic_1984">(Spasojević, Krstajić, and Jakšić 1984)</span></p>
+</blockquote>
+<p>I bet catalytic converter beads would be amazing for a fluidized bed chlorate cell.</p>
+<p>What about manganese dioxide? I can buy granular MnO2 by the pound for pottery purposes.</p>
+<p><a href="http://www.chlorates.exrockets.com/mno2.html">MnO2 Anodes</a> - from the OG chlorate cell master</p>
+<blockquote>
+<p>Importantly, a hydrogen evolution efficiency of above 95% was achieved with electrodes of optimized composition (annealing temperature, thickness) in hypochlorite solutions. <span class="citation" data-cites="endrodi_selective_2019">(Endrődi, Stojanovic, et al. 2019)</span></p>
+</blockquote>
+<p>Mn<sub>2</sub>O<sub>3</sub> or MnO<sub>2</sub> produced (depending on the temperature) by thermodecomposition of manganese nitrate can serve as a cathode material.</p>
+<blockquote>
+<p>It is worth mentioning that the current efficiency improvement upon coating the Ti electrodes with MnOx was significantly smaller when studying the electrochemical reduction of chlorate ions compared with the case of hypochlorite. We believe that this difference is rooted in the distinct mechanism of the two electrochemical processes; hypochlorite reduction requires very little driving force (overpotential), and therefore, its rate is limited by mass transport under industrial circumstances. On the other hand, the reduction of chlorate is an activation-controlled process, requiring a significantly larger overpotential or the application of well-designed, catalytic electrodes.</p>
+</blockquote>
+<p>MnOx works better than titanium.</p>
+<blockquote>
+<p>The best results were found for the layers formed at 400 and 500 °C; in both cases, the hydrogen evolution reaction selectivity was above 95% (as compared to 78% on a titanium electrode).</p>
+</blockquote>
+<p>But it still isn’t perfect.</p>
+<blockquote>
+<p>The efficiency is higher when a higher current density is applied, which can be related to the diffusion limited nature of the most important loss-reaction: the reduction of hypochlorite. However, at the industrially relevant current density of j = 300 mA/cm2 the current efficiency is still below 80%, indicating considerable losses.</p>
+</blockquote>
+<p>Vanadium might also be something worth looking into.</p>
+<blockquote>
+<p>Sodium metavanadate is a promising solution additive for processes in undivided electrochemical cells, inducing selective cathodic hydrogen evolution in various electrolytes, while the HER kinetics is not affected significantly. The hindering effect is caused by the in situ formation of a vanadium oxide film on the cathode during electrolysis. <span class="citation" data-cites="endrodi_situ_2019">(Endrődi, Smulders, et al. 2019)</span></p>
+</blockquote>
+<p>Composite electrodes can be made.</p>
+<blockquote>
+<p>The catalyst powder was mixed with 5 wt% PTFE (Teflon) powder forming a highly conductive and wettable paste. A sublayer material was created by mixing carbon Vulcan XC72 powder with PTFE powder in a weight ratio of 2:1. Pretests revealed that this sublayer material is highly conductive, similar to the catalyst–Teflon mixture, and it is almost completely hydrophobic (water uptake at 25C and 70C lower than 1 wt %). Both materials were simultaneously pressed on a substrate at 250C and three tons forming a double layered pellet with an area of A = 1.44 cm2. This assembly was embedded in epoxy resin for electrochemical tests. In this way, electrodes with catalyst loadings from 300 to 10 mg/cm2 were prepared. The morphology of those double-layered pellets was investigated before and after electrochemical treatments by SEM and EDX analysis. <span class="citation" data-cites="gebert_cathodes_2000">(Gebert et al. 2000)</span></p>
+</blockquote>
+<p>Although these specific trodes may not last.</p>
+<blockquote>
+<p>The long-term tests of the electrodes conducted for several hours at -250 mA/cm2 in industrial chlorate electrolyte showed significant deterioration in performance. This was mainly due to the degradation of the sublayer.</p>
+</blockquote>
+<p>Other allotropes of carbon are work investigating. Glassy carbon or graphite, perhaps? Reticulated vitreous carbon would have the benefit of being buoyant.</p>
+<p>Maybe carbon fiber? It is cheap to buy as “chopped carbon fiber”.</p>
+<p>Carbon felt (activated carbon fiber) can be infused with various metals to act as electrodes. <span class="citation" data-cites="alvarado_avila_improved_2020">(Alvarado Ávila, Toledo-Carrillo, and Dutta 2020)</span></p>
+<p>Maybe it would be sufficient (although messy) to use commercial grade activated carbon. An acid washing leaching step might be warranted to remove various ashes. I do not know if, after the initial dust is removed, further degradation of the activated carbon particles would occur.</p>
+<p>Activated carbon could also be modified by depositing various catalysts to the surface, platinum, for example.</p>
+<p>MMO anodes benefit from iridium.</p>
+<blockquote>
+<p>Introducing iridium dioxide into the active coating of DSA may substantially (by approximately five to seven times, according to the authors of [12]) increase the anodes’ lifetime in chlorate electrolysis [13], which is probably associated with the formation of a protective layer between the titanium support and the active coating, which protects the support from oxidation. <span class="citation" data-cites="evdokimov_electrochemical_2001">(Evdokimov 2001)</span></p>
+</blockquote>
+<blockquote>
+<p>The total cathodic overpotential of the steel cathodes usually used in the chlorate industry is about -800mV at -250 mA/cm2. This constitutes the main electrochemical energy loss in the production of sodium chlorate. <span class="citation" data-cites="guay_activated_2015">(Guay, Roué, and Schulz 2015)</span></p>
+</blockquote>
+<p>Add sodium fluoride to lead dioxide anodes.</p>
+<blockquote>
+<p>The present studies reveal that both NaF and Na3AlF6 catalyze the anodic oxidation of chlorate ion to perchlorate ion at a B-PbO2 coated titanium electrode. Na2SiF6 and Na2TiF6 do not affect the reaction. However, NaBF4 and NaPF6 retard the reaction. It is demonstrated that the fluorocompounds influence the overpotential of the chlorate oxidation reaction more than that of oxygen evolution, thus resulting in either electrocatalysis or retardation of the reaction.</p>
+</blockquote>
+<p>For a fluidized bed cell, the use of magnesium (or similar) chlorides might be beneficial. <span class="citation" data-cites="vasudevan_studies_2008">(Vasudevan 2008)</span></p>
+<h2 id="mar-2021-1">11 Mar 2021</h2>
+<p>Is the particle anode necessary? Why not perfusion of solid substrates?</p>
+<h3 id="mmotitanium-substrate-pbo2-anode">MMO/Titanium substrate PbO2 Anode</h3>
+<p>Add surfactants:</p>
+<blockquote>
+<p>presence of surfactants in coating electrolyte hinders the uneven growth of Lead dioxide particles thereby resulting in a uniform structure (Fig 1 (b to d)). <span class="citation" data-cites="menon_impact_2014">(Menon, Mathew, and Madhu 2014)</span></p>
+</blockquote>
+<p>Add fluoride and cerium ions:</p>
+<blockquote>
+<p>Even though all the [NaF, CeNO3, surfactants] combinations resulted in densely packed and smooth surface, combination of NaF and CTAB in equal proportions had given an optimal coating with reduced morphological defects (low macropores).</p>
+</blockquote>
+<p>Hmmm… Fluidized bipolar bed reactor. Between the standard PbO2 bulk electrode and SS cathode there is a perfused container of loose PbO2 particles kept continuously fluidized by the flow. If the electrodes are situated longitudinal to the fluid flow with fluidized particles in between, the cell can be scaled as tall as necessary to reach the required final concentration of perchlorate.</p>
+<blockquote>
+<p>Ignoring the entrance and exit effects, the model indicates that each particle performs independently of its position between the current feeders. This means that dimensions in the direction of current flow can be scaled up without limitations imposed by potential distributions as is the case for the monopolar fluidized bed electrode. <span class="citation" data-cites="goodridge_performance_1977">(Goodridge, King, and Wright 1977)</span></p>
+</blockquote>
+<p>The voltage would need to be higher than a traditional cell as each particle is a voltage-divider. So the particle size</p>
+<blockquote>
+<p>In order to highlight the effect of particle size, E has been expressed as volts per particle. As expected, increases in voltage gradient, bromide concentration and decrease in particle size, result in improved values of [space-time yield].</p>
+</blockquote>
+<p>The upward fluid flow would be assisted by gaseous production but this may be a limiting factor since the gas also hinders particle-fluid interactions.</p>
+<p>Or… We could avoid lead dioxide altogether and use magnetically suspended magnetite particles (for chlorate production only). <span class="citation" data-cites="tschope_magnetically_2020">(Tschöpe et al. 2020)</span></p>
+<p>The advantages of a fluidized beds:</p>
+<blockquote>
+<p>High electrochemical conversion rates can be obtained if the ratio of electrode surface to solution volume is maximized. In this context, packed bed electrodes consisting of fine conductive particles offer exceptionally high specific surfaces. However, in case of electrochemical reactions involving suspended solids or gases, packed bed electrodes are not suitable due to the risk of blockage. Fluidized bed electrodes can avoid this risk, but encounter problems regarding the electrical contacting between the electrode particles.</p>
+</blockquote>
+<p>Straight titanium cathodes might be avoided for long term cathodic service</p>
+<blockquote>
+<p>While valve metals are also stable in this medium under open-circuit conditions, they tend to hydride easily during electrolysis, resulting in the loss of mechanical integrity due to lattice expansion and subsequent distortion. <span class="citation" data-cites="viswanathan_chemical_1984">(Viswanathan and Tilak 1984)</span></p>
+</blockquote>
+<p>Fluidized bed reactor parameters:</p>
+<blockquote>
+<p>The overall electrochemical performance of FBEs is determined by complex parameter interactions, and the main electrolysis parameters are as follows: initial concentration, pH, fluid velocity, current density, and cell structure. <span class="citation" data-cites="cheng_review_2020">(Cheng et al. 2020)</span></p>
+</blockquote>
+<p>Vertical and horizontal reactor designs:</p>
+<figure>
+<img src="/assets/img/chlorate/Fig4.png" />
+</figure>
+<figure>
+<img src="/assets/img/chlorate/Fig5.png" />
+</figure>
+<p>There are other designs with specialized fluid flow regimes.</p>
+<p>Will PbO2 be reduced to Pb metal at the cathode?</p>
+<p>It seems that magnetite is dissolved in acidic perchlorate solutions. <span class="citation" data-cites="haruyama_dissolution_1978">(Haruyama and Masamura 1978)</span></p>
+<p>So both lead and iron oxides will have problems in bipolar cells. What about boron doped diamond? Obviously bulk diamond electrodes made with CVD are expensive.</p>
+<p>But thermal diffusion doping of cheap synthetic diamond powder… Is is possible to heat a bath of boron and synthetic diamond to produce such a thing?</p>
+<p>Yes. Yes it is. <span class="citation" data-cites="tsai_boron_1991">(Tsai et al. 1991)</span></p>
+<blockquote>
+<p>Heat treatment of ND/boron powder mixture in H2 atmosphere at 900 °C increased the conductivity from 2.0 uS/cm to 2.7 mS/cm. <span class="citation" data-cites="kondo_boron-doped_2015">(Kondo et al. 2015)</span></p>
+</blockquote>
+<p>Sea water has a conductivity of about 50 mS/cm. I’d imagine perchlorate cell conditions will have significantly higher conductivity than that. Unless the conductivity of these electrodes is higher, the current will simply bypass them in bipolar mode.</p>
+<blockquote>
+<p>The boron powder used in the experiment was amorphous, 325 mesh 90% (Assay), Mg (5%) nominal obtained from AESAR… A mixture of 3:1 boron powder to diamond powder was used. The powders were mixed in a mortar and pestle to form a homogeneous mixture. Approximately 0.8g of diamond was used for each run. The mixture was lightly packed inside a quartz vial. Two graphite electrodes made the electrical contact at each end of the quartz tube. One graphiteelectrical contact has a positive bias and the other one had a negative bias with a potential difference of 150 V. A laser illuminated the sample. The treatment was performed in the experimental chamber using hydrogen atmosphere under a pressure in the range of 20 to 40 mmHg. <span class="citation" data-cites="adrian_novel_2006">(Adrian et al. 2006)</span></p>
+</blockquote>
+<p>The conductivity of the mixture increases with reaction time and could be used to determine reaction progress.</p>
+<blockquote>
+<p>It was found that after an elapsed diffusion time that the treated powder began to exhibit conductive properties. It was observed that the voltage in the power supply dropped from 150 V to ~17 volts and the current increased to ~2 amp. A direct relationship between the temperature and the current was indicated by a red-glow from the sample.</p>
+</blockquote>
+<p>1 amp versus 2 microamp:</p>
+<blockquote>
+<p>Samples treated with high current exhibit high conductivity and have a higher boron concentration.</p>
+</blockquote>
+<p>Boron doping results in a blue color that gets darker with increasing boron concentrations.</p>
+<blockquote>
+<p>Blue, dark and metallic like spots were observed under the optical microscope at a magnification of 200x. The spots were located randomly on the samples… It was found that some of the particles were colored and some not… The analysis also demonstrates an increase of roughness in the samples after treatment… It was also evident that the concentrations of impurities were not homogeneous through out the sample.</p>
+</blockquote>
+<p>This method may require some annealing after doping.</p>
+<p>Their setup resulted in 121000 ppm boron. That’s insanely high.</p>
+<p>Even without various diffusion assistance tech, immersing a couple diamonds in a hot bath of boron results in significant doping.</p>
+<blockquote>
+<p>Two type IIa diamonds were used to examine the diffusion behavior at different temperatures. The diffusion was performed in hydrogen atmosphere at 30 torr. One diamond was diffused with boron at 1200C for 20 hours. Another diamond was diffused with boron at 1400C for 5 minutes. After diffusion, diamond samples were cleaned with a CrO3+H2SO4 solution. <span class="citation" data-cites="sung_boron_1995">(Sung et al. 1995)</span></p>
+</blockquote>
+<blockquote>
+<p>It was found that the diffusion coefficients of boron in diamond ~3x10^-12 cm2/s at 1400C and ~2x10^-15 cm2/s at 1200C.</p>
+</blockquote>
+<p>BDD powder can be mixed with a PTFE binder to form a large electrode. <span class="citation" data-cites="fischer_preparation_2005">(Fischer and Swain 2005)</span></p>
+<p>BDD electrodes are awesome. <span class="citation" data-cites="cobb_boron_2018">(Cobb, Ayres, and Macpherson 2018)</span></p>
+<p>BDD is especially good at perchlorate production due to the ease of OH radicalization on the surface (the limiting reaction in perchlorate synthesis).</p>
+<blockquote>
+<p>BDD electrodes are efficient at oxidizing recalcitrant compounds in water through the production of OH• and direct electron transfer (DET) reactions at the electrode surface. <span class="citation" data-cites="gayen_fluorination_2017">(Gayen and Chaplin 2017)</span></p>
+</blockquote>
+<p>Do not use fluorine additives with BDD! This probably includes avoiding tap water that contains fluoride as cell liquor.</p>
+<blockquote>
+<p>The functional groups on the BDD surface have a significant effect on the rates of DET reactions.23 Our previous work showed that incorporation of C−F and C−CnF2n+1 (1 ≤ n ≤ 7) functional groups to the BDD surface via electrochemical oxidation of perfluorooctanoic acid (PFOA) was effective at lowering ClO4− formation by 96%</p>
+</blockquote>
+<p>Diamond is really dense. It might be difficult to fluidize.</p>
+<p>Boron doping levels:</p>
+<blockquote>
+<p>Boron-doped diamond (BDD) can be described as semimetallic or “metal-like”. Practically, a boundary boron concentration ([B], number of B atoms per cm-3) of about ((1–3) x 10^20 cm-3) or an even higher value ([B] = 4.5 x 10^20 cm-3) was reported. This doping level is often sufficient to achieve good conductivity and fast electron transfer. Films with [B] &gt; 3 x 10^20 cm-3 boron atoms are sometimes denoted as heavily doped BDD (h-BDD). An average [B] of ~3 x 10^20 cm-3 B atoms was found to be optimal. Increasing [B] results in higher capacitance values and increases the likelihood of nondiamond carbon incorporation. <span class="citation" data-cites="muzyka_boron-doped_2019">(Muzyka et al. 2019)</span></p>
+</blockquote>
+<p>The ratio of sp2 to sp3 hybridization changes the electrical characteristics. Most studies are attempting to minimize sp2 carbon at the surface, but for aqueous redox reactions it would seem that sp2 is exactly what we want.</p>
+<blockquote>
+<p>sp2 hybridized materials react with oxygen and water to form oxygen-containing functional groups… sp2 carbon catalyzes redox reactions, providing adsorption sites for reactants and reaction intermediates. Thus, the sp2 content may have a positive impact on electroanalytical applications that require a more catalytically active surface.</p>
+</blockquote>
+<p>The surface termination (oxygen or hydrogen) also matters but it can be altered electrochemically.</p>
+<blockquote>
+<p>In general, cathodic pretreatment (CPT) increases hydrogen termination; however it does not change the physical and chemical characteristics of the original BDD surface (hydrophobic surface), with negative electron affinity and high conductivity. After anodic pretreatment (APT), the BDD surface becomes hydrophilic with positive electron affinity and low conductivity and has relatively negative surface charge.</p>
+</blockquote>
+<p>As a side note: BDD can be used for robust pH and simultaneous DO measurement. <span class="citation" data-cites="ayres_controlled_2016">(Ayres et al. 2016)</span> <span class="citation" data-cites="read_sp2_2019">(Read, Cobb, and Macpherson 2019)</span> I’ll be keeping an eye on that technology in the future.</p>
+<p>It is hard to find anything other than CVD produced BDD, which is basically out of the range of the amateur. HTHP synthetic bulk diamonds are cheaper and more common, but if you are going to produce BDD, you might as well start with perfect crystals produced by CVD. Even the research that attempts to modify insulating commercial diamonds typically use CVD to form a BDD coating.</p>
+<p>Synthetic blue diamond is available wholesale. I wonder if you could use something like that directly.</p>
+<p>Direct electron transfer and hydroxyl radicals are the source of perchlorate production.</p>
+<blockquote>
+<p>Experimental and density functional theory (DFT) results indicate that ClO3- oxidation proceeds via a combination of direct electron transfer and hydroxyl radical oxidation with a measured apparent activation energy of 6.9 +- 1.8 kJ/mol at a potential of 2.60 V/SHE. <span class="citation" data-cites="azizi_mechanism_2011">(Azizi et al. 2011)</span></p>
+</blockquote>
+<p>Active chlorine diffusion may be the cause of some anode deterioration.</p>
+<blockquote>
+<p>Active chlorine diffuses into the anode, where it is oxidised to chlorate in an undesirable reaction <span class="citation" data-cites="spasojevic_current_2014">(Spasojevic et al. 2014)</span></p>
+</blockquote>
+<p>High temperatures, high chloride concentrations, and pH control suppress that and other losses.</p>
+<blockquote>
+<p>During chlorate production by the electrolysis of concentrated sodium chloride solutions, current losses due to the anodic oxidation of water are negligible. The relatively high temperature of the solution, t &gt; 80 °С, ensures a high rate of chemical conversion of active chlorine into chlorate (reaction (4)) and, hence, a relatively low steady-state concentration of active chlorine. In the chlorate production process, the pH of the solution, 6.1 &lt; pH &lt; 6.5, ensures an optimal ratio of hypochlorous acid to hypochlorite ion concentrations for the maximum rate of the chemical conversion of active chlorine into chlorate.</p>
+</blockquote>
+<blockquote>
+<p>Cathodic current losses are completely prevented by the addition of 2 to 5 g dm–3 Na2Cr2O7 to the solution.</p>
+</blockquote>
+<p>I never could find a decent source on how much ruthenium was in a MMO electrode. Now I have:</p>
+<blockquote>
+<p>The anode was a titanium plate activated by a catalytic 40 mol % RuO2, 60 mol % TiO2 (DSA) coating.</p>
+</blockquote>
+<p>Short anodes are better than long ones.</p>
+<blockquote>
+<p>It was experimentally determined that chlorate cells equipped with short anodes and exhibiting sufficient electrolyte velocity in the inter-electrode gap act as ideal stirred electrochemical reactors. Chlorate cells with a greater anode height behave as tubular reactors with an axial linear concentration profile of active chlorine.</p>
+</blockquote>
+<p>So we need something that can function as a cathode and an anode without degradation. That eliminates PbO2 for sure. RuO2 might work but is expensive. Obviously platinum works but is similarly expensive. BDD would work but also expensive.</p>
+<p>There seems to be a lot of undiscovered country for anodes and cathodes such as iron aluminide cathodes. <span class="citation" data-cites="schulz_new_2009">(Schulz and Savoie 2009)</span></p>
+<p>The <a href="https://en.wikipedia.org/wiki/Standard_electrode_potential_(data_page)">Wiki Table of Standard Electrode Potentials</a> should give us some ideas.</p>
+<p>Back to regular chlorate cells…</p>
+<blockquote>
+<p>However, in practice, chlorate cells operate in the voltage range 3-4V, at an average current efficiency (CE) of ~95%. This results in heat generation… which, for a chlorate electrolyzer operating at 95% efficiency and 3.3V, would be ~250 kcal/mol or 4250 BTU/lb of NaClO3. This heat, generated in cells operating at voltages &gt; 1.62V, must be removed. <span class="citation" data-cites="viswanathan_chemical_1984">(Viswanathan and Tilak 1984)</span></p>
+</blockquote>
+<h2 id="mar-2021-2">10 Mar 2021</h2>
+<h3 id="bulk-lead-dioxide-synthesis">Bulk Lead Dioxide Synthesis</h3>
+<blockquote>
+<p>Four positive battery plates (4.5 cm x 4.0 cm) were electroformed for 48 h in 3.5 M sulphuric acid at a current of 1A per plate. After separation of the active material from the grid, any divalent lead impurities could be removed by treating with nitric acid as described in preparation (ii). [(ii)]The resulting sodium chlorite-lead dioxide mixture was filtered, washed with water and finally boiled with 3 M-nitric acid for 45 min. to remove any lead monoxide. The product was then washed with water and dried. <span class="citation" data-cites="bagshaw_preparation_2007">(Bagshaw, Clarke, and Halliwell 2007)</span></p>
+</blockquote>
+<p>Any impurities would likely just convert to lead dioxide in-situ so the acid wash may not be necessary.</p>
+<p>Each plate has a surface area of about 36 square centimenters. That means a current density of 28 mA/cm^2.</p>
+<p>Lead dioxide = lead(IV) oxide</p>
+<p>Beta-PbO2 is preferred over Alpha due to its higher conductivity and hardness.</p>
+<blockquote>
+<p>A micro-hardness determination gave a Vickers hardness number of 600 for the beta- and 620 for the a-modification. <span class="citation" data-cites="bagshaw_preparation_2007">(Bagshaw, Clarke, and Halliwell 2007)</span></p>
+</blockquote>
+<p>So something around the hardness of human bone and teeth.</p>
+<p>Acid electroformed PbO2 is 85.69% Pb, 13.67% O, and 0.106% H. Higher hydrogen content than other production methods.</p>
+<h3 id="flow-cell">Flow Cell</h3>
+<p>Instead of the traditional batch cell, a perfusion cell might work. Certainly this would assist mass transfer. It also permits the use a “particle” electrode.</p>
+<p>Traditional lead dioxide anodes are plated onto a support material, preferably a valve metal. But the mechanical properties of PbO2 are substantially different than these metals so significant amounts of anode flake off and eventually the anode becomes unusable.</p>
+<p>By sandwiching bulk PbO2 powder between layers of filter media and flowing the reactants through, electrode wear can be reduced to essentially zero. A MMO anode can be embedded in the PbO2 to serve as the electrical connection. The surrounding PbO2 protects it.</p>
+<p>Using a flow cell in this manner results in improved efficiency:</p>
+<blockquote>
+<p>An average current efficiency of about 78.5% could be achieved which is 20-25 % higher than conventional parallel plate electrode system. <span class="citation" data-cites="menon_compact_2019">(Menon, Madhu, and Mathew 2019)</span></p>
+</blockquote>
+<blockquote>
+<p>The cell was fabricated using Polythene body with envelope dimensions being 20 cm (ID) x 32 cm (H). About 6 Kg of PbO2 particles having an average particle size of 700 microns, were intensely packed in the cell. Poly propylene support plates having perforations, also acting as liquid distributors, with nylon mesh were used at both ends for guaranteeing stiff and leak proof packing. The electrolyte storage tank was charged with 15 litres of Sodium Chlorate solution having an initial concentration of 700 gm/litre (gpl). Mixed metal oxide coated Titanium tube was used as anodic current feeder while the cathode was SS 316 L.</p>
+</blockquote>
+<p>The first iteration of their electrolysis cell relied on single electrodes, but further iterations connected these cells in series for a bipolar plate-like process.</p>
+<figure>
+<img src="/assets/img/chlorate/Fig3.png" />
+</figure>
+<p>Current efficiency peaked at 87% with 80A. The lowest current efficiency at 40A was close to 38%. Higher current resulted in diminished CE as well. There are competing effects of mass transfer and reaction rate that are probably the cause.</p>
+<blockquote>
+<p>Generation of OH radicals by splitting of H2O molecule via one electron transfer step and its consequent adsorption on PbO2 surface will be the sluggish among all steps. Charge transfer rate along with the accessibility of OH radicals on the PbO2 surface are the two major prerequisites for the improvement in the rate of reaction and hence in current efficiency. Though electron transfer rate could be enhanced due to the higher solution conductivity with an increase in temperature, there could be a net reduction in the availability of OH radicals on the PbO2 electrode surface, due to the higher rate of desorption.</p>
+</blockquote>
+<p>Optimum temperature was 60C with a drop of about 15% with either 50C or 70C.</p>
+<p>The flow rate was less important with a peak at 800ml/min and decrease of 5% at 600ml/min and 1000ml/min.</p>
+<p>Clearly some tuning need to happen.</p>
+<p>A study of the kinetics of perchlorate production on PbO2 anodes found some different results.</p>
+<blockquote>
+<p>It thus follows from the above study of electrode kinetics that the mechanism of anodic oxidation of chlorate to perchlorate on B-PbO2(Ti) anodes involves the anodic oxidation of water in a one-electron transfer step to give an adsorbed (OH) radical as the rate-determining step. Perchlorate ion is produced by a subsequent fast oxidation step involving either the chlorate ion or an adsorbed chlorate radical and the adsorbed (OH) radical. <span class="citation" data-cites="munichandraiah_kinetics_1987">(Munichandraiah and Sathyanarayana 1987)</span></p>
+</blockquote>
+<p>pH control is unnecessary.</p>
+<blockquote>
+<p>It may be inferred from Fig. 4 that the current efficiency for perchlorate formation on PbO2 anode is independent of the pH of the solution.</p>
+</blockquote>
+<p>Higher current density is linearly proportional to CE up to 1A/cm^2.</p>
+<blockquote>
+<p>It may be seen from Fig. 3 that the current efficiency for anodic oxidation of chlorate increases not only with increase in the current density as noted in the earlier literature [9], but also with increase in the ionic strength of the solution at constant chlorate concentration, which is a fact of considerable importance in the elucidation of the mechanism.</p>
+</blockquote>
+<p>Since the flow-cell experienced reduced CE at even 250mA/cm^2, something else must be going on. Perhaps just the resistance of the particle anode was heating the cell?</p>
+<p>It is worth noting that there don’t seem to be any competing reactions</p>
+<blockquote>
+<p>With the above set-up, it was established that cathodic hydrogen evolution occurred at 100% current efficiency during the electrolysis of NaC103 + NaC104 solutions. In other words, the cathodic reduction of perchlorate to chlorate, or of chlorate to chloride does not take place to any significant extent. The assay of the solution before and after electrolysis for chloride, chlorate and perchlorate confirmed these conclusions.</p>
+</blockquote>
+<p>As a side note: Hydrogen/Oxygen generation could be used as an analytical method to determine the reaction rate. Measure the water saturated oxygen+hydrogen volume -&gt; burn the little bit of oxygen -&gt; measure the hydrogen volume.</p>
+<p><a href="http://www.chlorates.exrockets.com/leaddiox/alfabeta.html">Alpha/Beta crystallization via electrolysis</a> <a href="http://www.chlorates.exrockets.com/reaction.html">Some amateur chlorate cell chemistry discussion</a></p>
+<p>There’s also the possibility of running all the way from chloride to perchlorate without any intermediate purification. <span class="citation" data-cites="udupa_large-scale_1971">(Udupa et al. 1971)</span></p>
+<h2 id="mar-2021-3">10 Mar 2021</h2>
+<p>Project Created!</p>
+<h1 id="bibliography">Bibliography</h1>
+<!--notes-->
+<!--links-->
+<div id="refs" class="references">
+<div id="ref-adrian_novel_2006">
+<p>Adrian, E. Mendez, A. Prelas Mark, Michael Glascock, and K. Ghosh Tushar. 2006. “A Novel Method for the Diffusion of Boron in 60-80 Micron Size Natural Diamond Type II/A Powder.” <em>MRS Online Proceedings Library</em> 929 (1): 503. <a href="https://doi.org/10.1557/PROC-0929-II05-03" class="uri">https://doi.org/10.1557/PROC-0929-II05-03</a>.</p>
+</div>
+<div id="ref-alvarado_avila_improved_2020">
+<p>Alvarado Ávila, María Isabel, Esteban Toledo-Carrillo, and Joydeep Dutta. 2020. “Improved Chlorate Production with Platinum Nanoparticles Deposited on Fluorinated Activated Carbon Cloth Electrodes.” <em>Cleaner Engineering and Technology</em> 1 (December): 100016. <a href="https://doi.org/10.1016/j.clet.2020.100016" class="uri">https://doi.org/10.1016/j.clet.2020.100016</a>.</p>
+</div>
+<div id="ref-ayres_controlled_2016">
+<p>Ayres, Zoë J., Alexandra J. Borrill, Jonathan C. Newland, Mark E. Newton, and Julie. V. Macpherson. 2016. “Controlled Sp2 Functionalization of Boron Doped Diamond as a Route for the Fabrication of Robust and Nernstian pH Electrodes.” <em>Analytical Chemistry</em> 88 (1): 974–80. <a href="https://doi.org/10.1021/acs.analchem.5b03732" class="uri">https://doi.org/10.1021/acs.analchem.5b03732</a>.</p>
+</div>
+<div id="ref-azizi_mechanism_2011">
+<p>Azizi, Orchideh, David Hubler, Glenn Schrader, James Farrell, and Brian P. Chaplin. 2011. “Mechanism of Perchlorate Formation on Boron-Doped Diamond Film Anodes.” <em>Environmental Science &amp; Technology</em> 45 (24): 10582–90. <a href="https://doi.org/10.1021/es202534w" class="uri">https://doi.org/10.1021/es202534w</a>.</p>
+</div>
+<div id="ref-bagshaw_preparation_2007">
+<p>Bagshaw, N. E., R. L. Clarke, and B. Halliwell. 2007. “The Preparation of Lead Dioxide for X-Ray Diffraction Studies.” <em>Journal of Applied Chemistry</em> 16 (6): 180–84. <a href="https://doi.org/10.1002/jctb.5010160604" class="uri">https://doi.org/10.1002/jctb.5010160604</a>.</p>
+</div>
+<div id="ref-cheng_review_2020">
+<p>Cheng, Jiaxin, Haitao Yang, Chuanlin Fan, Rongxing Li, Xiaohua Yu, and Hongtao Li. 2020. “Review on the Applications and Development of Fluidized Bed Electrodes.” <em>Journal of Solid State Electrochemistry</em> 24 (10): 2199–2217. <a href="https://doi.org/10.1007/s10008-020-04786-w" class="uri">https://doi.org/10.1007/s10008-020-04786-w</a>.</p>
+</div>
+<div id="ref-cobb_boron_2018">
+<p>Cobb, Samuel J., Zoe J. Ayres, and Julie V. Macpherson. 2018. “Boron Doped Diamond: A Designer Electrode Material for the Twenty-First Century.” <em>Annual Review of Analytical Chemistry</em> 11 (1): 463–84. <a href="https://doi.org/10.1146/annurev-anchem-061417-010107" class="uri">https://doi.org/10.1146/annurev-anchem-061417-010107</a>.</p>
+</div>
+<div id="ref-czarnetzki_formation_1992">
+<p>Czarnetzki, L. R., and L. J. J. Janssen. 1992. “Formation of Hypochlorite, Chlorate and Oxygen During NaCl Electrolysis from Alkaline Solutions at an RuO2/TiO2 Anode.” <em>Journal of Applied Electrochemistry</em> 22 (4): 315–24. <a href="https://doi.org/10.1007/BF01092683" class="uri">https://doi.org/10.1007/BF01092683</a>.</p>
+</div>
+<div id="ref-endrodi_towards_2018">
+<p>Endrődi, Balázs, Staffan Sandin, Vera Smulders, Nina Simic, Mats Wildlock, Guido Mul, Bastian T. Mei, and Ann Cornell. 2018. “Towards Sustainable Chlorate Production: The Effect of Permanganate Addition on Current Efficiency.” <em>Journal of Cleaner Production</em> 182 (May): 529–37. <a href="https://doi.org/10.1016/j.jclepro.2018.02.071" class="uri">https://doi.org/10.1016/j.jclepro.2018.02.071</a>.</p>
+</div>
+<div id="ref-endrodi_situ_2019">
+<p>Endrődi, Balázs, Vera Smulders, Nina Simic, Mats Wildlock, Guido Mul, Bastian Mei, and Ann Cornell. 2019. “In Situ Formed Vanadium-Oxide Cathode Coatings for Selective Hydrogen Production.” <em>Applied Catalysis B: Environmental</em> 244 (May): 233–39. <a href="https://doi.org/10.1016/j.apcatb.2018.11.038" class="uri">https://doi.org/10.1016/j.apcatb.2018.11.038</a>.</p>
+</div>
+<div id="ref-endrodi_selective_2019">
+<p>Endrődi, Balázs, Aleksandra Stojanovic, Maria Cuartero, Nina Simic, Mats Wildlock, Roland de Marco, Gaston A. Crespo, and Ann Cornell. 2019. “Selective Hydrogen Evolution on Manganese Oxide Coated Electrodes: New Cathodes for Sodium Chlorate Production.” <em>ACS Sustainable Chemistry &amp; Engineering</em> 7 (14): 12170–8. <a href="https://doi.org/10.1021/acssuschemeng.9b01279" class="uri">https://doi.org/10.1021/acssuschemeng.9b01279</a>.</p>
+</div>
+<div id="ref-evdokimov_electrochemical_2001">
+<p>Evdokimov, S. V. 2001. “Electrochemical and Corrosion Behavior of Dimensionally Stable Anodes in Chlorate Electrolysis: Efficiency of the Sodium Chlorate Production at Elevated Temperatures.” <em>Russian Journal of Electrochemistry</em> 37 (4): 363–70. <a href="https://doi.org/10.1023/A:1016669821615" class="uri">https://doi.org/10.1023/A:1016669821615</a>.</p>
+</div>
+<div id="ref-fischer_preparation_2005">
+<p>Fischer, Anne E., and Greg M. Swain. 2005. “Preparation and Characterization of Boron-Doped Diamond Powder: A Possible Dimensionally Stable Electrocatalyst Support Material.” <em>Journal of the Electrochemical Society</em> 152 (9): B369. <a href="https://doi.org/10.1149/1.1984367" class="uri">https://doi.org/10.1149/1.1984367</a>.</p>
+</div>
+<div id="ref-gayen_fluorination_2017">
+<p>Gayen, Pralay, and Brian P. Chaplin. 2017. “Fluorination of Boron-Doped Diamond Film Electrodes for Minimization of Perchlorate Formation.” <em>ACS Applied Materials &amp; Interfaces</em> 9 (33): 27638–48. <a href="https://doi.org/10.1021/acsami.7b06028" class="uri">https://doi.org/10.1021/acsami.7b06028</a>.</p>
+</div>
+<div id="ref-gebert_cathodes_2000">
+<p>Gebert, A., M. Lacroix, O. Savadogo, and R. Schulz. 2000. “Cathodes for Chlorate Electrolysis with Nanocrystalline TiRuFeO Catalyst.” <em>Journal of Applied Electrochemistry</em> 30 (9): 1061–7. <a href="https://doi.org/10.1023/A:1004030706423" class="uri">https://doi.org/10.1023/A:1004030706423</a>.</p>
+</div>
+<div id="ref-goodridge_performance_1977">
+<p>Goodridge, F., C.J.H. King, and A.R. Wright. 1977. “Performance Studies on a Bipolar Fluidised Bed Electrode.” <em>Electrochimica Acta</em> 22 (10): 1087–91. <a href="https://doi.org/10.1016/0013-4686(77)80044-3" class="uri">https://doi.org/10.1016/0013-4686(77)80044-3</a>.</p>
+</div>
+<div id="ref-guay_activated_2015">
+<p>Guay, Daniel, Lionel Roué, and Robert Schulz. 2015. “ACTIVATED CATHODE FOR THE ELECTROLYSIS OF SODIUM CHLORATE : LIMITING THE ABSORPTION OF HYDROGEN,” 2.</p>
+</div>
+<div id="ref-haruyama_dissolution_1978">
+<p>Haruyama, Shiro, and Katsumi Masamura. 1978. “The Dissolution of Magnetite in Acidic Perchlorate Solutions.” <em>Corrosion Science</em> 18 (4): 263–74. <a href="https://doi.org/10.1016/S0010-938X(78)80043-2" class="uri">https://doi.org/10.1016/S0010-938X(78)80043-2</a>.</p>
+</div>
+<div id="ref-kondo_boron-doped_2015">
+<p>Kondo, Takeshi, Narumi Okada, Yuki Yamaguchi, Junichi Urai, Tatsuo Aikawa, and Makoto Yuasa. 2015. “Boron-Doped Nanodiamond Powder Prepared by Solid-State Diffusion Method.” <em>Chemistry Letters</em> 44 (5): 627–29. <a href="https://doi.org/10.1246/cl.150050" class="uri">https://doi.org/10.1246/cl.150050</a>.</p>
+</div>
+<div id="ref-menon_impact_2014">
+<p>Menon, Sananth H, Jojo Mathew, and G Madhu. 2014. “Impact of Modified Lead Dioxide Anodes in Perchlorate Cells,” 6. <a href="https://www.researchgate.net/publication/291831820_Impact_of_Modified_Lead_Dioxide_Anodes_in_Perchlorate_Cells" class="uri">https://www.researchgate.net/publication/291831820_Impact_of_Modified_Lead_Dioxide_Anodes_in_Perchlorate_Cells</a>.</p>
+</div>
+<div id="ref-menon_compact_2019">
+<p>Menon, Sananth H., G. Madhu, and J. Mathew. 2019. “Compact Flow-Through Electrochemical Cell - A Novel Perspective in Industrial Manufacture of Perchlorates.” <em>The Open Chemical Engineering Journal</em> 13 (1). <a href="https://doi.org/10.2174/1874123101913010023" class="uri">https://doi.org/10.2174/1874123101913010023</a>.</p>
+</div>
+<div id="ref-munichandraiah_kinetics_1987">
+<p>Munichandraiah, N., and S. Sathyanarayana. 1987. “Kinetics and Mechanism of Anodic Oxidation of Chlorate Ion to Perchlorate Ion on Lead Dioxide Electrodes.” <em>Journal of Applied Electrochemistry</em> 17 (1): 33–48. <a href="https://doi.org/10.1007/BF01009129" class="uri">https://doi.org/10.1007/BF01009129</a>.</p>
+</div>
+<div id="ref-muzyka_boron-doped_2019">
+<p>Muzyka, Kateryna, Jianrui Sun, Tadesse Haile Fereja, Yixiang Lan, Wei Zhang, and Guobao Xu. 2019. “Boron-Doped Diamond: Current Progress and Challenges in View of Electroanalytical Applications.” <em>Analytical Methods</em> 11 (4): 397–414. <a href="https://doi.org/10.1039/C8AY02197J" class="uri">https://doi.org/10.1039/C8AY02197J</a>.</p>
+</div>
+<div id="ref-neodo_electrolysis_2012">
+<p>Neodo, S., D. Rosestolato, S. Ferro, and A. De Battisti. 2012. “On the Electrolysis of Dilute Chloride Solutions: Influence of the Electrode Material on Faradaic Efficiency for Active Chlorine, Chlorate and Perchlorate.” <em>Electrochimica Acta</em> 80 (October): 282–91. <a href="https://doi.org/10.1016/j.electacta.2012.07.017" class="uri">https://doi.org/10.1016/j.electacta.2012.07.017</a>.</p>
+</div>
+<div id="ref-read_sp2_2019">
+<p>Read, Tania L., Samuel J. Cobb, and Julie V. Macpherson. 2019. “An Sp2 Patterned Boron Doped Diamond Electrode for the Simultaneous Detection of Dissolved Oxygen and pH.” <em>ACS Sensors</em> 4 (3): 756–63. <a href="https://doi.org/10.1021/acssensors.9b00137" class="uri">https://doi.org/10.1021/acssensors.9b00137</a>.</p>
+</div>
+<div id="ref-schulz_new_2009">
+<p>Schulz, R., and S. Savoie. 2009. “A New Family of High Performance Nanostructured Catalysts for the Electrosynthesis of Sodium Chlorate.” <em>Journal of Alloys and Compounds</em>, 14th International Symposium on Metastable and Nano-Materials (ISMANAM-2007), 483 (1): 510–13. <a href="https://doi.org/10.1016/j.jallcom.2008.07.176" class="uri">https://doi.org/10.1016/j.jallcom.2008.07.176</a>.</p>
+</div>
+<div id="ref-spasojevic_current_2014">
+<p>Spasojevic, Miroslav, L. Ribić-Zelenović, Pavle Spasojevic, and Branislav Nikolic. 2014. “Current Efficiency in the Chlorate Cell Process.” <em>Journal of the Serbian Chemical Society</em> 79 (January): 677–88. <a href="https://doi.org/10.2298/JSC131023004S" class="uri">https://doi.org/10.2298/JSC131023004S</a>.</p>
+</div>
+<div id="ref-spasojevic_electrocatalytic_1984">
+<p>Spasojević, M., N. Krstajić, and M. Jakšić. 1984. “Electrocatalytic Optimization of Faradaic Yields in the Chlorate Cell Process.” <em>Surface Technology</em> 21 (1): 19–26. <a href="https://doi.org/10.1016/0376-4583(84)90144-4" class="uri">https://doi.org/10.1016/0376-4583(84)90144-4</a>.</p>
+</div>
+<div id="ref-sreekumar_adaptive_2020">
+<p>Sreekumar, Sreepriya, Aparna Kallingal, and Vinila Mundakkal Lakshmanan. 2020. “Adaptive Neuro-Fuzzy Approach to Sodium Chlorate Cell Modeling to Predict Cell pH for Energy-Efficient Chlorate Production.” <em>Chemical Engineering Communications</em> 0 (0): 1–15. <a href="https://doi.org/10.1080/00986445.2019.1708740" class="uri">https://doi.org/10.1080/00986445.2019.1708740</a>.</p>
+</div>
+<div id="ref-sung_boron_1995">
+<p>Sung, T., G. Popovici, M. A. Prelas, and R. G. Wilson. 1995. “Boron Diffusion Coefficient in Diamond.” <em>MRS Proceedings</em> 416: 467. <a href="https://doi.org/10.1557/PROC-416-467" class="uri">https://doi.org/10.1557/PROC-416-467</a>.</p>
+</div>
+<div id="ref-tsai_boron_1991">
+<p>Tsai, W., M. Delfino, L.-Y. Ching, G. Reynolds, D. Hodul, and C. B. Cooper III. 1991. “Boron Doping of Diamond via Solid State Diffusion,” 937–41. <a href="http://adsabs.harvard.edu/abs/1991mrs..conf..937T" class="uri">http://adsabs.harvard.edu/abs/1991mrs..conf..937T</a>.</p>
+</div>
+<div id="ref-tschope_magnetically_2020">
+<p>Tschöpe, André, Maximilian Wyrwoll, Michael Schneider, Karl Mandel, and Matthias Franzreb. 2020. “A Magnetically Induced Fluidized-Bed Reactor for Intensification of Electrochemical Reactions.” <em>Chemical Engineering Journal</em> 385 (April): 123845. <a href="https://doi.org/10.1016/j.cej.2019.123845" class="uri">https://doi.org/10.1016/j.cej.2019.123845</a>.</p>
+</div>
+<div id="ref-udupa_large-scale_1971">
+<p>Udupa, H. V. K., K. C. Narasimham, M. Nagalingam, N. Thiagarajan, G. Subramanian, R. Palanisamy, S. Pushpavanam, M. Sadagopalan, and V. Gopalakrishnan. 1971. “Large-Scale Preparation of Perchlorates Directly from Sodium Chloride.” <em>Journal of Applied Electrochemistry</em> 1 (3): 207–12. <a href="https://doi.org/10.1007/BF00616943" class="uri">https://doi.org/10.1007/BF00616943</a>.</p>
+</div>
+<div id="ref-vasudevan_studies_2008">
+<p>Vasudevan, Subramanyan. 2008. “Studies Relating to Cathodic Reactions in Neutral Chloride Solutions Used in Chlorate Processes.” <em>Industrial &amp; Engineering Chemistry Research</em> 47 (15): 5742–5. <a href="https://doi.org/10.1021/ie800038f" class="uri">https://doi.org/10.1021/ie800038f</a>.</p>
+</div>
+<div id="ref-viswanathan_chemical_1984">
+<p>Viswanathan, K., and B. V. Tilak. 1984. “Chemical, Electrochemical, and Technological Aspects of Sodium Chlorate Manufacture.” <em>Journal of the Electrochemical Society</em> 131 (7): 1551. <a href="https://doi.org/10.1149/1.2115908" class="uri">https://doi.org/10.1149/1.2115908</a>.</p>
+</div>
+<div id="ref-wanngard_catalyzing_2017">
+<p>Wanngård, Johan, and Mats Wildlock. 2017. “The Catalyzing Effect of Chromate in the Chlorate Formation Reaction.” <em>Chemical Engineering Research and Design</em> 121 (May): 438–47. <a href="https://doi.org/10.1016/j.cherd.2017.03.021" class="uri">https://doi.org/10.1016/j.cherd.2017.03.021</a>.</p>
+</div>
+</div>
+:ET

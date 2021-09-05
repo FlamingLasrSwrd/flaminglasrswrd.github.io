@@ -1,0 +1,22 @@
+I"~<h1 id="work-log">Work Log</h1>
+<h2 id="jul-2019">15 Jul 2019</h2>
+<p>Attempted the synthesis. I won’t be doing this again. Adding the sulfuric acid results in a lot of decomposition. The ammonia reaction didn’t go to completion because there wasn’t enough water. Better to pay the extra money and buy the nitrate and ammonium salts separately.</p>
+<h2 id="jul-2019-1">14 Jul 2019</h2>
+<span class="math display">\[\begin{equation}
+NH_{4}NO_{3} + NaOH \rightarrow NaNO_{3} + NH_{3} + 2H_{2}O \\
+(NH_{3} + 2H_{2}O) + 2.15H_{2}O \rightarrow NH_{4}OH + 3.15H_{2}O \\
+NaNO_{3} + \tfrac{1}{2} H_{2}SO_{4} \rightarrow \tfrac{1}{2} Na_{2}SO_{4} + HNO_{3}
+\end{equation}\]</span>
+<p>Starting from 180g ammonium nitrate (the contents of two ice packs) in 500mL flask:</p>
+<ul>
+<li>add 130.52g sodium hydroxide</li>
+<li>heat until all water has been removed; bubble the effluent through 90g distilled water</li>
+<li>add 70ml conc. sulfuric acid (slight excess)</li>
+<li>distill nitric acid at 83°C</li>
+<li>yields: 38g ammonia as 128g (142ml) 30% <span class="math inline">\(NH_{4}OH\)</span> (80g <span class="math inline">\(NH_{4}OH\)</span> ); 70g (46ml) nitric acid</li>
+</ul>
+<p><span class="math inline">\(NaOH\)</span> is probably the monohydrate form. Would that be enough water to dry mix the ingredients and distill the ammonia?</p>
+<h1 id="bibliography">Bibliography</h1>
+<!--notes-->
+<!--links-->
+:ET

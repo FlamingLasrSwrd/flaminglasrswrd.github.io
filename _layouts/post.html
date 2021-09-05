@@ -68,7 +68,7 @@ layout: default
     <div id="gallery" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item w-100 active">
-          <img class="d-block img-fluid" src="{{ page.graphical-abstract | prepend: site.url }}" alt="Graphical Abstract - {{ page.title }}" style="object-fit: contain;">
+          <img class="d-block img-fluid" src="{{ page.graphical-abstract | prepend: site.baseurl }}" alt="Graphical Abstract - {{ page.title }}" style="object-fit: contain;">
         </div>
         {% for image in site.static_files reversed %}
           {% if image.path contains page.gallery %}
@@ -76,11 +76,13 @@ layout: default
               {% continue %}
             {% endif %}
             {% if image.path contains "thumb" %}
-              {% continue %}
+              <div class="carousel-item">
+                <a href="{{ site.baseurl }}{{ image.path | remove: "-thumb" }}">
+                  <img class="d-block img-fluid" src="{{ site.baseurl }}{{ image.path }}" alt="image"/>
+                </a>
+              </div>
             {% endif %}
-            <div class="carousel-item">
-              <img class="d-block w-100 img-fluid" src="{{ site.baseurl }}{{ image.path }}" alt="image" style="object-fit: contain;"/>
-            </div>
+
           {% endif %}
         {% endfor %}
       </div>
@@ -93,7 +95,7 @@ layout: default
     </div>
   {% elsif page.graphical-abstract %}
     <div class="graphical-abstract">
-      <img src="{{ page.graphical-abstract | prepend: site.url }}" alt="Graphical Abstract - {{ page.title }}" style="max-width: 500px; max-height: 250px">
+      <img src="{{ page.graphical-abstract | prepend: site.baseurl }}" alt="Graphical Abstract - {{ page.title }}" style="max-width: 500px; max-height: 250px">
     </div>
   {% endif %}
 
