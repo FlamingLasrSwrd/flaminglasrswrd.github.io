@@ -7,13 +7,17 @@ phase: research
 tags: chemistry
 author: Elijah K. Dunn
 zotero-collection: https://www.zotero.org/ekdunn/items/collectionKey/UZMT7REW
-gallery: vapor-nitration
+gallery: vaporNitration
 abstract: >
   Making nitroparaffins by vapor phase nitration.
-graphical-abstract: /assets/img/vapor-nitration/vapor-phase-reactions-diagram.jpg
+graphical-abstract: /assets/img/vaporNitration/vaporNitration-vapor-phase-reactions-diagram.jpg
 ---
 
 # Work Log
+
+## TODO
+
+- [ ] design
 
 ## 13 Apr 2020
 

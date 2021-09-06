@@ -10,7 +10,7 @@ zotero-collection: https://www.zotero.org/ekdunn/items/collectionKey/G5QGA3YQ
 gallery: scrubber
 abstract: >
   Designing a personal carbon dioxide scrubber.
-graphical-abstract: /assets/img/scrubber/190930-103434-scrubber-full.JPG
+graphical-abstract: /assets/img/scrubber/scrubber-full.JPG
 ---
 
 # Scrubber

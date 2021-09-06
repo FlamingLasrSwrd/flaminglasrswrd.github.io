@@ -1,0 +1,39 @@
+I"(<h1 id="work-log">Work Log</h1>
+<h2 id="todo">TODO</h2>
+<ul>
+<li>[ ]</li>
+</ul>
+<h2 id="jun-2020">03 Jun 2020</h2>
+<p>Graphite plates? https://www.youtube.com/watch?v=CuZ5WxYwl4g</p>
+<p>Probably not. It slowly delaminates.</p>
+<h2 id="aug-2019">22 Aug 2019</h2>
+<p>Learning about using <a href="https://www.youtube.com/watch?v=fCw5lE_vbbc">inkscape for a laser cutter</a>. A local library has a makerspace with a free laser cutter and other equipment. I plan on cutting some butyl rubber to make the gaskets.</p>
+<p>Asbestos is still a good material for separators.</p>
+<h2 id="aug-2019-1">12 Aug 2019</h2>
+<p>Researching membrane materials for a separator cell. <a href="http://www.hho4free.com/hydrogen_separator_cell.html">This seller</a> uses nylon mesh.</p>
+<h2 id="jul-2019">29 Jul 2019</h2>
+<blockquote>
+<p>An atomic hydrogen flame was produced by a 60-ampere a.c. arc using a torch like that shown in Figure 3. The voltage across the electrodes m-as 70 volts. A wattmeter showed that the power consumption in the arc was 3510 watts, which gives a power factor of 0.84 The electrodes were tungsten rods 3.2 mm. in diameter which made an angle of 55 degrees with one another. The rate of flow of hydrogen which bathed the electrodes mas 14.2 liters per minute (30 cubic feet per hour). <span class="citation" data-cites="langmuir_flames_1927">(Langmuir 1927)</span></p>
+</blockquote>
+<p>Seems within reach of the average consumer. Perhaps not quite so large: A 1KW electrolysis cell or smaller depending on anticipated duty cycle.</p>
+<p>AH seems to be more efficient than oxy-acetylene at delivering heat to the work piece: 55-82% vs 17-30%. <span class="citation" data-cites="langmuir_flames_1927">(Langmuir 1927)</span></p>
+<p>Typical TIG welding consumes 10-15 cubic feet per hour of argon. Argon costs vary widely, but $0.50 per cubic foot seems reasonable. That’s $5 per hour.</p>
+<p>20KJ/liter hydrogen from typical alkaline electrolysis cells (70% efficient). For a 3.5KW AH system (described above) 14 lpm (840lph) of hydrogen were required. Generating this volume would require about 17 MJ per hour or 5 KWh costing less than a dollar. So ya… cost effective. This doesn’t even take into account the efficiency of AH welding which would likely reduce the energy needed by a factor of 2-3.</p>
+<h2 id="jun-2018">25 Jun 2018</h2>
+<p>Built a oxy-hydrogen torch out of parts I had laying around.</p>
+<figure>
+<img src="/assets/img/oxyhydrogen/oxyhydrogen-complete-test.jpg" alt="image" /><figcaption>image</figcaption>
+</figure>
+<p>I used some stainless plates and nylon supports.</p>
+<figure>
+<img src="/assets/img/oxyhydrogen/oxyhydrogen-testing-plates.jpg" alt="image" /><figcaption>image</figcaption>
+</figure>
+<h1 id="bibliography">Bibliography</h1>
+<!--notes-->
+<!--links-->
+<div id="refs" class="references">
+<div id="ref-langmuir_flames_1927">
+<p>Langmuir, Irving. 1927. “Flames of Atomic Hydrogen.” <em>Industrial &amp; Engineering Chemistry</em> 19 (6): 667–74. <a href="https://doi.org/10.1021/ie50210a009" class="uri">https://doi.org/10.1021/ie50210a009</a>.</p>
+</div>
+</div>
+:ET

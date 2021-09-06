@@ -7,10 +7,10 @@ phase: results
 tags: biology electronics
 author: Elijah K. Dunn
 zotero-collection:
-gallery: led-grow-light
+gallery: ledGrowLight
 abstract: >
   Designing a low-cost, high-performance LED grow light for plants.
-graphical-abstract: /assets/img/led-grow-light/190819-130950-diy-led-grow-light-quick-test.JPG
+graphical-abstract: /assets/img/ledGrowLight/ledGrowLight-quick-test.JPG
 ---
 
 # Intro
@@ -39,15 +39,15 @@ I bought a SL-B8T4N90LAWW strip and IDLC-45-1050 supply. The succulent box that 
 
 The plan is to have all of the electronics in a box that sits on the table and slides into the post cavity. The box will contain the power supply and a digital timer. The weight of the box will keep the lamp arm from tipping over (hopefully).
 
-![](/assets/img/led-grow-light/led-grow-light-succulent-light-electronics-box-dims.JPG)
+![image](/assets/img/ledGrowLight/ledGrowLight-succulent-light-electronics-box-dims.JPG)
 
 I bought a [cheap plug in digital timer](https://www.menards.com/main/electrical/light-switches-dimmers-outlets/outlet-timers/smart-electrician-reg-digital-timer/81339/p-3149259783272843-c-6471.htm) and gutted it.
 
-![](/assets/img/led-grow-light/led-grow-light-succulent-light-timer-disassembled.JPG)
+![image](/assets/img/ledGrowLight/ledGrowLight-succulent-light-timer-disassembled.JPG)
 
 Initially I thought that the front panel was too complicated to reproduce, so I sketched the layout reusing the faceplate as a whole.
 
-![](/assets/img/led-grow-light/led-grow-light-succulent-light-electronics-box-draft.JPG)
+![image](/assets/img/ledGrowLight/ledGrowLight-succulent-light-electronics-box-draft.JPG)
 
 But ultimately I decided that I should just do the work and model the faceplate. This will be a good opportunity to learn more CAD. After attempting a couple times to trace over a picture, I decided that I needed more accurate measurements if I wanted it to work. So I ordered some calipers.
 
@@ -80,7 +80,7 @@ Each panel only takes 2-3 hours to assemble. Probably a lot less if some sort of
 ## 21 Aug 2019
 Ran some thermal tests today on the mostly finished panel. With an ambient temperature of 25C, the temperature of the heat sink edge stayed around 34C. Just next to the COB the temperature leveled off around 42C: 98% relative luminous flux according to the [the datasheet][]. The temperature can approach 57C if the panel is laid flat on a table. Even then the relative luminous flux is around 95%. The heat sinks return to 30C after only a minute when COB power is removed. I am happy with these thermal tests.
 
-![](/assets/img/led-grow-light/190821-082656-diy-led-grow-light-thermal-testing.JPG)
+![image](/assets/img/ledGrowLight/ledGrowLight-thermal-testing.JPG)
 
 It is impossible to work on this panel without sunglasses.
 
@@ -92,19 +92,19 @@ This page is apparently one of my most popular, despite its lack of practical in
 
 I ran a quick test of one of the COBs, blinding myself in the process. Damn these things are bright. I think I will go with a flat plate support instead of the aluminum bracketing I originally planned.
 
-![](/assets/img/led-grow-light/190819-130950-diy-led-grow-light-quick-test.JPG)
+![image](/assets/img/ledGrowLight/ledGrowLight-quick-test.JPG)
 
 I picked up a 2'x2' stucco ceiling panel. It isn't actually stucco, it is PVC foam. It just has a stucco pattern for looks. I cut it in half to make two panels that can be adjusted as needed. Three COBs per panel is a little luminous (~9Klumens per square foot), but the driver can be adjusted.
 
-![](/assets/img/led-grow-light/190819-160136-diy-led-grow-light-cut-panel.JPG)
+![image](/assets/img/ledGrowLight/ledGrowLight-cut-panel.JPG)
 
-![](/assets/img/led-grow-light/190819-161930-diy-led-grow-light-heatsink-hole-trace.JPG)
+![image](/assets/img/ledGrowLight/ledGrowLight-heatsink-hole-trace.JPG)
 
-![](/assets/img/led-grow-light/190819-162630-diy-led-grow-light-heatsink-hole-cut.JPG)
+![image](/assets/img/ledGrowLight/ledGrowLight-heatsink-hole-cut.JPG)
 
-![](/assets/img/led-grow-light/190820-135812-diy-led-grow-light-heatsink-clips.JPG)
+![image](/assets/img/ledGrowLight/ledGrowLight-heatsink-clips.JPG)
 
-![](/assets/img/led-grow-light/190819-164546-diy-led-grow-light-heatsink-holes.JPG)
+![image](/assets/img/ledGrowLight/ledGrowLight-heatsink-holes.JPG)
 
 The panel is currently utilizing two BXRE-27G6500-D-73 and one BXRE-40E6500-D-73 driven with a single ELG-150-C1400A. When they arrive, a separate 12V power supply will run the fans.
 

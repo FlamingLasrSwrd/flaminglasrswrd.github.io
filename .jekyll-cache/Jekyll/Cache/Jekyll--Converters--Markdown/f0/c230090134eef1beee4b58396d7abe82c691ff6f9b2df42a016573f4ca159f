@@ -1,0 +1,54 @@
+I"�<h1 id="installation">Installation</h1>
+<p>I am using Ubuntu Desktop 19.04 with anaconda python environment manager. Python 3.6 will be used throughout.</p>
+<p>Start by installing the Google Speech-to-Text pip package.</p>
+<pre class="(bash)"><code>pip install --upgrade google-cloud-speech</code></pre>
+<p>A service and access account has to be created on the <a href="https://console.cloud.google.com/apis/credentials/serviceaccountkey">Create Service Account Key page</a>. Download the credentials and note the location.</p>
+<p>Set the location of the credentials environmental variable.</p>
+<pre class="(bash)"><code>export GOOGLE_APPLICATION_CREDENTIALS=&quot;[PATH]&quot;</code></pre>
+<p>Enable API access from your <a href="https://console.developers.google.com/apis/api/speech.googleapis.com/overview">API Services Console</a>.</p>
+<p>More instructions are available on the <a href="https://cloud.google.com/speech-to-text/docs/libraries">general Google Cloud Speech-to-Text Docs website</a> and <a href="https://googleapis.dev/python/speech/latest/index.html">Google Cloud Speech Python-specific documentation</a>.</p>
+<h2 id="compile-audacity-with-mod-script-pipe">Compile Audacity with mod-script-pipe</h2>
+<p>Audacity does not ship with scripting support for linux. So it must be compiled with Audacity from source. I am following the instructions <a href="https://forum.audacityteam.org/viewtopic.php?f=19&amp;t=107852">here</a>, but look for the most current build instructions <a href="https://forum.audacityteam.org/viewforum.php?f=19">here</a>.</p>
+<p><strong>NOTE</strong>: There are a lot of caveats to this setup. Consult the <a href="https://wiki.audacityteam.org/wiki/Building_On_Linux">linux build wiki</a> for more info.</p>
+<p>If you already have audacity installed via apt-get, remove it first.</p>
+<pre class="(bash)"><code>sudo apt remove audacity</code></pre>
+<p>Install wxWidgets and other packages:</p>
+<pre class="(bash)"><code>sudo apt install cmake build-essential gcc libwxgtk3.0 libavformat-dev libsndfile1 libasound2-dev libgtk2.0-dev gettext libid3tag0-dev libmad0-dev libsoundtouch-dev libogg-dev libvorbis-dev libflac-dev libmp3lame0 -y</code></pre>
+<p>Get the Audacity source code from <a href="https://www.fosshub.com/Audacity.html">FossHub</a> and extract it. Then we build:</p>
+<pre class="(bash)"><code>cd audacity-*
+mkdir build
+cd build
+../configure --with-lib-preference=&quot;local system&quot; --with-ffmpeg=&quot;system&quot; --disable-dynamic-loading --with-mod-script-pipe
+make -j4</code></pre>
+<p>We also need to build <em>mod-script-pipe</em></p>
+<pre class="(bash)"><code>cd lib-src/mod-script-pipe
+make -j4</code></pre>
+<p>Let’s test it.</p>
+<pre class="(bash)"><code>cd ../../
+mkdir &quot;Portable Settings&quot;
+./audacity</code></pre>
+<p>If everything works, install it.</p>
+<pre class="(bash)"><code>sudo make install
+sudo mkdir /usr/local/share/audacity/modules
+sudo cp lib-src/mod-script-pipe/.libs/mod-script-pipe.so /usr/local/share/audacity/modules/mod-script-pipe.so
+sudo cp lib-src/mod-script-pipe/.libs/mod-script-pipe.so.0.0.0 /usr/local/share/audacity/modules/mod-script-pipe.so.0.0.0</code></pre>
+<p>Run Audacity and enable <em>mod-script-pipe</em> from the <strong>Edit -&gt; Preferences -&gt; Modules</strong> menu.</p>
+<figure>
+<img src="/assets/img/mod-script-pipe-enable.png" alt="image" /><figcaption>image</figcaption>
+</figure>
+<p>Make sure to restart Audacity to use the pipe.</p>
+<p>Download and run <a href="https://github.com/audacity/audacity/blob/master/scripts/piped-work/pipe_test.py">pipe_test.py</a> to make sure everything is connected.</p>
+<pre class="(bash)"><code>wget https://raw.githubusercontent.com/audacity/audacity/master/scripts/piped-work/pipe_test.py
+python pip_test.py</code></pre>
+<p>You should get lots of <em>OKs</em>.</p>
+<p>Enable the <em>Extras</em> menu by clicking <strong>View –&gt; Extra Menus (on/off)</strong> so that scripting will work correctly.</p>
+<h1 id="work-log">Work Log</h1>
+<h2 id="apr-2020">27 Apr 2020</h2>
+<p>I have an idea.</p>
+<p>Lately I have been starting some voice-over work for how-to videos. It seems that sound (and perhaps video) editing will be a major consumer of my time. Since I am mainly doing voiceover, i.e., spoken English language, work, perhaps I can use speech recognition to tag sections for easy editing.</p>
+<p>The process that I am envisioning consists of two parts: A python API call to Google Speech and an Audacity python script to insert tags.</p>
+<p>Well it’s 2am and I finally <a href="https://www.reddit.com/r/audacity/comments/g9hrjo/hooray_i_wrote_a_script_to_automatically/">got the thing to work</a>.</p>
+<h1 id="bibliography">Bibliography</h1>
+<!--notes-->
+<!--links-->
+:ET

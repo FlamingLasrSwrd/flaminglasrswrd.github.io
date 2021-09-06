@@ -1,0 +1,56 @@
+I"9<h1 id="work-log">Work Log</h1>
+<h2 id="todo">TODO</h2>
+<ul>
+<li>[ ] design</li>
+</ul>
+<h2 id="apr-2020">13 Apr 2020</h2>
+<p>Indigo carmine might work as a sodium hydroxide indicator. At a pH below 11.6 it turns blue.</p>
+<p>A microreactor would be ideal for the amateur. A few ml per hour is sufficient for us. Unfortunately, vapor nitration of alkanes proceeds via a free radical mechanism. Contact with reactor walls (made of stainless steel) extinguishes radicals resulting in single digit conversions. <span class="citation" data-cites="burns_microreactor_2002">(Burns and Ramshaw 2002)</span></p>
+<p>Microreactors at room temperature and relatively low pressure do work for nitrating toluene. <span class="citation" data-cites="halder_nitration_2007">(Halder, Lawal, and Damavarapu 2007)</span> The researchers basically pushed toluene and nitric acid through stainless or teflon capillary tubing. Even at room temperature and azeotropic nitric acid, decent yields were obtained. This could be a cool use of one of my extra HPLC pumps…</p>
+<h2 id="jul-2019">22 Jul 2019</h2>
+<p>Discovered molten-salt reactors. Probably a much safer alternative to tubular reactors for the amateur. <span class="citation" data-cites="adams_vapor_1961">(Adams 1961)</span></p>
+<p>In brief, the reactants are bubbled through a molten, eutectic mixture of nitrate salts. This provides better temperature control and even mixing.</p>
+<p>Calcium nitrate is considerably cheaper than potassium or sodium. This is often sold as a double salt of calcium carbonate and ammonium nitrate, however. Ammonium nitrate decomposes around 200C, so this wouldn’t work.</p>
+<h2 id="jul-2019-1">12 Jul 2019</h2>
+<ul>
+<li>nitrating ketones results in only 9-13% yield <span class="citation" data-cites="wang_preparation_1985-2">(Wang and Sherwin 1985)</span></li>
+<li>mercaptans are added to consumer hydrocarbons -could contaminate
+<ul>
+<li>contamination can be removed by bubbling through NaOH solution <span class="citation" data-cites="jones_mercaptans_2013">(Jones, Hatcher, and Weiland 2013)</span></li>
+<li>below pH 12.5 efficiency falls below 80% (figure 7; pp 7)</li>
+</ul></li>
+<li>recycling the propane by scrubbing out CO/CO2? <span class="citation" data-cites="lamb_removal_1920">(Lamb, Bray, and Frazer 1920)</span>
+<ul>
+<li>oxidation might require mixed copper/manganese oxides <span class="citation" data-cites="hutchings_ambient_1996 kramer_structural_2006">(Hutchings et al. 1996; Krämer et al. 2006)</span></li>
+</ul></li>
+</ul>
+<h1 id="bibliography">Bibliography</h1>
+<!--notes-->
+<!--links-->
+<div id="refs" class="references">
+<div id="ref-adams_vapor_1961">
+<p>Adams, Frank Slates. 1961. “Vapor Phase Nitration of Butane in a Fused Salt Reactor.” Dissertation, Iowa State University.</p>
+</div>
+<div id="ref-burns_microreactor_2002">
+<p>Burns, John Robert, and Colin Ramshaw. 2002. “A Microreactor for the Nitration of Benzene and Toluene.” <em>Chemical Engineering Communications</em> 189 (12): 1611–28. <a href="https://doi.org/10.1080/00986440214585" class="uri">https://doi.org/10.1080/00986440214585</a>.</p>
+</div>
+<div id="ref-halder_nitration_2007">
+<p>Halder, Raghunath, Adeniyi Lawal, and Reddy Damavarapu. 2007. “Nitration of Toluene in a Microreactor.” <em>Catalysis Today</em> 125 (1-2): 74–80. <a href="https://doi.org/10.1016/j.cattod.2007.04.002" class="uri">https://doi.org/10.1016/j.cattod.2007.04.002</a>.</p>
+</div>
+<div id="ref-hutchings_ambient_1996">
+<p>Hutchings, Graham J., Ali A. Mirzaei, Richard W. Joyner, M. Rafiq H. Siddiqui, and Stuart H. Taylor. 1996. “Ambient Temperature CO Oxidation Using Copper Manganese Oxide Catalysts Prepared by Coprecipitation: Effect of Ageing on Catalyst Performance.” <em>Catalysis Letters</em> 42 (1-2): 21–24. <a href="https://doi.org/10.1007/BF00814462" class="uri">https://doi.org/10.1007/BF00814462</a>.</p>
+</div>
+<div id="ref-jones_mercaptans_2013">
+<p>Jones, Clayton E, Nathan A Hatcher, and Ralph H Weiland. 2013. “Mercaptans Removal from Gases by Absorption into Amines and Caustic.”</p>
+</div>
+<div id="ref-kramer_structural_2006">
+<p>Krämer, M., T. Schmidt, K. Stöwe, and W.F. Maier. 2006. “Structural and Catalytic Aspects of SolGel Derived Copper Manganese Oxides as Low-Temperature CO Oxidation Catalyst.” <em>Applied Catalysis A: General</em> 302 (2): 257–63. <a href="https://doi.org/10.1016/j.apcata.2006.01.018" class="uri">https://doi.org/10.1016/j.apcata.2006.01.018</a>.</p>
+</div>
+<div id="ref-lamb_removal_1920">
+<p>Lamb, Arthur B., William C. Bray, and J. C. W. Frazer. 1920. “The Removal of Carbon Monoxide from Air.” <em>Journal of Industrial &amp; Engineering Chemistry</em> 12 (3): 213–21. <a href="https://doi.org/10.1021/ie50123a007" class="uri">https://doi.org/10.1021/ie50123a007</a>.</p>
+</div>
+<div id="ref-wang_preparation_1985-2">
+<p>Wang, Shu-Shieh P., and Martin B. Sherwin. 1985. Preparation of nitro compounds by vapor phase nitration of ketones. US4517393A, issued May 1985. <a href="https://patents.google.com/patent/US4517393A/en?oq=4517393" class="uri">https://patents.google.com/patent/US4517393A/en?oq=4517393</a>.</p>
+</div>
+</div>
+:ET

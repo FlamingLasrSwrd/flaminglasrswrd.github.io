@@ -1,0 +1,355 @@
+I"V�<h1 id="prior-art">Prior Art</h1>
+<p>Almost every amateur chemist youtube channel hosts at least one video on nitric acid synthesis. Most of them follow the nitrate salt + sulfuric acid synthesis. While simple and relatively cheap, production in this manner is time consuming and, at least in my attempts, prone to accidents.</p>
+<!--![image](/assets/img/nitric-acid-old/break_0.JPG)-->
+<p>Industrially, nitric acid is produced almost exclusively from oxidized ammonia via the Haber-Bosch (HB) and Ostwald processes. The hydrogen is, of course, produced from petroleum. While cheap, this isn’t exactly sustainable.</p>
+<p>An alternative, less developed method is plasma atmospheric nitrogen fixation. The current shift toward more sustainable sources of fertilizer have garnered new research into old fixation methods. Unfortunately, none of the current plasma methods (even in lab tests) come close to the energy efficiency of HB. That doesn’t mean they won’t be (cost) efficient for the amateur, though.</p>
+<p>The most robust plasma based method today is the Birkeland-Eyed thermal plasma reactor. For a time, BE reactors were used to fix nitrogen in areas with cheap electricity. HB eventually won out, however, and BE reactors are not in use outside of the lab. <a href="http://www.sciencemadness.org/talk/viewthread.php?tid=1518">Sciencemadness</a> has a lengthy discussion on this particular style and the adaptation for amateurs.</p>
+<h2 id="mechanisms">Mechanisms</h2>
+<p>A BE reactor uses thermal plasma to provide the dissociation energy for nitrogen molecules which then combine with oxygen atoms to produce NO. The reactions here are numerous and ethereal. One important fact to understand is that the desired conversion to NO is reversible and a considerable amount of energy is wasted in this regard. Even from a theoretical standpoint, the production of ammonia via the Haber-Bosch process is about twice as efficient as the BE process, and almost an order of magnitude better than practically achieved.<span class="citation" data-cites="cherkasov_review_2015">(Cherkasov, Ibhadon, and Fitzpatrick 2015)</span> A non-thermal plasma process could theoretically be 3-4x more efficient than the HB process.</p>
+<p>A number of innovations have developed since the relatively brute force BE reactor was invented more than a century ago. The current research seems to point to a non-equilibrium plasma process as fundamental. A mixture of thermal and non-thermal plasmas to get the best of both.</p>
+<p>While many small devices have been constructed for lab testing, none so far have been commercially viable. Even at the relatively low power required to produce a few liters of concentrated acid per year, significant heating is an issue. Nitrogen oxides are also quite corrosive to most metals and plastics, increasing the costs of any apparatus. The HB process also has the advantage of creating highly concentrated NOx streams, which greatly reduces the cost of gas handling equipment.</p>
+<p>Herein details my work attempting to adapt non-thermal plasma for amateur nitric acid production in a cost efficient and practical manner.</p>
+<h1 id="construction-considerations">Construction Considerations</h1>
+<h2 id="electrode-material">Electrode Material</h2>
+<p>Copper <span class="citation" data-cites="cormier_degradation_2008">(Cormier, Aubry, and Khacef 2008)</span>, stainless steel, carbon steel, molybdenum, and tungsten <span class="citation" data-cites="patil_plasma_2017">(B. Patil 2017)</span> have been used as GlidArc electrodes. Due to cost, molybdenum and tungsten are probably out for the amateur chemist. Copper has the benefit of being readily available and easy to machine. Copper pipe could also be water cooled. Stainless might have better chemical resistance, especially to nitric acid if the feed gas contains water vapor. The work function and resistance of a material seem to influence the efficiency somewhat. <span class="citation" data-cites="patil_plasma_2017">(B. Patil 2017)</span> Mostly because of the arc effects such as rise time and cycle frequency.</p>
+<h2 id="power-supply">Power Supply</h2>
+<p>Frequency, pulse width, and voltage all have an effect on the production of NOx in both concentration and efficiency. This seems to arise indirectly as a function of plasma temperature distribution.</p>
+<h3 id="frequency">Frequency</h3>
+<p>Higher frequencies (&gt;5KHz) are more efficient than mains frequencies (50-60Hz). <span class="citation" data-cites="yang_nitrogen_2016">(Yang et al. 2016)</span> This is within the range of a simple 555 timer in astable mode.</p>
+<h3 id="voltage">Voltage</h3>
+<p>Generally speaking, voltage is not a critical factor for sustained plasma. However, the transient nature of non-equilibrium plasmas used in this research necessitate the use of relatively high voltages for arc stability. The original BE reactors could be sustained by only a few hundred volts. For proper functioning, Glidarc reactors require several thousand.</p>
+<h3 id="pulse-width">Pulse Width</h3>
+<p>Pulse width is an indirect measure of plasma heating and by extension, total current.</p>
+<h2 id="feed-gas">Feed Gas</h2>
+<p>As previously mentioned, plasma processes suffer from reactant dilution. Only a few percent of nitrogen oxides are typically generated from a plasma process, which means more than 95% of the gas stream is dilutant. At 2% concentration (a high value), the maximum concentration of nitric acid is about 80% before the waste gasses will contain more acid than is produced. <span class="citation" data-cites="taylor_vapor_1925">(Taylor 1925)</span></p>
+<p>Of course, nitric acid can be scrubbed using any number of salts to mostly eliminate this waste.</p>
+<h1 id="yield-calculations">Yield Calculations</h1>
+<p>Current Haber-Bosch nitrogen fixation = 0.48 MJ/mol = $0.17 per liter conc. nitric acid.</p>
+<p>State of the art Glidarc = 4.8 MJ/mol = 1.3 KWh/mol =&gt; $0.11/mol =&gt; $1.65 per liter</p>
+<h1 id="useful-conversions">Useful Conversions</h1>
+<p>For my 100mmol sodium carbonate titrant:</p>
+<p><span class="math inline">\(m_{analyte} = \frac{V_{titrant} * 200}{V_{analyte}}\)</span></p>
+<h1 id="work-log">Work Log</h1>
+<h2 id="jan-2020">03 Jan 2020</h2>
+<p>I wonder if the output of the reactor can be used for direct nitrations or Gattermann reactions?</p>
+<h2 id="dec-2019">30 Dec 2019</h2>
+<p>Nitrogen dioxide can be <a href="https://www.sciencemadness.org/whisper/viewthread.php?tid=48085&amp;goto=search&amp;pid=397057">selectively adsorbed onto silica gel</a>. Indicator silica is even more useful since the NOx will change the color when saturated. <span class="citation" data-cites="farrington_nitric_1951">(Farrington, Hendrickson, and Gordon 1951)</span></p>
+<h2 id="dec-2019-1">17 Dec 2019</h2>
+<p>I came across an alternative electrode configuration that might be worth looking into <span class="citation" data-cites="foster_perspectives_2012">(Foster et al. 2012)</span>.</p>
+<h2 id="oct-2019">20 Oct 2019</h2>
+<p>So the gas phase reaction of nitrogen dioxide and ozone to form nitrate seems pretty fast <span class="citation" data-cites="huie_rate_1974">(Huie and Herron 1974)</span>.</p>
+<p>I’m still convinced that ozone is the way:</p>
+<blockquote>
+<p>Intensification of nitric acid production is due to the fact that much higher rate of nitrous acid oxidation was obtained (ca. 60%) employing ozone rather than only oxygen. <span class="citation" data-cites="chacuk_intensification_2007">(Chacuk et al. 2007)</span></p>
+</blockquote>
+<p>The mole ratio of O3:NO should be maintained around 1.5 for efficiency’s sake. Complete NO oxidation is obtained at a mole ratio of 2. <span class="citation" data-cites="skalska_effectiveness_2011-1">(Skalska, Miller, and Ledakowicz 2011)</span></p>
+<p>My last run produced 21mmol NO per hour. According to the research above, this should have been combined with at least 1g per hour of ozone. Considering that an appropriately sized ozone generator looks to be 10x the size of mine, I think my ozone production is insufficient. That explains the absorption issue.</p>
+<h2 id="aug-2019">18 Aug 2019</h2>
+<p>Manganese dioxide can be used as a reversible nitrogen dioxide absorbent.</p>
+<h2 id="aug-2019-1">10 Aug 2019</h2>
+<figure>
+<img src="/assets/img/plasmaNitricAcid/plasmaNitricAcid-nonthermal-plasma-test-5-setup-knives.JPG" alt="image" /><figcaption>image</figcaption>
+</figure>
+<h3 id="results">Results</h3>
+<ul>
+<li>Total Energy = 3.31KWh</li>
+<li>Power Consumption Average = 138W</li>
+<li>Run time = 24 hours</li>
+<li>bubbler solution final pH = 0.91</li>
+<li>first scrubber solution final pH = 1.35</li>
+<li>carbonate scrubber solution initial pH = 11.26</li>
+<li>carbonate scrubber final pH = 9.46</li>
+<li>cooling water final temperature = 26C</li>
+<li>bubbler (400ml) acid concentration (by titration)= 724mM (18.1ml for 5ml)
+<ul>
+<li>290mmol</li>
+</ul></li>
+<li>first scrubber (65.6ml) acid concentration (by titration)= 848mM (21.2ml required for 5ml)
+<ul>
+<li>56mmol</li>
+</ul></li>
+<li>carbonate scrubber acid absorption (see below)= 166mmol</li>
+<li>total nitric acid produced(absorbed): 512mmol; 32.3g</li>
+<li>efficiency = 9.7g/KWh = 0.10KWh/g = 6.5KWh/mol = 23MJ/mol</li>
+<li>production speed = 32g/day</li>
+<li>Estimated cost per day = $0.36</li>
+<li>Electricity Cost to produce 1L of 68% nitric acid = $7.70</li>
+<li>Time to produce 1L “”: 21 days</li>
+</ul>
+<p>As you can see, the characteristics of this run is the same as before. Even with the additional bubbler and scrubber.</p>
+<h3 id="scrubber-titration">Scrubber Titration</h3>
+<p>I started with 87.1 ml of saturated sodium carbonate solution. I used the bubbler acid that I just titrated to calculate the carbonate used:</p>
+<p>Titrating the saturated solution:</p>
+<ul>
+<li>saturated sodium carbonate solution: 5ml</li>
+<li>titrated with 18ml 724mmol nitric acid</li>
+<li>total initial carbonate concentration: 1.3M</li>
+<li>total initial carbonate: 114mmol</li>
+</ul>
+<p>Titrating the scrubber:</p>
+<ul>
+<li>saturated sodium carbonate solution: 10.3ml</li>
+<li>titrated with 10ml 724mM nitric acid</li>
+<li>scrubber final concentration: 351mM</li>
+<li>scrubber final amount: 30.6 mmol</li>
+</ul>
+<p>So a total of 83mmol of sodium carbonated was consumed in the scrubber, which means 166mmol of nitric acid was consumed: Half as much acid as absorbed in the bubbler system. This definitely indicates that my absorption is lacking and a lot of nitrogen oxides are escaping.</p>
+<h2 id="aug-2019-2">05 Aug 2019</h2>
+<p>The arc reactor has been running fairly stably for the last 18 hours or so. I shut it down last night because my chemistry lab is also my bedroom…</p>
+<p>I measured the volumetric flow rate of the system today using an inverted 1L graduated cylinder. It took 3 minutes and 42 seconds to fill with gas. That means a total flow rate of unreacted gas of 4.5ml per second. My reactor is 500ml in volume which gives a residence time of 111 seconds. I’m not really sure if that is a good number. The flow rate of Patil’s glidarc reactor is tied to arc stability, so I can’t really draw any useful comparisons to my work <span class="citation" data-cites="patil_plasma_2017">(B. Patil 2017)</span>.</p>
+<p>Shut down the arc reactor at the 24:00hr mark. I’ll let everything cool down over night and run the productivity tests tomorrow.</p>
+<h2 id="aug-2019-3">02 Aug 2019</h2>
+<p>So after much deliberation, I came up with a different reactor plan. The arc reactor will consist of two diverging 3/8“OD-5/32”ID 316 stainless steel tubes (what I had on hand). Cooling water can thus be passed through the tubes to reduce wear and capture the heat. The assembly is sandwiched between two pieces of glass. If I had borosilicate or even better quartz, that would be better. All I have is some regular 3mm plate glass. I hope it doesn’t break.</p>
+<figure>
+<img src="/assets/img/plasmaNitricAcid/plasmaNitricAcid-nonthermal-plasma-glidarc-sealed-arc-close.JPG" alt="image" /><figcaption>image</figcaption>
+</figure>
+<p>Yep. The glass broke. Go figure. I guess I will have to keep looking for materials.</p>
+<h2 id="aug-2019-4">02 Aug 2019</h2>
+<p>Setting up for a longer run of the glidarc reactor… The arc is just too unstable in this rigged configuration. I’m going to try to make a legitimate glidarc reactor.</p>
+<h2 id="jul-2019">29 Jul 2019</h2>
+<h3 id="third-run-results">Third Run Results</h3>
+<figure>
+<img src="/assets/img/plasmaNitricAcid/plasmaNitricAcid-nonthermal-plasma-test-4-setup-vert.JPG" alt="image" /><figcaption>image</figcaption>
+</figure>
+<ul>
+<li>Total Energy = 0.51KWh</li>
+<li>Power Consumption Average = W</li>
+<li>Run time = 4 hours</li>
+<li>reactor solution final pH =</li>
+<li>bubbler solution final pH = 1.00</li>
+<li>peroxide solution final pH = 1.74</li>
+<li>distilled solution final pH = 0.86</li>
+<li>reactor acid concentration (by titration)= 10.9M (54.3ml for 1ml)
+<ul>
+<li>516mmol</li>
+</ul></li>
+<li>bubbler acid concentration (by titration)= 712mM (17.8ml for 5ml)
+<ul>
+<li>142mmol</li>
+</ul></li>
+<li>peroxide acid concentration (by titration)= 140mM (7.0ml required for 10ml)
+<ul>
+<li>3.5mmol</li>
+</ul></li>
+<li>distilled acid concentration (by titration)= 21M (268ml required for 2.5ml) <strong>interesting…</strong>
+<ul>
+<li>53mmol</li>
+</ul></li>
+<li>total nitric acid produced(absorbed): -50mmol (a net loss)</li>
+</ul>
+<p>I was able to achieve a maximum still head temperature of 90C. 2.5ml was distilled over leaving 47.5ml in the reaction chamber. I couldn’t measure these directly because I spilled some. D’oh!</p>
+<p>It was interesting that I got a concentration of over 100% acid in the distilled fraction. Perhaps there was a lot of dissolved nitrogen oxides? More likely it is just human error.</p>
+<p>In any case, <strong>the direct arc to water process is a bust.</strong> There is just too much decomposition of nitric acid. Dry air it is…</p>
+<h2 id="jul-2019-1">28 Jul 2019</h2>
+<p>Let’s run another test. This time starting with 68% nitric acid and an insulated column.</p>
+<p>My nitric acid is approximately 68% (15M). Titrating 1ml requires 76.4ml or 15.3M concentration.</p>
+<p>Ran for 1 hour and used 0.11KWh. 50ml of 15.3M acid starter was added as a jumpstart (765mmol of nitric acid). Significant instability in the arc was the limiting factor. The rubber seal was charred from repeated arcs. I decided to stop the experiment and rerun it with a ground glass seal.</p>
+<figure>
+<img src="/assets/img/plasmaNitricAcid/plasmaNitricAcid-nonthermal-plasma-test-4-insulated-arc-close.JPG" alt="image" /><figcaption>image</figcaption>
+</figure>
+<p>The seal is much better and the arc is more stable now. It still isn’t as stable as the original glidarc reactor was, but good enough for now. Power usage is hovering around 128 watts.</p>
+<p>I should have done this sooner: I installed a water trap between the ozone line needle valve and the DBD ozone reactor. That way I can visualize the relative flow between the main arc reactor and the ozone system. I definitely didn’t have proper ozone flow in prior runs.</p>
+<p>The system definitely has some brown nitrogen dioxide being formed. Fortunately, the primary (1L) bubbler seems to be trapping all of the NO2 since there isn’t any visible after.</p>
+<figure>
+<img src="/assets/img/plasmaNitricAcid/plasmaNitricAcid-nonthermal-plasma-test-4-absorption-color.JPG" alt="image" /><figcaption>image</figcaption>
+</figure>
+<p>The 3-neck RBF has developed a crack from repeated arcing against the wall. :(</p>
+<figure>
+<img src="/assets/img/plasmaNitricAcid/plasmaNitricAcid-nonthermal-plasma-test-4-cracked-glass.JPG" alt="image" /><figcaption>image</figcaption>
+</figure>
+<p>Perhaps some sort of inductor/capacitor combo to provide a jump start in case of arc failure?</p>
+<h3 id="second-run-results">Second Run Results</h3>
+<p>This is actually the 3rd full system test but the second quantitative test.</p>
+<figure>
+<img src="/assets/img/plasmaNitricAcid/plasmaNitricAcid-nonthermal-plasma-test-3-setup-vert.JPG" alt="image" /><figcaption>image</figcaption>
+</figure>
+<p>No distillate was collected from the graham condenser. I believe with proper insulation, the acid could start to reflux. Or perhaps a higher concentration of acid would be able to distill over. That would be ideal for purification.</p>
+<ul>
+<li>Total Energy = 0.90KWh</li>
+<li>Power Consumption Average = 150W</li>
+<li>Run time = 6 hours</li>
+<li>reactor solution final pH = 2.53</li>
+<li>bubbler solution final pH = 3.65</li>
+<li>peroxide solution final pH = 3.19</li>
+<li>reactor acid concentration (by titration)= 18mM (2.3ml required)
+<ul>
+<li>0.9mmol</li>
+</ul></li>
+<li>bubbler acid concentration (by titration)= 2mM (0.3ml)
+<ul>
+<li>0.4mmol</li>
+</ul></li>
+<li>peroxide acid concentration (by titration)= 8mM (1ml)
+<ul>
+<li>0.2mmol</li>
+</ul></li>
+<li>total nitric acid produced(absorbed): 1.5mmol = 95mg</li>
+<li>efficiency = 0.11g/KWh = 9.5KWh/g = 600KWh/mol = 2100MJ/mol</li>
+<li>production speed = 16mg/hr</li>
+<li>Estimated cost per day = $0.39</li>
+<li>Electricity Cost to produce 1L of 68% nitric acid = $710</li>
+<li>Time to produce 1L “”: 4.9 years</li>
+</ul>
+<p>So… ya… abysmal. I guess electrode arc directly to water is a bust. The traveling arc really does look and produce different results. It might be worth attempting the process again with azeotropic nitric acid. The electrical resistance of the water may have been sucking too much energy… A quick arc test with some concentrated acid shows significantly more vigorous arcing. Time for test number… how many is this now?</p>
+<p>It is also of note that the peroxide bubbler absorbed some of the nitric acid and thus the ozone did not fully oxidize the nitric oxide. However, I could not directly verify how much ozone was being pushed through the system: It could have been negligible.</p>
+<p>The submerged electrode did suffer some degradation:</p>
+<figure>
+<img src="/assets/img/plasmaNitricAcid/plasmaNitricAcid-nonthermal-plasma-test-3-discoloration.JPG" alt="image" /><figcaption>image</figcaption>
+</figure>
+<h2 id="jul-2019-2">27 Jul 2019</h2>
+<p>What would be the feasibility of making a containerized fertilizer plant for organic/low-impact farms? How much fixed N could a few hundred watts provide?</p>
+<p>Typical application of fertilizer is 100-200lbs of nitrogen per acre. See the <a href="http://cnrc.agron.iastate.edu/nRate.aspx">Iowa State Nitrogen Fertilizer application calculator</a> for variances. So to produce 150lbs of N over the course of 250 days at 6 hours per day (solar panel based), you would need a 4KW solar system. That’s a little much.</p>
+<p>Alternatively, the solar system could just be supplemental. Although this does degrade the “zero-emission/carbon-neutral fertilizer” concept. Running the system continuously from grid power would only require 700W. That is completely reasonable. Currently, the price of nitrogen is about $60 per acre at the 150lb/acre application rate. The price to run such a system would be around $700 without supplemental energy. Obviously this isn’t feasible.</p>
+<p>Solar panels are $2-3 per watt installed. So a 4KW system would cost around $10,000. It would take up about 25 square meters, which is only 0.6% of an acre.</p>
+<p>Started second run of direct-discharge plasma system. This time with secondary and tertiary absorption systems. The same 3-neck RBF filled with 50ml deionized water and vigreux reflux condenser are used. The output of the vigreux column is directed to a graham condenser cooled with ice water. A vacuum take off adapter is used to collect the condensate. The gaseous output of that is led into a 1L bubbler filled with 200ml deionized water and then to 25ml of 3% hydrogen peroxide. Ozone is also piped in separately above the graham condenser. A temperature probe is located above the reflux condenser. A small computer fan is used to cool the electronics. All electrical inputs are run through a Kill-a-Watt energy meter.</p>
+<p>The arc seems stable at 150W (less the energy required to run the ancillary electronics). Anything more and it tends to go out every few minutes. I adjusted the air flow rate to a minimum: a few bubbles per second at the last absorber. If this run achieves better efficiency, I will do another, more quantative, run. One for a proper material energy balance. Measure the gas throughput, temperature differentials, etc.</p>
+<figure>
+<img src="/assets/img/plasmaNitricAcid/plasmaNitricAcid-nonthermal-plasma-test-3-arcing-close.JPG" alt="image" /><figcaption>image</figcaption>
+</figure>
+<p>The water pump uses less than 5W.</p>
+<h2 id="jul-2019-3">26 Jul 2019</h2>
+<p>I have been contemplating electrodes for a few days now. I like the idea of using two streams of water as electrodes because it provides nearly instant transfer of heat to the water. There also isn’t anything to replace like there would be with metallic electrodes. However, this system requires pumps to move the water/nitric acid. Pumps that can withstand concentrated nitric acid are not cheap and tend to wear quickly. I think the better option is with a single electrode arcing to water or a submerged electrode. This also has the benefit of producing small amounts of ammonia <span class="citation" data-cites="peng_situ_2018">(Peng et al. 2018)</span>.</p>
+<p>The first test of direct arc was a success. A 3-neck RBF is a perfect container for such a reaction. The left neck is input for the ground electrode which is submerged in water. The right neck passes a hollow stainless steel tube for passing input air and high voltage. The center neck holds the reflux condenser. After a few minutes, the temperature at the top of the column reached 70C. Final pH of the 40ml of water was approximately 2.4 after 5 minutes run time.</p>
+<h2 id="jul-2019-4">25 Jul 2019</h2>
+<p>The maximum arc length is at least 8cm. The minimum stable arc striking distance is 8-10mm. If I had the same efficiency as recorded in the literature, my setup could produce 1L of 70% acid every five days. To achieve my 500ml per day mark I would have to increase the power to 300W. Let’s call it 500W just to be safe and somewhat even.</p>
+<p>To boil 1 kg of water it takes approximately 630Wh or 2250 kJ. 500W should be enough to reflux the necessary acid at least once per hour.</p>
+<p>Nitric oxide combines with oxygen below 500C. <span class="citation" data-cites="martin_industrial_1915">(Martin 1915)</span></p>
+<h2 id="jul-2019-5">24 Jul 2019</h2>
+<p>In-situ combination of water and plasma almost doubles the nitrogen fixation rate <span class="citation" data-cites="peng_situ_2018">(Peng et al. 2018)</span>. UV irradiation also increased fixation but to a lesser extent.</p>
+<p>Direct discharge through the water is a possibility and would make construction easier <span class="citation" data-cites="janca_investigation_1999">(Janca et al. 1999)</span>.</p>
+<p>The total power of the system is less than 200W. Capturing the heat may not even be worth it anyway. Since the temperature of the reactor will always be below 100C, borosilicate glass isn’t necessary. Some researchers have used acrylic <span class="citation" data-cites="yang_nitrogen_2016">(Yang et al. 2016)</span>.</p>
+<p>A completely submerged electrode is also possible. This would allow cooling of the electrode material as well. <span class="citation" data-cites="park_reactive_2013">(Park et al. 2013)</span></p>
+<p>I would prefer not to have to drill through glass.</p>
+<p><a href="http://tesladownunder.com/JacobsLadder.htm">A few amateur Jacob’s ladder configurations</a>.</p>
+<p>Honestly, I think a Tesla coil style rotary spark gap is the best option. <a href="http://www.tb3.com/tesla/sparkgaps/index.html">A simple construction</a>.</p>
+<p>No matter what I will need some sort of condenser or trap on the exhaust. Nitric acid doesn’t have zero vapor pressure at room temperature. Cooling requires more power, however. A hydroxide trap might be more cost effective.</p>
+<p>Started a larger scale test on ~200ml 3% hydrogen peroxide (0.88M). I am use a kill-a-watt meter to determine total energy requirements. I can smell NOx on the exhaust, so the results will be low. At an average of 120W and a production rate of approximately 50mg/Wh (estimated from literature), it will take a little under two hours to produce the necessary 11g of nitric acid at a concentration of 0.88M. I’m going to run it for 1 hour just to make sure I don’t run out of hydrogen peroxide.</p>
+<p>I made a sodium carbonate titration standard: 10.60g dry sodium carbonate in 1L diH2O gives 100.0 +- 0.05mM. I only have 25, 50, and 1000mL volumetric flasks, so that is why I went with 1L. At least I will have enough for a while.</p>
+<p>Approximately 110ml of my standard will be needed to neutralize 25ml of 0.88M nitric acid (22mmol). It took only 8.1ml :(</p>
+<h3 id="results-1">Results</h3>
+<figure>
+<img src="/assets/img/plasmaNitricAcid/plasmaNitricAcid-nonthermal-plasma-test-2-arc.JPG" alt="image" /><figcaption>image</figcaption>
+</figure>
+<ul>
+<li>Total Energy = 0.12KWh</li>
+<li>Power Consumption Average = 120W</li>
+<li>Run time = 1 hour</li>
+<li>solution final pH = 1.86</li>
+<li>solution acid concentration (by titration)= 65mM (8.1ml required)</li>
+<li>total nitric acid produced(absorbed): 13mmol = 820mg</li>
+<li>efficiency = 6.8 g/KWh = 0.15 KWh/g = 9.3 KWh/mol = 33MJ/mol</li>
+<li>production speed: 0.82g/hr = 20g/day</li>
+<li>Estimated cost per day: $0.31</li>
+<li>Electricity Cost to produce 1L of 68% nitric acid = $11</li>
+<li>Time to produce 1L “”: 31 days</li>
+</ul>
+<p>So… fairly dismal compared to the literature. Much better than the price of purchasing (~$100 per liter). I’m guessing absorption issues. At least, I hope that’s the cause. That’s something I plan on fixing.</p>
+<h3 id="reflections">Reflections</h3>
+<p>Since the production costs could be as low as $0.11 per liter, this could be a profitable commodity for the amateur community. The actual processing of the dilute nitric acid will constitute some loss here. Even if it amounts to ten times the cost of the nitrogen fixation (wildly exaggerated), I could reasonable make $35 per day. What would it take to produce 500mL of concentrated (68%) nitric acid every other day (the 78-day-average rate of acid sold on eBay)?</p>
+<p>500mL 70% HNO3 (11.1M) is 350g HNO3. Scaling my current (terribly inefficient) setup would require 2.1KW power input. Not including nitric acid concentration. That’s a lot of power, but not impossible. Electrode wear (and arc-stability) will be a problem. Perhaps a dual water jet electrode?</p>
+<p>Something like 97-99% of the energy required is wasted as heat, and high-value heat at that.</p>
+<p>Other value-added products could be made as well: nitrate salts, nitroparaffins, etc. They all seem to be sold on eBay for much less than the equivalent value of the nitric acid required, however. E.g. potassium nitrate sells for ~$15/lb which requires about 400mL of acid at a net loss of $15 compared to straight acid. Still a profit, though.</p>
+<h2 id="jul-2019-6">23 Jul 2019</h2>
+<p>Several tests over the last couple days. Finally some production: less than 2 minutes of run-time reduced neutral 3% hydrogen peroxide to a pH of 1.72. Reaction with copper metal bubbled and produced a mild blue solution confirming the existence of nitric acid.</p>
+<figure>
+<img src="/assets/img/plasmaNitricAcid/plasmaNitricAcid-nonthermal-plasma-test-1-copper-in-nitric-acid.JPG" alt="image" /><figcaption>image</figcaption>
+</figure>
+<p>There are substantial variations in gas production that seem to correlate with power input and plasma shape.</p>
+<p>I would like to use the waste heat from the plasma chamber to boil the water for NOx capture. Perhaps adding water directly to the plasma chamber and refluxing above would work?</p>
+<p>I also noticed that after the system is turned off, the plasma chamber turns brown in a minute or two. This indicates the presence of nitric oxide.</p>
+<p>Plasma stability is not great. I made several electrodes and still it wasn’t very stable.</p>
+<figure>
+<img src="/assets/img/plasmaNitricAcid/plasmaNitricAcid-nonthermal-plasma-test-1-arcing.JPG" alt="image" /><figcaption>image</figcaption>
+</figure>
+<h2 id="jul-2019-7">19 Jul 2019</h2>
+<p>Added two 940C20P15K-F caps to the tank capacitance of the ZVS driver to decrease the frequency. Power levels now peak at about 150W and average around 100W.</p>
+<h2 id="jul-2019-8">17 Jul 2019</h2>
+<p>Several tests were done with the ZVS driver. Total input current to the system at 120V is between 0.5-1.5 amps (up to 15A; 12V). I measured this with a clamp-on multimeter. I was originally attempting to get the frequency below 10kHz by increasing the primary inductance and tank capacitance, but I found that between 5-80kHz, NOx production varies quite little <span class="citation" data-cites="yang_nitrogen_2016">(Yang et al. 2016)</span>. Which is a good thing. A 10kHz 100W whine is annoying. So I will rework the system to optimize for current draw and thus power.</p>
+<p>It isn’t necessary to run the flyback at higher voltages. The high voltage is merely to start and maintain the arc discharge. It is current we are after. Some systems only use the high voltage to create the arc, then use a low voltage, high current supply to actually do the work.</p>
+<p>I also reduced the choke inductance to increase the primary current. It does work, but it runs the risk of destroying your power supply.</p>
+<p>Definitely need to use refluxing water as an absorption tower <span class="citation" data-cites="lee_process_2017">(Lee and Haynes 2017)</span>.</p>
+<p>I definitely want to build a plasma tornado, if only because it looks awesome <span class="citation" data-cites="kalra_gliding_2005-1">(Kalra et al. 2005)</span>. I would need an air pump capable of at least 30 liters per minute flow for a similar design.</p>
+<p>Propeller arc <span class="citation" data-cites="pei_propeller_2018">(Pei, Gidon, and Graves 2018)</span> seems a lot like the rotary spark gap from my early tesla coil days. I like the idea of combining the air pump and plasma by the use of a propeller.</p>
+<h2 id="jul-2019-9">06 Jul 2019</h2>
+<p>Seems that the glidarc reactor was a failure. Even after 8+hrs of running in various configurations, no discernible change to the pH was detected. This could be for a number of reasons. I think the most likely just simply that the total input power to the system was very low.</p>
+<h2 id="jul-2019-10">05 Jul 2019</h2>
+<p>First test of the plasma nitric acid system. Just a 3-neck RBF with air inlet, air outlet, and high-voltage inlet. The output of the flask is fed through a DBD ozone generator pulled from a self-cleaning water cooler. That is fed to a gas washing bottle charged with 5.37g NaOH and ~400ml dH2O. After an hour or so it became apparent that the flyback would overheat, so I set a computer fan to blow across it. That is plenty for now. For the full scale version at 24V, mineral oil submersion will be needed. ZVS driver seems perfectly fine.</p>
+<p>Material compatibility might be an issue in the future. Nitrogen dioxide eats just about everything except 300 series stainless, glass, and polymers with fluorine.</p>
+<p>I had some trouble with arcing across the black rubber stopper used to feed HV to the reaction chamber (of course). This was solved by sleeving the SS bolts with PE tubing. The two nuts that secured the HV connections were sleeved again with some larger gauge silicone tube. The sleeves also functioned as electrical insulators so the arc spacing could be adjusted by hand. Tubing material choice was determined by availability.</p>
+<p>The arc chamber becomes too hot to touch after just a few minutes. Maybe 70-80C. Might be worth looking into using this waste heat for the concentration of dilute nitric acid by distillation.</p>
+<p>After the 5.5hr mark of running the reactor and getting no decrease in pH, I decided to try something different. Brown nitrogen dioxide gas is obvious in the arc chamber, so that isn’t the issue. It occurred to me that perhaps running the products of the arc reactor through the ozone generator was completely destroying all the NOx. So I rearranged the tubing so the ozone and NOx generators were in parallel, not series. We shall see how it goes…</p>
+<p>As a side note: the silicone tubing has already started to show signs of wear. Definitely will not be using it for the final version. Ozone, nitrogen oxides, and nitric acid are a potent combination.</p>
+<p>Maybe the ozone is throwing off the pH measurements?!</p>
+<p>Still not noticing any change in pH at the 6:50 mark. I disconnected the ozone generator to see what effect that would have. This will skew my results since there is no longer an oxidant.</p>
+<h2 id="jul-2019-11">03 Jul 2019</h2>
+<p>First preliminary test of the glidarc reactor went well. It was just a couple of steel wires bent into the typical jacob’s ladder configuration. I had trouble getting the arc to travel appropriately. Perhaps at full power and with a moving air current thing will work better? Brown nitrogen dioxide gas was evident after a minute or two of running at 12V. I would like to run at 24V in the final setup. The flyback might need to be submerged in mineral oil to provide cooling. It didn’t get hot or anything, just a bit warm.</p>
+<h2 id="mar-2019">16 Mar 2019</h2>
+<blockquote>
+<p>Within the range of process parameters investigated in this study, the energy consumption per kg of NOx found to be lowest at 8 kHz and 30 µs, which is 9.1 kWh/kg of NOx for 6870 PPMv of NOx. <span class="citation" data-cites="patil_plasma_2016">(B. S. Patil et al. 2016)</span></p>
+</blockquote>
+<h2 id="mar-2018">26 Mar 2018</h2>
+<ul>
+<li>Use ammonia, nitrite, nitrate aquarium test strips for efficiency measurements.</li>
+<li>What is the influence of humid air addition to the feed gas? Does it produce ammonia?</li>
+<li>Adding ozone to the resultant gas stream to oxidize NO to NO2 quickly?</li>
+</ul>
+<h1 id="bibliography">Bibliography</h1>
+<!--notes-->
+<!--links-->
+<div id="refs" class="references">
+<div id="ref-chacuk_intensification_2007">
+<p>Chacuk, A., J. S. Miller, M. Wilk, and S. Ledakowicz. 2007. “Intensification of Nitrous Acid Oxidation.” <em>Chemical Engineering Science</em>, 8th International Conference on Gas-Liquid and Gas-Liquid-Solid Reactor Engineering, 62 (24): 7446–53. <a href="https://doi.org/10.1016/j.ces.2007.08.023" class="uri">https://doi.org/10.1016/j.ces.2007.08.023</a>.</p>
+</div>
+<div id="ref-cherkasov_review_2015">
+<p>Cherkasov, N., A. O. Ibhadon, and P. Fitzpatrick. 2015. “A Review of the Existing and Alternative Methods for Greener Nitrogen Fixation.” <em>Chemical Engineering and Processing: Process Intensification</em> 90 (April): 24–33. <a href="https://doi.org/10.1016/j.cep.2015.02.004" class="uri">https://doi.org/10.1016/j.cep.2015.02.004</a>.</p>
+</div>
+<div id="ref-cormier_degradation_2008">
+<p>Cormier, Jean Marie, Olivier Aubry, and Ahmed Khacef. 2008. “Degradation of Organic Compounds and Production of Activated Species in Dielectric Barrier Discharges and Glidarc Reactors.” <em>arXiv:0810.5433 [Physics]</em>, October. <a href="http://arxiv.org/abs/0810.5433" class="uri">http://arxiv.org/abs/0810.5433</a>.</p>
+</div>
+<div id="ref-farrington_nitric_1951">
+<p>Farrington, Daniels, William G. Hendrickson, and Foster Elton Gordon. 1951. Nitric oxide recovery system. US2578674A, issued December 1951. <a href="https://patents.google.com/patent/US2578674A/en" class="uri">https://patents.google.com/patent/US2578674A/en</a>.</p>
+</div>
+<div id="ref-foster_perspectives_2012">
+<p>Foster, John, Bradley S. Sommers, Sarah Nowak Gucker, Isaiah M. Blankson, and Grigory Adamovsky. 2012. “Perspectives on the Interaction of Plasmas with Liquid Water for Water Purification.” <em>IEEE Transactions on Plasma Science</em> 40 (5): 1311–23. <a href="https://doi.org/10.1109/TPS.2011.2180028" class="uri">https://doi.org/10.1109/TPS.2011.2180028</a>.</p>
+</div>
+<div id="ref-huie_rate_1974">
+<p>Huie, Robert E., and John T. Herron. 1974. “The Rate Constant for the Reaction O3 + No2 + No3 over the Temperature Range 259362 K.” <em>Chemical Physics Letters</em> 27 (3): 411–14. <a href="https://doi.org/10.1016/0009-2614(74)90253-X" class="uri">https://doi.org/10.1016/0009-2614(74)90253-X</a>.</p>
+</div>
+<div id="ref-janca_investigation_1999">
+<p>Janca, J., S. Kuzmin, A. Maximov, J. Titova, and A. Czernichowski. 1999. “Investigation of the Chemical Action of the Gliding and ‘Point’ Arcs Between the Metallic Electrode and Aqueous Solution.” <em>Plasma Chemistry and Plasma Processing</em> 19 (1): 53–67. <a href="https://doi.org/10.1023/A:1021803932496" class="uri">https://doi.org/10.1023/A:1021803932496</a>.</p>
+</div>
+<div id="ref-kalra_gliding_2005-1">
+<p>Kalra, Chiranjeev S., Young I. Cho, Alexànder Gutsol, Alexander Fridman, and Tecle S. Rufael. 2005. “Gliding Arc in Tornado Using a Reverse Vortex Flow.” <em>Review of Scientific Instruments</em> 76 (2): 025110. <a href="https://doi.org/10.1063/1.1854215" class="uri">https://doi.org/10.1063/1.1854215</a>.</p>
+</div>
+<div id="ref-lee_process_2017">
+<p>Lee, Jessy J.L., and Brian S. Haynes. 2017. “Process Intensification Writ Large with Microchannel Absorption in Nitric Acid Production.” <em>Chemical Engineering Science</em> 169 (September): 140–50. <a href="https://doi.org/10.1016/j.ces.2017.01.015" class="uri">https://doi.org/10.1016/j.ces.2017.01.015</a>.</p>
+</div>
+<div id="ref-martin_industrial_1915">
+<p>Martin, Geoffrey. 1915. “Industrial Nitrogen Compounds and Explosives.” In <em>Manuals of Chemical Technology</em>, 3:118. London: Crosby Lockwood and Ston.</p>
+</div>
+<div id="ref-park_reactive_2013">
+<p>Park, Dayonna P., Kevin Davis, Samid Gilani, Christal-Anne Alonzo, Danil Dobrynin, Gary Friedman, Alexander Fridman, Alexander Rabinovich, and Gregory Fridman. 2013. “Reactive Nitrogen Species Produced in Water by Non-Equilibrium Plasma Increase Plant Growth Rate and Nutritional Yield.” <em>Current Applied Physics</em>, Special Issue: SPB 2012, 13 (March): S19–S29. <a href="https://doi.org/10.1016/j.cap.2012.12.019" class="uri">https://doi.org/10.1016/j.cap.2012.12.019</a>.</p>
+</div>
+<div id="ref-patil_plasma_2016">
+<p>Patil, B. S., J. Rovira Palau, V. Hessel, Jürgen Lang, and Q. Wang. 2016. “Plasma Nitrogen Oxides Synthesis in a Milli-Scale Gliding Arc Reactor: Investigating the Electrical and Process Parameters.” <em>Plasma Chemistry and Plasma Processing</em> 36 (1): 241–57. <a href="https://doi.org/10.1007/s11090-015-9671-4" class="uri">https://doi.org/10.1007/s11090-015-9671-4</a>.</p>
+</div>
+<div id="ref-patil_plasma_2017">
+<p>Patil, Bhaskar. 2017. “Plasma (Catalyst) Assisted Nitrogen Fixation: Reactor Development for Nitric Oxide and Ammonia Production.” PhD thesis.</p>
+</div>
+<div id="ref-pei_propeller_2018">
+<p>Pei, Xuekai, Dogan Gidon, and David B. Graves. 2018. “Propeller Arc: Design and Basic Characteristics.” <em>Plasma Sources Science and Technology</em> 27 (12): 125007. <a href="https://doi.org/10.1088/1361-6595/aaf7ef" class="uri">https://doi.org/10.1088/1361-6595/aaf7ef</a>.</p>
+</div>
+<div id="ref-peng_situ_2018">
+<p>Peng, Peng, Paul Chen, Min Addy, Yanling Cheng, Yaning Zhang, Erik Anderson, Nan Zhou, et al. 2018. “In Situ Plasma-Assisted Atmospheric Nitrogen Fixation Using Water and Spray-Type Jet Plasma.” <em>Chemical Communications</em> 54 (23): 2886–9. <a href="https://doi.org/10.1039/C8CC00697K" class="uri">https://doi.org/10.1039/C8CC00697K</a>.</p>
+</div>
+<div id="ref-skalska_effectiveness_2011-1">
+<p>Skalska, Kinga, Jacek S. Miller, and Stanisław Ledakowicz. 2011. “Effectiveness of Nitric Oxide Ozonation.” <em>Chemical Papers</em> 65 (2): 193–97. <a href="https://doi.org/10.2478/s11696-010-0082-y" class="uri">https://doi.org/10.2478/s11696-010-0082-y</a>.</p>
+</div>
+<div id="ref-taylor_vapor_1925">
+<p>Taylor, Guy B. 1925. “Vapor Pressure of Aqueous Solutions of Nitric Acid.” <em>Industrial &amp; Engineering Chemistry</em> 17 (6): 633–35. <a href="https://doi.org/10.1021/ie50186a037" class="uri">https://doi.org/10.1021/ie50186a037</a>.</p>
+</div>
+<div id="ref-yang_nitrogen_2016">
+<p>Yang, Jin, Tianyue Li, Chongshan Zhong, Xinxing Guan, and Can Hu. 2016. “Nitrogen Fixation in Water Using Air Phase Gliding Arc Plasma.” <em>Journal of the Electrochemical Society</em> 163 (10): E288–E292. <a href="https://doi.org/10.1149/2.0221610jes" class="uri">https://doi.org/10.1149/2.0221610jes</a>.</p>
+</div>
+</div>
+:ET

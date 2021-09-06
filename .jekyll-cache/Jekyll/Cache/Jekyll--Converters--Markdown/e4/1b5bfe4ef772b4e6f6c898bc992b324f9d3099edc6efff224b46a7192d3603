@@ -1,0 +1,569 @@
+I"#�<h1 id="prior-art">Prior Art</h1>
+<ul>
+<li><a href="https://github.com/kizniche/Mycodo">Mycodo</a>
+<ul>
+<li>An open source environmental regulation system</li>
+</ul></li>
+<li><a href="https://yieldbuddy.com/">yieldbuddy</a>
+<ul>
+<li>raspberry Pi + arduino stack</li>
+</ul></li>
+<li><a href="https://github.com/drolsen/DRO-Matic">DRO-Matic</a>
+<ul>
+<li>fully automatic arduino dosing system</li>
+</ul></li>
+<li><a href="https://www.atlas-scientific.com/">Atlas Scientific</a>
+<ul>
+<li>everything at a price…</li>
+</ul></li>
+<li><a href="https://sonyarouje.com/2016/10/06/aeroponic-controller-v4/">Aeroponics V4 | Sony Arouje</a>
+<ul>
+<li>manual pH/nutrient adjustment</li>
+</ul></li>
+<li><a href="https://www.instructables.com/id/Hyduino-Automated-Hydroponics-with-an-Arduino/">Hydruino | Instructables</a>
+<ul>
+<li>pH control, light/humidity/temp sensors, fill/drain control, touchscreen interface</li>
+</ul></li>
+<li><a href="https://thegreenautomation.com/">TheGreenAutomation</a>
+<ul>
+<li>nothing but a landing page</li>
+</ul></li>
+<li><a href="https://www.kickstarter.com/projects/yradia/meg-open-source-indoor-greenhouse">MEG | Kickstarter</a>
+<ul>
+<li>funding unsuccessful</li>
+</ul></li>
+<li><a href="https://www.kickstarter.com/projects/1498890810/bitponics-your-shortcut-to-a-green-thumb">Bitponics | Kickstarter</a>
+<ul>
+<li>funded but seems to have failed with refunds issued</li>
+<li><a href="http://bit.ly/bitponics-parts">parts list</a></li>
+</ul></li>
+<li><a href="https://en.wikipedia.org/wiki/Windowfarm">Windowfarms | wikipedia</a>
+<ul>
+<li>funded but failed</li>
+<li>controversy went so farm as to set up the site: &lt;windowfarmsfraud.com&gt;</li>
+</ul></li>
+<li><a href="https://www.youtube.com/watch?v=nGKxxjfAJMk">DIY Hydroponic Controller | YouTube</a>
+<ul>
+<li>based on the Atlas Scientific system</li>
+</ul></li>
+<li><a href="https://www.youtube.com/watch?v=42wKIU8L4Lw">Basement LED Garden</a>
+<ul>
+<li>large system based on commercial automation equipment</li>
+</ul></li>
+<li><a href="https://youtu.be/OCYezZtpQOI">GrowMau5 DIY pH automation | YouTube</a>
+<ul>
+<li>based on commercial pH controller</li>
+</ul></li>
+<li><a href="https://cityos.io/topic/301/Build-Your-Own-Hydroponic-System-using-Arduino">Build your own Hydroponics System Using Arduino | CityOS Tech Workshops</a>
+<ul>
+<li>a piecemeal set of basic arduino automation instructions</li>
+</ul></li>
+<li><a href="https://www.cooking-hacks.com/documentation/tutorials/open-garden-hydroponics-irrigation-system-sensors-plant-monitoring/">OpenGarden</a>
+<ul>
+<li>a self-contained kit for sale</li>
+</ul></li>
+<li><a href="https://www.media.mit.edu/posts/build-a-food-computer/">Food Computer | MIT</a>
+<ul>
+<li>An extensive MIT project focused on environmental plant studies and standardization and not productivity maximization</li>
+</ul></li>
+</ul>
+<h1 id="parts-list">Parts List</h1>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 3%" />
+<col style="width: 14%" />
+<col style="width: 19%" />
+<col style="width: 24%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>part</th>
+<th>manufacturer</th>
+<th>cost</th>
+<th>quantity</th>
+<th>total</th>
+<th>interface</th>
+<th>Python Library</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.digikey.com/product-detail/en/SEN0219/1738-1292-ND/7087189/?itemSeq=287062471">SEN0219‎</a></td>
+<td>DFRobot</td>
+<td>$59.74</td>
+<td>1</td>
+<td>$59.74</td>
+<td>analog (0.4-2V)</td>
+<td><a href="https://gpiozero.readthedocs.io/en/stable/api_spi.html#analog-to-digital-converters-adc">ADC</a></td>
+<td>infrared CO2 sensor board</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.digikey.com/product-detail/en/DS18B20%2b/DS18B20%2b-ND/956983/?itemSeq=287062292">DS18B20‎</a></td>
+<td>Maxim Integr</td>
+<td>$3.06</td>
+<td>5</td>
+<td>$15.30</td>
+<td>1-wire</td>
+<td><a href="https://github.com/adafruit/Adafruit_CircuitPython_DS18X20">DS18X20</a></td>
+<td>digital temperature sensor</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.sainsmart.com/products/16-channel-12v-relay-module">101-70-103</a></td>
+<td>SainSmart</td>
+<td>$14.99</td>
+<td>1</td>
+<td>$14.99</td>
+<td>16xTTL 5V</td>
+<td><a href="https://gpiozero.readthedocs.io/en/stable/api_output.html#digitaloutputdevice">DigitalOutputDevice</a></td>
+<td>16 channel relay module; 250V 10A</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.digikey.com/product-detail/en/SEN0137/1738-1039-ND/6588461/?itemSeq=287035138">SEN0137</a></td>
+<td>DFRobot</td>
+<td>$9.79</td>
+<td>1</td>
+<td>$9.79</td>
+<td><del>analog (0-3V)</del></td>
+<td><a href="https://github.com/adafruit/Adafruit_Python_DHT">Adafruit_Python_DHT</a></td>
+<td>DHT22 temp/humidity sensor board</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.digikey.com/product-detail/en/amphenol-advanced-sensors/TSW-10/235-1382-ND/4250485">TSW-10</a></td>
+<td>Amphenol Adv</td>
+<td>$7.70</td>
+<td>1</td>
+<td>$7.70</td>
+<td>analog (0-Vcc)</td>
+<td><a href="https://gpiozero.readthedocs.io/en/stable/api_spi.html#analog-to-digital-converters-adc">ADC</a></td>
+<td>turbidity sensor<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a></td>
+</tr>
+<tr class="even">
+<td><a href="https://www.digikey.com/product-detail/en/DFR0151/1738-1054-ND/6588476/?itemSeq=287026205">DFR0151</a></td>
+<td>DFRobot</td>
+<td>$4.53</td>
+<td>1</td>
+<td>$4.53</td>
+<td>I2C</td>
+<td>N/A<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a></td>
+<td>RTC module</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.digikey.com/product-detail/en/analog-devices-inc/AD7150BRMZ/AD7150BRMZ-ND/1766855">AD7150BRMZ</a></td>
+<td>Analog Dev</td>
+<td>$3.88</td>
+<td>2</td>
+<td>$7.76</td>
+<td>I2C</td>
+<td>None</td>
+<td>Capacitance-to-Digital chip</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.digikey.com/product-detail/en/161/1528-2141-ND/7244927/?itemSeq=287035074">161‎</a></td>
+<td>Adafruit</td>
+<td>$0.95</td>
+<td>3</td>
+<td>$2.85</td>
+<td>analog (0-Vcc)</td>
+<td><a href="https://gpiozero.readthedocs.io/en/stable/api_input.html#lightsensor-ldr">LightSensor</a></td>
+<td>photocell</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.adafruit.com/product/1980">TSL2591</a></td>
+<td>Adafruit</td>
+<td>$6.95</td>
+<td>1</td>
+<td>$6.95</td>
+<td>I2C</td>
+<td><a href="https://github.com/adafruit/Adafruit_CircuitPython_TSL2591">Adafruit_TSL2591</a></td>
+<td>digital light sensor</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.adafruit.com/product/3660">BME680</a></td>
+<td>Adafruit</td>
+<td>$22.50</td>
+<td>1</td>
+<td>$22.50</td>
+<td>I2C/SPI</td>
+<td><a href="https://github.com/adafruit/Adafruit_CircuitPython_BME680">Adafruit_BME680</a></td>
+<td>Temp/humidity/pressure/gas sensor</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.adafruit.com/product/2652">BME280</a></td>
+<td>Adafruit</td>
+<td>$19.95</td>
+<td>1</td>
+<td>$19.95</td>
+<td>I2C/SPI</td>
+<td><a href="https://github.com/adafruit/Adafruit_CircuitPython_BME280">Adafruit_BME280</a></td>
+<td>Temp/humidity/pressure sensor</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.digikey.com/product-detail/en/microchip-technology/MCP3008-I-P/MCP3008-I-P-ND/319422">MCP3008</a></td>
+<td>Microchip Tech</td>
+<td>$2.26</td>
+<td>2</td>
+<td>$4.52</td>
+<td>SPI</td>
+<td><a href="https://gpiozero.readthedocs.io/en/stable/api_spi.html#analog-to-digital-converters-adc">ADC</a></td>
+<td>8 channel ADC</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.digikey.com/product-detail/en/microchip-technology/MCP23017-E-SP/MCP23017-E-SP-ND/894272">MCP23017</a></td>
+<td>Microchip Tech</td>
+<td>$1.24</td>
+<td>1</td>
+<td>$1.24</td>
+<td>I2C/SPI</td>
+<td><a href="https://github.com/adafruit/Adafruit_CircuitPython_MCP230xx">Adafruit_MCP230xx</a></td>
+<td>16-bit I/O Expander</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.adafruit.com/product/935">MCP4725</a></td>
+<td>Adafruit</td>
+<td>$4.95</td>
+<td>1</td>
+<td>$4.95</td>
+<td>I2C</td>
+<td><a href="https://github.com/adafruit/Adafruit_CircuitPython_MCP4725">Adafruit_MCP4725</a></td>
+<td>12-bit DAC</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.adafruit.com/product/3709">SGP30</a></td>
+<td>Adafruit</td>
+<td>$19.95</td>
+<td>1</td>
+<td>$19.95</td>
+<td>I2C</td>
+<td><a href="https://github.com/adafruit/Adafruit_CircuitPython_SGP30">Adafruit_SGP30</a></td>
+<td>MOX based VOC meter</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.digikey.com/product-detail/en/CF18JT4K70/CF18JT4K70CT-ND/2022758/?itemSeq=287482347">4K7 resistor</a></td>
+<td>Stackpole</td>
+<td>$0.49</td>
+<td>10</td>
+<td>$4.90</td>
+<td></td>
+<td></td>
+<td>Pull up resistor for I2C connections</td>
+</tr>
+</tbody>
+</table>
+<h1 id="required-packages">Required Packages</h1>
+<ul>
+<li><a href="https://pypi.org/project/smbus-cffi/">smbus</a> - I2C communications
+<ul>
+<li>or the drop-in <a href="https://github.com/adafruit/Adafruit_Python_PureIO">adafruit package</a></li>
+</ul></li>
+</ul>
+<h1 id="work-log">Work Log</h1>
+<h2 id="nov-2020">24 Nov 2020</h2>
+<p>Kratky hydroponics is not suitable for long term growth. Every time you top up the reservoir, you drown the “air roots” and the plant suffers. Maintaining a consistent liquid level manually is a possibility, but that sucks. I could use float valves.</p>
+<p>I think I will use a regular pump recirculating system instead.</p>
+<h2 id="sep-2020">29 Sep 2020</h2>
+<p>I’m leaving town for 10 days. I need a way to water my plants.</p>
+<p>Ten days isn’t long enough for the internal clock to drift far enough that it isn’t useful so I won’t need a RTC right now.</p>
+<p><a href="https://www.switchdoc.com/2020/06/tutorial-capacitive-moisture-sensor-grove/">Capacitive moisture sensors</a></p>
+<p><a href="https://www.metergroup.com/environment/articles/tdr-fdr-capacitance-compared/">Soil moisture sensors—How they work. Why some are not research-grade.</a></p>
+<p>Soil capacitance measurements are affected by frequency and by temperature.</p>
+<h2 id="aug-2019">21 Aug 2019</h2>
+<h3 id="diy-rooting-hormone-gel">DIY Rooting Hormone Gel</h3>
+<p>I started with <a href="https://scienceinhydroponics.com/2017/07/making-your-own-diy-plant-rooting-gel.html">this</a> formula but used the potassium salt of indole-3-butyric acid instead of IBA. I also wanted a higher concentration of IBA (90mM) because of a paper on cloning walnuts suggested a higher concentration was better <span class="citation" data-cites="stevens_origin_2017">(Stevens and Pijut 2017)</span>.</p>
+<h2 id="aug-2019-1">20 Aug 2019</h2>
+<p>Built an ultrasonic cloner today.</p>
+<figure>
+<img src="/assets/img/hydroponics/hydroponics-ultrasonic-cloner-side-view.JPG" alt="image" /><figcaption>image</figcaption>
+</figure>
+<figure>
+<img src="/assets/img/hydroponics/hydroponics-ultrasonic-cloner-peek-mist.JPG" alt="image" /><figcaption>image</figcaption>
+</figure>
+<p>I have several hydroponic tests in the works and I want a stable line of plants to compare the results.</p>
+<h2 id="mar-2019">22 Mar 2019</h2>
+<p>Looked into growing specialty crops in aquaponic/hydroponic systems. Saffron would yield $1-2 per square foot in 3-4 months. Definitely not worth the labor.</p>
+<p><a href="https://farmertyler.com/blog">FarmerTyler Blog</a></p>
+<p>Cross-flow filtration for removing solids in aquaponics?</p>
+<h2 id="mar-2019-1">21 Mar 2019</h2>
+<p><a href="https://www.youtube.com/watch?v=x43aplqtMU0">Q&amp;A Aquaponic Pumps | Youtube</a> - recommends 400lph pump with a ceramic shaft for each grow bed or siphon. <a href="https://www.ebay.com/itm/Simple-Deluxe-UL-Listed-Water-Pump-Submersible-Pond-Fish-Tank-Aquarium-Fountain/152193563685?epid=1582600503&amp;hash=item236f717c25:m:mTc8I7QU6j2K_MYHDSrpiag">This</a> pump seems to fit.</p>
+<p><a href="http://gardendesigntools.com/how-to-mix-masterblend-4-18-38-hydroponic-nutrient-solution">How to mix Masterblend 4-18-38 Hydroponic Solution</a></p>
+<p>Worked on the nutrient analysis spreadsheet.</p>
+<h2 id="mar-2019-2">18 Mar 2019</h2>
+<p>Python web servers? Flask? - nice and simple; plus its templating mechanism uses liquid tags which I have experience with</p>
+<p><a href="https://www.youtube.com/watch?v=zRwy8gtgJ1A">Python Flask from Scratch | Youtube</a>: A very thorough walkthrough.</p>
+<h2 id="mar-2019-3">17 Mar 2019</h2>
+<p>Bell’s Siphon for a modified ebb and flow system: Build instructions for a snorkel type siphon for adjustable minimum height <span class="citation" data-cites="fox_construction_2010">(Fox, Howerton, and Tamaru 2010)</span>.</p>
+<p>PEX or PVC? I’m not worried about leaching, but biofouling in PVC is greater than in PEX. Since my system is designed for indoor use, I’m not worried about UV either. Biofouling in ocean water: LDPE &lt; HDPE &lt; PP <span class="citation" data-cites="sudhakar_biofouling_2007">(Sudhakar et al. 2007)</span>.</p>
+<p>Place the venturi before the intake of the water pump. That way the bubbles are broken apart by the rotor.</p>
+<p>If I have a single grow bed of dimensions 2’x3’x1’, a 1/2&quot; drain pipe siphon should be sufficient. If we assume 60% fill density of LECA (just a guess), then the water required to fill the grow bed is about 15 gal. I want that volume to be replaced every 15-20 minutes <span class="citation" data-cites="fox_construction_2010">(Fox, Howerton, and Tamaru 2010)</span>. That means my pump has to move 45-60 gallons per hour (170-230 lph). If we assume a 25% loss of pressure due to the venturi (just a guess) and an extra 50% because restriction is easy, the total flow rate for my pump should be 320-430 lph (115 gph) at a height of about 1 foot. The 1200 gph pump I looked at earlier is way overkill. That seems really small… I think I’m going to go for the 400 gph (~325 gph at 1 foot) version because it is the cheapest from the set of eBay pumps that has screw fittings.</p>
+<p>The pump cannot run dry… how to prime it if it is mounted above the sump? Probably manually. That also means that if the power goes out, the siphon will slowly allow the pipe to drain and ruin the pump when the power returns. Perhaps a check valve in the sump? Or I could just run the pump submerged as is recommended. I would prefer to have it accessible and contributing less heat to the system. Or I could just mount it at or below the base of the sump.</p>
+<p>I can’t find a consistent answer on whether PVC, cPVC, or PEX is better at handling ozone. They all bounce between “B” and “C”. This is probably fine for the low concentrations and short contact times I will be using.</p>
+<p><strong>Media</strong>: LECA, river pebbles, lava rock, basalt. Since my system will be synthetic (as opposed to organic) I don’t care too much about bacteria growth surface area.</p>
+<p>The funnel type bell siphon seems to be more reliable.</p>
+<p>This could turn into an entire web site…</p>
+<h2 id="mar-2019-4">16 Mar 2019</h2>
+<p><a href="https://randomnerdtutorials.com/arduino-vs-raspberry-pi-vs-beaglebone-vs-pcduino/">Beaglebone or raspberry pi (or arduino)?</a></p>
+<p>Beaglebone uses the <a href="https://adafruit-beaglebone-io-python.readthedocs.io/en/latest/index.html">Adafruit BBIO library</a> which is less developed than the raspberry pi version. The two might be adapted, however. BB is more powerful, which I like, but it isn’t necessary. BB is more expensive (+$20) but has more GPIO pins.</p>
+<p>Adafruit has done a lot of the heavy lifting for product and software development. Given the opportunity, I will be purchasing from them even if it costs a bit more.</p>
+<p>I think I have decided on Raspberry Pi. It has the most support and has all the capabilities I need. The clock issues are solved by using a RTC module. The lack of pins isn’t an issue because a GPIO expander can be used. I/O for a hydroponics controller doesn’t need to happen quickly so multiplexing the expander isn’t an issue.</p>
+<p>Staring work on the Raspberry Pi programming by using an emulator on my Ubuntu machine. <a href="https://blog.agchapman.com/using-qemu-to-emulate-a-raspberry-pi/">Instructions</a>. I didn’t need to follow the network bridge part because mine worked out of the box.</p>
+<h2 id="mar-2019-5">15 Mar 2019</h2>
+<p>A nice <a href="https://github.com/ivmech/ivPID">PID class in python</a> which could be useful for control electronics. Or a <a href="https://pypi.org/project/simple-pid/">PyPi PID package</a></p>
+<p>Touch screen or buttons?… Or android app…</p>
+<p><a href="https://www.hackster.io/chipmc/extend-the-reach-of-your-i2c-sensor-simply-and-inexpensively-ea6b53">I2C extender</a> - since I2C is limited to about 1 meter.</p>
+<p>I like the idea of using the arduino as a pin-out board with the raspberry pi doing the heavy video and network lifting. Plus I get to use python instead of C++ for all the real work. Although, the Pi does seem to be capable of running the entire system by itself.</p>
+<p>A <a href="https://learn.adafruit.com/using-mcp23008-mcp23017-with-circuitpython/overview">pin expander</a> could be used for additional space if 10 (26 total) digital pins isn’t enough. You will need to <a href="https://learn.adafruit.com/raspberry-pi-analog-to-digital-converters/overview">get an ADC</a> for so many sensors. This is only a <a href="https://www.digikey.com/product-detail/en/microchip-technology/MCP3008-I-P/MCP3008-I-P-ND/319422">few dollars for 8 channels</a>.</p>
+<p>Also… using RJ-11 connectors for remote sensors is an excellent idea. They are sooo cheap.</p>
+<p><a href="https://www.youtube.com/watch?v=AMiXme4bMUk">DIY or Buy: Peristaltic Pump | YouTube</a>. The “buy” peristaltic pump that the channel GreatScott compares to the “DIY” version is significantly more expensive than the <a href="https://www.ebay.com/itm/DC-12V-24V-Dosing-Pump-Peristaltic-Tube-Head-for-Aquarium-Lab-Chemical-Analysis/202567636530?var=502634245559">ones I have found</a> and offer 80ml/min. His DIY version is based on <a href="https://www.thingiverse.com/thing:254956">this design on Thingiverse</a> but with a NEMA 17 stepper. A major downside of that design is the heat generated by the motor tends to overheat PLA.</p>
+<p>Looking into using cheaper pH and EC probes for the DRO-Matic.</p>
+<p><a href="https://camblab.info/wp/index.php/what-is-the-difference-between-a-single-junction-and-double-junction-ph-electrode/">Single vs. Double junction pH probe</a>. Double junction probes have an extra compartment to slow ion infiltration that ultimately destroys the probe. Slower infiltration: longer life. Especially when it comes to complex mineral/organic solutions like in hydroponics. Therefore, a double junction probe is recommended for hydroponic use.</p>
+<p>A gel filled probe is cheaper, but again, doesn’t last as long. A liquid probe can be filled again and again with new solution essentially making the probe last forever.</p>
+<p>Since the DRO-Matic system is built to use BNC connectors and has built in calibration, any pH meter can be used. You don’t have to buy the really expensive ones. Double junction probes are recommended and can be bought for around $40.</p>
+<p>The creator of the DRO-Matic says that he was having trouble with interference between the pH and EC probes. He suggests that buying the Atlas Scientific tentacle and EZO circuits is the only way to solve this problem. I believe the secret is not in some “electrical isolation”, but serial rather than parallel measurements. Basically the system only checks each probe once per second in a staggered manner so they don’t interfere. One could certainly program that into the arduino, bypassing the issue (and cost) altogether.</p>
+<p><a href="https://pimylifeup.com/raspberry-pi-rtc/">RTC for the Pi</a></p>
+<h2 id="mar-2019-6">14 Mar 2019</h2>
+<p><strong>Hold Everything!!! I found the <a href="https://github.com/drolsen/DRO-Matic">answer</a>.</strong></p>
+<p><a href="https://www.youtube.com/watch?v=3bslWkhZWFs">Electrolysis for oxygen generation</a>? I really don’t like this presentation because it is a sales pitch. He talks about a lot of things that aren’t related. At one point he just says, “It’s technical science… It’s compelling science…. Microbes.” What a joke. Anyway, that doesn’t mean there isn’t science behind the tech.</p>
+<p>Electrolysis is supposedly capable of a 50% boost to oxygen concentrations (12 mg/L vs. 8 mg/L). Would it be worth it? One problem is the production of CO2. Without the significant air flow and mixing provided by a bubbler, excess gasses cannot be removed from the boundary layer just above the reservoir. So it seems that you would need to purchase an electrolysis system in addition to your existing bubbler.</p>
+<p>So the question becomes: Does higher DO concentrations compensate for the additional cost of an electrolysis system?<a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a> Furthermore, I can’t imagine that direct exposure of root systems to a voltage field is entirely nonreactive.</p>
+<p>It appears that plant susceptibility to low dissolved oxygen concentrations is plant, growth stage, and end-point specific. Lettuce can tolerate 2mg/L without adverse affects on root growth or sprouting <span class="citation" data-cites="goto_effect_1996">(Goto et al. 1996)</span>. Tomatoes were taller and leaves had higher chlorophyll content in 40mg/L DO water but had negatively impacted weight, leaf area, and stem diameter. <span class="citation" data-cites="zheng_upper_2007">(Zheng, Wang, and Dixon 2007)</span></p>
+<blockquote>
+<p>It is suggested that it was safe to enrich root zone DO to as high as 30 mg L−1, although the growth benefit was minor by increasing DO from ambient air saturated level (∼8.5 mg L−1) to 30 mg L−1. Higher than 30 mg L−1 could cause reduction in tomato plant growth.</p>
+</blockquote>
+<p>Cucumber production was unaffected by elevated oxygen concentrations. Researchers did note that shelf life was increased possibly due to enhanced antioxidant production. Again, oxygen concentrations above typical ambient levels (~8mg/L) is probably not worth the effort. <span class="citation" data-cites="ehret_effects_2010">(Ehret et al. 2010)</span></p>
+<p>Ajoene content of garlic was negatively impacted by only oxygenating the nutrient solution 12-hours per day (nighttime oxygenation worse than daytime) compared to 24-hour oxygenation <span class="citation" data-cites="naznin_growth_2010">(Naznin et al. 2010)</span>. An interesting side note is that the roots contained ~80% the ajoene content of the bulbs. The maximum DO concentration was ambient (8 mg/L).</p>
+<p>Ozone in the hydroponic reservoir doesn’t seem to impact plant development (maybe advantageous for antioxidant production) but can significantly reduce pathogenic bacteria. <span class="citation" data-cites="graham_aqueous_2011">(Graham, Zhang, and Dixon 2011)</span> <span class="citation" data-cites="chan_effects_2007">(Chan et al. 2007)</span> Use of 3.0mg/L ozonated water is recommended for mineral wool based systems <span class="citation" data-cites="graham_closing_2012">(Graham, Zhang, and Dixon 2012)</span>.</p>
+<p>Ozonated water is mildly effective at controlling powdery mildew without damage to plants <span class="citation" data-cites="fujiwara_effects_2002">(Fujiwara and Fujii 2002)</span></p>
+<p>Here’s an interesting approach to pH manipulation using electrolysis <span class="citation" data-cites="spinu_electrochemical_1998">(Spinu, Langhans, and Albright 1998)</span>. Only 5W was needed to control the pH of a 12 sq. meter lettuce raft system. The loss of positive ions is a little disconcerting, however. Perhaps that is why this kind of system was never researched again.</p>
+<p>I really hate when a research paper is full of grammatical errors and it still gets accepted for publication. <span class="citation" data-cites="saaid_development_2013">(Saaid et al. 2013)</span></p>
+<p><a href="https://www.amazon.com/7inch-HDMI-LCD-Resolution-Capacitive/dp/B077PLVZCX/">A 7&quot; capacitive touch screen for a raspberry pi</a> would be an excellent way to display data. I still think arduino is the better choice for direct communication with sensors. <a href="http://yieldbuddy.com/">A system like this</a>. <a href="https://github.com/tpudlik/hydroponics">Here’s a project</a> that runs lights and a pump directly from the raspberry pi GPIO pins. <a href="http://hapihq.com/hapi-series-1-development-schedule/">Another</a></p>
+<h2 id="mar-2019-7">13 Mar 2019</h2>
+<p>Looking at automation equipment choices: air/water pumps, venturi, air stones, etc.</p>
+<p>Degassing tower: would solve the dissolved CO2/pH issue but add significant humidity to the air. <span class="citation" data-cites="pattillo_overview_2017">(Pattillo 2017)</span></p>
+<p>What about spectrometers for measuring nutrient concentrations and even plant growth? <span class="citation" data-cites="pavlovic_chlorophyll_2014">(Pavlovic et al. 2014)</span> <span class="citation" data-cites="shibghatallah_measuring_2013">(Shibghatallah et al. 2013)</span> Could be viable but would require significant R&amp;D.</p>
+<p>PEX tubing has greater chemical resistance and is easier to install. The fittings require a clamp tool (or expensive push-connectors). You can get away with using some wire dikes if you want.</p>
+<p>Looking into cable management and <a href="https://www.youtube.com/watch?v=QKLsTnKVTEY">connectors</a> <a href="https://www.youtube.com/watch?v=My-FX1bGikc">2</a>.</p>
+<h3 id="what-size-pump">What size pump?</h3>
+<p>I need enough flow to work with the venturi. My vacuum aspirator requires a diaphragm pump to reach the high vacuums required. I doubt anything so drastic would be necessary here since the venturi will be mixing in atmospheric air. A simple magnetic drive pump should be sufficient.</p>
+<p><a href="https://www.amazon.com/Viagrow-VRDWC-4-Recirculating-4-Bucket-Hydroponic/dp/B01LANYQ4G">This 4 bucket rDWC system</a> comes with a 159 GPH magnetic drive pump. <a href="https://www.amazon.com/Hydroponic-Recirculating-Culture-Buckets-Control/dp/B00UQLTNXS">This one</a> uses a 400 gph pump. Magnetic drive pumps can be restricted without harming the motor, which is nice. Since my system includes a venturi, those values will be low. I would prefer a non-submersible type for cleaning purposes.</p>
+<p><a href="https://leisure.prior-it.co.uk/venturi-pond-aeration.shtml">Jims pond blog</a> uses a 1600gph pump and a “1 inch venturi” and is surprised by the bubbling.</p>
+<p>I think I will just go with <a href="https://www.ebay.com/itm/Submersible-90-1450-GPH-Aquarium-Fish-Tank-Water-Pump/253979919126?var=553305096770">a cheap 1200 gph pump</a> and be done with it. The output looks like a 3/4 NPT so <a href="https://www.ebay.com/itm/3-4-1-Irrigation-Venturi-Fertilizer-Mixer-Injector-Garden-Water-Device-Tube-OJ/163421319439?hash=item260cab710f:m:mv0zZCb0ysVUw3laKJzMmOw&amp;frcectupt=true">this venturi injector</a> should do. It’s rated for “0.65-2.42m³/h 0.7-9.5bar”. Now that I look at this my 1200 gph pump might not be sufficient. It lists the pressure head at 13.0ft (5.6psi, 0.39bar). So does that mean I won’t have enough pressure? It has been too long since my fluid dynamics class…</p>
+<h2 id="mar-2019-8">12 Mar 2019</h2>
+<h3 id="syringe-pump">Syringe Pump</h3>
+<p><strong>Update: Syringe pumps are a lot more expensive than perstaltic pumps.</strong>*</p>
+<p>This is based on <a href="https://www.appropedia.org/Open-source_syringe_pump">Open Source Syringe Pump</a> <span class="citation" data-cites="wijnen_open-source_2014">(Wijnen et al. 2014)</span>. Fortunately, my local library offers free 3D printing. First, installing Lulzbot CURA software on Ubuntu 18.04:</p>
+<pre><code>sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
+sudo sed -i &#39;$a deb http://download.alephobjects.com/ao/aodeb buster main&#39; /etc/apt/sources.list
+sudo apt-get update
+sudo apt-get install cura-lulzbot</code></pre>
+<p>I got an error following the <a href="https://www.lulzbot.com/learn/tutorials/cura-lulzbot-edition-installation-ubuntu">installation guide</a> saying that I needed to install a <em>libssl</em> package. I found a solution <a href="https://forum.lulzbot.com/viewtopic.php?p=44727">here</a>. Basically it just grabs a debian 10 package (<em>buster main</em>) instead of the ubuntu 18 one (<em>stretch main</em>).</p>
+<p>I also had to install openSCAD to work with the files from the project.</p>
+<pre><code>sudo add-apt-repository ppa:openscad/releases
+sudo apt update
+sudo apt install openscad</code></pre>
+<h3 id="capacitive-fluid-level-sensor">Capacitive Fluid Level Sensor</h3>
+<p>This <a href="https://www.instructables.com/id/Capacitive-Fluid-Level-Sensor/">DIY Fluid Level Sensor | Instructables</a> seems like a good idea, but over constructed for my purposes. The inner, charged electrode can be any insulated wire. Preferably 12AWG solid wire for rigidity. The outer electrode can be any non reactive metal. Preferably stainless steel but copper would work.</p>
+<p>The probe should be a centimeter or two in width and about 30cm in depth.</p>
+<p>The capacitance-to-digital chip I found measures 0-13pF with 1fF sensitivity. That’s extremely low and won’t work for a cylindrical capacitance probe. A pair of insulated, parallel copper electrodes would work pretty well.</p>
+<h3 id="ec-meter">EC meter</h3>
+<p><a href="https://hackaday.io/project/7008-fly-wars-a-hackers-solution-to-world-hunger/log/24646-three-dollar-ec-ppm-meter-arduino">$3 EC meter</a></p>
+<p>Let’s look at automation. Arduino and raspberry pi are obvious choices for control.</p>
+<p>A few arduino garden controllers use peristaltic pumps, but I would rather use syringe pumps. They are more accurate, but slower. Speed isn’t an issue for hydroponics. Equilibration of the dose with the reservoir will be an issue.</p>
+<p>General hydroponics typical nutrient doses are less than 10ml per gallon. I’ll need to order syringes before printing the parts of the open source syringe pump. <a href="https://www.omc-stepperonline.com/nema-17-stepper-motor">NEMA17</a> looks like a common stepper motor that’s relatively cheap.</p>
+<h3 id="top-picks">Top Picks</h3>
+<table>
+<thead>
+<tr class="header">
+<th>part</th>
+<th>manufacturer</th>
+<th>cost</th>
+<th>quantity</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.digikey.com/product-detail/en/DS18B20%2b/DS18B20%2b-ND/956983/?itemSeq=287062292">DS18B20‎</a></td>
+<td>Maxim Integrated</td>
+<td>$3.06</td>
+<td>5</td>
+<td>digital temperature sensor</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.digikey.com/product-detail/en/SEN0219/1738-1292-ND/7087189/?itemSeq=287062471">SEN0219‎</a></td>
+<td>DFRobot</td>
+<td>$59.74</td>
+<td>1</td>
+<td>infrared CO2 sensor board</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.digikey.com/product-detail/en/SEN0137/1738-1039-ND/6588461/?itemSeq=287035138">SEN0137</a></td>
+<td>DFRobot</td>
+<td>$9.79</td>
+<td>1</td>
+<td>DHT22 temp/humidity sensor board</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.digikey.com/product-detail/en/DFR0151/1738-1054-ND/6588476/?itemSeq=287026205">DFR0151</a></td>
+<td>DFRobot</td>
+<td>$4.53</td>
+<td>1</td>
+<td>RTC module</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.digikey.com/product-detail/en/161/1528-2141-ND/7244927/?itemSeq=287035074">161‎</a></td>
+<td>Adafruit</td>
+<td>$0.95</td>
+<td>3</td>
+<td>photocell</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.digikey.com/product-detail/en/amphenol-advanced-sensors/TSW-10/235-1382-ND/4250485">TSW-10</a></td>
+<td>Amphenol Advanced</td>
+<td>$7.70</td>
+<td>1</td>
+<td>turbidity sensor<a href="#fn4" class="footnoteRef" id="fnref4"><sup>4</sup></a></td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.digikey.com/product-detail/en/DFR0144/1738-1099-ND/6588521/?itemSeq=287038585">DFR0144‎</a></td>
+<td>DFRobot</td>
+<td>$14.41</td>
+<td>1</td>
+<td>3A x 4 relay board</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.digikey.com/product-detail/en/103030009/1597-1146-ND/5774758/?itemSeq=287038576">103030009</a></td>
+<td>Seeed Technology</td>
+<td>$21.68</td>
+<td>1</td>
+<td>10A x 4 relay board</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.digikey.com/product-detail/en/adafruit-industries-llc/997/1528-2003-ND/6827136">997</a></td>
+<td>Adafruit</td>
+<td>$6.96</td>
+<td>1</td>
+<td>12V; 1/2&quot; solenoid valve</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.digikey.com/product-detail/en/microchip-technology/ATMEGA328-PU/ATMEGA328-PU-ND/2271026">ATMEGA328-PU‎</a></td>
+<td>Microchip Tech</td>
+<td>$1.96</td>
+<td>1</td>
+<td>Bare arduino IC</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.digikey.com/product-detail/en/analog-devices-inc/AD7150BRMZ/AD7150BRMZ-ND/1766855">AD7150BRMZ</a></td>
+<td>Analog Devices</td>
+<td>$3.88</td>
+<td>1</td>
+<td>Capacitance-to-Digital chip</td>
+</tr>
+</tbody>
+</table>
+<p>The photocell will definitely saturate at the light levels I’m expecting (650 lux). If using multiple light sensors, one might be inclined to use an <a href="https://www.digikey.com/product-detail/en/adafruit-industries-llc/935/1528-1010-ND/4990759">external DAC</a> to save pins.</p>
+<p>Air pump: rule-of-thumb 1W per gallon. Ideal water temperature for dissolved oxygen content of 8-9 ppm is 68F (<a href="http://www.just4growers.com/stream/hydroponic-growing-techniques/airing-out-the-truth-on-dissolved-oxygen-in-hydroponics.aspx">source</a>).</p>
+<h1 id="appendix-a">Appendix A</h1>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">sudo</span> qemu-system-arm -kernel ./kernel-qemu-4.4.34-jessie -append <span class="st">&quot;root=/dev/sda2 panic=1 rootfstype=ext4 rw&quot;</span> -hda raspbian-stretch-lite.qcow -cpu arm1176 -m 256 -M versatilepb -no-reboot -serial stdio -net nic -net user -net tap,ifname=vnet0,script=no,downscript=no
+
+<span class="ex">pi</span>
+<span class="ex">raspberry</span>
+
+<span class="fu">sudo</span> nano /etc/default/keyboard
+<span class="kw">`</span><span class="va">XKBLAYOUT=</span><span class="st">&quot;us&quot;</span><span class="kw">`</span>
+<span class="fu">sudo</span> apt update
+<span class="fu">sudo</span> apt upgrade -y
+<span class="fu">sudo</span> shutdown -h now
+<span class="fu">sudo</span> apt install -y python3-dev git
+<span class="ex">curl</span> https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+<span class="ex">python3</span> get-pip.py --user
+<span class="fu">nano</span> ~/.bashrc
+<span class="kw">`</span>export <span class="va">PATH=$HOME</span>/.local/bin/:<span class="va">$PATH</span><span class="kw">`</span>
+<span class="ex">pip3</span> install --user circuitpython-build-tools
+<span class="ex">pip3</span> install --user adafruit-circuitpython-lis3dh
+<span class="fu">sudo</span> raspi-config
+
+<span class="ex">-</span> interfacing options
+    <span class="ex">-</span> P4 SPI
+    <span class="ex">-</span> P5 I2C
+    <span class="ex">-</span> P7 1-Wire
+<span class="ex">-</span> reboot
+
+<span class="fu">wget</span> https://github.com/adafruit/circuitpython/releases/download/3.1.2/mpy-cross-3.x-raspbian-stretch
+
+<span class="fu">wget</span> https://github.com/adafruit/Adafruit_CircuitPython_Bundle/releases/download/20190315/adafruit-circuitpython-bundle-3.x-mpy-20190315.zip
+
+<span class="fu">git</span> clone https://github.com/adafruit/Adafruit_Python_DHT.git
+<span class="bu">cd</span> Adafruit_Python_DHT/
+<span class="ex">python3</span> setup.py install --force-pi --user
+
+<span class="ex">pip3</span> install --user adafruit-circuitpython-DS18X20</code></pre></div>
+<h1 id="bibliography">Bibliography</h1>
+<!--notes-->
+<!--links-->
+<div id="refs" class="references">
+<div id="ref-chan_effects_2007">
+<p>Chan, Gilbert Y S, Yanfeng Li, Edward K H Lam, Carol Y Chen, Li Lin, Tiangang Luan, Chongyu Lan, and Peter H W Yeung. 2007. “Effects of Ozonated Water on Antioxidant and Phytohormones Level of Vegetable,” 15.</p>
+</div>
+<div id="ref-ehret_effects_2010">
+<p>Ehret, David L., Diane Edwards, Tom Helmer, Wei Lin, Gary Jones, Martine Dorais, and Athanasios P. Papadopoulos. 2010. “Effects of Oxygen-Enriched Nutrient Solution on Greenhouse Cucumber and Pepper Production.” <em>Scientia Horticulturae</em> 125 (4): 602–7. <a href="https://doi.org/10.1016/j.scienta.2010.05.009" class="uri">https://doi.org/10.1016/j.scienta.2010.05.009</a>.</p>
+</div>
+<div id="ref-fox_construction_2010">
+<p>Fox, Bradley K, Robert Howerton, and Clyde S Tamaru. 2010. “Construction of Automatic Bell Siphons for Backyard Aquaponic Systems,” 11.</p>
+</div>
+<div id="ref-fujiwara_effects_2002">
+<p>Fujiwara, Kazuhiro, and Takuya Fujii. 2002. “Effects of Spraying Ozonated Water on the Severity of Powdery Mildew Infection on Cucumber Leaves.” <em>Ozone: Science &amp; Engineering</em> 24 (6): 463–69. <a href="https://doi.org/10.1080/01919510208901635" class="uri">https://doi.org/10.1080/01919510208901635</a>.</p>
+</div>
+<div id="ref-goto_effect_1996">
+<p>Goto, E., A.J. Both, L.D. Albright, R.W. Langhans, and A.R. Leed. 1996. “Effect of Dissolved Oxygen Concentration on Lettuce Growth in Floating Hydroponics.” <em>Acta Horticulturae</em>, no. 440 (December): 205–10. <a href="https://doi.org/10.17660/ActaHortic.1996.440.36" class="uri">https://doi.org/10.17660/ActaHortic.1996.440.36</a>.</p>
+</div>
+<div id="ref-graham_aqueous_2011">
+<p>Graham, Thomas, Ping Zhang, and Michael Dixon. 2011. “Aqueous Ozone in the Root Zone: Friend or Foe?” February, 5.</p>
+</div>
+<div id="ref-graham_closing_2012">
+<p>Graham, Thomas, Ping Zhang, and Michael A. Dixon. 2012. “Closing in on Upper Limits for Root Zone Aqueous Ozone Application in Mineral Wool Hydroponic Tomato Culture.” <em>Scientia Horticulturae</em> 143 (August): 151–56. <a href="https://doi.org/10.1016/j.scienta.2012.06.003" class="uri">https://doi.org/10.1016/j.scienta.2012.06.003</a>.</p>
+</div>
+<div id="ref-naznin_growth_2010">
+<p>Naznin, M. T., Y. Kitaya, T. Shibuya, and H. Hirai. 2010. “Growth and Ajoene Concentrations in Garlic Plants Cultured Hydroponically with Different Aeration Regimes.” <em>The Journal of Horticultural Science and Biotechnology</em> 85 (2): 161–65. <a href="https://doi.org/10.1080/14620316.2010.11512648" class="uri">https://doi.org/10.1080/14620316.2010.11512648</a>.</p>
+</div>
+<div id="ref-pattillo_overview_2017">
+<p>Pattillo, D Allen. 2017. “An Overview of Aquaponic Systems: Aquaculture Components,” 20.</p>
+</div>
+<div id="ref-pavlovic_chlorophyll_2014">
+<p>Pavlovic, Danijela, Bogdan Nikolic, Sanja Djurovic, Hadi Waisi, Ana Andjelkovic, and Dragana Marisavljevic. 2014. “Chlorophyll as a Measure of Plant Health: Agroecological Aspects.” <em>Pesticidi I Fitomedicina</em> 29 (1): 21–34. <a href="https://doi.org/10.2298/PIF1401021P" class="uri">https://doi.org/10.2298/PIF1401021P</a>.</p>
+</div>
+<div id="ref-saaid_development_2013">
+<p>Saaid, M. F., N. A. M. Yahya, M. Z. H. Noor, and M. S. A. M. Ali. 2013. “A Development of an Automatic Microcontroller System for Deep Water Culture (DWC).” In <em>2013 IEEE 9th International Colloquium on Signal Processing and Its Applications</em>, 328–32. <a href="https://doi.org/10.1109/CSPA.2013.6530066" class="uri">https://doi.org/10.1109/CSPA.2013.6530066</a>.</p>
+</div>
+<div id="ref-shibghatallah_measuring_2013">
+<p>Shibghatallah, Muhammad Abdul Hakim, Siti Nurul Khotimah, Sony Suhandono, Sparisoma Viridi, and Teja Kesuma. 2013. “Measuring Leaf Chlorophyll Concentration from Its Color: A Way in Monitoring Environment Change to Plantations.” <em>arXiv:1305.1148 [Physics, Q-Bio]</em>, 210–13. <a href="https://doi.org/10.1063/1.4820322" class="uri">https://doi.org/10.1063/1.4820322</a>.</p>
+</div>
+<div id="ref-spinu_electrochemical_1998">
+<p>Spinu, V.C., R.W. Langhans, and L.D. Albright. 1998. “ELECTROCHEMICAL PH CONTROL IN HYDROPONIC SYSTEMS.” <em>Acta Horticulturae</em>, no. 456 (March): 275–82. <a href="https://doi.org/10.17660/ActaHortic.1998.456.32" class="uri">https://doi.org/10.17660/ActaHortic.1998.456.32</a>.</p>
+</div>
+<div id="ref-stevens_origin_2017">
+<p>Stevens, Micah E., and Paula M. Pijut. 2017. “Origin of Adventitious Roots in Black Walnut (Juglans Nigra) Softwood Cuttings Rooted Under Optimized Conditions in a Fog Chamber.” <em>New Forests</em> 48 (5): 685–97. <a href="https://doi.org/10.1007/s11056-017-9592-6" class="uri">https://doi.org/10.1007/s11056-017-9592-6</a>.</p>
+</div>
+<div id="ref-sudhakar_biofouling_2007">
+<p>Sudhakar, M., A. Trishul, Mukesh Doble, K. Suresh Kumar, S. Syed Jahan, D. Inbakandan, R. R. Viduthalai, V. R. Umadevi, P. Sriyutha Murthy, and R. Venkatesan. 2007. “Biofouling and Biodegradation of Polyolefins in Ocean Waters.” <em>Polymer Degradation and Stability</em> 92 (9): 1743–52. <a href="https://doi.org/10.1016/j.polymdegradstab.2007.03.029" class="uri">https://doi.org/10.1016/j.polymdegradstab.2007.03.029</a>.</p>
+</div>
+<div id="ref-wijnen_open-source_2014">
+<p>Wijnen, Bas, Emily J. Hunt, Gerald C. Anzalone, and Joshua M. Pearce. 2014. “Open-Source Syringe Pump Library.” <em>PLOS ONE</em> 9 (9): e107216. <a href="https://doi.org/10.1371/journal.pone.0107216" class="uri">https://doi.org/10.1371/journal.pone.0107216</a>.</p>
+</div>
+<div id="ref-zheng_upper_2007">
+<p>Zheng, Youbin, Linping Wang, and Mike Dixon. 2007. “An Upper Limit for Elevated Root Zone Dissolved Oxygen Concentration for Tomato.” <em>Scientia Horticulturae</em> 113 (2): 162–65. <a href="https://doi.org/10.1016/j.scienta.2007.03.011" class="uri">https://doi.org/10.1016/j.scienta.2007.03.011</a>.</p>
+</div>
+</div>
+<section class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Optional; Used to monitor water quality in the reservoir and as a backup water level sensor.<a href="#fnref1">↩</a></p></li>
+<li id="fn2"><p>RTCs interface directly with the Pi and replace the fake-hwclock<a href="#fnref2">↩</a></p></li>
+<li id="fn3"><p>A few stainless steel plates and a cheap power supply would be sufficient, so the cost is minimal.<a href="#fnref3">↩</a></p></li>
+<li id="fn4"><p>Optional; Used to monitor water quality in the reservoir and as a backup water level sensor.<a href="#fnref4">↩</a></p></li>
+</ol>
+</section>
+:ET

@@ -5,8 +5,12 @@ date: "2018-03-10 12:13"
 category: archive
 phase: write-up
 tags: politics
+author: Elijah K. Dunn
+zotero-collection:
+gallery:
 abstract: >
   An (incomplete) open letter responding to the recent political discourse on the Parkland, FL school shooting on Feb. 14, 2018.
+graphical-abstract:
 ---
 
 *To all those who participated in the discussion following this tragedy*,

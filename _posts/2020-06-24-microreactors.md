@@ -10,7 +10,7 @@ zotero-collection: https://www.zotero.org/ekdunn/collections/2WKA3SKV
 gallery: microreactor
 abstract: >
   Some design notes on DIY microreactors.
-graphical-abstract: /assets/img/microreactor/flow-chem-hplc-test-reactor.JPG
+graphical-abstract: /assets/img/microreactor/microreactor-flow-chem-hplc-test-reactor.JPG
 ---
 
 
@@ -23,7 +23,7 @@ graphical-abstract: /assets/img/microreactor/flow-chem-hplc-test-reactor.JPG
 ## 10 Nov 2020
 I've been constructing a test version of the microreactor using a few scavenged HPLC pumps. It consists of three inputs. Two are mixed together before the third is added. It is designed to be operated in a coolant bath.
 
-![](/assets/img/microreactor/flow-chem-hplc-test-setup.JPG)
+![image](/assets/img/microreactor/microreactor-flow-chem-hplc-test-setup.JPG)
 
 Unfortunately, HPLC pumps are not perfect. They definitely can't be used for nitration studies.
 

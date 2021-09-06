@@ -62,7 +62,7 @@ My current research process proceeds through several utility programs:
 
 ## Building This Website
 
-This site is first written in pandoc markdown format using Atom. The markdown-writer plugin (and [personalized config file](/_mdwriter.cson)) is particularly useful.
+This site is first written in pandoc markdown format using Atom. The markdown-writer plugin (and [personalized config file](/assets/src/_mdwriter.cson)) is particularly useful.
 
 Then a series of hacks and poorly coded {{liquid}} tags are fed into Jekyll. The ruby gem jekyll-pandoc uses a bibliography exported by Better-Bibtex from Zotero to generate the appropriate citations using a custom .csl style I made for markdown. The complete set of html and associated files are backed up to github and transferred via a [rsync script](/assets/src/push_fls_site.sh) to my web host NearlyFreeSpeech.net.
 
@@ -74,7 +74,7 @@ The first phase. This is the initial research phase where the project general pa
 
 It is at this phase that a project is determined to be feasible. Primary reasons for project abandon are: expense, lack of tooling, or sufficient documentation elsewhere.
 
-A project in the exploratory phase may or may not have a dedicated project page. They usually start as an aside on the [Work Log]({{ site.url }}/work-log.html) page.
+A project in the exploratory phase may or may not have a dedicated project page. They usually start as an aside on the [Work Log]({{ site.url }}/log/) page.
 
 ### Research
 Primary research is more of an extension of the exploratory phase than a distinct phase. The major difference is more thorough documentation of prior art and research. This is where Zotero comes into play.

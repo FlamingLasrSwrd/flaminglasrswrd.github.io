@@ -2,9 +2,9 @@
 layout: "post"
 title: "Minimal Cost & Nutritionally Complete Food"
 date: "2019-02-26 18:45"
-category: biology
+category: archive
 phase: exploratory
-tags: archive
+tags: health biology
 author: Elijah K. Dunn
 zotero-collection:
 gallery:
@@ -88,7 +88,7 @@ As a reference: [USDA Food Plans: Cost of Food Report](https://www.fns.usda.gov/
 - 2.48 lbs potatoes
 - 2.55 lbs chicken/turkey
 
-Consult the report and the [MyPlate website](https://www.choosemyplate.gov/MyPlate) for more details. The total amount consumed is 39.86 lbs of food per week. The results for women are fairly similar.
+Consult the report and the [MyPlate website](https://www.myplate.gov/) for more details. The total amount consumed is 39.86 lbs of food per week. The results for women are fairly similar.
 
 Interesting that the USDA couldn't meet their own standards for Vitamin E or potassium.
 

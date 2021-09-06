@@ -2,7 +2,7 @@
 layout: post
 title:  "Chlorate Decomposition"
 date:   2011-05-01
-tags: chemistry fireworks
+tags: chemistry fire
 category: archive
 phase: write-up
 gallery: chlorate-decomp

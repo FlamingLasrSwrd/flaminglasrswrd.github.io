@@ -1,0 +1,124 @@
+I"U4<h1 id="neo4j-ubuntu-18.04">Neo4j Ubuntu 18.04</h1>
+<p>Apparently Neo4j doesn’t like the current version of Java. I couldn’t get it to start until I installed <em>oracle-java8</em>:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">sudo</span> add-apt-repository ppa:webupd8team/java
+<span class="fu">sudo</span> apt-get update
+<span class="fu">sudo</span> apt-get install oracle-java8-installer</code></pre></div>
+<h1 id="jafar-costume">Jafar Costume</h1>
+<figure>
+<img src="/assets/img/jafar/jafarstaff.jpg" alt="image" /><figcaption>image</figcaption>
+</figure>
+<h1 id="references-in-markdown-regex">References in Markdown Regex</h1>
+<pre><code>[@]+\b([a-zA-Z_0-9-]*)+\b
+[^$1]</code></pre>
+<h1 id="initramfs-trouble">Initramfs Trouble</h1>
+<p>Today I woke up to a system that wouldn’t boot. The system just dropped to the busybox terminal after 30 seconds giving an error that said <code>/dev/mapper/ubuntu--vg-root</code> couldn’t be located. <code>cat /dev/mapper</code> only gave <em>control</em> or something like that. Obviously it would never find the drive: I had full disk encryption and was never asked for a password. Booting to a different kernel work once, but I foolishly executed <code>update-initramfs -u -k all</code> and killed all my other kernels at once. I couldn’t just decrypt the drive because <code>cat /proc/modules</code> didn’t show <em>cryptsetup</em> at all.</p>
+<p>So I went on an adventure for six hours this morning attempting to fix it. The <a href="https://feeding.cloud.geek.nz/posts/recovering-from-unbootable-ubuntu-encrypted-lvm-root-partition/">best explanation</a> I could find was that something went wrong with LVM making the system not recognize the encrypted drive on boot. I believe my issue sprang from removing <code>libreadline5</code> because of some dependency issues with <code>swi-prolog</code>. I ended up just building SWIP-pl from source, but somehow I managed to screw up <em>libreadline</em>. The short version is:</p>
+<ul>
+<li>boot using ubuntu live flash drive with persistence enabled</li>
+<li>mount the drive including the encrypted portion</li>
+<li>chroot into the drive</li>
+<li>reinstall lvm2
+<ul>
+<li>I had to download packages separately using the live disk system then install them in the chrooted system</li>
+</ul></li>
+<li>comment out a line in the initramfs script to stop sync <a href="https://bugs.launchpad.net/ubuntu/+source/initramfs-tools/+bug/1667512">a bug</a></li>
+<li>update-initramfs</li>
+</ul>
+<h2 id="persistent-flash-drive">Persistent Flash drive</h2>
+<p>Persistence may not be necessary in all cases, but it makes things much simpler. On another ubuntu system with a spare flash drive mounted at <code>/dev/sdd</code> and fresh copy of ubuntu 12.04 downloaded at <code>~/Downloads/ubuntu-16.04.4-desktop-amd64.iso</code> <a href="https://askubuntu.com/a/753163">ref</a>:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">sudo</span> add-apt-repository ppa:mkusb/ppa
+<span class="fu">sudo</span> apt update
+<span class="fu">sudo</span> apt install mkusb
+<span class="co"># The p is persistence; mkusb was replaced by dus but this still works</span>
+<span class="fu">sudo</span> -H mkusb ~/Downloads/ubuntu-16.04.4-desktop-amd64.iso p</code></pre></div>
+<p>I could only get the <em>classic</em> version to run as gui. Just follow the on screen instructions and go with the defaults if unsure. I alloted 100% for the persistence volume. It takes several minutes for mkusb to finish. After, you should be able to unplug the device and boot up the broken system.</p>
+<h2 id="boot-and-fix">Boot and Fix</h2>
+<p>So now you have a bootable ubuntu live flash drive with persistence plugged into your broken system. If you haven’t already, enable booting from the flash drive in your BIOS (hold down Shift or F2 or F8 or some other F-key). Start up your system and select “Try Ubuntu with persistence.” It should be the default option.</p>
+<p>If everything goes to plan you now have a copy of ubuntu running and an encrypted drive at <code>/dev/sda</code>. Launch a terminal (<code>Ctrl-Alt-T</code>):</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">sudo</span> cryptsetup luksOpen /dev/sda3 sda3_crypt
+<span class="co"># Enter your password to decrypt</span>
+<span class="fu">sudo</span> vgchange -ay
+<span class="fu">sudo</span> mount /dev/mapper/ubuntu--vg-root /mnt
+<span class="fu">sudo</span> mount /dev/sda2 /mnt/boot
+<span class="fu">sudo</span> mount -t proc proc /mnt/proc
+<span class="fu">sudo</span> mount -o bind /dev /mnt/dev
+<span class="fu">sudo</span> chroot /mnt</code></pre></div>
+<p>For some reason I couldn’t resolve any hosts (<code>sudo apt update</code> returned unresolved hosts). Probably because of all the weird stuff with my wifi card shown below. Either way, in a separate terminal running as the ubuntu live user:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">sudo</span> apt update
+<span class="bu">cd</span> /mnt/tmp
+<span class="fu">sudo</span> apt-get download lvm2
+<span class="co"># if you messed up with libreadline like I did:</span>
+<span class="fu">sudo</span> apt-get download libreadline5
+<span class="bu">exit</span></code></pre></div>
+<p>So now we have the <em>.deb</em> packages downloaded in <code>/mnt/tmp</code> which is running under the chroot terminal from earlier. Go back to that terminal:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">dpkg</span> -i libreadline5_5.2+dfsg-3build1_amd64.deb
+<span class="ex">dpkg</span> -i lvm2_2.02.133-1ubuntu10_amd64.deb
+<span class="co"># or whatever versions of libreadline5 and lvm2 you downloaded</span>
+<span class="co"># I attempted to run:</span>
+<span class="ex">dpkg</span> --configure -a
+<span class="co"># But it just hung and never completed update-initramfs</span>
+<span class="co"># If you run:</span>
+<span class="ex">update-initramfs</span> -u -v
+<span class="co"># It hangs on the line: Building cpio /boot/initrd.img-4.4.0-116-generic.new initramfs</span></code></pre></div>
+<p>So I also located <a href="https://bugs.launchpad.net/ubuntu/+source/initramfs-tools/+bug/1667512">a bug</a> in ubuntu which causes <em>sync</em> to hang. To fix you need to comment out (insert <em>#</em>) the line that says <code>sync</code> (line 176) under the <code>generate_initramfs</code> function in the file <code>/dev/usr/sbin/update-initramfs</code>. Make sure you are editing the <em>/dev/</em> version not the live flash drive version.</p>
+<p>Now that sync has been stopped, you can continue with dpkg:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">dpkg</span> --configure -a
+<span class="co"># I also updated initramfs manually just to be sure:</span>
+<span class="ex">update-initramfs</span> -v -u
+<span class="co"># Or a specific kernel version:</span>
+<span class="ex">update-initramfs</span> -v -d -k 4.4.0-116-generic <span class="kw">&amp;&amp;</span> <span class="ex">update-initramfs</span> -v -c -k 4.4.0-116-generic</code></pre></div>
+<p>So that’s it! Hopefully. You should be able to shutdown the live system, reboot to the original drive, and enter your password. If all that works you can reinstall any experimental kernels you may have and <code>update-initramfs</code> will be called automatically. One last thing, make sure you uncomment that sync line from <code>/usr/sbin/update-initramfs</code>. You can run <code>sudo update-initramfs -u -v -k all</code> afterwards to make sure everything is square.</p>
+<h1 id="intermittent-wifi">Intermittent Wifi</h1>
+<p><strong>Update2:</strong> I may have it figured. I think that my wifi issue was hard to diagnose because it had to do with encryption. Basically, every time my wifi card wanted to get a better signal (change AP’s) or experienced too much interference on a particular channel, it used a random MAC address to attempt a reconnect. Unfortunately, something about the PEAP-MSCHAPv2 verification algorithm at my University was rejecting the new MAC addresses and anything that caused my card to cycle would end up loosing connectivity. So bluetooth and locking my computer would cause cycling and end the connection (without actually ending it). Anyway, now I have a seemingly stable connection after stabilizing the driver and network manager.</p>
+<h2 id="driver-fix">Driver Fix</h2>
+<p>To test:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="fu">sudo</span> modprobe -r rtl8821ae
+<span class="fu">sudo</span> modprobe rtl8821ae msi=1 ant_sel=2</code></pre></div>
+<p>To make permanent:</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="bu">echo</span> <span class="st">&quot;options rtl8821ae msi=1 ant_sel=2&quot;</span> <span class="kw">|</span> <span class="fu">sudo</span> tee /etc/modprobe.d/rtl8821ae.conf</code></pre></div>
+<ul>
+<li>I am still using the rtl8821ae from lwfinger driver found below.</li>
+</ul>
+<h2 id="network-manager-fix">Network Manager Fix</h2>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="bu">echo</span> -e <span class="st">&quot;[device-mac-randomization]\nwifi.scan-rand-mac-address=0&quot;</span> <span class="kw">|</span> <span class="fu">sudo</span> tee -a /etc/NetworkManager/NetworkManager.conf</code></pre></div>
+<p>There’s probably a better place for that than in the NetworkManager.conf file.</p>
+<h2 id="archive">Archive</h2>
+<p><strong>Update:</strong> I’m still having trouble with the wifi, so don’t follow this procedure. Leaving it here for archival purposes.</p>
+<p>I’ve always had trouble with this laptop hardware. Sometimes the wifi would cut in and out. Sometimes the audio would have lots of artifacts. F.Lux didn’t work at all. Just weird stuff. I believe most of it is related to kernel and drivers. Recently, the wifi has been extremely slow, but only intermittently. Also, I’ve been getting ubuntu error reporting pop-ups dealing with systemd-journald SIGABRT messages on every boot. After a few hours of fiddling, I finally realized the two were related. Apparently, there’s a bug somewhere in bluetooth causing the error on boot. I don’t use bluetooth at all so I tried to disable the service. That didn’t work either. Eventually I figured out that I also had to blacklist the driver. My grub is not standard either. I had to do some fiddling to get it to boot properly with GNOME and an encrypted drive. I’m not sure if this is related, but I was having trouble with <code>sudo</code> commands. Any sudo command in terminal would take several seconds to ask for my password. I used <a href="https://serverfault.com/questions/38114/why-does-sudo-command-take-long-to-execute">this solution</a>. Basically, just add your hostname to <code>/etc/hosts</code> at the end of a couple lines. I’ve also had trouble with <code>/etc/resolv.conf</code> and I don’t know why…</p>
+<p>The whole procedure went something like this:</p>
+<pre><code>sudo nano /etc/default/grub
+# Changed:
+GRUB_CMDLINE_LINUX_DEFAULT=&quot;quiet splash acpi=force intel_idle.max_cstate=1 pci=nomsi pcie_aspm=off&quot;
+# save; exit
+sudo update-grub
+sudo service bluetooth stop
+sudo systemctl disable bluetooth.service
+sudo nano /etc/modprobe.d/blacklist.conf
+# Added to end of file:
+blacklist bluetooth
+# save; exit
+hostname
+&gt; x550vx
+sudo nano /etc/hosts
+# Changed:
+127.0.0.1       localhost
+127.0.1.1       X550VX
+::1     ip6-localhost ip6-loopback
+# To:
+127.0.0.1       localhost x550vx
+127.0.1.1       x550vx
+::1     ip6-localhost ip6-loopback x550vx
+# save; exit</code></pre>
+<p>For the record, I am using the rtl8821ae driver from <a href="https://github.com/lwfinger/rtlwifi_new/">lwfinger/rtlwifi_new</a> on a <a href="https://www.asus.com/us/Laptops/X550VX/overview/">asus x550VX laptop</a> running Ubuntu 16.04 with kernel 4.15.4. I don’t know if that driver is necessary anymore, but my wifi works so I’m not going to mess with it. The non-standard kernel also fixed some sound and f.lux issues. Plus I want to keep as updated as possible in response to the Meltdown and Spectre exploits.<br />
+<strong>Update:</strong><br />
+Apparently, that bluetooth driver is unnecessary. <code>sudo service bluetooth start</code> works just fine. Perhaps the conflict was that rtlwifi_new shipped with appropriate bluetooth drivers? Anyway, you can reenable the service <code>sudo systemctl enable bluetooth.service</code>.</p>
+<h1 id="penny-charms">Penny Charms</h1>
+<p>A friend of mine is making a necklace and needs a few charms made from pennies.</p>
+<figure>
+<img src="/assets/img/pennyNecklace/pennyNecklace-collage.jpg" alt="image" /><figcaption>image</figcaption>
+</figure>
+<p>They are all 2013 pennies. Holes were drilled and countersunk to prevent wear. The rings are made from 14 AWG copper wire and soldered with lead-free (silver) solder. I attempted to solder the ring directly to the penny at a 90 degree angle, but couldn’t get the solder to flow well enough to make it attractive.</p>
+<h1 id="bibliography">Bibliography</h1>
+<!--Annotations-->
+<!--Glossary-->
+:ET

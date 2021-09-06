@@ -6,8 +6,8 @@ category: active
 phase: research
 tags: electronics high-voltage
 author: Elijah K. Dunn
-zotero-collection: https://www.zotero.org/ekdunn/items/collectionKey/MHSHVY3M
-gallery: marx
+zotero-collection: https://www.zotero.org/ekdunn/collections/MHSHVY3M
+gallery:
 abstract: >
   Building a high voltage pulse circuit known as a marx generator for Halloween.
 graphical-abstract:
@@ -158,7 +158,7 @@ Dual polarity charging reduces the number of required spark gaps by half [@heffe
 
 Liquid resistors made from copper sulfate are easy to make out of tubing and copper plugs... [@heffernan_fast_2005] A high voltage probe based on copper sulfate would be awesome and cheap. 22 $\Omega$ per centimeter for a saturated $CuSO_{4}$ solution. A [design calculator](http://www.pulsedpower.net/Applets/PulsedPower/CopperSulfateResistor/CopperSulfateResistor.html).
 
-[A discussion on water resistors](http://home.earthlink.net/~jimlux/hv/rwater.htm).
+[A discussion on water resistors](https://web.archive.org/web/20191219110824/home.earthlink.net/~jimlux/hv/rwater.htm).
 
 # Bibliography
 
@@ -167,4 +167,4 @@ Liquid resistors made from copper sulfate are easy to make out of tubing and cop
 <!--links-->
 [Jochen's HV]: http://www.kronjaeger.com/hv/hv/pro/marx/
 [PocketMagic]: https://www.pocketmagic.net/marx-generator/
-[Uzzors2k]: http://uzzors2k.4hv.org/index.php?page=180marxgen
+[Uzzors2k]: https://uzzors2k.4hv.org/index.php?page=180marxgen

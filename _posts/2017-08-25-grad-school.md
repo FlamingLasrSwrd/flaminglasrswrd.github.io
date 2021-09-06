@@ -1,11 +1,16 @@
 ---
 layout: post
-title:  "Graduate School Application"
-date:   2017-08-25
+title: "Graduate School Application"
+date: "2017-08-25"
 tags: school
-category: active
+category: archive
+phase: exploratory
+author: Elijah K. Dunn
+zotero-collection:
+gallery:
 abstract: >
   Exploring the possibility of grad school.
+graphical-abstract: 
 ---
 
 # Introduction

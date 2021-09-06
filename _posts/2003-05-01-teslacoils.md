@@ -2,16 +2,17 @@
 layout: "post"
 title: "Tesla Coils"
 date: "2003-05-01"
-category: active
+category: archive
 phase: experimental
 tags: electronics
 author: Elijah K. Dunn
-zotero-collection: https://www.zotero.org/ekdunn/items/collectionKey/SGUSHQ6L
+zotero-collection: https://www.zotero.org/ekdunn/collections/SGUSHQ6L
 gallery: tesla
 abstract: >
   Tesla coils were my first and probably my longest deep dive into a project. I built my first coil around age 12. I even won first place at a regional science fair with it that same year. I managed to use a much larger version as a final project all the way into college. Only some of my notes on the most recent coil version survived the years.
-graphical-abstract: /assets/img/tesla/2inchcoil2.jpg
+graphical-abstract: /assets/img/tesla/tesla-2inchcoil2.jpg
 ---
+
 # Again!
 So I have picked up this project again circa 2018. My sister has asked me to look into making a small tesla coil for her haunted house. Enough to be scary but not too dangerous.
 
@@ -30,6 +31,10 @@ So I have picked up this project again circa 2018. My sister has asked me to loo
 
 # Work Log
 
+## TODO
+
+- [ ] Order electronic components for new controller.
+
 ## 14 Oct 2018
 I missed my deadline :(
 
@@ -38,33 +43,33 @@ I missed my deadline :(
 
 It gets a little messy around here when I'm this close to a deadline:
 
-![](/assets/img/tesla/20180916_214011-tesla-t2c2-messy-workspace.jpg)
+![image](/assets/img/tesla/tesla-20180916_214011-tesla-t2c2-messy-workspace.jpg)
 
 ## 09 Oct 2018
 - mostly framing work: using nylon bolts to attach various components together
 
-![](/assets/img/tesla/20181009_142623-tesla-t2c2-secondary-end-cap.jpg)
+![image](/assets/img/tesla/tesla-20181009_142623-tesla-t2c2-secondary-end-cap.jpg)
 
 ## 08 Oct 2018
 Made a toroidal topload from 8" dryer duct wrapped in aluminum tape. I also have a 4" duct if I need more capacitance (probably).
 
-![](/assets/img/tesla/20181006_005949-tesla-t2c2-topload.jpg)
+![image](/assets/img/tesla/tesla-20181006_005949-tesla-t2c2-topload.jpg)
 
 Secondary coil has been wound and coated with 1/2 pint of polyurethane. I would have preferred to use epoxy, but I didn't want to spend the extra $30
 
-![](/assets/img/tesla/20180922_190114-tesla-t2c2-winding-secondary.jpg)
+![image](/assets/img/tesla/tesla-20180922_190114-tesla-t2c2-winding-secondary.jpg)
 
 Primary coil supports were cut from 1/2" HDPE cutting board. 7/32 holes were drilled to accommodate the 1/4" annealed copper tube.
 
-![](/assets/img/tesla/20181002_204053-tesla-t2c2-cutting-board-primary-supports.jpg)
+![image](/assets/img/tesla/tesla-20181002_204053-tesla-t2c2-cutting-board-primary-supports.jpg)
 
 A polycarbonate circle was cut for the base of the primary coil.
 
-![](/assets/img/tesla/20181008_221104-tesla-t2c2-primary-on-structure.jpg)
+![image](/assets/img/tesla/tesla-20181008_221104-tesla-t2c2-primary-on-structure.jpg)
 
 Copper bus bar was cut for the full bridge of IXG60n60's. I'm a little worried that I cut the bus bar too small, but too late now. I configured the electrolytic capacitors in parallel: if I want a voltage doubler I will need to redo it.
 
-![](/assets/img/tesla/20181007_001719-tesla-bus-close.jpg)
+![image](/assets/img/tesla/tesla-20181007_001719-tesla-bus-close.jpg)
 
 ## 21 Sep 2018
 - attempted to make a cone out of paper
@@ -78,7 +83,7 @@ Copper bus bar was cut for the full bridge of IXG60n60's. I'm a little worried t
 - Finished the winding jig
     - it just so happens that the small end of the traffic cone fits right into my ice cream maker's gear: perfect
 
-![](/assets/img/tesla/20180921_223522-tesla-t2c2-traffic-cone-winding-jig.jpg)
+![image](/assets/img/tesla/tesla-20180921_223522-tesla-t2c2-traffic-cone-winding-jig.jpg)
 
 ## 20 Sep 2018
 - comparing the benefits of a conical secondary?
@@ -132,7 +137,7 @@ And now some explanations on each point...
 1. Obviously you should reduce resistance and increase inductance here. The problem is that they are inversely related. The more turns of wire you put on a certain form (increasing L), the greater the resistance due to added length. Tesla initially tried to cool the coils below room temperature (he even has a patent for cooling with liquid air) to decrease resistance. His later work does not use this method however. I suppose that it could be the increase in parasitic capacitance due to a higher permitivity surrounding the coil. Immersing the coil in a liquid increases the capacitance between the wires and adds to the overall impedance. I'm sure there is a balance between the two. Just adding dry ice to a coil can decrease the resistance by 40% or more. With a tube type primary coil it might be possible to cool by pumping a cooling fluid through. Something like dry ice in acetone as a cheap alternative to liquid N2\. I was thinking of making the coil as a standalone form (sealed with some protectant) and just stuffing the center with dry ice during runs. I can't find anything on the loss tangent of solid CO2 so I guess I will just have to experiment.
 
 2. Parasitic capacitance is as bad as it sounds. Between each coil on a form there exists a voltage difference. And with any voltage difference there comes a capacitance. It is on the order of 1 pF or less, but it is there none the less. Each little inductor capacitor circuit has its own resonant frequency which is much higher that that of the whole coil. The distributed capacitance has the effect of many little spring-mass systems on our swing example. They must be charged and discharged with each cycle adding to the total loss and reduces energy transfer to the system. I guess you could try to design a system where the resonant frequency of the parasite caps and inductors is an overtone of the whole system... One way of accomplishing reducing loss is to increase the spacing between wires. The greater the distance the lower the capacitance. This is fine for the free resonator, but the secondary needs to be tighly coupled to the primary and thus needs tighly spaced wires. Additionally the greater the spacing, the lower the inductance for a certain height so you run into physical constraints.<br>
-  Another possibility is to limit the dielectric covering wires. A higher [permitivity](http://www.rfcafe.com/references/electrical/dielectric-constants-strengths.htm) will results in larger capacitance as well. Teflon (PTFE), single build magnet wire is probably the best you can get right now in terms of low permitivity (~2) and loss (0.0003). But that comes at a (very large) price. Regular magnet wire is usually polyurethane /(3.5 and 0.008). The coating is very thin so there isn't that much to worry about. Obviously whatever form you use for your coil will also benefit from a low permitivity and low loss. PVC is not too bad for permitivity but the loss is horrible (~3 and 0.02). Its even worse because PVC absorbs moisture (>55 and >0.04). Obviously vaccum would be the best (1 and 0) but who can afford that large a vaccum chamber...? Alternatively you can just use air, but it has a very low breakdown voltage. The voltage difference between wires might be enough to arc over and destroy the coil. Tesla also suggested in his magnifier patent to keep the wire spacing at a minimum to ensure the coil acted as a single conductor of the diameter of the coil form to reduce leakage to the atmosphere. Some testing or simulation is needed to find the best configuration here. Check out [this paper (pdf)](http://www.g3ynh.info/zdocs/magnetics/appendix/self_res/self-res.pdf) for a good discussion on solenoid inductance and self capacitance. In short, parasitic capacitance is extremely hard to calculate. I used the doubly-asymptotic, empirically corrected (DAE) formula for self capacitance.
+  Another possibility is to limit the dielectric covering wires. A higher [permitivity](https://www.rfcafe.com/references/electrical/dielectric-constants-strengths.htm) will results in larger capacitance as well. Teflon (PTFE), single build magnet wire is probably the best you can get right now in terms of low permitivity (~2) and loss (0.0003). But that comes at a (very large) price. Regular magnet wire is usually polyurethane /(3.5 and 0.008). The coating is very thin so there isn't that much to worry about. Obviously whatever form you use for your coil will also benefit from a low permitivity and low loss. PVC is not too bad for permitivity but the loss is horrible (~3 and 0.02). Its even worse because PVC absorbs moisture (>55 and >0.04). Obviously vaccum would be the best (1 and 0) but who can afford that large a vaccum chamber...? Alternatively you can just use air, but it has a very low breakdown voltage. The voltage difference between wires might be enough to arc over and destroy the coil. Tesla also suggested in his magnifier patent to keep the wire spacing at a minimum to ensure the coil acted as a single conductor of the diameter of the coil form to reduce leakage to the atmosphere. Some testing or simulation is needed to find the best configuration here. Check out [this paper (pdf)](http://www.g3ynh.info/zdocs/magnetics/appendix/self_res/self-res.pdf) for a good discussion on solenoid inductance and self capacitance. In short, parasitic capacitance is extremely hard to calculate. I used the doubly-asymptotic, empirically corrected (DAE) formula for self capacitance.
 3. This is kinda debated among the community and I don't really understand why. Basically the coil develops a standing electrical wave in operation. Ensuring the coil's length is close to 1/4 the wavelength of EM radiation in your conductor of choice keeps the first anti-node (and thus the highest potential) near the top. I rarely see the 1/4 wave idea talked about except in highly studied (normally academic based) tesla designs. Tesla reiterated the point almost every time he designed a coil so I'm going to stick with that idea.
 4. The whole point of a coil is the get the largest amount of energy into the secondary (and free resonator) and transform that energy into the largest electrical field possible. This starts with the tank circuit storing the largest amount of power. Obviously you are limited by the amount of power by your supply. For example, if you have a variac that can only take 10 Amps, that would be your limit. You should choose the largest cap that 10 Amps can charge at whatever voltage and design from there. With a larger capacitor, comes a smaller inductor for the same frequency however. A smaller inductor will most likely have a smaller coupling thus limiting the transfer of energy per cycle. You give some, you take some... electrical power that is.
 5. As with any transformer, the ratio of inductances determines the voltage gain. There is certainly more at work here but for simplicity's sake (and my own ignorance) I won't go into detail. But just know that you are aiming for the highest inductance possible in the secondary and free resonator while still maintaining a strong transfer of energy. Also, I saw on some website that I can't remember that it is advisable to keep the free resonator above 3x the inductance of the secondary. The point was illustrated as a bell being struck by a clapper. A 5 lb bell would be ill suited by a 1 ton clapper. Anything more than some inductance smaller than the free resonator would be a waste.
@@ -209,7 +214,7 @@ This means that I need more than 8.3 turns to avoid saturation. With 10 turns...
 ## 10 June 2012
 For those of you who have been doing these kinds of projects you know what happens when you really get into one. Everything else just kinda falls by the wayside. Unfortunately for you this means that I don't update the site all that often. I do however have a few websites that you should read up on.
 
-- [Goodchild Engineering](http://www.goodchildengineering.net/tesla-coils) - Electrical Engineering student at ASU. Lots of good pics.
+- [Goodchild Engineering](http://www.goodchildengineering.com/) - Electrical Engineering student at ASU. Lots of good pics.
 - [Simulated Reality Systems](http://simreal.com/content/TeslaDesignPage1) - Very detailed intro to designing a DRSSTC.
 - [Chester's Electronic Labs](http://www.hilo90mhz.hungrychild.org/tesla/DRSSTC/DRSSTC.html) - An example of Steve Wards original driver.
 

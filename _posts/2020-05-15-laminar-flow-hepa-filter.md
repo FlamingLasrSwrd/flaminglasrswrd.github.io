@@ -4,13 +4,13 @@ title: "Laminar Flow HEPA Filter"
 date: "2020-05-15 19:18"
 category: active
 tags: biology fungi
-phase: design
+phase: results
 author: Elijah K. Dunn
 zotero-collection:
 gallery: hepa
 abstract: >
   Building a HEPA filter unit to take my sterile technique to the next level.
-graphical-abstract:
+graphical-abstract: /assets/img/hepa/hepa-with-storage-thumb.jpg
 ---
 
 
@@ -18,7 +18,13 @@ graphical-abstract:
 
 ## TODO
 
-- [ ] cut holes for switch and blower
+- [ ]
+
+## 16 May 2021
+
+Project finished. Added fold-up bench top. Moved to closet. Works great.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FM431jtCyr8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## 01 May 2021
 Mostly rebuilt the flow hood today.

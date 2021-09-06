@@ -5,8 +5,11 @@ date: "2018-02-28 17:34"
 category: archive
 phase: experimental
 tags: computers
+author: Elijah K. Dunn
+zotero-collections:
 abstract: >
   Keylogging and mouse tracking data can be used as a primary endpoint for evaluating the effect of any *quantified self* data that one seeks to track. RescueTime is also available to monitor mouse movement and time.
+graphical-abstract:
 ---
 
 # Summary

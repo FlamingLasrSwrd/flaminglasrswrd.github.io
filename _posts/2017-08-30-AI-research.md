@@ -6,9 +6,11 @@ tags: school
 category: active
 phase: research
 author: Elijah K. Dunn
-zotero-collection: https://www.zotero.org/ekdunn/items/collectionKey/VJCJE86P
+gallery: 
+zotero-collection: https://www.zotero.org/ekdunn/collections/VJCJE86P
 abstract: >
   Artificial intelligence has held my interest longer than any other topic I have researched. Here are my notes on AI. They are not really for the benefit of reading, just the writing. I rarely even read it.
+graphical-abstract:
 ---
 
 # Algorithm

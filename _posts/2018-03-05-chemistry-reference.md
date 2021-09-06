@@ -4,6 +4,9 @@ title: "Chemistry Reference"
 date: "2018-03-05 20:26"
 category: active
 tags: chemistry
+author: Elijah K. Dunn
+zotero-collection:
+gallery:
 abstract: >
   A collection of syntheses.
 graphical-abstract: /assets/img/ketene/ketene-setup-landscape.JPG

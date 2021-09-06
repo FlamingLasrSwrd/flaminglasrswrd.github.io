@@ -4,13 +4,13 @@ title: "Mushrooms"
 date: "2018-12-29 17:22"
 category: active
 phase: experimental
-tags: mushrooms biology
+tags: fungi biology
 author: Elijah K. Dunn
-zotero-collection: https://www.zotero.org/ekdunn/items/collectionKey/DLI8YQMP
+zotero-collection: https://www.zotero.org/ekdunn/collections/DLI8YQMP
 gallery: fungi
 abstract: >
   Notes on starting a mushroom growing business: L. edodes to P. ostreatus.
-graphical-abstract: /assets/img/fungi/190720-150319-fungi-laundry-basket-oyster.jpg
+graphical-abstract: /assets/img/fungi/fungi-laundry-basket-oyster.jpg
 ---
 
 # Work Log

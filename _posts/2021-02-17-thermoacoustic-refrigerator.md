@@ -4,9 +4,9 @@ title: "Thermoacoustic Refrigerator"
 date: "2021-02-17 23:14"
 category: active
 tags: chemistry
-phase: research
+phase: exploratory
 author: Elijah K. Dunn
-zotero-collection:
+zotero-collection: https://www.zotero.org/ekdunn/collections/6AG25HBX
 gallery:
 abstract: >
   Maybe a 3D printable acoustic cold trap?

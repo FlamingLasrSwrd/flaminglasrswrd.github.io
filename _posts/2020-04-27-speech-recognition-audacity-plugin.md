@@ -2,7 +2,7 @@
 layout: "post"
 title: "Speech Recognition Audacity Plugin"
 date: "2020-04-27 19:03"
-category: active
+category: archive
 phase: experimental
 tags: programming
 author: Elijah K. Dunn
@@ -10,7 +10,7 @@ zotero-collection:
 gallery:
 abstract: >
   A speech recognition plugin for Audacity for automatic transcription.
-graphical-abstract: /assets/img/speech-tagger/speech-tagger-screenshot.jpeg
+graphical-abstract: /assets/img/speechTagger/speechTagger-screenshot.jpeg
 ---
 
 # Installation
@@ -88,7 +88,7 @@ sudo cp lib-src/mod-script-pipe/.libs/mod-script-pipe.so.0.0.0 /usr/local/share/
 
 Run Audacity and enable *mod-script-pipe* from the **Edit -> Preferences -> Modules** menu.
 
-![](/assets/img/mod-script-pipe-enable.png)
+![image](/assets/img/mod-script-pipe-enable.png)
 
 Make sure to restart Audacity to use the pipe.
 

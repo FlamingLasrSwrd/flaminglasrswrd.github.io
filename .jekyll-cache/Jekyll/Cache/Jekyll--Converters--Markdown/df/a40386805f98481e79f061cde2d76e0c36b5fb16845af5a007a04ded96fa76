@@ -1,0 +1,203 @@
+I"EO<h1 id="prior-art">Prior Art</h1>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 11%" />
+<col style="width: 14%" />
+<col style="width: 13%" />
+<col style="width: 9%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 14%" />
+<col style="width: 6%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>source</th>
+<th>stages</th>
+<th><span class="math inline">\(C_{stage} (nF)\)</span></th>
+<th><span class="math inline">\(R_{stage} (k\Omega)\)</span></th>
+<th><span class="math inline">\(L_{stage} (\mu H)\)</span></th>
+<th><span class="math inline">\(V_{in} (kV)\)</span></th>
+<th><span class="math inline">\(V_{out} (kV)\)</span></th>
+<th>arc length (cm)</th>
+<th>discharge energy (J)</th>
+<th>rate (Hz)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="http://www.kronjaeger.com/hv/hv/pro/marx/">Jochen’s HV</a></td>
+<td>10</td>
+<td>8</td>
+<td>2000</td>
+<td>-</td>
+<td>30</td>
+<td>210<span class="math inline">\(\dagger\)</span></td>
+<td>30</td>
+<td>36</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a href="https://www.pocketmagic.net/marx-generator/">PocketMagic</a></td>
+<td>2$$11</td>
+<td>5</td>
+<td>1000</td>
+<td>-</td>
+<td>10?</td>
+<td>?</td>
+<td>20</td>
+<td>?</td>
+<td>1.4</td>
+</tr>
+<tr class="odd">
+<td><a href="https://uzzors2k.4hv.org/index.php?page=180marxgen">Uzzors2k</a></td>
+<td>2$$10</td>
+<td>1</td>
+<td>990</td>
+<td>-</td>
+<td>20?</td>
+<td>?</td>
+<td>18</td>
+<td></td>
+<td>14</td>
+</tr>
+</tbody>
+</table>
+<p><span class="math inline">\(\dagger\)</span> Calculated. Actual value not directly measured.</p>
+<h1 id="calculations">Calculations</h1>
+<p><span class="math inline">\(C = K E_{0} \frac{A}{d}\text{, where }E_{0}= 8.854\times10^{-12}\)</span></p>
+<p><span class="math inline">\(C\)</span> is the capacitance of a parallel plate type capacitor. <span class="math inline">\(K\)</span> is the dielectric constant of the material. <span class="math inline">\(A\)</span> is the overlapping surface area of the plates. <span class="math inline">\(d\)</span> is the distance between the plates. <span class="math inline">\(C\)</span> is the capacitance.</p>
+<p><span class="math inline">\(E = \frac{1}{2} C V^{2}\)</span></p>
+<p><span class="math inline">\(E\)</span> is the energy stored in a capacitor in joules. <span class="math inline">\(C\)</span> is the capacitance in Farads. <span class="math inline">\(V\)</span> is the voltage in volts.</p>
+<h1 id="work-log">Work Log</h1>
+<h2 id="todo">TODO</h2>
+<ul>
+<li>[ ] source a kiln for making Calcium Cupric Titanate</li>
+<li>[ ] purify calcium carbonate, copper oxide, titanium dioxide</li>
+</ul>
+<h2 id="aug-2019">23 Aug 2019</h2>
+<p>I’m worried about the inductance of the capacitors made by rolling the plates. I’m also curious why some amateurs get away with cheap ceramic capacitors and others use the way more expensive doorknob style caps. It has to be current capabilities.</p>
+<p>Looking at the [Vishay HVCC series capacitor datasheet] I find a few interesting things. First of all, the leakage current is huge: for the 1nF cap it is more than 3mA at 10kV. For a 20 or 30 cap generator that is practically all of the current. The rise time is about 1.2 <span class="math inline">\(\mu S\)</span>. These caps sell for about $2.72 each.</p>
+<p><strong>Forget plastics! Lets make our our ceramic caps out of barium titanate!</strong></p>
+<p>I literally have the synthesis materials barium carbonate and titanium dioxide in my storage right now. Sintering seems to be the dominant preparation method. Growing pure crystals can be done using hydrothermal methods which are not outside the reach of the amateur.</p>
+<p><span class="math inline">\(BaCO_{3} + TiO_{2} \Rightarrow BaTiO_{3} + O_{2}\)</span></p>
+<p>BaTi is available for $1-2 per gram on ebay. Barium carbonate and titanium dioxide are available for $2-4 per pound at a ceramics store. These are likely impure, but may be serviceable. I could even dope the BaTi with strontium because strontium carbonate is also a cheap ceramic material.</p>
+<p>Every other synthesis method uses a water soluble titanium salt, which I don’t have and I would prefer not to make: titanium oxalate, citrate <span class="citation" data-cites="pechini_barium_1966">(Pechini 1966)</span>, alcoholate <span class="citation" data-cites="di_method_1961">(Di and Fischer 1961)</span>, chloride <span class="citation" data-cites="selvaraj_preparation_2015">(Selvaraj et al. 2015)</span>, lactate <span class="citation" data-cites="walsh_barium_1961">(Walsh 1961)</span>.</p>
+<p>Interestingly, titanium dioxide is somewhat soluble in various deep eutectic solvents <span class="citation" data-cites="tian_application_2010">(Tian, Li, and Hua 2010)</span>.</p>
+<p>Titanium dioxide alone might suffice for a decent capacitor with a dielectric constant of ~50. TiO2 pucks were made by slip casting in plaster molds using dilute ammonia as a dispersant <span class="citation" data-cites="chesley_high_1946">(Chesley and Tisza 1946)</span>.</p>
+<p>Barium titanate alone may not have a long lifetime <span class="citation" data-cites="coffeen_barium_1957">(Coffeen 1957)</span>. More research is needed.</p>
+<p>Strontium titanate is used to make artificial diamonds. Could be an interesting crystal to grow for its pure beauty.</p>
+<p>Calcium copper titanate has a dielectric constant of <strong>10,000</strong> for bulk material at room temperature. The manufacture of which is relatively simple:</p>
+<blockquote>
+<p>The method normally uses stoichiometric amounts of the common precursors, i.e., CaCO3, CuO, and TiO2 for being mixed with suitable liquid (acetone or ethanol), using ball mill. To remove volatile impurities, the fine powder is calcined at 930 °C for a designated period of time (12 h). An appropriate amount (1 cc mL−1) of a suitable binder (PVA) is added to the powder and mixed uniformly before being compressed to form a pellet shape. The resulting product is first heated slowly (at a heating rate 5 °C min−1) to a particular temperature (1040 °C) to burn off the binder. The mixture is then maintained at this temperature for 10 h for annealing. The sample is later cooled under a controlled rate of cooling (cooling rate 5 °C min−1). <span class="citation" data-cites="ahmadipour_short_2016">(Ahmadipour, Ain, and Ahmad 2016)</span></p>
+</blockquote>
+<p>There are also wet chemical, combustion, and sol-gel methods. All of these methods require soluble titanium, which I am trying to avoid.</p>
+<p>However, the barium titanate doesn’t need to do anything but sit in the gap between the plates. This means I could just glue the titanate powder together. Literally glue <span class="citation" data-cites="chiang_polymer_2002">(Chiang and Popielarz 2002)</span>.</p>
+<p>Even if the density is reduced by 10%, who cares. With a dielectric constant of 1150-1600, a huge amount of capacitance can be packed into a small space. Composite materials also have the advantage of being castable. <span class="citation" data-cites="slenes_ceramic-polymer_2014">(Slenes, Berg, and De La Fuente 2014)</span></p>
+<p><span class="citation" data-cites="zhang_development_2011">(Zhang and Cheng 2011)</span> has a large table of polymer composites and their properties. An epoxy-CCTO dielectric would be awesome for the amateur.</p>
+<p>Honestly, metal powder polymer composites sound incredibly easy. Aluminum powder of appropriate size is sold by the pound. 80% 3 micron aluminum in epoxy has a maximum dielectric constant of 30. The only problem is the dielectric strength of such a material…</p>
+<p>I wonder what the dielectric constant of JB-Weld is?</p>
+<h3 id="barium-titanate-synthesis-test">Barium Titanate Synthesis Test</h3>
+<p>1/20th molar scale in a 50ml beaker:</p>
+<ul>
+<li>4.00g titanium dioxide + 9.87g barium carbonate are mixed</li>
+<li>27 ml (slight excess) of concentrated hydrochloric acid are added slowly (with vigorous bubbling)</li>
+<li>solution is neutralized with dilute sodium hydroxide (11g)</li>
+<li>barium titanate should precipitate out</li>
+</ul>
+<p><strong>NOTE: Barium salts are extremely toxic. Do not attempt without the proper PPE.</strong></p>
+<p>It looks like titanium dioxide doesn’t actually react with hydrochloric acid. I should have known that. The next test will probably be a solid state reaction at high temperature a la <span class="citation" data-cites="arendt_molten_1980">(Arendt 1980)</span>.</p>
+<h2 id="aug-2019-1">22 Aug 2019</h2>
+<p>Time to start putting down numbers. I think a ZVS driven flyback is my best starting point. A few tens of kilovolts.</p>
+<blockquote>
+<p>…the charging time required by the Marx before firing is approximately equal to <span class="math inline">\(2N^{2}RC\)</span> and the resistors reduce the charging efficiency. <span class="citation" data-cites="carey_marx_2002">(Carey and Mayes 2002)</span></p>
+</blockquote>
+<p>Some useful design equations for an inductor based design from that paper:</p>
+<p><span class="math inline">\(L_{stage} = {L_{eq} \over n}\\ C_{stage} = n C_{eq}\)</span></p>
+<p><span class="math inline">\(T_{pulse} = 0.8 \partial \sqrt{L_{eq} C_{eq}}\)</span></p>
+<p><span class="math inline">\(V_{out} = 0.7 n V_{charge}\)</span></p>
+<p><span class="math inline">\(Z = n \sqrt{\frac{L_{stage}}{C_{stage}}}\)</span></p>
+<p>So let’s pick an arbitrary firing rate of about 1 Hz and an arc length of 30cm. This seems scary enough for a Halloween decoration. The dielectric strength of air is around 3kV/mm for infinite spherical electrodes but much less so for needle points. See <a href="http://www.kronjaeger.com/hv/hv/msr/spk/index.html">Jochen’s spark length</a> page for a convenient table.</p>
+<p>So my output voltage should be somewhere in the range of 170kV (needle point) and 600kV (50cm diameter spherical electrode). Let’s call it 300kV. Also from that table, 2.5cm diameter components (spark gap electrodes, inductor OD’s, etc) are sufficient to prevent corona issues at 30kV.</p>
+<p>So my requirements thus far are:</p>
+<p><span class="math inline">\(V_{out} = 300kV\)</span></p>
+<p><span class="math inline">\(V_{charge} \approx 30kV\)</span></p>
+<p>Therefore:</p>
+<p><span class="math inline">\(n = 14\)</span></p>
+<p>Hmmm… Those <a href="https://www.amazon.com/Flexible-Plastic-Cutting-Colorful-Kitchen/dp/B01HN7ZGUQ/">flexible cutting mats</a> are suitable priced and appropriately thick polypropylene. 38cm x 30cm X 0.5mm. Using just a single sheet dielectric gives a capacitance of about 3.9nF and a dielectric strength of about 10kV (maybe less for a greater margin of error). They can be rolled to an OD of about 3cm.</p>
+<p>Four sheets of dielectric would provide the necessary 30kV (45kV for a 50% margin) voltage rating and give a 1nF capacitor.</p>
+<p>With my supposed 1nF caps the energy per discharge is:</p>
+<p><span class="math inline">\(E = 6.3J\)</span></p>
+<p>Holy hell <a href="https://www.youtube.com/watch?v=ojcUpDwt6FQ">that’s</a> a big Marx generator.</p>
+<h2 id="jun-2019">31 Jun 2019</h2>
+<p>Take a look at this <a href="https://www.youtube.com/watch?v=Yo618eM7rUc">440KV inductor based unit</a>. The comments are enlightening.</p>
+<h2 id="jun-2019-1">20 Jun 2019</h2>
+<p>The traditional, amateur Marx generator is triggered via spark gap and uses charging resistors. What about using something better? There are a couple types of triggered spark gaps shown in this paper <span class="citation" data-cites="mayes_spark_1999">(Mayes, Carey, and Nunnally 1999)</span>. Inductors instead of resistors could be used. They could be wound easily at home for cheap.</p>
+<span class="math display">\[\begin{equation}
+\beta = N^2 \frac{C&#39;}{C} = \frac{\textrm{Parallel Capacitance of All C&#39;s}}{\textrm{Series Capacitance of All Cs}}
+\end{equation}\]</span>
+<p>C’ is the parasitic capacitance to ground. C is the value of each charging capacitor. This may not be a problem, however, for Marx’s that aren’t encapsulated in metallic housings. Spark ignition can be started in the middle of the stages to achieve faster rise times. <span class="citation" data-cites="buchenauer_optimizing_2010">(Buchenauer 2010)</span></p>
+<p>An <a href="http://users.tm.net/lapointe/Marx_Construction.html">example</a> of an amateur design based on inductors instead of resistors.</p>
+<p>An <a href="https://4hv.org/e107_plugins/forum/forum_viewtopic.php?123977">example</a> of one with homemade capacitors.</p>
+<p>How to charge? Flyback, MOT, Cockcroft-Walton voltage multiplier?</p>
+<p>DIY capacitors? Confirmed: cheap emergency blankets made from aluminized polyester are conductive but only on one side. Mylar (polyester) has a dielectric strength around 7KV/mil. I doubt these cheap blankets are more than half a mil, so they will need some other form of insulation. They may not be able to take the current, though. Mineral oil soaked kraft paper is cheap. Dissipation factor is higher for oil saturated paper versus plastics. Mylar has a relatively high dissipation factor (0.005) for a polymer <a href="http://users.tm.net/lapointe/Plastics.htm">source</a>. HDPE has about ten times lower dissipation but has a dielectric strength of 5kv/mil. Polypropylene is better still with 8kv/mil and 0.0003. Dielectric constants are all between two and four for the commonly available polymers.</p>
+<p>I think oil-impregnated polypropylene is the best option. HDPE sheet is more common, though.</p>
+<p>Dual polarity charging reduces the number of required spark gaps by half <span class="citation" data-cites="heffernan_fast_2005">(Heffernan, Curry, and McDonald 2005)</span>.</p>
+<p>Liquid resistors made from copper sulfate are easy to make out of tubing and copper plugs… <span class="citation" data-cites="heffernan_fast_2005">(Heffernan, Curry, and McDonald 2005)</span> A high voltage probe based on copper sulfate would be awesome and cheap. 22 <span class="math inline">\(\Omega\)</span> per centimeter for a saturated <span class="math inline">\(CuSO_{4}\)</span> solution. A <a href="http://www.pulsedpower.net/Applets/PulsedPower/CopperSulfateResistor/CopperSulfateResistor.html">design calculator</a>.</p>
+<p><a href="https://web.archive.org/web/20191219110824/home.earthlink.net/~jimlux/hv/rwater.htm">A discussion on water resistors</a>.</p>
+<h1 id="bibliography">Bibliography</h1>
+<!--notes-->
+<!--links-->
+<div id="refs" class="references">
+<div id="ref-ahmadipour_short_2016">
+<p>Ahmadipour, Mohsen, Mohd Fadzil Ain, and Zainal Arifin Ahmad. 2016. “A Short Review on Copper Calcium Titanate (CCTO) Electroceramic: Synthesis, Dielectric Properties, Film Deposition, and Sensing Application.” <em>Nano-Micro Letters</em> 8 (4): 291–311. <a href="https://doi.org/10.1007/s40820-016-0089-1" class="uri">https://doi.org/10.1007/s40820-016-0089-1</a>.</p>
+</div>
+<div id="ref-arendt_molten_1980">
+<p>Arendt, Ronald H. 1980. Molten salt synthesis of barium and/or strontium titanate powder. US4233282A, issued November 1980. <a href="https://patents.google.com/patent/US4233282A/en?q=barium+titanate&amp;before=priority:19700101" class="uri">https://patents.google.com/patent/US4233282A/en?q=barium+titanate&amp;before=priority:19700101</a>.</p>
+</div>
+<div id="ref-buchenauer_optimizing_2010">
+<p>Buchenauer, C. Jerald. 2010. “Optimizing Compact Marx Generator Networks.” <em>IEEE Transactions on Plasma Science</em> 38 (10): 2771–84. <a href="https://doi.org/10.1109/TPS.2010.2062531" class="uri">https://doi.org/10.1109/TPS.2010.2062531</a>.</p>
+</div>
+<div id="ref-carey_marx_2002">
+<p>Carey, W.J., and J.R. Mayes. 2002. “Marx Generator Design and Performance.” In <em>Conference Record of the Twenty-Fifth International Power Modulator Symposium, 2002 and 2002 High-Voltage Workshop.</em>, 625–28. Hollywood, CA, USA: IEEE. <a href="https://doi.org/10.1109/MODSYM.2002.1189556" class="uri">https://doi.org/10.1109/MODSYM.2002.1189556</a>.</p>
+</div>
+<div id="ref-chesley_high_1946">
+<p>Chesley, F G, and Laszlo Tisza. 1946. “High Dielectric Constant Ceramics.” <em>INDUSTRIAL AND ENGINEERING CHEMISTRY</em> 38 (11): 13.</p>
+</div>
+<div id="ref-chiang_polymer_2002">
+<p>Chiang, C. K., and R. Popielarz. 2002. “Polymer Composites with High Dielectric Constant.” <em>Ferroelectrics</em> 275 (1): 1–9. <a href="https://doi.org/10.1080/00150190214285" class="uri">https://doi.org/10.1080/00150190214285</a>.</p>
+</div>
+<div id="ref-coffeen_barium_1957">
+<p>Coffeen, William W. 1957. Barium titanate ceramic dielectrics. US2789061A, issued April 1957. <a href="https://patents.google.com/patent/US2789061A/en?q=barium+titanate&amp;before=priority:19700101&amp;page=5" class="uri">https://patents.google.com/patent/US2789061A/en?q=barium+titanate&amp;before=priority:19700101&amp;page=5</a>.</p>
+</div>
+<div id="ref-di_method_1961">
+<p>Di, Vita Sam, and Robert J. Fischer. 1961. Method of producing barium titanate. US2985506A, issued May 1961. <a href="https://patents.google.com/patent/US2985506A/en?q=barium+titanate&amp;before=priority:19700101" class="uri">https://patents.google.com/patent/US2985506A/en?q=barium+titanate&amp;before=priority:19700101</a>.</p>
+</div>
+<div id="ref-heffernan_fast_2005">
+<p>Heffernan, Laura K., Randy D. Curry, and Kenneth F. McDonald. 2005. “A Fast, 3mv Marx Generator for Megavolt Oil Switch Testing with an Integrated Abramyan Network Design.” In <em>2005 IEEE Pulsed Power Conference</em>, 596–99. Monterey, CA: IEEE. <a href="https://doi.org/10.1109/PPC.2005.300729" class="uri">https://doi.org/10.1109/PPC.2005.300729</a>.</p>
+</div>
+<div id="ref-mayes_spark_1999">
+<p>Mayes, J.R., W.J. Carey, and W.C. Nunnally. 1999. “Spark Gap Triggering with Photoconductive Switches.” In <em>Digest of Technical Papers. 12th IEEE International Pulsed Power Conference. (Cat. No.99CH36358)</em>, 2:1203–6. Monterey, CA, USA: IEEE. <a href="https://doi.org/10.1109/PPC.1999.823738" class="uri">https://doi.org/10.1109/PPC.1999.823738</a>.</p>
+</div>
+<div id="ref-pechini_barium_1966">
+<p>Pechini, Maggio P. 1966. Barium titanium citrate, barium titanate and processes for producing same. US3231328A, issued January 1966. <a href="https://patents.google.com/patent/US3231328A/en?q=barium+titanate&amp;before=priority:19700101&amp;page=1" class="uri">https://patents.google.com/patent/US3231328A/en?q=barium+titanate&amp;before=priority:19700101&amp;page=1</a>.</p>
+</div>
+<div id="ref-selvaraj_preparation_2015">
+<p>Selvaraj, Mahalakshmi, V. Venkatachalapathy, J. Mayandi, S. Karazhanov, and J. M. Pearce. 2015. “Preparation of Meta-Stable Phases of Barium Titanate by Sol-Hydrothermal Method.” <em>AIP Advances</em> 5 (11): 117119. <a href="https://doi.org/10.1063/1.4935645" class="uri">https://doi.org/10.1063/1.4935645</a>.</p>
+</div>
+<div id="ref-slenes_ceramic-polymer_2014">
+<p>Slenes, Kirk, Nathan Berg, and Rafael De La Fuente. 2014. “Ceramic-Polymer Composite Capacitors for Compact Pulsed Power Applications.” In <em>2014 IEEE International Power Modulator and High Voltage Conference (IPMHVC)</em>, 145–48. Santa Fe, NM, USA: IEEE. <a href="https://doi.org/10.1109/IPMHVC.2014.7287229" class="uri">https://doi.org/10.1109/IPMHVC.2014.7287229</a>.</p>
+</div>
+<div id="ref-tian_application_2010">
+<p>Tian, Guo-cai, Jian Li, and Yi-xin Hua. 2010. “Application of Ionic Liquids in Hydrometallurgy of Nonferrous Metals.” <em>Transactions of Nonferrous Metals Society of China</em> 20 (3): 513–20. <a href="https://doi.org/10.1016/S1003-6326(09)60171-0" class="uri">https://doi.org/10.1016/S1003-6326(09)60171-0</a>.</p>
+</div>
+<div id="ref-walsh_barium_1961">
+<p>Walsh, Robert J. 1961. Barium titanate. US2988422A, issued June 1961. <a href="https://patents.google.com/patent/US2988422A/en?q=barium+titanate&amp;before=priority:19700101&amp;page=2" class="uri">https://patents.google.com/patent/US2988422A/en?q=barium+titanate&amp;before=priority:19700101&amp;page=2</a>.</p>
+</div>
+<div id="ref-zhang_development_2011">
+<p>Zhang, Lin, and Z.-Y. Cheng. 2011. “DEVELOPMENT OF POLYMER-BASED 03 COMPOSITES WITH HIGH DIELECTRIC CONSTANT.” <em>Journal of Advanced Dielectrics</em> 01 (04): 389–406. <a href="https://doi.org/10.1142/S2010135X11000574" class="uri">https://doi.org/10.1142/S2010135X11000574</a>.</p>
+</div>
+</div>
+:ET

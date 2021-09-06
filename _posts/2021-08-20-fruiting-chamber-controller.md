@@ -6,7 +6,7 @@ category: active
 tags: fungi
 phase: write-up
 author: Elijah K. Dunn
-zotero-collection:
+zotero-collection: 
 gallery: fruiting
 abstract: >
   Building a controller for my mushroom fruiting chamber.

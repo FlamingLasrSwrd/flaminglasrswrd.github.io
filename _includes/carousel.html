@@ -1,13 +1,25 @@
-{% assign letterstring = "a,b,c,d,e,f,g,h,i,j,k,l,m,n" %}
+{% assign letterstring = "a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z" %}
 {% assign letters = letterstring | split: ',' %}
 <!--https://jekyllcodex.org/without-plugin/slider/-->
 
+{% assign imagePaths = "" | split: "" %}
+{% for image in site.static_files reversed %}
+  {% assign filename = image.path | split: "/" | last %}
+  {% assign project = filename | split: "-" | first %}
+  {% if project contains page.gallery %}
+    {% if filename contains "thumb" %}
+      {% assign new = image.path | split: "," %}
+      {% assign imagePaths = imagePaths | concat: new %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
 <div class="carousel__holder">
     <div class="carousel">
-        {% for item in site.data.carousel.images %}
+        {% for path in imagePaths %}
           <input class="carousel__activator" type="radio" name="carousel" id="{{ letters[forloop.index0] }}" {% if forloop.first %}checked="checked"{% endif %} />
         {% endfor %}
-        {% for item in site.data.carousel.images %}
+        {% for path in imagePaths %}
           {% if forloop.index == forloop.length %}
             {% assign nextindex = 0 %}
           {% else %}
@@ -27,15 +39,19 @@
         {% endfor %}
         <div class="carousel__track">
           <ul>
-            {% for item in site.data.carousel.images %}
-            <li class="carousel__slide" style="background-image: url('{{ item.image }}');"></li>
+            {% for path in imagePaths %}
+              <li class="carousel__slide">
+                <a href="{{ site.baseurl }}{{ path | remove: "-thumb" }}" target="_blank">
+                  <img src="{{ site.baseurl }}{{ path }}" alt="image"/>
+                </a>
+              </li>
             {% endfor %}
           </ul>
         </div>
         <div class="carousel__indicators">
-            {% for item in site.data.carousel.images %}
-              <label class="carousel__indicator" for="{{ letters[forloop.index0] }}"></label>
-            {% endfor %}
+          {% for path in imagePaths %}
+            <label class="carousel__indicator" for="{{ letters[forloop.index0] }}"></label>
+          {% endfor %}
         </div>
     </div>
 </div>
@@ -54,7 +70,7 @@
 .carousel__activator {
   display: none;
 }
-{% for item in site.data.carousel.images %}
+{% for path in imagePaths %}
 .carousel__activator:nth-of-type({{ forloop.index }}):checked ~ .carousel__track {
   -webkit-transform: translateX(-{{ forloop.index0 }}00%);
           transform: translateX(-{{ forloop.index0 }}00%);
@@ -89,9 +105,8 @@
   cursor: pointer;
   border-width: 5px 5px 0 0;
   border-style: solid;
-  border-color: #fafafa;
+  border-color: black;
   opacity: 0.35;
-  opacity: 1;
   outline: 0;
   z-index: 3;
 }
@@ -146,7 +161,7 @@
   right: 0;
   opacity: 1;
 }
-{% for item in site.data.carousel.images %}
+{% for path in imagePaths %}
 .carousel__track .carousel__slide:nth-of-type({{ forloop.index }}) {
   -webkit-transform: translateX({{ forloop.index0 }}00%);
           transform: translateX({{ forloop.index0 }}00%);
@@ -171,7 +186,7 @@
 .carousel__indicator {
   background-color: #fafafa;
 }
-{% for item in site.data.carousel.images %}
+{% for path in imagePaths %}
 .carousel__slide:nth-of-type({{ forloop.index }}),
 .carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type({{ forloop.index }}) {
   background-size: cover;

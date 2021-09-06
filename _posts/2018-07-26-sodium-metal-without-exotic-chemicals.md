@@ -7,10 +7,10 @@ phase: experimental
 tags: chemistry
 author: Elijah K. Dunn
 zotero-collection: https://www.zotero.org/ekdunn/items/collectionKey/BSA2ISD9
-gallery: des/sodium
+gallery: sodium
 abstract: >
-  Making sodium metal without using exotic chemicals, solvents, or apparatus using deep eutectic solvents.
-graphical-abstract: /assets/img/des/sodium/190720-163819-des-sodium-platinum-electrolysis-sponge-zinc-deposition.jpg
+  Making sodium metal without using exotic chemicals, solvents, or apparatus.
+graphical-abstract: /assets/img/sodium/sodium-des-platinum-electrolysis-sponge-zinc-deposition.jpg
 ---
 
 # Intro
@@ -24,6 +24,10 @@ The idea here is to make sodium using deep eutectic solvents to catalyze the rea
 - Might face the same problems that NurdRage was having in his sodium production due to water contamination
 
 # Work Log
+
+## TODO
+
+- [ ] Need constant current power supply
 
 # Bibliography
 

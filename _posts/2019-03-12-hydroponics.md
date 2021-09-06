@@ -6,7 +6,7 @@ category: active
 phase: design
 tags: biology electronics
 author: Elijah K. Dunn
-zotero-collection: https://www.zotero.org/ekdunn/items/collectionKey/LHPUXSLC
+zotero-collection: https://www.zotero.org/ekdunn/collections/LHPUXSLC
 gallery: hydroponics
 abstract: >
   Growing plants in water: an automated approach.
@@ -102,9 +102,9 @@ I started with [this](https://scienceinhydroponics.com/2017/07/making-your-own-d
 ## 20 Aug 2019
 Built an ultrasonic cloner today.
 
-![](/assets/img/hydroponics/190820-131938-hydroponics-ultrasonic-cloner-side-view.JPG)
+![image](/assets/img/hydroponics/hydroponics-ultrasonic-cloner-side-view.JPG)
 
-![](/assets/img/hydroponics/190820-132038-hydroponics-ultrasonic-cloner-peek-mist.JPG)
+![image](/assets/img/hydroponics/hydroponics-ultrasonic-cloner-peek-mist.JPG)
 
 I have several hydroponic tests in the works and I want a stable line of plants to compare the results.
 

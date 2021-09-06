@@ -4,9 +4,13 @@ title: "Non-Antibiotics and Human Gut"
 date: "2018-03-20 13:10"
 category: archive
 phase: write-up
-tags: biology steemit
+tags: biochemistry
+author: Elijah K. Dunn
+zotero-collection:
+gallery:
 abstract: >
   New research in the journal Nature has demonstrated that many of the drugs we take every day may have hitherto unknown microbiome effects: My notes.
+graphical-abstract:
 ---
 
 # Intro

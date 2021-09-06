@@ -1,11 +1,16 @@
 ---
 layout: post
 title:  "Graduate School Timeline"
-date:   2017-08-27
+date: "2017-08-27"
 tags: school
-category: active
+category: archive
+phase: exploratory
+author: Elijah K. Dunn
+zotero-collection:
+gallery: 
 abstract: >
   Now that my cursory evaluation of [applying to grad school](/active/2017/08/25/grad-school/) has been written I can focus on the detailed implementation and lay out my timeline for the next three months.
+graphical-abstract:
 ---
 
 # Daily Work
@@ -27,6 +32,7 @@ Learn python -> Use python
 
 
 # Work Log
+
 This is mostly for my benefit. Each day has a before and an after in which I reflect on the day as well as some metadata.
 
 ## Sunday, Aug 27, 2017 - Weekly Review

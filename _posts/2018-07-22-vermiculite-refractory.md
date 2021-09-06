@@ -6,11 +6,11 @@ category: archive
 phase: results
 tags: chemistry fire
 author: Elijah K. Dunn
-zotero-collection:
-gallery: verm-refractory
+zotero-collection: https://www.zotero.org/ekdunn/collections/N6I2EEN5
+gallery: vermRefractory
 abstract: >
   A high temperature, insulating refractory exclusively from the hardware store at one-tenth the cost of and better than commercial firebricks or ceramic fiber. It is a pain to mold into complex shapes, however.
-graphical-abstract: /assets/img/verm-refractory/20180630_190114-verm-refractory-brick-testing.jpg
+graphical-abstract: /assets/img/vermRefractory/vermRefractory-brick-testing.jpg
 ---
 
 **Update 30 Dec 2018:** Molded refractories are a pain to deal with because of the required compression. A better option is to make a brick mold and build your furnace separately.
@@ -148,25 +148,25 @@ If this goes well, I will move on to using potassium silicate for greater temper
 
 This test run will be with 100ml of fine vermiculite and 10ml (12g total; 3.5g silicate) of my silicate solution. The ingredients are mixed in a baggie and poured into a 2 inch PVC section of 4 inches length. The mix is then compressed under my weight to a volume of about half. I then used a carbon dioxide generator to blow through about 1L of CO2, which is way more than required (25% by weight of silicate or 0.9g/400ml).
 
-![](/assets/img/verm-refractory/190811-143230-verm-refractory-silicate-test-1-fill.JPG)
+![image](/assets/img/vermRefractory/190811-143230-vermRefractory-silicate-test-1-fill.JPG)
 
-![](/assets/img/verm-refractory/190811-143428-verm-refractory-silicate-test-1-compressed.JPG)
+![image](/assets/img/vermRefractory/190811-143428-vermRefractory-silicate-test-1-compressed.JPG)
 
-![](/assets/img/verm-refractory/190811-150942-verm-refractory-silicate-test-1-CO2-setup.JPG)
+![image](/assets/img/vermRefractory/190811-150942-vermRefractory-silicate-test-1-CO2-setup.JPG)
 
 So... ya... that didn't work. The test puck disintegrated.
 
-![](/assets/img/verm-refractory/190811-153956-verm-refractory-silicate-test-1-failure.JPG)
+![image](/assets/img/vermRefractory/190811-153956-vermRefractory-silicate-test-1-failure.JPG)
 
 Let's try more silicate. 30ml silicate solution per 100ml vermiculite this time. Upon compression the silicate solution dribbled out of the bottom of the mold. I decided to bake the puck in the oven at 500F before exposing it to direct flame to reduce heat shock and cracking. I might have to make a more concentrated silicate solution.
 
 The puck seems to be cured on the outside.
 
-![](/assets/img/verm-refractory/190811-171330-verm-refractory-silicate-test-2.JPG)
+![image](/assets/img/vermRefractory/190811-171330-vermRefractory-silicate-test-2.JPG)
 
 But it definitely isn't on the inside.
 
-![](/assets/img/verm-refractory/190811-202738-verm-refractory-silicate-test-2-inside.JPG)
+![image](/assets/img/vermRefractory/190811-202738-vermRefractory-silicate-test-2-inside.JPG)
 
 ## 30 Jun 2018
 - Refractory bricks: 8"x4"x2.5" -> 80 in^3 -> 0.0463 ft^3 -(23.6 lbs/ft^3)-> 1.09 lbs -> **fill each brick mold with 494g refractory mix**

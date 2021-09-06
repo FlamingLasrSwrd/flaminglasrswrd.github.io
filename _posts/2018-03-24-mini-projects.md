@@ -3,9 +3,13 @@ layout: "post"
 title: "Mini Projects"
 date: "2018-03-24 15:41"
 category: archive
+tags: computers
+author: Elijah K. Dunn
+zotero-collection:
+gallery:
 abstract: >
   A list of shorter projects.
-graphical-abstract: /assets/img/penny-necklace/penny-necklace-collage.jpg
+graphical-abstract: /assets/img/pennyNecklace/pennyNecklace-collage.jpg
 ---
 
 # Neo4j Ubuntu 18.04
@@ -17,7 +21,7 @@ sudo apt-get install oracle-java8-installer
 ```
 
 # Jafar Costume
-![](/assets/img/jafarstaff.jpg)
+![image](/assets/img/jafar/jafarstaff.jpg)
 
 # References in Markdown Regex
 ```
@@ -172,7 +176,7 @@ Apparently, that bluetooth driver is unnecessary. ```sudo service bluetooth star
 # Penny Charms
 A friend of mine is making a necklace and needs a few charms made from pennies.
 
-![](/assets/img/penny-necklace/penny-necklace-collage.jpg)
+![image](/assets/img/pennyNecklace/pennyNecklace-collage.jpg)
 
 They are all 2013 pennies. Holes were drilled and countersunk to prevent wear. The rings are made from 14 AWG copper wire and soldered with lead-free (silver) solder. I attempted to solder the ring directly to the penny at a 90 degree angle, but couldn't get the solder to flow well enough to make it attractive.
 

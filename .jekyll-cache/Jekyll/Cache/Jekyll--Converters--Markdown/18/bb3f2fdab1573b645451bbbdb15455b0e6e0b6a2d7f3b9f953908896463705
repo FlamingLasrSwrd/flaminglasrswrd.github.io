@@ -1,0 +1,24 @@
+I"�<h1 id="work-log">Work Log</h1>
+<h2 id="todo">TODO</h2>
+<ul>
+<li>[ ]</li>
+</ul>
+<h2 id="nov-2020">10 Nov 2020</h2>
+<p>I’ve been constructing a test version of the microreactor using a few scavenged HPLC pumps. It consists of three inputs. Two are mixed together before the third is added. It is designed to be operated in a coolant bath.</p>
+<figure>
+<img src="/assets/img/microreactor/microreactor-flow-chem-hplc-test-setup.JPG" alt="image" /><figcaption>image</figcaption>
+</figure>
+<p>Unfortunately, HPLC pumps are not perfect. They definitely can’t be used for nitration studies.</p>
+<h2 id="jun-2020">24 Jun 2020</h2>
+<p>Project Created!</p>
+<p>I’ve probably looked through 30 eBay pages trying to find 1/16&quot; stainless steel tubing. My acceptably small result list of 712 items from this eBay search string:</p>
+<blockquote>
+<p>SS tube -fitting -NPT -fittings -elbow -union -3/8 -1/2 -3/4 -5/8 -adapter -nut -clamp -connector -plug -gauge -MNPT -US -gauges -beer -sleeve</p>
+</blockquote>
+<p>I was still looking for tee’s and crosses so I left those in the search.</p>
+<p>I finally stumbled across the Waters line of tubing for HPLC. The reason I didn’t find it before is that Waters labels their tubing in thousands of an inch, not the customary fractions (e.g. 0.062&quot; instead of 1/16“).</p>
+<p>Anyway, now I have a decent supply available of longer SS tubes that don’t cost hundreds of dollars (for 50 meter increments).</p>
+<h1 id="bibliography">Bibliography</h1>
+<!--notes-->
+<!--links-->
+:ET

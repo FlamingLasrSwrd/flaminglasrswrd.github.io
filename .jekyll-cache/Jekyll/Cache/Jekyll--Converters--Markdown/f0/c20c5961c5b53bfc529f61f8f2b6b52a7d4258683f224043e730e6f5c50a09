@@ -1,0 +1,153 @@
+I"=<h1 id="installing-marlin-on-the-sapphire-pro">Installing Marlin on the Sapphire Pro</h1>
+<p><em>updated 19 Jan 2020</em><br />
+<em>The Marlin contributors have updated the config files on the repo to include changes for the upcoming release and, as such, they are not compatible with 2.0.7.2. Download the archived versions of the config files from my site to get it working. When the next release comes out, I will change this procedure again to fit.</em></p>
+<p>This is the process of how I installed Marlin 2.x on the Sapphire Pro in Nov 2020. Since the Marlin source code is ever-changing, I would consult their <a href="https://github.com/MarlinFirmware/">repo</a> or <a href="https://marlinfw.org/">website</a> before attempting this procedure.</p>
+<p>For reference, I have never used Marlin, Microsoft VS studio, or uploaded firmware before. So there are bound to be errors and improvements.</p>
+<p>I have archived the config files that I used on my website. Download the <a href="/assets/src/sapphire-pro/Configuration.h">config.h</a> and <a href="/assets/src/sapphire-pro/Configuration_adv.h">config_adv.h</a> files here. I encourage you to use the latest from github, however.</p>
+<p>Download the <a href="https://marlinfw.org/meta/download/">latest release of Marlin</a> (2.0.7.2).</p>
+<p>Replace the example config files with your Sapphire Pro specific <em>Configuration.h</em> and <em>Configuration_adv.h</em> files in the <code>../Marlin-2.0.x/Marlin/</code> folder.</p>
+<p>Install <a href="https://code.visualstudio.com/docs/setup/setup-overview">Microsoft Visual Studio Code</a> using the <a href="https://go.microsoft.com/fwlink/?LinkID=760868">.deb package for ubuntu</a>. I would have used the FOSS Arduino IDE, but it doesn’t support the STM32F103 chip.</p>
+<p>Install the <a href="https://marketplace.visualstudio.com/items?itemName=MarlinFirmware.auto-build">AutoBuild Marlin extension</a> for VS Code by pasting the <code>ext install MarlinFirmware.auto-build</code> command into the quick open prompt (activated by pressing <em>Ctrl+p</em>).</p>
+<p>After a restart and <a href="https://code.visualstudio.com/docs/getstarted/telemetry">quick settings change to disable Microsoft from collecting data on you</a>, import the marlin source code folder using the PlatformIO panel “Import Arduino Project” button from the quick access panel.</p>
+<figure>
+<img src="/assets/img/log/platformIO-quick-access-panel.png" alt="image" /><figcaption>image</figcaption>
+</figure>
+<p>Search for a <code>STM32F103VE</code> chip and locate the <em>Marlin-2.0.x</em> release folder you downloaded earlier.</p>
+<figure>
+<img src="/assets/img/log/import-robin-nano-1.2.png" alt="image" /><figcaption>image</figcaption>
+</figure>
+<p>Click the Marlin AutoBuild tab and build the firmware by clicking the hammer icon.</p>
+<figure>
+<img src="/assets/img/log/sapphire-pro-marlin-build-settings.png" alt="image" /><figcaption>image</figcaption>
+</figure>
+<p>Grab the firmware binary at <code>../Marlin-2.0.x/.pio/build/mks_robin_nano35.bin</code> and transfer it to a SD card. When inserted into the Sapphire Pro, the bootloader on the Robin Nano automatically installs the new firmware.</p>
+<p>And there you have it folks: Marlin 2.0 on the MKS Robin Nano 1.2 in a Sapphire Pro.</p>
+<figure>
+<img src="/assets/img/fdm/fdm-marline-firmware-main-screen.JPG" alt="image" /><figcaption>image</figcaption>
+</figure>
+<p>Don’t mind the negative temperature values. The sensors aren’t connected to the board yet.</p>
+<h1 id="work-log">Work Log</h1>
+<h2 id="todo">TODO</h2>
+<ul>
+<li>[ ]</li>
+</ul>
+<h2 id="jul-2021">19 Jul 2021</h2>
+<p>Welp. I’m stupid. I thought a roll of PETG was PLA. No wonder that I was having trouble printing with it. This may have been the source of the problems I have been facing over the last few months.</p>
+<h2 id="jul-2021-1">01 Jul 2021</h2>
+<p>Printer has been down since Feb. Bought new nozzles, lost in the mail, reshipped, lost in my house, installed, failed.</p>
+<p>I think the tiny hotend just can’t handle the poor thermal conductivity of steel nozzles. I’m just going to order a few brass nozzles from China and move on to better builds.</p>
+<p>I’m looking into a better design, namely, Voron.</p>
+<p>The V2.4 seems like the best option for me. They even have a <a href="https://pif.voron.dev">“PrintItForward”</a> service for newbs who can’t print ABS (like me).</p>
+<p><a href="https://www.vorondesign.com/sourcing_guide?model=V2.4">Sourcing Guide</a></p>
+<p>I submitted a request on the PIF service. By the current fulfillment rate, I’ll get the parts in a few months.</p>
+<p>I’ll just slowly accumulate the other pieces in the meantime.</p>
+<h2 id="feb-2021">16 Feb 2021</h2>
+<p>The printer is down for the count. After several failed attempts at printing a (+450g) cooling jacket, I have determined that the nozzle is screwed. Or the block. Or just the PTFE tube. Or something else. Idk. The Sapphire pro was worth every penny of that $325 purchase price…</p>
+<p>I’m definitely looking forward to assembling a better quality printer. Like the SK-GO 2 or one of the LayerFused designs.</p>
+<h2 id="jan-2021">19 JAN 2021</h2>
+<p>I updated the marlin installation instructions. Instead of relying on the Marlin repo to maintain current, working versions of the config files, I simply backed up copies on my website.</p>
+<h2 id="dec-2020">10 DEC 2020</h2>
+<p>I’m know now why the Sapphire Pro is so cheap. While attempting to repair one of the broken solder joints on a blower fan, the board trace broke off. So now I have to buy new fans. This combined with the poor solder joints on the endstop switches and the broken temperature sensor leads me to believe that some corners were cut. Go figure…</p>
+<h2 id="dec-2020-1">05 Dec 2020</h2>
+<p>Boron nitride is used as a high-temperature, electrical insulating thermal “paste”. An aqueous suspension of hexagonal BN is applied to thermistors, heaters, etc.. When heat is applied, the water evaporates leaving a white semi-solid.</p>
+<h2 id="nov-2020">30 Nov 2020</h2>
+<p>I found a 600C thermistor. EPCOS B57650H0824A001 (<a href="https://www.farnell.com/datasheets/2287552.pdf">datasheet</a>). It only costs $7.41 which is comparable to the standard 100K <a href="https://www.digikey.com/en/products/detail/epcos-tdk-electronics/B57540G0104F000/739871">B57540G0104F000</a> at $6.33</p>
+<p>It is listed on digikey as a “5K Ohm” NTC thermistor, but that’s actually the resistance at 200C. Remember to <strong>check your datasheets people!</strong>.</p>
+<p>The <a href="https://www.st.com/en/microcontrollers-microprocessors/stm32f103ve.html">datasheet</a> for the chip that drives the MKS Robin Nano v1.2 (STM32F103VE) shows that it uses 12-bit ADCs. That’s 4096 values.</p>
+<p>The value of an RTD is measured using a <a href="https://en.wikipedia.org/wiki/Voltage_divider#Resistive_divider">resistance voltage divider</a> circuit.</p>
+<p><span class="math inline">\(V_{RTD} = {R_{RTD} \over R_{pullup} + R_{RTD}} V_{in}\)</span></p>
+<p>The voltage that is measured by the ADC is a function of the pullup resistance (typically 4.7 kOhm), the input reference voltage, and the RTD resistance.</p>
+<p>I know that my board uses 3.3V input based on the <a href="https://github.com/makerbase-mks/MKS-Robin-Nano-V1.X/wiki/Wiring_Pinout_and_Size">product information page</a>, which is typical for ARM chips. Some TTL chips use up to 5V.</p>
+<p>So the full range of values that the ADC can represent has a voltage discrimination of 0.8mV (3.3/4096).</p>
+<figure>
+<img src="/assets/img/fdm/B57650-thermistor-resolution.png" alt="image" /><figcaption>image</figcaption>
+</figure>
+<p>So as you can see, the resolution (<em>higher is better</em>) peaks around 200C which is almost perfect for PLA printing. You can shift the resolution curve by changing the pull up resistance value at the expense of lower peak resolution.</p>
+<p>If you are planning on doing the majority of your printing above 250C, I would recommend changing the pull up resistance.</p>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th>Average Resolution</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Temp Range</strong></td>
+<td><strong>4.7K</strong></td>
+<td><strong>1K</strong></td>
+</tr>
+<tr class="even">
+<td><strong>200-250C</strong></td>
+<td>95</td>
+<td>72</td>
+</tr>
+<tr class="odd">
+<td><strong>250-300C</strong></td>
+<td>57</td>
+<td>84</td>
+</tr>
+</tbody>
+</table>
+<p>The resolution of each range given a pull up resistance value of 4.7K ohm or 1K ohm. <em>higher is better</em></p>
+<p>You can download the <a href="/assets/doc/thermistor-resolution.ods">spreadsheet used to make the graph</a>.</p>
+<p>I did not include the actual values in the graph since that would give the wrong impression. This thermistor has a standard 2% resistance error and a 1% beta error. The resistance value also has a variable deviation from ideal with temperature. Regardless, we are talking about resolution not accuracy. Plus, I’m not sure if I even did the calculation correctly. But the shape of the curve should be adequate for demonstration purposes.</p>
+<p>The Robin nano also features a MAX31855 Thermocouple to digital converter. I don’t think I will buy a thermocouple at the moment but mostly because I have a few k-type thermocouples already that I can use for testing.</p>
+<p>I’m going to buy some other 100K NTC themistors (<a href="https://www.digikey.com/en/products/detail/littelfuse-inc/104JL1A/1014561">Littlefuse 104JL1A</a>). They are cheap and appear to be quite accurate. And we will throw a few NB-PTCO-029‎ PT100 platinum RTDs on there as well.</p>
+<p>I really don’t think we have to worry about the response time of the sensing element. Most hotends have a standard 3mm stainless steel cartridge insert. The thermal resistance of the steel and filler will probably be of greater impact than the sensor itself.</p>
+<p><a href="https://www.prelectronics.com/the-fundamentals-of-rtd-temperature-sensors/">Some info</a> on characterizing RTDs.</p>
+<p>To directly interface with my Robin nano, I need a RTD to voltage converter. A <a href="https://www.ti.com/lit/ug/tidu969/tidu969.pdf">paper</a> from TI on a RTD to voltage circuit, and <a href="https://ww1.microchip.com/downloads/en/AppNotes/00687b.pdf">a similar document</a> from Microchip. Adafruit has a <a href="https://www.adafruit.com/product/3648">RTD to digital breakout board</a> based on the MAX31865 chip.</p>
+<p>Oddly enough, there appears to be parts of a SPI connection on the Robin nano.</p>
+<figure>
+<img src="/assets/img/fdm/robin-nano-1v2-extra-SPI.png" alt="image" /><figcaption>image</figcaption>
+</figure>
+<p>You can see the SPI2-MISO and SPI2-SCK connections listed under the thermocouple measuring header but no mention of MOSI or SS. So maybe the SPI interface of the MAX31855 is exposed for who know what reason? It might be possible to interface with the ARM chip through these connections or even bit bang the SPI interface on one of the other connectors, but I don’t think it is worth it. Time would be better served by starting with a better board.</p>
+<p>On a completely different note, connectors are really hard to find when you don’t know exactly what you are looking for.</p>
+<p>For the record, the connectors that are typically found on DIY circuit boards, stepper motors, and most things 3D, are the (I think) XH headers, XHP housings, and SXH sockets from JST Sales America Inc. <a href="https://www.jst-mfg.com/product/pdf/eng/eXH.pdf">XH Series Datasheet</a></p>
+<p>I’m a little confused. The official <a href="https://www.jst-mfg.com/product/detail_e.php?series=277">JST website</a> says that the XH-style connector has a 2.5mm pitch. NOT 2.54. Yet just about every reseller advertises the XH connector as 2.54mm. Even <a href="https://www.adafruit.com/product/4423">Adafruit</a>, which even includes a link to the same JST page I just did.</p>
+<p>PH headers, PHR housings, and SPH sockets are also common.</p>
+<h2 id="nov-2020-1">28 Nov 2020</h2>
+<p>This leaves me with choosing a proper hotend thermal measuring device. Most hobby 3D printers use NTC thermistors. Some of them are in a stainless steel capsule for protection and interchangeability.</p>
+<p>For some background, Marlin has a detailed <a href="https://marlinfw.org/docs/configuration/configuration.html#temperature-options">temperature sensors section</a>, RepRap has a good <a href="https://www.reprap.org/wiki/Thermistor">wiki on thermistors</a>, and Dyze Design has a <a href="https://dyzedesign.com/2016/09/comparison-between-temperature-sensors-used-in-3d-printers-part-2/">detailed comparison</a></p>
+<h2 id="nov-2020-2">27 Nov 2020</h2>
+<p>So the hotend thermistor (?) is broken on the 3d printer. I disassembled the entire printer in order to 1) repack the linear bearings, 2) fix the hot end thermistor, 3) fix cable routing, and 4) enclose the print area.</p>
+<p>My goal is to be able to print higher temperature materials, specifically polycarbonate.</p>
+<p>The problem, however, is that I have no idea what thermistor is used in the stock hotend. The thermistor attached to the print bed seems to be around 100K Ohm. The <a href="https://twotrees3d.com/">TwoTrees website</a> (<em>edit they do now</em>) doesn’t sell replacement thermistors or have any information on them. There are a few replacements advertised on banggood and aliexpress, but there are all different and all claim to fit the sapphire pro.</p>
+<p>So now I have to either take a guess at the thermistor value gamble that it is correct, or I can install my own firmware. I’m going to go with the latter.</p>
+<p>Marlin seems to be a good choice.</p>
+<p>After much debugging, I found a way. It is detailed above.</p>
+<p>I also disassembled, cleaned, and repacked the linear bearings.</p>
+<p>The ball bearings were 0.087&quot; or 2.2mm in diameter.</p>
+<ul>
+<li><a href="https://github.com/makerbase-mks/MKS-Robin-Nano-V1.X/wiki/Wiring_Pinout_and_Size">MKS Robin Nano 1.x Pinout</a></li>
+<li><a href="https://www.facebook.com/groups/twotrees3Dprinter/">TwoTrees Facebook Group</a></li>
+</ul>
+<h2 id="oct-2020">25 Oct 2020</h2>
+<p>The 3D printer is assembled. It went together smoothly and relatively easily. I probably spend more time cable managing than assembling.</p>
+<figure>
+<img src="/assets/img/fdm/fdm-sapphire-pro-initial-print.JPG" alt="image" /><figcaption>image</figcaption>
+</figure>
+<p>Just in time, too. I wanted to print a time-flies hourglass cane topper for my plague doctor costume for Halloween.</p>
+<figure>
+<img src="/assets/img/fdm/fdm-sapphire-pro-time-flies-supports.JPG" alt="image" /><figcaption>image</figcaption>
+</figure>
+<p>The 200g filament spool that came with the machine is pretty terrible. It tends to break in the middle of a print and it leaves quite a few artifacts.</p>
+<p>I ordered a couple kgs of cheap PLA from Amazon as a start.</p>
+<h2 id="oct-2020-1">21 Oct 2020</h2>
+<p>The printer arrived today. Wow that was fast.</p>
+<figure>
+<img src="/assets/img/fdm/fdm-sapphire-pro-unboxing-arrived.JPG" alt="image" /><figcaption>image</figcaption>
+</figure>
+<p>The only problem I had with the unboxing was that the bottom sheet metal cover was slightly bend on one corner.</p>
+<figure>
+<img src="/assets/img/fdm/fdm-sapphire-pro-unboxing-bent.JPG" alt="image" /><figcaption>image</figcaption>
+</figure>
+<h2 id="oct-2020-2">19 Oct 2020</h2>
+<p>I bought a 3D printer today: TwoTrees Sapphire Pro.</p>
+<h2 id="nov-2020-3">28 Nov 2020</h2>
+<p>Project Created!</p>
+<h1 id="bibliography">Bibliography</h1>
+<!--notes-->
+<!--links-->
+:ET

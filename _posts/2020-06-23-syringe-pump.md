@@ -7,10 +7,10 @@ phase: design
 tags: chemistry
 author: Elijah K. Dunn
 zotero-collection: https://www.zotero.org/ekdunn/collections/AC3I2IJV
-gallery: syringe-pump
+gallery: syringePump
 abstract: >
   Tweaking the open source designs of syringe pumps for some microreactor tests.
-graphical-abstract: /assets/img/syringe-pump/syringe-pump-poseidon-replication-build.JPG
+graphical-abstract: /assets/img/syringePump/syringePump-poseidon-replication-build.JPG
 ---
 
 # Parts Selection

@@ -4,19 +4,19 @@ title: "Nitric Acid"
 date: "2018-03-26 11:34"
 category: active
 phase: experimental
-tags: chemistry electronics
+tags: chemistry electronics high-voltage
 author: Elijah K. Dunn
 zotero-collection: https://www.zotero.org/ekdunn/items/collectionKey/DBGV3U9D
-gallery: plasma-nitric-acid
+gallery: plasmaNitricAcid
 abstract: >
   Atmospheric nitrogen fixation for the amateur using plasma.
-graphical-abstract: /assets/img/plasma-nitric-acid/190723-111108-nonthermal-plasma-test-2-arc-top.JPG
+graphical-abstract: /assets/img/plasmaNitricAcid/plasmaNitricAcid-nonthermal-plasma-test-2-arc-top.JPG
 ---
 
 # Prior Art
 Almost every amateur chemist youtube channel hosts at least one video on nitric acid synthesis. Most of them follow the nitrate salt + sulfuric acid synthesis. While simple and relatively cheap, production in this manner is time consuming and, at least in my attempts, prone to accidents.
 
-![](/assets/img/nitric-acid-old/break_0.JPG)
+<!--![image](/assets/img/nitric-acid-old/break_0.JPG)-->
 
 Industrially, nitric acid is produced almost exclusively from oxidized ammonia via the Haber-Bosch (HB) and Ostwald processes. The hydrogen is, of course, produced from petroleum. While cheap, this isn't exactly sustainable.
 
@@ -93,7 +93,7 @@ Manganese dioxide can be used as a reversible nitrogen dioxide absorbent.
 
 ## 10 Aug 2019
 
-![](/assets/img/plasma-nitric-acid/190802-182034-nonthermal-plasma-test-5-setup-knives.JPG)
+![image](/assets/img/plasmaNitricAcid/plasmaNitricAcid-nonthermal-plasma-test-5-setup-knives.JPG)
 
 ### Results
 
@@ -148,7 +148,7 @@ Shut down the arc reactor at the 24:00hr mark. I'll let everything cool down ove
 ## 02 Aug 2019
 So after much deliberation, I came up with a different reactor plan. The arc reactor will consist of two diverging 3/8"OD-5/32"ID 316 stainless steel tubes (what I had on hand). Cooling water can thus be passed through the tubes to reduce wear and capture the heat. The assembly is sandwiched between two pieces of glass. If I had borosilicate or even better quartz, that would be better. All I have is some regular 3mm plate glass. I hope it doesn't break.
 
-![](/assets/img/plasma-nitric-acid/190803-143850-nonthermal-plasma-glidarc-sealed-arc-close.JPG)
+![image](/assets/img/plasmaNitricAcid/plasmaNitricAcid-nonthermal-plasma-glidarc-sealed-arc-close.JPG)
 
 Yep. The glass broke. Go figure. I guess I will have to keep looking for materials.
 
@@ -159,7 +159,7 @@ Setting up for a longer run of the glidarc reactor... The arc is just too unstab
 
 ### Third Run Results
 
-![](/assets/img/plasma-nitric-acid/190728-171718-nonthermal-plasma-test-4-setup-vert.JPG)
+![image](/assets/img/plasmaNitricAcid/plasmaNitricAcid-nonthermal-plasma-test-4-setup-vert.JPG)
 
 - Total Energy = 0.51KWh
 - Power Consumption Average = W
@@ -191,7 +191,7 @@ My nitric acid is approximately 68% (15M). Titrating 1ml requires 76.4ml or 15.3
 
 Ran for 1 hour and used 0.11KWh. 50ml of 15.3M acid starter was added as a jumpstart (765mmol of nitric acid). Significant instability in the arc was the limiting factor. The rubber seal was charred from repeated arcs. I decided to stop the experiment and rerun it with a ground glass seal.
 
-![](/assets/img/plasma-nitric-acid/190728-165936-nonthermal-plasma-test-4-insulated-arc-close.JPG)
+![image](/assets/img/plasmaNitricAcid/plasmaNitricAcid-nonthermal-plasma-test-4-insulated-arc-close.JPG)
 
 The seal is much better and the arc is more stable now. It still isn't as stable as the original glidarc reactor was, but good enough for now. Power usage is hovering around 128 watts.
 
@@ -199,18 +199,18 @@ I should have done this sooner: I installed a water trap between the ozone line 
 
 The system definitely has some brown nitrogen dioxide being formed. Fortunately, the primary (1L) bubbler seems to be trapping all of the NO2 since there isn't any visible after.
 
-![](/assets/img/plasma-nitric-acid/190728-173222-nonthermal-plasma-test-4-absorption-color.JPG)
+![image](/assets/img/plasmaNitricAcid/plasmaNitricAcid-nonthermal-plasma-test-4-absorption-color.JPG)
 
 The 3-neck RBF has developed a crack from repeated arcing against the wall. :(
 
-![](/assets/img/plasma-nitric-acid/190728-165012-nonthermal-plasma-test-4-cracked-glass.JPG)
+![image](/assets/img/plasmaNitricAcid/plasmaNitricAcid-nonthermal-plasma-test-4-cracked-glass.JPG)
 
 Perhaps some sort of inductor/capacitor combo to provide a jump start in case of arc failure?
 
 ### Second Run Results
 This is actually the 3rd full system test but the second quantitative test.
 
-![](/assets/img/plasma-nitric-acid/190727-132920-nonthermal-plasma-test-3-setup-vert.JPG)
+![image](/assets/img/plasmaNitricAcid/plasmaNitricAcid-nonthermal-plasma-test-3-setup-vert.JPG)
 
 No distillate was collected from the graham condenser. I believe with proper insulation, the acid could start to reflux. Or perhaps a higher concentration of acid would be able to distill over. That would be ideal for purification.
 
@@ -239,7 +239,7 @@ It is also of note that the peroxide bubbler absorbed some of the nitric acid an
 
 The submerged electrode did suffer some degradation:
 
-![](/assets/img/plasma-nitric-acid/190727-132944-nonthermal-plasma-test-3-discoloration.JPG)
+![image](/assets/img/plasmaNitricAcid/plasmaNitricAcid-nonthermal-plasma-test-3-discoloration.JPG)
 
 ## 27 Jul 2019
 What would be the feasibility of making a containerized fertilizer plant for organic/low-impact farms? How much fixed N could a few hundred watts provide?
@@ -254,7 +254,7 @@ Started second run of direct-discharge plasma system. This time with secondary a
 
 The arc seems stable at 150W (less the energy required to run the ancillary electronics). Anything more and it tends to go out every few minutes. I adjusted the air flow rate to a minimum: a few bubbles per second at the last absorber. If this run achieves better efficiency, I will do another, more quantative, run. One for a proper material energy balance. Measure the gas throughput, temperature differentials, etc.
 
-![](/assets/img/plasma-nitric-acid/190726-133314-nonthermal-plasma-test-3-arcing-close.JPG)
+![image](/assets/img/plasmaNitricAcid/plasmaNitricAcid-nonthermal-plasma-test-3-arcing-close.JPG)
 
 The water pump uses less than 5W.
 
@@ -295,7 +295,7 @@ Approximately 110ml of my standard will be needed to neutralize 25ml of 0.88M ni
 
 ### Results
 
-![](/assets/img/plasma-nitric-acid/190724-115142-nonthermal-plasma-test-2-arc.JPG)
+![image](/assets/img/plasmaNitricAcid/plasmaNitricAcid-nonthermal-plasma-test-2-arc.JPG)
 
 - Total Energy = 0.12KWh
 - Power Consumption Average = 120W
@@ -323,7 +323,7 @@ Other value-added products could be made as well: nitrate salts, nitroparaffins,
 ## 23 Jul 2019
 Several tests over the last couple days. Finally some production: less than 2 minutes of run-time reduced neutral 3% hydrogen peroxide to a pH of 1.72. Reaction with copper metal bubbled and produced a mild blue solution confirming the existence of nitric acid.
 
-![](/assets/img/plasma-nitric-acid/190724-080100-nonthermal-plasma-test-1-copper-in-nitric-acid.JPG)
+![image](/assets/img/plasmaNitricAcid/plasmaNitricAcid-nonthermal-plasma-test-1-copper-in-nitric-acid.JPG)
 
 There are substantial variations in gas production that seem to correlate with power input and plasma shape.
 
@@ -333,7 +333,7 @@ I also noticed that after the system is turned off, the plasma chamber turns bro
 
 Plasma stability is not great. I made several electrodes and still it wasn't very stable.
 
-![](/assets/img/plasma-nitric-acid/190723-093444-nonthermal-plasma-test-1-arcing.JPG)
+![image](/assets/img/plasmaNitricAcid/plasmaNitricAcid-nonthermal-plasma-test-1-arcing.JPG)
 
 ## 19 Jul 2019
 Added two 940C20P15K-F caps to the tank capacitance of the ZVS driver to decrease the frequency. Power levels now peak at about 150W and average around 100W.

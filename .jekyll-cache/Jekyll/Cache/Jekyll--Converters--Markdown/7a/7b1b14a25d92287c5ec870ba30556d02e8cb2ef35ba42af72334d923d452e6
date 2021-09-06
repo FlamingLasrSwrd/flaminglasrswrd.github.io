@@ -1,0 +1,245 @@
+I"8<p><strong>Update 30 Dec 2018:</strong> Molded refractories are a pain to deal with because of the required compression. A better option is to make a brick mold and build your furnace separately.</p>
+<h1 id="introduction">Introduction</h1>
+<p>Chemically bonded vermiculite (CBV) is so easy and extremely cheap. It really only has one ingredient: vermiculite. Commonly sold as loose fill attic insulation or as a soil amendment by the cubic foot. With a little bit of an acid binder and some force, CBV can withstand temperatures high enough to melt copper with low shrinkage and high insulating value. The only downside is the need for a strong mold to withstand ~350 kPa during the ramming process. Thick wood works just fine, so it isn’t really a major downside.</p>
+<p>Initial tests using a brick style mold worked great. Baking the mold in the oven for a few hours increases the hardness sufficiently that it can be removed without cracking. Half an hour under a bunsen burner greatly increases the strength. The finished brick can be easily cut with a wood saw. Testing on a lab furnace mold didn’t work as well, however. It fit into my oven just fine, but the wood mold was close enough to the heating coil that it started to burn. So I had to cut the drying phase short. This resulting in the whole thing crumbling when the mold was removed. Solution: either use individual bricks to build a furnace al la Doug’s Lab and others, or use a heat proof mold. <span class="citation" data-cites="dougs_lab_diy_2016">(Doug’s Lab 2016)</span></p>
+<h2 id="stats-of-cbv">Stats of CBV</h2>
+<table>
+<thead>
+<tr class="header">
+<th>characteristic</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>density</td>
+<td>400-600 kg/m^3</td>
+</tr>
+<tr class="even">
+<td>bending strength</td>
+<td>0.49 – 0.56 MPa (4.8 – 5.5 kg/cm^2 )</td>
+</tr>
+<tr class="odd">
+<td>linear reheat shrinkage at 1150C</td>
+<td>0.6 – 0.8%</td>
+</tr>
+<tr class="even">
+<td>heat conductivity at 350C</td>
+<td>0.09 – 0.16 W/(m K)</td>
+</tr>
+<tr class="odd">
+<td>heat conductivity at 650C</td>
+<td>0.11 – 0.18 W/(m K)</td>
+</tr>
+<tr class="even">
+<td>maximum temperature</td>
+<td>&gt;1150C <span class="citation" data-cites="suvorov_vermiculite_2003">(Suvorov and Skurikhin 2003)</span></td>
+</tr>
+</tbody>
+</table>
+<p>For comparison Kaowool typically has heat conductivity of 0.06-0.08 W/(m K) at 206C (<em>better</em>) and 0.21-0.47 W/(m K) (<em>worse</em>) at 816C. It has a similar continuous use maximum temperature (1100C). It is sold in a range of densities 48-192 kg/m^3.</p>
+<table>
+<thead>
+<tr class="header">
+<th>material</th>
+<th>melting temperature</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>aluminum</td>
+<td>660C</td>
+</tr>
+<tr class="even">
+<td>bronze</td>
+<td>~950C</td>
+</tr>
+<tr class="odd">
+<td>gold</td>
+<td>1064C</td>
+</tr>
+<tr class="even">
+<td>copper</td>
+<td>1084C</td>
+</tr>
+</tbody>
+</table>
+<p>Using a clay binder instead of a chemical one will increase the heat conductivity but it may increase the strength. Probably make it a lot easier to work with too. Plus its not commonly sold in hardware stores except in small containers meant for furnace patch work.</p>
+<h1 id="warning">WARNING</h1>
+<p><strong>This procedure involves strong acids and potentially carcinogenic substances (when inhaled). Wear gloves, eye protection, and a mask.</strong></p>
+<h1 id="recipe">Recipe</h1>
+<h2 id="ingredients">Ingredients</h2>
+<ul>
+<li>100 parts vermiculite insulation</li>
+<li>5 parts magnesium sulfate heptahydrate (Epsom salts)
+<ul>
+<li>dissolve MgSO4 in 20 parts water</li>
+</ul></li>
+<li>4 parts 35% phosphoric acid (concrete etch)</li>
+<li>10 parts 92% sulfuric acid (drain cleaner)</li>
+</ul>
+<h2 id="instructions">Instructions</h2>
+<ul>
+<li>calculate total volume of refractory material needed for your mold</li>
+<li>multiply by 350 kilograms per cubic meter (22 pounds per cubic foot) to obtain the necessary weight of vermiculite to start with</li>
+<li>measure out that amount of vermiculite
+<ul>
+<li>this will likely be done in batches</li>
+</ul></li>
+<li>measure out 5% of the mass of vermiculite as magnesium sulfate heptahydrate</li>
+<li>dilute magnesium sulfate in 4 times its mass in water</li>
+<li>use a spray bottle to coat the vermiculite in the magnesium sulfate solution while mixing thoroughly</li>
+<li>measure out 4% of the mass of vermiculite as dilute (~35%) phosphoric acid
+<ul>
+<li>this can be obtained as concrete etcher (not the muriatic acid kind)</li>
+</ul></li>
+<li>measure out 10% of the mass of vermiculite as concentrated (&gt;92%) sulfuric acid and add to phosphoric acid
+<ul>
+<li>this can be obtained at drain cleaner from most hardware stores</li>
+<li><em>warning</em> this will generate a lot of heat</li>
+</ul></li>
+<li>use the spray bottle to coat the vermiculite with the acid mixture while mixing thoroughly
+<ul>
+<li>vermiculite should remain relatively dry and easy to mix</li>
+</ul></li>
+<li>ram small portions of mix into your mold using a hammer
+<ul>
+<li>the goal is 200-700 kPa (30-100 psi) compression which is roughly the force per unit area of a hammer strike across the hammer head</li>
+<li>the greater the compression -&gt; the greater the strength -&gt; the lesser the insulation</li>
+<li>mixture must be used within a few hours</li>
+</ul></li>
+<li>after ramming, the refractory has enough strength to be handled lightly</li>
+<li>the strength can be increased by first drying and then calcining (optional)</li>
+<li>drying occurs above 200C (400F)</li>
+<li>calcination is complete somewhere around 1100C (2000F)</li>
+</ul>
+<h2 id="example">Example</h2>
+<ul>
+<li>I have a mold that requires 20 liters (0.7 cubic feet) of refractory to fill</li>
+<li>That means I need a total of 7 kg vermiculite</li>
+<li>I can’t do all that at once, so I’m splitting it into 3 batches:
+<ul>
+<li>2.33kg vermiculite is added to mixing tub <em>wear a mask</em></li>
+<li>117g epsom salts is added to spray bottle</li>
+<li>466g water is added to bottle and mixed thoroughly to dissolve</li>
+<li>vermiculite is coated evenly with magnesium sulfate spray</li>
+<li>93g of dilute phosphoric acid is added to bottle <em>wear gloves</em></li>
+<li>vermiculite is coated evenly with phosphoric acid spray</li>
+<li>233g concentrated is added to bottle</li>
+<li>coat the vermiculite evenly with sulfuric acid spray</li>
+<li>pack the refractory into the mold a little at a time</li>
+<li>repeat 2 more times for a total of 7kg vermiculite used</li>
+<li>let sit overnight</li>
+</ul></li>
+</ul>
+<h1 id="log">Log</h1>
+<h2 id="sep-2019">21 Sep 2019</h2>
+<p>There’s some delamination that I can feel under the surface of the brick I made last week. I made a second brick starting with 450g of vermiculite. This was insufficient to make a full brick, unfortunately.</p>
+<p>Brick making would be a lot easier if I had a hydraulic press. Perhaps I could try to squish the mold between my car and a floor jack. That would only give about 1000lbs because my car is tiny.</p>
+<h2 id="sep-2019-1">15 Sep 2019</h2>
+<p>So I’ve been looking into phosphate binders. Apparently, the reaction of alumina and phosphoric acid only takes place above 127C <span class="citation" data-cites="lopes_self-flowing_2017">(Lopes et al. 2017)</span>. Magnesia on the other hand, converts to the phosphate at room temperature. I’m thinking a phosphoric acid, magnesia, alumina, vermiculite refractory. Alumina isn’t commonly available in big box stores, but it is available at every pottery store. I’m only using it because I have some and it is extremely refractory. I’ll run some tests on magnesia bonded only.</p>
+<p>Magnesia (sort of) is available as magnesium hydroxide “Milk of Magnesia” laxative.</p>
+<p>I have been using Krud Kutter Concrete Clean &amp; Etch as my source of phosphoric acid (25-50%). I also found OUT filter mate Heavy Duty Softener cleaner to contain 15-40% phosphoric acid according to the sds. The choice is yours.</p>
+<p>TODO: titrate each phosphoric acid source</p>
+<p>Also, finding some sort of clay binder for mineral wool insulation would be awesome. As it is, mineral wool is too fragile.</p>
+<ul>
+<li>15.85g verm (2x the volume of my mold)</li>
+<li>added 1ml milk of magnesia (~0.8g) to a test tube (0.5%)</li>
+<li>diluted with 5ml H2O</li>
+<li>added ~1.5ml dilute phosphoric acid (solution immediately clears) (10%)</li>
+<li>solution is mixed slowly into vermiculite</li>
+<li>mix is pressed with thumb into small mold (stainless condiment cup)</li>
+<li>compressed mix occupies approximately 40% of the volume of the free flowing mix</li>
+<li>mold is heated with propane burner</li>
+</ul>
+<p>There’s quite a lot of expansion upon heating: 15% or more. The mix might have to be dried while compressed. Or heated more evenly in an oven. In any case, I stopped heating after a few minutes and the thing crumbled. More experimentation is needed.</p>
+<p>I decided to give brick making another go. For a single 9“x4.5”x2.5&quot; standard firebrick:</p>
+<ul>
+<li>1.29lbs (1lb 4.6oz) vermiculite</li>
+<li>30g magnesium sulfate</li>
+<li>60g phosphoric acid (double the recipe)</li>
+<li>60g sulfuric acid</li>
+<li>30g alumina</li>
+</ul>
+<p>I was unable to compress the brick sufficiently to use all of the mix. Next batch should be 3-4oz less. For the surface of this brick (~40 sq. in), over 2000 lbs of pressure is needed for appropriate compression.</p>
+<p>The formed brick was dried overnight in the mold and then put in the oven at 350F.</p>
+<h2 id="aug-2019">11 Aug 2019</h2>
+<p>Let’s try some alternative recipes using silicate bonded vermiculite. Start by making some sodium silicate from cat litter and drain cleaner.</p>
+<ul>
+<li>60g silica gel cat litter (60.1g/mol)</li>
+<li>200ml H2O</li>
+<li>20g sodium hydroxide drain cleaner (40.0g/mol)</li>
+</ul>
+<p>This results in a 29% solution of 2:1 sodium silicate solution with a density of 1.2g/ml. Ideally, a ratio of 2.0-2.5:1 silicate to alkali is used for refractory purposes. I started with 2:1 for solubility.</p>
+<p>If this goes well, I will move on to using potassium silicate for greater temperature resistance. Sodium formulations are limited to about 650C. If you are using perlite, go with the cheaper sodium because the limiting factor is the melting point of perlite.</p>
+<p>This test run will be with 100ml of fine vermiculite and 10ml (12g total; 3.5g silicate) of my silicate solution. The ingredients are mixed in a baggie and poured into a 2 inch PVC section of 4 inches length. The mix is then compressed under my weight to a volume of about half. I then used a carbon dioxide generator to blow through about 1L of CO2, which is way more than required (25% by weight of silicate or 0.9g/400ml).</p>
+<figure>
+<img src="/assets/img/vermRefractory/190811-143230-vermRefractory-silicate-test-1-fill.JPG" alt="image" /><figcaption>image</figcaption>
+</figure>
+<figure>
+<img src="/assets/img/vermRefractory/190811-143428-vermRefractory-silicate-test-1-compressed.JPG" alt="image" /><figcaption>image</figcaption>
+</figure>
+<figure>
+<img src="/assets/img/vermRefractory/190811-150942-vermRefractory-silicate-test-1-CO2-setup.JPG" alt="image" /><figcaption>image</figcaption>
+</figure>
+<p>So… ya… that didn’t work. The test puck disintegrated.</p>
+<figure>
+<img src="/assets/img/vermRefractory/190811-153956-vermRefractory-silicate-test-1-failure.JPG" alt="image" /><figcaption>image</figcaption>
+</figure>
+<p>Let’s try more silicate. 30ml silicate solution per 100ml vermiculite this time. Upon compression the silicate solution dribbled out of the bottom of the mold. I decided to bake the puck in the oven at 500F before exposing it to direct flame to reduce heat shock and cracking. I might have to make a more concentrated silicate solution.</p>
+<p>The puck seems to be cured on the outside.</p>
+<figure>
+<img src="/assets/img/vermRefractory/190811-171330-vermRefractory-silicate-test-2.JPG" alt="image" /><figcaption>image</figcaption>
+</figure>
+<p>But it definitely isn’t on the inside.</p>
+<figure>
+<img src="/assets/img/vermRefractory/190811-202738-vermRefractory-silicate-test-2-inside.JPG" alt="image" /><figcaption>image</figcaption>
+</figure>
+<h2 id="jun-2018">30 Jun 2018</h2>
+<ul>
+<li>Refractory bricks: 8“x4”x2.5&quot; -&gt; 80 in^3 -&gt; 0.0463 ft^3 -(23.6 lbs/ft^3)-&gt; 1.09 lbs -&gt; <strong>fill each brick mold with 494g refractory mix</strong></li>
+</ul>
+<p>1 brick (4“x3.5”x8“):</p>
+<ul>
+<li>494g vermiculite</li>
+<li>24.7g MgSO4*5H2O</li>
+<li>98.8g H2O</li>
+<li>49.4g H2SO4 + 19.8g H3PO4</li>
+<li>mixed; use mini spray bottle</li>
+</ul>
+<p><em>not enough pressure; molding wasn’t as compact as original design</em></p>
+<h2 id="jun-2018-1">29 Jun 2018</h2>
+<ul>
+<li>The first vermiculite refractory went great; even hand compression had pretty good characteristics despite 1/5th the density</li>
+</ul>
+<p>Recipe:</p>
+<ul>
+<li>100 parts vermiculite</li>
+<li>5 parts magnesium sulfate hemihydrate as 20% soln.</li>
+<li>add slowly; mix to uniformity</li>
+<li>10 parts 92% H2SO4 + 2 parts 75% H3PO4; add slowly</li>
+<li>mix to uniformity</li>
+<li>compress into mold; 30-100 psi</li>
+<li>heat &gt;180C until dry and solid</li>
+</ul>
+<p>Test run:</p>
+<ul>
+<li>25g vermiculite</li>
+<li>1.25g mg sulfate + 5g H2O</li>
+<li>2.5g H2SO4 + 1g ~40% H3PO4</li>
+</ul>
+<h1 id="bibliography">Bibliography</h1>
+<!--notes-->
+<!--links-->
+<div id="refs" class="references">
+<div id="ref-dougs_lab_diy_2016">
+<p>Doug’s Lab. 2016. “DIY Electric Furnace: Part 1.” <a href="https://www.youtube.com/watch?v=M5oKvHktmNU" class="uri">https://www.youtube.com/watch?v=M5oKvHktmNU</a>.</p>
+</div>
+<div id="ref-lopes_self-flowing_2017">
+<p>Lopes, S. J. S., A. P. Luz, D. T. Gomes, and V. C. Pandolfelli. 2017. “Self-Flowing High-Alumina Phosphate-Bonded Refractory Castables.” <em>Ceramics International</em> 43 (8): 6239–49. <a href="https://doi.org/10.1016/j.ceramint.2017.02.023" class="uri">https://doi.org/10.1016/j.ceramint.2017.02.023</a>.</p>
+</div>
+<div id="ref-suvorov_vermiculite_2003">
+<p>Suvorov, S. A., and V. V. Skurikhin. 2003. “Vermiculite a Promising Material for High-Temperature Heat Insulators.” <em>Refractories and Industrial Ceramics</em> 44 (3): 186–93. <a href="https://doi.org/10.1023/A:1026312619843" class="uri">https://doi.org/10.1023/A:1026312619843</a>.</p>
+</div>
+</div>
+:ET

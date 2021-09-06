@@ -1,0 +1,93 @@
+I"�<h1 id="ethanol">Ethanol</h1>
+<p>Ethanol can be dehydrogenated to ethanal (acetaldehyde) over a catalyst (typically copper) at high temperatures. Depending on the catalyst, other products such as ethyl acetate can be formed.</p>
+<p>CH3CH2OH -&gt;[Cu] CH3CHO + H2</p>
+<h1 id="methanol">Methanol</h1>
+<p>Methanol can similarly be dehydrogenated to methanal (formaldehyde) over a catalyst (typically copper) at high temperatures.</p>
+<p>CH3OH -&gt;[Cu] CH2O + H2</p>
+<h1 id="work-log">Work Log</h1>
+<h2 id="oct-2019">18 Oct 2019</h2>
+<p>Continuing with methanal. I made the copper impregnated carbon. Now I have to reduce it in-situ. I’m using aluminum + acid as my hydrogen generator. The acid is the semi-spent sulfuric and hydrochloric acid mix from the aluminum chloride synthesis. This mix is dripped <strong>slowly</strong> onto aluminum foil balls in a bit of water to retard the initial reaction.</p>
+<p>I hope to get the hydrogen cell running soon so I can generate hydrogen on demand for cheap. Also, I have used just about every clamp and keck clip for this glass setup. I need some more…</p>
+<p>For the initial run to decompose the copper nitrate (~170C), I vented the gasses directly out of the fume hood instead of leaving the bubbler in place. This is so I don’t have nitric acid contamination of the (already filled) formaldehyde collector. After the nitrogen dioxide evolution has ceased, I will reconnect the bubbler to visually determine the hydrogen flow rate.</p>
+<p>As a side note, it is very difficult to measure the temperature of a 1cm diameter glass tube with an IR thermometer. You have to align the beam just right to get a measurement that doesn’t fluctuate wildly.</p>
+<p>Well I’m stupid. I guess I didn’t let the catalyst cool long enough before starting the hydrogen… I had to clean up 100+ml of acid explosion. I’m going to try again tomorrow this time with a CO2 purge for good measure.</p>
+<h2 id="oct-2019-1">08 Oct 2019</h2>
+<p>Let’s make some methanal! <span class="citation" data-cites="shelepova_synthesis_2017">(Shelepova et al. 2017)</span></p>
+<ul>
+<li>20g activated carbon</li>
+<li>1g copper as copper nitrate formed from 1.74g basic copper carbonate &amp; nitric acid (5% w/w loading)</li>
+<li>dry</li>
+<li>reduce with hydrogen at 450C for 2 hours</li>
+</ul>
+<h2 id="jul-2019">13 Jul 2019</h2>
+<p>User jimmymajesty achieved excellent results by using air-oxidized copper plated nichrome wire in a ketene apparatus <a href="http://www.sciencemadness.org/talk/viewthread.php?tid=55&amp;goto=search&amp;pid=176566" class="uri">http://www.sciencemadness.org/talk/viewthread.php?tid=55&amp;goto=search&amp;pid=176566</a></p>
+<h2 id="jun-2018">19 Jun 2018</h2>
+<ul>
+<li>Investigating the production of mesoporous carbon catalysts.</li>
+<li>Carbon has high selectivity compared to silica, but it suffers from short lifespan. Copper sintering seems the issue. Lack of interaction with the base material is the cause. <span class="citation" data-cites="wang_cu_2018">Wang et al. (2018)</span></li>
+<li>Carbon can be deposited on silica supports with the layer of catalyst further deposited on that.</li>
+<li>Searching for a suitable mesoporous carbon precursor…</li>
+<li>Furfural alcohol might be ok since it can be made from agricultural byproducts and sulfuric acid followed by hydrogenation. <span class="citation" data-cites="noauthor_furfural_1921">(“FURFURAL” 1921)</span></li>
+<li>Sucrose could work <span class="citation" data-cites="bohme_templated_2005">Böhme, Einicke, and Klepel (2005)</span> <span class="citation" data-cites="ryoo_synthesis_1999">Ryoo, Joo, and Jun (1999)</span></li>
+<li>52.5 kJ mol =&gt; 49 BTU; easily done with bunsen burner; heat loss is probably biggest problem</li>
+<li>chromite stabilization is another option but isn’t good for the environment</li>
+<li>instead of mesoporous carbon… graphene? <span class="citation" data-cites="morales_bioethanol_2016">Morales et al. (2016)</span></li>
+<li>I haven’t found anything on electrooxidation in DES</li>
+<li>As far as setup goes: something akin to <a href="https://youtu.be/_1mMW2qEF84">Doug’s Lab Ketene Lamp</a> but with a core of catalyst heated by resistance wire?</li>
+</ul>
+<h2 id="may-2018">26 May 2018</h2>
+<p>Isolating various metallic catalyst precursors:</p>
+<ul>
+<li>Nickel (US 5 cent piece)
+<ul>
+<li>available as <a href="https://digitalfire.com/4sight/material/nickel_carbonate_1073.html">nickel carbonate colorant</a>: better to buy because of toxicity issues with electrolyzing nickel compounds</li>
+</ul></li>
+<li>Barium</li>
+<li>Gold (from previous experiments)</li>
+<li>Platinums
+<ul>
+<li>probably best to buy it</li>
+</ul></li>
+</ul>
+<h3 id="nickel">Nickel</h3>
+<p>Hmmm… Extracting nickel from nickels:</p>
+<p>Attempts using a polypropylene fabric bag to hold the nickels.</p>
+<figure>
+<img src="/assets/img/catalysts/catalysts-nickel-porous-bag-electrolysis-setup-close.jpg" alt="image" /><figcaption>image</figcaption>
+</figure>
+<figure>
+<img src="/assets/img/catalysts/catalysts-nickel-porous-bag-electrolysis-close.jpg" alt="image" /><figcaption>image</figcaption>
+</figure>
+<p>Final method that simply uses a basket made from copper wire. The copper plates out of solution while the nickel stays dissolved.</p>
+<figure>
+<img src="/assets/img/catalysts/catalysts-nickel-basket-electrolysis.jpg" alt="image" /><figcaption>image</figcaption>
+</figure>
+<h3 id="barium">Barium</h3>
+<p>(rust converter) =&gt; <strong>cheaper as <a href="https://digitalfire.com/4sight/material/barium_carbonate_86.html">barium carbonate glaze</a></strong></p>
+<figure>
+<img src="/assets/img/catalysts/catalysts-barium-filtering-rust-converter.jpg" alt="image" /><figcaption>image</figcaption>
+</figure>
+<h1 id="bibliography">Bibliography</h1>
+<!--notes-->
+<!--links-->
+<div id="refs" class="references">
+<div id="ref-bohme_templated_2005">
+<p>Böhme, Kerstin, Wolf-Dietrich Einicke, and Olaf Klepel. 2005. “Templated Synthesis of Mesoporous Carbon from Sucrosethe Way from the Silica Pore Filling to the Carbon Material.” <em>Carbon</em> 43 (9): 1918–25. <a href="https://doi.org/10.1016/j.carbon.2005.02.043" class="uri">https://doi.org/10.1016/j.carbon.2005.02.043</a>.</p>
+</div>
+<div id="ref-noauthor_furfural_1921">
+<p>“FURFURAL.” 1921. <em>Organic Syntheses</em> 1: 49. <a href="https://doi.org/10.15227/orgsyn.001.0049" class="uri">https://doi.org/10.15227/orgsyn.001.0049</a>.</p>
+</div>
+<div id="ref-morales_bioethanol_2016">
+<p>Morales, M. V., E. Asedegbega-Nieto, B. Bachiller-Baeza, and A. Guerrero-Ruiz. 2016. “Bioethanol Dehydrogenation over Copper Supported on Functionalized Graphene Materials and a High Surface Area Graphite.” <em>Carbon</em> 102 (June): 426–36. <a href="https://doi.org/10.1016/j.carbon.2016.02.089" class="uri">https://doi.org/10.1016/j.carbon.2016.02.089</a>.</p>
+</div>
+<div id="ref-ryoo_synthesis_1999">
+<p>Ryoo, Ryong, Sang Hoon Joo, and Shinae Jun. 1999. “Synthesis of Highly Ordered Carbon Molecular Sieves via Template-Mediated Structural Transformation.” <em>The Journal of Physical Chemistry B</em> 103 (37): 7743–6. <a href="https://doi.org/10.1021/jp991673a" class="uri">https://doi.org/10.1021/jp991673a</a>.</p>
+</div>
+<div id="ref-shelepova_synthesis_2017">
+<p>Shelepova, Ekaterina V., Aleksey A. Vedyagin, Ludmila Yu. Ilina, Alexander I. Nizovskii, and Pavel G. Tsyrulnikov. 2017. “Synthesis of Carbon-Supported Copper Catalyst and Its Catalytic Performance in Methanol Dehydrogenation.” <em>Applied Surface Science</em> 409 (July): 291–95. <a href="https://doi.org/10.1016/j.apsusc.2017.02.220" class="uri">https://doi.org/10.1016/j.apsusc.2017.02.220</a>.</p>
+</div>
+<div id="ref-wang_cu_2018">
+<p>Wang, Qing-Nan, Lei Shi, Wei Li, Wen-Cui Li, Rui Si, Ferdi Schüth, and An-Hui Lu. 2018. “Cu Supported on Thin Carbon Layer-Coated Porous SiO2 for Efficient Ethanol Dehydrogenation.” <em>Catalysis Science &amp; Technology</em> 8 (2): 472–79. <a href="https://doi.org/10.1039/C7CY02057K" class="uri">https://doi.org/10.1039/C7CY02057K</a>.</p>
+</div>
+</div>
+:ET

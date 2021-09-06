@@ -10,7 +10,7 @@ zotero-collection: https://www.zotero.org/ekdunn/items/collectionKey/RFA8NCVX
 gallery: catalysts
 abstract: >
   Oxidation/dehydrogenation of primary alcohols using catalysts to form their corresponding aldehydes.
-graphical-abstract: /assets/img/catalysts/nickel/190720-150319-catalysts-nickel-basket-electrolysis.jpg
+graphical-abstract: /assets/img/catalysts/catalysts-nickel-basket-electrolysis.jpg
 ---
 
 # Ethanol
@@ -80,19 +80,19 @@ Hmmm... Extracting nickel from nickels:
 
 Attempts using a polypropylene fabric bag to hold the nickels.
 
-![](/assets/img/catalysts/nickel/190720-150319-catalysts-nickel-porous-bag-electrolysis-setup-close.jpg)
+![image](/assets/img/catalysts/catalysts-nickel-porous-bag-electrolysis-setup-close.jpg)
 
-![](/assets/img/catalysts/nickel/190720-150319-catalysts-nickel-porous-bag-electrolysis-close.jpg)
+![image](/assets/img/catalysts/catalysts-nickel-porous-bag-electrolysis-close.jpg)
 
 Final method that simply uses a basket made from copper wire. The copper plates out of solution while the nickel stays dissolved.
 
-![](/assets/img/catalysts/nickel/190720-150319-catalysts-nickel-basket-electrolysis.jpg)
+![image](/assets/img/catalysts/catalysts-nickel-basket-electrolysis.jpg)
 
 ### Barium
 
 (rust converter) => **cheaper as [barium carbonate glaze](https://digitalfire.com/4sight/material/barium_carbonate_86.html)**
 
-![](/assets/img/catalysts/barium/190720-150320-catalysts-barium-filtering-rust-converter.jpg)
+![image](/assets/img/catalysts/catalysts-barium-filtering-rust-converter.jpg)
 
 # Bibliography
 

@@ -6,6 +6,9 @@ abstract: >
   Semi-unfiltered life updates in the moment barely useful to me. Do not take seriously or literally. Project specific updates are located on their respective posts.
 ---
 
+## 05 Sep 2021
+Finally spent some time on the website. Fixed the carousel and reworked the images to match. Fixed the broken links. It still isn't perfect, but much better than before.
+
 ## 03 Sep 2021
 Furious work on the scooter project has ceased. Working at a much more leisurely pace now. I've been using so many rattle cans that my dominant index finger is numb and tingly.
 
@@ -84,7 +87,7 @@ After weeks of CAD work, the Fungi Controller box v 1.0 has been printed.
 
 Did some scooter work.
 
-![](/assets/img/scooter/scooter-cleaned-fuel-distribution-parts.jpg)
+![image](/assets/img/scooter/scooter-cleaned-fuel-distribution-parts.jpg)
 
 5ml of orange oil and the same of dish soap works well as an ultrasonic bath solvent.
 
@@ -117,7 +120,7 @@ https://jaredreisinger.com/blog/realtek-8111e-8168-driver-ubuntu/
 
 Did some titanium anodizing. At least until I burned a fuse on the variac by touching the two electrodes together at 35V.
 
-![](/assets/img/log/log-titanium-anodizing-spot.jpg)
+![image](/assets/img/log/log-titanium-anodizing-spot.jpg)
 
 # 26 Jul 2021
 
@@ -192,9 +195,9 @@ This is unacceptable for pyrotechnic compositions (the impetus for this project)
 ## 12 Jul 2021
 More work on the whistles. The spray mask worked well.
 
-![](/assets/img/log/log-train-whistle-spray-paint-mask.jpg)
+![image](/assets/img/log/log-train-whistle-spray-paint-mask.jpg)
 
-![](/assets/img/log/log-train-whistle-colors.jpg)
+![image](/assets/img/log/log-train-whistle-colors.jpg)
 
 Retsch PM100 planetary ball mill parameters:
 
@@ -231,7 +234,7 @@ I have been working on whistles for a few days. The running group I am a part of
 
 Here is one of the whistles hot off the printer.
 
-![](/assets/img/log/whistle_0v3-TtLA.jpg)
+![image](/assets/img/log/whistle_0v3-TtLA.jpg)
 
 The print is based on the [Steam Train Whistle](https://www.thingiverse.com/thing:77183).
 
@@ -246,7 +249,7 @@ Each print takes about 13g of PLA and 1.5 hrs to print without support and 20% i
 ### Plantary Ball Mill
 I has taken me days to wrap my head around the inner workings of a plantary ball mill. Behold: the only image you need.
 
-![](/assets/img/log/planetary-ball-mill-gears.jpg)
+![image](/assets/img/log/planetary-ball-mill-gears.jpg)
 
 The is the view of the underside of the planetary ball mill mechanism. Image obtained from [here](https://www.acrossinternational.com/Planetary-and-Transient-Gears-for-PQ-N2-4x500ml-Ball-Mills-PQN2GEARSET.htm).
 
@@ -280,7 +283,7 @@ Zinc gluconate is 14.3% zinc w/w. Corn syrup is 76% sugar. Honey is ~82% sugar. 
 - 0.28g glycine
 - 1/4 tsp any flavoring oil (e.g. lemon)
 
-![](/assets/img/log/log-zinc-lozenges.jpg)
+![image](/assets/img/log/log-zinc-lozenges.jpg)
 
 > Patients were given 120 lozenges and were asked to dissolve 1 lozenge in their mouths every 2 hours while awake for as long as they had cold  symptoms.
 
@@ -522,7 +525,7 @@ I'm going to turn my heater up to 24C for the duration of the experiment. *edit:
 
 After 10 hours the CO2 concentration in my room has risen to above 1500ppm. That's not great for the human and dog respirators who have to sleep in this room. I'm actually starting to get a mild headache.
 
-![](/assets/img/log/CO2-concentration-modified-atmos-exp.png)
+![image](/assets/img/log/CO2-concentration-modified-atmos-exp.png)
 
 ## 16 Feb 2021
 I am still having spider mite troubles. I've tried insecticidal soap, neem oil, and pyrethrins. I think it is time to seriously consider modified atmospheres.
@@ -617,7 +620,7 @@ I'm looking into vapor polishing some 3D prints. I have an extra 5 liter vacuum 
 
 My 3D printer keeps throwing errors and stopping in the middle of a print. I finally noticed that the extrusion temperature readout was showing *-1*.
 
-![](/assets/img/log/log-printer-temp-error.jpg)
+![image](/assets/img/log/log-printer-temp-error.jpg)
 
 So I'm guessing the temperature probe is either disconnected or broken. Since I've been prepping for a linear rail rebuild, I'm going to replace the probe at the same time.
 
@@ -831,7 +834,7 @@ I would love to be able to combine the core features of HTM and Adaptive Resonan
 ## 26 Sep 2020
 Finally got a hold of the domain for my namesake <elijahdunn.com>. I've been waiting for more than two years for a squatter to relinquish the domain. I don't know what I will do with it.
 
-![](/assets/img/log/elijah-dunn-com.png)
+![image](/assets/img/log/elijah-dunn-com.png)
 
 Ya know what the problem with any form of external knowledge storage medium (books, audio recordings, videos, deep learning AI, ontologies, etc.)?
 
@@ -934,24 +937,24 @@ Started some seeds today.
 # 11 Sep 2020
 Converted a closet into a garden using a Samsung strip light. It turned out better than I thought. I previously used three COBs to illuminate a small area. The strip is much nicer.
 
-![](/assets/img/log/closet-garden-outside.JPG)
+![image](/assets/img/log/log-closet-garden-outside.JPG)
 
 I drilled and tapped a few holes in a strip of aluminum then wired (literally iron wire wrapped) it to an iron pipe clothes rack.
 
-![](/assets/img/log/closet-garden-power.JPG)
+![image](/assets/img/log/log-closet-garden-power.JPG)
 
 I currently have some ICS95 cacao cuttings in the mist propagator. I don't know if any of them will survive which is really upsetting. They look much more brown than when I started them in some vermiculite-coir media on Sep 3rd.
 
-![](/assets/img/log/cacao-verm-coir-start.JPG)
+![image](/assets/img/log/log-cacao-verm-coir-start.JPG)
 
 I should have kept them in a humidity dome from the start. Dammit.
 
 ## 10 Sep 2020
 Second run of the ketene lamp today. This time at a higher throughput and waste gas burner. The flame burned with a ~3cm flame. Start at 1430. Ended at 17:55.
 
-![](/assets/img/ketene/ketene-flame-run-setup.JPG)
+![image](/assets/img/ketene/ketene-flame-run-setup.JPG)
 
-![](/assets/img/ketene/ketene-flame.JPG)
+![image](/assets/img/ketene/ketene-flame.JPG)
 
 Acetone pot temp was 105C. Element voltage was 25V and 6.2A. The power going into the variac was 180W so about 86% efficient. That's about $0.02 per hour to run the element. Let's say double that to account for heating the pot and cooling the water. 'Round up to $0.05 per hour or about $10-$20 per liter of pure acetic acid. That's not too bad. Of course, time is the real killer here.
 
@@ -965,7 +968,7 @@ Just another day of ontology: Trying to impose order on the universe one class a
 ## 02 Sep 2020
 Finally got around to making a ketene lamp. I bought a 250ml chromatography bulb last year for this specific purpose. The only specialist equipment is some nichrome wire, glass tubing, copper wire, and a variac. The rest is standard lab equipment.
 
-![](/assets/img/ketene/ketene-setup-landscape.JPG)
+![image](/assets/img/ketene/ketene-setup-landscape.JPG)
 
 Started with 200g acetone and 150ml H2O. Quantitative conversion would result in approximately 300ml of 70% acetic acid. My wash bottle has a 250ml capacity, so I'll stop then.
 
@@ -993,7 +996,7 @@ Described acetone pyrolysis setups can achieve 450mmol/hr. So I definitely ran m
 
 Distilled some sulfuric acid today.
 
-![](/assets/img/log/sulfuric-acid-distillation-setup.JPG)
+![image](/assets/img/log/log-sulfuric-acid-distillation-setup.JPG)
 
 ## 18 Aug 2020
 Apparently when you transfer all the files inside the home directory for a user on ubuntu which had a previously installed version of eclipse with a different username and then attempt to install eclipse again, it doesn't work because the username is hard coded in .dot files. Go figure.
@@ -1004,7 +1007,7 @@ To fix, simply delete the *.java* *.eclipse* and *.p2* files from *~/* and reins
 
 Welp. I made a graph database.
 
-![](/assets/img/log/OS-Lab-graph-db-v0.1.png)
+![image](/assets/img/log/log-OS-Lab-graph-db-v0.1.png)
 
 I'm going to go lay down now.
 
@@ -1040,11 +1043,11 @@ The offset value from the [DFRobot example](https://wiki.dfrobot.com/Gravity__An
 
 The results:
 
-![](/assets/img/log/co2-calibration-results-graph.png)
+![image](/assets/img/log/log-co2-calibration-results-graph.png)
 
 After removal from the CO2 depleted container, there's about a 3 minute delay before the signal starts to rise.
 
-![](/assets/img/log/co2-calibration-signal-delay-graph.png)
+![image](/assets/img/log/log-co2-calibration-signal-delay-graph.png)
 
 So my room maintains about 450ppm CO2.
 
@@ -1107,9 +1110,9 @@ Did some preliminary microreactor research. It seems that syringe pumps are nece
 
 Attempted to fix a Fisher Sci accu-124 analytical balance with J-B weld. Something about that combination seems funny to me.
 
-![](/assets/img/log/balance-broke.JPG)
+![image](/assets/img/log/log-balance-broke.JPG)
 
-![](/assets/img/log/balance-jbweld.JPG)
+![image](/assets/img/log/log-balance-jbweld.JPG)
 
 ## 10 Jun 2020
 
@@ -1121,7 +1124,7 @@ I laid a plant identification trail for my local Hash House Harriers group (LH3)
 
 I used Germ-Glo to ensure participants didn't touch their face. At the end of trail, participants stood under a black light to visualize their infection rate. The ~2 mile trail had at least 25 plant species identified using the PlantNet app.
 
-![](/assets/img/aloe.jpg)
+![image](/assets/img/log/log-aloe.jpg)
 
 Since the trail was laid on public streets, I even got the attention of some muggles (non-hashers).
 
@@ -1148,7 +1151,7 @@ OMG noise-canceling over-the-ear bluetooth headphones are awesome. For the last 
 
 I suffered for a few weeks like that... somehow.
 
-I finally bought a pair of headphones on Amazon. They were [surprisingly cheap](https://www.amazon.com/gp/product/B07Z176W4W). The ear cups are just ever so slightly small, but it is acceptable for $32.
+I finally bought a pair of headphones on Amazon. They were surprisingly cheap (*item no longer exists*). The ear cups are just ever so slightly small, but it is acceptable for $32.
 
 I seem to get so much more done with constant music playing in the background. It certainly beats the songs that get stuck in my head... every... hour... of... every... day. Stuck song syndrome is real and utterly exhausting.
 
@@ -1510,17 +1513,17 @@ I placed an "order" from the US National Germplasm System for a few plants inclu
 ## 20 Aug 2019
 The vigreux column was a pain and didn't pack very well. I decided to try the new stainless steel packing I made from washers. I didn't have enough to fill the whole column, so I topped it off with the plastic rings.
 
-![](/assets/img/denatured-alcohol/190819-123554-denatured-alcohol-distillation-ss-packed-column-set-up.JPG)
+![image](/assets/img/denaturedAlcohol/denaturedAlcohol-distillation-ss-packed-column-set-up.JPG)
 
 ## 16 Aug 2019
 Further research leads me to conclude that methanol-ethanol separation requires more than a single run through my 300mm vigreux column. Fifteen to twenty theoretical plates are needed for their 15C boiling point difference. So I decided to try some polypropylene raschig rings made from cutting tubing.
 
-![](/assets/img/denatured-alcohol/190816-113516-denatured-alcohol-distillation-pp-packed-column-close.JPG)
+![image](/assets/img/denaturedAlcohol/denaturedAlcohol-distillation-pp-packed-column-close.JPG)
 
 ## 12 Aug 2019
 I obtained some denatured alcohol fuel from Menards a few months ago for $4 per gallon. From the sds (product code 834G1) I found that it contains 49.13% EtOH, 50% MeOH, and 0.87% methyl isobutyl ketone. I don't currently have a use for the ketone, so I need a way to remove it.
 
-![](/assets/img/denatured-alcohol/190812-142118-denatured-alcohol-distillation-starting-material.JPG)
+![image](/assets/img/denaturedAlcohol/denaturedAlcohol-distillation-starting-material.JPG)
 
 I stupidly thought it could be precipitated with a small amount of water, but its solubility is 1.91g/100ml.
 
@@ -1532,11 +1535,11 @@ I poured approximately 70g of activated carbon directly into the denatured alcoh
 
 While this was soaking, I made a ground glass adapter to fit directly onto the can. The female joint was cut from an adapter that recently broke. The new diamond cutting wheels are amazing. Nothing goes to waste around here...
 
-![](/assets/img/denatured-alcohol/190813-104652-denatured-alcohol-distillation-ground-glass-joint.JPG)
+![image](/assets/img/denaturedAlcohol/denaturedAlcohol-distillation-ground-glass-joint.JPG)
 
 I had actually intended the female joint to be screwed into place between the lid and container, but the lip was too thick. Oh well, a little bit of teflon tape works just as well.
 
-![](/assets/img/denatured-alcohol/190813-130156-denatured-alcohol-distillation-joint-close-up.JPG)
+![image](/assets/img/denaturedAlcohol/denaturedAlcohol-distillation-joint-close-up.JPG)
 
 ## 11 Aug 2019
 Made some sodium silicate solution for refractory use today from crystal cat litter.

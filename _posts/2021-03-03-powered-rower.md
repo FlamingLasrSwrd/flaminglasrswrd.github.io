@@ -3,7 +3,7 @@ layout: "post"
 title: "Powered Rower"
 date: "2021-03-03 17:51"
 category: active
-phase: research
+phase: exploratory
 tags: health
 author: Elijah K. Dunn
 zotero-collection: https://www.zotero.org/ekdunn/collections/F9G4N4F5

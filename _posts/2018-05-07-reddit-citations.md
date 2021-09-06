@@ -7,7 +7,7 @@ phase: results
 tags: programming
 author: Elijah K. Dunn
 zotero-collection: https://www.zotero.org/groups/2185229/citereddit
-gallery:
+gallery: citereddit
 abstract: >
   Creating a Zotero shared group by scraping all the citations in the more scholarly subreddits.
 graphical-abstract: /assets/img/citereddit/citeredditlogo.png
